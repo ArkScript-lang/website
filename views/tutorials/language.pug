@@ -240,6 +240,23 @@ block content
                         | (print egg.age " " egg.name)  # 2 egg
                         | (egg "not an egg")
                         | (print egg.name " " egg.age)  # not an egg 2
+                    p Closures can also be compared, the same way you would want to compare structs in C or C++:
+                    pre: code.rainbowjs(data-language="arkscript")
+                        | (let make (fun (name age)
+                        |     (fun (&name &age) ())))
+                        | 
+                        | (let egg (make "egg" 1))
+                        | (let bacon (make "bacon" 1))
+                        | (print (= egg bacon))  # false, egg and bacon share the same fields but their values are different
+                        | 
+                        | (let make_other (fun (a b c)
+                        |     (fun (&a &b &c) ())))
+                        | 
+                        | (let next (make 1 2 3))
+                        | (let bis  (make 1 2 3))
+                        | (print (= next egg))  # false, next and egg do not share the same fields
+                        | (print (= next bis))  # true, next and bis have the same fields and values
+                        | (print (= bis bis))   # true, bis is bis
 
             section#import
                 h2 Importing code
