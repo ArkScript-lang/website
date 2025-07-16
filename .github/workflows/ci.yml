@@ -1,0 +1,87 @@
+name: Update ArkDoc documentation
+
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+
+      - name: Checkout ArkDoc
+        uses: actions/checkout@v2
+        with:
+          repository: ArkScript-lang/ArkDoc
+          path: './arkdoc'
+          ref: 'master'
+
+      - name: Checkout std
+        uses: actions/checkout@v2
+        with:
+          repository: ArkScript-lang/std
+          path: './std-latest'
+
+      - name: Checkout ArkScript
+        uses: actions/checkout@v2
+        with:
+          repository: ArkScript-lang/Ark
+          path: './ark-latest'
+          ref: 'dev'
+          # so that we can fetch tags
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Pip install
+        run: |
+          cd arkdoc/
+          pip install -r requirements.txt
+
+      - name: Generate documentation
+        shell: bash
+        run: |
+          ark_version=$(cd ark-latest; git describe --tags | cut -f1 -d-)
+          echo "New ArkScript tag: ${ark_version}"
+          # run arkdoc
+          cd arkdoc
+          export ARKDOC_LOGLEVEL=DEBUG
+          python -m arkdoc $ark_version ../std-latest/ ../ark-latest/src/arkreactor/Builtins/ --markdown out --root /std || exit 1
+          cd ..
+
+          # we might want to clean the folder before?
+          # rm -rf content/docs/std/*.md
+          cp arkdoc/out/$ark_version/*.md ./content/docs/std/
+
+      - name: Commit
+        uses: github-actions-x/commit@v2.9
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          push-branch: 'master'
+          commit-message: 'Updating ArkScript std documentation'
+          force-add: 'true'
+          files: ./std/
+          name: Alexandre Plateau through GitHub Action
+          email: lexplt.dev@gmail.com
+

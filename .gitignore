@@ -1,0 +1,11 @@
+# JS
+node_modules/
+
+# Hugo
+public/
+resources/
+.hugo_build.lock
+
+# MacOS config files
+.DS_Store
+
