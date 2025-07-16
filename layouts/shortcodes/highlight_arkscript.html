@@ -1,0 +1,13 @@
+{{- /*
+  Usage: `callout "type"`, where `type` is one of "note" (default), "info", "danger", or "warning"
+  Based on: https://github.com/twbs/bootstrap/blob/283cbd902669732943885e94115a0e29a952baf6/site/layouts/shortcodes/callout.html
+*/ -}}
+
+<div class="expressive-code">
+    <figure class="frame not-content">
+        <div class="highlight">
+            <pre class="chroma"><code class="rainbowjs" data-language="arkscript">{{ replaceRE "^(\\s)+" "" .Inner }}</code></pre>
+        </div>
+    </figure>
+</div>
+
