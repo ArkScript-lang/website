@@ -1,0 +1,26 @@
+<map id="Ark::internal::Closure" name="Ark::internal::Closure">
+<area shape="rect" id="Node000001" title="Closure management." alt="" coords="284,612,429,638"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="270,509,443,549"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="359,565,359,612,354,612,354,565"/>
+<area shape="rect" id="Node000003" href="$d9/d6c/classArk_1_1internal_1_1ClosureScope.html" title="A class to store fields captured by a closure." alt="" coords="199,420,381,446"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="309,457,345,507,341,510,305,460"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="161,301,331,342"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="262,355,288,419,283,421,257,357"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="93,183,223,223"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="161,238,165,258,174,276,185,288,200,299,197,303,182,292,169,279,160,259,156,239"/>
+<area shape="rect" id="Node000006" href="$d3/d90/classArk_1_1Value.html" title=" " alt="" coords="5,94,87,120"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="63,131,84,157,118,180,115,184,81,161,59,135"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="110,94,240,120"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="173,135,164,183,159,182,168,134"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="111,5,149,31"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="130,46,134,69,144,81,155,91,152,95,140,85,130,71,124,47"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="200,5,239,31"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="209,46,184,95,179,92,204,44"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="263,190,378,216"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="267,226,253,236,242,249,238,261,237,274,241,300,236,301,231,274,232,260,238,246,249,232,264,221"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="365,94,404,120"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="358,131,346,145,334,168,326,191,321,189,329,166,341,142,354,128"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="362,250,503,275"/>
+<area shape="poly" id="edge12_Node000012_Node000011" title=" " alt="" coords="399,133,403,143,421,202,433,249,427,250,416,203,398,145,394,135"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="431,291,418,362,395,447,369,510,364,508,390,445,412,361,426,290"/>
+</map>
