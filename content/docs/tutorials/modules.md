@@ -6,7 +6,7 @@ summary: ""
 date: 2025-07-14T19:25:20+02:00
 lastmod: 2025-07-14T19:25:20+02:00
 draft: false
-weight: 999
+weight: 302
 toc: true
 seo:
   title: "" # custom title (optional)
@@ -30,7 +30,7 @@ In your [ArkScript-lang/modules](https://github.com/ArkScript-lang/modules) fork
 
 Create a `Main.cpp` file in `module_name/src/` with the following content:
 
-{{< highlight_arkscript >}}
+```cpp
 #include <Ark/Module.hpp>
 
 Ark::Value foo(std::vector<Ark::Value>& n [[maybe_unused]], Ark::VM* vm [[maybe_unused]])
@@ -49,7 +49,7 @@ ARK_API Ark::mapping* getFunctionsMapping()
 
     return map;
 }
-{{< /highlight_arkscript >}}
+```
 
 Let's walk through this line by line:
 

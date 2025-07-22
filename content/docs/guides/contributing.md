@@ -6,7 +6,7 @@ summary: ""
 date: 2025-07-14T16:49:48+02:00
 lastmod: 2025-07-14T16:49:48+02:00
 draft: false
-weight: 999
+weight: 200
 toc: true
 ---
 
@@ -29,10 +29,20 @@ The project is organised in multiple repositories for us to be able to work on a
 
 ## Getting started
 
+### The architecture of the project
+
+For an in-depth explanation: [Understanding the project architecture](/docs/reference/architecture/project).
+
 ### Contributing to the language, ArkScript
 
-- `git clone https://github.com/ArkScript-lang/Ark.git`
-- `git submodule update --init --recursive` to clone all the submodules used by the project.
+* First, [fork](https://github.com/ArkScript-lang/Ark/fork) the repository
+* Then, clone your fork:
+    * HTTPS: `git clone https://github.com/<username>/Ark.git`
+    * or SSH: `git clone git@github.com:<username>/Ark.git`
+* Install the pre-commit hooks: `pre-commit install` (you may need to [install pre-commit](https://pre-commit.com/#install) first)
+* `git submodule update --init --recursive` to clone all the submodules used by the project.
+* Create a branch for your feature: `git switch -c feat/my-awesome-idea`
+* When you're done, push it to your fork and submit a pull request
 
 **It is advised to do this even if you want to contribute to a subproject used by ArkScript, so that you can modify the project and test it directly.**
 

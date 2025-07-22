@@ -43,7 +43,7 @@
           {{ $file := readFile "content/docs/std/_decl.txt" }}
           {{ $array := split $file "\n" }}
           {{ $count := len $array }}
-          <p>A collection of {{ math.Sub $count 1 }} algorithms to help write scripts quickly.</p>
+          <p><a href="/docs/std/">A collection of {{ math.Sub $count 1 }} algorithms</a> to help write scripts quickly.</p>
         </div>
 
         <div class="col-lg-5">

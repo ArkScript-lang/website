@@ -6,7 +6,7 @@ summary: ""
 date: 2025-07-14T19:29:13+02:00
 lastmod: 2025-07-14T19:29:13+02:00
 draft: false
-weight: 1
+weight: 300
 toc: true
 seo:
   title: "" # custom title (optional)
@@ -17,7 +17,7 @@ seo:
 
 {{< highlight_scripts >}}
 
-## Learning ArkScript: the basics
+## The basics
 
 In ArkScript, there are two main rules:
 
