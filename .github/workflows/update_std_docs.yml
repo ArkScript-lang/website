@@ -64,24 +64,23 @@ jobs:
         run: |
           ark_version=$(cd ark-latest; git describe --tags | cut -f1 -d-)
           echo "New ArkScript tag: ${ark_version}"
+
           # run arkdoc
           cd arkdoc
           export ARKDOC_LOGLEVEL=DEBUG
-          python -m arkdoc $ark_version ../std-latest/ ../ark-latest/src/arkreactor/Builtins/ --markdown out --root /std || exit 1
+          python -m arkdoc $ark_version ../std-latest/ --markdown out || exit 1
           cd ..
 
-          # we might want to clean the folder before?
-          # rm -rf content/docs/std/*.md
-          cp arkdoc/out/$ark_version/*.md ./content/docs/std/
+          cp arkdoc/out/$ark_version/* ./content/docs/std/
 
       - name: Commit
         uses: github-actions-x/commit@v2.9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           push-branch: 'master'
-          commit-message: 'Updating ArkScript std documentation'
+          commit-message: 'chore: update stdlib documentation'
           force-add: 'true'
-          files: ./std/
-          name: Alexandre Plateau through GitHub Action
+          files: ./content/docs/std/
+          name: Lex Plt through GitHub Action
           email: lexplt.dev@gmail.com
 

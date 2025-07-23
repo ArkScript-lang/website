@@ -55,7 +55,7 @@ On line 7:12, got `(Symbol) fib'
    6 | (while continue {
    7 |   (print (fib 28))
      |           ^^^
-   8 |   (if (< (/ (random) 32768) 0.1)
+   8 |   (if (= (random 1 10) 1)
    9 |     (set continue false))
 ```
 {{< /details >}}
