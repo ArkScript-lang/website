@@ -82,13 +82,10 @@ jobs:
       - name: Update modules docs
         shell: bash
         run: |
-          BASE=./content/docs/std/modules
-          mkdir -p $BASE
-
           for f in ark-modules/{draft,src}/*/documentation/*.md; do
             module_name=$(basename $(dirname $(dirname $f)))
             if [[ "$(basename f)" == "README.md" ]]; then
-              mv $f "$BASE/${module_name}.md"
+              mv $f "content/docs/std/module_${module_name}.md"
             fi
           done
 

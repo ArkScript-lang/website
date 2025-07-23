@@ -1,5 +1,5 @@
 ---
-title: "Hash"
+title: "Hash module"
 description: ""
 summary: ""
 date: 2025-07-23T14:25:16

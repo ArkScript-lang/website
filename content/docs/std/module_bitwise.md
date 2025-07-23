@@ -1,5 +1,5 @@
 ---
-title: "Bitwise"
+title: "Bitwise module"
 description: "For bitwise operations"
 summary: ""
 date: 2025-07-23T14:25:16

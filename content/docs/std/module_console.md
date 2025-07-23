@@ -1,5 +1,5 @@
 ---
-title: "Console"
+title: "Console module"
 description: ""
 summary: ""
 date: 2025-07-23T14:25:16
