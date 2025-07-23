@@ -198,8 +198,8 @@ window.onload = async () => {
     languages["wren"] = await fetchLanguage("wren", x => x)
 
     // Update the selected default option in /content/tools/benchmark
-    showGraph(30)
     showBarGraph()
+    showGraph(30)
 
     document.getElementById("data-quantity").addEventListener('change', function () {
         if (this.value === 'all') {

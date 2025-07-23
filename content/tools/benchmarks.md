@@ -31,7 +31,9 @@ In a perfect world, the graphs should always go down, or at least not up. An upw
     <option value="30elem" selected> Last 30 results</option>
     <option value="10elem"> Last 10 results</option>
 </select>
-<canvas id="linechart" />
+<div>
+    <canvas id="linechart" />
+</div>
 
 ### Bar charts
 
