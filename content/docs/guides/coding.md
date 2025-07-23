@@ -20,7 +20,7 @@ seo:
 ## Definitions
 
 - *guideline*: general rule applying to ArkScript code, which must be followed when contributing to the standard library and examples of the main repository
-- *standard library (aka lib)*: the files and functions in the `lib` folder
+- *standard library (aka lib)*: the files and functions in the `lib/std` folder of `ArkScript-lang/Ark`
 - *builtins*: functions and constants defined through C++ code, available without having to import anything
 - *module*: C++ plugin for the ArkScript virtual machine, allowing use of C++ code (eg: the SFML)
 
@@ -31,7 +31,27 @@ Indentation matters to us, programmers (but not to the compiler):
 - for C++: 4 spaces,
 - for ArkScript: 2 spaces.
 
-The general rule of thumb is that a closing parenthesis should never be to the left of its matching opening parenthesis. All new lines should be a couple of spaces to the right of the opening parenthesis of the list they're in.
+The general rule of thumb is that a closing parenthesis should never be to the left of its matching opening parenthesis. All new lines should be a couple of spaces to the right of the opening parenthesis of the list they're in. Example:
+
+{{< highlight_arkscript >}}
+# demonstration of the creation of a function
+# we create a constant named fact, and put a function in it
+# taking a single argument, n
+(let fact (fun (n) {
+  (mut a 1)
+  (mut acc 2)
+
+  # then we use a loop (for loops doesn't exist in ArkScript)
+  (while (<= acc n) {
+    (set a (* a acc))
+    # thus we need to increment the accumulator ourselves
+    (set acc (+ 1 acc)) })
+  # the return value
+  a }))
+
+# then we call the function we just created
+(print "Factorial 6 (with loop and acc): " (fact 6))
+{{< /highlight_arkscript >}}
 
 ## ArkScript guidelines
 
@@ -43,7 +63,7 @@ Functions and constants (the ones in the lib and in the builtins) are named foll
 
 - Indent the content of every `begin` block
 - When using begin blocks in if (then, else), they should appear clearly as a block, each opening brace on its own line
-- When using begin blocks in functions (body), they can appear as an independent block (initial `(begin` or `{` on its own line) or not (initial `(begin` or `{` on the same line as the `fun` keyword)
+- When using begin blocks in functions (body), they have to appear on the same line as the `fun` keyword (`(begin` or `{`)
 - Closing braces are stacked together, and never preceded by a newline
     - If the last instruction wasn't a function call but a variable, a space should be put between those two
 
@@ -51,17 +71,17 @@ Complete example:
 
 {{< highlight_arkscript >}}
 (let foo (fun (a) {
-    (if (= a 2)
-        {
-            (print "a = 2")
-            (egg (* 2 a))}
-        {
-            (print "a != 2")
-            (egg 0)})}))
+  (if (= a 2)
+    {
+      (print "a = 2")
+      (egg (* 2 a)) }
+    {
+      (print "a != 2")
+      (egg 0) })}))
 
 (let bar (fun (b c) {
-    (let boop (+ b c))
-    boop })
+  (let boop (+ b c))
+  boop })
 {{< /highlight_arkscript >}}
 
 ### Standard library functions and constants' documentation
@@ -115,6 +135,7 @@ for (std::size_t i = 0, end = container.size(); i < end; i++)
 ```
 * Header-guards should be written using `#ifndef`, `#define` and `#endif`, the define being in MACRO_CASE
 * Functions and methods which can not throw exceptions must be marked `noexcept`
+* Functions and methods returning booleans (or values that have a meaning) should be marked `[[nodiscard]]`
 * In header files, have a blank line between each method / function / structure / constant ; also put blank lines around include blocks
 * In classes, avoid using `this`. Prefix every member variable with `m_`
 * In classes, do not define the methods in the header file, only in the source file (unless they are `inline` or templated)
@@ -123,7 +144,7 @@ for (std::size_t i = 0, end = container.size(); i < end; i++)
 ```cpp
 /**
  * @file Lexer.hpp
- * @author Alexandre Plateau (lexplt.dev@gmail.com)
+ * @author Lex Plateau (lexplt.dev@gmail.com)
  * @brief Tokenize ArkScript code
  * @date 2020-10-27
  *
@@ -141,7 +162,7 @@ Snippet to recapitulate guidelines for headers:
 ```cpp
 /**
  * @file Lexer.hpp
- * @author Alexandre Plateau (lexplt.dev@gmail.com)
+ * @author Lex Plateau (lexplt.dev@gmail.com)
  * @brief Tokenize ArkScript code
  * @date 2020-10-27
  *

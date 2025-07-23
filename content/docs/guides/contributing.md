@@ -23,8 +23,9 @@ The project is organised in multiple repositories for us to be able to work on a
     - [The standard library](https://github.com/ArkScript-lang/std)
     - [The C++ modules, part of the standard library](https://github.com/ArkScript-lang/modules)
 - [This website](https://github.com/ArkScript-lang/website)
+- [The online playground](https://github.com/ArkScript-lang/playground)
 - [The benchmarks](https://github.com/ArkScript-lang/benchmarks)
-- [The VSC extension (coloration)](https://github.com/ArkScript-lang/ArkScript-VSC)
+- [The syntaxic coloration plugins](https://github.com/ArkScript-lang/syntax-highlighting)
 - [A documentation tool](https://github.com/ArkScript-lang/ArkDoc) for ArkScript code
 
 ## Getting started
@@ -56,7 +57,7 @@ If you are modifying a subproject, `cd` in it and change its git remote to point
 
 - `git clone https://github.com/ArkScript-lang/std.git`
 
-You want to add a new function to the standard library, or a module? In the first case, you will need to find in which category it should go (see [the standard library documentation](/docs/std/)) ; in the second case you will have to create a new `<File>.ark` in the project.
+You want to add a new function to the standard library, or even a new collection of functions? In the first case, you will need to find in which category it should go (see [the standard library documentation](/docs/std/)) ; in the second case you will have to create a new `<File>.ark` in the project.
 
 Once your contribution is ready, add at least two tests for it: one checking that it works, another for a potential edge case. You will want to add it under `tests/<category>-tests.ark`.
 

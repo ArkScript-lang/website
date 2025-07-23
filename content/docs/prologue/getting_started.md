@@ -1,6 +1,6 @@
 ---
 title: "Getting started"
-slug: "starting_guide"
+slug: "getting_started"
 description: "Learn what ArkScript is, how to install it, and how to get started with it"
 date: 2025-07-20T19:30:16+02:00
 lastmod: 2025-07-20T19:30:16+02:00
@@ -68,9 +68,14 @@ Then you can experiment with either:
 
 - [try the online playground](https://playground.arkscript-lang.dev), so that you don't have to install anything
 - [use Docker](/docs/prologue/building#using-docker), to avoid clutering your computer with dependencies and compilers,
-- [install it on your machine](/docs/prologue/building#installing-from-a-release)
+- or [install it on your machine](/docs/prologue/building#installing-from-a-release) via one of our releases
 
 ## I want to contribute!
 
 Everyone is welcome to contribute to the project, as long as you are respectful of others. Check out our [contribution guidelines](/docs/guides/contributing)!
 
+## Using ArkScript in your company
+
+I (Lex Plateau) am working pretty much alone on this project, and I try to do my best to leave it as bug free and as performant as possible. However, this is a side project for which I'm currently **not paid** to work on, thus I can't fix every bug or address every feature request in a timely manner.
+
+Please reach out either by email (lexplt.dev@gmail.com) or via a [discussion](https://github.com/orgs/ArkScript-lang/discussions) before using the language in a company project, so that we can set up a support contract. If you don't want to set up a contract, your issues and support requests won't be prioritized (and possibly left unanswered).

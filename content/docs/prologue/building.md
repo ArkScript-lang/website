@@ -29,13 +29,15 @@ The environment variable should direct to a folder with the folder `lib/` inside
 
 ### Windows
 
-Download the `windows-msvc-{version}.zip` from the [releases](https://github.com/ArkScript-lang/Ark/releases/latest), and unpack it wherever you want, as long as you remember where (or add the location to an environment variable as specified in the setup section, to avoid using `--lib <path>`). To use the command `arkscript` from everywhere, you will need to [add it to your PATH](https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)) add it to your PATH] environment variable.
+Download the `windows-msvc-{version}.zip` from the [releases](https://github.com/ArkScript-lang/Ark/releases/latest), and unpack it wherever you want, as long as you remember where (or add the location to an environment variable as specified in the setup section, to avoid using `--lib <path>`). To use the command `arkscript` from everywhere, you will need to [add it to your PATH](https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)) environment variable.
 
 An alternative is to download `windows-installer.exe`, an InnoSetup installer for ArkScript. It will install it as well as the standard library (modules included) in your `C:/Program Files` folder, and create the appropriate `ARKSCRIPT_PATH` environment variable.
 
 ### Linux and derivatives
 
-Download the `linux-{compiler}.zip` from the [releases](https://github.com/ArkScript-lang/Ark/releases/latest). You can put the binaries and the lib anywhere you want, as long as you add it to your path to execute ArkScript without giving the complete path (in your `.bashrc` for example). You can also create an environment variable as stated in the setup above.
+Download the `linux-{compiler}.zip` from the [releases](https://github.com/ArkScript-lang/Ark/releases/latest). You can put the binaries and the lib anywhere you want, as long as you add it to your path to execute ArkScript without using the absolute path (in your `.bashrc` for example).
+
+You got it.
 
 ### Using Docker
 
@@ -46,7 +48,9 @@ docker pull arkscript/stable:latest
 docker pull arkscript/nightly:latest
 
 # Assuming there is a myscript.ark in the current folder
-docker run --rm -it -v $(pwd):/tmp:ro arkscript/stable:latest /tmp/myscript.ark
+docker run --rm -it \
+  -v $(pwd):/tmp:ro \
+  arkscript/stable:latest /tmp/myscript.ark
 ```
 
 ## From source
@@ -59,7 +63,7 @@ cd Ark
 git submodule update --init --recursive
 ```
 
-If you want a specific revision or tag, you can do this right before initializing and updating the git submodules:
+If you need a specific revision or tag, you can do this right before initializing and updating the git submodules:
 
 ```shell
 # for a specific revision
@@ -75,6 +79,7 @@ Different CMake switches are available to customize the build:
 - `-DARK_BUILD_MODULES` to build the modules, defaults to Off
 - `-DARK_NO_STDLIB` to avoid the installation of the ArkScript standard library
 - `-DARK_SANITIZERS` to enable ASAN and UBSAN
+- `-DARK_UNITY_BUILD` to enable unity building (generally faster as it merges source files together), defaults to Off
 - `-DARK_TESTS` to build the unit tests (separate target named `unittests`)
     - `-DARK_COVERAGE` to enable coverage analysis ; only works in conjunction with `-DARK_TESTS`, enables the `coverage` target: `cmake --build build --target coverage`
 
@@ -96,16 +101,17 @@ cmake --install build --config Release  # might need administrator rights
 ### Building on Linux and derivates
 
 Requirements:
-- 64 bits capable OS
+- 64 bits OS
 - g++ 14+ or clang 16+
 - cmake >= 3.15
 
 Commands:
 
 ```shell
-~/ark$ cmake . -Bbuild -DARK_BUILD_EXE=On
-~/ark$ cmake --build build --config Release
-~/ark$ sudo cmake --install build --config Release  # needs administrator rights to install under /usr/bin
+cmake . -Bbuild -DARK_BUILD_EXE=On
+cmake --build build --config Release
+# needs administrator rights to install under /usr/bin
+sudo cmake --install build --config Release
 ```
 
 ### Building on MacOS
@@ -126,6 +132,33 @@ Commands:
 ~/ark$ cmake . -Bbuild -DARK_BUILD_EXE=On -DCMAKE_CXX_COMPILER=/usr/local/bin/g++-14
 ~/ark$ cmake --build build --config Release
 ~/ark$ cmake --install build --config Release  # might need administrator rights
+```
+
+### Building for the web using emscripten
+
+First, install the [emsdk](https://emscripten.org/docs/getting_started/downloads.html):
+
+```shell
+# Get the emsdk repo
+git clone https://github.com/emscripten-core/emsdk.git
+# Enter that directory
+cd emsdk
+# Download and install the SDK tools. (ArkScript was tested with 4.0.10,
+# latest *should* work too)
+./emsdk install 4.0.10
+# Make the SDK "active" for the current user. (writes .emscripten file)
+./emsdk activate latest
+# Activate PATH and other environment variables in the current terminal
+source ./emsdk_env.sh
+```
+
+Then you can build ArkScript using Emscripten CMake wrapper, `emcmake`.
+
+If you need a `.js` output, you pass `-DARK_JS_ONLY=On`, otherwise a `.wasm` will be generated under `public/` by default.
+
+```shell
+emcmake cmake -B build_emscripten
+cmake --build build_emscripten -j 8
 ```
 
 ### Running the tests
