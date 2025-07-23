@@ -3,10 +3,10 @@ title: "Range"
 slug: "range"
 description: ""
 summary: ""
-date: 2025-07-23T14:25:16
-lastmod: 2025-07-23T14:25:16
+date: 2025-07-23T15:15:54
+lastmod: 2025-07-23T15:15:54
 draft: false
-weight: 400
+weight: 410
 toc: true
 seo:
   title: "" # custom title (optional)

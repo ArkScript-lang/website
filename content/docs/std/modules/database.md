@@ -5,8 +5,13 @@ summary: ""
 date: 2025-07-23T14:25:16
 lastmod: 2025-07-23T14:25:16
 draft: false
-weight: 400
+weight: 410
 toc: true
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
 ---
 
 {{< highlight_scripts >}}
