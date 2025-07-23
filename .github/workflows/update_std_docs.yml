@@ -29,26 +29,32 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Checkout ArkDoc
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: ArkScript-lang/ArkDoc
           path: './arkdoc'
           ref: 'master'
 
       - name: Checkout std
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: ArkScript-lang/std
           path: './std-latest'
 
       - name: Checkout ArkScript
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: ArkScript-lang/Ark
           path: './ark-latest'
           ref: 'dev'
           # so that we can fetch tags
           fetch-depth: 0
+
+      - name: Checkout modules
+        uses: actions/checkout@v4
+        with:
+          repository: ArkScript-lang/modules
+          path: './ark-modules'
 
       - uses: actions/setup-python@v2
         with:
@@ -72,6 +78,19 @@ jobs:
           cd ..
 
           cp arkdoc/out/$ark_version/* ./content/docs/std/
+
+      - name: Update modules docs
+        shell: bash
+        run: |
+          BASE=./content/docs/std/modules
+          mkdir -p $BASE
+
+          for f in ark-modules/{draft,src}/*/documentation/*.md; do
+            module_name=$(basename $(dirname $(dirname $f)))
+            if [[ "$(basename f)" == "README.md" ]]; then
+              mv $f "$BASE/${module_name}.md"
+            fi
+          done
 
       - name: Commit
         uses: github-actions-x/commit@v2.9

@@ -22,7 +22,7 @@ Rainbow.extend('arkscript', [
     },
     {
         name: 'string',
-        pattern: /".+?"/g
+        pattern: /"([^"\\]|\\(.|\n))*\"/g
     },
     {
         matches: {
