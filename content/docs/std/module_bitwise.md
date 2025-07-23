@@ -2,8 +2,8 @@
 title: "Bitwise module"
 description: "For bitwise operations"
 summary: ""
-date: 2025-07-23T14:25:16
-lastmod: 2025-07-23T14:25:16
+date: 2025-07-23T14:25:16+02:00
+lastmod: 2025-07-23T14:25:16+02:00
 draft: false
 weight: 410
 toc: true

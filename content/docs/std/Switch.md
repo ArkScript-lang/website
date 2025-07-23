@@ -3,8 +3,8 @@ title: "Switch"
 slug: "switch"
 description: ""
 summary: ""
-date: 2025-07-23T15:15:54
-lastmod: 2025-07-23T15:15:54
+date: 2025-07-23T15:50:56+02:00
+lastmod: 2025-07-23T15:50:56+02:00
 draft: false
 weight: 410
 toc: true
