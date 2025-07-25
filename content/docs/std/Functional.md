@@ -3,10 +3,10 @@ title: "Functional"
 slug: "functional"
 description: ""
 summary: ""
-date: 2025-07-23T15:50:56+02:00
-lastmod: 2025-07-23T15:50:56+02:00
+date: 2025-07-25T17:09:09
+lastmod: 2025-07-25T17:09:09
 draft: false
-weight: 410
+weight: 999
 toc: true
 seo:
   title: "" # custom title (optional)
