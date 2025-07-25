@@ -24,12 +24,12 @@ cmake_minimum_required(VERSION 3.15)
 
 project(IntegrateArk)
 
-# setting flags to build only what we need in ArkScript
-#  - no executable
-#  - no modules (console, http, random...)
-#  - disallowing access to the sys:exec command
-set(ARK_BUILD_EXE     OFF)
-set(ARK_BUILD_MODULES OFF)
+# By default, ArkScript won't build:
+# - the executable interpreter,
+# - the modules,
+# - the tests,
+# - or the benchmarks.
+# However, `sys:exec` is available, but we can disable it at build time
 set(ARK_ENABLE_SYSTEM OFF)
 
 add_subdirectory(ArkScript)
@@ -53,31 +53,29 @@ An example is often worth a thousands words:
 
 int main()
 {
-    // A state can be shared by multiple virtual machines (note that they will NEVER modify it)
-    // leave constructor empty to select the default standard library (loaded from an environment variable $ARKSCRIPT_PATH/lib)
+    // A state can be shared by multiple virtual machines
+    // (note that they will NEVER modify it).
+    // Leave the constructor empty to select the default standard
+    // library (loaded from an environment variable $ARKSCRIPT_PATH/lib)
     Ark::State state;
 
-    // Will automatically compile the file if needed (if not, will take it from the ark cache)
+    // Will automatically compile the string
     state.doString("(let foo (fun (x y) (+ x y 2)))");
 
     Ark::VM vm(state);
     vm.run();
 
-    /*
-        If you just want to run a precompiled bytecode file:
+    // Run an ArkScript function from C++ code and retrieve the result:
+    auto value = vm.call("foo", 5, 6.0);
+    std::cout << value << "\n";  // prints 13
 
+    // If you just want to run a precompiled bytecode file:
+    {
         Ark::State state;
         state.feed("mybytecode.arkc");
         Ark::VM vm(state);
         vm.run();
-    */
-
-    /*
-        To run an ArkScript function from C++ code and retrieve the result:
-        we will say the code is (let foo (fun (x y) (+ x y 2)))
-    */
-    auto value = vm.call("foo", 5, 6.0);
-    std::cout << value << "\n";  // prints 13
+    }
 
     return 0;
 }
@@ -182,7 +180,7 @@ int main()
         Ark::Value v = Ark::Value(Ark::UserType(&getBreakfast()));
 
         // register the unique control functions block for this usertype
-        // this cfs block can be shared between multiple usertype to reduce memory usage
+        // this cfs block can be shared between multiple usertype to reduce allocations
         v.usertypeRef().setControlFuncs(get_cfs());
 
         return v;

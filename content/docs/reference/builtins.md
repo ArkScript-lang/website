@@ -29,7 +29,8 @@ Ark::Value myBuiltin(std::vector<Ark::Value>& parameters, Ark::VM* vm)
 }
 ```
 
-Inside the VM, they are all prefixed by `builtin__`, and then remapped in their corresponding category in the standard library. Eg `builtin__list:sort` will have a definition inside `std/List.ark` as `(let sort (fun (_L) (builtin__list:sort _L)))`.
+Inside the VM, they are all prefixed by `builtin__`, and then remapped in their corresponding category in the standard library.  
+Eg `builtin__list:sort` will have a definition inside `std/List.ark` as `(let sort (fun (_L) (builtin__list:sort _L)))`.
 
 See [the tutorial on embedding](/docs/tutorials/embedding) for more details on how to use them.
 
@@ -51,16 +52,5 @@ We currently have a few categories for our builtins:
 3. Add it to the builtins list in `src/arkreactor/Builtins/Builtins.cpp`, as follows: `{ "builtin__<name>", Value(category::functionName) }`
 4. The implementation will have to be done in `src/arkreactor/Builtins/{category}.cpp`
 5. Add a proxy inside `lib/std/{category}.ark` as `(let <name> (fun (args...) (builtin__<name> args...)))`
-5. Don't forget to document the new function **in the standard library**, using the following snippet:
-
-```
-# @brief Reverse a given list and return a new one
-# @details The original list is not modified
-# @param list the list to reverse
-# =begin
-# (list:reverse [1 2 3])  # [3 2 1]
-# =end
-# @author https://github.com/SuperFola
-(let reverse (fun (_L) (builtin__list:reverse _L)))
-```
+5. Don't forget to document the new function **in the standard library**, using [ArkDoc](/docs/reference/arkdoc)
 

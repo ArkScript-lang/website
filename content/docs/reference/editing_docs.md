@@ -17,6 +17,22 @@ seo:
 
 This page covers how you should edit pages on this website.
 
+## Setup
+
+Fork [the repository](https://github.com/ArkScript-lang/website/fork), then:
+
+```shell
+git clone https://github.com/USERNAME/website.git
+cd website
+npm i
+```
+
+You will need to install [Hugo](https://gohugo.io), version 0.145.0, to be able to run the static site generator and see your changes:
+
+```shell
+npm run dev  # launches a server at http://localhost:1313
+```
+
 ## Coloring ArkScript code
 
 We can not use the \`\`\` syntax, as [Hugo](https://gohugo.io/) relies on [Chroma](https://github.com/alecthomas/chroma), and we would have to patch Chroma, then wait for Hugo to pickup the update.

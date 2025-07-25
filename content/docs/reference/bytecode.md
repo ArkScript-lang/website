@@ -15,7 +15,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-You will find ArkScript bytecode specification on page, if you are interested in implementing your own virtual machine, or just want to learn more.
+You will find ArkScript bytecode specification on page, if you are interested in implementing your own virtual machine for ArkScript, or just want to learn more.
 
 ## ArkScript bytecode headers
 
@@ -71,10 +71,12 @@ You will find ArkScript bytecode specification on page, if you are interested in
 | Instruction count | 2 bytes | Big endian layout, can be `0` |
 | Instruction | 4 bytes | *See below* |
 
-*Standard Instructions* with a single immediate arguments follow this layout: `iiiiiiii pppppppp dddddddd dddddddd`.
+*Standard Instructions* with a single immediate arguments follow this layout:  
+`iiiiiiii pppppppp dddddddd dddddddd`.
 - `p` for padding (ignored), `i` for the instruction, `code d` for the immediate argument.
 
-*Super Instructions*, with two immediate arguments, follow this layout: `iiiiiiii ssssssss ssssxxxx xxxxxxxx`.
+*Super Instructions*, with two immediate arguments, follow this layout:  
+`iiiiiiii ssssssss ssssxxxx xxxxxxxx`.
 - `s` for the second argument (on 12 bits), `x` for the primary argument (on 12 bits as well).
 
 Using this representation, computing the primary argument is as easy as `arg_16_bits & 0x0fff`, with `arg_16_bits` the primary argument for instructions with a single argument.
@@ -94,19 +96,17 @@ The other builtins are listed in [src/arkreactor/Builtins/Builtins.cpp](https://
 ## The stack and the locals
 
 The stack is used for passing temporary values around, for example the arguments of a function. On the other end the locals are there to store long term values, the variables.
-They are stored in a LIFO stack and should be referenced by there identifier (index in the symbols table, also used by instructions like `LOAD_SYMBOL`).
+They are stored in a LIFO stack and should be referenced by their identifier (index in the symbols table, also used by instructions like `LOAD_SYMBOL`).
 
-The locals are backed by a `std::array<ScopeView::pair_t, ScopeStackSize>`, and accessed through `ScopeView`, which allows locals to be contiguous, (instead of having a `std::vector<std::vector<pair_t>>`]). This allows us to have a specialized instruction `LOAD_SYMBOL_BY_INDEX` to load a local by its distance to the top of the locals stack (0 means the last local, 1 means the previous one, 2 the penultimate...).
+The locals are backed by a `std::array<ScopeView::pair_t, ScopeStackSize>`, and accessed through `ScopeView`, which allows locals to be contiguous, (instead of having a `std::vector<std::vector<pair_t>>`). This allows us to have a specialized instruction `LOAD_SYMBOL_BY_INDEX` to load a local by its distance to the top of the locals stack (0 means the last local, 1 means the previous one, 2 the penultimate...).
 
 ![Scopes](/images/scopes.png)
 
 ## Function calling convention
 
-If we want to call a function `foo`, eg by writing `(foo 1 2 3)`, the arguments will be pushed in reverse order on the stack.
+If we want to call a function `foo`, eg by writing `(foo 1 2 3)`, the arguments will be pushed in reverse order on the stack, because functions load their arguments in the order they are defined.
 
-First, push 3, then 2, then 1.
-
-In the end, our stack looks like this:
+In the expression `(foo 1 2 3)`, we would first push 3, then 2, and finally 1. In the end, our stack looks like this:
 
 ```
 1   <-- Top of the stack
@@ -115,7 +115,7 @@ In the end, our stack looks like this:
 ... <-- Bottom of the stack
 ```
 
-Hence, we can retrieve the arguments in the correct order. However, this has the effect of inverting the order of evaluation of the arguments, if we pass expressions to our function: `(foo (+ 1 2) (* 3 4) (- 5 6))`, the expression `(+ 1 2)` will be evaluated **last**, while `(- 5 6)` will be evaluated first.
+Hence, we can retrieve the arguments in the correct order. However, this has the effect of inverting the order of evaluation of the arguments, if we pass expressions to our function: `(foo (+ 1 2) (* 3 4) (- 5 6))`, the expression `(+ 1 2)` will be evaluated **last**, while `(- 5 6)` will be evaluated **first**.
 
 ## Instructions
 

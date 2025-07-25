@@ -8,9 +8,11 @@ draft: false
 weight: 503
 ---
 
+This page guides you through enabling and running ArkScript test suites, which is important when developping features for the language, to ensure it still works as intended.
+
 ## Running the test suites
 
-Build the tests using `-DARK_TESTS=On`.
+When builing ArkScript, you can build the tests using the CMake configuration flag `-DARK_TESTS=On`. It will generate an additional target `unittests`.
 
 Run the `unittests` target to:
 - run various C++ unit tests,
@@ -19,7 +21,7 @@ Run the `unittests` target to:
 - run formatting tests,
 - run language tests (`tests/unittests/resources/LangSuite/`)
 
-### Adding new tests
+### Understanding the different test suites
 
 The easiest tests to add are snapshot tests, in `tests/unittests/resources/...Suite/`. They expect an input `.ark` file and a desired output file (`.expected` or `.json` depending on the suite).
 
@@ -36,10 +38,12 @@ The easiest tests to add are snapshot tests, in `tests/unittests/resources/...Su
 - **ParserSuite** tests the parser, along with parsing specific errors
   - **failure** for the parsing failures
   - **success** for the successful parsing, output is the pretty printed AST
+- **RosettaSuite** tests the Rosetta Code solutions submitted for ArkScript
+- **TypeCheckerSuite** tests the runtime typechecker and how it reports errors
 
 ### Coverage reports
 
-It is **recommended** to add `-DARK_COVERAGE=On` to generate coverage reports, this way you can check if your feature has sufficient test coverage instead of waiting on the CI.
+It is *recommended* to add `-DARK_COVERAGE=On` to generate coverage reports, this way you can check if your feature has sufficient test coverage instead of waiting on the CI.
 
 Generate coverage reports with `cmake --build build --target coverage`, it will generate HTML files under `build/coverage/` (main file is `index.html`).
 

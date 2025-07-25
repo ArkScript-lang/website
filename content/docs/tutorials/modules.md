@@ -33,7 +33,7 @@ Create a `Main.cpp` file in `module_name/src/` with the following content:
 ```cpp
 #include <Ark/Module.hpp>
 
-Ark::Value foo(std::vector<Ark::Value>& n [[maybe_unused]], Ark::VM* vm [[maybe_unused]])
+Ark::Value foo(std::vector<Ark::Value>& n, Ark::VM* vm)
 {
     return Ark::Value(1);
 }
@@ -54,7 +54,7 @@ ARK_API Ark::mapping* getFunctionsMapping()
 Let's walk through this line by line:
 
 - `#include <Ark/Module.hpp>` includes basic files from ArkScript to be able to use the VM, instantiates values, and generate the entry point of the module
-- `Ark::Value foo(std::vector<Ark::Value>& n [[maybe_unused]], Ark::VM* vm [[maybe_unused]]) {...}` defines a function for our module, taking an argument list from the VM, and a non-owning pointer to the VM
+- `Ark::Value foo(std::vector<Ark::Value>& n, Ark::VM* vm) {...}` defines a function for our module, taking an argument list from the VM, and a non-owning pointer to the VM
 - `ARK_API Ark::mapping* getFunctionsMapping()` declares the entrypoint of our module
 - `static Ark::mapping map[] = {...};` creates a mapping of elements to hold the name -> function pointer association, defining the module
 - closing braces are stacked together, and never preceded by a newline
@@ -116,6 +116,6 @@ There is a lot of things to unpack here.
 
 First, we have a function returning a reference to a static object, which will get initialized only once, even if we call the function a thousand times. Great, we solved the lifetime problem!
 
-Then, we have a `get_cfs_window` functions. *cfs* is the abbreviation for *control functions` in ArkScript, they are designed as a shared block of function pointers to handle an object in ArkScript (how to display it on the screen, how to delete it once the memory needs to be fred...)
+Then, we have a `get_cfs_window` functions. *cfs* is the abbreviation for *control functions* in ArkScript, they are designed as a shared block of function pointers to handle an object in ArkScript (how to display it on the screen, how to delete it once the memory needs to be fred...)
 
 Finally, we have our C++ function which will be bind to ArkScript, creating/receiving the window handle and returning an UserType with the control functions block.

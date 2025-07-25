@@ -17,7 +17,8 @@ seo:
 
 ## Global architecture
 
-The `src/` folder is divided in two subfolders:
+The `src/` folder is divided in three subfolders:
+- `arkemscripten/`, the source for the Emscripten build, using the lib ArkReactor built by the project
 - `arkreactor/`, the compiler and the runtime
 - `arkscript/`, the CLI and the REPL
 
@@ -53,21 +54,19 @@ It is located under `include/CLI/REPL/`. Basically it's an abstraction level ove
 
 It lies under `include/Ark/VM/` and all the folders under it.
 
-TODO: check that the VM still uses shared_ptr for the closures scopes ; also add a word about the locals handling since it changed, to use a single backing array?
-
 - it handles the Closures which capture whole Scopes through `shared_ptr`. Closures are functions with a saved scope, so they can retain information over multiple calls
 - the Plugin loader is a generic DLL / SO / DYNLIB loader, used by the virtual machine to load ArkScript modules (`.arkm` files)
-- the Scope is how we store our mapping `variable id => value`, heavily optimized for our needs
+- the Scope is how we store our mapping `variable id => value`, heavily optimized for our needs. It is backed by a single `std::array<Value, ScopeStackSize>`, so that all scopes are contiguous in memory
 - the State is:
    - reading bytecode
-   - decoding it
-   - filling multiple tables with it (symbol table, value table, code pages), which are then used by the virtual machine. It allows us to load a single ArkScript bytecode file and use it in multiple virtual machines.
-   - the State retains tables which are **never altered** by the virtual machines
-   - it can also compile ArkScript code and files on the go, and run them right away
+   - decoding it (via the BytecodeReader)
+   - filling multiple tables with it (symbol table, value table, code pages and instruction locations table), which are then used by the virtual machine. It allows us to load a single ArkScript bytecode file and use it in multiple virtual machines.
+   - the State holds tables which are **never altered** by the virtual machines
+   - it can also compile ArkScript code and files on the go (by calling the Welder, assembling all the compiler passes), and run them right away
 - the UserType is how we store C++ types unknown to our virtual machine, to use them in ArkScript code
 - the Value is a very big proxy class to a `variant` to store our types (std::string, double, Closure, UserType and more), thus **it must stay small** because it's the primitive type of the virtual machine and the language. It provides proxy functions to the underlying `variant`.
 - the virtual machine handles:
-   - the stack, a single `array<Value, 8192>` (the stack size is a constexpr value, thus it can be changed only at compile time)
+   - the stack, a single `array<Value, VMStackSize>` (the stack size is a constexpr value, thus it can be changed only at compile time)
    - a reference to the State, to read the tables and code segments
    - a `void*` user_data, retrievable by modules and C++ user functions
    - the scopes, and their destruction

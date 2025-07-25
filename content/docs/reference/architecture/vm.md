@@ -4,7 +4,7 @@ slug: "vm"
 description: ""
 summary: ""
 date: 2025-07-14T19:29:13+02:00
-lastmod: 2025-07-14T19:29:13+02:00
+lastmod: 2025-07-25T18:56:13+02:00
 draft: false
 weight: 512
 toc: true
@@ -17,9 +17,9 @@ seo:
 
 ## Constructing a VM
 
-This is done by calling the constructor of the VM, passing in a reference to an `Ark::State`. It won't be modified, it was made this way to be able to share a single state between multiple independent virtual machines.
+This is done by calling the constructor of the VM, with a reference to an `Ark::State`. It won't be modified, it was made this way to be able to share a single state between multiple independent virtual machines.
 
-## Running the VM (and consequently running ArkScript bytecode)
+## Running the VM (and running ArkScript bytecode)
 
 ### Initializing the VM
 

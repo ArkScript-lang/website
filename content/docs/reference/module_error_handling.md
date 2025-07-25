@@ -48,7 +48,7 @@ if (n[0].valueType() != ValueType::String)
     throw Ark::TypeError("console:color need a single argument, a string representing the color to apply");
 ```
 
-In case of an UserType, two checks need to be done, in this particular order (we are using boolean short circuit on the or operator):
+In case of an UserType, two checks need to be done, in this particular order (we are using boolean short circuit on the `or` operator):
 
 ```cpp
 if (n[0].valueType() != ValueType::User || !n[0].usertypeRef().is<Wanted C++ Type>())
