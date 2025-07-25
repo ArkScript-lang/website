@@ -84,6 +84,20 @@ Complete example:
   boop })
 {{< /highlight_arkscript >}}
 
+Use ArkScript formatter to enforce those guidelines:
+
+```shell
+# will print the formatted script, without updating it
+arkscript -f script.ark --dry-run
+
+# returns exit code 0 if the script is correctly formatted,
+# exit code 1 otherwise (needs to be formatted)
+arkscript -f script.ark --check
+
+# format the file and write the changes to the file
+arkscript -f script.ark
+```
+
 ### Standard library functions and constants' documentation
 
 Each function and constant defined in the standard library should be documented, using [ArkDoc](/docs/guides/arkdoc) format.

@@ -317,6 +317,7 @@
       "arkscript-400-documentation",
       "arkscript-bytecode-headers",
       "arkscript-guidelines",
+      "arkscript-v400-documentation",
       "asinh",
       "ast-lowerer",
       "ast-optimizer",
