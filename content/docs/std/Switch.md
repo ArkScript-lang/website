@@ -3,10 +3,10 @@ title: "Switch"
 slug: "switch"
 description: ""
 summary: ""
-date: 2025-07-25T17:09:09
-lastmod: 2025-07-25T17:09:09
+date: 2025-07-28T18:57:27+02:00
+lastmod: 2025-07-28T18:57:27+02:00
 draft: false
-weight: 999
+weight: 410
 toc: true
 seo:
   title: "" # custom title (optional)

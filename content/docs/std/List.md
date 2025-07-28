@@ -3,10 +3,10 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2025-07-25T17:09:09
-lastmod: 2025-07-25T17:09:09
+date: 2025-07-28T18:57:27+02:00
+lastmod: 2025-07-28T18:57:27+02:00
 draft: false
-weight: 999
+weight: 410
 toc: true
 seo:
   title: "" # custom title (optional)
@@ -110,6 +110,23 @@ Generate a List of n copies of an element
 (list:fill 4 nil)  # [nil nil nil nil]
 {{< /highlight_arkscript >}}
 
+## size
+
+---
+`(let size (fun (_L) (...)))`
+Function to call the `len` operator on a list
+
+#### Parameter
+- `_L`: list to get the size of
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(print (list:size [1 2 3 4]))  # 4
+{{< /highlight_arkscript >}}
+
 ## setAt
 
 ---
@@ -136,7 +153,7 @@ Modify a given list and return a new one
 `(let forEach (fun (_L _func) (...)))`
 Iterate over a given list and run a given function on every element.
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameters
 - `_L`: the list to iterate over
 - `_func`: the function to call on each element
@@ -159,7 +176,7 @@ Iterate over a given list and run a given function on every element.
 `(let product (fun (_L) (...)))`
 Iterate over a given list and multiply all the elements with the others.
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameter
 - `_L`: the list to iterate over
 
@@ -179,7 +196,7 @@ Iterate over a given list and multiply all the elements with the others.
 `(let sum (fun (_L) (...)))`
 Iterate over a given list and sum all the elements.
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameter
 - `_L`: the list to iterate over
 
@@ -193,13 +210,49 @@ Iterate over a given list and sum all the elements.
 (let p (sum collection))  # => 20
 {{< /highlight_arkscript >}}
 
+## min
+
+---
+`(let min (fun (_L) (...)))`
+Find the minimum in a list of numbers
+
+**Note**: The original list is not modified.
+#### Parameter
+- `_L`: list of numbers
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(let value (list:min [0 1 2 3 5 8]))  # 0
+{{< /highlight_arkscript >}}
+
+## max
+
+---
+`(let max (fun (_L) (...)))`
+Find the maximum in a list of numbers
+
+**Note**: The original list is not modified.
+#### Parameter
+- `_L`: list of numbers
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(let value (list:min [0 1 2 3 5 8]))  # 8
+{{< /highlight_arkscript >}}
+
 ## drop
 
 ---
 `(let drop (fun (_L _n) (...)))`
 Drop the first n elements of a list
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameters
 - `_L`: the list to work on
 - `_n`: the number of elements to drop
@@ -219,7 +272,7 @@ Drop the first n elements of a list
 `(let dropWhile (fun (_L _f) (...)))`
 Drop the first elements of a list, while they match a given predicate
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the predicate
@@ -239,7 +292,7 @@ Drop the first elements of a list, while they match a given predicate
 `(let filter (fun (_L _f) (...)))`
 Keep elements in a given list if they follow a predicate
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the predicate
@@ -259,7 +312,7 @@ Keep elements in a given list if they follow a predicate
 `(let map (fun (_L _f) (...)))`
 Apply a given function to each element of a list
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the function to apply to each element
@@ -278,7 +331,7 @@ Apply a given function to each element of a list
 `(let reduce (fun (_L _f) (...)))`
 Apply a function to the elements of a list to reduce it
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the function to apply
@@ -298,7 +351,7 @@ Apply a function to the elements of a list to reduce it
 `(let flatten (fun (_L) (...)))`
 Flatten a list
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameter
 - `_L`: the list to work on
 
@@ -317,7 +370,7 @@ Flatten a list
 `(let flatMap (fun (_L _f) (...)))`
 Apply a given function to each element of a list and then flatten it
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the function to apply to each element
@@ -337,7 +390,7 @@ Apply a given function to each element of a list and then flatten it
 `(let take (fun (_L _n) (...)))`
 Take the first n elements of
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameters
 - `_L`: the list to work on
 - `_n`: the number of elements to take
@@ -356,7 +409,7 @@ Take the first n elements of
 `(let takeWhile (fun (_L _f) (...)))`
 Take the first n elements of a list, given a predicate
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the predicate
@@ -375,7 +428,7 @@ Take the first n elements of a list, given a predicate
 `(let partition (fun (_L _f) (...)))`
 Partition a list in two, given a predicate
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the predicate, accepting the value and its index
@@ -395,7 +448,7 @@ Partition a list in two, given a predicate
 `(let unzip (fun (_L) (...)))`
 Unzip a list of [[a b] [c d]...] into [[a c ...] [b d ...]]
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameter
 - `_L`: the list to work on
 
@@ -414,7 +467,7 @@ Unzip a list of [[a b] [c d]...] into [[a c ...] [b d ...]]
 `(let zip (fun (_a _b) (...)))`
 Zip two lists into one: [1 2 3 4] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [4 8]]
 
-**Note**: The original lists are left unmodified.
+**Note**: The original lists are not modified.
 #### Parameters
 - `_a`: the first list to work on
 - `_b`: the second list to work on
@@ -435,7 +488,7 @@ Zip two lists into one: [1 2 3 4] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [4 
 `(let zipWithIndex (fun (_L) (...)))`
 Zip a list elements with their index. [5 6 7 8] will give [[0 5] [1 6] [2 7] [3 8]]
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameter
 - `_L`: the list to iterate over
 
@@ -454,7 +507,7 @@ Zip a list elements with their index. [5 6 7 8] will give [[0 5] [1 6] [2 7] [3 
 `(let foldLeft (fun (_L _init _f) (...)))`
 Fold a given list, starting from the left side
 
-**Note**: The original list is left unmodified.
+**Note**: The original list is not modified.
 #### Parameters
 - `_L`: the list to work on
 - `_init`: an init value
@@ -592,7 +645,7 @@ Chunk a list in sub-lists of size n
 `(let insert (fun (_L _index _value) (...)))`
 Insert an element (or expand a list) at a given position inside a list
 
-**Note**: Original list is left unmodified
+**Note**: The original list is not modified
 #### Parameters
 - `_L`: list to insert element(s) in
 - `_index`: where to insert

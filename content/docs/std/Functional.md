@@ -3,10 +3,10 @@ title: "Functional"
 slug: "functional"
 description: ""
 summary: ""
-date: 2025-07-25T17:09:09
-lastmod: 2025-07-25T17:09:09
+date: 2025-07-28T18:57:27+02:00
+lastmod: 2025-07-28T18:57:27+02:00
 draft: false
-weight: 999
+weight: 410
 toc: true
 seo:
   title: "" # custom title (optional)
@@ -75,13 +75,12 @@ Take a value as its argument and return a function taking 2 arguments which will
 ## flip
 
 ---
-`(let flip (fun (_f _a) (...)))`
+`(let flip (fun (_f) (...)))`
 Flip the arguments of a function
 
-**Note**: Returns a function taking 1 argument: the second argument of the function to flip
-#### Parameters
+**Note**: Returns a function taking 2 arguments a and b, calling (f b a)
+#### Parameter
 - `_f`: the function
-- `_a`: the first argument
 
 #### Author
 [@rstefanic](https://github.com/rstefanic)
@@ -89,7 +88,46 @@ Flip the arguments of a function
 #### Example
 {{< highlight_arkscript >}}
 (let foo (fun (a b) (- a b)))
-((flip foo 14) 12) # will call (foo 12 14) instead of (foo 14 12)
+((flip foo) 14 12) # will call (foo 12 14) instead of (foo 14 12)
+{{< /highlight_arkscript >}}
+
+## identity
+
+---
+`(let identity (fun (_x) (...)))`
+No-op, return the value as-is
+
+#### Parameter
+- `_x`: the value
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(let maybeAbs (if shouldNormalizeNegatives math:abs identity))
+(let data (list:map nums maybeAbs))
+{{< /highlight_arkscript >}}
+
+## recombine
+
+---
+`(let recombine (fun (_f _g _h) (...)))`
+Generic form for functions that need to reuse their arguments
+
+**Note**: Returns a function taking one argument x, calling (f (g x) (h x))
+#### Parameters
+- `_f`: function called with two arguments
+- `_g`: first unary function
+- `_h`: second unary function
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(let mean (recombine (fun (a b) (/ a b)) list:sum list:size))
+(print (mean [0 1 1 2 3 5 8 13]))  # 4.125
 {{< /highlight_arkscript >}}
 
 
