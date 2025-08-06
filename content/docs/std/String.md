@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2025-08-01T00:57:05+02:00
-lastmod: 2025-08-01T00:57:05+02:00
+date: 2025-08-06T16:40:17+02:00
+lastmod: 2025-08-06T16:40:17+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,25 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+## format
+
+---
+`Builtin (format format values)`
+Format a String given replacements
+
+**Note**: https://fmt.dev/latest/syntax.html
+#### Parameters
+- `format`: the String to format
+- `values`: as any argument as you need, of any valid ArkScript type
+
+
+#### Example
+{{< highlight_arkscript >}}
+(format "Hello {}, my name is {}" "world" "ArkScript")
+# Hello world, my name is ArkScript
+
+{{< /highlight_arkscript >}}
 
 ## find
 

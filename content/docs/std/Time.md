@@ -1,6 +1,6 @@
 ---
-title: "os"
-slug: "os"
+title: "Time"
+slug: "time"
 description: ""
 summary: ""
 date: 2025-08-06T16:40:17+02:00
@@ -15,15 +15,19 @@ seo:
   noindex: false # false (default) or true
 ---
 
-## home_dir
+## time
 
 ---
-`(let home_dir (fun () (...)))`
-Returns the home dir of the current user
+`Builtin (time )`
+Return the time of the computer since epoch, in seconds, with at least milliseconds precision
 
-#### Authors
-[@Wafelack](https://github.com/Wafelack), [@SuperFola](https://github.com/SuperFola)
+#### Author
+[@SuperFola](https://github.com/SuperFola)
 
+#### Example
+{{< highlight_arkscript >}}
+(time)  # 1627134107.837558031082153
+{{< /highlight_arkscript >}}
 
 
 

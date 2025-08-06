@@ -3,8 +3,8 @@ title: "IO"
 slug: "io"
 description: ""
 summary: ""
-date: 2025-08-01T00:57:05+02:00
-lastmod: 2025-08-01T00:57:05+02:00
+date: 2025-08-06T16:40:17+02:00
+lastmod: 2025-08-06T16:40:17+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,60 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+## print
+
+---
+`Builtin (print values)`
+Print value(s) in the terminal
+
+**Note**: No separator is put between the values. Adds a \n at the end
+#### Parameter
+- `values`: the values to print
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(print "hello")
+{{< /highlight_arkscript >}}
+
+## puts
+
+---
+`Builtin (puts values)`
+Print value(s) in the terminal
+
+**Note**: No separator is put between the values, no \n at the end
+#### Parameter
+- `values`: the values to print
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(puts "hello")
+{{< /highlight_arkscript >}}
+
+## input
+
+---
+`Builtin (input prompt)`
+Request a value from the user
+
+**Note**: Return the value as a string
+#### Parameter
+- `prompt`: (optional) printed before asking for the user input
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(input "put a number> ")
+{{< /highlight_arkscript >}}
 
 ## writeFile
 

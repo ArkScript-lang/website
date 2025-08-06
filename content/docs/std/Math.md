@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2025-08-01T00:57:05+02:00
-lastmod: 2025-08-01T00:57:05+02:00
+date: 2025-08-06T16:40:17+02:00
+lastmod: 2025-08-06T16:40:17+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,25 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+## random
+
+---
+`Builtin (random min max)`
+Compute a random number in [-2147483648, 2147483647] or in a custom range passed to the function
+
+#### Parameters
+- `min`: optional inclusive lower bound
+- `max`: optional inclusive upper bound. Must be present if `min` is passed
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(print (random))  # a number in [-2147483648, 2147483647]
+(print (random 0 10))  # a number between 0 and 10
+{{< /highlight_arkscript >}}
 
 ## exp
 
