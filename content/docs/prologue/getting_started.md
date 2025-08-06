@@ -6,6 +6,8 @@ date: 2025-07-20T19:30:16+02:00
 lastmod: 2025-07-20T19:30:16+02:00
 draft: false
 weight: 100
+aliases:
+- /documentation.html
 ---
 
 {{< highlight_scripts >}}

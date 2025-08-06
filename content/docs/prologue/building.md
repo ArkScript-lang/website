@@ -13,6 +13,8 @@ seo:
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
+aliases:
+- /tutorials/building.html
 ---
 
 You can choose to build the project from source (which requires some knowledge like git, cmake and using shell commands) or get a build from a ZIP file.
