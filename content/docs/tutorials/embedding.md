@@ -4,7 +4,7 @@ slug: "embedding"
 description: ""
 summary: ""
 date: 2025-07-14T19:11:23+02:00
-lastmod: 2025-07-14T19:11:23+02:00
+lastmod: 2025-08-12T16:24:23+02:00
 draft: false
 weight: 301
 toc: true
@@ -16,6 +16,10 @@ seo:
 aliases:
 - /tutorials/embedding.html
 ---
+
+## Memory requirements
+
+As of writing, ArkScript requires a 64 bits CPU and uses around 35MB of RAM to run a script.
 
 ## CMake setup
 
