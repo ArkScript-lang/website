@@ -1,6 +1,6 @@
 ---
-title: "Async"
-slug: "async"
+title: "Random"
+slug: "random"
 description: ""
 summary: ""
 date: 2025-09-05T15:48:17+02:00
@@ -15,43 +15,43 @@ seo:
   noindex: false # false (default) or true
 ---
 
-## async
+## choice
 
 ---
-`Builtin (async func args...)`
-Calls a function asynchronously with a given set of arguments
+`(let choice (fun (_L) (...)))`
+Select a random element from a list
 
-**Note**: The function is started in a separate context, with no access to the others, preventing any concurrency problems.
-#### Parameters
-- `func`: the function to call
-- `args...`: the arguments of the function
+**Note**: If the list is empty, returns nil
+#### Parameter
+- `_L`: list of elements
 
 #### Author
 [@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
-(let foo (fun (a b) (+ a b)))
-(async foo 1 2)
+(import std.Random)
+(print (random:choice [1 2 3]))
 {{< /highlight_arkscript >}}
 
-## await
+## shuffle
 
 ---
-`Builtin (await future)`
-Blocks until the result becomes available
+`(let shuffle (fun (_L) (...)))`
+Shuffle a given list
 
+**Note**: The original list is not modified
 #### Parameter
-- `future`: the future to wait for its result to be available
+- `_L`: list to shuffle
 
 #### Author
 [@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
-(let foo (fun (a b) (+ a b)))
-(let async-foo (async foo 1 2))
-(print (await async-foo))
+(import std.Random)
+(let data [1 2 3 4 5])
+(let randomized (random:shuffle data))
 {{< /highlight_arkscript >}}
 
 

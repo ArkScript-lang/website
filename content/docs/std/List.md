@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2025-08-06T16:40:17+02:00
-lastmod: 2025-08-06T16:40:17+02:00
+date: 2025-09-05T15:48:17+02:00
+lastmod: 2025-09-05T15:48:17+02:00
 draft: false
 weight: 410
 toc: true
@@ -662,6 +662,30 @@ Insert an element (or expand a list) at a given position inside a list
 (let b [0 9])
 (print (list:insert b 1 4))  # [0 4 9]
 (print (list:insert b 1 [1 2]))  # [0 1 2 9]
+{{< /highlight_arkscript >}}
+
+## window
+
+---
+`(let window (fun (_L _size _f) (...)))`
+Create a sliding window of a given size on a list
+
+**Note**: The original list is not modified
+#### Parameters
+- `_L`: list to iterate over
+- `_size`: window size, must be at least 1
+- `_f`: function to call with the window
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(let f (fun (lst) (print lst))
+(list:window [1 2 3 4 5] 3 f)
+# [1 2 3]
+# [2 3 4]
+# [3 4 5]
 {{< /highlight_arkscript >}}
 
 

@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2025-08-06T16:40:17+02:00
-lastmod: 2025-08-06T16:40:17+02:00
+date: 2025-09-05T15:48:17+02:00
+lastmod: 2025-09-05T15:48:17+02:00
 draft: false
 weight: 410
 toc: true
@@ -770,6 +770,25 @@ Linearly interpolate a value in [0; 1] between two bounds
 #### Example
 {{< highlight_arkscript >}}
 (print (lerp 0.22 15 132))  # 40.74
+{{< /highlight_arkscript >}}
+
+## dotProduct
+
+---
+`(let dotProduct (fun (_v1 _v2) (...)))`
+Compute the dot product of two vectors
+
+**Note**: The vectors must have the same length
+#### Parameters
+- `_v1`: vector 1
+- `_v2`: vector 2
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(print (dotProduct [1 2 3] [4 5 6]))  # 32
 {{< /highlight_arkscript >}}
 
 

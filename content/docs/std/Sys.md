@@ -3,8 +3,8 @@ title: "Sys"
 slug: "sys"
 description: ""
 summary: ""
-date: 2025-08-06T16:40:17+02:00
-lastmod: 2025-08-06T16:40:17+02:00
+date: 2025-09-05T15:48:17+02:00
+lastmod: 2025-09-05T15:48:17+02:00
 draft: false
 weight: 410
 toc: true
@@ -84,6 +84,16 @@ Platform on which the program is running (Windows, Mac OSX, Linux, FreeBSD, Unix
 ---
 `(let args <value>)`
 Arguments given to the program when running it from the command line
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
+## programName
+
+---
+`(let programName <value>)`
+Name of the running program (file only, not the fullpath)
 
 #### Author
 [@SuperFola](https://github.com/SuperFola)

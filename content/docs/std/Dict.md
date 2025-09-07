@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2025-08-06T16:40:17+02:00
-lastmod: 2025-08-06T16:40:17+02:00
+date: 2025-09-05T15:48:17+02:00
+lastmod: 2025-09-05T15:48:17+02:00
 draft: false
 weight: 410
 toc: true
@@ -204,8 +204,9 @@ Map each value in a dictionary with a given function
 #### Example
 {{< highlight_arkscript >}}
 (let data (dict "key" "value"))
-(dict:map data (fun (key value) (format "{}-{}" key value)))
-(print data)  # {key: key-value}
+(let new (dict:map data (fun (key value) (format "{}-{}" key value))))
+(print data)  # {key: value}
+(print new)  # {key: key-value}
 {{< /highlight_arkscript >}}
 
 ## map!
@@ -225,7 +226,7 @@ Map each value in a dictionary with a given function
 #### Example
 {{< highlight_arkscript >}}
 (let data (dict "key" "value"))
-(dict:map data (fun (key value) (format "{}-{}" key value)))
+(dict:map! data (fun (key value) (format "{}-{}" key value)))
 (print data)  # {key: key-value}
 {{< /highlight_arkscript >}}
 
@@ -289,9 +290,8 @@ Filter a dictionary with a predicate
 #### Example
 {{< highlight_arkscript >}}
 (let data (dict "key" "value" "hello" "world"))
-(let new (dict:filter data (fun (key value) (> (len key) 3))))
-(print data)  # {key: value, hello: world}
-(print new)  # {hello: world}
+(dict:filter! data (fun (key value) (> (len key) 3)))
+(print data)  # {hello: world}
 {{< /highlight_arkscript >}}
 
 ## copy
@@ -334,7 +334,7 @@ Update a dictionary with (key, value) pairs from a second dictionary
 {{< highlight_arkscript >}}
 (let data (dict "key" "value" "hello" "world"))
 (let new (dict "key" "new value" 5 12))
-(dict:update data new)
+(dict:update! data new)
 (print data)  # {key: new value, hello: world, 5: 12}
 {{< /highlight_arkscript >}}
 

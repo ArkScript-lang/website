@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2025-08-06T16:40:17+02:00
-lastmod: 2025-08-06T16:40:17+02:00
+date: 2025-09-05T15:48:17+02:00
+lastmod: 2025-09-05T15:48:17+02:00
 draft: false
 weight: 410
 toc: true
@@ -33,6 +33,96 @@ Format a String given replacements
 # Hello world, my name is ArkScript
 
 {{< /highlight_arkscript >}}
+
+## asciiLetters
+
+---
+`(let asciiLetters <value>)`
+Upper and lowercase ASCII letters
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
+## asciiLowercase
+
+---
+`(let asciiLowercase <value>)`
+Lowercase ASCII letters
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
+## asciiUppercase
+
+---
+`(let asciiUppercase <value>)`
+Uppercase ASCII letters
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
+## digits
+
+---
+`(let digits <value>)`
+Digits used to represent decimal
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
+## hexdigits
+
+---
+`(let hexdigits <value>)`
+Digits used to represent hexadecimal
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
+## octdigits
+
+---
+`(let octdigits <value>)`
+Digits used to represent octal
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
+## printable
+
+---
+`(let printable <value>)`
+All printable characters
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
+## punctuation
+
+---
+`(let punctuation <value>)`
+Punctuation characters
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
+## whitespace
+
+---
+`(let whitespace <value>)`
+Whitespace characters
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
 
 ## find
 
@@ -151,6 +241,24 @@ Modify a given string and return a new one
 (string:setAt "hello" 1 "a")  # "hallo"
 {{< /highlight_arkscript >}}
 
+## count
+
+---
+`(let count (fun (_str _word) (...)))`
+Count the number of non-overlapping occurrences of a word in a string
+
+#### Parameters
+- `_str`: string to search into
+- `_word`: word to count occurrences of
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(string:count "the three truths" "th")  # 3
+{{< /highlight_arkscript >}}
+
 ## toLower
 
 ---
@@ -209,6 +317,25 @@ Reverse a string.
 (import std.String)
 (let message "hello world, I like goats")
 (let reversed (reverse message))  # => staog ekil I ,dlrow olleh
+{{< /highlight_arkscript >}}
+
+## repeat
+
+---
+`(let repeat (fun (_string _count) (...)))`
+Repeat a string
+
+#### Parameters
+- `_string`: string to repeat
+- `_count`: number of times to repeat said string
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(import std.String)
+(print (string:repeat "a" 5))  # aaaaa
 {{< /highlight_arkscript >}}
 
 ## slice
