@@ -4,7 +4,7 @@ date: 2025-07-30T18:52:45+02:00
 categories: []
 tags: []
 contributors: ['Lex Plt']
-pinned: false
+pinned: true
 homepage: false
 draft: false
 ---
@@ -25,7 +25,9 @@ ArkScript tries to be functional, by providing all the tools needed to the user 
 
 Common Lisp supports functional programming, while also allowing mutable state and imperative programming like ArkScript, while Clojure strongly encourages (sometimes insists) that you program in a functional way.
 
-## Declaring variables
+## Syntax wise
+
+### Declaring variables
 
 `let` in Common Lisp creates a scope for local variables, and it has a body using the declared local variables. In ArkScript, `let` is used to declare an immutable variable and doesn't return anything.
 
@@ -34,14 +36,16 @@ Common Lisp supports functional programming, while also allowing mutable state a
 (let ((a 6)
       (b 4))
   (+ a b))
+```
 
-;; ArkScript
+{{< highlight_arkscript >}}
+# ArkScript
 (let a 6)
 (let b 4)
 (let res (+ a b))
-```
+{{< /highlight_arkscript >}}
 
-## Defining functions
+### Defining functions
 
 Common Lisp uses a `defun` macro, which may include documentation:
 
@@ -74,7 +78,7 @@ However, both languages support continuation-passing-style since they both suppo
 ArkScript supports:
 
 - boolean, in the form of `true` and `false`
-- list: `(list)` (equivalent to `[]`), `[1 2 3]` ; `list` is a builtin, `[]` is syntactic sugar
+- list: `(list)` (equivalent to `[]`), `[1 2 3]` ; `list` is a builtin, `[]` is syntactic sugar. Internally, lists are implemented using arrays and not linked lists.
 - dict: `(dict)`, `(dict "key" "value")` ; `dict` is a builtin and we must follow the function call syntax of ArkScript to use it
 - numbers: `-1`, `0.123465`, `123e2`
 - strings: `"hello world"`
