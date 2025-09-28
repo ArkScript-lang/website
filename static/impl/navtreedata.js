@@ -73,18 +73,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "@ref bitwise_module",
-"d1/d71/ClosureScope_8hpp.html",
-"d2/ddd/classArk_1_1internal_1_1ScopeView.html",
-"d3/d90/classArk_1_1Value.html#ae60eb8f5a05b684d319d39546ffa9175",
-"d6/d2d/classJsonCompiler.html#a8bae10a2f559737f1bf9995e147b6ac2",
-"d7/dfb/MacroScope_8hpp.html",
-"d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681add290418ff5144fe9abaf9192dfe45cb",
-"d9/d4e/classArk_1_1internal_1_1Closure.html#a5b988d12a962cd1575be756cc0eb931f",
-"da/d84/Builtins_8hpp.html#ab64213af9108df1ac63a97dad18e2f1d",
-"dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a570dcd2373c0beb0f911c1fee99218a5",
-"dc/d9e/classArk_1_1internal_1_1Node.html#a8e7df301a43d6212da7076e398361066",
-"de/d60/classArk_1_1Repl.html#afe83be7c833b93c4193bb7dcec549072",
-"namespacemembers_g.html"
+"d1/d53/structArk_1_1internal_1_1Logger_1_1MessageAndLocation.html#af90d1636d2f5ed05e31555240dbc2b7c",
+"d2/d93/classArk_1_1VM.html#ace7c346842c65edacb9d1c6af5f3c305",
+"d3/d90/classArk_1_1Value.html#a5bffea255c8f9bd020129f20c7a44ed9",
+"d5/d8f/classArk_1_1internal_1_1MacroExecutor.html#a8f441dc92214b23e7e2e43769c3273de",
+"d7/da8/classArk_1_1Welder.html#a285d96d9050f4123ca6cb0079dccc99f",
+"d8/d70/structArk_1_1UserType_1_1ControlFuncs.html#a8da78967e45b61e806444a86dfd534c1",
+"d9/d0c/classArk_1_1internal_1_1Parser.html#a50cba765e5c2b08dcda5fca3e1b3b874",
+"d9/de4/namespaceArk.html#a7e01761d64ad740b1ae7ba4a27cfd5d8",
+"db/d27/structArk_1_1CodeErrorContext.html#a92ff839d61d2079128e4d8201289c1ac",
+"dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681ac2983c1b2d88bab4b86adefa9c50ca71",
+"dc/d9e/classArk_1_1internal_1_1Node.html#afdc388ae6f8eeaf0f52b50fc4f24e643",
+"de/dd7/NameResolutionPass_8cpp.html",
+"namespacemembers_r.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

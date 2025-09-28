@@ -1,13 +1,13 @@
-<map id="/Users/fola/Documents/ArkScript/Ark/src/arkreactor/Logger.cpp" name="/Users/fola/Documents/ArkScript/Ark/src/arkreactor/Logger.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="390,5,577,61"/>
-<area shape="rect" id="Node000002" href="$d9/d11/Logger_8hpp.html" title="Internal logger." alt="" coords="326,109,434,135"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="453,63,408,101,404,97,450,59"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="458,109,509,135"/>
-<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="486,61,486,93,481,93,481,61"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="534,109,586,135"/>
-<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="509,59,541,95,537,99,505,63"/>
+<map id="/Users/fola/Documents/ArkScript/Ark/src/arkreactor/Utils/Logger.cpp" name="/Users/fola/Documents/ArkScript/Ark/src/arkreactor/Utils/Logger.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="405,5,592,61"/>
+<area shape="rect" id="Node000002" href="$d9/d11/Logger_8hpp.html" title="Internal logger." alt="" coords="310,109,449,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="463,63,410,102,407,97,460,59"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="473,109,524,135"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="501,61,501,93,496,93,496,61"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="548,109,600,135"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="524,59,556,95,552,99,520,63"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,183,77,208"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,136,92,184,91,179,325,131"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="317,138,92,184,91,179,316,133"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="100,183,192,208"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="341,138,201,180,200,175,339,133"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="217,183,270,208"/>
@@ -21,5 +21,5 @@
 <area shape="rect" id="Node000009" title=" " alt="" coords="598,183,708,208"/>
 <area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="427,133,593,176,591,181,425,138"/>
 <area shape="rect" id="Node000010" title=" " alt="" coords="732,183,814,208"/>
-<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="435,130,717,180,716,185,434,135"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="450,132,717,180,716,185,449,137"/>
 </map>

@@ -8,17 +8,19 @@ var namespaceArk =
     ] ],
     [ "internal", "dc/d0e/namespaceArk_1_1internal.html", "dc/d0e/namespaceArk_1_1internal" ],
     [ "literals", "df/d62/namespaceArk_1_1literals.html", [
-      [ "operator\"\"_u16", "df/d62/namespaceArk_1_1literals.html#ad7fa8596e38e3b6109163f8da4713c71", null ],
-      [ "operator\"\"_u8", "df/d62/namespaceArk_1_1literals.html#aa69eb590a6a5ed495989c833dcdaf874", null ],
-      [ "operator\"\"_z", "df/d62/namespaceArk_1_1literals.html#a7f4647cf93c32badbd7b058850e27841", null ]
+      [ "operator\"\"_u16", "df/d62/namespaceArk_1_1literals.html#a42de10b4287b697b92a41df1f03dcd20", null ],
+      [ "operator\"\"_u8", "df/d62/namespaceArk_1_1literals.html#a6b3de5779f41c5acc350b5b868fdfce3", null ],
+      [ "operator\"\"_z", "df/d62/namespaceArk_1_1literals.html#ae354eb4d94c4b441ef5c6cb078648431", null ]
     ] ],
     [ "types", "d4/d7c/namespaceArk_1_1types.html", "d4/d7c/namespaceArk_1_1types" ],
     [ "Utils", "df/d16/namespaceArk_1_1Utils.html", [
       [ "fileExists", "df/d16/namespaceArk_1_1Utils.html#a1e2624f09a9e767e1792b69b879aa73f", null ],
       [ "isDouble", "df/d16/namespaceArk_1_1Utils.html#afeaaabff8a0661920f770e2bab8a7eda", null ],
       [ "levenshteinDistance", "df/d16/namespaceArk_1_1Utils.html#a8f9326e745dc008df3527a447eeb0788", null ],
+      [ "ltrim", "df/d16/namespaceArk_1_1Utils.html#a3b1bce25823735039703d6bac909bd8f", null ],
       [ "readFile", "df/d16/namespaceArk_1_1Utils.html#a08fab59297a574abc8a37a6d46eebacb", null ],
       [ "readFileAsBytes", "df/d16/namespaceArk_1_1Utils.html#a9f569f15da3036cc8f5ec6d1708a4887", null ],
+      [ "rtrim", "df/d16/namespaceArk_1_1Utils.html#aa2c46df34daa3bd35b880625ed34c90c", null ],
       [ "splitString", "df/d16/namespaceArk_1_1Utils.html#a5b6a05559c04cd6f5f5615de28315565", null ]
     ] ],
     [ "AssertionFailed", "d3/df9/classArk_1_1AssertionFailed.html", "d3/df9/classArk_1_1AssertionFailed" ],
@@ -51,21 +53,22 @@ var namespaceArk =
       [ "HeadersOnly", "d9/de4/namespaceArk.html#afa776c29439b830386e8220ccab402f4a763b156a072fb9d37024c87537552764", null ],
       [ "InstructionLocation", "d9/de4/namespaceArk.html#afa776c29439b830386e8220ccab402f4af7d363ecb45fd58fab7317b9ded7bfca", null ]
     ] ],
-    [ "ValueType", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159", [
-      [ "List", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159a4ee29ca12c7d126654bd0e5275de6135", null ],
-      [ "Number", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159ab2ee912b91d69b435159c7c3f6df7f5f", null ],
-      [ "String", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159a27118326006d3829667a400ad23d5d98", null ],
-      [ "PageAddr", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159a6666eaba81f13e74d10ac1a9c9d6d7b1", null ],
-      [ "CProc", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159a78c1e09380f2f8ea572cd59c5cd4bc92", null ],
-      [ "Closure", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159aaf4bb376939e77df0e7c2332b837a866", null ],
-      [ "User", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159a8f9bfe9d1345237cb3b2b205864da075", null ],
-      [ "Nil", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159a4da8b7eb2c3f2007cf8238334401ef51", null ],
-      [ "True", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159af827cf462f62848df37c5e1e94a4da74", null ],
-      [ "False", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159af8320b26d30ab433c5a54546d21f414c", null ],
-      [ "Undefined", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159aec0fc0100c4fc1ce4eea230c3dc10360", null ],
-      [ "Reference", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159a63d5049791d9d79d86e9a108b0a999ca", null ],
-      [ "InstPtr", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159adf754f9ba8524ed3333ec938d0636862", null ],
-      [ "Any", "d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159aed36a1ef76a59ee3f15180e0441188ad", null ]
+    [ "ValueType", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6", [
+      [ "List", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135", null ],
+      [ "Number", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6ab2ee912b91d69b435159c7c3f6df7f5f", null ],
+      [ "String", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a27118326006d3829667a400ad23d5d98", null ],
+      [ "PageAddr", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a6666eaba81f13e74d10ac1a9c9d6d7b1", null ],
+      [ "CProc", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a78c1e09380f2f8ea572cd59c5cd4bc92", null ],
+      [ "Closure", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aaf4bb376939e77df0e7c2332b837a866", null ],
+      [ "User", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a8f9bfe9d1345237cb3b2b205864da075", null ],
+      [ "Dict", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a91516e7a50ce0a67a8eb1f9229c293d1", null ],
+      [ "Nil", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4da8b7eb2c3f2007cf8238334401ef51", null ],
+      [ "True", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6af827cf462f62848df37c5e1e94a4da74", null ],
+      [ "False", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6af8320b26d30ab433c5a54546d21f414c", null ],
+      [ "Undefined", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aec0fc0100c4fc1ce4eea230c3dc10360", null ],
+      [ "Reference", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a63d5049791d9d79d86e9a108b0a999ca", null ],
+      [ "InstPtr", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6adf754f9ba8524ed3333ec938d0636862", null ],
+      [ "Any", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aed36a1ef76a59ee3f15180e0441188ad", null ]
     ] ],
     [ "operator!", "d9/de4/namespaceArk.html#a4a7668d3d9013495706afa18f5ad125d", null ],
     [ "operator!=", "d9/de4/namespaceArk.html#a8f977ce5d85bcc69d175df4180a18e77", null ],
@@ -86,9 +89,12 @@ var namespaceArk =
     [ "MaxMacroProcessingDepth", "d9/de4/namespaceArk.html#a601127fdf466d46ddcc7d061bd4f7a34", null ],
     [ "MaxMacroUnificationDepth", "d9/de4/namespaceArk.html#a9bfec7edeabdb42ddee1327daa3ee186", null ],
     [ "MaxNestedNodes", "d9/de4/namespaceArk.html#a47ecd80bc50fcb29add2f0692a97b28b", null ],
+    [ "MaxValue16Bits", "d9/de4/namespaceArk.html#a24c69eba4ec3db3f693a853d0fddc77e", null ],
     [ "Nil", "d9/de4/namespaceArk.html#a5b4d87e9947b24bc4202530daf34c8b3", null ],
     [ "ScopeStackSize", "d9/de4/namespaceArk.html#a64b1067761d4dc1a5eb1f07d0b8ceb7a", null ],
     [ "True", "d9/de4/namespaceArk.html#a7b98e35d4b546b9f5faab289a857051b", null ],
     [ "types_to_str", "d9/de4/namespaceArk.html#a09c7d272cc09841b4feefc1eea1aad25", null ],
-    [ "VMStackSize", "d9/de4/namespaceArk.html#a10c147f2df9516277811af7da43a250f", null ]
+    [ "VMOverflowBufferSize", "d9/de4/namespaceArk.html#aa2ce84454e7ae71f1cc300900ef360fe", null ],
+    [ "VMStackSize", "d9/de4/namespaceArk.html#a10c147f2df9516277811af7da43a250f", null ],
+    [ "VMStackSizeWithOverflowBuffer", "d9/de4/namespaceArk.html#aa70a751a0d6a2913dc56e3bc70947210", null ]
 ];

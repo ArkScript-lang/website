@@ -102,9 +102,9 @@ Collaboration diagram for Ark::internal::Parser:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a306dc6b9d001d9f8b0082befdfa5aca0" id="r_a306dc6b9d001d9f8b0082befdfa5aca0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a306dc6b9d001d9f8b0082befdfa5aca0">Parser</a> (unsigned debug, bool interpret=true)</td></tr>
-<tr class="memdesc:a306dc6b9d001d9f8b0082befdfa5aca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="../../d9/d0c/classArk_1_1internal_1_1Parser.html">Parser</a> object.  <br /></td></tr>
-<tr class="separator:a306dc6b9d001d9f8b0082befdfa5aca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f7dde0bcfb29752d53f3c7b0a9739f" id="r_a26f7dde0bcfb29752d53f3c7b0a9739f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26f7dde0bcfb29752d53f3c7b0a9739f">Parser</a> (unsigned debug, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5f57ba1defe6a924d904c444e8891ec9">ParserMode</a> mode=<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5f57ba1defe6a924d904c444e8891ec9aad79692ebd033933fada334aec61010b">ParserMode::Interpret</a>)</td></tr>
+<tr class="memdesc:a26f7dde0bcfb29752d53f3c7b0a9739f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="../../d9/d0c/classArk_1_1internal_1_1Parser.html">Parser</a> object.  <br /></td></tr>
+<tr class="separator:a26f7dde0bcfb29752d53f3c7b0a9739f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8485903ad694eab54b0e377ddfaf9c" id="r_a2d8485903ad694eab54b0e377ddfaf9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d8485903ad694eab54b0e377ddfaf9c">process</a> (const std::string &amp;filename, const std::string &amp;code)</td></tr>
 <tr class="memdesc:a2d8485903ad694eab54b0e377ddfaf9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the given code.  <br /></td></tr>
 <tr class="separator:a2d8485903ad694eab54b0e377ddfaf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,49 +118,50 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a8299b12ad050e0c54e7222eebe8623f2" id="r_a8299b12ad050e0c54e7222eebe8623f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8299b12ad050e0c54e7222eebe8623f2">setNodePosAndFilename</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;<a class="el" href="#a839c43c45ade895a81e237932af8439f">node</a>, const std::optional&lt; <a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> &gt; &amp;cursor=std::nullopt) const</td></tr>
-<tr class="memdesc:a8299b12ad050e0c54e7222eebe8623f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a node given a file position.  <br /></td></tr>
-<tr class="separator:a8299b12ad050e0c54e7222eebe8623f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49ccdf600d7f91c4bda9648eb21a2fe" id="r_aa49ccdf600d7f91c4bda9648eb21a2fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49ccdf600d7f91c4bda9648eb21a2fe">positioned</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> <a class="el" href="#a839c43c45ade895a81e237932af8439f">node</a>, <a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> cursor) const</td></tr>
+<tr class="separator:aa49ccdf600d7f91c4bda9648eb21a2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66789ba7fb34ee002d557fd9178ce309" id="r_a66789ba7fb34ee002d557fd9178ce309"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66789ba7fb34ee002d557fd9178ce309">positioned</a> (std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; &amp;<a class="el" href="#a839c43c45ade895a81e237932af8439f">node</a>, <a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> cursor) const</td></tr>
+<tr class="separator:a66789ba7fb34ee002d557fd9178ce309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a839c43c45ade895a81e237932af8439f" id="r_a839c43c45ade895a81e237932af8439f"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a839c43c45ade895a81e237932af8439f">node</a> ()</td></tr>
 <tr class="separator:a839c43c45ade895a81e237932af8439f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5406fc7752d1da9beb7568a24c7651e" id="r_aa5406fc7752d1da9beb7568a24c7651e"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5406fc7752d1da9beb7568a24c7651e">letMutSet</a> ()</td></tr>
-<tr class="separator:aa5406fc7752d1da9beb7568a24c7651e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcf9cbab8e1093f8b40cfc8c1882dfc1" id="r_adcf9cbab8e1093f8b40cfc8c1882dfc1"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcf9cbab8e1093f8b40cfc8c1882dfc1">del</a> ()</td></tr>
-<tr class="separator:adcf9cbab8e1093f8b40cfc8c1882dfc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a741392b2a49a8591aef7f5bc76e4583a" id="r_a741392b2a49a8591aef7f5bc76e4583a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a741392b2a49a8591aef7f5bc76e4583a">condition</a> ()</td></tr>
-<tr class="separator:a741392b2a49a8591aef7f5bc76e4583a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fefde52c8c8b35a0ac1e79470d465db" id="r_a2fefde52c8c8b35a0ac1e79470d465db"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fefde52c8c8b35a0ac1e79470d465db">loop</a> ()</td></tr>
-<tr class="separator:a2fefde52c8c8b35a0ac1e79470d465db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54f6a6735686dd0f299ca3052c9af7c6" id="r_a54f6a6735686dd0f299ca3052c9af7c6"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54f6a6735686dd0f299ca3052c9af7c6">import_</a> ()</td></tr>
-<tr class="separator:a54f6a6735686dd0f299ca3052c9af7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad266bbbd0bfc32958f84420a46698db8" id="r_ad266bbbd0bfc32958f84420a46698db8"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad266bbbd0bfc32958f84420a46698db8">block</a> ()</td></tr>
-<tr class="separator:ad266bbbd0bfc32958f84420a46698db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1247d960357cc1c9b5213414043ed2a6" id="r_a1247d960357cc1c9b5213414043ed2a6"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1247d960357cc1c9b5213414043ed2a6">functionArgs</a> ()</td></tr>
-<tr class="separator:a1247d960357cc1c9b5213414043ed2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb27aebc6542a9e6b719ebd0eff42109" id="r_acb27aebc6542a9e6b719ebd0eff42109"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb27aebc6542a9e6b719ebd0eff42109">function</a> ()</td></tr>
-<tr class="separator:acb27aebc6542a9e6b719ebd0eff42109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6668726e34352da7db8e7a0f0b267a3a" id="r_a6668726e34352da7db8e7a0f0b267a3a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6668726e34352da7db8e7a0f0b267a3a">macroCondition</a> ()</td></tr>
-<tr class="separator:a6668726e34352da7db8e7a0f0b267a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50abccdb69337c2bfb4b6a91e2410d36" id="r_a50abccdb69337c2bfb4b6a91e2410d36"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50abccdb69337c2bfb4b6a91e2410d36">macroArgs</a> ()</td></tr>
-<tr class="separator:a50abccdb69337c2bfb4b6a91e2410d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1315161e22df9fe2870f96762087e52f" id="r_a1315161e22df9fe2870f96762087e52f"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1315161e22df9fe2870f96762087e52f">macro</a> ()</td></tr>
-<tr class="separator:a1315161e22df9fe2870f96762087e52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9039fb459bace1f17cc0c826adf6584d" id="r_a9039fb459bace1f17cc0c826adf6584d"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9039fb459bace1f17cc0c826adf6584d">functionCall</a> ()</td></tr>
-<tr class="separator:a9039fb459bace1f17cc0c826adf6584d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd6e64c114ab6a164729bf7843076afd" id="r_acd6e64c114ab6a164729bf7843076afd"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd6e64c114ab6a164729bf7843076afd">list</a> ()</td></tr>
-<tr class="separator:acd6e64c114ab6a164729bf7843076afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b24d809e84b1c35d61824b6d9a50758" id="r_a3b24d809e84b1c35d61824b6d9a50758"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b24d809e84b1c35d61824b6d9a50758">number</a> ()</td></tr>
-<tr class="separator:a3b24d809e84b1c35d61824b6d9a50758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642553e0fa3cd197c69af9b3fdec99ca" id="r_a642553e0fa3cd197c69af9b3fdec99ca"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a642553e0fa3cd197c69af9b3fdec99ca">string</a> ()</td></tr>
-<tr class="separator:a642553e0fa3cd197c69af9b3fdec99ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a949e4e0dbefededdc35dcb06aeefbdb0" id="r_a949e4e0dbefededdc35dcb06aeefbdb0"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a949e4e0dbefededdc35dcb06aeefbdb0">field</a> ()</td></tr>
-<tr class="separator:a949e4e0dbefededdc35dcb06aeefbdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a363f897aad4152cf215be8c4be79ffcc" id="r_a363f897aad4152cf215be8c4be79ffcc"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a363f897aad4152cf215be8c4be79ffcc">symbol</a> ()</td></tr>
-<tr class="separator:a363f897aad4152cf215be8c4be79ffcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72075c75e03d30a88dbdfd7c5767c0f1" id="r_a72075c75e03d30a88dbdfd7c5767c0f1"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72075c75e03d30a88dbdfd7c5767c0f1">spread</a> ()</td></tr>
-<tr class="separator:a72075c75e03d30a88dbdfd7c5767c0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e6ac3af8c7c2948b8bfa103805afe3" id="r_a35e6ac3af8c7c2948b8bfa103805afe3"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35e6ac3af8c7c2948b8bfa103805afe3">nil</a> ()</td></tr>
-<tr class="separator:a35e6ac3af8c7c2948b8bfa103805afe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07e78add299cbcad69c2a249f501862b" id="r_a07e78add299cbcad69c2a249f501862b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07e78add299cbcad69c2a249f501862b">letMutSet</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a07e78add299cbcad69c2a249f501862b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657a743c45e25745c30c00b0cee3133a" id="r_a657a743c45e25745c30c00b0cee3133a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a657a743c45e25745c30c00b0cee3133a">del</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a657a743c45e25745c30c00b0cee3133a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b6c9a751f889ee97173355dd99acf0" id="r_a61b6c9a751f889ee97173355dd99acf0"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61b6c9a751f889ee97173355dd99acf0">condition</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a61b6c9a751f889ee97173355dd99acf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1413b3e5977b7e5957c3594ef7da6f3a" id="r_a1413b3e5977b7e5957c3594ef7da6f3a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1413b3e5977b7e5957c3594ef7da6f3a">loop</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a1413b3e5977b7e5957c3594ef7da6f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec679c3b3bf635296dba3d5db8c10060" id="r_aec679c3b3bf635296dba3d5db8c10060"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec679c3b3bf635296dba3d5db8c10060">import_</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:aec679c3b3bf635296dba3d5db8c10060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35884234cae27d10abac1644e02db906" id="r_a35884234cae27d10abac1644e02db906"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35884234cae27d10abac1644e02db906">block</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a35884234cae27d10abac1644e02db906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ea434672a566d475749649d05d6be2" id="r_ac4ea434672a566d475749649d05d6be2"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4ea434672a566d475749649d05d6be2">functionArgs</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:ac4ea434672a566d475749649d05d6be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba3403ba09d7cb53b02bde4b74b036b" id="r_a9ba3403ba09d7cb53b02bde4b74b036b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ba3403ba09d7cb53b02bde4b74b036b">function</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a9ba3403ba09d7cb53b02bde4b74b036b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdca6ce44e435bfbbdc3cf4a62c5640f" id="r_afdca6ce44e435bfbbdc3cf4a62c5640f"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdca6ce44e435bfbbdc3cf4a62c5640f">macroCondition</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:afdca6ce44e435bfbbdc3cf4a62c5640f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c3f85abbfe357f2c7f5eeae7962623" id="r_ad7c3f85abbfe357f2c7f5eeae7962623"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7c3f85abbfe357f2c7f5eeae7962623">macroArgs</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:ad7c3f85abbfe357f2c7f5eeae7962623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3a03a3a75c98c44624fca8d1a56eb8" id="r_a4c3a03a3a75c98c44624fca8d1a56eb8"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c3a03a3a75c98c44624fca8d1a56eb8">macro</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a4c3a03a3a75c98c44624fca8d1a56eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f85a18921b4f6d1584d038736f843bc" id="r_a4f85a18921b4f6d1584d038736f843bc"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f85a18921b4f6d1584d038736f843bc">functionCall</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a4f85a18921b4f6d1584d038736f843bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1aecd14f7c58130c8dd2ed89e67a4f4" id="r_ad1aecd14f7c58130c8dd2ed89e67a4f4"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1aecd14f7c58130c8dd2ed89e67a4f4">list</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:ad1aecd14f7c58130c8dd2ed89e67a4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc4561d46f38501965be5b0a36051cf" id="r_a2cc4561d46f38501965be5b0a36051cf"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cc4561d46f38501965be5b0a36051cf">number</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a2cc4561d46f38501965be5b0a36051cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006128eadc905befc74c60c2bf401b7a" id="r_a006128eadc905befc74c60c2bf401b7a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a006128eadc905befc74c60c2bf401b7a">string</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a006128eadc905befc74c60c2bf401b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ccc87a3c708863c1156562dd473031a" id="r_a4ccc87a3c708863c1156562dd473031a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ccc87a3c708863c1156562dd473031a">field</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a4ccc87a3c708863c1156562dd473031a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2df9cfb5dc8f5b964f7f3eafa9b52ae" id="r_ae2df9cfb5dc8f5b964f7f3eafa9b52ae"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2df9cfb5dc8f5b964f7f3eafa9b52ae">symbol</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:ae2df9cfb5dc8f5b964f7f3eafa9b52ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c476beaa9da7bdff18c50ac9f886755" id="r_a2c476beaa9da7bdff18c50ac9f886755"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c476beaa9da7bdff18c50ac9f886755">spread</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:a2c476beaa9da7bdff18c50ac9f886755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbed4868e09334d784dac8a35d1e11cc" id="r_afbed4868e09334d784dac8a35d1e11cc"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbed4868e09334d784dac8a35d1e11cc">nil</a> (<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> filepos)</td></tr>
+<tr class="separator:afbed4868e09334d784dac8a35d1e11cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a6c9389e2d31f2f0cdb475fc37a88d7" id="r_a2a6c9389e2d31f2f0cdb475fc37a88d7"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a6c9389e2d31f2f0cdb475fc37a88d7">atom</a> ()</td></tr>
 <tr class="memdesc:a2a6c9389e2d31f2f0cdb475fc37a88d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to parse an atom (number, string, spread, field, symbol, nil)  <br /></td></tr>
 <tr class="separator:a2a6c9389e2d31f2f0cdb475fc37a88d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,15 +171,14 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a53611218dda2ae271ac54eef2c09ec20" id="r_a53611218dda2ae271ac54eef2c09ec20"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53611218dda2ae271ac54eef2c09ec20">nodeOrValue</a> ()</td></tr>
 <tr class="memdesc:a53611218dda2ae271ac54eef2c09ec20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to parse an atom first, if it fails try to parse a node.  <br /></td></tr>
 <tr class="separator:a53611218dda2ae271ac54eef2c09ec20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24a9c9da6e711992e093a24a73f03c4f" id="r_a24a9c9da6e711992e093a24a73f03c4f"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24a9c9da6e711992e093a24a73f03c4f">wrapped</a> (std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;(Parser::*parser)(), const std::string &amp;<a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#aaf42f6cbec652aba80e89588f167507b">name</a>)</td></tr>
-<tr class="memdesc:a24a9c9da6e711992e093a24a73f03c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to parse using a given parser, prefixing and suffixing it with (...), handling comments around the parsed node.  <br /></td></tr>
-<tr class="separator:a24a9c9da6e711992e093a24a73f03c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a91607683a6b5a06c1c65d684418060" id="r_a6a91607683a6b5a06c1c65d684418060"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a91607683a6b5a06c1c65d684418060">wrapped</a> (std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;(Parser::*parser)(<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a>), const std::string &amp;<a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#aaf42f6cbec652aba80e89588f167507b">name</a>)</td></tr>
+<tr class="memdesc:a6a91607683a6b5a06c1c65d684418060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to parse using a given parser, prefixing and suffixing it with (...), handling comments around the parsed node.  <br /></td></tr>
+<tr class="separator:a6a91607683a6b5a06c1c65d684418060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a023379e05461a34443c0465d71ff1115" id="r_a023379e05461a34443c0465d71ff1115"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a023379e05461a34443c0465d71ff1115">m_interpret</a></td></tr>
-<tr class="memdesc:a023379e05461a34443c0465d71ff1115"><td class="mdescLeft">&#160;</td><td class="mdescRight">interpret escape codes in strings  <br /></td></tr>
-<tr class="separator:a023379e05461a34443c0465d71ff1115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601201779493e03c7efb163dedaa61bc" id="r_a601201779493e03c7efb163dedaa61bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5f57ba1defe6a924d904c444e8891ec9">ParserMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a601201779493e03c7efb163dedaa61bc">m_mode</a></td></tr>
+<tr class="separator:a601201779493e03c7efb163dedaa61bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab44309720db51fdee758c351f7c899ef" id="r_ab44309720db51fdee758c351f7c899ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d2f/classArk_1_1internal_1_1Logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab44309720db51fdee758c351f7c899ef">m_logger</a></td></tr>
 <tr class="separator:ab44309720db51fdee758c351f7c899ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3374a8db9c9deb335fa17356de29e12" id="r_af3374a8db9c9deb335fa17356de29e12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3374a8db9c9deb335fa17356de29e12">m_ast</a></td></tr>
@@ -191,8 +191,8 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ad00d2c06d29b8a9cee8e8931c75c998e" id="r_ad00d2c06d29b8a9cee8e8931c75c998e"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad00d2c06d29b8a9cee8e8931c75c998e">m_nested_nodes</a></td></tr>
 <tr class="memdesc:ad00d2c06d29b8a9cee8e8931c75c998e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nested node counter.  <br /></td></tr>
 <tr class="separator:ad00d2c06d29b8a9cee8e8931c75c998e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a009a144755bf89f9a3b68cd5398875d7" id="r_a009a144755bf89f9a3b68cd5398875d7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::function&lt; std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;()&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a009a144755bf89f9a3b68cd5398875d7">m_parsers</a></td></tr>
-<tr class="separator:a009a144755bf89f9a3b68cd5398875d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e56c67059e11c02b4fdd0eedd3c02c" id="r_a57e56c67059e11c02b4fdd0eedd3c02c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::function&lt; std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;(<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a>)&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57e56c67059e11c02b4fdd0eedd3c02c">m_parsers</a></td></tr>
+<tr class="separator:a57e56c67059e11c02b4fdd0eedd3c02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -201,10 +201,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2cd6008d806adecfc73259fc25055714 inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af529b5cfa746cf975117e67a91d40d0b inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_af529b5cfa746cf975117e67a91d40d0b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#af529b5cfa746cf975117e67a91d40d0b">getCursor</a> () const</td></tr>
 <tr class="separator:af529b5cfa746cf975117e67a91d40d0b inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94ac91be6839c2683e0fbdb6c0ed758a inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_a94ac91be6839c2683e0fbdb6c0ed758a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d27/structArk_1_1CodeErrorContext.html">CodeErrorContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#a94ac91be6839c2683e0fbdb6c0ed758a">generateErrorContext</a> (const std::string &amp;expr)</td></tr>
-<tr class="separator:a94ac91be6839c2683e0fbdb6c0ed758a inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad422228b99939a4b33bc242906774d18 inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_ad422228b99939a4b33bc242906774d18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#ad422228b99939a4b33bc242906774d18">error</a> (const std::string &amp;error, std::string exp, const std::optional&lt; <a class="el" href="../../db/d27/structArk_1_1CodeErrorContext.html">CodeErrorContext</a> &gt; &amp;additional_context=std::nullopt)</td></tr>
-<tr class="separator:ad422228b99939a4b33bc242906774d18 inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4fd7316e55c4f85b4d4f9699337e167 inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_ad4fd7316e55c4f85b4d4f9699337e167"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d27/structArk_1_1CodeErrorContext.html">CodeErrorContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#ad4fd7316e55c4f85b4d4f9699337e167">generateErrorContextAtCurrentPosition</a> () const</td></tr>
+<tr class="separator:ad4fd7316e55c4f85b4d4f9699337e167 inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bfb84cc3eda30dcbf6b20a456a2981a inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_a3bfb84cc3eda30dcbf6b20a456a2981a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#a3bfb84cc3eda30dcbf6b20a456a2981a">error</a> (const std::string &amp;error, <a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> start_at, const std::optional&lt; <a class="el" href="../../db/d27/structArk_1_1CodeErrorContext.html">CodeErrorContext</a> &gt; &amp;additional_context=std::nullopt) const</td></tr>
+<tr class="memdesc:a3bfb84cc3eda30dcbf6b20a456a2981a inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an error context and throw an error containing said context.  <br /></td></tr>
+<tr class="separator:a3bfb84cc3eda30dcbf6b20a456a2981a inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b39437f1620f09ef534c06e288d3b2 inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_ad2b39437f1620f09ef534c06e288d3b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#ad2b39437f1620f09ef534c06e288d3b2">errorWithNextToken</a> (const std::string &amp;message, const std::optional&lt; <a class="el" href="../../db/d27/structArk_1_1CodeErrorContext.html">CodeErrorContext</a> &gt; &amp;additional_context=std::nullopt)</td></tr>
 <tr class="memdesc:ad2b39437f1620f09ef534c06e288d3b2 inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the next token (space and paren delimited) to generate an error.  <br /></td></tr>
 <tr class="separator:ad2b39437f1620f09ef534c06e288d3b2 inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,10 +235,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ad5d7d52c98339babe43fee25e6fbb7c1 inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6bf9ec77b97c2b562419085f045a812 inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_ab6bf9ec77b97c2b562419085f045a812"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#ab6bf9ec77b97c2b562419085f045a812">comment</a> (std::string *s=nullptr)</td></tr>
 <tr class="separator:ab6bf9ec77b97c2b562419085f045a812 inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d611e625a18569831aa202f26ab22af inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_a1d611e625a18569831aa202f26ab22af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#a1d611e625a18569831aa202f26ab22af">spaceComment</a> (std::string *s=nullptr)</td></tr>
-<tr class="separator:a1d611e625a18569831aa202f26ab22af inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a95e1033ed7c4d9f5be715b991f7e99 inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_a7a95e1033ed7c4d9f5be715b991f7e99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#a7a95e1033ed7c4d9f5be715b991f7e99">newlineOrComment</a> (std::string *s=nullptr)</td></tr>
-<tr class="separator:a7a95e1033ed7c4d9f5be715b991f7e99 inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4087ebf1aac38fc61e64180dffc16c34 inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_a4087ebf1aac38fc61e64180dffc16c34"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#a4087ebf1aac38fc61e64180dffc16c34">spaceComment</a> ()</td></tr>
+<tr class="separator:a4087ebf1aac38fc61e64180dffc16c34 inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66baf3fb28c7c25970f60626a47f3b8a inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_a66baf3fb28c7c25970f60626a47f3b8a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#a66baf3fb28c7c25970f60626a47f3b8a">newlineOrComment</a> ()</td></tr>
+<tr class="separator:a66baf3fb28c7c25970f60626a47f3b8a inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a746c7949d6586ff286f6027d7665ebc1 inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_a746c7949d6586ff286f6027d7665ebc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#a746c7949d6586ff286f6027d7665ebc1">prefix</a> (char c)</td></tr>
 <tr class="separator:a746c7949d6586ff286f6027d7665ebc1 inherit pro_methods_classArk_1_1internal_1_1BaseParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ff9d27b8497e1d00673472fd06b0748 inherit pro_methods_classArk_1_1internal_1_1BaseParser" id="r_a2ff9d27b8497e1d00673472fd06b0748"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/classArk_1_1internal_1_1BaseParser.html#a2ff9d27b8497e1d00673472fd06b0748">number</a> (std::string *s=nullptr)</td></tr>
@@ -264,10 +265,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00030">30</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a306dc6b9d001d9f8b0082befdfa5aca0" name="a306dc6b9d001d9f8b0082befdfa5aca0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a306dc6b9d001d9f8b0082befdfa5aca0">&#9670;&#160;</a></span>Parser()</h2>
+<a id="a26f7dde0bcfb29752d53f3c7b0a9739f" name="a26f7dde0bcfb29752d53f3c7b0a9739f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f7dde0bcfb29752d53f3c7b0a9739f">&#9670;&#160;</a></span>Parser()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +284,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>interpret</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5f57ba1defe6a924d904c444e8891ec9">ParserMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5f57ba1defe6a924d904c444e8891ec9aad79692ebd033933fada334aec61010b">ParserMode::Interpret</a></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -297,7 +298,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">debug</td><td>debug level </td></tr>
-    <tr><td class="paramname">interpret</td><td>interpret escape codes in strings </td></tr>
+    <tr><td class="paramname">mode</td><td>how the parser should behave regarding certain nodes and errors </td></tr>
   </table>
   </dd>
 </dl>
@@ -333,17 +334,17 @@ Additional Inherited Members</h2></td></tr>
 <p>Try to parse an atom, if any, match its type against the given list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">types</td><td>autorized types </td></tr>
+    <tr><td class="paramname">types</td><td>authorized types </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::optional&lt;Node&gt; std::nullopt if the parsed atom didn't match the given types </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00890">890</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00993">993</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00859">atom()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00116">Ark::internal::BaseParser::getCursor()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00961">atom()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00780">functionCall()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00723">functionCall()</a>.</p>
 
 </div>
 </div>
@@ -371,11 +372,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html" title="A node of an Abstract Syntax Tree for ArkScript.">Node</a>&amp; resulting AST after processing the given code </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00092">92</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00062">m_ast</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00068">m_ast</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00126">Ark::Welder::computeAST()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00138">Ark::internal::ImportSolver::parseImport()</a>, <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00022">Formatter::run()</a>, and <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00039">Formatter::runWithString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00127">Ark::Welder::computeAST()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00138">Ark::internal::ImportSolver::parseImport()</a>, <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00023">Formatter::run()</a>, and <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00040">Formatter::runWithString()</a>.</p>
 
 </div>
 </div>
@@ -405,16 +406,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Try to parse an atom (number, string, spread, field, symbol, nil) </p>
 <dl class="section return"><dt>Returns</dt><dd>std::optional&lt;Node&gt; std::nullopt if no atom could be parsed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00859">859</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00961">961</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00198">field()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00087">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00064">m_allow_macro_behavior</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00244">nil()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00091">number()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00232">spread()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00107">string()</a>, and <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00224">symbol()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00900">field()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00088">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00070">m_allow_macro_behavior</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00947">nil()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00793">number()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00935">spread()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00807">string()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00927">symbol()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00890">anyAtomOf()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00993">anyAtomOf()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">nodeOrValue()</a>.</p>
 
 </div>
 </div>
-<a id="ad266bbbd0bfc32958f84420a46698db8" name="ad266bbbd0bfc32958f84420a46698db8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad266bbbd0bfc32958f84420a46698db8">&#9670;&#160;</a></span>block()</h2>
+<a id="a35884234cae27d10abac1644e02db906" name="a35884234cae27d10abac1644e02db906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35884234cae27d10abac1644e02db906">&#9670;&#160;</a></span>block()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,7 +426,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::block </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -436,14 +437,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00429">429</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00418">418</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00159">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a1a06729125544cab7cee73195fc044f0">Ark::internal::Begin</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00153">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00121">Ark::internal::BaseParser::generateErrorContext()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00099">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00352">Ark::internal::BaseParser::oneOf()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00154">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a1a06729125544cab7cee73195fc044f0">Ark::internal::Begin</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00148">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00117">Ark::internal::BaseParser::generateErrorContextAtCurrentPosition()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00100">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">nodeOrValue()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00341">Ark::internal::BaseParser::oneOf()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>.</p>
 
 </div>
 </div>
-<a id="a741392b2a49a8591aef7f5bc76e4583a" name="a741392b2a49a8591aef7f5bc76e4583a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a741392b2a49a8591aef7f5bc76e4583a">&#9670;&#160;</a></span>condition()</h2>
+<a id="a61b6c9a751f889ee97173355dd99acf0" name="a61b6c9a751f889ee97173355dd99acf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b6c9a751f889ee97173355dd99acf0">&#9670;&#160;</a></span>condition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -454,7 +455,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::condition </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -465,14 +466,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00219">219</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00230">230</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00142">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a786887572f6ef1c20f2d8177cb2f1639">Ark::internal::If</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00352">Ark::internal::BaseParser::oneOf()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a786887572f6ef1c20f2d8177cb2f1639">Ark::internal::If</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">nodeOrValue()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00341">Ark::internal::BaseParser::oneOf()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>.</p>
 
 </div>
 </div>
-<a id="adcf9cbab8e1093f8b40cfc8c1882dfc1" name="adcf9cbab8e1093f8b40cfc8c1882dfc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcf9cbab8e1093f8b40cfc8c1882dfc1">&#9670;&#160;</a></span>del()</h2>
+<a id="a657a743c45e25745c30c00b0cee3133a" name="a657a743c45e25745c30c00b0cee3133a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a657a743c45e25745c30c00b0cee3133a">&#9670;&#160;</a></span>del()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -483,7 +484,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::del </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -494,14 +495,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00196">196</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00210">210</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a5526d60feb55086fbd12dd96b071a093">Ark::internal::Del</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00142">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00309">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00352">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a5526d60feb55086fbd12dd96b071a093">Ark::internal::Del</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00298">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00341">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
 </div>
 </div>
-<a id="a949e4e0dbefededdc35dcb06aeefbdb0" name="a949e4e0dbefededdc35dcb06aeefbdb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a949e4e0dbefededdc35dcb06aeefbdb0">&#9670;&#160;</a></span>field()</h2>
+<a id="a4ccc87a3c708863c1156562dd473031a" name="a4ccc87a3c708863c1156562dd473031a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ccc87a3c708863c1156562dd473031a">&#9670;&#160;</a></span>field()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -512,25 +513,27 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::field </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00198">198</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00900">900</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00859">atom()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00154">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca6f16a5f8ff5d75ab84c018adacdfcbb7">Ark::internal::Field</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00298">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00961">atom()</a>.</p>
 
 </div>
 </div>
-<a id="acb27aebc6542a9e6b719ebd0eff42109" name="acb27aebc6542a9e6b719ebd0eff42109"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb27aebc6542a9e6b719ebd0eff42109">&#9670;&#160;</a></span>function()</h2>
+<a id="a9ba3403ba09d7cb53b02bde4b74b036b" name="a9ba3403ba09d7cb53b02bde4b74b036b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba3403ba09d7cb53b02bde4b74b036b">&#9670;&#160;</a></span>function()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -541,7 +544,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::function </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -552,14 +555,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00524">524</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00501">501</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00142">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a46d6d315bea88efbf048125d2ec444b4">Ark::internal::Fun</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00473">functionArgs()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00087">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00064">m_allow_macro_behavior</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00078">Ark::internal::Node::nodeType()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00352">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00038">Ark::internal::Node::string()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a46d6d315bea88efbf048125d2ec444b4">Ark::internal::Fun</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00458">functionArgs()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00088">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00070">m_allow_macro_behavior</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">nodeOrValue()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00078">Ark::internal::Node::nodeType()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00341">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00063">Ark::internal::Node::push_back()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00038">Ark::internal::Node::string()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
 </div>
 </div>
-<a id="a1247d960357cc1c9b5213414043ed2a6" name="a1247d960357cc1c9b5213414043ed2a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1247d960357cc1c9b5213414043ed2a6">&#9670;&#160;</a></span>functionArgs()</h2>
+<a id="ac4ea434672a566d475749649d05d6be2" name="ac4ea434672a566d475749649d05d6be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ea434672a566d475749649d05d6be2">&#9670;&#160;</a></span>functionArgs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -570,7 +573,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::functionArgs </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -581,16 +584,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00473">473</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00458">458</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00159">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00128">Ark::internal::Node::attachNearestCommentBefore()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca44a50f07b4bdc57740901280f9eddaf5">Ark::internal::Capture</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00133">Ark::internal::BaseParser::error()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00175">Ark::internal::BaseParser::expect()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00087">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00116">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00099">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00309">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00154">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca44a50f07b4bdc57740901280f9eddaf5">Ark::internal::Capture</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00127">Ark::internal::BaseParser::error()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00170">Ark::internal::BaseParser::expect()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00100">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00298">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00524">function()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00501">function()</a>.</p>
 
 </div>
 </div>
-<a id="a9039fb459bace1f17cc0c826adf6584d" name="a9039fb459bace1f17cc0c826adf6584d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9039fb459bace1f17cc0c826adf6584d">&#9670;&#160;</a></span>functionCall()</h2>
+<a id="a4f85a18921b4f6d1584d038736f843bc" name="a4f85a18921b4f6d1584d038736f843bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f85a18921b4f6d1584d038736f843bc">&#9670;&#160;</a></span>functionCall()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -601,7 +604,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::functionCall </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -612,14 +615,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00780">780</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00723">723</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00159">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00890">anyAtomOf()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00153">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca6f16a5f8ff5d75ab84c018adacdfcbb7">Ark::internal::Field</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00121">Ark::internal::BaseParser::generateErrorContext()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00116">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00099">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00116">node()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00154">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00993">anyAtomOf()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00148">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca6f16a5f8ff5d75ab84c018adacdfcbb7">Ark::internal::Field</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00117">Ark::internal::BaseParser::generateErrorContextAtCurrentPosition()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00100">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00131">node()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">nodeOrValue()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
 </div>
 </div>
-<a id="a54f6a6735686dd0f299ca3052c9af7c6" name="a54f6a6735686dd0f299ca3052c9af7c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54f6a6735686dd0f299ca3052c9af7c6">&#9670;&#160;</a></span>import_()</h2>
+<a id="aec679c3b3bf635296dba3d5db8c10060" name="aec679c3b3bf635296dba3d5db8c10060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec679c3b3bf635296dba3d5db8c10060">&#9670;&#160;</a></span>import_()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -630,7 +633,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::import_ </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -641,9 +644,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00292">292</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00288">288</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00159">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00128">Ark::internal::Node::attachNearestCommentBefore()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00014">Ark::internal::Import::col</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00133">Ark::internal::BaseParser::error()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00142">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00153">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00121">Ark::internal::BaseParser::generateErrorContext()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00087">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00116">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a72d6d7a1885885bb55a565fd1070581a">Ark::internal::Import</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00042">Ark::internal::Import::is_glob</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00099">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00014">Ark::internal::Import::line</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00063">m_imports</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00309">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00352">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00031">Ark::internal::Import::package</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00330">Ark::internal::BaseParser::packageName()</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00023">Ark::internal::Import::prefix</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00063">Ark::internal::Node::push_back()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00192">Ark::internal::BaseParser::space()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00048">Ark::internal::Import::symbols</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00054">Ark::internal::Import::toPackageString()</a>, and <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00037">Ark::internal::Import::with_prefix</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00154">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00128">Ark::internal::Node::attachNearestCommentBefore()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00021">Ark::internal::FilePosition::col</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00014">Ark::internal::Import::col</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00127">Ark::internal::BaseParser::error()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00148">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00117">Ark::internal::BaseParser::generateErrorContextAtCurrentPosition()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00088">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a72d6d7a1885885bb55a565fd1070581a">Ark::internal::Import</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00042">Ark::internal::Import::is_glob</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00100">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00014">Ark::internal::Import::line</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00069">m_imports</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00298">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00341">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00031">Ark::internal::Import::package</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00319">Ark::internal::BaseParser::packageName()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00023">Ark::internal::Import::prefix</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00063">Ark::internal::Node::push_back()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00020">Ark::internal::FilePosition::row</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00187">Ark::internal::BaseParser::space()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00048">Ark::internal::Import::symbols</a>, <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00054">Ark::internal::Import::toPackageString()</a>, and <a class="el" href="../../d4/d32/Import_8hpp_source.html#l00037">Ark::internal::Import::with_prefix</a>.</p>
 
 </div>
 </div>
@@ -671,16 +674,16 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;Import&gt;&amp; list of imports detected by the parser </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00100">100</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00097">97</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00063">m_imports</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00069">m_imports</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00126">Ark::Welder::computeAST()</a>, and <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00138">Ark::internal::ImportSolver::parseImport()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00127">Ark::Welder::computeAST()</a>, and <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00138">Ark::internal::ImportSolver::parseImport()</a>.</p>
 
 </div>
 </div>
-<a id="aa5406fc7752d1da9beb7568a24c7651e" name="aa5406fc7752d1da9beb7568a24c7651e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5406fc7752d1da9beb7568a24c7651e">&#9670;&#160;</a></span>letMutSet()</h2>
+<a id="a07e78add299cbcad69c2a249f501862b" name="a07e78add299cbcad69c2a249f501862b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07e78add299cbcad69c2a249f501862b">&#9670;&#160;</a></span>letMutSet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -691,7 +694,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::letMutSet </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -702,14 +705,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00157">157</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00133">Ark::internal::BaseParser::error()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00142">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00087">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1acae6404c4aecf46684930fe2a86676a6">Ark::internal::Let</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00064">m_allow_macro_behavior</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4374cf34c5d58482ffae982196bd2114">Ark::internal::Macro</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1aebb87a770abac0e394d963d20ed574b7">Ark::internal::Mut</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00309">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00059">Ark::internal::nodeTypes</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00352">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a5d5b78699e57104f2fa03bbdf7b9197b">Ark::internal::Set</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca180bc3b1c5619aaef40e803f49921012">Ark::internal::Spread</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00127">Ark::internal::BaseParser::error()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00088">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1acae6404c4aecf46684930fe2a86676a6">Ark::internal::Let</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00070">m_allow_macro_behavior</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4374cf34c5d58482ffae982196bd2114">Ark::internal::Macro</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1aebb87a770abac0e394d963d20ed574b7">Ark::internal::Mut</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00298">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">nodeOrValue()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00078">Ark::internal::Node::nodeType()</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00059">Ark::internal::nodeTypes</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00341">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00063">Ark::internal::Node::push_back()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a5d5b78699e57104f2fa03bbdf7b9197b">Ark::internal::Set</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca180bc3b1c5619aaef40e803f49921012">Ark::internal::Spread</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
 </div>
 </div>
-<a id="acd6e64c114ab6a164729bf7843076afd" name="acd6e64c114ab6a164729bf7843076afd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd6e64c114ab6a164729bf7843076afd">&#9670;&#160;</a></span>list()</h2>
+<a id="ad1aecd14f7c58130c8dd2ed89e67a4f4" name="ad1aecd14f7c58130c8dd2ed89e67a4f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1aecd14f7c58130c8dd2ed89e67a4f4">&#9670;&#160;</a></span>list()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -720,7 +723,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::list </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -731,14 +734,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00826">826</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00764">764</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00159">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00153">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00121">Ark::internal::BaseParser::generateErrorContext()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00099">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00154">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00148">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00117">Ark::internal::BaseParser::generateErrorContextAtCurrentPosition()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00100">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">nodeOrValue()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
 </div>
 </div>
-<a id="a2fefde52c8c8b35a0ac1e79470d465db" name="a2fefde52c8c8b35a0ac1e79470d465db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fefde52c8c8b35a0ac1e79470d465db">&#9670;&#160;</a></span>loop()</h2>
+<a id="a1413b3e5977b7e5957c3594ef7da6f3a" name="a1413b3e5977b7e5957c3594ef7da6f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1413b3e5977b7e5957c3594ef7da6f3a">&#9670;&#160;</a></span>loop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -749,7 +752,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::loop </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -760,14 +763,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00262">262</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00264">264</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00142">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00352">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a3cddbb8f43a4e074e2c2ce3e8622f43e">Ark::internal::While</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">nodeOrValue()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00341">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a3cddbb8f43a4e074e2c2ce3e8622f43e">Ark::internal::While</a>.</p>
 
 </div>
 </div>
-<a id="a1315161e22df9fe2870f96762087e52f" name="a1315161e22df9fe2870f96762087e52f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1315161e22df9fe2870f96762087e52f">&#9670;&#160;</a></span>macro()</h2>
+<a id="a4c3a03a3a75c98c44624fca8d1a56eb8" name="a4c3a03a3a75c98c44624fca8d1a56eb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c3a03a3a75c98c44624fca8d1a56eb8">&#9670;&#160;</a></span>macro()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -778,7 +781,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::macro </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -789,14 +792,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00700">700</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00655">655</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00159">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00142">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00153">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00121">Ark::internal::BaseParser::generateErrorContext()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00087">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00064">m_allow_macro_behavior</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4374cf34c5d58482ffae982196bd2114">Ark::internal::Macro</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00635">macroArgs()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00309">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00352">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00154">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00148">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00117">Ark::internal::BaseParser::generateErrorContextAtCurrentPosition()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00088">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00070">m_allow_macro_behavior</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4374cf34c5d58482ffae982196bd2114">Ark::internal::Macro</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00598">macroArgs()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00298">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">nodeOrValue()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00341">Ark::internal::BaseParser::oneOf()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
 </div>
 </div>
-<a id="a50abccdb69337c2bfb4b6a91e2410d36" name="a50abccdb69337c2bfb4b6a91e2410d36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50abccdb69337c2bfb4b6a91e2410d36">&#9670;&#160;</a></span>macroArgs()</h2>
+<a id="ad7c3f85abbfe357f2c7f5eeae7962623" name="ad7c3f85abbfe357f2c7f5eeae7962623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c3f85abbfe357f2c7f5eeae7962623">&#9670;&#160;</a></span>macroArgs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -807,7 +810,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::macroArgs </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -818,16 +821,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00635">635</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00598">598</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00159">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00142">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00087">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00099">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00309">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00323">Ark::internal::BaseParser::sequence()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca180bc3b1c5619aaef40e803f49921012">Ark::internal::Spread</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00154">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00088">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00100">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00298">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00312">Ark::internal::BaseParser::sequence()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca180bc3b1c5619aaef40e803f49921012">Ark::internal::Spread</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00700">macro()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00655">macro()</a>.</p>
 
 </div>
 </div>
-<a id="a6668726e34352da7db8e7a0f0b267a3a" name="a6668726e34352da7db8e7a0f0b267a3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6668726e34352da7db8e7a0f0b267a3a">&#9670;&#160;</a></span>macroCondition()</h2>
+<a id="afdca6ce44e435bfbbdc3cf4a62c5640f" name="afdca6ce44e435bfbbdc3cf4a62c5640f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdca6ce44e435bfbbdc3cf4a62c5640f">&#9670;&#160;</a></span>macroCondition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -838,7 +841,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::macroCondition </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -849,14 +852,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00594">594</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00565">565</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00142">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a786887572f6ef1c20f2d8177cb2f1639">Ark::internal::If</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4374cf34c5d58482ffae982196bd2114">Ark::internal::Macro</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00352">Ark::internal::BaseParser::oneOf()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a786887572f6ef1c20f2d8177cb2f1639">Ark::internal::If</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4374cf34c5d58482ffae982196bd2114">Ark::internal::Macro</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">nodeOrValue()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00341">Ark::internal::BaseParser::oneOf()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>.</p>
 
 </div>
 </div>
-<a id="a35e6ac3af8c7c2948b8bfa103805afe3" name="a35e6ac3af8c7c2948b8bfa103805afe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35e6ac3af8c7c2948b8bfa103805afe3">&#9670;&#160;</a></span>nil()</h2>
+<a id="afbed4868e09334d784dac8a35d1e11cc" name="afbed4868e09334d784dac8a35d1e11cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbed4868e09334d784dac8a35d1e11cc">&#9670;&#160;</a></span>nil()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -867,22 +870,22 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::nil </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00244">244</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00947">947</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00128">Ark::internal::Node::attachNearestCommentBefore()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00154">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5f57ba1defe6a924d904c444e8891ec9aad79692ebd033933fada334aec61010b">Ark::internal::Interpret</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00066">m_mode</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00859">atom()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00961">atom()</a>.</p>
 
 </div>
 </div>
@@ -909,11 +912,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00142">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00087">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00065">m_nested_nodes</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00066">m_parsers</a>, and <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00065">Ark::MaxNestedNodes</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00088">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00071">m_nested_nodes</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00072">m_parsers</a>, and <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00072">Ark::MaxNestedNodes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00780">functionCall()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00051">process()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00723">functionCall()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">nodeOrValue()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00115">positioned()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00051">process()</a>.</p>
 
 </div>
 </div>
@@ -943,16 +946,16 @@ Additional Inherited Members</h2></td></tr>
 <p>Try to parse an atom first, if it fails try to parse a node. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::optional&lt;Node&gt; std::nullopt if no atom or node could be parsed </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">905</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01006">1006</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00859">atom()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00116">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00116">node()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00961">atom()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00131">node()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00429">block()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00219">condition()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00524">function()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00780">functionCall()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00141">letMutSet()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00826">list()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00262">loop()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00700">macro()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00594">macroCondition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00418">block()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00230">condition()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00501">function()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00723">functionCall()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00157">letMutSet()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00764">list()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00264">loop()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00655">macro()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00565">macroCondition()</a>.</p>
 
 </div>
 </div>
-<a id="a3b24d809e84b1c35d61824b6d9a50758" name="a3b24d809e84b1c35d61824b6d9a50758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b24d809e84b1c35d61824b6d9a50758">&#9670;&#160;</a></span>number()</h2>
+<a id="a2cc4561d46f38501965be5b0a36051cf" name="a2cc4561d46f38501965be5b0a36051cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc4561d46f38501965be5b0a36051cf">&#9670;&#160;</a></span>number()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -963,20 +966,90 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::number </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00091">91</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00793">793</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00859">atom()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00127">Ark::internal::BaseParser::error()</a>, <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00085">Ark::Utils::isDouble()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, and <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00269">Ark::internal::BaseParser::signedNumber()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00961">atom()</a>.</p>
+
+</div>
+</div>
+<a id="aa49ccdf600d7f91c4bda9648eb21a2fe" name="aa49ccdf600d7f91c4bda9648eb21a2fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49ccdf600d7f91c4bda9648eb21a2fe">&#9670;&#160;</a></span>positioned() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> Ark::internal::Parser::positioned </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a></td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>cursor</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">102</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00050">Ark::internal::BaseParser::m_filename</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00131">node()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00418">block()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00230">condition()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00210">del()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00900">field()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00501">function()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00458">functionArgs()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00723">functionCall()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00288">import_()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00157">letMutSet()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00764">list()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00264">loop()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00655">macro()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00598">macroArgs()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00565">macroCondition()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00947">nil()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00793">number()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00935">spread()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00807">string()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00927">symbol()</a>.</p>
+
+</div>
+</div>
+<a id="a66789ba7fb34ee002d557fd9178ce309" name="a66789ba7fb34ee002d557fd9178ce309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66789ba7fb34ee002d557fd9178ce309">&#9670;&#160;</a></span>positioned() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; &amp; Ark::internal::Parser::positioned </td>
+          <td>(</td>
+          <td class="paramtype">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>cursor</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00115">115</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00050">Ark::internal::BaseParser::m_filename</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00131">node()</a>.</p>
 
 </div>
 </div>
@@ -1010,59 +1083,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00142">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00087">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00064">Ark::internal::BaseParser::initParser()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00099">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00062">m_ast</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00061">m_logger</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00116">node()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00187">Ark::internal::BaseParser::peek()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00063">Ark::internal::Node::push_back()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00232">Ark::internal::BaseParser::spaceComment()</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00096">Ark::internal::Logger::traceEnd()</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00090">Ark::internal::Logger::traceStart()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00088">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00064">Ark::internal::BaseParser::initParser()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00100">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00068">m_ast</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00067">m_logger</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00131">node()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00182">Ark::internal::BaseParser::peek()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00063">Ark::internal::Node::push_back()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00227">Ark::internal::BaseParser::spaceComment()</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00096">Ark::internal::Logger::traceEnd()</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00090">Ark::internal::Logger::traceStart()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00126">Ark::Welder::computeAST()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00138">Ark::internal::ImportSolver::parseImport()</a>, <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00022">Formatter::run()</a>, and <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00039">Formatter::runWithString()</a>.</p>
-
-</div>
-</div>
-<a id="a8299b12ad050e0c54e7222eebe8623f2" name="a8299b12ad050e0c54e7222eebe8623f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8299b12ad050e0c54e7222eebe8623f2">&#9670;&#160;</a></span>setNodePosAndFilename()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp; Ark::internal::Parser::setNodePosAndFilename </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::optional&lt; <a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>cursor</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::nullopt</span>&#160;) const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Update a node given a file position. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">node</td><td>node to update </td></tr>
-    <tr><td class="paramname">cursor</td><td>the node position in file </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html" title="A node of an Abstract Syntax Tree for ArkScript.">Node</a>&amp; the modified node </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00116">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00050">Ark::internal::BaseParser::m_filename</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00116">node()</a>, and <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00117">Ark::internal::Node::setPos()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00890">anyAtomOf()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00429">block()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00219">condition()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00196">del()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00524">function()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00473">functionArgs()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00780">functionCall()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00292">import_()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00141">letMutSet()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00826">list()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00262">loop()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00700">macro()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00635">macroArgs()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00594">macroCondition()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00905">nodeOrValue()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00922">wrapped()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00127">Ark::Welder::computeAST()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00138">Ark::internal::ImportSolver::parseImport()</a>, <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00023">Formatter::run()</a>, and <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00040">Formatter::runWithString()</a>.</p>
 
 </div>
 </div>
-<a id="a72075c75e03d30a88dbdfd7c5767c0f1" name="a72075c75e03d30a88dbdfd7c5767c0f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72075c75e03d30a88dbdfd7c5767c0f1">&#9670;&#160;</a></span>spread()</h2>
+<a id="a2c476beaa9da7bdff18c50ac9f886755" name="a2c476beaa9da7bdff18c50ac9f886755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c476beaa9da7bdff18c50ac9f886755">&#9670;&#160;</a></span>spread()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1073,25 +1101,27 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::spread </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00232">232</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00935">935</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00859">atom()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00140">Ark::internal::BaseParser::errorWithNextToken()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00298">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00312">Ark::internal::BaseParser::sequence()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca180bc3b1c5619aaef40e803f49921012">Ark::internal::Spread</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00961">atom()</a>.</p>
 
 </div>
 </div>
-<a id="a642553e0fa3cd197c69af9b3fdec99ca" name="a642553e0fa3cd197c69af9b3fdec99ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a642553e0fa3cd197c69af9b3fdec99ca">&#9670;&#160;</a></span>string()</h2>
+<a id="a006128eadc905befc74c60c2bf401b7a" name="a006128eadc905befc74c60c2bf401b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006128eadc905befc74c60c2bf401b7a">&#9670;&#160;</a></span>string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1102,27 +1132,27 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::string </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00807">807</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d85/utf8_8hpp_source.html#l00067">utf8::decode()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00154">Ark::internal::BaseParser::accept()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00082">Ark::internal::BaseParser::backtrack()</a>, <a class="el" href="../../d1/d85/utf8_8hpp_source.html#l00067">utf8::decode()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00127">Ark::internal::BaseParser::error()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00148">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00088">Ark::internal::BaseParser::getCount()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00287">Ark::internal::BaseParser::hexNumber()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5f57ba1defe6a924d904c444e8891ec9aad79692ebd033933fada334aec61010b">Ark::internal::Interpret</a>, <a class="el" href="../../d3/d70/BaseParser_8hpp_source.html#l00100">Ark::internal::BaseParser::isEOF()</a>, <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00066">m_mode</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca27118326006d3829667a400ad23d5d98">Ark::internal::String</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00859">atom()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00961">atom()</a>.</p>
 
 </div>
 </div>
-<a id="a363f897aad4152cf215be8c4be79ffcc" name="a363f897aad4152cf215be8c4be79ffcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a363f897aad4152cf215be8c4be79ffcc">&#9670;&#160;</a></span>symbol()</h2>
+<a id="ae2df9cfb5dc8f5b964f7f3eafa9b52ae" name="ae2df9cfb5dc8f5b964f7f3eafa9b52ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2df9cfb5dc8f5b964f7f3eafa9b52ae">&#9670;&#160;</a></span>symbol()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1133,25 +1163,27 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::symbol </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a></td>          <td class="paramname"><span class="paramname"><em>filepos</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00224">224</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00927">927</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00859">atom()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00298">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00102">positioned()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00961">atom()</a>.</p>
 
 </div>
 </div>
-<a id="a24a9c9da6e711992e093a24a73f03c4f" name="a24a9c9da6e711992e093a24a73f03c4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24a9c9da6e711992e093a24a73f03c4f">&#9670;&#160;</a></span>wrapped()</h2>
+<a id="a6a91607683a6b5a06c1c65d684418060" name="a6a91607683a6b5a06c1c65d684418060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a91607683a6b5a06c1c65d684418060">&#9670;&#160;</a></span>wrapped()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1162,7 +1194,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt; Ark::internal::Parser::wrapped </td>
           <td>(</td>
-          <td class="paramtype">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;(Parser::*</td>          <td class="paramname"><span class="paramname"><em>parser&#160;</em></span>)(), </td>
+          <td class="paramtype">std::optional&lt; <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &gt;(Parser::*</td>          <td class="paramname"><span class="paramname"><em>parser&#160;</em></span>)(<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a>), </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1187,9 +1219,9 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::optional&lt;Node&gt; std::nullopt if the parser didn't match </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00922">922</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l01016">1016</a> of file <a class="el" href="../../dc/df5/Parser_8cpp_source.html">Parser.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00220">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00153">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00121">Ark::internal::BaseParser::generateErrorContext()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00116">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00309">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00246">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00260">Ark::internal::BaseParser::prefix()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00105">setNodePosAndFilename()</a>, and <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00232">Ark::internal::BaseParser::spaceComment()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00215">Ark::internal::BaseParser::comment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00148">Ark::internal::BaseParser::expectSuffixOrError()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00117">Ark::internal::BaseParser::generateErrorContextAtCurrentPosition()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00112">Ark::internal::BaseParser::getCursor()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00298">Ark::internal::BaseParser::name()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00238">Ark::internal::BaseParser::newlineOrComment()</a>, <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00249">Ark::internal::BaseParser::prefix()</a>, and <a class="el" href="../../d9/d79/BaseParser_8cpp_source.html#l00227">Ark::internal::BaseParser::spaceComment()</a>.</p>
 
 </div>
 </div>
@@ -1216,9 +1248,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Toggled on when inside a macro definition, off afterward. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00070">70</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00859">atom()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00524">function()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00141">letMutSet()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00700">macro()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00961">atom()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00501">function()</a>, <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00157">letMutSet()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00655">macro()</a>.</p>
 
 </div>
 </div>
@@ -1242,9 +1274,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00068">68</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00095">ast()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00051">process()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00092">ast()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00051">process()</a>.</p>
 
 </div>
 </div>
@@ -1268,35 +1300,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00069">69</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00292">import_()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00100">imports()</a>.</p>
-
-</div>
-</div>
-<a id="a023379e05461a34443c0465d71ff1115" name="a023379e05461a34443c0465d71ff1115"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a023379e05461a34443c0465d71ff1115">&#9670;&#160;</a></span>m_interpret</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Ark::internal::Parser::m_interpret</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>interpret escape codes in strings </p>
-
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00288">import_()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00097">imports()</a>.</p>
 
 </div>
 </div>
@@ -1320,9 +1326,35 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00051">process()</a>.</p>
+
+</div>
+</div>
+<a id="a601201779493e03c7efb163dedaa61bc" name="a601201779493e03c7efb163dedaa61bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601201779493e03c7efb163dedaa61bc">&#9670;&#160;</a></span>m_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5f57ba1defe6a924d904c444e8891ec9">ParserMode</a> Ark::internal::Parser::m_mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00066">66</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00947">nil()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00807">string()</a>.</p>
 
 </div>
 </div>
@@ -1348,14 +1380,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Nested node counter. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00116">node()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00131">node()</a>.</p>
 
 </div>
 </div>
-<a id="a009a144755bf89f9a3b68cd5398875d7" name="a009a144755bf89f9a3b68cd5398875d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a009a144755bf89f9a3b68cd5398875d7">&#9670;&#160;</a></span>m_parsers</h2>
+<a id="a57e56c67059e11c02b4fdd0eedd3c02c" name="a57e56c67059e11c02b4fdd0eedd3c02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e56c67059e11c02b4fdd0eedd3c02c">&#9670;&#160;</a></span>m_parsers</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1364,7 +1396,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::function&lt;std::optional&lt;<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&gt;()&gt; &gt; Ark::internal::Parser::m_parsers</td>
+          <td class="memname">std::vector&lt;std::function&lt;std::optional&lt;<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&gt;(<a class="el" href="../../dd/d0e/structArk_1_1internal_1_1FilePosition.html">FilePosition</a>)&gt; &gt; Ark::internal::Parser::m_parsers</td>
         </tr>
       </table>
   </td>
@@ -1374,9 +1406,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00066">66</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d7/ddd/Parser_8hpp_source.html#l00072">72</a> of file <a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Parser.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00116">node()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00131">node()</a>.</p>
 
 </div>
 </div>
@@ -1390,7 +1422,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="../../d9/d0c/classArk_1_1internal_1_1Parser.html">Parser</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

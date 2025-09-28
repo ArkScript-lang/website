@@ -6,7 +6,7 @@ var classArk_1_1internal_1_1StaticScope =
     [ "StaticScope", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#ad0eaf474ebde003d65a3da59fb260813", null ],
     [ "add", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#ae08644f32212fe8c17eb6ab488e3b9c8", null ],
     [ "fullyQualifiedName", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#afe7376dd4d031291aa1ca448fc5f16fd", null ],
-    [ "get", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#a8c0b74db2eda470eb0c1980ab9d090c4", null ],
+    [ "get", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#aac36032d128a0c0343cce1d85c32133a", null ],
     [ "hasSymbol", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#a89deba01bba7fdc06c7a0d3a95da54ad", null ],
     [ "isGlob", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#af15e019b01447100004722eb1a90a27b", null ],
     [ "isNamespace", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#adaf26a7ced94b2db2fd8df1a351664e1", null ],
@@ -15,6 +15,5 @@ var classArk_1_1internal_1_1StaticScope =
     [ "prefix", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#a75ff9058e793b35416edcdd9b62b77f7", null ],
     [ "recursiveHasSymbol", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#a401411ada156b0a4a6132269c2ae6719", null ],
     [ "saveNamespace", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#ac9608c6668e96eb6bb44edf4b6f77458", null ],
-    [ "withPrefix", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#a0033818bb55c6126682bdca5361c0190", null ],
     [ "m_vars", "d3/d8e/classArk_1_1internal_1_1StaticScope.html#a0032538f5c78fb7557a37c8bb5bbb920", null ]
 ];

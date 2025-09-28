@@ -10,4 +10,6 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/IntermediateRe
     graph [ bgcolor="#edf0f7", pencolor="grey50", label="Compiler", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_e4f19535f57335fb80a0267cec25bf70.html",tooltip=""]
   dir_ad45c69e33d564afb397466bf2d991f2 [label="IntermediateRepresentation", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_ad45c69e33d564afb397466bf2d991f2.html",tooltip=""];
   }
+  dir_33906bab6f1f9d0f271eb499b90a96b5 [label="Utils", fillcolor="#edf0f7", color="grey50", style="filled", URL="dir_33906bab6f1f9d0f271eb499b90a96b5.html",tooltip=""];
+  dir_ad45c69e33d564afb397466bf2d991f2->dir_33906bab6f1f9d0f271eb499b90a96b5 [headlabel="4", labeldistance=1.5 headhref="dir_000015_000030.html" href="dir_000015_000030.html" color="steelblue1" fontcolor="steelblue1"];
 }

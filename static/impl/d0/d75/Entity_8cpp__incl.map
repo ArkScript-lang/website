@@ -1,17 +1,18 @@
 <map id="/Users/fola/Documents/ArkScript/Ark/src/arkreactor/Compiler/IntermediateRepresentation/Entity.cpp" name="/Users/fola/Documents/ArkScript/Ark/src/arkreactor/Compiler/IntermediateRepresentation/Entity.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="91,5,332,76"/>
-<area shape="rect" id="Node000002" href="$de/da6/Entity_8hpp.html" title="An entity in the IR is a bundle of information." alt="" coords="125,124,298,165"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,76,214,108,209,108,209,76"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="5,220,80,246"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="175,168,81,215,78,210,172,163"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="103,220,160,246"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="196,167,155,211,151,207,192,163"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="185,220,238,246"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="214,165,214,205,209,205,209,165"/>
-<area shape="rect" id="Node000006" href="$db/d53/Word_8hpp.html" title="Describe an instruction and its immediate argument." alt="" coords="262,213,436,253"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="244,163,307,202,304,206,242,167"/>
-<area shape="rect" id="Node000007" href="$d8/daa/Instructions_8hpp.html" title="The different instructions used by the compiler and virtual machine." alt="" coords="460,220,654,246"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="291,163,495,213,493,218,290,168"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="532,301,582,327"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="560,246,560,285,554,285,554,246"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="13,5,254,76"/>
+<area shape="rect" id="Node000002" href="$de/da6/Entity_8hpp.html" title="An entity in the IR is a bundle of information." alt="" coords="47,124,220,165"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,76,136,108,131,108,131,76"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="93,301,167,327"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="72,167,40,187,15,214,8,233,15,252,27,267,43,280,79,298,77,303,40,285,23,271,10,255,3,233,10,211,36,182,70,163"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="25,220,82,246"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="117,167,77,211,73,207,114,163"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="107,220,160,246"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="136,165,136,205,131,205,131,165"/>
+<area shape="rect" id="Node000006" href="$db/d53/Word_8hpp.html" title="Describe an instruction and its immediate argument." alt="" coords="184,213,358,253"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="166,163,229,202,226,206,163,167"/>
+<area shape="rect" id="Node000007" href="$d8/daa/Instructions_8hpp.html" title="The different instructions used by the compiler and virtual machine." alt="" coords="382,220,576,246"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="213,163,416,213,415,218,212,168"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="237,256,166,296,163,291,234,252"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="454,301,504,327"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="482,246,482,285,476,285,476,246"/>
 </map>

@@ -1,30 +1,30 @@
 <map id="/Users/fola/Documents/ArkScript/Ark/src/arkreactor/Compiler/NameResolution/ScopeResolver.cpp" name="/Users/fola/Documents/ArkScript/Ark/src/arkreactor/Compiler/NameResolution/ScopeResolver.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="482,5,778,61"/>
-<area shape="rect" id="Node000002" href="$db/d5b/ScopeResolver_8hpp.html" title="Handle scope resolution at compile time." alt="" coords="244,109,442,150"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="548,64,418,106,417,101,546,59"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="620,286,680,312"/>
-<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="635,61,651,271,645,271,629,61"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="668,116,742,142"/>
-<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="654,60,688,103,684,106,650,63"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="504,5,799,61"/>
+<area shape="rect" id="Node000002" href="$db/d5b/ScopeResolver_8hpp.html" title="Handle scope resolution at compile time." alt="" coords="266,109,464,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="569,64,440,106,438,101,568,59"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="649,286,710,312"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="657,61,679,271,674,271,652,61"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="689,116,763,142"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="675,60,709,103,705,106,671,63"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="87,286,141,312"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="245,152,198,171,157,200,144,216,134,234,121,272,116,270,129,232,139,213,154,196,195,166,243,147"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="437,286,503,312"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="396,148,429,168,456,196,465,214,471,234,474,271,469,271,466,235,460,216,452,199,426,172,394,153"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="528,286,596,312"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="397,148,439,168,481,196,520,234,549,272,544,275,516,237,478,200,437,173,394,153"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,153,224,172,178,200,161,216,147,235,126,274,122,271,143,233,157,213,175,196,221,167,271,148"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="466,286,532,312"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="416,148,449,168,478,196,495,233,501,270,496,271,490,235,473,199,446,172,413,153"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="557,286,626,312"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="419,148,462,169,505,196,546,234,577,272,573,275,542,237,502,200,460,173,416,153"/>
 <area shape="rect" id="Node000006" title=" " alt="" coords="5,286,63,312"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="245,152,184,171,126,200,84,236,52,275,48,271,80,232,123,195,182,166,243,147"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="168,205,220,231"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="311,152,229,199,227,195,308,148"/>
-<area shape="rect" id="Node000008" href="$df/db8/StaticScope_8hpp.html" title="Static scopes (for functions, loops) and namespace scopes (for packages) definitions,..." alt="" coords="244,198,442,238"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="346,150,346,182,341,182,341,150"/>
-<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="287,241,156,286,154,281,285,236"/>
-<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="376,236,439,275,436,280,373,241"/>
-<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="399,236,515,278,513,283,397,241"/>
-<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="264,241,78,288,77,283,262,236"/>
-<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="424,236,605,283,604,288,422,242"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="266,152,202,171,139,200,91,237,54,276,51,273,88,233,137,195,200,166,264,147"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="189,205,242,231"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="332,152,251,199,248,195,329,148"/>
+<area shape="rect" id="Node000008" href="$df/db8/StaticScope_8hpp.html" title="Static scopes (for functions, loops) and namespace scopes (for packages) definitions,..." alt="" coords="266,198,464,238"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="367,150,367,182,362,182,362,150"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="303,241,156,288,154,282,301,236"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="400,237,467,276,464,280,397,241"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="422,236,543,278,541,283,420,241"/>
+<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="276,241,79,288,77,283,275,236"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="448,236,635,283,633,288,447,241"/>
 <area shape="rect" id="Node000010" title=" " alt="" coords="165,286,268,312"/>
-<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="313,241,251,280,248,275,311,236"/>
-<area shape="rect" id="Node000011" href="$d5/d40/Platform_8hpp.html" title="ArkScript configuration macros." alt="" coords="293,286,412,312"/>
-<area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="348,238,352,270,347,271,343,239"/>
+<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="329,241,254,281,251,276,326,237"/>
+<area shape="rect" id="Node000011" href="$d5/d40/Platform_8hpp.html" title="ArkScript configuration macros." alt="" coords="292,286,442,312"/>
+<area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="368,239,369,271,364,271,363,239"/>
 </map>

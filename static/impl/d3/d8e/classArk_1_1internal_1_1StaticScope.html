@@ -116,9 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae08644f32212fe8c17eb6ab488e3b9c8" id="r_ae08644f32212fe8c17eb6ab488e3b9c8"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae08644f32212fe8c17eb6ab488e3b9c8">add</a> (const std::string &amp;name, bool is_mutable)</td></tr>
 <tr class="memdesc:ae08644f32212fe8c17eb6ab488e3b9c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="../../d1/dcf/structArk_1_1internal_1_1Declaration.html">Declaration</a> to the scope, given a mutability status.  <br /></td></tr>
 <tr class="separator:ae08644f32212fe8c17eb6ab488e3b9c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c0b74db2eda470eb0c1980ab9d090c4" id="r_a8c0b74db2eda470eb0c1980ab9d090c4"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; <a class="el" href="../../d1/dcf/structArk_1_1internal_1_1Declaration.html">Declaration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c0b74db2eda470eb0c1980ab9d090c4">get</a> (const std::string &amp;name, bool extensive_lookup)</td></tr>
-<tr class="memdesc:a8c0b74db2eda470eb0c1980ab9d090c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to return a <a class="el" href="../../d1/dcf/structArk_1_1internal_1_1Declaration.html">Declaration</a> from this scope with a given name.  <br /></td></tr>
-<tr class="separator:a8c0b74db2eda470eb0c1980ab9d090c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac36032d128a0c0343cce1d85c32133a" id="r_aac36032d128a0c0343cce1d85c32133a"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; <a class="el" href="../../d1/dcf/structArk_1_1internal_1_1Declaration.html">Declaration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac36032d128a0c0343cce1d85c32133a">get</a> (const std::string &amp;name, const std::string &amp;origin_namespace, bool extensive_lookup)</td></tr>
+<tr class="memdesc:aac36032d128a0c0343cce1d85c32133a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to return a <a class="el" href="../../d1/dcf/structArk_1_1internal_1_1Declaration.html">Declaration</a> from this scope with a given name.  <br /></td></tr>
+<tr class="separator:aac36032d128a0c0343cce1d85c32133a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe7376dd4d031291aa1ca448fc5f16fd" id="r_afe7376dd4d031291aa1ca448fc5f16fd"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe7376dd4d031291aa1ca448fc5f16fd">fullyQualifiedName</a> (const std::string &amp;name) const</td></tr>
 <tr class="memdesc:afe7376dd4d031291aa1ca448fc5f16fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a <a class="el" href="../../d1/dcf/structArk_1_1internal_1_1Declaration.html">Declaration</a> name, compute its fully qualified name.  <br /></td></tr>
 <tr class="separator:afe7376dd4d031291aa1ca448fc5f16fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,8 +127,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac9608c6668e96eb6bb44edf4b6f77458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf26a7ced94b2db2fd8df1a351664e1" id="r_adaf26a7ced94b2db2fd8df1a351664e1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaf26a7ced94b2db2fd8df1a351664e1">isNamespace</a> () const</td></tr>
 <tr class="separator:adaf26a7ced94b2db2fd8df1a351664e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0033818bb55c6126682bdca5361c0190" id="r_a0033818bb55c6126682bdca5361c0190"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0033818bb55c6126682bdca5361c0190">withPrefix</a> () const</td></tr>
-<tr class="separator:a0033818bb55c6126682bdca5361c0190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af15e019b01447100004722eb1a90a27b" id="r_af15e019b01447100004722eb1a90a27b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af15e019b01447100004722eb1a90a27b">isGlob</a> () const</td></tr>
 <tr class="separator:af15e019b01447100004722eb1a90a27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75ff9058e793b35416edcdd9b62b77f7" id="r_a75ff9058e793b35416edcdd9b62b77f7"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75ff9058e793b35416edcdd9b62b77f7">prefix</a> () const</td></tr>
@@ -330,8 +328,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8c0b74db2eda470eb0c1980ab9d090c4" name="a8c0b74db2eda470eb0c1980ab9d090c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c0b74db2eda470eb0c1980ab9d090c4">&#9670;&#160;</a></span>get()</h2>
+<a id="aac36032d128a0c0343cce1d85c32133a" name="aac36032d128a0c0343cce1d85c32133a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac36032d128a0c0343cce1d85c32133a">&#9670;&#160;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,6 +341,11 @@ Private Attributes</h2></td></tr>
           <td class="memname">std::optional&lt; <a class="el" href="../../d1/dcf/structArk_1_1internal_1_1Declaration.html">Declaration</a> &gt; Ark::internal::StaticScope::get </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>origin_namespace</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -361,19 +364,20 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">origin_namespace</td><td>unused in <a class="el" href="../../d3/d8e/classArk_1_1internal_1_1StaticScope.html">StaticScope</a> </td></tr>
     <tr><td class="paramname">extensive_lookup</td><td>unused in <a class="el" href="../../d3/d8e/classArk_1_1internal_1_1StaticScope.html">StaticScope</a> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::optional&lt;Declaration&gt; std::nullopt if the <a class="el" href="../../d1/dcf/structArk_1_1internal_1_1Declaration.html">Declaration</a> isn't in scope </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d9/d4a/classArk_1_1internal_1_1NamespaceScope.html#a6333604c53d843572820d1ac351d9d98">Ark::internal::NamespaceScope</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d9/d4a/classArk_1_1internal_1_1NamespaceScope.html#ad6a11d3bca345e2cf455cbc6309bbc31">Ark::internal::NamespaceScope</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d11/StaticScope_8cpp_source.html#l00015">15</a> of file <a class="el" href="../../d2/d11/StaticScope_8cpp_source.html">StaticScope.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/db8/StaticScope_8hpp_source.html#l00096">m_vars</a>, and <a class="el" href="../../df/db8/StaticScope_8hpp_source.html#l00027">Ark::internal::Declaration::name</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d79/ScopeResolver_8cpp_source.html#l00121">Ark::internal::ScopeResolver::currentScope()</a>, and <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00054">Ark::internal::NameResolutionPass::visit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d79/ScopeResolver_8cpp_source.html#l00123">Ark::internal::ScopeResolver::currentScope()</a>.</p>
 
 </div>
 </div>
@@ -606,35 +610,6 @@ false on <a class="el" href="../../d3/d8e/classArk_1_1internal_1_1StaticScope.ht
 
 </div>
 </div>
-<a id="a0033818bb55c6126682bdca5361c0190" name="a0033818bb55c6126682bdca5361c0190"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0033818bb55c6126682bdca5361c0190">&#9670;&#160;</a></span>withPrefix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool Ark::internal::StaticScope::withPrefix </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="../../d9/d4a/classArk_1_1internal_1_1NamespaceScope.html#a89366683dcd44b2c93c2609af8e71a30">Ark::internal::NamespaceScope</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="../../df/db8/StaticScope_8hpp_source.html#l00089">89</a> of file <a class="el" href="../../df/db8/StaticScope_8hpp_source.html">StaticScope.hpp</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a0032538f5c78fb7557a37c8bb5bbb920" name="a0032538f5c78fb7557a37c8bb5bbb920"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0032538f5c78fb7557a37c8bb5bbb920">&#9670;&#160;</a></span>m_vars</h2>
@@ -672,7 +647,7 @@ false on <a class="el" href="../../d3/d8e/classArk_1_1internal_1_1StaticScope.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="../../d3/d8e/classArk_1_1internal_1_1StaticScope.html">StaticScope</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

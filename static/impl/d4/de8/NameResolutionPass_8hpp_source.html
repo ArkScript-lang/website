@@ -84,7 +84,7 @@ $(function(){initNavTree('d4/de8/NameResolutionPass_8hpp_source.html','../../');
 <div class="contents">
 <a href="../../d4/de8/NameResolutionPass_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file NameResolutionPass.hpp</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author Alexandre Plateau (lexplt.dev@gmail.com)</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author Lex Plateau (lexplt.dev@gmail.com)</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @brief Resolves names and fully qualify them in the AST (prefixing them with the package they are from)</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @date 2024-07-22</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
@@ -99,7 +99,7 @@ $(function(){initNavTree('d4/de8/NameResolutionPass_8hpp_source.html','../../');
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="../../d5/d40/Platform_8hpp.html">Ark/Platform.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="../../d5/d40/Platform_8hpp.html">Ark/Utils/Platform.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="../../df/d5f/Pass_8hpp.html">Ark/Compiler/Pass.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="../../db/d5b/ScopeResolver_8hpp.html">Ark/Compiler/NameResolution/ScopeResolver.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
@@ -195,7 +195,7 @@ $(function(){initNavTree('d4/de8/NameResolutionPass_8hpp_source.html','../../');
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#endif  </span><span class="comment">// ARK_COMPILER_NAMERESOLUTIONPASS_HPP</span></div>
-<div class="ttc" id="aModule_8hpp_html_ac62a8551c675391a8cf01d112e42d755"><div class="ttname"><a href="../../d5/d44/Module_8hpp.html#ac62a8551c675391a8cf01d112e42d755">ARK_API</a></div><div class="ttdeci">#define ARK_API</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d44/Module_8hpp_source.html#l00028">Module.hpp:28</a></div></div>
+<div class="ttc" id="aModule_8hpp_html_ac62a8551c675391a8cf01d112e42d755"><div class="ttname"><a href="../../d5/d44/Module_8hpp.html#ac62a8551c675391a8cf01d112e42d755">ARK_API</a></div><div class="ttdeci">#define ARK_API</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d44/Module_8hpp_source.html#l00022">Module.hpp:22</a></div></div>
 <div class="ttc" id="aPass_8hpp_html"><div class="ttname"><a href="../../df/d5f/Pass_8hpp.html">Pass.hpp</a></div><div class="ttdoc">Interface for a compiler pass (take in an AST, output an AST)</div></div>
 <div class="ttc" id="aPlatform_8hpp_html"><div class="ttname"><a href="../../d5/d40/Platform_8hpp.html">Platform.hpp</a></div><div class="ttdoc">ArkScript configuration macros.</div></div>
 <div class="ttc" id="aScopeResolver_8hpp_html"><div class="ttname"><a href="../../db/d5b/ScopeResolver_8hpp.html">ScopeResolver.hpp</a></div><div class="ttdoc">Handle scope resolution at compile time.</div></div>
@@ -206,10 +206,10 @@ $(function(){initNavTree('d4/de8/NameResolutionPass_8hpp_source.html','../../');
 <div class="ttc" id="aclassArk_1_1internal_1_1NameResolutionPass_html_ac8662d15a165f31ed13003c1d2fef679"><div class="ttname"><a href="../../d7/db8/classArk_1_1internal_1_1NameResolutionPass.html#ac8662d15a165f31ed13003c1d2fef679">Ark::internal::NameResolutionPass::m_ast</a></div><div class="ttdeci">Node m_ast</div><div class="ttdef"><b>Definition</b> <a href="#l00054">NameResolutionPass.hpp:54</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1NameResolutionPass_html_aefa4dff1ae6edbf6b0c39ab678aa52e1"><div class="ttname"><a href="../../d7/db8/classArk_1_1internal_1_1NameResolutionPass.html#aefa4dff1ae6edbf6b0c39ab678aa52e1">Ark::internal::NameResolutionPass::m_scope_resolver</a></div><div class="ttdeci">ScopeResolver m_scope_resolver</div><div class="ttdef"><b>Definition</b> <a href="#l00059">NameResolutionPass.hpp:59</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1NameResolutionPass_html_af850c3454f30ad0ebb1229dbd2d712d9"><div class="ttname"><a href="../../d7/db8/classArk_1_1internal_1_1NameResolutionPass.html#af850c3454f30ad0ebb1229dbd2d712d9">Ark::internal::NameResolutionPass::m_symbol_nodes</a></div><div class="ttdeci">std::vector&lt; Node &gt; m_symbol_nodes</div><div class="ttdef"><b>Definition</b> <a href="#l00056">NameResolutionPass.hpp:56</a></div></div>
-<div class="ttc" id="aclassArk_1_1internal_1_1Node_html"><div class="ttname"><a href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Ark::internal::Node</a></div><div class="ttdoc">A node of an Abstract Syntax Tree for ArkScript.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dc6/Node_8hpp_source.html#l00029">Node.hpp:30</a></div></div>
+<div class="ttc" id="aclassArk_1_1internal_1_1Node_html"><div class="ttname"><a href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Ark::internal::Node</a></div><div class="ttdoc">A node of an Abstract Syntax Tree for ArkScript.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dc6/Node_8hpp_source.html#l00031">Node.hpp:32</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1Pass_html"><div class="ttname"><a href="../../da/d7b/classArk_1_1internal_1_1Pass.html">Ark::internal::Pass</a></div><div class="ttdoc">An interface to describe compiler passes.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d5f/Pass_8hpp_source.html#l00022">Pass.hpp:23</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1ScopeResolver_html"><div class="ttname"><a href="../../dd/d92/classArk_1_1internal_1_1ScopeResolver.html">Ark::internal::ScopeResolver</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d5b/ScopeResolver_8hpp_source.html#l00024">ScopeResolver.hpp:25</a></div></div>
-<div class="ttc" id="anamespaceArk_1_1internal_html"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00024">Builtins.hpp:25</a></div></div>
+<div class="ttc" id="anamespaceArk_1_1internal_html"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00025">Builtins.hpp:26</a></div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html_a9a844cdbff6d30f493cb3044c72128f1"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1">Ark::internal::Keyword</a></div><div class="ttdeci">Keyword</div><div class="ttdoc">The different keywords available.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddd/Common_8hpp_source.html#l00074">Common.hpp:75</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -217,7 +217,7 @@ $(function(){initNavTree('d4/de8/NameResolutionPass_8hpp_source.html','../../');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_a8b6c64285bf9ac60f50770eb2fc48b5.html">Ark</a></li><li class="navelem"><a class="el" href="../../dir_e4f19535f57335fb80a0267cec25bf70.html">Compiler</a></li><li class="navelem"><a class="el" href="../../dir_7af1ad8c04f38ec2fb191400d7a454aa.html">NameResolution</a></li><li class="navelem"><a class="el" href="../../d4/de8/NameResolutionPass_8hpp.html">NameResolutionPass.hpp</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

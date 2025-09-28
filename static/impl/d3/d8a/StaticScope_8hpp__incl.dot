@@ -19,5 +19,5 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/NameResolution
   Node1 -> Node7 [id="edge6_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
   Node7 [id="Node000007",label="unordered_set",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node1 -> Node8 [id="edge7_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
-  Node8 [id="Node000008",label="Ark/Platform.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d40/Platform_8hpp.html",tooltip="ArkScript configuration macros."];
+  Node8 [id="Node000008",label="Ark/Utils/Platform.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d40/Platform_8hpp.html",tooltip="ArkScript configuration macros."];
 }

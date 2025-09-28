@@ -1,0 +1,5 @@
+<map id="Ark::internal::FileSpan" name="Ark::internal::FileSpan">
+<area shape="rect" id="Node000001" title="Describes a span for a node/atom in a file, its start position and end position." alt="" coords="5,94,156,120"/>
+<area shape="rect" id="Node000002" href="$d7/df6/structArk_1_1internal_1_1FilePos.html" title=" " alt="" coords="9,5,152,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,47,83,94,78,94,78,47"/>
+</map>

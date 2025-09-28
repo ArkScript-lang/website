@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 1032;
+var viewWidth = 1064;
 var viewHeight = 361;
 var sectionId = 'dynsection-1';
 </script>
@@ -98,9 +98,9 @@ var sectionId = 'dynsection-1';
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
-<g id="edge14_Node000001_Node000003" class="edge">
+<g id="edge17_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<g id="a_edge14_Node000001_Node000003"><a xlink:title=" ">
+<g id="a_edge17_Node000001_Node000003"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M663.66,-300.14C660.22,-292.09 656.82,-283.32 654.25,-275 646.16,-248.76 640.79,-217.46 637.88,-197.5"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="660.42,-301.47 667.67,-309.19 666.82,-298.63 660.42,-301.47"/>
 </a>
@@ -115,23 +115,23 @@ var sectionId = 'dynsection-1';
 </a>
 </g>
 </g>
-<!-- Node11 -->
-<g id="Node000011" class="node">
-<title>Node11</title>
-<g id="a_Node000011"><a xlink:href="../../d4/dc9/Future_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="1023.5,-119.5 883,-119.5 883,-77.75 1023.5,-77.75 1023.5,-119.5"/>
-<text text-anchor="start" x="891" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
-<text text-anchor="start" x="891" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/src/arkreactor</text>
-<text text-anchor="middle" x="953.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">/VM/Future.cpp</text>
+<!-- Node13 -->
+<g id="Node000013" class="node">
+<title>Node13</title>
+<g id="a_Node000013"><a xlink:href="../../d4/dc9/Future_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="1055.5,-119.5 915,-119.5 915,-77.75 1055.5,-77.75 1055.5,-119.5"/>
+<text text-anchor="start" x="923" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
+<text text-anchor="start" x="923" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/src/arkreactor</text>
+<text text-anchor="middle" x="985.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">/VM/Future.cpp</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node11 -->
-<g id="edge13_Node000002_Node000011" class="edge">
-<title>Node2&#45;&gt;Node11</title>
-<g id="a_edge13_Node000002_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M762.01,-226.71C807.6,-196.41 881.35,-147.4 922.68,-119.94"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="760.1,-223.77 753.71,-232.22 763.98,-229.6 760.1,-223.77"/>
+<!-- Node2&#45;&gt;Node13 -->
+<g id="edge16_Node000002_Node000013" class="edge">
+<title>Node2&#45;&gt;Node13</title>
+<g id="a_edge16_Node000002_Node000013"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M766.82,-227.11C818.7,-196.83 903.27,-147.47 950.52,-119.9"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="765.08,-224.07 758.21,-232.14 768.61,-230.12 765.08,-224.07"/>
 </a>
 </g>
 </g>
@@ -139,10 +139,10 @@ var sectionId = 'dynsection-1';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="../../d3/d7e/Ark_8hpp.html" target="_top" xlink:title="Includes the needed files to start using ArkScript.">
-<polygon fill="white" stroke="#666666" points="276.88,-119.5 159.62,-119.5 159.62,-77.75 276.88,-77.75 276.88,-119.5"/>
-<text text-anchor="start" x="167.62" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
-<text text-anchor="start" x="167.62" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/include</text>
-<text text-anchor="middle" x="218.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Ark/Ark.hpp</text>
+<polygon fill="white" stroke="#666666" points="305.88,-119.5 188.62,-119.5 188.62,-77.75 305.88,-77.75 305.88,-119.5"/>
+<text text-anchor="start" x="196.62" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
+<text text-anchor="start" x="196.62" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/include</text>
+<text text-anchor="middle" x="247.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Ark/Ark.hpp</text>
 </a>
 </g>
 </g>
@@ -150,8 +150,8 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M565.25,-166.93C494.23,-157.72 381.37,-141.33 285.25,-119.5 282.65,-118.91 280,-118.27 277.33,-117.6"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="564.42,-170.35 574.78,-168.15 565.31,-163.4 564.42,-170.35"/>
+<path fill="none" stroke="#63b8ff" d="M565.26,-161.71C491.2,-147.25 375.63,-124.69 306.1,-111.11"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="564.35,-165.1 574.84,-163.58 565.69,-158.23 564.35,-165.1"/>
 </a>
 </g>
 </g>
@@ -159,10 +159,10 @@ var sectionId = 'dynsection-1';
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:href="../../d5/d44/Module_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="411.88,-119.5 294.62,-119.5 294.62,-77.75 411.88,-77.75 411.88,-119.5"/>
-<text text-anchor="start" x="302.62" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
-<text text-anchor="start" x="302.62" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/include</text>
-<text text-anchor="middle" x="353.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Ark/Module.hpp</text>
+<polygon fill="white" stroke="#666666" points="452.88,-41.75 335.62,-41.75 335.62,0 452.88,0 452.88,-41.75"/>
+<text text-anchor="start" x="343.62" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
+<text text-anchor="start" x="343.62" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/include</text>
+<text text-anchor="middle" x="394.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/Ark/Module.hpp</text>
 </a>
 </g>
 </g>
@@ -170,19 +170,19 @@ var sectionId = 'dynsection-1';
 <g id="edge6_Node000003_Node000007" class="edge">
 <title>Node3&#45;&gt;Node7</title>
 <g id="a_edge6_Node000003_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M565.27,-157.83C523.15,-147.11 468.51,-132.93 420.25,-119.5 417.56,-118.75 414.82,-117.98 412.04,-117.19"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="564.23,-161.18 574.78,-160.25 565.95,-154.39 564.23,-161.18"/>
+<path fill="none" stroke="#63b8ff" d="M565.25,-166.04C508.27,-156.99 434,-141.41 413.25,-119.5 393.54,-98.69 391.4,-63.82 392.34,-41.87"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="564.48,-169.46 574.89,-167.53 565.55,-162.54 564.48,-169.46"/>
 </a>
 </g>
 </g>
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="../../d5/da5/Repl_8hpp.html" target="_top" xlink:title="ArkScript REPL &#45; Read Eval Print Loop.">
-<polygon fill="white" stroke="#666666" points="546.88,-119.5 429.62,-119.5 429.62,-77.75 546.88,-77.75 546.88,-119.5"/>
-<text text-anchor="start" x="437.62" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
-<text text-anchor="start" x="437.62" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/include</text>
-<text text-anchor="middle" x="488.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">/CLI/REPL/Repl.hpp</text>
+<g id="a_Node000008"><a xlink:href="../../d2/d33/ModuleMapping_8hpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="564.25,-119.5 422.25,-119.5 422.25,-77.75 564.25,-77.75 564.25,-119.5"/>
+<text text-anchor="start" x="430.25" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
+<text text-anchor="start" x="430.25" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/include</text>
+<text text-anchor="middle" x="493.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">/Ark/VM/ModuleMapping.hpp</text>
 </a>
 </g>
 </g>
@@ -190,57 +190,77 @@ var sectionId = 'dynsection-1';
 <g id="edge7_Node000003_Node000008" class="edge">
 <title>Node3&#45;&gt;Node8</title>
 <g id="a_edge7_Node000003_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M585.65,-149.82C566.79,-140.1 545.56,-129.16 527.75,-119.98"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="584.02,-152.91 594.51,-154.38 587.23,-146.69 584.02,-152.91"/>
+<path fill="none" stroke="#63b8ff" d="M587.09,-149.68C568.93,-139.99 548.53,-129.12 531.41,-119.98"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="585.39,-152.74 595.86,-154.36 588.69,-146.57 585.39,-152.74"/>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node11 -->
-<g id="edge10_Node000003_Node000011" class="edge">
-<title>Node3&#45;&gt;Node11</title>
-<g id="a_edge10_Node000003_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M705.06,-159.23C752.53,-148.2 816.72,-133.16 873.25,-119.5 876.31,-118.76 879.44,-118 882.59,-117.23"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="704.41,-155.79 695.46,-161.47 705.99,-162.61 704.41,-155.79"/>
+<!-- Node9 -->
+<g id="Node000009" class="node">
+<title>Node9</title>
+<g id="a_Node000009"><a xlink:href="../../d2/d27/VM_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="611.5,-41.75 471,-41.75 471,0 611.5,0 611.5,-41.75"/>
+<text text-anchor="start" x="479" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
+<text text-anchor="start" x="479" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/src/arkreactor</text>
+<text text-anchor="middle" x="541.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/VM/VM.cpp</text>
 </a>
 </g>
 </g>
-<!-- Node12 -->
-<g id="Node000012" class="node">
-<title>Node12</title>
-<g id="a_Node000012"><a xlink:href="../../d2/d27/VM_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="705.5,-119.5 565,-119.5 565,-77.75 705.5,-77.75 705.5,-119.5"/>
-<text text-anchor="start" x="573" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
-<text text-anchor="start" x="573" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/src/arkreactor</text>
-<text text-anchor="middle" x="635.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">/VM/VM.cpp</text>
+<!-- Node3&#45;&gt;Node9 -->
+<g id="edge14_Node000003_Node000009" class="edge">
+<title>Node3&#45;&gt;Node9</title>
+<g id="a_edge14_Node000003_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M617.03,-145.62C598.32,-115.07 569.73,-68.38 553.54,-41.95"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="613.96,-147.32 622.17,-154.02 619.93,-143.66 613.96,-147.32"/>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node12 -->
-<g id="edge11_Node000003_Node000012" class="edge">
-<title>Node3&#45;&gt;Node12</title>
-<g id="a_edge11_Node000003_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M635.25,-143.75C635.25,-135.71 635.25,-127.29 635.25,-119.98"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="631.75,-143.56 635.25,-153.56 638.75,-143.56 631.75,-143.56"/>
+<!-- Node10 -->
+<g id="Node000010" class="node">
+<title>Node10</title>
+<g id="a_Node000010"><a xlink:href="../../d5/da5/Repl_8hpp.html" target="_top" xlink:title="ArkScript REPL &#45; Read Eval Print Loop.">
+<polygon fill="white" stroke="#666666" points="737.88,-119.5 620.62,-119.5 620.62,-77.75 737.88,-77.75 737.88,-119.5"/>
+<text text-anchor="start" x="628.62" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
+<text text-anchor="start" x="628.62" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/include</text>
+<text text-anchor="middle" x="679.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">/CLI/REPL/Repl.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node13 -->
-<g id="Node000013" class="node">
-<title>Node13</title>
-<g id="a_Node000013"><a xlink:href="../../d1/db2/Closure_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="864.5,-119.5 724,-119.5 724,-77.75 864.5,-77.75 864.5,-119.5"/>
-<text text-anchor="start" x="732" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
-<text text-anchor="start" x="732" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/src/arkreactor</text>
-<text text-anchor="middle" x="794.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">/VM/Value/Closure.cpp</text>
+<!-- Node3&#45;&gt;Node10 -->
+<g id="edge10_Node000003_Node000010" class="edge">
+<title>Node3&#45;&gt;Node10</title>
+<g id="a_edge10_Node000003_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M652.81,-145.15C657.72,-136.7 662.93,-127.71 667.43,-119.98"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="649.8,-143.36 647.8,-153.77 655.85,-146.88 649.8,-143.36"/>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node13 -->
-<g id="edge12_Node000003_Node000013" class="edge">
+<g id="edge13_Node000003_Node000013" class="edge">
 <title>Node3&#45;&gt;Node13</title>
-<g id="a_edge12_Node000003_Node000013"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M688.05,-150.22C708.66,-140.4 731.99,-129.29 751.52,-119.98"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="686.75,-146.96 679.23,-154.42 689.76,-153.28 686.75,-146.96"/>
+<g id="a_edge13_Node000003_Node000013"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M705.41,-161.64C760,-150.77 837.6,-134.9 905.25,-119.5 908.32,-118.8 911.45,-118.08 914.62,-117.33"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="704.73,-158.21 695.61,-163.59 706.1,-165.08 704.73,-158.21"/>
+</a>
+</g>
+</g>
+<!-- Node14 -->
+<g id="Node000014" class="node">
+<title>Node14</title>
+<g id="a_Node000014"><a xlink:href="../../d1/db2/Closure_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="896.5,-119.5 756,-119.5 756,-77.75 896.5,-77.75 896.5,-119.5"/>
+<text text-anchor="start" x="764" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
+<text text-anchor="start" x="764" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/src/arkreactor</text>
+<text text-anchor="middle" x="826.25" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">/VM/Value/Closure.cpp</text>
+</a>
+</g>
+</g>
+<!-- Node3&#45;&gt;Node14 -->
+<g id="edge15_Node000003_Node000014" class="edge">
+<title>Node3&#45;&gt;Node14</title>
+<g id="a_edge15_Node000003_Node000014"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M696.98,-150.89C722.16,-140.91 750.93,-129.5 774.92,-119.98"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="695.85,-147.58 687.84,-154.52 698.43,-154.08 695.85,-147.58"/>
 </a>
 </g>
 </g>
@@ -259,8 +279,8 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node4&#45;&gt;Node5</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M171.35,-72.07C153.51,-62.35 133.44,-51.41 116.6,-42.23"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="169.22,-74.89 179.67,-76.6 172.57,-68.74 169.22,-74.89"/>
+<path fill="none" stroke="#63b8ff" d="M191.76,-72.61C169.91,-62.75 145.13,-51.58 124.4,-42.23"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="190.29,-75.78 200.85,-76.7 193.17,-69.4 190.29,-75.78"/>
 </a>
 </g>
 </g>
@@ -279,48 +299,66 @@ var sectionId = 'dynsection-1';
 <g id="edge5_Node000004_Node000006" class="edge">
 <title>Node4&#45;&gt;Node6</title>
 <g id="a_edge5_Node000004_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M230.04,-66.84C233.21,-58.55 236.56,-49.79 239.46,-42.23"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="226.87,-65.32 226.56,-75.91 233.41,-67.82 226.87,-65.32"/>
+<path fill="none" stroke="#63b8ff" d="M247.25,-66C247.25,-57.96 247.25,-49.54 247.25,-42.23"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="243.75,-65.81 247.25,-75.81 250.75,-65.81 243.75,-65.81"/>
 </a>
 </g>
 </g>
-<!-- Node9 -->
-<g id="Node000009" class="node">
-<title>Node9</title>
-<g id="a_Node000009"><a xlink:href="../../d7/d46/Repl_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="527.5,-41.75 393,-41.75 393,0 527.5,0 527.5,-41.75"/>
-<text text-anchor="start" x="401" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
-<text text-anchor="start" x="401" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/src/arkscript</text>
-<text text-anchor="middle" x="460.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/REPL/Repl.cpp</text>
+<!-- Node8&#45;&gt;Node7 -->
+<g id="edge8_Node000008_Node000007" class="edge">
+<title>Node8&#45;&gt;Node7</title>
+<g id="a_edge8_Node000008_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M457.72,-70.44C445.56,-61.14 432.18,-50.9 420.85,-42.23"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="455.45,-73.11 465.52,-76.41 459.7,-67.55 455.45,-73.11"/>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node9 -->
-<g id="edge8_Node000008_Node000009" class="edge">
+<g id="edge9_Node000008_Node000009" class="edge">
 <title>Node8&#45;&gt;Node9</title>
-<g id="a_edge8_Node000008_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M476.77,-66.56C473.73,-58.36 470.54,-49.71 467.77,-42.23"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="473.47,-67.74 480.22,-75.91 480.04,-65.31 473.47,-67.74"/>
+<g id="a_edge9_Node000008_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M512.23,-67.68C517.63,-59.14 523.4,-50.05 528.35,-42.23"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="509.32,-65.73 506.92,-76.05 515.23,-69.47 509.32,-65.73"/>
 </a>
 </g>
 </g>
-<!-- Node10 -->
-<g id="Node000010" class="node">
-<title>Node10</title>
-<g id="a_Node000010"><a xlink:href="../../d0/d46/arkscript_2main_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="680.5,-41.75 546,-41.75 546,0 680.5,0 680.5,-41.75"/>
-<text text-anchor="start" x="554" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
-<text text-anchor="start" x="554" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/src/arkscript</text>
-<text text-anchor="middle" x="613.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/main.cpp</text>
+<!-- Node11 -->
+<g id="Node000011" class="node">
+<title>Node11</title>
+<g id="a_Node000011"><a xlink:href="../../d7/d46/Repl_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="764.5,-41.75 630,-41.75 630,0 764.5,0 764.5,-41.75"/>
+<text text-anchor="start" x="638" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
+<text text-anchor="start" x="638" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/src/arkscript</text>
+<text text-anchor="middle" x="697.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/REPL/Repl.cpp</text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node10 -->
-<g id="edge9_Node000008_Node000010" class="edge">
-<title>Node8&#45;&gt;Node10</title>
-<g id="a_edge9_Node000008_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M531.32,-71.53C547.13,-61.94 564.8,-51.24 579.66,-42.23"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="529.78,-68.37 523.04,-76.54 533.41,-74.35 529.78,-68.37"/>
+<!-- Node10&#45;&gt;Node11 -->
+<g id="edge11_Node000010_Node000011" class="edge">
+<title>Node10&#45;&gt;Node11</title>
+<g id="a_edge11_Node000010_Node000011"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M686.7,-66.28C688.63,-58.16 690.66,-49.62 692.41,-42.23"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="683.33,-65.31 684.42,-75.85 690.14,-66.93 683.33,-65.31"/>
+</a>
+</g>
+</g>
+<!-- Node12 -->
+<g id="Node000012" class="node">
+<title>Node12</title>
+<g id="a_Node000012"><a xlink:href="../../d0/d46/arkscript_2main_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="917.5,-41.75 783,-41.75 783,0 917.5,0 917.5,-41.75"/>
+<text text-anchor="start" x="791" y="-28.25" font-family="Helvetica,sans-Serif" font-size="10.00">/Users/fola/Documents</text>
+<text text-anchor="start" x="791" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">/ArkScript/Ark/src/arkscript</text>
+<text text-anchor="middle" x="850.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">/main.cpp</text>
+</a>
+</g>
+</g>
+<!-- Node10&#45;&gt;Node12 -->
+<g id="edge12_Node000010_Node000012" class="edge">
+<title>Node10&#45;&gt;Node12</title>
+<g id="a_edge12_Node000010_Node000012"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M735.42,-72.74C757.75,-62.85 783.1,-51.62 804.3,-42.23"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="734.18,-69.46 726.46,-76.71 737.02,-75.86 734.18,-69.46"/>
 </a>
 </g>
 </g>

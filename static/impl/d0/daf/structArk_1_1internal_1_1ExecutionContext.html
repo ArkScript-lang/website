@@ -99,6 +99,10 @@ Collaboration diagram for Ark::internal::ExecutionContext:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae1812a825d8cc760e31653dba182ccb3" id="r_ae1812a825d8cc760e31653dba182ccb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1812a825d8cc760e31653dba182ccb3">ExecutionContext</a> () noexcept</td></tr>
 <tr class="separator:ae1812a825d8cc760e31653dba182ccb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae342bedcca79c7ba505881ff67248f97" id="r_ae342bedcca79c7ba505881ff67248f97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae342bedcca79c7ba505881ff67248f97">isFree</a> () const</td></tr>
+<tr class="separator:ae342bedcca79c7ba505881ff67248f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f778895ebf2807aad1e077a7a9ebf8e" id="r_a8f778895ebf2807aad1e077a7a9ebf8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f778895ebf2807aad1e077a7a9ebf8e">setActive</a> (const bool toggle)</td></tr>
+<tr class="separator:a8f778895ebf2807aad1e077a7a9ebf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -119,9 +123,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab9498d1663b45b7824981533132057dd" id="r_ab9498d1663b45b7824981533132057dd"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9498d1663b45b7824981533132057dd">primary</a></td></tr>
 <tr class="memdesc:ab9498d1663b45b7824981533132057dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells if the current <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">ExecutionContext</a> is the primary one or not.  <br /></td></tr>
 <tr class="separator:ab9498d1663b45b7824981533132057dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac354e403bc679628ec4d6b5069e58311" id="r_ac354e403bc679628ec4d6b5069e58311"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac354e403bc679628ec4d6b5069e58311">inst_exec_counter</a> {}</td></tr>
+<tr class="separator:ac354e403bc679628ec4d6b5069e58311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e8dce339076f926ffb430e57f43db5" id="r_a14e8dce339076f926ffb430e57f43db5"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14e8dce339076f926ffb430e57f43db5">active</a></td></tr>
+<tr class="separator:a14e8dce339076f926ffb430e57f43db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9872624337eec1eed224fd42ed97e86" id="r_ae9872624337eec1eed224fd42ed97e86"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d9/d6c/classArk_1_1internal_1_1ClosureScope.html">ClosureScope</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9872624337eec1eed224fd42ed97e86">saved_scope</a> {}</td></tr>
 <tr class="memdesc:ae9872624337eec1eed224fd42ed97e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scope created by CAPTURE &lt;x&gt; instructions, used by the MAKE_CLOSURE instruction.  <br /></td></tr>
 <tr class="separator:ae9872624337eec1eed224fd42ed97e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616accc4f73650086fe6f4eeff8250b3" id="r_a616accc4f73650086fe6f4eeff8250b3"><td class="memItemLeft" align="right" valign="top">std::optional&lt; uint16_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a616accc4f73650086fe6f4eeff8250b3">capture_rename_id</a> {}</td></tr>
+<tr class="separator:a616accc4f73650086fe6f4eeff8250b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dafb4881db26d64afbde76440717217" id="r_a1dafb4881db26d64afbde76440717217"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="../../d9/d6c/classArk_1_1internal_1_1ClosureScope.html">ClosureScope</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dafb4881db26d64afbde76440717217">stacked_closure_scopes</a> {}</td></tr>
 <tr class="memdesc:a1dafb4881db26d64afbde76440717217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stack the closure scopes to keep the closure alive as long as we are calling them.  <br /></td></tr>
 <tr class="separator:a1dafb4881db26d64afbde76440717217"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,8 +140,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0e7816001dd818210d5fab6fbb13c0ed" id="r_a0e7816001dd818210d5fab6fbb13c0ed"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="../../d2/ddd/classArk_1_1internal_1_1ScopeView.html#a64bf747896abfab0200b640a22a3ec31">ScopeView::pair_t</a>, <a class="el" href="../../d9/de4/namespaceArk.html#a64b1067761d4dc1a5eb1f07d0b8ceb7a">ScopeStackSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e7816001dd818210d5fab6fbb13c0ed">scopes_storage</a> {}</td></tr>
 <tr class="memdesc:a0e7816001dd818210d5fab6fbb13c0ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the <a class="el" href="../../d2/ddd/classArk_1_1internal_1_1ScopeView.html" title="A class to handle the VM scope more efficiently.">ScopeView</a> use this array to store id-&gt;value.  <br /></td></tr>
 <tr class="separator:a0e7816001dd818210d5fab6fbb13c0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a524fe003e66af3370c41ae9a598343cc" id="r_a524fe003e66af3370c41ae9a598343cc"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a>, <a class="el" href="../../d9/de4/namespaceArk.html#a10c147f2df9516277811af7da43a250f">VMStackSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a524fe003e66af3370c41ae9a598343cc">stack</a> {}</td></tr>
-<tr class="separator:a524fe003e66af3370c41ae9a598343cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8608f454427d7cc37576083c51b90e67" id="r_a8608f454427d7cc37576083c51b90e67"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a>, <a class="el" href="../../d9/de4/namespaceArk.html#aa70a751a0d6a2913dc56e3bc70947210">VMStackSizeWithOverflowBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8608f454427d7cc37576083c51b90e67">stack</a> {}</td></tr>
+<tr class="separator:a8608f454427d7cc37576083c51b90e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -140,7 +150,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">30</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00026">26</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae1812a825d8cc760e31653dba182ccb3" name="ae1812a825d8cc760e31653dba182ccb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1812a825d8cc760e31653dba182ccb3">&#9670;&#160;</a></span>ExecutionContext()</h2>
@@ -165,13 +175,110 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00049">49</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Count</a>.</p>
+<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00037">active</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00028">Count</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae342bedcca79c7ba505881ff67248f97" name="ae342bedcca79c7ba505881ff67248f97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae342bedcca79c7ba505881ff67248f97">&#9670;&#160;</a></span>isFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ark::internal::ExecutionContext::isFree </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00056">56</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00037">active</a>.</p>
+
+</div>
+</div>
+<a id="a8f778895ebf2807aad1e077a7a9ebf8e" name="a8f778895ebf2807aad1e077a7a9ebf8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f778895ebf2807aad1e077a7a9ebf8e">&#9670;&#160;</a></span>setActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::ExecutionContext::setActive </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>toggle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00037">active</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00340">Ark::VM::createAndGetContext()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00396">Ark::VM::deleteContext()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a14e8dce339076f926ffb430e57f43db5" name="a14e8dce339076f926ffb430e57f43db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e8dce339076f926ffb430e57f43db5">&#9670;&#160;</a></span>active</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic_bool Ark::internal::ExecutionContext::active</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00037">37</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00048">ExecutionContext()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00056">isFree()</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00061">setActive()</a>.</p>
+
+</div>
+</div>
+<a id="a616accc4f73650086fe6f4eeff8250b3" name="a616accc4f73650086fe6f4eeff8250b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a616accc4f73650086fe6f4eeff8250b3">&#9670;&#160;</a></span>capture_rename_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;uint16_t&gt; Ark::internal::ExecutionContext::capture_rename_id {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00040">40</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
+
+</div>
+</div>
 <a id="afe89e59eadf83203b290b5debc1d08ec" name="afe89e59eadf83203b290b5debc1d08ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe89e59eadf83203b290b5debc1d08ec">&#9670;&#160;</a></span>Count</h2>
 
@@ -192,9 +299,9 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00028">28</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00049">ExecutionContext()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00048">ExecutionContext()</a>.</p>
 
 </div>
 </div>
@@ -212,9 +319,27 @@ Static Public Attributes</h2></td></tr>
 
 <p>Frame count. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00037">37</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">33</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02022">Ark::VM::backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00124">Ark::VM::init()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02139">Ark::VM::backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00340">Ark::VM::createAndGetContext()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00119">Ark::VM::init()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
+
+</div>
+</div>
+<a id="ac354e403bc679628ec4d6b5069e58311" name="ac354e403bc679628ec4d6b5069e58311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac354e403bc679628ec4d6b5069e58311">&#9670;&#160;</a></span>inst_exec_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t Ark::internal::ExecutionContext::inst_exec_counter {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -232,9 +357,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>Instruction pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00034">34</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">30</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02022">Ark::VM::backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00158">Ark::VM::getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l01915">Ark::VM::throwArityError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02139">Ark::VM::backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00153">Ark::VM::getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02032">Ark::VM::throwArityError()</a>.</p>
 
 </div>
 </div>
@@ -250,9 +375,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00038">38</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00034">34</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00378">Ark::VM::createFuture()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00158">Ark::VM::getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l01915">Ark::VM::throwArityError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00426">Ark::VM::createFuture()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00153">Ark::VM::getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02032">Ark::VM::throwArityError()</a>.</p>
 
 </div>
 </div>
@@ -268,9 +393,9 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02022">Ark::VM::backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00343">Ark::VM::createAndGetContext()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00124">Ark::VM::init()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00259">Ark::VM::loadPlugin()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02139">Ark::VM::backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00340">Ark::VM::createAndGetContext()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00119">Ark::VM::init()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00254">Ark::VM::loadPlugin()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -288,9 +413,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>Page pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">31</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02022">Ark::VM::backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00158">Ark::VM::getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l01915">Ark::VM::throwArityError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02139">Ark::VM::backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00153">Ark::VM::getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02032">Ark::VM::throwArityError()</a>.</p>
 
 </div>
 </div>
@@ -308,7 +433,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>Tells if the current <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">ExecutionContext</a> is the primary one or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00035">35</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00340">Ark::VM::createAndGetContext()</a>.</p>
 
 </div>
 </div>
@@ -326,9 +453,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>Scope created by CAPTURE &lt;x&gt; instructions, used by the MAKE_CLOSURE instruction. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00041">41</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00124">Ark::VM::init()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00340">Ark::VM::createAndGetContext()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00119">Ark::VM::init()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -346,9 +473,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>All the <a class="el" href="../../d2/ddd/classArk_1_1internal_1_1ScopeView.html" title="A class to handle the VM scope more efficiently.">ScopeView</a> use this array to store id-&gt;value. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00045">45</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00343">Ark::VM::createAndGetContext()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00124">Ark::VM::init()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00340">Ark::VM::createAndGetContext()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00119">Ark::VM::init()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -366,27 +493,27 @@ Static Public Attributes</h2></td></tr>
 
 <p>Stack pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00036">36</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02022">Ark::VM::backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00124">Ark::VM::init()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l01915">Ark::VM::throwArityError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02139">Ark::VM::backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00340">Ark::VM::createAndGetContext()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00119">Ark::VM::init()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02032">Ark::VM::throwArityError()</a>.</p>
 
 </div>
 </div>
-<a id="a524fe003e66af3370c41ae9a598343cc" name="a524fe003e66af3370c41ae9a598343cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a524fe003e66af3370c41ae9a598343cc">&#9670;&#160;</a></span>stack</h2>
+<a id="a8608f454427d7cc37576083c51b90e67" name="a8608f454427d7cc37576083c51b90e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8608f454427d7cc37576083c51b90e67">&#9670;&#160;</a></span>stack</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;<a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a>, <a class="el" href="../../d9/de4/namespaceArk.html#a10c147f2df9516277811af7da43a250f">VMStackSize</a>&gt; Ark::internal::ExecutionContext::stack {}</td>
+          <td class="memname">std::array&lt;<a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a>, <a class="el" href="../../d9/de4/namespaceArk.html#aa70a751a0d6a2913dc56e3bc70947210">VMStackSizeWithOverflowBuffer</a>&gt; Ark::internal::ExecutionContext::stack {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00047">47</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00046">46</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l01915">Ark::VM::throwArityError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02032">Ark::VM::throwArityError()</a>.</p>
 
 </div>
 </div>
@@ -404,9 +531,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>Stack the closure scopes to keep the closure alive as long as we are calling them. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00042">42</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00041">41</a> of file <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html">ExecutionContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00343">Ark::VM::createAndGetContext()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00124">Ark::VM::init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00340">Ark::VM::createAndGetContext()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00119">Ark::VM::init()</a>.</p>
 
 </div>
 </div>
@@ -419,7 +546,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">ExecutionContext</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

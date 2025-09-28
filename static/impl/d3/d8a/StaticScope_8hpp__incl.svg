@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 513;
+var viewWidth = 535;
 var viewHeight = 116;
 var sectionId = 'dynsection-0';
 </script>
@@ -179,8 +179,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000008" class="node">
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:href="../../d5/d40/Platform_8hpp.html" target="_top" xlink:title="ArkScript configuration macros.">
-<polygon fill="white" stroke="#666666" points="504.75,-19.25 415.25,-19.25 415.25,0 504.75,0 504.75,-19.25"/>
-<text text-anchor="middle" x="460" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">Ark/Platform.hpp</text>
+<polygon fill="white" stroke="#666666" points="527.38,-19.25 414.62,-19.25 414.62,0 527.38,0 527.38,-19.25"/>
+<text text-anchor="middle" x="471" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">Ark/Utils/Platform.hpp</text>
 </a>
 </g>
 </g>
@@ -188,8 +188,8 @@ var sectionId = 'dynsection-0';
 <g id="edge7_Node000001_Node000008" class="edge">
 <title>Node1&#45;&gt;Node8</title>
 <g id="a_edge7_Node000001_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M293.22,-58.75C334.24,-46.92 383.29,-32.76 417.54,-22.88"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="418.46,-26.26 427.1,-20.12 416.52,-19.53 418.46,-26.26"/>
+<path fill="none" stroke="#63b8ff" d="M293.21,-59.71C337.04,-47.61 390.54,-32.84 427.33,-22.68"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="428.02,-26.12 436.73,-20.09 426.16,-19.37 428.02,-26.12"/>
 </a>
 </g>
 </g>

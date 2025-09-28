@@ -90,55 +90,50 @@ $(function(){initNavTree('d8/d70/structArk_1_1UserType_1_1ControlFuncs.html','..
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../dc/d3d/UserType_8hpp_source.html">UserType.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for Ark::UserType::ControlFuncs:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d9e/structArk_1_1UserType_1_1ControlFuncs__coll__graph.svg" width="203" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7effa2a0a822aaf3bfb1eeecb35d5afd" id="r_a7effa2a0a822aaf3bfb1eeecb35d5afd"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7effa2a0a822aaf3bfb1eeecb35d5afd">ostream_func</a> )(std::ostream &amp;, const <a class="el" href="../../d8/da6/classArk_1_1UserType.html">UserType</a> &amp;) = nullptr</td></tr>
-<tr class="separator:a7effa2a0a822aaf3bfb1eeecb35d5afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae16e8254044be4569e78b3ab0debf723" id="r_ae16e8254044be4569e78b3ab0debf723"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae16e8254044be4569e78b3ab0debf723">deleter</a> )(void *) = nullptr</td></tr>
-<tr class="separator:ae16e8254044be4569e78b3ab0debf723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad407e372d7a8f4cc3ea70ca552848ceb" id="r_ad407e372d7a8f4cc3ea70ca552848ceb"><td class="memItemLeft" align="right" valign="top">std::function&lt; std::ostream &amp;(std::ostream &amp;, const <a class="el" href="../../d8/da6/classArk_1_1UserType.html">UserType</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad407e372d7a8f4cc3ea70ca552848ceb">ostream_func</a> = nullptr</td></tr>
+<tr class="separator:ad407e372d7a8f4cc3ea70ca552848ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da78967e45b61e806444a86dfd534c1" id="r_a8da78967e45b61e806444a86dfd534c1"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(void *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8da78967e45b61e806444a86dfd534c1">deleter</a> = nullptr</td></tr>
+<tr class="separator:a8da78967e45b61e806444a86dfd534c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A structure holding a bunch of pointers to different useful functions related to this usertype. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d3d/UserType_8hpp_source.html#l00053">53</a> of file <a class="el" href="../../dc/d3d/UserType_8hpp_source.html">UserType.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d3d/UserType_8hpp_source.html#l00054">54</a> of file <a class="el" href="../../dc/d3d/UserType_8hpp_source.html">UserType.hpp</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae16e8254044be4569e78b3ab0debf723" name="ae16e8254044be4569e78b3ab0debf723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae16e8254044be4569e78b3ab0debf723">&#9670;&#160;</a></span>deleter</h2>
+<a id="a8da78967e45b61e806444a86dfd534c1" name="a8da78967e45b61e806444a86dfd534c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da78967e45b61e806444a86dfd534c1">&#9670;&#160;</a></span>deleter</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* Ark::UserType::ControlFuncs::deleter) (void *) = nullptr</td>
+          <td class="memname">std::function&lt;void(void*)&gt; Ark::UserType::ControlFuncs::deleter = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d3d/UserType_8hpp_source.html#l00056">56</a> of file <a class="el" href="../../dc/d3d/UserType_8hpp_source.html">UserType.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d3d/UserType_8hpp_source.html#l00057">57</a> of file <a class="el" href="../../dc/d3d/UserType_8hpp_source.html">UserType.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d0f/UserType_8cpp_source.html#l00005">Ark::UserType::del()</a>.</p>
 
 </div>
 </div>
-<a id="a7effa2a0a822aaf3bfb1eeecb35d5afd" name="a7effa2a0a822aaf3bfb1eeecb35d5afd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7effa2a0a822aaf3bfb1eeecb35d5afd">&#9670;&#160;</a></span>ostream_func</h2>
+<a id="ad407e372d7a8f4cc3ea70ca552848ceb" name="ad407e372d7a8f4cc3ea70ca552848ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad407e372d7a8f4cc3ea70ca552848ceb">&#9670;&#160;</a></span>ostream_func</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream &amp;(* Ark::UserType::ControlFuncs::ostream_func) (std::ostream &amp;, const <a class="el" href="../../d8/da6/classArk_1_1UserType.html">UserType</a> &amp;) = nullptr</td>
+          <td class="memname">std::function&lt;std::ostream&amp;(std::ostream&amp;, const <a class="el" href="../../d8/da6/classArk_1_1UserType.html">UserType</a>&amp;)&gt; Ark::UserType::ControlFuncs::ostream_func = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d3d/UserType_8hpp_source.html#l00055">55</a> of file <a class="el" href="../../dc/d3d/UserType_8hpp_source.html">UserType.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d3d/UserType_8hpp_source.html#l00056">56</a> of file <a class="el" href="../../dc/d3d/UserType_8hpp_source.html">UserType.hpp</a>.</p>
 
 </div>
 </div>
@@ -151,7 +146,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../d8/da6/classArk_1_1UserType.html">UserType</a></li><li class="navelem"><a class="el" href="../../d8/d70/structArk_1_1UserType_1_1ControlFuncs.html">ControlFuncs</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

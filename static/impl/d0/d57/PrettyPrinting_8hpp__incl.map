@@ -1,0 +1,17 @@
+<map id="/Users/fola/Documents/ArkScript/Ark/include/Ark/Error/PrettyPrinting.hpp" name="/Users/fola/Documents/ArkScript/Ark/include/Ark/Error/PrettyPrinting.hpp">
+<area shape="rect" id="Node000001" title="Pretty printing utilities for diagnostics." alt="" coords="142,5,327,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,109,59,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,64,74,106,72,101,170,59"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="83,109,141,135"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,64,143,102,140,98,195,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="164,109,233,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,62,212,96,207,93,221,60"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="283,183,349,208"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="251,60,305,168,301,170,246,63"/>
+<area shape="rect" id="Node000006" href="$d5/d40/Platform_8hpp.html" title="ArkScript configuration macros." alt="" coords="396,183,546,208"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="328,36,367,44,406,58,442,78,471,107,479,122,482,137,480,168,475,167,477,138,474,123,467,111,439,83,404,63,366,49,327,41"/>
+<area shape="rect" id="Node000007" href="$dc/d58/Position_8hpp.html" title="Defines position utilities (for text in a file) for the parser, formatter, diagnostics." alt="" coords="308,109,457,135"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="282,59,350,99,348,103,280,64"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="374,137,340,173,336,169,370,133"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="399,133,446,171,442,175,396,137"/>
+</map>

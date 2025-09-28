@@ -112,12 +112,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3309fab08018df35a5f5edb7a9b6d55c" id="r_a3309fab08018df35a5f5edb7a9b6d55c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3309fab08018df35a5f5edb7a9b6d55c">ScopeView</a> (<a class="el" href="#a64bf747896abfab0200b640a22a3ec31">pair_t</a> *storage, std::size_t start) noexcept</td></tr>
 <tr class="memdesc:a3309fab08018df35a5f5edb7a9b6d55c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d2/ddd/classArk_1_1internal_1_1ScopeView.html" title="A class to handle the VM scope more efficiently.">ScopeView</a>.  <br /></td></tr>
 <tr class="separator:a3309fab08018df35a5f5edb7a9b6d55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab943ea09a9687f376174afab795077c6" id="r_ab943ea09a9687f376174afab795077c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab943ea09a9687f376174afab795077c6">push_back</a> (uint16_t id, <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;&amp;val) noexcept</td></tr>
-<tr class="memdesc:ab943ea09a9687f376174afab795077c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a value in the scope.  <br /></td></tr>
-<tr class="separator:ab943ea09a9687f376174afab795077c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8156febf6f86196da342fbc2dc6d7dfb" id="r_a8156febf6f86196da342fbc2dc6d7dfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8156febf6f86196da342fbc2dc6d7dfb">push_back</a> (uint16_t id, const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;val) noexcept</td></tr>
-<tr class="memdesc:a8156febf6f86196da342fbc2dc6d7dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a value in the scope.  <br /></td></tr>
-<tr class="separator:a8156febf6f86196da342fbc2dc6d7dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acade7cd99e744e2ecb01fc5812927fd9" id="r_acade7cd99e744e2ecb01fc5812927fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acade7cd99e744e2ecb01fc5812927fd9">pushBack</a> (uint16_t id, <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;&amp;val) noexcept</td></tr>
+<tr class="memdesc:acade7cd99e744e2ecb01fc5812927fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a value in the scope.  <br /></td></tr>
+<tr class="separator:acade7cd99e744e2ecb01fc5812927fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7bf6808145f37a44c954859a91e9fc2" id="r_ab7bf6808145f37a44c954859a91e9fc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7bf6808145f37a44c954859a91e9fc2">pushBack</a> (uint16_t id, const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;val) noexcept</td></tr>
+<tr class="memdesc:ab7bf6808145f37a44c954859a91e9fc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a value in the scope.  <br /></td></tr>
+<tr class="separator:ab7bf6808145f37a44c954859a91e9fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9e93003e8f2434f02149ad6a2c94f4" id="r_a2a9e93003e8f2434f02149ad6a2c94f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a9e93003e8f2434f02149ad6a2c94f4">insertFront</a> (const std::vector&lt; <a class="el" href="#a64bf747896abfab0200b640a22a3ec31">pair_t</a> &gt; &amp;values) noexcept</td></tr>
+<tr class="memdesc:a2a9e93003e8f2434f02149ad6a2c94f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert one or more pairs at the beginning of the scope.  <br /></td></tr>
+<tr class="separator:a2a9e93003e8f2434f02149ad6a2c94f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a2c85a048f545069a4059b52fc8b09e" id="r_a2a2c85a048f545069a4059b52fc8b09e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a2c85a048f545069a4059b52fc8b09e">maybeHas</a> (uint16_t id) const noexcept</td></tr>
 <tr class="memdesc:a2a2c85a048f545069a4059b52fc8b09e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the scope maybe holds a specific symbol in memory.  <br /></td></tr>
 <tr class="separator:a2a2c85a048f545069a4059b52fc8b09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,7 +256,7 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
 
 </div>
 </div>
@@ -284,9 +287,9 @@ Friends</h2></td></tr>
 <p>Return the element at index in scope. </p>
 <dl class="section return"><dt>Returns</dt><dd>const pair_t&amp; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00098">98</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00106">106</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02022">Ark::VM::backtrace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02139">Ark::VM::backtrace()</a>.</p>
 
 </div>
 </div>
@@ -316,7 +319,7 @@ Friends</h2></td></tr>
 <p>Return the element at index, starting from the end. </p>
 <dl class="section return"><dt>Returns</dt><dd>const pair_t&amp; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00116">116</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
 
 </div>
 </div>
@@ -352,7 +355,47 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint16_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00070">Ark::MaxValue16Bits</a>.</p>
+
+</div>
+</div>
+<a id="a2a9e93003e8f2434f02149ad6a2c94f4" name="a2a9e93003e8f2434f02149ad6a2c94f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a9e93003e8f2434f02149ad6a2c94f4">&#9670;&#160;</a></span>insertFront()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::ScopeView::insertFront </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="#a64bf747896abfab0200b640a22a3ec31">pair_t</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Insert one or more pairs at the beginning of the scope. </p>
+<p>This can ONLY be called on the last known scope, otherwise it will override the data of the next scope!</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">values</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a63d5049791d9d79d86e9a108b0a999ca">Ark::Reference</a>.</p>
 
 </div>
 </div>
@@ -374,7 +417,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -390,7 +433,7 @@ Friends</h2></td></tr>
 <dd>
 false Otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00033">33</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00065">65</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
 
 </div>
 </div>
@@ -412,7 +455,7 @@ false Otherwise </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -426,7 +469,7 @@ false Otherwise </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>const Value* Returns nullptr if the value can not be found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
 
 </div>
 </div>
@@ -448,7 +491,7 @@ false Otherwise </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -462,12 +505,12 @@ false Otherwise </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value* Returns nullptr if the value can not be found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a8156febf6f86196da342fbc2dc6d7dfb" name="a8156febf6f86196da342fbc2dc6d7dfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8156febf6f86196da342fbc2dc6d7dfb">&#9670;&#160;</a></span>push_back() <span class="overload">[1/2]</span></h2>
+<a id="ab7bf6808145f37a44c954859a91e9fc2" name="ab7bf6808145f37a44c954859a91e9fc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7bf6808145f37a44c954859a91e9fc2">&#9670;&#160;</a></span>pushBack() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -476,7 +519,7 @@ false Otherwise </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ark::internal::ScopeView::push_back </td>
+          <td class="memname">void Ark::internal::ScopeView::pushBack </td>
           <td>(</td>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
@@ -502,12 +545,12 @@ false Otherwise </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab943ea09a9687f376174afab795077c6" name="ab943ea09a9687f376174afab795077c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab943ea09a9687f376174afab795077c6">&#9670;&#160;</a></span>push_back() <span class="overload">[2/2]</span></h2>
+<a id="acade7cd99e744e2ecb01fc5812927fd9" name="acade7cd99e744e2ecb01fc5812927fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acade7cd99e744e2ecb01fc5812927fd9">&#9670;&#160;</a></span>pushBack() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -516,7 +559,7 @@ false Otherwise </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ark::internal::ScopeView::push_back </td>
+          <td class="memname">void Ark::internal::ScopeView::pushBack </td>
           <td>(</td>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
@@ -542,7 +585,7 @@ false Otherwise </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d49/ClosureScope_8cpp_source.html#l00027">Ark::internal::ClosureScope::mergeRefInto()</a>.</p>
 
@@ -573,9 +616,9 @@ false Otherwise </dd></dl>
 
 <p>Reset size, min and max id for the scope, to signify it's empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00147">m_max_id</a>, <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00146">m_min_id</a>, and <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00145">m_size</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00155">m_max_id</a>, <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00154">m_min_id</a>, <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00153">m_size</a>, and <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00070">Ark::MaxValue16Bits</a>.</p>
 
 </div>
 </div>
@@ -605,9 +648,9 @@ false Otherwise </dd></dl>
 <p>Return the size of the scope. </p>
 <dl class="section return"><dt>Returns</dt><dd>const std::size_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00123">123</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00131">131</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02022">Ark::VM::backtrace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02139">Ark::VM::backtrace()</a>.</p>
 
 </div>
 </div>
@@ -637,7 +680,7 @@ false Otherwise </dd></dl>
 <p>Compute the position of the first free slot in the shared storage, after this scope. </p>
 <dl class="section return"><dt>Returns</dt><dd>std::size_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00133">133</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00141">141</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
 
 </div>
 </div>
@@ -662,7 +705,7 @@ false Otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00140">140</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00148">148</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
 
 </div>
 </div>
@@ -693,7 +736,7 @@ false Otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00084">84</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html">ScopeView.cpp</a>.</p>
 
 </div>
 </div>
@@ -720,9 +763,9 @@ false Otherwise </dd></dl>
 
 <p>Maximum stored ID, used for a basic bloom filter. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00147">147</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00155">155</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00077">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00109">reset()</a>.</p>
 
 </div>
 </div>
@@ -748,9 +791,9 @@ false Otherwise </dd></dl>
 
 <p>Minimum stored ID, used for a basic bloom filter. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00146">146</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00154">154</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00077">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00109">reset()</a>.</p>
 
 </div>
 </div>
@@ -774,9 +817,9 @@ false Otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00145">145</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00153">153</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00077">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/ddb/ScopeView_8cpp_source.html#l00109">reset()</a>.</p>
 
 </div>
 </div>
@@ -800,7 +843,7 @@ false Otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00144">144</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00152">152</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
 
 </div>
 </div>
@@ -824,7 +867,7 @@ false Otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00143">143</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00151">151</a> of file <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html">ScopeView.hpp</a>.</p>
 
 </div>
 </div>
@@ -838,7 +881,7 @@ false Otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="../../d2/ddd/classArk_1_1internal_1_1ScopeView.html">ScopeView</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

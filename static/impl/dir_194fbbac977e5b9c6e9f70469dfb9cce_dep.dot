@@ -12,6 +12,8 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/Lowerer"
   dir_ad45c69e33d564afb397466bf2d991f2 [label="IntermediateRepresentation", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_ad45c69e33d564afb397466bf2d991f2.html",tooltip=""];
   dir_194fbbac977e5b9c6e9f70469dfb9cce [label="Lowerer", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_194fbbac977e5b9c6e9f70469dfb9cce.html",tooltip=""];
   }
-  dir_194fbbac977e5b9c6e9f70469dfb9cce->dir_100d7a05404dd55ce1a106aad5a3b28c [headlabel="1", labeldistance=1.5 headhref="dir_000015_000004.html" href="dir_000015_000004.html" color="steelblue1" fontcolor="steelblue1"];
-  dir_194fbbac977e5b9c6e9f70469dfb9cce->dir_ad45c69e33d564afb397466bf2d991f2 [headlabel="1", labeldistance=1.5 headhref="dir_000015_000013.html" href="dir_000015_000013.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_33906bab6f1f9d0f271eb499b90a96b5 [label="Utils", fillcolor="#edf0f7", color="grey50", style="filled", URL="dir_33906bab6f1f9d0f271eb499b90a96b5.html",tooltip=""];
+  dir_194fbbac977e5b9c6e9f70469dfb9cce->dir_100d7a05404dd55ce1a106aad5a3b28c [headlabel="1", labeldistance=1.5 headhref="dir_000017_000004.html" href="dir_000017_000004.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_194fbbac977e5b9c6e9f70469dfb9cce->dir_33906bab6f1f9d0f271eb499b90a96b5 [headlabel="2", labeldistance=1.5 headhref="dir_000017_000030.html" href="dir_000017_000030.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_194fbbac977e5b9c6e9f70469dfb9cce->dir_ad45c69e33d564afb397466bf2d991f2 [headlabel="1", labeldistance=1.5 headhref="dir_000017_000015.html" href="dir_000017_000015.html" color="steelblue1" fontcolor="steelblue1"];
 }

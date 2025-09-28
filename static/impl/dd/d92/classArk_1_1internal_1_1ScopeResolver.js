@@ -6,6 +6,7 @@ var classArk_1_1internal_1_1ScopeResolver =
     [ "canFullyQualifyName", "dd/d92/classArk_1_1internal_1_1ScopeResolver.html#afd90ac06c62c73191b09d178c30860c7", null ],
     [ "createNew", "dd/d92/classArk_1_1internal_1_1ScopeResolver.html#a76b1d2616585be0b6219979fa1aa4c31", null ],
     [ "createNewNamespace", "dd/d92/classArk_1_1internal_1_1ScopeResolver.html#a4a07bf4dff659f6079a0ce0986a85a5a", null ],
+    [ "currentNamespace", "dd/d92/classArk_1_1internal_1_1ScopeResolver.html#aea6f2e55fdfde5935a8abcff2d1155a2", null ],
     [ "currentScope", "dd/d92/classArk_1_1internal_1_1ScopeResolver.html#abf2992bdd659af7d4fc38316fde6a358", null ],
     [ "getFullyQualifiedNameInNearestScope", "dd/d92/classArk_1_1internal_1_1ScopeResolver.html#a5ff6405ea7fcf5a28658768b2e812633", null ],
     [ "isImmutable", "dd/d92/classArk_1_1internal_1_1ScopeResolver.html#afa50502055a33435d583da5de4da1815", null ],

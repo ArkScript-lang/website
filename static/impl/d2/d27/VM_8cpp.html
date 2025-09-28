@@ -80,7 +80,6 @@ $(function(){initNavTree('d2/d27/VM_8cpp.html','../../'); initResizable(true); }
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -90,13 +89,14 @@ $(function(){initNavTree('d2/d27/VM_8cpp.html','../../'); initResizable(true); }
 <div class="textblock"><code>#include &lt;<a class="el" href="../../d1/d91/VM_8hpp_source.html">Ark/VM/VM.hpp</a>&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;fmt/core.h&gt;</code><br />
 <code>#include &lt;fmt/color.h&gt;</code><br />
 <code>#include &lt;fmt/ostream.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d4/dc0/Files_8hpp_source.html">Ark/Files.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d4/dcb/Ark_2Utils_8hpp_source.html">Ark/Utils.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d4/dc0/Files_8hpp_source.html">Ark/Utils/Files.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html">Ark/Utils/Utils.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../db/dfe/Diagnostics_8hpp_source.html">Ark/Error/Diagnostics.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/d5e/TypeChecker_8hpp_source.html">Ark/TypeChecker.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d2/d33/ModuleMapping_8hpp_source.html">Ark/VM/ModuleMapping.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d8/daa/Instructions_8hpp_source.html">Ark/Compiler/Instructions.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for VM.cpp:</div>
@@ -106,11 +106,6 @@ Include dependency graph for VM.cpp:</div>
 </div>
 <p><a href="../../d2/d27/VM_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5a/structmapping.html">mapping</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></td></tr>
@@ -161,7 +156,7 @@ Functions</h2></td></tr>
 <div class="line">    DISPATCH_GOTO();</div>
 <div class="ttc" id="aVM_8cpp_html_a924a37636b88b07d47ab701c82216199"><div class="ttname"><a href="#a924a37636b88b07d47ab701c82216199">NEXTOPARG</a></div><div class="ttdeci">#define NEXTOPARG()</div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -199,7 +194,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">break</span></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -217,13 +212,21 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span>                                                                                \</div>
-<div class="line">    {                                                                                 \</div>
-<div class="line">        inst = m_state.inst(context.pp, context.ip);                                  \</div>
-<div class="line">        padding = m_state.inst(context.pp, context.ip + 1);                           \</div>
-<div class="line">        arg = <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>((m_state.inst(context.pp, context.ip + 2) &lt;&lt; 8) + \</div>
-<div class="line">                                    m_state.inst(context.pp, context.ip + 3));        \</div>
-<div class="line">        context.ip += 4;                                                              \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span>                                                                                                                            \</div>
+<div class="line">    {                                                                                                                             \</div>
+<div class="line">        inst = m_state.inst(context.pp, context.ip);                                                                              \</div>
+<div class="line">        padding = m_state.inst(context.pp, context.ip + 1);                                                                       \</div>
+<div class="line">        arg = <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>((m_state.inst(context.pp, context.ip + 2) &lt;&lt; 8) +                                             \</div>
+<div class="line">                                    m_state.inst(context.pp, context.ip + 3));                                                    \</div>
+<div class="line">        context.ip += 4;                                                                                                          \</div>
+<div class="line">        context.inst_exec_counter = (context.inst_exec_counter + 1) % VMOverflowBufferSize;                                       \</div>
+<div class="line">        if (context.inst_exec_counter &lt; 2 &amp;&amp; context.sp &gt;= VMStackSize)                                                           \</div>
+<div class="line">        {                                                                                                                         \</div>
+<div class="line">            if (context.pp != 0)                                                                                                  \</div>
+<div class="line">                <span class="keywordflow">throw</span> Error(<span class="stringliteral">&quot;Stack overflow. You could consider rewriting your function to make use of tail-call optimization.&quot;</span>); \</div>
+<div class="line">            else                                                                                                                  \</div>
+<div class="line">                throw Error(<span class="stringliteral">&quot;Stack overflow. Are you trying to call a function with too many arguments?&quot;</span>);                        \</div>
+<div class="line">        }                                                                                                                         \</div>
 <div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
 </div><!-- fragment -->
 </div>
@@ -244,7 +247,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">case</span> op:</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -268,7 +271,7 @@ Functions</h2></td></tr>
 <div class="line">        primary_arg = arg &amp; 0x0fff;                                                   \</div>
 <div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -278,7 +281,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e0d450b481c7e7e5abacff9799e54b3d.html">arkreactor</a></li><li class="navelem"><a class="el" href="../../dir_9600556d5cc28570e4ccd195a3befa41.html">VM</a></li><li class="navelem"><a class="el" href="../../d2/d27/VM_8cpp.html">VM.cpp</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

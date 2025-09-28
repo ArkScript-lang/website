@@ -87,41 +87,35 @@ $(function(){initNavTree('db/d27/structArk_1_1CodeErrorContext.html','../../'); 
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Exceptions.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html">CodeErrorContext.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Ark::CodeErrorContext:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/dc9/structArk_1_1CodeErrorContext__coll__graph.svg" width="166" height="231"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/dc9/structArk_1_1CodeErrorContext__coll__graph.svg" width="304" height="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a88eaffe9af9d4e507c6e0ed03273dfc1" id="r_a88eaffe9af9d4e507c6e0ed03273dfc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88eaffe9af9d4e507c6e0ed03273dfc1">CodeErrorContext</a> (std::string filename_, const std::size_t lineNum, const std::size_t column, std::string expression, const std::optional&lt; <a class="el" href="../../df/d83/classArk_1_1internal_1_1utf8__char__t.html">internal::utf8_char_t</a> &gt; maybe_symbol=std::nullopt)</td></tr>
-<tr class="separator:a88eaffe9af9d4e507c6e0ed03273dfc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0c406cbb1ac34b8526c6654d8a4572c" id="r_ad0c406cbb1ac34b8526c6654d8a4572c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0c406cbb1ac34b8526c6654d8a4572c">CodeErrorContext</a> (std::string filename_, const std::size_t lineNum, const std::size_t column, std::string expression, const bool from_macro_expansion)</td></tr>
-<tr class="separator:ad0c406cbb1ac34b8526c6654d8a4572c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3987be34b98f06003c4b5a1e4a9b5d3" id="r_ac3987be34b98f06003c4b5a1e4a9b5d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3987be34b98f06003c4b5a1e4a9b5d3">CodeErrorContext</a> (std::string filename_, const <a class="el" href="../../dc/dda/structArk_1_1internal_1_1FileSpan.html">internal::FileSpan</a> &amp;pos)</td></tr>
+<tr class="separator:ac3987be34b98f06003c4b5a1e4a9b5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad183e2289ed37ac2f9ca9798875d1626" id="r_ad183e2289ed37ac2f9ca9798875d1626"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad183e2289ed37ac2f9ca9798875d1626">CodeErrorContext</a> (std::string filename_, const <a class="el" href="../../dc/dda/structArk_1_1internal_1_1FileSpan.html">internal::FileSpan</a> &amp;pos, const bool from_macro_expansion)</td></tr>
+<tr class="separator:ad183e2289ed37ac2f9ca9798875d1626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a92ff839d61d2079128e4d8201289c1ac" id="r_a92ff839d61d2079128e4d8201289c1ac"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ff839d61d2079128e4d8201289c1ac">filename</a></td></tr>
 <tr class="separator:a92ff839d61d2079128e4d8201289c1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12cc5c1b47d48b30dbfeb51196279333" id="r_a12cc5c1b47d48b30dbfeb51196279333"><td class="memItemLeft" align="right" valign="top">const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12cc5c1b47d48b30dbfeb51196279333">line</a></td></tr>
-<tr class="separator:a12cc5c1b47d48b30dbfeb51196279333"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82842a323079ceeceef317098a40d1c4" id="r_a82842a323079ceeceef317098a40d1c4"><td class="memItemLeft" align="right" valign="top">const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82842a323079ceeceef317098a40d1c4">col</a></td></tr>
-<tr class="separator:a82842a323079ceeceef317098a40d1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e4c1b3886d6dac378f4858b564fd01d" id="r_a7e4c1b3886d6dac378f4858b564fd01d"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e4c1b3886d6dac378f4858b564fd01d">expr</a></td></tr>
-<tr class="separator:a7e4c1b3886d6dac378f4858b564fd01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac23b0e917791ad157355ec28689d625e" id="r_ac23b0e917791ad157355ec28689d625e"><td class="memItemLeft" align="right" valign="top">const std::optional&lt; <a class="el" href="../../df/d83/classArk_1_1internal_1_1utf8__char__t.html">internal::utf8_char_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac23b0e917791ad157355ec28689d625e">symbol</a></td></tr>
-<tr class="separator:ac23b0e917791ad157355ec28689d625e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792bbf2710e713aad2134b56cca369df" id="r_a792bbf2710e713aad2134b56cca369df"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dc/dda/structArk_1_1internal_1_1FileSpan.html">internal::FileSpan</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a792bbf2710e713aad2134b56cca369df">at</a></td></tr>
+<tr class="separator:a792bbf2710e713aad2134b56cca369df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70232ff3eaf35be76116756683efddbe" id="r_a70232ff3eaf35be76116756683efddbe"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70232ff3eaf35be76116756683efddbe">is_macro_expansion</a> = false</td></tr>
 <tr class="separator:a70232ff3eaf35be76116756683efddbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html#l00099">99</a> of file <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Exceptions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html#l00021">21</a> of file <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html">CodeErrorContext.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a88eaffe9af9d4e507c6e0ed03273dfc1" name="a88eaffe9af9d4e507c6e0ed03273dfc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88eaffe9af9d4e507c6e0ed03273dfc1">&#9670;&#160;</a></span>CodeErrorContext() <span class="overload">[1/2]</span></h2>
+<a id="ac3987be34b98f06003c4b5a1e4a9b5d3" name="ac3987be34b98f06003c4b5a1e4a9b5d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3987be34b98f06003c4b5a1e4a9b5d3">&#9670;&#160;</a></span>CodeErrorContext() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,22 +131,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>lineNum</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>column</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>expression</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::optional&lt; <a class="el" href="../../df/d83/classArk_1_1internal_1_1utf8__char__t.html">internal::utf8_char_t</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>maybe_symbol</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::nullopt</span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="../../dc/dda/structArk_1_1internal_1_1FileSpan.html">internal::FileSpan</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -162,12 +141,12 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Exceptions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html">CodeErrorContext.hpp</a>.</p>
 
 </div>
 </div>
-<a id="ad0c406cbb1ac34b8526c6654d8a4572c" name="ad0c406cbb1ac34b8526c6654d8a4572c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0c406cbb1ac34b8526c6654d8a4572c">&#9670;&#160;</a></span>CodeErrorContext() <span class="overload">[2/2]</span></h2>
+<a id="ad183e2289ed37ac2f9ca9798875d1626" name="ad183e2289ed37ac2f9ca9798875d1626"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad183e2289ed37ac2f9ca9798875d1626">&#9670;&#160;</a></span>CodeErrorContext() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,17 +162,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>lineNum</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::size_t</td>          <td class="paramname"><span class="paramname"><em>column</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>expression</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="../../dc/dda/structArk_1_1internal_1_1FileSpan.html">internal::FileSpan</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -208,44 +177,26 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html#l00116">116</a> of file <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Exceptions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html#l00032">32</a> of file <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html">CodeErrorContext.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a82842a323079ceeceef317098a40d1c4" name="a82842a323079ceeceef317098a40d1c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82842a323079ceeceef317098a40d1c4">&#9670;&#160;</a></span>col</h2>
+<a id="a792bbf2710e713aad2134b56cca369df" name="a792bbf2710e713aad2134b56cca369df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a792bbf2710e713aad2134b56cca369df">&#9670;&#160;</a></span>at</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::size_t Ark::CodeErrorContext::col</td>
+          <td class="memname">const <a class="el" href="../../dc/dda/structArk_1_1internal_1_1FileSpan.html">internal::FileSpan</a> Ark::CodeErrorContext::at</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html#l00103">103</a> of file <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Exceptions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html">CodeErrorContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/dd1/Exceptions_8cpp_source.html#l00333">Ark::Diagnostics::generate()</a>.</p>
-
-</div>
-</div>
-<a id="a7e4c1b3886d6dac378f4858b564fd01d" name="a7e4c1b3886d6dac378f4858b564fd01d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e4c1b3886d6dac378f4858b564fd01d">&#9670;&#160;</a></span>expr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string Ark::CodeErrorContext::expr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html#l00104">104</a> of file <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Exceptions.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d6/dd1/Exceptions_8cpp_source.html#l00333">Ark::Diagnostics::generate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00218">Ark::Diagnostics::generate()</a>.</p>
 
 </div>
 </div>
@@ -261,9 +212,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html#l00101">101</a> of file <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Exceptions.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html#l00023">23</a> of file <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html">CodeErrorContext.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/dd1/Exceptions_8cpp_source.html#l00333">Ark::Diagnostics::generate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00218">Ark::Diagnostics::generate()</a>.</p>
 
 </div>
 </div>
@@ -279,48 +230,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html#l00106">106</a> of file <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Exceptions.hpp</a>.</p>
-
-</div>
-</div>
-<a id="a12cc5c1b47d48b30dbfeb51196279333" name="a12cc5c1b47d48b30dbfeb51196279333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12cc5c1b47d48b30dbfeb51196279333">&#9670;&#160;</a></span>line</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::size_t Ark::CodeErrorContext::line</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html#l00102">102</a> of file <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Exceptions.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d6/dd1/Exceptions_8cpp_source.html#l00333">Ark::Diagnostics::generate()</a>.</p>
-
-</div>
-</div>
-<a id="ac23b0e917791ad157355ec28689d625e" name="ac23b0e917791ad157355ec28689d625e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac23b0e917791ad157355ec28689d625e">&#9670;&#160;</a></span>symbol</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::optional&lt;<a class="el" href="../../df/d83/classArk_1_1internal_1_1utf8__char__t.html">internal::utf8_char_t</a>&gt; Ark::CodeErrorContext::symbol</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html#l00105">105</a> of file <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Exceptions.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d6/dd1/Exceptions_8cpp_source.html#l00333">Ark::Diagnostics::generate()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html#l00025">25</a> of file <a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html">CodeErrorContext.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/Users/fola/Documents/ArkScript/Ark/include/Ark/<a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Exceptions.hpp</a></li>
+<li>/Users/fola/Documents/ArkScript/Ark/include/Ark/Error/<a class="el" href="../../dc/d73/CodeErrorContext_8hpp_source.html">CodeErrorContext.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -328,7 +243,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../db/d27/structArk_1_1CodeErrorContext.html">CodeErrorContext</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

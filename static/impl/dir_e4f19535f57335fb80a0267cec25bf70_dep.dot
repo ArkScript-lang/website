@@ -9,6 +9,8 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler"
   subgraph clusterdir_a8b6c64285bf9ac60f50770eb2fc48b5 {
     graph [ bgcolor="#edf0f7", pencolor="grey50", label="Ark", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_a8b6c64285bf9ac60f50770eb2fc48b5.html",tooltip=""]
   dir_222307dbf92126e8e24c7a501f533901 [label="VM", fillcolor="#a2b4d6", color="red", style="filled", URL="dir_222307dbf92126e8e24c7a501f533901.html",tooltip=""];
+  dir_33906bab6f1f9d0f271eb499b90a96b5 [label="Utils", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_33906bab6f1f9d0f271eb499b90a96b5.html",tooltip=""];
+  dir_d05504aa0714508559a2ff50247d1ab2 [label="Error", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_d05504aa0714508559a2ff50247d1ab2.html",tooltip=""];
   subgraph clusterdir_e4f19535f57335fb80a0267cec25bf70 {
     graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_e4f19535f57335fb80a0267cec25bf70.html",tooltip=""]
     dir_e4f19535f57335fb80a0267cec25bf70 [shape=plaintext, label="Compiler"];
@@ -22,14 +24,22 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler"
   }
   }
   dir_e4f19535f57335fb80a0267cec25bf70->dir_100d7a05404dd55ce1a106aad5a3b28c [headlabel="16", labeldistance=1.5 headhref="dir_000008_000004.html" href="dir_000008_000004.html" color="steelblue1" fontcolor="steelblue1"];
-  dir_e4f19535f57335fb80a0267cec25bf70->dir_194fbbac977e5b9c6e9f70469dfb9cce [headlabel="1", labeldistance=1.5 headhref="dir_000008_000015.html" href="dir_000008_000015.html" color="steelblue1" fontcolor="steelblue1"];
-  dir_e4f19535f57335fb80a0267cec25bf70->dir_222307dbf92126e8e24c7a501f533901 [headlabel="1", labeldistance=1.5 headhref="dir_000008_000030.html" href="dir_000008_000030.html" color="steelblue1" fontcolor="steelblue1"];
-  dir_e4f19535f57335fb80a0267cec25bf70->dir_544073e927e87469916ed179e00b9be3 [headlabel="1", labeldistance=1.5 headhref="dir_000008_000021.html" href="dir_000008_000021.html" color="steelblue1" fontcolor="steelblue1"];
-  dir_e4f19535f57335fb80a0267cec25bf70->dir_54ed949f9e2ebe39c7d7ae9210877b49 [headlabel="1", labeldistance=1.5 headhref="dir_000008_000017.html" href="dir_000008_000017.html" color="steelblue1" fontcolor="steelblue1"];
-  dir_e4f19535f57335fb80a0267cec25bf70->dir_7af1ad8c04f38ec2fb191400d7a454aa [headlabel="1", labeldistance=1.5 headhref="dir_000008_000019.html" href="dir_000008_000019.html" color="steelblue1" fontcolor="steelblue1"];
-  dir_e4f19535f57335fb80a0267cec25bf70->dir_ad45c69e33d564afb397466bf2d991f2 [headlabel="4", labeldistance=1.5 headhref="dir_000008_000013.html" href="dir_000008_000013.html" color="steelblue1" fontcolor="steelblue1"];
-  dir_194fbbac977e5b9c6e9f70469dfb9cce->dir_100d7a05404dd55ce1a106aad5a3b28c [headlabel="1", labeldistance=1.5 headhref="dir_000015_000004.html" href="dir_000015_000004.html" color="steelblue1" fontcolor="steelblue1"];
-  dir_194fbbac977e5b9c6e9f70469dfb9cce->dir_ad45c69e33d564afb397466bf2d991f2 [headlabel="1", labeldistance=1.5 headhref="dir_000015_000013.html" href="dir_000015_000013.html" color="steelblue1" fontcolor="steelblue1"];
-  dir_54ed949f9e2ebe39c7d7ae9210877b49->dir_100d7a05404dd55ce1a106aad5a3b28c [headlabel="6", labeldistance=1.5 headhref="dir_000017_000004.html" href="dir_000017_000004.html" color="steelblue1" fontcolor="steelblue1"];
-  dir_544073e927e87469916ed179e00b9be3->dir_100d7a05404dd55ce1a106aad5a3b28c [headlabel="4", labeldistance=1.5 headhref="dir_000021_000004.html" href="dir_000021_000004.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_e4f19535f57335fb80a0267cec25bf70->dir_194fbbac977e5b9c6e9f70469dfb9cce [headlabel="1", labeldistance=1.5 headhref="dir_000008_000017.html" href="dir_000008_000017.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_e4f19535f57335fb80a0267cec25bf70->dir_222307dbf92126e8e24c7a501f533901 [headlabel="1", labeldistance=1.5 headhref="dir_000008_000034.html" href="dir_000008_000034.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_e4f19535f57335fb80a0267cec25bf70->dir_33906bab6f1f9d0f271eb499b90a96b5 [headlabel="22", labeldistance=1.5 headhref="dir_000008_000030.html" href="dir_000008_000030.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_e4f19535f57335fb80a0267cec25bf70->dir_544073e927e87469916ed179e00b9be3 [headlabel="1", labeldistance=1.5 headhref="dir_000008_000023.html" href="dir_000008_000023.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_e4f19535f57335fb80a0267cec25bf70->dir_54ed949f9e2ebe39c7d7ae9210877b49 [headlabel="1", labeldistance=1.5 headhref="dir_000008_000019.html" href="dir_000008_000019.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_e4f19535f57335fb80a0267cec25bf70->dir_7af1ad8c04f38ec2fb191400d7a454aa [headlabel="1", labeldistance=1.5 headhref="dir_000008_000021.html" href="dir_000008_000021.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_e4f19535f57335fb80a0267cec25bf70->dir_ad45c69e33d564afb397466bf2d991f2 [headlabel="4", labeldistance=1.5 headhref="dir_000008_000015.html" href="dir_000008_000015.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_100d7a05404dd55ce1a106aad5a3b28c->dir_33906bab6f1f9d0f271eb499b90a96b5 [headlabel="8", labeldistance=1.5 headhref="dir_000004_000030.html" href="dir_000004_000030.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_100d7a05404dd55ce1a106aad5a3b28c->dir_d05504aa0714508559a2ff50247d1ab2 [headlabel="1", labeldistance=1.5 headhref="dir_000004_000010.html" href="dir_000004_000010.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_ad45c69e33d564afb397466bf2d991f2->dir_33906bab6f1f9d0f271eb499b90a96b5 [headlabel="4", labeldistance=1.5 headhref="dir_000015_000030.html" href="dir_000015_000030.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_194fbbac977e5b9c6e9f70469dfb9cce->dir_100d7a05404dd55ce1a106aad5a3b28c [headlabel="1", labeldistance=1.5 headhref="dir_000017_000004.html" href="dir_000017_000004.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_194fbbac977e5b9c6e9f70469dfb9cce->dir_33906bab6f1f9d0f271eb499b90a96b5 [headlabel="2", labeldistance=1.5 headhref="dir_000017_000030.html" href="dir_000017_000030.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_194fbbac977e5b9c6e9f70469dfb9cce->dir_ad45c69e33d564afb397466bf2d991f2 [headlabel="1", labeldistance=1.5 headhref="dir_000017_000015.html" href="dir_000017_000015.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_54ed949f9e2ebe39c7d7ae9210877b49->dir_100d7a05404dd55ce1a106aad5a3b28c [headlabel="6", labeldistance=1.5 headhref="dir_000019_000004.html" href="dir_000019_000004.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_54ed949f9e2ebe39c7d7ae9210877b49->dir_33906bab6f1f9d0f271eb499b90a96b5 [headlabel="1", labeldistance=1.5 headhref="dir_000019_000030.html" href="dir_000019_000030.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_7af1ad8c04f38ec2fb191400d7a454aa->dir_33906bab6f1f9d0f271eb499b90a96b5 [headlabel="2", labeldistance=1.5 headhref="dir_000021_000030.html" href="dir_000021_000030.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_544073e927e87469916ed179e00b9be3->dir_100d7a05404dd55ce1a106aad5a3b28c [headlabel="4", labeldistance=1.5 headhref="dir_000023_000004.html" href="dir_000023_000004.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_544073e927e87469916ed179e00b9be3->dir_33906bab6f1f9d0f271eb499b90a96b5 [headlabel="1", labeldistance=1.5 headhref="dir_000023_000030.html" href="dir_000023_000030.html" color="steelblue1" fontcolor="steelblue1"];
 }

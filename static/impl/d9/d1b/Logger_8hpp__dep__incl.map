@@ -1,4 +1,4 @@
-<map id="/Users/fola/Documents/ArkScript/Ark/include/Ark/Logger.hpp" name="/Users/fola/Documents/ArkScript/Ark/include/Ark/Logger.hpp">
+<map id="/Users/fola/Documents/ArkScript/Ark/include/Ark/Utils/Logger.hpp" name="/Users/fola/Documents/ArkScript/Ark/include/Ark/Utils/Logger.hpp">
 <area shape="rect" id="Node000001" title="Internal logger." alt="" coords="627,5,784,61"/>
 <area shape="rect" id="Node000002" href="$d7/ddd/Parser_8hpp.html" title="Parse ArkScript code, but do not handle any import declarations." alt="" coords="5,235,203,291"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="612,43,508,53,395,67,293,86,252,98,223,111,188,138,159,172,135,206,119,236,114,234,131,203,154,168,184,134,220,107,251,93,292,81,394,61,508,47,611,38"/>

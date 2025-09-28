@@ -83,6 +83,7 @@ $(function(){initNavTree('d4/d04/classArk_1_1Procedure.html','../../'); initResi
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="../../d1/de7/classArk_1_1Procedure-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Ark::Procedure Class Reference</div></div>
 </div><!--header-->
@@ -120,6 +121,11 @@ Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a72b5375ceb69b15357d6f9714723507d" id="r_a72b5375ceb69b15357d6f9714723507d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a766163ab77deb52f7ccd51ccf378203e">CallbackType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72b5375ceb69b15357d6f9714723507d">m_procedure</a></td></tr>
 <tr class="separator:a72b5375ceb69b15357d6f9714723507d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a71f269bcd4fe43b06b20bd028b0dfbe0" id="r_a71f269bcd4fe43b06b20bd028b0dfbe0"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71f269bcd4fe43b06b20bd028b0dfbe0">std::hash&lt; Ark::Procedure &gt;</a></td></tr>
+<tr class="separator:a71f269bcd4fe43b06b20bd028b0dfbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Storage class to hold custom functions. </p>
@@ -187,7 +193,7 @@ template&lt;typename T &gt; </div>
 <p>Create a new procedure. </p>
 <p>Due to clang (sometimes) rejecting forward declared types in templates (<code><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a></code> causes issues), we have to implement the constructor for the actual <code>CallbackType</code> using SFINAE and a templated constructor, such that when clang encounters the constructor, it knows the actual declaration of <code><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a></code>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../da/dcf/Procedure_8hpp_source.html#l00043">43</a> of file <a class="el" href="../../da/dcf/Procedure_8hpp_source.html">Procedure.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dcf/Procedure_8hpp_source.html#l00044">44</a> of file <a class="el" href="../../da/dcf/Procedure_8hpp_source.html">Procedure.hpp</a>.</p>
 
 </div>
 </div>
@@ -209,8 +215,6 @@ template&lt;typename T &gt; </div>
 <p>Create a new procedure from a stateless C function pointer. </p>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/da8/Procedure_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../d9/da8/Procedure_8cpp_source.html">Procedure.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../da/dcf/Procedure_8hpp_source.html#l00059">m_procedure</a>.</p>
 
 </div>
 </div>
@@ -236,7 +240,7 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/da8/Procedure_8cpp_source.html#l00008">8</a> of file <a class="el" href="../../d9/da8/Procedure_8cpp_source.html">Procedure.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../da/dcf/Procedure_8hpp_source.html#l00059">m_procedure</a>.</p>
+<p class="reference">References <a class="el" href="../../da/dcf/Procedure_8hpp_source.html#l00061">m_procedure</a>.</p>
 
 </div>
 </div>
@@ -263,7 +267,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/da8/Procedure_8cpp_source.html#l00018">18</a> of file <a class="el" href="../../d9/da8/Procedure_8cpp_source.html">Procedure.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/da8/Procedure_8cpp_source.html#l00017">17</a> of file <a class="el" href="../../d9/da8/Procedure_8cpp_source.html">Procedure.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +294,32 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/da8/Procedure_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../d9/da8/Procedure_8cpp_source.html">Procedure.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/da8/Procedure_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d9/da8/Procedure_8cpp_source.html">Procedure.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a71f269bcd4fe43b06b20bd028b0dfbe0" name="a71f269bcd4fe43b06b20bd028b0dfbe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f269bcd4fe43b06b20bd028b0dfbe0">&#9670;&#160;</a></span>std::hash&lt; Ark::Procedure &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct std::hash&lt; <a class="el" href="../../d4/d04/classArk_1_1Procedure.html">Ark::Procedure</a> &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../da/dcf/Procedure_8hpp_source.html#l00056">56</a> of file <a class="el" href="../../da/dcf/Procedure_8hpp_source.html">Procedure.hpp</a>.</p>
 
 </div>
 </div>
@@ -315,9 +344,9 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/dcf/Procedure_8hpp_source.html#l00059">59</a> of file <a class="el" href="../../da/dcf/Procedure_8hpp_source.html">Procedure.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../da/dcf/Procedure_8hpp_source.html#l00061">61</a> of file <a class="el" href="../../da/dcf/Procedure_8hpp_source.html">Procedure.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/da8/Procedure_8cpp_source.html#l00008">operator()()</a>, and <a class="el" href="../../d9/da8/Procedure_8cpp_source.html#l00013">Procedure()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/da8/Procedure_8cpp_source.html#l00008">operator()()</a>.</p>
 
 </div>
 </div>
@@ -331,7 +360,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../d4/d04/classArk_1_1Procedure.html">Procedure</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

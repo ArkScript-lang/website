@@ -84,7 +84,7 @@ $(function(){initNavTree('de/db1/Processor_8hpp_source.html','../../'); initResi
 <div class="contents">
 <a href="../../de/db1/Processor_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file Processor.hpp</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author Alexandre Plateau (lexplt.dev@gmail.com)</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author Lex Plateau (lexplt.dev@gmail.com)</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @brief Handles the macros and their expansion in ArkScript source code</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @date 2021-02-18</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
@@ -95,7 +95,7 @@ $(function(){initNavTree('de/db1/Processor_8hpp_source.html','../../'); initResi
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef COMPILER_MACROS_PROCESSOR_HPP</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define COMPILER_MACROS_PROCESSOR_HPP</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="../../d5/d40/Platform_8hpp.html">Ark/Platform.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="../../d5/d40/Platform_8hpp.html">Ark/Utils/Platform.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;<a class="code" href="../../d7/dc6/Node_8hpp.html">Ark/Compiler/AST/Node.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="code" href="../../d7/dfb/MacroScope_8hpp.html">Ark/Compiler/Macros/MacroScope.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="code" href="../../df/d5f/Pass_8hpp.html">Ark/Compiler/Pass.hpp</a>&gt;</span></div>
@@ -236,53 +236,54 @@ $(function(){initNavTree('de/db1/Processor_8hpp_source.html','../../'); initResi
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">         * @param node a list node with a macro application, eg (= a b)</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">         * @param expected expected argument count, not counting the macro</span></div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">         * @param name the name of the macro being applied</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">         * @param kind the macro kind, empty by default (eg &quot;operator&quot;, &quot;condition&quot;)</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordtype">void</span> checkMacroArgCountEq(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&amp; node, std::size_t expected, <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; kind = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment"></span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">        /**</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">         * @brief Check if the given node has at least the provided argument count, otherwise throws an error</span></div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">         *</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">         * @param node a list node with a macro application, eg (= a b)</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">         * @param expected expected argument count, not counting the macro</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">         * @param name the name of the macro being applied</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">         * @param kind the macro kind, empty by default (eg &quot;operator&quot;, &quot;condition&quot;)</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keywordtype">void</span> checkMacroArgCountGe(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&amp; node, std::size_t expected, <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; kind = <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment"></span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">        /**</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">         * @brief Evaluate only the macros</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">         *</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">         * @param node</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">         * @param depth</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">         * @param is_not_body true if the method is run on a non-body code (eg a condition of an if-macro)</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">         * @return Node</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> evaluate(<a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&amp; node, <span class="keywordtype">unsigned</span> depth, <span class="keywordtype">bool</span> is_not_body = <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment"></span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">        /**</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">         * @brief Check if a node can be evaluated to true</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">         *</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">         * @param node</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">         * @return true</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">         * @return false</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordtype">bool</span> isTruthy(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&amp; node);</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"></span> </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">        /**</span></div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">         * @brief Throw a macro processing error</span></div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">         *</span></div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">         * @param message the error</span></div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">         * @param node the node in which there is an error</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">         */</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        [[noreturn]] <span class="keywordtype">void</span> throwMacroProcessingError(<span class="keyword">const</span> std::string&amp; message, <span class="keyword">const</span> <a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&amp; node) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    };</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">         * @param is_expansion if the error message should switch from &quot;Interpreting ...&quot; to &quot;When expanding ...&quot;</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">         * @param kind the macro kind, empty by default (eg &quot;operator&quot;, &quot;condition&quot;)</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keywordtype">void</span> checkMacroArgCountEq(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&amp; node, std::size_t expected, <span class="keyword">const</span> std::string&amp; name, <span class="keywordtype">bool</span> is_expansion = <span class="keyword">false</span>, <span class="keyword">const</span> std::string&amp; kind = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment"></span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">         * @brief Check if the given node has at least the provided argument count, otherwise throws an error</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">         *</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">         * @param node a list node with a macro application, eg (= a b)</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">         * @param expected expected argument count, not counting the macro</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">         * @param name the name of the macro being applied</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">         * @param kind the macro kind, empty by default (eg &quot;operator&quot;, &quot;condition&quot;)</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordtype">void</span> checkMacroArgCountGe(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&amp; node, std::size_t expected, <span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; kind = <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment"></span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">         * @brief Evaluate only the macros</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">         *</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">         * @param node</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">         * @param depth</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">         * @param is_not_body true if the method is run on a non-body code (eg a condition of an if-macro)</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">         * @return Node</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> evaluate(<a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&amp; node, <span class="keywordtype">unsigned</span> depth, <span class="keywordtype">bool</span> is_not_body = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment"></span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">         * @brief Check if a node can be evaluated to true</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">         *</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">         * @param node</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">         * @return true</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">         * @return false</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordtype">bool</span> isTruthy(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&amp; node);</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment"></span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">        /**</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">         * @brief Throw a macro processing error</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">         *</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">         * @param message the error</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">         * @param node the node in which there is an error</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">         */</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        [[noreturn]] <span class="keywordtype">void</span> throwMacroProcessingError(<span class="keyword">const</span> std::string&amp; message, <span class="keyword">const</span> <a class="code hl_class" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a>&amp; node) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    };</div>
 </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>}</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aMacroScope_8hpp_html"><div class="ttname"><a href="../../d7/dfb/MacroScope_8hpp.html">MacroScope.hpp</a></div><div class="ttdoc">Defines tools to handle macro definitions.</div></div>
-<div class="ttc" id="aModule_8hpp_html_ac62a8551c675391a8cf01d112e42d755"><div class="ttname"><a href="../../d5/d44/Module_8hpp.html#ac62a8551c675391a8cf01d112e42d755">ARK_API</a></div><div class="ttdeci">#define ARK_API</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d44/Module_8hpp_source.html#l00028">Module.hpp:28</a></div></div>
+<div class="ttc" id="aModule_8hpp_html_ac62a8551c675391a8cf01d112e42d755"><div class="ttname"><a href="../../d5/d44/Module_8hpp.html#ac62a8551c675391a8cf01d112e42d755">ARK_API</a></div><div class="ttdeci">#define ARK_API</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d44/Module_8hpp_source.html#l00022">Module.hpp:22</a></div></div>
 <div class="ttc" id="aNode_8hpp_html"><div class="ttname"><a href="../../d7/dc6/Node_8hpp.html">Node.hpp</a></div><div class="ttdoc">AST node used by the parser, optimizer and compiler.</div></div>
 <div class="ttc" id="aPass_8hpp_html"><div class="ttname"><a href="../../df/d5f/Pass_8hpp.html">Pass.hpp</a></div><div class="ttdoc">Interface for a compiler pass (take in an AST, output an AST)</div></div>
 <div class="ttc" id="aPlatform_8hpp_html"><div class="ttname"><a href="../../d5/d40/Platform_8hpp.html">Platform.hpp</a></div><div class="ttdoc">ArkScript configuration macros.</div></div>
@@ -294,16 +295,16 @@ $(function(){initNavTree('de/db1/Processor_8hpp_source.html','../../'); initResi
 <div class="ttc" id="aclassArk_1_1internal_1_1MacroProcessor_html_ab27e36fb2979e08da042a56466d102ac"><div class="ttname"><a href="../../d5/db5/classArk_1_1internal_1_1MacroProcessor.html#ab27e36fb2979e08da042a56466d102ac">Ark::internal::MacroProcessor::m_defined_functions</a></div><div class="ttdeci">std::unordered_map&lt; std::string, Node &gt; m_defined_functions</div><div class="ttdef"><b>Definition</b> <a href="#l00063">Processor.hpp:63</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1MacroProcessor_html_ab6ee0aa448c350a3b6a0fd5a3240f47e"><div class="ttname"><a href="../../d5/db5/classArk_1_1internal_1_1MacroProcessor.html#ab6ee0aa448c350a3b6a0fd5a3240f47e">Ark::internal::MacroProcessor::m_executors</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; MacroExecutor &gt; &gt; m_executors</div><div class="ttdef"><b>Definition</b> <a href="#l00062">Processor.hpp:62</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1MacroProcessor_html_ae22ffc46ad62546c54fec40d03834e08"><div class="ttname"><a href="../../d5/db5/classArk_1_1internal_1_1MacroProcessor.html#ae22ffc46ad62546c54fec40d03834e08">Ark::internal::MacroProcessor::m_macros</a></div><div class="ttdeci">std::vector&lt; MacroScope &gt; m_macros</div><div class="ttdoc">Handling macros in a scope fashion.</div><div class="ttdef"><b>Definition</b> <a href="#l00059">Processor.hpp:59</a></div></div>
-<div class="ttc" id="aclassArk_1_1internal_1_1Node_html"><div class="ttname"><a href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Ark::internal::Node</a></div><div class="ttdoc">A node of an Abstract Syntax Tree for ArkScript.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dc6/Node_8hpp_source.html#l00029">Node.hpp:30</a></div></div>
+<div class="ttc" id="aclassArk_1_1internal_1_1Node_html"><div class="ttname"><a href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Ark::internal::Node</a></div><div class="ttdoc">A node of an Abstract Syntax Tree for ArkScript.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dc6/Node_8hpp_source.html#l00031">Node.hpp:32</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1Pass_html"><div class="ttname"><a href="../../da/d7b/classArk_1_1internal_1_1Pass.html">Ark::internal::Pass</a></div><div class="ttdoc">An interface to describe compiler passes.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d5f/Pass_8hpp_source.html#l00022">Pass.hpp:23</a></div></div>
-<div class="ttc" id="anamespaceArk_1_1internal_html"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00024">Builtins.hpp:25</a></div></div>
+<div class="ttc" id="anamespaceArk_1_1internal_html"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00025">Builtins.hpp:26</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_a8b6c64285bf9ac60f50770eb2fc48b5.html">Ark</a></li><li class="navelem"><a class="el" href="../../dir_e4f19535f57335fb80a0267cec25bf70.html">Compiler</a></li><li class="navelem"><a class="el" href="../../dir_54ed949f9e2ebe39c7d7ae9210877b49.html">Macros</a></li><li class="navelem"><a class="el" href="../../de/db1/Processor_8hpp.html">Processor.hpp</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

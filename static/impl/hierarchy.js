@@ -25,8 +25,10 @@ var hierarchy =
     [ "Ark::UserType::ControlFuncs", "d8/d70/structArk_1_1UserType_1_1ControlFuncs.html", null ],
     [ "Ark::internal::Declaration", "d1/dcf/structArk_1_1internal_1_1Declaration.html", null ],
     [ "Ark::internal::ieee754::DecomposedDouble", "d3/dc3/structArk_1_1internal_1_1ieee754_1_1DecomposedDouble.html", null ],
+    [ "Ark::internal::Dict", "d5/d05/classArk_1_1internal_1_1Dict.html", null ],
     [ "Ark::internal::IR::Entity", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html", null ],
     [ "Ark::internal::EntityWithOffset", "d9/dd9/structArk_1_1internal_1_1EntityWithOffset.html", null ],
+    [ "Ark::Diagnostics::ErrorLocation", "d1/de4/structArk_1_1Diagnostics_1_1ErrorLocation.html", null ],
     [ "std::exception", null, [
       [ "std::runtime_error", null, [
         [ "Ark::Error", "d6/d43/classArk_1_1Error.html", [
@@ -40,11 +42,20 @@ var hierarchy =
     ] ],
     [ "Ark::internal::ExecutionContext", "d0/daf/structArk_1_1internal_1_1ExecutionContext.html", null ],
     [ "Ark::Filenames", "d4/de7/structArk_1_1Filenames.html", null ],
+    [ "Ark::internal::FilePos", "d7/df6/structArk_1_1internal_1_1FilePos.html", null ],
     [ "Ark::internal::FilePosition", "dd/d0e/structArk_1_1internal_1_1FilePosition.html", null ],
+    [ "Ark::internal::FileSpan", "dc/dda/structArk_1_1internal_1_1FileSpan.html", null ],
     [ "Formatter", "d9/d43/classFormatter.html", null ],
     [ "FormatterConfig", "dd/dcc/structFormatterConfig.html", null ],
     [ "Ark::internal::Future", "d4/d6d/classArk_1_1internal_1_1Future.html", null ],
+    [ "std::hash< Ark::internal::Closure >", "d3/d1f/structstd_1_1hash_3_01Ark_1_1internal_1_1Closure_01_4.html", null ],
     [ "std::hash< Ark::internal::Declaration >", "d5/d2b/structstd_1_1hash_3_01Ark_1_1internal_1_1Declaration_01_4.html", null ],
+    [ "std::hash< Ark::Procedure >", "d7/d62/structstd_1_1hash_3_01Ark_1_1Procedure_01_4.html", null ],
+    [ "std::hash< Ark::UserType >", "df/d7e/structstd_1_1hash_3_01Ark_1_1UserType_01_4.html", null ],
+    [ "std::hash< Ark::Value >", "de/db6/structstd_1_1hash_3_01Ark_1_1Value_01_4.html", null ],
+    [ "std::hash< Ark::ValueType >", "d9/d60/structstd_1_1hash_3_01Ark_1_1ValueType_01_4.html", null ],
+    [ "std::hash< std::shared_ptr< Ark::Value::Dict_t > >", "d6/d78/structstd_1_1hash_3_01std_1_1shared__ptr_3_01Ark_1_1Value_1_1Dict__t_01_4_01_4.html", null ],
+    [ "std::hash< std::vector< Ark::Value > >", "d4/d54/structstd_1_1hash_3_01std_1_1vector_3_01Ark_1_1Value_01_4_01_4.html", null ],
     [ "Ark::internal::Import", "da/d03/structArk_1_1internal_1_1Import.html", null ],
     [ "Ark::internal::ImportSolver::ImportWithSource", "d8/dbc/structArk_1_1internal_1_1ImportSolver_1_1ImportWithSource.html", null ],
     [ "Ark::internal::InstLoc", "d5/d64/structArk_1_1internal_1_1InstLoc.html", null ],
@@ -62,7 +73,6 @@ var hierarchy =
     ] ],
     [ "Ark::internal::MacroScope", "d6/d42/classArk_1_1internal_1_1MacroScope.html", null ],
     [ "Ark::mapping", "d4/dd8/structArk_1_1mapping.html", null ],
-    [ "mapping", "d1/d5a/structmapping.html", null ],
     [ "Ark::internal::Logger::MessageAndLocation", "d1/d53/structArk_1_1internal_1_1Logger_1_1MessageAndLocation.html", null ],
     [ "Ark::internal::Namespace", "d0/d57/structArk_1_1internal_1_1Namespace.html", null ],
     [ "Ark::internal::Node", "dc/d9e/classArk_1_1internal_1_1Node.html", null ],
@@ -74,6 +84,7 @@ var hierarchy =
       [ "Ark::internal::NameResolutionPass", "d7/db8/classArk_1_1internal_1_1NameResolutionPass.html", null ],
       [ "Ark::internal::Optimizer", "d7/da8/classArk_1_1internal_1_1Optimizer.html", null ]
     ] ],
+    [ "Ark::Diagnostics::Printer", "db/d41/classArk_1_1Diagnostics_1_1Printer.html", null ],
     [ "Ark::Procedure", "d4/d04/classArk_1_1Procedure.html", null ],
     [ "Ark::Repl", "de/d60/classArk_1_1Repl.html", null ],
     [ "Ark::internal::IROptimizer::Rule", "da/d1e/structArk_1_1internal_1_1IROptimizer_1_1Rule.html", null ],
@@ -97,5 +108,6 @@ var hierarchy =
     [ "Ark::Version", "d6/dab/structArk_1_1Version.html", null ],
     [ "Ark::VM", "d2/d93/classArk_1_1VM.html", null ],
     [ "Ark::Welder", "d7/da8/classArk_1_1Welder.html", null ],
+    [ "Ark::Diagnostics::Window", "d5/db9/structArk_1_1Diagnostics_1_1Window.html", null ],
     [ "Ark::internal::Word", "d3/d52/structArk_1_1internal_1_1Word.html", null ]
 ];

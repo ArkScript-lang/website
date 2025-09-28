@@ -1,7 +1,11 @@
 <map id="Ark::CodeErrorContext" name="Ark::CodeErrorContext">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,199,160,225"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="43,95,122,121"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,137,85,199,80,199,80,137"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="20,5,145,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,61,85,95,80,95,80,61"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="64,198,218,223"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="34,109,113,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,145,134,196,130,199,90,149"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,131,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,61,75,109,70,109,67,62"/>
+<area shape="rect" id="Node000004" href="$dc/dda/structArk_1_1internal_1_1FileSpan.html" title="Describes a span for a node/atom in a file, its start position and end position." alt="" coords="146,109,296,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="202,148,154,199,150,195,198,144"/>
+<area shape="rect" id="Node000005" href="$d7/df6/structArk_1_1internal_1_1FilePos.html" title=" " alt="" coords="155,13,298,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="228,54,225,109,219,108,222,53"/>
 </map>

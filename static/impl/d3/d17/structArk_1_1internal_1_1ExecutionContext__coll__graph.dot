@@ -46,7 +46,7 @@ digraph "Ark::internal::ExecutionContext"
   Node17 [id="Node000017",label="std::array\< T \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
   Node12 -> Node17 [id="edge22_Node000017_Node000012",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" elements",fontcolor="grey" ];
   Node18 -> Node1 [id="edge23_Node000001_Node000018",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" stack",fontcolor="grey" ];
-  Node18 [id="Node000018",label="std::array\< Ark::Value,\l VMStackSize \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node18 [id="Node000018",label="std::array\< Ark::Value,\l VMStackSizeWithOverflowBuffer \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
   Node7 -> Node18 [id="edge24_Node000018_Node000007",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" elements",fontcolor="grey" ];
-  Node17 -> Node18 [id="edge25_Node000018_Node000017",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< Ark::Value, VMStackSize \>",fontcolor="grey" ];
+  Node17 -> Node18 [id="edge25_Node000018_Node000017",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< Ark::Value, VMStackSize\lWithOverflowBuffer \>",fontcolor="grey" ];
 }

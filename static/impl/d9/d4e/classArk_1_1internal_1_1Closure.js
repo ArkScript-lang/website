@@ -10,6 +10,7 @@ var classArk_1_1internal_1_1Closure =
     [ "toString", "d9/d4e/classArk_1_1internal_1_1Closure.html#a36747fd88809ba8669f3048d2f36e876", null ],
     [ "operator<", "d9/d4e/classArk_1_1internal_1_1Closure.html#a6b60493fd6fd17b633ec56efb3dd310a", null ],
     [ "operator==", "d9/d4e/classArk_1_1internal_1_1Closure.html#aadda01159fff9d147844258a78ce3805", null ],
+    [ "std::hash< Ark::internal::Closure >", "d9/d4e/classArk_1_1internal_1_1Closure.html#ab9242b4ef11e41ca7a24e82b52328718", null ],
     [ "m_page_addr", "d9/d4e/classArk_1_1internal_1_1Closure.html#a5b988d12a962cd1575be756cc0eb931f", null ],
     [ "m_scope", "d9/d4e/classArk_1_1internal_1_1Closure.html#ac93fd971055c6108f5762d167f2b6c47", null ]
 ];

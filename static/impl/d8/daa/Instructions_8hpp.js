@@ -23,6 +23,7 @@ var Instructions_8hpp =
       [ "PUSH_RETURN_ADDRESS", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a4da2820fbcf0df640191bdc10237d72c", null ],
       [ "CALL", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a0d19547973896db46706527300ba630d", null ],
       [ "CAPTURE", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a68f8b0b3e523eb4ebcdb6057fd618ae4", null ],
+      [ "RENAME_NEXT_CAPTURE", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a0d4dbe91687c8411d182d59e3813fdfd", null ],
       [ "BUILTIN", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a32493ca580dc36eb98a8999fa065202c", null ],
       [ "DEL", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681aa2b29c169d008e65c9589eed1cb37fa2", null ],
       [ "MAKE_CLOSURE", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a74ffaa4dfcdce922e86e218d364b3a1a", null ],
@@ -109,10 +110,13 @@ var Instructions_8hpp =
       [ "GET_FIELD_FROM_SYMBOL_INDEX", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a1b3c88c11067a986fffe063e83c5eae7", null ],
       [ "AT_SYM_SYM", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a4042c42e6d29eef8f8877f91334b7b82", null ],
       [ "AT_SYM_INDEX_SYM_INDEX", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a215668a6b9ee4ff031f6f1cbe939feac", null ],
+      [ "AT_SYM_INDEX_CONST", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681ad86b589796ab922f736f93c2973a616b", null ],
       [ "CHECK_TYPE_OF", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a6a88f96ef4b65852757f0a8233fb1a1c", null ],
       [ "CHECK_TYPE_OF_BY_INDEX", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a939362207f483bcd5169dcca0e11e96c", null ],
       [ "APPEND_IN_PLACE_SYM", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a367fa615133d34c2265261990a4b450a", null ],
       [ "APPEND_IN_PLACE_SYM_INDEX", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a1d4a055637abd0203e44aad4b9fd259c", null ],
+      [ "STORE_LEN", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681af065496ee64d91a4ef8594703a7ede92", null ],
+      [ "LT_LEN_SYM_JUMP_IF_FALSE", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a99774bd5b8d69557af5b248f9267cf4b", null ],
       [ "InstructionsCount", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a0be56fe6a02043ce359f925d6bc0c47c", null ]
     ] ],
     [ "InstructionNames", "d8/daa/Instructions_8hpp.html#ae2b36c02ef42de38fed953a630988add", null ]

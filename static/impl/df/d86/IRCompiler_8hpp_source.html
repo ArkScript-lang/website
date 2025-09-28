@@ -84,7 +84,7 @@ $(function(){initNavTree('df/d86/IRCompiler_8hpp_source.html','../../'); initRes
 <div class="contents">
 <a href="../../df/d86/IRCompiler_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file IRCompiler.hpp</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author Alexandre Plateau (lexplt.dev@gmail.com)</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author Lex Plateau (lexplt.dev@gmail.com)</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @brief Compile the intermediate representation to bytecode</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @date 2024-10-05</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
@@ -98,8 +98,8 @@ $(function(){initNavTree('df/d86/IRCompiler_8hpp_source.html','../../'); initRes
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="code" href="../../d5/d40/Platform_8hpp.html">Ark/Platform.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="../../d9/d11/Logger_8hpp.html">Ark/Logger.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="code" href="../../d5/d40/Platform_8hpp.html">Ark/Utils/Platform.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="../../d9/d11/Logger_8hpp.html">Ark/Utils/Logger.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="../../d8/ddd/Common_8hpp.html">Ark/Compiler/Common.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="../../dd/de7/ValTableElem_8hpp.html">Ark/Compiler/ValTableElem.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="../../de/da6/Entity_8hpp.html">Ark/Compiler/IntermediateRepresentation/Entity.hpp</a>&gt;</span></div>
@@ -160,10 +160,10 @@ $(function(){initNavTree('df/d86/IRCompiler_8hpp_source.html','../../'); initRes
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">         */</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">void</span> pushFileHeader() noexcept;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">void</span> pushSymbolTable(const std::vector&lt;std::<span class="keywordtype">string</span>&gt;&amp; symbols);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">void</span> pushValueTable(const std::vector&lt;<a class="code hl_struct" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html">ValTableElem</a>&gt;&amp; values);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">void</span> pushSymbolTable(const <a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::vector&lt;<a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::<span class="keywordtype">string</span>&gt;&amp; symbols);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">void</span> pushValueTable(const <a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::vector&lt;<a class="code hl_struct" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html">ValTableElem</a>&gt;&amp; values);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">void</span> pushFilenameTable();</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordtype">void</span> pushInstLocTable(const std::vector&lt;IR::Block&gt;&amp; pages);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordtype">void</span> pushInstLocTable(const <a class="code hl_namespace" href="../../d8/dcc/namespacestd.html">std</a>::vector&lt;IR::Block&gt;&amp; pages);</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    };</div>
 </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
@@ -172,7 +172,7 @@ $(function(){initNavTree('df/d86/IRCompiler_8hpp_source.html','../../'); initRes
 <div class="ttc" id="aCommon_8hpp_html"><div class="ttname"><a href="../../d8/ddd/Common_8hpp.html">Common.hpp</a></div><div class="ttdoc">Common code for the compiler.</div></div>
 <div class="ttc" id="aEntity_8hpp_html"><div class="ttname"><a href="../../de/da6/Entity_8hpp.html">Entity.hpp</a></div><div class="ttdoc">An entity in the IR is a bundle of information.</div></div>
 <div class="ttc" id="aLogger_8hpp_html"><div class="ttname"><a href="../../d9/d11/Logger_8hpp.html">Logger.hpp</a></div><div class="ttdoc">Internal logger.</div></div>
-<div class="ttc" id="aModule_8hpp_html_ac62a8551c675391a8cf01d112e42d755"><div class="ttname"><a href="../../d5/d44/Module_8hpp.html#ac62a8551c675391a8cf01d112e42d755">ARK_API</a></div><div class="ttdeci">#define ARK_API</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d44/Module_8hpp_source.html#l00028">Module.hpp:28</a></div></div>
+<div class="ttc" id="aModule_8hpp_html_ac62a8551c675391a8cf01d112e42d755"><div class="ttname"><a href="../../d5/d44/Module_8hpp.html#ac62a8551c675391a8cf01d112e42d755">ARK_API</a></div><div class="ttdeci">#define ARK_API</div><div class="ttdef"><b>Definition</b> <a href="../../d5/d44/Module_8hpp_source.html#l00022">Module.hpp:22</a></div></div>
 <div class="ttc" id="aPlatform_8hpp_html"><div class="ttname"><a href="../../d5/d40/Platform_8hpp.html">Platform.hpp</a></div><div class="ttdoc">ArkScript configuration macros.</div></div>
 <div class="ttc" id="aValTableElem_8hpp_html"><div class="ttname"><a href="../../dd/de7/ValTableElem_8hpp.html">ValTableElem.hpp</a></div><div class="ttdoc">The basic value type handled by the compiler.</div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1IRCompiler_html"><div class="ttname"><a href="../../d0/da1/classArk_1_1internal_1_1IRCompiler.html">Ark::internal::IRCompiler</a></div><div class="ttdef"><b>Definition</b> <a href="#l00025">IRCompiler.hpp:26</a></div></div>
@@ -181,17 +181,18 @@ $(function(){initNavTree('df/d86/IRCompiler_8hpp_source.html','../../'); initRes
 <div class="ttc" id="aclassArk_1_1internal_1_1IRCompiler_html_aa6aaf9dfa70ae49a2ea5619e8f112ee4"><div class="ttname"><a href="../../d0/da1/classArk_1_1internal_1_1IRCompiler.html#aa6aaf9dfa70ae49a2ea5619e8f112ee4">Ark::internal::IRCompiler::m_ir</a></div><div class="ttdeci">std::vector&lt; IR::Block &gt; m_ir</div><div class="ttdef"><b>Definition</b> <a href="#l00061">IRCompiler.hpp:61</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1IRCompiler_html_af21980d47cbd965d190dd938264387c6"><div class="ttname"><a href="../../d0/da1/classArk_1_1internal_1_1IRCompiler.html#af21980d47cbd965d190dd938264387c6">Ark::internal::IRCompiler::m_logger</a></div><div class="ttdeci">Logger m_logger</div><div class="ttdef"><b>Definition</b> <a href="#l00059">IRCompiler.hpp:59</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1Logger_html"><div class="ttname"><a href="../../d6/d2f/classArk_1_1internal_1_1Logger.html">Ark::internal::Logger</a></div><div class="ttdef"><b>Definition</b> <a href="../../d9/d11/Logger_8hpp_source.html#l00024">Logger.hpp:25</a></div></div>
-<div class="ttc" id="anamespaceArk_1_1internal_html"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00024">Builtins.hpp:25</a></div></div>
+<div class="ttc" id="anamespaceArk_1_1internal_html"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00025">Builtins.hpp:26</a></div></div>
 <div class="ttc" id="anamespaceArk_html_abc8e737d05c4d6d46b653459516be329"><div class="ttname"><a href="../../d9/de4/namespaceArk.html#abc8e737d05c4d6d46b653459516be329">Ark::bytecode_t</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; bytecode_t</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddd/Common_8hpp_source.html#l00022">Common.hpp:22</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 <div class="ttc" id="astructArk_1_1internal_1_1ValTableElem_html"><div class="ttname"><a href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html">Ark::internal::ValTableElem</a></div><div class="ttdoc">A Compiler Value class helper to handle multiple types.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/de7/ValTableElem_8hpp_source.html#l00036">ValTableElem.hpp:37</a></div></div>
-<div class="ttc" id="astructArk_1_1internal_1_1Word_html"><div class="ttname"><a href="../../d3/d52/structArk_1_1internal_1_1Word.html">Ark::internal::Word</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d53/Word_8hpp_source.html#l00016">Word.hpp:17</a></div></div>
+<div class="ttc" id="astructArk_1_1internal_1_1Word_html"><div class="ttname"><a href="../../d3/d52/structArk_1_1internal_1_1Word.html">Ark::internal::Word</a></div><div class="ttdef"><b>Definition</b> <a href="../../db/d53/Word_8hpp_source.html#l00018">Word.hpp:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_a8b6c64285bf9ac60f50770eb2fc48b5.html">Ark</a></li><li class="navelem"><a class="el" href="../../dir_e4f19535f57335fb80a0267cec25bf70.html">Compiler</a></li><li class="navelem"><a class="el" href="../../dir_ad45c69e33d564afb397466bf2d991f2.html">IntermediateRepresentation</a></li><li class="navelem"><a class="el" href="../../df/d86/IRCompiler_8hpp.html">IRCompiler.hpp</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

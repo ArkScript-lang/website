@@ -122,5 +122,5 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/AST/Node.hpp"
   Node1 -> Node44 [id="edge72_Node000001_Node000044",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node44 [id="Node000044",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/AST/Node.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d73/Node_8cpp.html",tooltip=" "];
   Node1 -> Node45 [id="edge73_Node000001_Node000045",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node45 [id="Node000045",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Exceptions.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/dd1/Exceptions_8cpp.html",tooltip=" "];
+  Node45 [id="Node000045",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Error/Diagnostics.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/d66/Diagnostics_8cpp.html",tooltip=" "];
 }

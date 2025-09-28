@@ -105,15 +105,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca884c28e7dab2f893920c63f2c3cf8f" id="r_aca884c28e7dab2f893920c63f2c3cf8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca884c28e7dab2f893920c63f2c3cf8f">State</a> (const std::vector&lt; std::filesystem::path &gt; &amp;libenv={}) noexcept</td></tr>
 <tr class="memdesc:aca884c28e7dab2f893920c63f2c3cf8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../d1/d37/classArk_1_1State.html" title="Ark state to handle the dirty job of loading and compiling ArkScript code.">State</a> object.  <br /></td></tr>
 <tr class="separator:aca884c28e7dab2f893920c63f2c3cf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6088b8198a0ad3494ba110e8589e8e31" id="r_a6088b8198a0ad3494ba110e8589e8e31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6088b8198a0ad3494ba110e8589e8e31">feed</a> (const std::string &amp;bytecode_filename)</td></tr>
-<tr class="memdesc:a6088b8198a0ad3494ba110e8589e8e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feed the state by giving it the path to an existing bytecode file.  <br /></td></tr>
-<tr class="separator:a6088b8198a0ad3494ba110e8589e8e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02076aa4cbeacde9fdc7cb294a543871" id="r_a02076aa4cbeacde9fdc7cb294a543871"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02076aa4cbeacde9fdc7cb294a543871">feed</a> (const <a class="el" href="../../d9/de4/namespaceArk.html#abc8e737d05c4d6d46b653459516be329">bytecode_t</a> &amp;bytecode)</td></tr>
-<tr class="memdesc:a02076aa4cbeacde9fdc7cb294a543871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feed the state with ArkScript bytecode.  <br /></td></tr>
-<tr class="separator:a02076aa4cbeacde9fdc7cb294a543871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a681fad95a1f0237306139f60be98cda8" id="r_a681fad95a1f0237306139f60be98cda8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a681fad95a1f0237306139f60be98cda8">doFile</a> (const std::string &amp;file, uint16_t features=<a class="el" href="../../d9/de4/namespaceArk.html#a01bf99e888f59670c0508d83cc23ffd4">DefaultFeatures</a>)</td></tr>
-<tr class="memdesc:a681fad95a1f0237306139f60be98cda8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a file, and use the resulting bytecode.  <br /></td></tr>
-<tr class="separator:a681fad95a1f0237306139f60be98cda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ebf2b5270f38f2648ae42eddeb34d5" id="r_a91ebf2b5270f38f2648ae42eddeb34d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91ebf2b5270f38f2648ae42eddeb34d5">feed</a> (const std::string &amp;bytecode_filename, bool fail_with_exception=false)</td></tr>
+<tr class="memdesc:a91ebf2b5270f38f2648ae42eddeb34d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feed the state by giving it the path to an existing bytecode file.  <br /></td></tr>
+<tr class="separator:a91ebf2b5270f38f2648ae42eddeb34d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1aff5c1cae0e995057c1b988b7c91c" id="r_aca1aff5c1cae0e995057c1b988b7c91c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca1aff5c1cae0e995057c1b988b7c91c">feed</a> (const <a class="el" href="../../d9/de4/namespaceArk.html#abc8e737d05c4d6d46b653459516be329">bytecode_t</a> &amp;bytecode, bool fail_with_exception=false)</td></tr>
+<tr class="memdesc:aca1aff5c1cae0e995057c1b988b7c91c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feed the state with ArkScript bytecode.  <br /></td></tr>
+<tr class="separator:aca1aff5c1cae0e995057c1b988b7c91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332f9e2bf18ea9f7e25b342099435f10" id="r_a332f9e2bf18ea9f7e25b342099435f10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a332f9e2bf18ea9f7e25b342099435f10">doFile</a> (const std::string &amp;file_path, uint16_t features=<a class="el" href="../../d9/de4/namespaceArk.html#a01bf99e888f59670c0508d83cc23ffd4">DefaultFeatures</a>)</td></tr>
+<tr class="memdesc:a332f9e2bf18ea9f7e25b342099435f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a file, and use the resulting bytecode.  <br /></td></tr>
+<tr class="separator:a332f9e2bf18ea9f7e25b342099435f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab425a8a204652d44f433526d314b629" id="r_aab425a8a204652d44f433526d314b629"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab425a8a204652d44f433526d314b629">doString</a> (const std::string &amp;code, uint16_t features=<a class="el" href="../../d9/de4/namespaceArk.html#a01bf99e888f59670c0508d83cc23ffd4">DefaultFeatures</a>)</td></tr>
 <tr class="memdesc:aab425a8a204652d44f433526d314b629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile a string (representing ArkScript code) and store resulting bytecode in m_bytecode.  <br /></td></tr>
 <tr class="separator:aab425a8a204652d44f433526d314b629"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,7 +223,7 @@ Friends</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00127">Ark::internal::Language::SysArgs</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00127">Ark::internal::Language::SysArgs</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00128">Ark::internal::Language::SysProgramName</a>.</p>
 
 </div>
 </div>
@@ -273,11 +273,11 @@ Friends</h2></td></tr>
 <dd>
 false on failure and raise an exception </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00035">Ark::Welder::computeASTFromFile()</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00050">Ark::Welder::generateBytecode()</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00158">m_binded</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00143">m_debug_level</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00146">m_libenv</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00030">Ark::Welder::registerSymbol()</a>, and <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00081">Ark::Welder::saveBytecodeToFile()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00036">Ark::Welder::computeASTFromFile()</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00051">Ark::Welder::generateBytecode()</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00160">m_binded</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00145">m_debug_level</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00148">m_libenv</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00031">Ark::Welder::registerSymbol()</a>, and <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00082">Ark::Welder::saveBytecodeToFile()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00077">doFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00082">doFile()</a>.</p>
 
 </div>
 </div>
@@ -312,16 +312,16 @@ false on failure and raise an exception </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00146">146</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00151">151</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00021">ARK_VERSION</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00017">ARK_VERSION_MAJOR</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00247">Ark::BytecodeReader::code()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00174">Ark::BytecodeReader::filenames()</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00039">Ark::internal::bytecode::HeaderSize</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00204">Ark::BytecodeReader::instLocations()</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00145">m_bytecode</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00155">m_code</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00151">m_constants</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00152">m_filenames</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00153">m_inst_locations</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00154">m_max_page_size</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00150">m_symbols</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00079">Ark::BytecodeReader::sha256()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00090">Ark::BytecodeReader::symbols()</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00138">throwStateError()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00118">Ark::BytecodeReader::values()</a>, and <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00049">Ark::BytecodeReader::version()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00022">ARK_VERSION</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00018">ARK_VERSION_MAJOR</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00247">Ark::BytecodeReader::code()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00174">Ark::BytecodeReader::filenames()</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00039">Ark::internal::bytecode::HeaderSize</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00204">Ark::BytecodeReader::instLocations()</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00147">m_bytecode</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00157">m_code</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00153">m_constants</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00154">m_filenames</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00155">m_inst_locations</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00156">m_max_page_size</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00152">m_symbols</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00079">Ark::BytecodeReader::sha256()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00090">Ark::BytecodeReader::symbols()</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00140">throwStateError()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00118">Ark::BytecodeReader::values()</a>, and <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00049">Ark::BytecodeReader::version()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00038">feed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00040">feed()</a>.</p>
 
 </div>
 </div>
-<a id="a681fad95a1f0237306139f60be98cda8" name="a681fad95a1f0237306139f60be98cda8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a681fad95a1f0237306139f60be98cda8">&#9670;&#160;</a></span>doFile()</h2>
+<a id="a332f9e2bf18ea9f7e25b342099435f10" name="a332f9e2bf18ea9f7e25b342099435f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332f9e2bf18ea9f7e25b342099435f10">&#9670;&#160;</a></span>doFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +329,7 @@ false on failure and raise an exception </dd></dl>
         <tr>
           <td class="memname">bool Ark::State::doFile </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>file_path</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -342,7 +342,7 @@ false on failure and raise an exception </dd></dl>
 <p>Compile a file, and use the resulting bytecode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">file</td><td>path to an ArkScript code file </td></tr>
+    <tr><td class="paramname">file_path</td><td>path to an ArkScript code file </td></tr>
     <tr><td class="paramname">features</td><td>compiler features to enable/disable </td></tr>
   </table>
   </dd>
@@ -351,9 +351,9 @@ false on failure and raise an exception </dd></dl>
 <dd>
 false on failure </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00025">ARK_CACHE_DIRNAME</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00040">Ark::BytecodeReader::checkMagic()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00059">compile()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00022">Ark::BytecodeReader::feed()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00030">feed()</a>, <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00028">Ark::Utils::fileExists()</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00147">m_filename</a>, and <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00062">Ark::Utils::readFileAsBytes()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00026">ARK_CACHE_DIRNAME</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00040">Ark::BytecodeReader::checkMagic()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00064">compile()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00022">Ark::BytecodeReader::feed()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00032">feed()</a>, <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00028">Ark::Utils::fileExists()</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00160">m_binded</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00149">m_filename</a>, <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00062">Ark::Utils::readFileAsBytes()</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00128">Ark::internal::Language::SysProgramName</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d46/arkscript_2main_8cpp_source.html#l00023">main()</a>.</p>
 
@@ -390,16 +390,16 @@ false on failure </dd></dl>
 <dd>
 false on failure </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00108">108</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00113">113</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00108">Ark::Welder::bytecode()</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00043">Ark::Welder::computeASTFromString()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00030">feed()</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00050">Ark::Welder::generateBytecode()</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00158">m_binded</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00143">m_debug_level</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00146">m_libenv</a>, and <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00030">Ark::Welder::registerSymbol()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00109">Ark::Welder::bytecode()</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00044">Ark::Welder::computeASTFromString()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00032">feed()</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00051">Ark::Welder::generateBytecode()</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00160">m_binded</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00145">m_debug_level</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00148">m_libenv</a>, and <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00031">Ark::Welder::registerSymbol()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d95/arkemscripten_2main_8cpp_source.html#l00008">__attribute__()</a>, <a class="el" href="../../d0/d46/arkscript_2main_8cpp_source.html#l00023">main()</a>, and <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00024">Ark::Repl::run()</a>.</p>
 
 </div>
 </div>
-<a id="a02076aa4cbeacde9fdc7cb294a543871" name="a02076aa4cbeacde9fdc7cb294a543871"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02076aa4cbeacde9fdc7cb294a543871">&#9670;&#160;</a></span>feed() <span class="overload">[1/2]</span></h2>
+<a id="aca1aff5c1cae0e995057c1b988b7c91c" name="aca1aff5c1cae0e995057c1b988b7c91c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca1aff5c1cae0e995057c1b988b7c91c">&#9670;&#160;</a></span>feed() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -407,8 +407,12 @@ false on failure </dd></dl>
         <tr>
           <td class="memname">bool Ark::State::feed </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d9/de4/namespaceArk.html#abc8e737d05c4d6d46b653459516be329">bytecode_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bytecode</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../d9/de4/namespaceArk.html#abc8e737d05c4d6d46b653459516be329">bytecode_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bytecode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fail_with_exception</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -417,6 +421,7 @@ false on failure </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bytecode</td><td></td></tr>
+    <tr><td class="paramname">fail_with_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -424,14 +429,14 @@ false on failure </dd></dl>
 <dd>
 false on failure </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00040">Ark::BytecodeReader::checkMagic()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00146">configure()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00022">Ark::BytecodeReader::feed()</a>, and <a class="el" href="../../d0/db5/State_8hpp_source.html#l00145">m_bytecode</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00040">Ark::BytecodeReader::checkMagic()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00151">configure()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00022">Ark::BytecodeReader::feed()</a>, and <a class="el" href="../../d0/db5/State_8hpp_source.html#l00147">m_bytecode</a>.</p>
 
 </div>
 </div>
-<a id="a6088b8198a0ad3494ba110e8589e8e31" name="a6088b8198a0ad3494ba110e8589e8e31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6088b8198a0ad3494ba110e8589e8e31">&#9670;&#160;</a></span>feed() <span class="overload">[2/2]</span></h2>
+<a id="a91ebf2b5270f38f2648ae42eddeb34d5" name="a91ebf2b5270f38f2648ae42eddeb34d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ebf2b5270f38f2648ae42eddeb34d5">&#9670;&#160;</a></span>feed() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -439,8 +444,12 @@ false on failure </dd></dl>
         <tr>
           <td class="memname">bool Ark::State::feed </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>bytecode_filename</em></span></td><td>)</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>bytecode_filename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fail_with_exception</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -449,6 +458,7 @@ false on failure </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bytecode_filename</td><td></td></tr>
+    <tr><td class="paramname">fail_with_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -456,11 +466,11 @@ false on failure </dd></dl>
 <dd>
 false on failure </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00032">32</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/da0/State_8cpp_source.html#l00030">feed()</a>, <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00028">Ark::Utils::fileExists()</a>, and <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00062">Ark::Utils::readFileAsBytes()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/da0/State_8cpp_source.html#l00032">feed()</a>, <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00028">Ark::Utils::fileExists()</a>, and <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00062">Ark::Utils::readFileAsBytes()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00077">doFile()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00108">doString()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00030">feed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00082">doFile()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00113">doString()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00032">feed()</a>.</p>
 
 </div>
 </div>
@@ -501,9 +511,9 @@ false on failure </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint8_t instruction </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00167">167</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00169">169</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00158">Ark::VM::getField()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l01915">Ark::VM::throwArityError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00153">Ark::VM::getField()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02032">Ark::VM::throwArityError()</a>.</p>
 
 </div>
 </div>
@@ -543,7 +553,7 @@ false on failure </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00126">126</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
 </div>
 </div>
@@ -572,9 +582,9 @@ false on failure </dd></dl>
 
 <p>Reset <a class="el" href="../../d1/d37/classArk_1_1State.html" title="Ark state to handle the dirty job of loading and compiling ArkScript code.">State</a> (all member variables related to execution) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00202">202</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00205">205</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00158">m_binded</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00155">m_code</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00151">m_constants</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00152">m_filenames</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00153">m_inst_locations</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00154">m_max_page_size</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00150">m_symbols</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00127">Ark::internal::Language::SysArgs</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00160">m_binded</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00157">m_code</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00153">m_constants</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00154">m_filenames</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00155">m_inst_locations</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00156">m_max_page_size</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00152">m_symbols</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00127">Ark::internal::Language::SysArgs</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00128">Ark::internal::Language::SysProgramName</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00110">Ark::Repl::getLine()</a>, and <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00024">Ark::Repl::run()</a>.</p>
 
@@ -611,9 +621,9 @@ false on failure </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00126">126</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#a794d6cb0fd25e2dbc678c17ff605e159a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00139">Ark::Value::list()</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00127">Ark::internal::Language::SysArgs</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00169">Ark::Value::list()</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00127">Ark::internal::Language::SysArgs</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d46/arkscript_2main_8cpp_source.html#l00023">main()</a>.</p>
 
@@ -650,7 +660,7 @@ false on failure </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00136">136</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d0/d46/arkscript_2main_8cpp_source.html#l00023">main()</a>.</p>
 
@@ -687,7 +697,7 @@ false on failure </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00141">141</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/da0/State_8cpp_source.html#l00146">146</a> of file <a class="el" href="../../d0/da0/State_8cpp_source.html">State.cpp</a>.</p>
 
 </div>
 </div>
@@ -714,9 +724,9 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00138">138</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00140">140</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00146">configure()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00151">configure()</a>.</p>
 
 </div>
 </div>
@@ -741,7 +751,7 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00116">116</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00118">118</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
 </div>
 </div>
@@ -765,7 +775,7 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00117">117</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00119">119</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
 </div>
 </div>
@@ -789,7 +799,7 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00117">117</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
 </div>
 </div>
@@ -816,9 +826,9 @@ false on failure </dd></dl>
 
 <p><a class="el" href="../../d0/d56/structArk_1_1Values.html">Values</a> binded to the <a class="el" href="../../d1/d37/classArk_1_1State.html" title="Ark state to handle the dirty job of loading and compiling ArkScript code.">State</a>, to be used by the <a class="el" href="../../d2/d93/classArk_1_1VM.html" title="The ArkScript virtual machine, executing ArkScript bytecode.">VM</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00158">158</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00160">160</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00059">compile()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00108">doString()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00124">Ark::VM::init()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00202">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00064">compile()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00082">doFile()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00113">doString()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00119">Ark::VM::init()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00205">reset()</a>.</p>
 
 </div>
 </div>
@@ -842,9 +852,9 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00145">145</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00147">147</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00146">configure()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00038">feed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00151">configure()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00040">feed()</a>.</p>
 
 </div>
 </div>
@@ -868,9 +878,9 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00155">155</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00157">157</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00146">configure()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00202">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00151">configure()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00205">reset()</a>.</p>
 
 </div>
 </div>
@@ -894,9 +904,9 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00151">151</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00153">153</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00146">configure()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00259">Ark::VM::loadPlugin()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00202">reset()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00151">configure()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00254">Ark::VM::loadPlugin()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00205">reset()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -920,9 +930,9 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00143">143</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00145">145</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00059">compile()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00108">doString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00064">compile()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00113">doString()</a>.</p>
 
 </div>
 </div>
@@ -946,9 +956,9 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00147">147</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00149">149</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00077">doFile()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00259">Ark::VM::loadPlugin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00082">doFile()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00254">Ark::VM::loadPlugin()</a>.</p>
 
 </div>
 </div>
@@ -972,9 +982,9 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00152">152</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00154">154</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02022">Ark::VM::backtrace()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00146">configure()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02010">Ark::VM::debugShowSource()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00202">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02139">Ark::VM::backtrace()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00151">configure()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02127">Ark::VM::debugShowSource()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00205">reset()</a>.</p>
 
 </div>
 </div>
@@ -998,9 +1008,9 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00153">153</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00155">155</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00146">configure()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l01987">Ark::VM::findSourceLocation()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00202">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00151">configure()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02104">Ark::VM::findSourceLocation()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00205">reset()</a>.</p>
 
 </div>
 </div>
@@ -1024,9 +1034,9 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00146">146</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00148">148</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00059">compile()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00108">doString()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00259">Ark::VM::loadPlugin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00064">compile()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00113">doString()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00254">Ark::VM::loadPlugin()</a>.</p>
 
 </div>
 </div>
@@ -1050,9 +1060,9 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00154">154</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00156">156</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00146">configure()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00202">reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00151">configure()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00205">reset()</a>.</p>
 
 </div>
 </div>
@@ -1076,9 +1086,9 @@ false on failure </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00150">150</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d0/db5/State_8hpp_source.html#l00152">152</a> of file <a class="el" href="../../d0/db5/State_8hpp_source.html">State.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02022">Ark::VM::backtrace()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00146">configure()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">Ark::VM::forceReloadPlugins()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00158">Ark::VM::getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00124">Ark::VM::init()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00259">Ark::VM::loadPlugin()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00202">reset()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l01915">Ark::VM::throwArityError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02139">Ark::VM::backtrace()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00151">configure()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00450">Ark::VM::forceReloadPlugins()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00153">Ark::VM::getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00119">Ark::VM::init()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00254">Ark::VM::loadPlugin()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00205">reset()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02032">Ark::VM::throwArityError()</a>.</p>
 
 </div>
 </div>
@@ -1092,7 +1102,7 @@ false on failure </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../d1/d37/classArk_1_1State.html">State</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 07:51:49 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

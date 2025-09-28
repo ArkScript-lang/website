@@ -1,18 +1,22 @@
 <map id="Ark::internal::MacroScope" name="Ark::internal::MacroScope">
-<area shape="rect" id="Node000001" title=" " alt="" coords="50,451,222,477"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="68,333,204,388"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,404,139,451,133,451,133,404"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="28,95,108,121"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="53,135,40,161,28,191,23,223,29,254,42,276,58,297,96,330,92,334,54,300,37,279,24,256,18,223,23,189,35,159,49,133"/>
-<area shape="rect" id="Node000005" href="$dc/d9e/classArk_1_1internal_1_1Node.html" title="A node of an Abstract Syntax Tree for ArkScript." alt="" coords="71,222,201,247"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="84,133,132,220,127,222,80,136"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,5,131,46"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="71,61,71,95,65,95,65,61"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="139,263,139,332,133,332,133,263"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="225,214,362,255"/>
-<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="258,267,172,334,169,330,255,263"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="242,95,281,121"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="263,136,264,162,269,189,281,212,276,215,264,191,259,163,257,137"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="305,95,343,121"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="320,137,301,214,296,213,315,135"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="197,465,369,491"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="215,346,351,402"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,418,286,464,280,464,280,418"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="221,109,300,135"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,150,267,158,284,346,278,346,262,159,261,150"/>
+<area shape="rect" id="Node000005" href="$dc/d9e/classArk_1_1internal_1_1Node.html" title="A node of an Abstract Syntax Tree for ArkScript." alt="" coords="89,235,219,261"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="207,131,179,142,158,160,150,178,147,199,153,235,148,235,142,199,144,177,153,157,176,137,205,126"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="198,5,323,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="263,61,263,109,258,109,258,61"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="171,273,188,297,209,320,239,344,236,348,206,324,184,300,167,276"/>
+<area shape="rect" id="Node000006" href="$dc/dda/structArk_1_1internal_1_1FileSpan.html" title="Describes a span for a node/atom in a file, its start position and end position." alt="" coords="5,109,156,135"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="77,150,76,177,84,202,100,220,120,232,117,237,96,224,79,205,71,177,72,150"/>
+<area shape="rect" id="Node000007" href="$d7/df6/structArk_1_1internal_1_1FilePos.html" title=" " alt="" coords="9,13,152,38"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="83,54,83,108,78,108,78,54"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="339,228,475,268"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="379,281,312,348,308,344,375,277"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="357,109,396,135"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="376,150,376,176,380,203,393,226,388,229,375,205,370,177,370,150"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="420,109,458,135"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="435,150,415,228,410,227,430,149"/>
 </map>

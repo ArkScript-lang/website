@@ -2,7 +2,10 @@ var annotated_dup =
 [
     [ "Ark", "d9/de4/namespaceArk.html", [
       [ "Diagnostics", "db/da6/namespaceArk_1_1Diagnostics.html", [
-        [ "LineColorContextCounts", "d1/d92/structArk_1_1Diagnostics_1_1LineColorContextCounts.html", "d1/d92/structArk_1_1Diagnostics_1_1LineColorContextCounts" ]
+        [ "ErrorLocation", "d1/de4/structArk_1_1Diagnostics_1_1ErrorLocation.html", "d1/de4/structArk_1_1Diagnostics_1_1ErrorLocation" ],
+        [ "LineColorContextCounts", "d1/d92/structArk_1_1Diagnostics_1_1LineColorContextCounts.html", "d1/d92/structArk_1_1Diagnostics_1_1LineColorContextCounts" ],
+        [ "Printer", "db/d41/classArk_1_1Diagnostics_1_1Printer.html", "db/d41/classArk_1_1Diagnostics_1_1Printer" ],
+        [ "Window", "d5/db9/structArk_1_1Diagnostics_1_1Window.html", "d5/db9/structArk_1_1Diagnostics_1_1Window" ]
       ] ],
       [ "internal", "dc/d0e/namespaceArk_1_1internal.html", [
         [ "ieee754", "d6/dbf/namespaceArk_1_1internal_1_1ieee754.html", [
@@ -18,9 +21,12 @@ var annotated_dup =
         [ "ClosureScope", "d9/d6c/classArk_1_1internal_1_1ClosureScope.html", "d9/d6c/classArk_1_1internal_1_1ClosureScope" ],
         [ "ConditionalExecutor", "d1/dd3/classArk_1_1internal_1_1ConditionalExecutor.html", "d1/dd3/classArk_1_1internal_1_1ConditionalExecutor" ],
         [ "Declaration", "d1/dcf/structArk_1_1internal_1_1Declaration.html", "d1/dcf/structArk_1_1internal_1_1Declaration" ],
+        [ "Dict", "d5/d05/classArk_1_1internal_1_1Dict.html", "d5/d05/classArk_1_1internal_1_1Dict" ],
         [ "EntityWithOffset", "d9/dd9/structArk_1_1internal_1_1EntityWithOffset.html", "d9/dd9/structArk_1_1internal_1_1EntityWithOffset" ],
         [ "ExecutionContext", "d0/daf/structArk_1_1internal_1_1ExecutionContext.html", "d0/daf/structArk_1_1internal_1_1ExecutionContext" ],
+        [ "FilePos", "d7/df6/structArk_1_1internal_1_1FilePos.html", "d7/df6/structArk_1_1internal_1_1FilePos" ],
         [ "FilePosition", "dd/d0e/structArk_1_1internal_1_1FilePosition.html", "dd/d0e/structArk_1_1internal_1_1FilePosition" ],
+        [ "FileSpan", "dc/dda/structArk_1_1internal_1_1FileSpan.html", "dc/dda/structArk_1_1internal_1_1FileSpan" ],
         [ "FunctionExecutor", "dc/d2c/classArk_1_1internal_1_1FunctionExecutor.html", "dc/d2c/classArk_1_1internal_1_1FunctionExecutor" ],
         [ "Future", "d4/d6d/classArk_1_1internal_1_1Future.html", "d4/d6d/classArk_1_1internal_1_1Future" ],
         [ "Import", "da/d03/structArk_1_1internal_1_1Import.html", "da/d03/structArk_1_1internal_1_1Import" ],
@@ -89,11 +95,17 @@ var annotated_dup =
       [ "VM", "d2/d93/classArk_1_1VM.html", "d2/d93/classArk_1_1VM" ],
       [ "Welder", "d7/da8/classArk_1_1Welder.html", "d7/da8/classArk_1_1Welder" ]
     ] ],
-    [ "std", null, [
-      [ "hash< Ark::internal::Declaration >", "d5/d2b/structstd_1_1hash_3_01Ark_1_1internal_1_1Declaration_01_4.html", "d5/d2b/structstd_1_1hash_3_01Ark_1_1internal_1_1Declaration_01_4" ]
+    [ "std", "d8/dcc/namespacestd.html", [
+      [ "hash< Ark::internal::Closure >", "d3/d1f/structstd_1_1hash_3_01Ark_1_1internal_1_1Closure_01_4.html", "d3/d1f/structstd_1_1hash_3_01Ark_1_1internal_1_1Closure_01_4" ],
+      [ "hash< Ark::internal::Declaration >", "d5/d2b/structstd_1_1hash_3_01Ark_1_1internal_1_1Declaration_01_4.html", "d5/d2b/structstd_1_1hash_3_01Ark_1_1internal_1_1Declaration_01_4" ],
+      [ "hash< Ark::Procedure >", "d7/d62/structstd_1_1hash_3_01Ark_1_1Procedure_01_4.html", "d7/d62/structstd_1_1hash_3_01Ark_1_1Procedure_01_4" ],
+      [ "hash< Ark::UserType >", "df/d7e/structstd_1_1hash_3_01Ark_1_1UserType_01_4.html", "df/d7e/structstd_1_1hash_3_01Ark_1_1UserType_01_4" ],
+      [ "hash< Ark::Value >", "de/db6/structstd_1_1hash_3_01Ark_1_1Value_01_4.html", "de/db6/structstd_1_1hash_3_01Ark_1_1Value_01_4" ],
+      [ "hash< Ark::ValueType >", "d9/d60/structstd_1_1hash_3_01Ark_1_1ValueType_01_4.html", "d9/d60/structstd_1_1hash_3_01Ark_1_1ValueType_01_4" ],
+      [ "hash< std::shared_ptr< Ark::Value::Dict_t > >", "d6/d78/structstd_1_1hash_3_01std_1_1shared__ptr_3_01Ark_1_1Value_1_1Dict__t_01_4_01_4.html", "d6/d78/structstd_1_1hash_3_01std_1_1shared__ptr_3_01Ark_1_1Value_1_1Dict__t_01_4_01_4" ],
+      [ "hash< std::vector< Ark::Value > >", "d4/d54/structstd_1_1hash_3_01std_1_1vector_3_01Ark_1_1Value_01_4_01_4.html", "d4/d54/structstd_1_1hash_3_01std_1_1vector_3_01Ark_1_1Value_01_4_01_4" ]
     ] ],
     [ "Formatter", "d9/d43/classFormatter.html", "d9/d43/classFormatter" ],
     [ "FormatterConfig", "dd/dcc/structFormatterConfig.html", "dd/dcc/structFormatterConfig" ],
-    [ "JsonCompiler", "d6/d2d/classJsonCompiler.html", "d6/d2d/classJsonCompiler" ],
-    [ "mapping", "d1/d5a/structmapping.html", "d1/d5a/structmapping" ]
+    [ "JsonCompiler", "d6/d2d/classJsonCompiler.html", "d6/d2d/classJsonCompiler" ]
 ];

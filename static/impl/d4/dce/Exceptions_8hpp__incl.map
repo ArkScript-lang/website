@@ -1,26 +1,28 @@
-<map id="/Users/fola/Documents/ArkScript/Ark/include/Ark/Exceptions.hpp" name="/Users/fola/Documents/ArkScript/Ark/include/Ark/Exceptions.hpp">
-<area shape="rect" id="Node000001" title="ArkScript homemade exceptions." alt="" coords="244,5,400,61"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="253,198,306,223"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,45,178,55,111,69,54,88,33,99,19,111,11,124,8,135,10,145,16,154,38,170,72,183,158,199,238,205,237,211,157,204,71,188,36,175,12,158,5,147,3,135,6,122,15,107,30,94,52,83,110,64,178,50,243,40"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="29,116,82,142"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,59,171,83,94,111,92,112,90,107,92,107,169,78,243,54"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="106,116,163,142"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="269,64,173,112,171,107,267,59"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="187,116,265,142"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="296,63,251,108,247,104,293,60"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="289,116,355,142"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="325,62,325,101,320,101,320,62"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="380,116,448,142"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="351,60,394,104,390,108,347,63"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="472,116,543,142"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="377,59,471,107,469,112,375,64"/>
-<area shape="rect" id="Node000009" href="$db/d4e/utf8__char_8hpp.html" title=" " alt="" coords="567,109,720,150"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="402,55,563,102,561,107,400,60"/>
-<area shape="rect" id="Node000012" href="$d5/d40/Platform_8hpp.html" title="ArkScript configuration macros." alt="" coords="744,116,863,142"/>
-<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="401,44,555,71,733,106,746,109,745,115,732,112,555,76,400,49"/>
-<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="567,150,556,152,322,203,321,198,555,147,566,145"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="580,198,630,223"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="636,151,620,185,615,182,632,149"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="655,198,707,223"/>
-<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="655,149,671,182,666,184,650,151"/>
+<map id="/Users/fola/Documents/ArkScript/Ark/include/Ark/Error/Exceptions.hpp" name="/Users/fola/Documents/ArkScript/Ark/include/Ark/Error/Exceptions.hpp">
+<area shape="rect" id="Node000001" title="ArkScript homemade exceptions." alt="" coords="201,5,372,61"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="369,198,423,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="332,60,357,81,378,108,393,145,398,182,393,183,388,147,374,110,353,85,329,64"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="31,116,83,142"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,64,97,111,96,112,93,107,95,107,212,59"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="107,116,186,142"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="248,64,178,110,175,106,245,59"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="215,271,281,297"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="201,50,93,74,48,91,21,111,13,124,9,137,13,162,31,185,58,206,92,225,130,242,201,267,199,272,128,247,90,230,55,211,27,188,8,164,4,137,8,122,17,107,45,86,91,69,200,44"/>
+<area shape="rect" id="Node000006" href="$db/d4e/utf8__char_8hpp.html" title=" " alt="" coords="210,109,363,150"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="289,62,289,94,284,94,284,62"/>
+<area shape="rect" id="Node000009" href="$d5/d40/Platform_8hpp.html" title="ArkScript configuration macros." alt="" coords="558,271,708,297"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="373,37,454,45,540,58,614,78,642,92,661,107,671,125,677,145,676,186,665,226,650,259,645,257,660,224,671,185,672,145,667,127,657,111,639,96,612,83,539,63,454,50,373,42"/>
+<area shape="rect" id="Node000010" href="$dc/d73/CodeErrorContext_8hpp.html" title="Defines a code error context." alt="" coords="439,116,646,142"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="362,59,496,108,494,113,360,64"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="315,148,368,186,365,190,312,152"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="201,198,252,223"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="274,152,247,187,243,183,270,148"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="276,198,329,223"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="293,150,300,182,294,183,288,151"/>
+<area shape="poly" id="edge11_Node000010_Node000002" title=" " alt="" coords="522,145,433,192,431,188,519,140"/>
+<area shape="poly" id="edge12_Node000010_Node000009" title=" " alt="" coords="560,140,585,164,610,196,624,226,631,256,626,257,618,228,606,199,582,168,556,144"/>
+<area shape="rect" id="Node000011" href="$dc/d58/Position_8hpp.html" title="Defines position utilities (for text in a file) for the parser, formatter, diagnostics." alt="" coords="447,198,595,223"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="542,143,531,183,526,182,537,142"/>
+<area shape="poly" id="edge14_Node000011_Node000005" title=" " alt="" coords="476,226,297,273,296,268,474,221"/>
+<area shape="poly" id="edge15_Node000011_Node000009" title=" " alt="" coords="542,222,603,260,600,265,539,226"/>
 </map>

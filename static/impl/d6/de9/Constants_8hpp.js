@@ -20,6 +20,9 @@ var Constants_8hpp =
     [ "MaxMacroProcessingDepth", "d6/de9/Constants_8hpp.html#a601127fdf466d46ddcc7d061bd4f7a34", null ],
     [ "MaxMacroUnificationDepth", "d6/de9/Constants_8hpp.html#a9bfec7edeabdb42ddee1327daa3ee186", null ],
     [ "MaxNestedNodes", "d6/de9/Constants_8hpp.html#a47ecd80bc50fcb29add2f0692a97b28b", null ],
+    [ "MaxValue16Bits", "d6/de9/Constants_8hpp.html#a24c69eba4ec3db3f693a853d0fddc77e", null ],
     [ "ScopeStackSize", "d6/de9/Constants_8hpp.html#a64b1067761d4dc1a5eb1f07d0b8ceb7a", null ],
-    [ "VMStackSize", "d6/de9/Constants_8hpp.html#a10c147f2df9516277811af7da43a250f", null ]
+    [ "VMOverflowBufferSize", "d6/de9/Constants_8hpp.html#aa2ce84454e7ae71f1cc300900ef360fe", null ],
+    [ "VMStackSize", "d6/de9/Constants_8hpp.html#a10c147f2df9516277811af7da43a250f", null ],
+    [ "VMStackSizeWithOverflowBuffer", "d6/de9/Constants_8hpp.html#aa70a751a0d6a2913dc56e3bc70947210", null ]
 ];

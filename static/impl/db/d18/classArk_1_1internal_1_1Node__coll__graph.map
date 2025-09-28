@@ -1,7 +1,11 @@
 <map id="Ark::internal::Node" name="Ark::internal::Node">
-<area shape="rect" id="Node000001" title="A node of an Abstract Syntax Tree for ArkScript." alt="" coords="5,214,136,240"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="31,95,110,121"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,137,73,213,68,213,68,137"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="8,5,133,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,61,73,95,68,95,68,61"/>
+<area shape="rect" id="Node000001" title="A node of an Abstract Syntax Tree for ArkScript." alt="" coords="85,228,216,253"/>
+<area shape="rect" id="Node000002" href="$dc/dda/structArk_1_1internal_1_1FileSpan.html" title="Describes a span for a node/atom in a file, its start position and end position." alt="" coords="7,109,158,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,147,146,226,141,228,95,150"/>
+<area shape="rect" id="Node000003" href="$d7/df6/structArk_1_1internal_1_1FilePos.html" title=" " alt="" coords="5,13,149,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="81,53,84,108,79,109,76,54"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="191,109,270,135"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="217,149,179,205,162,229,157,226,175,202,212,146"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="173,5,298,46"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="236,62,234,109,228,109,231,61"/>
 </map>

@@ -1,6 +1,5 @@
 var VM_8cpp =
 [
-    [ "mapping", "d1/d5a/structmapping.html", "d1/d5a/structmapping" ],
     [ "DISPATCH", "d2/d27/VM_8cpp.html#a8297cddbebf50a1736914db65c5724ae", null ],
     [ "DISPATCH_GOTO", "d2/d27/VM_8cpp.html#aff636f60a4ef443f94f72f6566c09724", null ],
     [ "GOTO_HALT", "d2/d27/VM_8cpp.html#a0cce6126f28e64a6f17e96243846e2f1", null ],
