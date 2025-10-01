@@ -3,8 +3,8 @@ title: "Range"
 slug: "range"
 description: ""
 summary: ""
-date: 2025-09-05T15:48:17+02:00
-lastmod: 2025-09-05T15:48:17+02:00
+date: 2025-10-01T00:48:06+02:00
+lastmod: 2025-10-01T00:48:06+02:00
 draft: false
 weight: 410
 toc: true
