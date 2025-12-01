@@ -26,23 +26,25 @@ jobs:
 
     steps:
       - name: Checkout website
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Checkout ArkDoc
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ArkScript-lang/ArkDoc
           path: './arkdoc'
           ref: 'master'
 
       - name: Checkout std
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ArkScript-lang/std
           path: './std-latest'
 
       - name: Checkout ArkScript
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ArkScript-lang/Ark
           path: './ark-latest'
@@ -51,7 +53,7 @@ jobs:
           fetch-depth: 0
 
       - name: Checkout modules
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: ArkScript-lang/modules
           path: './ark-modules'
@@ -92,7 +94,7 @@ jobs:
       - name: Commit
         uses: github-actions-x/commit@v2.9
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.CI_GITHUB_TOKEN }}
           push-branch: 'master'
           commit-message: 'chore: update stdlib documentation'
           force-add: 'true'
