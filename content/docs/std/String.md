@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2025-11-01T00:47:17+02:00
-lastmod: 2025-11-01T00:47:17+02:00
+date: 2025-12-01T00:56:42+02:00
+lastmod: 2025-12-01T00:56:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -21,7 +21,7 @@ seo:
 `Builtin (format format values)`
 Format a String given replacements
 
-**Note**: https://fmt.dev/latest/syntax.html
+**Note**: https://fmt.dev/12.0/syntax/
 #### Parameters
 - `format`: the String to format
 - `values`: as any argument as you need, of any valid ArkScript type
@@ -161,8 +161,8 @@ Search a substring in a given String
 
 #### Example
 {{< highlight_arkscript >}}
-(string:find "hello hello" "hello" 1)  # 6
-(string:find "hello world" "aworld" 0)  # -1
+(string:findAfter "hello hello" "hello" 1)  # 6
+(string:findAfter "hello world" "aworld" 0)  # -1
 {{< /highlight_arkscript >}}
 
 ## removeAt
@@ -241,6 +241,24 @@ Modify a given string and return a new one
 (string:setAt "hello" 1 "a")  # "hallo"
 {{< /highlight_arkscript >}}
 
+## emptyOrWhitespace?
+
+---
+`(let emptyOrWhitespace? (fun (_str) (...)))`
+Check if a string is empty or only consists of whitespaces
+
+#### Parameter
+- `_str`: the string to check
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:emtpyOrWhitespace? "hello"))  # false
+(print (string:emtpyOrWhitespace? " \t"))  # true
+{{< /highlight_arkscript >}}
+
 ## count
 
 ---
@@ -274,9 +292,8 @@ Converts the given character to lowercase.
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.String)
 (let message "HeLLo World, I like cheese")
-(let new (toLower message))  # => hello world, i like cheese
+(let new (string:toLower message))  # => hello world, i like cheese
 {{< /highlight_arkscript >}}
 
 ## toUpper
@@ -294,9 +311,8 @@ Converts the given character to uppercase.
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.String)
 (let message "hello world, I like cheese")
-(let new (toUpper message))  # => HELLO WORLD, I LIKE CHEESE
+(let new (string:toUpper message))  # => HELLO WORLD, I LIKE CHEESE
 {{< /highlight_arkscript >}}
 
 ## reverse
@@ -314,9 +330,8 @@ Reverse a string.
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.String)
 (let message "hello world, I like goats")
-(let reversed (reverse message))  # => staog ekil I ,dlrow olleh
+(let reversed (string:reverse message))  # => staog ekil I ,dlrow olleh
 {{< /highlight_arkscript >}}
 
 ## repeat
@@ -334,7 +349,6 @@ Repeat a string
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.String)
 (print (string:repeat "a" 5))  # aaaaa
 {{< /highlight_arkscript >}}
 
@@ -355,9 +369,8 @@ Get a slice of a given string, from a given index with a given length
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.String)
 (let message "hello world, I like goats")
-(let slice (slice message 6 4))  # => worl
+(let slice (string:slice message 6 4))  # => worl
 {{< /highlight_arkscript >}}
 
 ## split
@@ -376,9 +389,8 @@ Split a string in multiple substrings in a list, given a separator
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.String)
 (let message "hello world, I like boats")
-(let splitted (split message " "))
+(let splitted (string:split message " "))
 {{< /highlight_arkscript >}}
 
 ## replace
@@ -396,9 +408,8 @@ Replace a substring in a given string
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.String)
 (let message "hello XXX, do you like the name XXX?")
-(print (replace message "XXX" "Harry"))  # hello Harry, do you like the name Harry?
+(print (string:replace message "XXX" "Harry"))  # hello Harry, do you like the name Harry?
 {{< /highlight_arkscript >}}
 
 ## join
@@ -415,9 +426,62 @@ Join a list of elements with a given string delimiter
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.String)
 (let data [1 "hello" 3.14 true "world"])
-(print (join data ";")) # 1;hello;3.14;true;world
+(print (string:join data ";")) # 1;hello;3.14;true;world
+{{< /highlight_arkscript >}}
+
+## lstrip
+
+---
+`(let lstrip (fun (_str) (...)))`
+Removes whitespaces from the left side of a string
+
+**Note**: The original string isn't modified
+#### Parameter
+- `_str`: string to sanitize
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:lstrip " a b c"))  # "a b c"
+{{< /highlight_arkscript >}}
+
+## rstrip
+
+---
+`(let rstrip (fun (_str) (...)))`
+Removes whitespaces from the right side of a string
+
+**Note**: The original string isn't modified
+#### Parameter
+- `_str`: string to sanitize
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:rstrip " a b c     "))  # " a b c"
+{{< /highlight_arkscript >}}
+
+## strip
+
+---
+`(let strip (fun (_str) (...)))`
+Removes whitespaces from both sides of a string
+
+**Note**: The original string isn't modified
+#### Parameter
+- `_str`: string to sanitize
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:strip " a b c    "))  # "a b c"
 {{< /highlight_arkscript >}}
 
 ## stripMargin

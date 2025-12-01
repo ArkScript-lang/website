@@ -3,8 +3,8 @@ title: "Lazy"
 slug: "lazy"
 description: ""
 summary: ""
-date: 2025-11-01T00:47:17+02:00
-lastmod: 2025-11-01T00:47:17+02:00
+date: 2025-12-01T00:56:42+02:00
+lastmod: 2025-12-01T00:56:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -32,7 +32,7 @@ Take a function, and return a closure to lazy evaluate it
 (let complex_stuff (fun () {
     # do complex work in the function
     42 }))
-(let lazy (eval complex_stuff))
+(let lazy (lazy:eval complex_stuff))
 (print (lazy))
 {{< /highlight_arkscript >}}
 

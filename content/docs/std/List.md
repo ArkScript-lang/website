@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2025-11-01T00:47:17+02:00
-lastmod: 2025-11-01T00:47:17+02:00
+date: 2025-12-01T00:56:42+02:00
+lastmod: 2025-12-01T00:56:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -163,11 +163,30 @@ Iterate over a given list and run a given function on every element.
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.List)
 (let collection [1 2 5 12])
-(forEach collection (fun (element) {
-    (print element)
-}))
+(list:forEach collection (fun (element) {
+    (print element) }))
+{{< /highlight_arkscript >}}
+
+## enumerate
+
+---
+`(let enumerate (fun (_L _func) (...)))`
+Iterate over a given list and run a given function on every element, passing its index as well.
+
+**Note**: The original list is not modified.
+#### Parameters
+- `_L`: the list to iterate over
+- `_func`: a binary function to call on each element with (index, element)
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(let collection [1 2 5 12])
+(list:enumerate collection (fun (idx element) {
+    (print idx " " element) }))
 {{< /highlight_arkscript >}}
 
 ## product
@@ -185,9 +204,8 @@ Iterate over a given list and multiply all the elements with the others.
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.List)
 (let collection [1 2 5 12])
-(let p (product collection))  # => 120
+(let p (list:product collection))  # => 120
 {{< /highlight_arkscript >}}
 
 ## sum
@@ -205,9 +223,8 @@ Iterate over a given list and sum all the elements.
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.List)
 (let collection [1 2 5 12])
-(let p (sum collection))  # => 20
+(let p (list:sum collection))  # => 20
 {{< /highlight_arkscript >}}
 
 ## min
@@ -243,7 +260,7 @@ Find the maximum in a list of numbers
 
 #### Example
 {{< highlight_arkscript >}}
-(let value (list:min [0 1 2 3 5 8]))  # 8
+(let value (list:max [0 1 2 3 5 8]))  # 8
 {{< /highlight_arkscript >}}
 
 ## drop
@@ -263,7 +280,7 @@ Drop the first n elements of a list
 #### Example
 {{< highlight_arkscript >}}
 (let cool-stuff [1 2 3 4 5 6 7 8 9])
-(print (drop cool-stuff 4))  # [5 6 7 8 9]
+(print (list:drop cool-stuff 4))  # [5 6 7 8 9]
 {{< /highlight_arkscript >}}
 
 ## dropWhile
@@ -283,7 +300,7 @@ Drop the first elements of a list, while they match a given predicate
 #### Example
 {{< highlight_arkscript >}}
 (let cool-stuff [1 2 3 4 5 6 7 8 9])
-(print (dropWhile cool-stuff (fun (a) (< a 4))))  # [4 5 6 7 8 9]
+(print (list:dropWhile cool-stuff (fun (a) (< a 4))))  # [4 5 6 7 8 9]
 {{< /highlight_arkscript >}}
 
 ## filter
@@ -303,7 +320,7 @@ Keep elements in a given list if they follow a predicate
 #### Example
 {{< highlight_arkscript >}}
 (import std.Math)
-(print (filter [1 2 3 4 5 6 7 8 9] math:even))  # [2 4 6 8]
+(print (list:filter [1 2 3 4 5 6 7 8 9] math:even))  # [2 4 6 8]
 {{< /highlight_arkscript >}}
 
 ## map
@@ -322,7 +339,7 @@ Apply a given function to each element of a list
 
 #### Example
 {{< highlight_arkscript >}}
-(print (map [1 2 3 4 5 6 7 8 9] (fun (e) (* e e))))  # [1 4 9 25 36 49 64 81]
+(print (list:map [1 2 3 4 5 6 7 8 9] (fun (e) (* e e))))  # [1 4 9 25 36 49 64 81]
 {{< /highlight_arkscript >}}
 
 ## reduce
@@ -342,7 +359,7 @@ Apply a function to the elements of a list to reduce it
 #### Example
 {{< highlight_arkscript >}}
 (let cool [1 2 3 4 5 6 7 8 9])
-(print (reduce cool (fun (a b) (+ a b))))  # 45
+(print (list:reduce cool (fun (a b) (+ a b))))  # 45
 {{< /highlight_arkscript >}}
 
 ## flatten
@@ -361,7 +378,7 @@ Flatten a list
 #### Example
 {{< highlight_arkscript >}}
 (let cool [[1 2 3] [4] 5 6 [7 8] 9])
-(print (flatten cool))  # [1 2 3 4 5 6 7 8 9]
+(print (list:flatten cool))  # [1 2 3 4 5 6 7 8 9]
 {{< /highlight_arkscript >}}
 
 ## flatMap
@@ -381,7 +398,7 @@ Apply a given function to each element of a list and then flatten it
 #### Example
 {{< highlight_arkscript >}}
 (let cool [1 2 3 4])
-(print (flatMap cool (fun (a) [a a])))  # [1 1 2 2 3 3 4 4]
+(print (list:flatMap cool (fun (a) [a a])))  # [1 1 2 2 3 3 4 4]
 {{< /highlight_arkscript >}}
 
 ## take
@@ -400,7 +417,7 @@ Take the first n elements of
 
 #### Example
 {{< highlight_arkscript >}}
-(print (take [1 2 3 4 5 6 7 8 9] 4))  # [1 2 3 4]
+(print (list:take [1 2 3 4 5 6 7 8 9] 4))  # [1 2 3 4]
 {{< /highlight_arkscript >}}
 
 ## takeWhile
@@ -419,7 +436,7 @@ Take the first n elements of a list, given a predicate
 
 #### Example
 {{< highlight_arkscript >}}
-(print (takeWhile [1 2 3 4 5 6 7 8 9 10] (fun (a) (< a 4))))  # [1 2 3]
+(print (list:takeWhile [1 2 3 4 5 6 7 8 9 10] (fun (a) (< a 4))))  # [1 2 3]
 {{< /highlight_arkscript >}}
 
 ## partition
@@ -458,7 +475,7 @@ Unzip a list of [[a b] [c d]...] into [[a c ...] [b d ...]]
 #### Example
 {{< highlight_arkscript >}}
 (let zipped [[1 5] [2 6] [3 7] [4 8]])
-(print (unzip zipped))  # [[1 2 3 4] [5 6 7 8]]
+(print (list:unzip zipped))  # [[1 2 3 4] [5 6 7 8]]
 {{< /highlight_arkscript >}}
 
 ## zip
@@ -479,7 +496,7 @@ Zip two lists into one: [1 2 3 4] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [4 
 {{< highlight_arkscript >}}
 (let a [1 2 3 4])
 (let b [5 6 7 8])
-(print (zip a b))  # [[1 5] [2 6] [3 7] [4 8]]
+(print (list:zip a b))  # [[1 5] [2 6] [3 7] [4 8]]
 {{< /highlight_arkscript >}}
 
 ## zipWithIndex
@@ -498,7 +515,7 @@ Zip a list elements with their index. [5 6 7 8] will give [[0 5] [1 6] [2 7] [3 
 #### Example
 {{< highlight_arkscript >}}
 (let a [5 6 7 8])
-(print (zipWithIndex a))  # [[0 5] [1 6] [2 7] [3 8]]
+(print (list:zipWithIndex a))  # [[0 5] [1 6] [2 7] [3 8]]
 {{< /highlight_arkscript >}}
 
 ## foldLeft
@@ -519,7 +536,7 @@ Fold a given list, starting from the left side
 #### Example
 {{< highlight_arkscript >}}
 (let a [1 2 3 4])
-(print (foldLeft a 0 (fun (a b) (+ a b))))  # 10
+(print (list:foldLeft a 0 (fun (a b) (+ a b))))  # 10
 {{< /highlight_arkscript >}}
 
 ## forAll
@@ -530,7 +547,7 @@ Check if a condition is verified for all elements of a list
 
 #### Parameters
 - `_L`: the list to work on
-- `_f`: the conditon
+- `_f`: the condition
 
 #### Author
 [@Gryfenfer97](https://github.com/Gryfenfer97)
@@ -539,7 +556,7 @@ Check if a condition is verified for all elements of a list
 {{< highlight_arkscript >}}
 (let a [1 2 3 4])
 (let f (fun (e) (< e 5)))
-(print (forAll a f))  # true
+(print (list:forAll a f))  # true
 {{< /highlight_arkscript >}}
 
 ## any
@@ -559,7 +576,28 @@ Check if a condition if verified for one or more elements of a list
 {{< highlight_arkscript >}}
 (let a [1 2 3 4])
 (let f (fun (e) (< e 3)))
-(print (any a f))  # true
+(print (list:any a f))  # true
+{{< /highlight_arkscript >}}
+
+## none
+
+---
+`(let none (fun (_L _f) (...)))`
+Check if a condition can't be verified for any element of a list
+
+#### Parameters
+- `_L`: the list to work on
+- `_f`: the condition
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(let a [1 2 3 4])
+(let f (fun (e) (< e 3)))
+(print (list:none a f))  # false
+(print (list:none [4 5 6] f))  # true
 {{< /highlight_arkscript >}}
 
 ## countIf
@@ -579,7 +617,7 @@ Count the number of elements in a list that match a condition
 {{< highlight_arkscript >}}
 (let lst [1 2 3 4 5 6 7 8 9])
 (let is_even (fun (e) (= 0 (mod e 2))))
-(print (countIf lst is_even))  # 4
+(print (list:countIf lst is_even))  # 4
 {{< /highlight_arkscript >}}
 
 ## iterate
@@ -599,7 +637,7 @@ Generate a sequence based on a unary function, initial value and length
 #### Example
 {{< highlight_arkscript >}}
 (let f (fun (x) (+ 7 x)))
-(print (iterate 0 f 10))  # [0 7 14 21 28 35 42 49 56 63]
+(print (list:iterate 0 f 10))  # [0 7 14 21 28 35 42 49 56 63]
 {{< /highlight_arkscript >}}
 
 ## iota
@@ -617,7 +655,7 @@ Generate a sequence of numbers
 
 #### Example
 {{< highlight_arkscript >}}
-(print (iota 0 10))  # [0 1 2 3 4 5 6 7 8 9]
+(print (list:iota 0 10))  # [0 1 2 3 4 5 6 7 8 9]
 {{< /highlight_arkscript >}}
 
 ## chunkBy

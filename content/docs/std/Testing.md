@@ -3,8 +3,8 @@ title: "Testing"
 slug: "testing"
 description: ""
 summary: ""
-date: 2025-11-01T00:47:17+02:00
-lastmod: 2025-11-01T00:47:17+02:00
+date: 2025-12-01T00:56:42+02:00
+lastmod: 2025-12-01T00:56:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -116,7 +116,7 @@ Generate the code for a test suite
 #### Example
 {{< highlight_arkscript >}}
 (test:suite name {
-    (_suite.toggle_display_cases_success true)  # default: false, when true, display all the cases names on success and failures
+    (testing:_suite.toggle_display_cases_success true)  # default: false, when true, display all the cases names on success and failures
     (test:eq 6 (my_function 1 2 3))
     (test:eq 128 (* 8 16))})
 {{< /highlight_arkscript >}}

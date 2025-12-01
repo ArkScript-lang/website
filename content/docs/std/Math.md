@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2025-11-01T00:47:17+02:00
-lastmod: 2025-11-01T00:47:17+02:00
+date: 2025-12-01T00:56:42+02:00
+lastmod: 2025-12-01T00:56:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -135,7 +135,7 @@ Check if a Number is NaN
 #### Example
 {{< highlight_arkscript >}}
 (math:NaN? 2)  # false
-(math:NaN? nan)  # true
+(math:NaN? math:NaN)  # true
 {{< /highlight_arkscript >}}
 
 ## Inf?
@@ -153,7 +153,7 @@ Check if a Number if Inf
 #### Example
 {{< highlight_arkscript >}}
 (math:Inf? 1)  # false
-(math:Inf? nan)  # false
+(math:Inf? math:NaN)  # false
 {{< /highlight_arkscript >}}
 
 ## cos
@@ -456,6 +456,32 @@ Get the maximum between two numbers
 [@rstefanic](https://github.com/rstefanic)
 
 
+## increment
+
+---
+`(let increment (fun (_x) (...)))`
+Increment a given number by 1
+
+#### Parameter
+- `_x`: number
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
+## decrement
+
+---
+`(let decrement (fun (_x) (...)))`
+Decrement a given number by 1
+
+#### Parameter
+- `_x`: number
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
 ## pow
 
 ---
@@ -497,10 +523,6 @@ Run the fibonacci function on a number
 #### Author
 [@SuperFola](https://github.com/SuperFola)
 
-#### Example
-{{< highlight_arkscript >}}
-(fibo 45 0 1)
-{{< /highlight_arkscript >}}
 
 ## prime?
 
@@ -529,7 +551,7 @@ Returns the list of a number's divisors
 
 #### Example
 {{< highlight_arkscript >}}
-(divs 6) # Returns [1 2 3 6]
+(math:divs 6) # Returns [1 2 3 6]
 {{< /highlight_arkscript >}}
 
 ## log
@@ -547,7 +569,7 @@ Returns the logarithm base n of a number
 
 #### Example
 {{< highlight_arkscript >}}
-(log 81 3) # Returns 4
+(math:log 81 3) # Returns 4
 {{< /highlight_arkscript >}}
 
 ## log2
@@ -564,7 +586,7 @@ Returns the logarithm base 2 of a number
 
 #### Example
 {{< highlight_arkscript >}}
-(log2 128) # Returns 7
+(math:log2 128) # Returns 7
 {{< /highlight_arkscript >}}
 
 ## log10
@@ -581,7 +603,7 @@ Returns the logarithm base 10 of a number
 
 #### Example
 {{< highlight_arkscript >}}
-(log10 1000) # Returns 3
+(math:log10 1000) # Returns 3
 {{< /highlight_arkscript >}}
 
 ## floordiv
@@ -599,7 +621,7 @@ Returns the quotient of the euclidian division of a and b
 
 #### Example
 {{< highlight_arkscript >}}
-(floordiv 14 6) # Returns 2
+(math:floordiv 14 6) # Returns 2
 {{< /highlight_arkscript >}}
 
 ## complex
@@ -617,7 +639,7 @@ Create a complex number
 
 #### Example
 {{< highlight_arkscript >}}
-(let c (complex 1 2))
+(let c (math:complex 1 2))
 (print c.real " " c.imag)  # 1 2
 {{< /highlight_arkscript >}}
 
@@ -636,7 +658,7 @@ Compute the addition of two complex number
 
 #### Example
 {{< highlight_arkscript >}}
-(let c (complex-add (complex 1 2) (complex 3 4)))
+(let c (math:complex-add (math:complex 1 2) (math:complex 3 4)))
 (print c.real " " c.imag)  # 4 6
 {{< /highlight_arkscript >}}
 
@@ -655,7 +677,7 @@ Compute the subtraction of two complex number
 
 #### Example
 {{< highlight_arkscript >}}
-(let c (complex-sub (complex 1 2) (complex 3 4)))
+(let c (math:complex-sub (math:complex 1 2) (math:complex 3 4)))
 (print c.real " " c.imag)  # -2 -2
 {{< /highlight_arkscript >}}
 
@@ -674,7 +696,7 @@ Compute the multiplication of two complex number
 
 #### Example
 {{< highlight_arkscript >}}
-(let c (complex-mul (complex 1 2) (complex 3 4)))
+(let c (math:complex-mul (math:complex 1 2) (math:complex 3 4)))
 (print c.real " " c.imag)  # -5 10
 {{< /highlight_arkscript >}}
 
@@ -692,7 +714,7 @@ Compute the conjugate of a complex number
 
 #### Example
 {{< highlight_arkscript >}}
-(let c (complex-conjugate (complex 1 2)))
+(let c (math:complex-conjugate (math:complex 1 2)))
 (print c.real " " c.imag)  # 1 -2
 {{< /highlight_arkscript >}}
 
@@ -710,7 +732,7 @@ Compute the module of a complex number
 
 #### Example
 {{< highlight_arkscript >}}
-(let c (complex-module (complex 1 2)))
+(let c (math:complex-module (math:complex 1 2)))
 (print c)  # 2.2360679774997896964...
 {{< /highlight_arkscript >}}
 
@@ -729,7 +751,7 @@ Compute the division of two complex number
 
 #### Example
 {{< highlight_arkscript >}}
-(let c (complex-div (complex 1 2) (complex 3 4)))
+(let c (math:complex-div (math:complex 1 2) (math:complex 3 4)))
 (print c.real " " c.imag)  # 0.44 0.08
 {{< /highlight_arkscript >}}
 
@@ -749,8 +771,8 @@ Limit a given value to a range
 
 #### Example
 {{< highlight_arkscript >}}
-(print (clamp 5 0 2))  # 2
-(print (clamp 6 0 10))  # 6
+(print (math:clamp 5 0 2))  # 2
+(print (math:clamp 6 0 10))  # 6
 {{< /highlight_arkscript >}}
 
 ## lerp
@@ -769,7 +791,7 @@ Linearly interpolate a value in [0; 1] between two bounds
 
 #### Example
 {{< highlight_arkscript >}}
-(print (lerp 0.22 15 132))  # 40.74
+(print (math:lerp 0.22 15 132))  # 40.74
 {{< /highlight_arkscript >}}
 
 ## dotProduct
@@ -788,7 +810,7 @@ Compute the dot product of two vectors
 
 #### Example
 {{< highlight_arkscript >}}
-(print (dotProduct [1 2 3] [4 5 6]))  # 32
+(print (math:dotProduct [1 2 3] [4 5 6]))  # 32
 {{< /highlight_arkscript >}}
 
 

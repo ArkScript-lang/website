@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2025-11-01T00:47:17+02:00
-lastmod: 2025-11-01T00:47:17+02:00
+date: 2025-12-01T00:56:42+02:00
+lastmod: 2025-12-01T00:56:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -75,11 +75,54 @@ Adds or replaces an entry to a dictionary, given a (key, value) pair
 (print data)  # {key: hole, hello: world}
 {{< /highlight_arkscript >}}
 
+## getOrElse
+
+---
+`(let getOrElse (fun (_D _key _default) (...)))`
+Get a value from a given dictionary using a key, or a default value if it doesn't exist
+
+#### Parameters
+- `_D`: dictionary
+- `_key`: key to get
+- `_default`: default value in case the key isn't in the dictionary
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(let data (dict "key" "value"))
+(print (dict:getOrElse data "key" "hello"))  # value
+(print (dict:getOrElse data "count" 5))  # 5
+{{< /highlight_arkscript >}}
+
+## updateOrDefault
+
+---
+`(let updateOrDefault (fun (_D _key _f _default) (...)))`
+Updates an entry or create it from a default value
+
+**Note**: The dictionary is modified in place
+#### Parameters
+- `_D`: dictionary
+- `_key`: key to create or update
+- `_f`: function called with the existing value, returning an updated value
+- `_default`: default value to use if the key doesn't exist
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(let data (dict "count" 0))
+(dict:updateOrDefault data "count" (fun (c) (+ c 1)) 1)  # count = 1
+{{< /highlight_arkscript >}}
+
 ## contains
 
 ---
 `(let contains (fun (_D _key) (...)))`
-
+Checks if the dictionary has a given key
 
 #### Parameter
 - `_D`: dictionary

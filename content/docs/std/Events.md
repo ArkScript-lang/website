@@ -3,8 +3,8 @@ title: "Events"
 slug: "events"
 description: ""
 summary: ""
-date: 2025-11-01T00:47:17+02:00
-lastmod: 2025-11-01T00:47:17+02:00
+date: 2025-12-01T00:56:42+02:00
+lastmod: 2025-12-01T00:56:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -26,7 +26,7 @@ Allows to register events listeners and emit events
 
 #### Example
 {{< highlight_arkscript >}}
-(let em (manager:make))
+(let em (events:manager:make))
 (em.on "myType" (fun (value) (print "This is a callback")))
 (em.emit "myType")  # => prints "This is a callback" thanks to the registered listener
 {{< /highlight_arkscript >}}

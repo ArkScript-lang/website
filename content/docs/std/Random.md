@@ -3,8 +3,8 @@ title: "Random"
 slug: "random"
 description: ""
 summary: ""
-date: 2025-11-01T00:47:17+02:00
-lastmod: 2025-11-01T00:47:17+02:00
+date: 2025-12-01T00:56:42+02:00
+lastmod: 2025-12-01T00:56:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -30,8 +30,8 @@ Select a random element from a list
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.Random)
-(print (random:choice [1 2 3]))
+(let data [1 2 3 4 5])
+(print (random:choice data))
 {{< /highlight_arkscript >}}
 
 ## shuffle
@@ -49,7 +49,6 @@ Shuffle a given list
 
 #### Example
 {{< highlight_arkscript >}}
-(import std.Random)
 (let data [1 2 3 4 5])
 (let randomized (random:shuffle data))
 {{< /highlight_arkscript >}}

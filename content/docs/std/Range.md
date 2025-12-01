@@ -3,8 +3,8 @@ title: "Range"
 slug: "range"
 description: ""
 summary: ""
-date: 2025-11-01T00:47:17+02:00
-lastmod: 2025-11-01T00:47:17+02:00
+date: 2025-12-01T00:56:42+02:00
+lastmod: 2025-12-01T00:56:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -31,7 +31,7 @@ Create a ranged closure in interval [a, b[
 
 #### Example
 {{< highlight_arkscript >}}
-(let obj (range 1 10))
+(let obj (range:range 1 10))
 (print (obj.asList))  # [1 2 3 4 5 6 7 8 9]
 (while (not (nil? (obj)))
     (print obj.i))  # print the current element
@@ -56,8 +56,8 @@ Run a function on each element of the range
 
 #### Example
 {{< highlight_arkscript >}}
-(let obj (range 1 10))
-(forEach obj (fun (e) (print e)))
+(let obj (range:range 1 10))
+(range:forEach obj (fun (e) (print e)))
 {{< /highlight_arkscript >}}
 
 ## filter
@@ -76,8 +76,9 @@ Create a list based on a range and a filter function
 
 #### Example
 {{< highlight_arkscript >}}
-(let obj (range 1 10))
-(print (filter obj math:even))  # [2 4 6 8]
+(import std.Math)
+(let obj (range:range 1 10))
+(print (range:filter obj math:even))  # [2 4 6 8]
 {{< /highlight_arkscript >}}
 
 ## map
@@ -96,8 +97,8 @@ Create a list based on a range and a function to apply to each elements
 
 #### Example
 {{< highlight_arkscript >}}
-(let obj (range 1 10))
-(print (map obj (fun (e) (* e e))))  # [1 4 9 16 25 36 49 64 81]
+(let obj (range:range 1 10))
+(print (range:map obj (fun (e) (* e e))))  # [1 4 9 16 25 36 49 64 81]
 {{< /highlight_arkscript >}}
 
 ## reduce
@@ -116,8 +117,8 @@ Create a reduced list based on a range and a reduction function
 
 #### Example
 {{< highlight_arkscript >}}
-(let obj (range 1 10))
-(print (reduce obj (fun (e) (+ e e))))  # 45
+(let obj (range:range 1 10))
+(print (range:reduce obj (fun (e) (+ e e))))  # 45
 {{< /highlight_arkscript >}}
 
 

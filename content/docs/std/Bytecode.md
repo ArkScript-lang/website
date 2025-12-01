@@ -1,6 +1,6 @@
 ---
-title: "Time"
-slug: "time"
+title: "Bytecode"
+slug: "bytecode"
 description: ""
 summary: ""
 date: 2025-12-01T00:56:42+02:00
@@ -15,18 +15,22 @@ seo:
   noindex: false # false (default) or true
 ---
 
-## time
+## disassemble
 
 ---
-`Builtin (time )`
-Return the time of the computer since epoch, in seconds, with at least milliseconds precision
+`Builtin (disassemble f)`
+Prints the bytecode of a given function
+
+#### Parameter
+- `f`: function to disassemble
 
 #### Author
 [@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
-(time)  # 1627134107.837558031082153
+(let foo (fun () { (let a 1) (print a) })
+(disassemble foo)
 {{< /highlight_arkscript >}}
 
 
