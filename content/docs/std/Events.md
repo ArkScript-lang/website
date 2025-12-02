@@ -3,8 +3,8 @@ title: "Events"
 slug: "events"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -21,8 +21,9 @@ seo:
 `(let manager:make (fun () (...)))`
 Allows to register events listeners and emit events
 
-#### Author
-[@fabien-zoccola](https://github.com/fabien-zoccola)
+
+**Author**: [@fabien-zoccola](https://github.com/fabien-zoccola)
+
 
 #### Example
 {{< highlight_arkscript >}}
@@ -38,11 +39,12 @@ Allows to register events listeners and emit events
 Checks if a given callback is valid (is a function or a closure)
 
 **Note**: Returns true if the callback is a function/closure, false otherwise
+
+**Author**: [@fabien-zoccola](https://github.com/fabien-zoccola)
+
 #### Parameter
 - `callback`: the callback to check
 
-#### Author
-[@fabien-zoccola](https://github.com/fabien-zoccola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -58,12 +60,13 @@ Checks if a given callback is valid (is a function or a closure)
 Registers an event listener
 
 **Note**: Adds a [type callback] list to the listeners list
+
+**Author**: [@fabien-zoccola](https://github.com/fabien-zoccola)
+
 #### Parameters
 - `typ`: the type of the event to listen for
 - `callback`: the function/closure that will be called when an event is emitted
 
-#### Author
-[@fabien-zoccola](https://github.com/fabien-zoccola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -77,12 +80,13 @@ Registers an event listener
 Emits an event with a value
 
 **Note**: Makes a forEach on the listeners list, and calls the callback. Returns a boolean of whether we called at least one listener
+
+**Author**: [@fabien-zoccola](https://github.com/fabien-zoccola)
+
 #### Parameters
 - `val`: the emitted value
 - `typ`: the type of the emitted event
 
-#### Author
-[@fabien-zoccola](https://github.com/fabien-zoccola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -96,11 +100,12 @@ Emits an event with a value
 Emits an event with no value
 
 **Note**: Calls emitWith nil <typ>
+
+**Author**: [@fabien-zoccola](https://github.com/fabien-zoccola)
+
 #### Parameter
 - `typ`: the type of the emitted event
 
-#### Author
-[@fabien-zoccola](https://github.com/fabien-zoccola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -114,11 +119,12 @@ Emits an event with no value
 Removes all listeners of a given type
 
 **Note**: Returns if at least one listener has been removed
+
+**Author**: [@fabien-zoccola](https://github.com/fabien-zoccola)
+
 #### Parameter
 - `typ`: the type of event to remove from the list
 
-#### Author
-[@fabien-zoccola](https://github.com/fabien-zoccola)
 
 #### Example
 {{< highlight_arkscript >}}

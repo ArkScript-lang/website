@@ -3,8 +3,8 @@ title: "Cli"
 slug: "cli"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -22,6 +22,8 @@ seo:
 Defines a command line flag
 
 **Note**: All flags are optional and turned off
+
+
 #### Parameters
 - `name`: how the flag is named, eg "--debug"
 - `desc`: what the flag achieves
@@ -35,6 +37,8 @@ Defines a command line flag
 Defines a command line value
 
 **Note**: All values are required and equal to their default value
+
+
 #### Parameters
 - `name`: how the value is named, eg "filename"
 - `desc`: what the value is for
@@ -48,6 +52,8 @@ Defines a command line value
 `(let oneOf (fun (params) (...)))`
 Creates a group of flags/values/groups where only one of the subgroup has to match
 
+
+
 #### Parameter
 - `params`: list of flags/values/groups
 
@@ -58,6 +64,8 @@ Creates a group of flags/values/groups where only one of the subgroup has to mat
 ---
 `(let group (fun (params) (...)))`
 Creates a group of flags/values/groups where all of the subgroups have to match
+
+
 
 #### Parameter
 - `params`: list of flags/values/groups
@@ -71,12 +79,13 @@ Creates a group of flags/values/groups where all of the subgroups have to match
 Parse a list of arguments given a CLI definition
 
 **Note**: Recursively visit the CLI to parse the argument list
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `args`: list of arguments, eg sys:args
 - `cli`: cli definition
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -22,6 +22,8 @@ seo:
 Format a String given replacements
 
 **Note**: https://fmt.dev/12.0/syntax/
+
+
 #### Parameters
 - `format`: the String to format
 - `values`: as any argument as you need, of any valid ArkScript type
@@ -40,8 +42,9 @@ Format a String given replacements
 `(let asciiLetters <value>)`
 Upper and lowercase ASCII letters
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## asciiLowercase
@@ -50,8 +53,9 @@ Upper and lowercase ASCII letters
 `(let asciiLowercase <value>)`
 Lowercase ASCII letters
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## asciiUppercase
@@ -60,8 +64,9 @@ Lowercase ASCII letters
 `(let asciiUppercase <value>)`
 Uppercase ASCII letters
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## digits
@@ -70,8 +75,9 @@ Uppercase ASCII letters
 `(let digits <value>)`
 Digits used to represent decimal
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## hexdigits
@@ -80,8 +86,9 @@ Digits used to represent decimal
 `(let hexdigits <value>)`
 Digits used to represent hexadecimal
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## octdigits
@@ -90,8 +97,9 @@ Digits used to represent hexadecimal
 `(let octdigits <value>)`
 Digits used to represent octal
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## printable
@@ -100,8 +108,9 @@ Digits used to represent octal
 `(let printable <value>)`
 All printable characters
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## punctuation
@@ -110,8 +119,9 @@ All printable characters
 `(let punctuation <value>)`
 Punctuation characters
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## whitespace
@@ -120,8 +130,9 @@ Punctuation characters
 `(let whitespace <value>)`
 Whitespace characters
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## find
@@ -131,12 +142,13 @@ Whitespace characters
 Search a substring in a given String
 
 **Note**: The original String is not modified. Return -1 when not found
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `string`: the String to search in
 - `substr`: the substring to search for
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -151,13 +163,14 @@ Search a substring in a given String
 Search a substring in a given String
 
 **Note**: The original String is not modified. Return -1 when not found
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `string`: the String to search in
 - `substr`: the substring to search for
 - `startIndex`: index to start searching from
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -172,12 +185,13 @@ Search a substring in a given String
 Remove a character from a String given an index
 
 **Note**: The original String is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `string`: the String to modify
 - `index`: the index of the character to remove (can be negative to search from the end)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -191,11 +205,12 @@ Remove a character from a String given an index
 `(let ord (fun (_str) (...)))`
 Get the ordinal of a given character
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `char`: a String with a single UTF8 character
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -209,11 +224,12 @@ Get the ordinal of a given character
 `(let chr (fun (_str) (...)))`
 Create a character from an UTF8 codepoint
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `codepoint`: an UTF8 codepoint (Number)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -228,13 +244,14 @@ Create a character from an UTF8 codepoint
 Modify a given string and return a new one
 
 **Note**: The original string is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `string`: the string to modify
 - `index`: the index of the element to modify
 - `value`: the new character
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -247,12 +264,13 @@ Modify a given string and return a new one
 `(let contains? (fun (_str _word) (...)))`
 Check if a string contains a word
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_str`: String where the lookup occurs
 - `_word`: Word to look up for
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 
 ## containsAnyOf?
@@ -261,12 +279,13 @@ Check if a string contains a word
 `(let containsAnyOf? (fun (_str _set_of_words) (...)))`
 Check if a string contains a word for a set of words
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_str`: String where the lookup occurs
 - `_set_of_words`: Words to look for
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -281,11 +300,12 @@ Check if a string contains a word for a set of words
 `(let emptyOrWhitespace? (fun (_str) (...)))`
 Check if a string is empty or only consists of whitespaces
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_str`: the string to check
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -299,12 +319,13 @@ Check if a string is empty or only consists of whitespaces
 `(let count (fun (_str _word) (...)))`
 Count the number of non-overlapping occurrences of a word in a string
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_str`: string to search into
 - `_word`: word to count occurrences of
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -318,11 +339,12 @@ Count the number of non-overlapping occurrences of a word in a string
 Converts the given character to lowercase.
 
 **Note**: The original string is left unmodified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_string`: the string to make lowercase
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -337,11 +359,12 @@ Converts the given character to lowercase.
 Converts the given character to uppercase.
 
 **Note**: The original string is left unmodified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_string`: the string to make uppercase
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -356,11 +379,12 @@ Converts the given character to uppercase.
 Reverse a string.
 
 **Note**: The original string is left unmodified.
+
+**Author**: [@Natendrtfm](https://github.com/Natendrtfm)
+
 #### Parameter
 - `_string`: the string to reverse
 
-#### Author
-[@Natendrtfm](https://github.com/Natendrtfm)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -374,12 +398,13 @@ Reverse a string.
 `(let repeat (fun (_string _count) (...)))`
 Repeat a string
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_string`: string to repeat
 - `_count`: number of times to repeat said string
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -393,13 +418,14 @@ Repeat a string
 Get a slice of a given string, from a given index with a given length
 
 **Note**: The original string is left unmodified. Example:
+
+**Author**: [@Natendrtfm](https://github.com/Natendrtfm)
+
 #### Parameters
 - `_string`: the string to get a slice of
 - `_startingIndex`: the index in the string where to start slicing
 - `_length`: the length of the slice
 
-#### Author
-[@Natendrtfm](https://github.com/Natendrtfm)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -414,12 +440,13 @@ Get a slice of a given string, from a given index with a given length
 Split a string in multiple substrings in a list, given a separator
 
 **Note**: Returns a list of strings. Example :
+
+**Author**: [@Natendrtfm](https://github.com/Natendrtfm)
+
 #### Parameters
 - `_string`: the string to split
 - `_separator`: the separator to use for splitting
 
-#### Author
-[@Natendrtfm](https://github.com/Natendrtfm)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -434,6 +461,8 @@ Split a string in multiple substrings in a list, given a separator
 Replace a substring in a given string
 
 **Note**: The original string isn't modified.
+
+
 #### Parameters
 - `_string`: base string who contain pattern to replace by new sub string given
 - `_pattern`: sub string pattern to replace
@@ -453,6 +482,8 @@ Replace a substring in a given string
 Join a list of elements with a given string delimiter
 
 **Note**: The original list isn't modified
+
+
 #### Parameters
 - `_list`: host the elements to join
 - `_delim`: a string delimiter to be put between each element
@@ -471,11 +502,12 @@ Join a list of elements with a given string delimiter
 Removes whitespaces from the left side of a string
 
 **Note**: The original string isn't modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_str`: string to sanitize
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -489,11 +521,12 @@ Removes whitespaces from the left side of a string
 Removes whitespaces from the right side of a string
 
 **Note**: The original string isn't modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_str`: string to sanitize
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -507,11 +540,12 @@ Removes whitespaces from the right side of a string
 Removes whitespaces from both sides of a string
 
 **Note**: The original string isn't modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_str`: string to sanitize
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -523,6 +557,8 @@ Removes whitespaces from both sides of a string
 ---
 `(let stripMargin (fun (_str) (...)))`
 Strip the margin of a multiline string
+
+
 
 #### Parameter
 - `_str`: multiline string, margin is (space)*(|)

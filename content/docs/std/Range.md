@@ -3,8 +3,8 @@ title: "Range"
 slug: "range"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -22,12 +22,13 @@ seo:
 Create a ranged closure in interval [a, b[
 
 **Note**: Has a field `asList` to compute a list from the current state of the range, and another one `reset`.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `i`: the beginning of the range
 - `_b`: the end of the range
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -47,12 +48,13 @@ Create a ranged closure in interval [a, b[
 Run a function on each element of the range
 
 **Note**: The range is unmodified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_r`: the range object
 - `_f`: the function
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -67,12 +69,13 @@ Run a function on each element of the range
 Create a list based on a range and a filter function
 
 **Note**: The range is unmodified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_range`: the range object
 - `_fun`: the filter function
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -88,12 +91,13 @@ Create a list based on a range and a filter function
 Create a list based on a range and a function to apply to each elements
 
 **Note**: The range is unmodified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_range`: the range object
 - `_fun`: the function to apply
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -108,12 +112,13 @@ Create a list based on a range and a function to apply to each elements
 Create a reduced list based on a range and a reduction function
 
 **Note**: The range is unmodified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_range`: the range object
 - `_fun`: the reduction function
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

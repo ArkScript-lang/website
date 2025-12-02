@@ -3,8 +3,8 @@ title: "Time"
 slug: "time"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -21,8 +21,9 @@ seo:
 `Builtin (time )`
 Return the time of the computer since epoch, in seconds, with at least milliseconds precision
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 #### Example
 {{< highlight_arkscript >}}

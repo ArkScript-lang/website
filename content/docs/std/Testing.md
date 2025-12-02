@@ -3,8 +3,8 @@ title: "Testing"
 slug: "testing"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -22,12 +22,13 @@ seo:
 Create a test case with a label to help with debugging when one or more tests fail
 
 **Note**: Test cases can be nested.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_desc`: a description for the test, a string
 - `_body`: test to execute
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -44,12 +45,13 @@ Create a test case with a label to help with debugging when one or more tests fa
 `(macro test:expect (_cond ..._desc) (...))`
 Given a value or function call returning a boolean, generate a test case
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_cond`: the value to test for truthiness
 - `_desc`: an optional description (string) for the test
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -64,13 +66,14 @@ Given a value or function call returning a boolean, generate a test case
 `(macro test:eq (_expr _expected ..._desc) (...))`
 Compare two values that should be equal and generate a test case
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_expr`: computed value to test
 - `_expected`: expected value
 - `_desc`: an optional description (string) for the test
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -85,13 +88,14 @@ Compare two values that should be equal and generate a test case
 `(macro test:neq (_value _unexpected ..._desc) (...))`
 Compare two values that should **not** be equal and generate a test case
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_value`: tested value
 - `_unexpected`: the value we don't want
 - `_desc`: an optional description (string) for the test
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -106,12 +110,13 @@ Compare two values that should **not** be equal and generate a test case
 Generate the code for a test suite
 
 **Note**: Create two variables: _name-output (a list: [successes, failures]) and _name-status (boolean, true on success)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_name`: test name, as an identifier
 - `_body`: body of the test, a begin block
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

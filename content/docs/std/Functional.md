@@ -3,8 +3,8 @@ title: "Functional"
 slug: "functional"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -21,12 +21,13 @@ seo:
 `(let compose (fun (_f _g) (...)))`
 Compose function calls
 
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameters
 - `_f`: the first function
 - `_g`: the second function
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -42,11 +43,12 @@ Compose function calls
 `(let left (fun (_x) (...)))`
 Take a value as its argument and return a function taking 2 arguments which will call the first function on the value
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_x`: the value
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -60,11 +62,12 @@ Take a value as its argument and return a function taking 2 arguments which will
 `(let right (fun (_y) (...)))`
 Take a value as its argument and return a function taking 2 arguments which will call the second function on the value
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_y`: the value
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -79,11 +82,12 @@ Take a value as its argument and return a function taking 2 arguments which will
 Flip the arguments of a function
 
 **Note**: Returns a function taking 2 arguments a and b, calling (f b a)
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameter
 - `_f`: the function
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -97,11 +101,12 @@ Flip the arguments of a function
 `(let identity (fun (_x) (...)))`
 No-op, return the value as-is
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_x`: the value
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -116,13 +121,14 @@ No-op, return the value as-is
 Generic form for functions that need to reuse their arguments
 
 **Note**: Returns a function taking one argument x, calling (f (g x) (h x))
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_f`: function called with two arguments
 - `_g`: first unary function
 - `_h`: second unary function
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

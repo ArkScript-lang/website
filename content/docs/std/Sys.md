@@ -3,8 +3,8 @@ title: "Sys"
 slug: "sys"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -22,11 +22,12 @@ seo:
 Execute a system specific command
 
 **Note**: Return the output of the command as a String, or nil if it was disabled in the ArkScript build
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `command`: the command to execute, as a String
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -40,11 +41,12 @@ Execute a system specific command
 Sleep for a given duration (in milliseconds)
 
 **Note**: Return nil
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `duration`: a Number representing a duration
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -58,11 +60,12 @@ Sleep for a given duration (in milliseconds)
 Exit the program with the given exit code
 
 **Note**: Any code after this function call won't be executed
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `exitCode`: usually 0 for success and 1 for errors
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -75,8 +78,9 @@ Exit the program with the given exit code
 `(let platform <value>)`
 Platform on which the program is running (Windows, Mac OSX, Linux, FreeBSD, Unix, Other)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## args
@@ -85,8 +89,9 @@ Platform on which the program is running (Windows, Mac OSX, Linux, FreeBSD, Unix
 `(let args <value>)`
 Arguments given to the program when running it from the command line
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## programName
@@ -95,8 +100,9 @@ Arguments given to the program when running it from the command line
 `(let programName <value>)`
 Name of the running program (file only, not the fullpath)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 

@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -21,12 +21,13 @@ seo:
 `Builtin (random min max)`
 Compute a random number in [-2147483648, 2147483647] or in a custom range passed to the function
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `min`: optional inclusive lower bound
 - `max`: optional inclusive upper bound. Must be present if `min` is passed
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -40,11 +41,12 @@ Compute a random number in [-2147483648, 2147483647] or in a custom range passed
 `(let exp (fun (_x) (...)))`
 Calculate e^number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -57,11 +59,12 @@ Calculate e^number
 `(let ln (fun (_x) (...)))`
 Calculate the logarithm of a number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -74,11 +77,12 @@ Calculate the logarithm of a number
 `(let ceil (fun (_x) (...)))`
 Get the smallest possible integer greater than the number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -91,11 +95,12 @@ Get the smallest possible integer greater than the number
 `(let floor (fun (_x) (...)))`
 Get the smallest possible integer equal to the given number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -108,11 +113,12 @@ Get the smallest possible integer equal to the given number
 `(let round (fun (_x) (...)))`
 Get the smallest possible integer equal to or greater than the given number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -126,11 +132,12 @@ Get the smallest possible integer equal to or greater than the given number
 `(let NaN? (fun (_x) (...)))`
 Check if a Number is NaN
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -144,11 +151,12 @@ Check if a Number is NaN
 `(let Inf? (fun (_x) (...)))`
 Check if a Number if Inf
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -162,11 +170,12 @@ Check if a Number if Inf
 `(let cos (fun (_x) (...)))`
 Calculate the cosinus of a number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number (radians)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -180,11 +189,12 @@ Calculate the cosinus of a number
 `(let sin (fun (_x) (...)))`
 Calculate the sinus of a number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number (radians)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -198,11 +208,12 @@ Calculate the sinus of a number
 `(let tan (fun (_x) (...)))`
 Calculate the tangent of a number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number (radians)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -216,11 +227,12 @@ Calculate the tangent of a number
 `(let arccos (fun (_x) (...)))`
 Calculate the arc cosinus of a number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -233,11 +245,12 @@ Calculate the arc cosinus of a number
 `(let arcsin (fun (_x) (...)))`
 Calculate the arc sinus of a number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -250,11 +263,12 @@ Calculate the arc sinus of a number
 `(let arctan (fun (_x) (...)))`
 Calculate the arc tangent of a number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -267,11 +281,12 @@ Calculate the arc tangent of a number
 `(let cosh (fun (_x) (...)))`
 Calculate the hyperbolic cosinus of a number
 
+
+**Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@Gryfenfer97](https://github.com/Gryfenfer97)
 
 
 ## sinh
@@ -280,11 +295,12 @@ Calculate the hyperbolic cosinus of a number
 `(let sinh (fun (_x) (...)))`
 Calculate the hyperbolic sinus of a number
 
+
+**Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@Gryfenfer97](https://github.com/Gryfenfer97)
 
 
 ## tanh
@@ -293,11 +309,12 @@ Calculate the hyperbolic sinus of a number
 `(let tanh (fun (_x) (...)))`
 Calculate the hyperbolic tangent of a number
 
+
+**Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@Gryfenfer97](https://github.com/Gryfenfer97)
 
 
 ## acosh
@@ -306,11 +323,12 @@ Calculate the hyperbolic tangent of a number
 `(let acosh (fun (_x) (...)))`
 Calculate the hyperbolic arc cosinus of a number
 
+
+**Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@Gryfenfer97](https://github.com/Gryfenfer97)
 
 
 ## asinh
@@ -319,11 +337,12 @@ Calculate the hyperbolic arc cosinus of a number
 `(let asinh (fun (_x) (...)))`
 Calculate the hyperbolic arc sinus of a number
 
+
+**Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@Gryfenfer97](https://github.com/Gryfenfer97)
 
 
 ## atanh
@@ -332,11 +351,12 @@ Calculate the hyperbolic arc sinus of a number
 `(let atanh (fun (_x) (...)))`
 Calculate the hyperbolic arc tangent of a number
 
+
+**Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)
+
 #### Parameter
 - `value`: the Number
 
-#### Author
-[@Gryfenfer97](https://github.com/Gryfenfer97)
 
 
 ## pi
@@ -345,8 +365,9 @@ Calculate the hyperbolic arc tangent of a number
 `(let pi <value>)`
 Pi value (3.14159...)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## e
@@ -355,8 +376,9 @@ Pi value (3.14159...)
 `(let e <value>)`
 E value (2.7182...)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## tau
@@ -365,8 +387,9 @@ E value (2.7182...)
 `(let tau <value>)`
 Tau, the ratio of the circumference to the radius of a circle, which is equal to 2*pi (6.28318...)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## Inf
@@ -375,8 +398,9 @@ Tau, the ratio of the circumference to the radius of a circle, which is equal to
 `(let Inf <value>)`
 Float infinite value
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## NaN
@@ -385,8 +409,9 @@ Float infinite value
 `(let NaN <value>)`
 Float not-a-number value
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 
 
 ## abs
@@ -395,11 +420,12 @@ Float not-a-number value
 `(let abs (fun (_x) (...)))`
 Return the absolute value of a number
 
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameter
 - `_x`: the number to get the absolute value of
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 
 ## even?
@@ -408,11 +434,12 @@ Return the absolute value of a number
 `(let even? (fun (_n) (...)))`
 Return true if the number is even, false otherwise
 
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameter
 - `_n`: the number
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 
 ## even
@@ -422,11 +449,12 @@ Return true if the number is even, false otherwise
 Return true if the number is even, false otherwise
 
 **Note**: **Deprecated, use `even?`**
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameter
 - `_n`: the number
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 
 ## odd?
@@ -435,11 +463,12 @@ Return true if the number is even, false otherwise
 `(let odd? (fun (_n) (...)))`
 Return true if the number is odd, false otherwise
 
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameter
 - `_n`: the number
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 
 ## odd
@@ -449,11 +478,12 @@ Return true if the number is odd, false otherwise
 Return true if the number is odd, false otherwise
 
 **Note**: **Deprecated, use `odd?`**
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameter
 - `_n`: the number
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 
 ## min
@@ -462,12 +492,13 @@ Return true if the number is odd, false otherwise
 `(let min (fun (_a _b) (...)))`
 Get the minimum between two numbers
 
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameters
 - `_a`: the first number
 - `_b`: the second number
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 
 ## max
@@ -476,12 +507,13 @@ Get the minimum between two numbers
 `(let max (fun (_a _b) (...)))`
 Get the maximum between two numbers
 
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameters
 - `_a`: the first number
 - `_b`: the second number
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 
 ## increment
@@ -490,11 +522,12 @@ Get the maximum between two numbers
 `(let increment (fun (_x) (...)))`
 Increment a given number by 1
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_x`: number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 
 ## decrement
@@ -503,11 +536,12 @@ Increment a given number by 1
 `(let decrement (fun (_x) (...)))`
 Decrement a given number by 1
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_x`: number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 
 ## pow
@@ -517,12 +551,13 @@ Decrement a given number by 1
 Get a number to a given power
 
 **Note**: Note that it's defined as exp(a * ln(x)), thus won't work for negative numbers
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_x`: the number to pow
 - `_a`: the exponent
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 
 ## sqrt
@@ -532,11 +567,12 @@ Get a number to a given power
 Get the square root of a number
 
 **Note**: Square roots can't be taken for negative numbers for obvious reasons.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_x`: the number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 
 ## fibo
@@ -545,11 +581,12 @@ Get the square root of a number
 `(let fibo (fun (n) (...)))`
 Run the fibonacci function on a number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `n`: the number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 
 ## prime?
@@ -558,11 +595,12 @@ Run the fibonacci function on a number
 `(let prime? (fun (n) (...)))`
 Check if a given number is prime
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `n`: the number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 
 ## divs
@@ -571,11 +609,12 @@ Check if a given number is prime
 `(let divs (fun (n) (...)))`
 Returns the list of a number's divisors
 
+
+**Author**: [@Wafelack](https://github.com/Wafelack)
+
 #### Parameter
 - `n`: the number
 
-#### Author
-[@Wafelack](https://github.com/Wafelack)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -588,12 +627,13 @@ Returns the list of a number's divisors
 `(let log (fun (x n) (...)))`
 Returns the logarithm base n of a number
 
+
+**Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)
+
 #### Parameters
 - `x`: the number
 - `n`: the base
 
-#### Author
-[@Gryfenfer97](https://github.com/Gryfenfer97)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -606,11 +646,12 @@ Returns the logarithm base n of a number
 `(let log2 (fun (x) (...)))`
 Returns the logarithm base 2 of a number
 
+
+**Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)
+
 #### Parameter
 - `x`: the number
 
-#### Author
-[@Gryfenfer97](https://github.com/Gryfenfer97)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -623,11 +664,12 @@ Returns the logarithm base 2 of a number
 `(let log10 (fun (x) (...)))`
 Returns the logarithm base 10 of a number
 
+
+**Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)
+
 #### Parameter
 - `x`: the number
 
-#### Author
-[@Gryfenfer97](https://github.com/Gryfenfer97)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -640,12 +682,13 @@ Returns the logarithm base 10 of a number
 `(let floordiv (fun (a b) (...)))`
 Returns the quotient of the euclidian division of a and b
 
+
+**Author**: [@fabien-zoccola](https://github.com/fabien-zoccola)
+
 #### Parameters
 - `a`: the dividend
 - `b`: the divisor
 
-#### Author
-[@fabien-zoccola](https://github.com/fabien-zoccola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -658,12 +701,13 @@ Returns the quotient of the euclidian division of a and b
 `(let complex (fun (real imag) (...)))`
 Create a complex number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `real`: the real part of the complex number
 - `imag`: the imaginary value
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -677,12 +721,13 @@ Create a complex number
 `(let complex-add (fun (_c0 _c1) (...)))`
 Compute the addition of two complex number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_c0`: the first complex number
 - `_c1`: the second complex number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -696,12 +741,13 @@ Compute the addition of two complex number
 `(let complex-sub (fun (_c0 _c1) (...)))`
 Compute the subtraction of two complex number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_c0`: the first complex number
 - `_c1`: the second complex number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -715,12 +761,13 @@ Compute the subtraction of two complex number
 `(let complex-mul (fun (_c0 _c1) (...)))`
 Compute the multiplication of two complex number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_c0`: the first complex number
 - `_c1`: the second complex number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -734,11 +781,12 @@ Compute the multiplication of two complex number
 `(let complex-conjugate (fun (_c) (...)))`
 Compute the conjugate of a complex number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_c`: the complex number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -752,11 +800,12 @@ Compute the conjugate of a complex number
 `(let complex-module (fun (_c) (...)))`
 Compute the module of a complex number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_c`: the complex number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -770,12 +819,13 @@ Compute the module of a complex number
 `(let complex-div (fun (_c0 _c1) (...)))`
 Compute the division of two complex number
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_c0`: the first complex number
 - `_c1`: the second complex number
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -789,13 +839,14 @@ Compute the division of two complex number
 `(let clamp (fun (_x _min _max) (...)))`
 Limit a given value to a range
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_x`: value to limit
 - `_min`: minimum
 - `_max`: maximum
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -809,13 +860,14 @@ Limit a given value to a range
 `(let lerp (fun (_x _v0 _v1) (...)))`
 Linearly interpolate a value in [0; 1] between two bounds
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_x`: value to interpolate (must be between 0 and 1)
 - `_v0`: lower bound
 - `_v1`: upper bound
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -829,12 +881,13 @@ Linearly interpolate a value in [0; 1] between two bounds
 Compute the dot product of two vectors
 
 **Note**: The vectors must have the same length
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_v1`: vector 1
 - `_v2`: vector 2
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

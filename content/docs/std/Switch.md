@@ -3,8 +3,8 @@ title: "Switch"
 slug: "switch"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -22,14 +22,15 @@ seo:
 Takes a value to match against a list of (possible value, code to run)...
 
 **Note**: Once the value is matched, it stops and doesn't try any other values.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `value`: value to match
 - `case`: first case
 - `then`: value when first case matches
 - `...cases`: more (case, then)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

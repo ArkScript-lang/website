@@ -3,8 +3,8 @@ title: "Async"
 slug: "async"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -22,12 +22,13 @@ seo:
 Calls a function asynchronously with a given set of arguments
 
 **Note**: The function is started in a separate context, with no access to the others, preventing any concurrency problems.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `func`: the function to call
 - `args...`: the arguments of the function
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -41,11 +42,12 @@ Calls a function asynchronously with a given set of arguments
 `Builtin (await future)`
 Blocks until the result becomes available
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `future`: the future to wait for its result to be available
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

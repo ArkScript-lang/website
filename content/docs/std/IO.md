@@ -3,8 +3,8 @@ title: "IO"
 slug: "io"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -22,11 +22,12 @@ seo:
 Print value(s) in the terminal
 
 **Note**: No separator is put between the values. Adds a \n at the end
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `values`: the values to print
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -40,11 +41,12 @@ Print value(s) in the terminal
 Print value(s) in the terminal
 
 **Note**: No separator is put between the values, no \n at the end
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `values`: the values to print
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -58,11 +60,12 @@ Print value(s) in the terminal
 Request a value from the user
 
 **Note**: Return the value as a string
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `prompt`: (optional) printed before asking for the user input
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -75,12 +78,13 @@ Request a value from the user
 `(let writeFile (fun (_name _content) (...)))`
 Write content to a file. Return nil
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `filename`: path to the file to write to (will be overwritten if it exists)
 - `content`: can be any valid ArkScript value
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -93,12 +97,13 @@ Write content to a file. Return nil
 `(let appendToFile (fun (_name _content) (...)))`
 Append content to a file. Return nil
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `filename`: path to the file to append to
 - `content`: can be any valid ArkScript value
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -111,11 +116,12 @@ Append content to a file. Return nil
 `(let readFile (fun (_name) (...)))`
 Read the content from a file as a String
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `filename`: the path of the file to read
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -128,11 +134,12 @@ Read the content from a file as a String
 `(let fileExists? (fun (_name) (...)))`
 Check if a file exists, return True or False
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `filename`: the path of the file
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -145,11 +152,12 @@ Check if a file exists, return True or False
 `(let listFiles (fun (_path) (...)))`
 List files in a folder, as a List of String
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `path`: A directory
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -162,11 +170,12 @@ List files in a folder, as a List of String
 `(let dir? (fun (_path) (...)))`
 Check if a path represents a directory
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `path`: A directory
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -179,11 +188,12 @@ Check if a path represents a directory
 `(let makeDir (fun (_path) (...)))`
 Create a directory
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `path`: A directory
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -196,11 +206,12 @@ Create a directory
 `(let removeFile (fun (_path) (...)))`
 Delete file
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `filename`: path to file
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

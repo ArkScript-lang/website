@@ -3,8 +3,8 @@ title: "Macros"
 slug: "macros"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -21,12 +21,13 @@ seo:
 `(macro -> (arg fn1 ...fns) (...))`
 Chain calls on a given value, for a nicer syntax
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `arg`: value to transform
 - `...fns`: series of functions to apply one by one to `arg`
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -42,12 +43,13 @@ Chain calls on a given value, for a nicer syntax
 `(macro partial (func ...defargs) (...))`
 Create a partial function with prefilled arguments
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `func`: function to make partial
 - `...defargs`: predefined arguments
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -65,12 +67,13 @@ Create a partial function with prefilled arguments
 `(macro partial2 (call ...args) (...))`
 Create a partial function with prefilled arguments, allowing some arguments to be skipped
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `call`: function to make partial
 - `...args`: predefined arguments
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -86,12 +89,13 @@ Create a partial function with prefilled arguments, allowing some arguments to b
 `(macro unless (cond ...body) (...))`
 Create a reversed condition
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `cond`: condition
 - `body`: then node (or then/else nodes)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -109,12 +113,13 @@ Create a reversed condition
 `(macro until (cond body) (...))`
 Iterate until the condition is truthy
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `cond`: condition
 - `body`: loop body
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

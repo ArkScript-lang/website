@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -21,11 +21,12 @@ seo:
 `Builtin (dict args...)`
 Creates a dictionary from a set of arguments, grouping them 2 by 2 to create (key, value) pairs
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `args...`: the arguments of the function
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -39,12 +40,13 @@ Creates a dictionary from a set of arguments, grouping them 2 by 2 to create (ke
 `(let get (fun (_D _key) (...)))`
 Get a value from a given dictionary using a key, or nil if it doesn't exist
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_D`: dictionary
 - `_key`: key to get
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -59,13 +61,14 @@ Get a value from a given dictionary using a key, or nil if it doesn't exist
 Adds or replaces an entry to a dictionary, given a (key, value) pair
 
 **Note**: The dictionary is modified in place
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_D`: dictionary
 - `_key`: key to add (or replace)
 - `_value`: value for the given key
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -81,11 +84,12 @@ Adds or replaces an entry to a dictionary, given a (key, value) pair
 `(let contains? (fun (_D _key) (...)))`
 Checks if the dictionary has a given key
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_D`: dictionary
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -101,11 +105,12 @@ Checks if the dictionary has a given key
 Checks if the dictionary has a given key
 
 **Note**: **Deprecated, use `contains?`**
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_D`: dictionary
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -120,13 +125,14 @@ Checks if the dictionary has a given key
 `(let getOrElse (fun (_D _key _default) (...)))`
 Get a value from a given dictionary using a key, or a default value if it doesn't exist
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_D`: dictionary
 - `_key`: key to get
 - `_default`: default value in case the key isn't in the dictionary
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -142,14 +148,15 @@ Get a value from a given dictionary using a key, or a default value if it doesn'
 Updates an entry or create it from a default value
 
 **Note**: The dictionary is modified in place
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_D`: dictionary
 - `_key`: key to create or update
 - `_f`: function called with the existing value, returning an updated value
 - `_default`: default value to use if the key doesn't exist
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -164,12 +171,13 @@ Updates an entry or create it from a default value
 Deletes an entry from a dictionary, given a key
 
 **Note**: The dictionary is modified in place
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_D`: dictionary
 - `_key`: key to delete
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -184,11 +192,12 @@ Deletes an entry from a dictionary, given a key
 `(let keys (fun (_D) (...)))`
 Returns a list of the keys of a dictionary
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_D`: dictionary
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -202,11 +211,12 @@ Returns a list of the keys of a dictionary
 `(let size (fun (_D) (...)))`
 Computes the number of (key, value) pairs in a given dictionary
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_D`: dictionary
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -220,11 +230,12 @@ Computes the number of (key, value) pairs in a given dictionary
 `(let values (fun (_D) (...)))`
 Returns a list of the values of a dictionary
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_D`: dictionary
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -238,11 +249,12 @@ Returns a list of the values of a dictionary
 `(let entries (fun (_D) (...)))`
 Returns a list of the entries of a dictionary
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_D`: dictionary
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -257,12 +269,13 @@ Returns a list of the entries of a dictionary
 Map each value in a dictionary with a given function
 
 **Note**: The original dictionary is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_D`: dictionary
 - `_f`: function to apply to each value, taking both key and value as arguments
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -279,12 +292,13 @@ Map each value in a dictionary with a given function
 Map each value in a dictionary with a given function
 
 **Note**: The original dictionary is updated in place
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_D`: dictionary
 - `_f`: function to apply to each value, taking both key and value as arguments
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -299,12 +313,13 @@ Map each value in a dictionary with a given function
 `(let forEach (fun (_D _f) (...)))`
 Iterate over the pairs of a dictionary with a given function
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_D`: dictionary
 - `_f`: function to call on each pair
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -321,12 +336,13 @@ Iterate over the pairs of a dictionary with a given function
 Filter a dictionary with a predicate
 
 **Note**: The original dictionary is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_D`: dictionary
 - `_f`: predicate, taking both key and value as arguments
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -343,12 +359,13 @@ Filter a dictionary with a predicate
 Filter a dictionary with a predicate
 
 **Note**: The original dictionary is updated in place
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_D`: dictionary
 - `_f`: predicate, taking both key and value as arguments
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -364,11 +381,12 @@ Filter a dictionary with a predicate
 Copy a dictionary
 
 **Note**: The original dictionary is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_D`: dictionary to copy
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -386,12 +404,13 @@ Copy a dictionary
 Update a dictionary with (key, value) pairs from a second dictionary
 
 **Note**: The original dictionary is updated in place
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_D`: dictionary to update
 - `_D2`: second dictionary
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

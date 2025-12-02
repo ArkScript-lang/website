@@ -3,8 +3,8 @@ title: "Random"
 slug: "random"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -22,11 +22,12 @@ seo:
 Select a random element from a list
 
 **Note**: If the list is empty, returns nil
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_L`: list of elements
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -41,11 +42,12 @@ Select a random element from a list
 Shuffle a given list
 
 **Note**: The original list is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_L`: list to shuffle
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

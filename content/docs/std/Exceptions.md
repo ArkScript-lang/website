@@ -3,8 +3,8 @@ title: "Exceptions"
 slug: "exceptions"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -21,11 +21,12 @@ seo:
 `(let throw (fun (_x) (...)))`
 throw takes a value as its argument and return it to be used by try
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_x`: the value to return
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -38,11 +39,12 @@ throw takes a value as its argument and return it to be used by try
 `(let return (fun (_y) (...)))`
 return takes a value as its argument and return it to be used by try
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_x`: the value to return
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -55,13 +57,14 @@ return takes a value as its argument and return it to be used by try
 `(let try (fun (_either _continue _handle) (...)))`
 Takes a value either returned by throw or return and apply a given on it if it's an error or not
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_either`: the value to test
 - `_continue`: the success handler
 - `_handle`: the error handler
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}

@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2025-12-02T17:44:19+02:00
-lastmod: 2025-12-02T17:44:19+02:00
+date: 2025-12-02T17:55:42+02:00
+lastmod: 2025-12-02T17:55:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -22,11 +22,12 @@ seo:
 Reverse a given list and return a new one
 
 **Note**: The original list is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `list`: the list to reverse
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -40,12 +41,13 @@ Reverse a given list and return a new one
 Search an element in a List
 
 **Note**: The original list is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `list`: the List to search in
 - `value`: the element to search
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -60,14 +62,15 @@ Search an element in a List
 Get a slice from a List
 
 **Note**: The original list is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `list`: the list to reverse
 - `start`: included, must be positive
 - `end`: not included, must be positive and smaller than the list
 - `step`: must be greater than 0
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -81,11 +84,12 @@ Get a slice from a List
 Sort a List and return a new one
 
 **Note**: The original list is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `list`: the list to sort
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -98,12 +102,13 @@ Sort a List and return a new one
 `(let fill (fun (_val _count) (...)))`
 Generate a List of n copies of an element
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `count`: the number of copies
 - `value`: the element to copy
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -116,11 +121,12 @@ Generate a List of n copies of an element
 `(let size (fun (_L) (...)))`
 Function to call the `len` operator on a list
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_L`: list to get the size of
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -134,13 +140,14 @@ Function to call the `len` operator on a list
 Modify a given list and return a new one
 
 **Note**: The original list is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `list`: the list to modify
 - `index`: the index of the element to modify
 - `value`: the new element
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -154,12 +161,13 @@ Modify a given list and return a new one
 Iterate over a given list and run a given function on every element.
 
 **Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_L`: the list to iterate over
 - `_func`: the function to call on each element
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -175,12 +183,13 @@ Iterate over a given list and run a given function on every element.
 Iterate over a given list and run a given function on every element, passing its index as well.
 
 **Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_L`: the list to iterate over
 - `_func`: a binary function to call on each element with (index, element)
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -196,11 +205,12 @@ Iterate over a given list and run a given function on every element, passing its
 Iterate over a given list and multiply all the elements with the others.
 
 **Note**: The original list is not modified.
+
+**Author**: [@Unactived](https://github.com/Unactived)
+
 #### Parameter
 - `_L`: the list to iterate over
 
-#### Author
-[@Unactived](https://github.com/Unactived)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -215,11 +225,12 @@ Iterate over a given list and multiply all the elements with the others.
 Iterate over a given list and sum all the elements.
 
 **Note**: The original list is not modified.
+
+**Author**: [@Unactived](https://github.com/Unactived)
+
 #### Parameter
 - `_L`: the list to iterate over
 
-#### Author
-[@Unactived](https://github.com/Unactived)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -234,11 +245,12 @@ Iterate over a given list and sum all the elements.
 Find the minimum in a list of numbers
 
 **Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_L`: list of numbers
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -252,11 +264,12 @@ Find the minimum in a list of numbers
 Find the maximum in a list of numbers
 
 **Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_L`: list of numbers
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -270,12 +283,13 @@ Find the maximum in a list of numbers
 Drop the first n elements of a list
 
 **Note**: The original list is not modified.
+
+**Authors**: [@rstefanic](https://github.com/rstefanic), [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_L`: the list to work on
 - `_n`: the number of elements to drop
 
-#### Authors
-[@rstefanic](https://github.com/rstefanic), [@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -290,12 +304,13 @@ Drop the first n elements of a list
 Drop the first elements of a list, while they match a given predicate
 
 **Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the predicate
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -310,12 +325,13 @@ Drop the first elements of a list, while they match a given predicate
 Keep elements in a given list if they follow a predicate
 
 **Note**: The original list is not modified.
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the predicate
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -330,12 +346,13 @@ Keep elements in a given list if they follow a predicate
 Apply a given function to each element of a list
 
 **Note**: The original list is not modified.
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the function to apply to each element
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -349,12 +366,13 @@ Apply a given function to each element of a list
 Apply a function to the elements of a list to reduce it
 
 **Note**: The original list is not modified.
+
+**Author**: [@Unactived](https://github.com/Unactived)
+
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the function to apply
 
-#### Author
-[@Unactived](https://github.com/Unactived)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -369,11 +387,12 @@ Apply a function to the elements of a list to reduce it
 Flatten a list
 
 **Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_L`: the list to work on
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -388,12 +407,13 @@ Flatten a list
 Apply a given function to each element of a list and then flatten it
 
 **Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the function to apply to each element
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -408,12 +428,13 @@ Apply a given function to each element of a list and then flatten it
 Take the first n elements of
 
 **Note**: The original list is not modified.
+
+**Author**: [@rstefanic](https://github.com/rstefanic)
+
 #### Parameters
 - `_L`: the list to work on
 - `_n`: the number of elements to take
 
-#### Author
-[@rstefanic](https://github.com/rstefanic)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -427,12 +448,13 @@ Take the first n elements of
 Take the first n elements of a list, given a predicate
 
 **Note**: The original list is not modified.
+
+**Author**: [@rakista112](https://github.com/rakista112)
+
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the predicate
 
-#### Author
-[@rakista112](https://github.com/rakista112)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -446,12 +468,13 @@ Take the first n elements of a list, given a predicate
 Partition a list in two, given a predicate
 
 **Note**: The original list is not modified.
+
+**Author**: [@rakista112](https://github.com/rakista112)
+
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the predicate, accepting the value and its index
 
-#### Author
-[@rakista112](https://github.com/rakista112)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -466,11 +489,12 @@ Partition a list in two, given a predicate
 Unzip a list of [[a b] [c d]...] into [[a c ...] [b d ...]]
 
 **Note**: The original list is not modified.
+
+**Author**: [@Unactived](https://github.com/Unactived)
+
 #### Parameter
 - `_L`: the list to work on
 
-#### Author
-[@Unactived](https://github.com/Unactived)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -485,12 +509,13 @@ Unzip a list of [[a b] [c d]...] into [[a c ...] [b d ...]]
 Zip two lists into one: [1 2 3 4] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [4 8]]
 
 **Note**: The original lists are not modified.
+
+**Author**: [@Unactived](https://github.com/Unactived)
+
 #### Parameters
 - `_a`: the first list to work on
 - `_b`: the second list to work on
 
-#### Author
-[@Unactived](https://github.com/Unactived)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -506,11 +531,12 @@ Zip two lists into one: [1 2 3 4] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [4 
 Zip a list elements with their index. [5 6 7 8] will give [[0 5] [1 6] [2 7] [3 8]]
 
 **Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameter
 - `_L`: the list to iterate over
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -525,13 +551,14 @@ Zip a list elements with their index. [5 6 7 8] will give [[0 5] [1 6] [2 7] [3 
 Fold a given list, starting from the left side
 
 **Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_L`: the list to work on
 - `_init`: an init value
 - `_f`: a function to apply to the list
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -545,12 +572,13 @@ Fold a given list, starting from the left side
 `(let forAll (fun (_L _f) (...)))`
 Check if a condition is verified for all elements of a list
 
+
+**Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)
+
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the condition
 
-#### Author
-[@Gryfenfer97](https://github.com/Gryfenfer97)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -565,12 +593,13 @@ Check if a condition is verified for all elements of a list
 `(let any (fun (_L _f) (...)))`
 Check if a condition if verified for one or more elements of a list
 
+
+**Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)
+
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the condition
 
-#### Author
-[@Gryfenfer97](https://github.com/Gryfenfer97)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -585,12 +614,13 @@ Check if a condition if verified for one or more elements of a list
 `(let none (fun (_L _f) (...)))`
 Check if a condition can't be verified for any element of a list
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the condition
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -606,12 +636,13 @@ Check if a condition can't be verified for any element of a list
 `(let countIf (fun (_L _f) (...)))`
 Count the number of elements in a list that match a condition
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_L`: the list to work on
 - `_f`: the condition
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -626,13 +657,14 @@ Count the number of elements in a list that match a condition
 `(let iterate (fun (_init _f _length) (...)))`
 Generate a sequence based on a unary function, initial value and length
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_init`: initial value of the sequence
 - `_f`: unary function to generate values
 - `_length`: the sequence length
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -646,12 +678,13 @@ Generate a sequence based on a unary function, initial value and length
 `(let iota (fun (_init _length) (...)))`
 Generate a sequence of numbers
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_init`: initial value of the sequence
 - `_length`: the sequence length
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -664,12 +697,13 @@ Generate a sequence of numbers
 `(let chunkBy (fun (_L _length) (...)))`
 Chunk a list in sub-lists of size n
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_L`: list to chunk
 - `_length`: size of the chunks
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -684,13 +718,14 @@ Chunk a list in sub-lists of size n
 Insert an element (or expand a list) at a given position inside a list
 
 **Note**: The original list is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_L`: list to insert element(s) in
 - `_index`: where to insert
 - `_value`: value to insert
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
@@ -709,13 +744,14 @@ Insert an element (or expand a list) at a given position inside a list
 Create a sliding window of a given size on a list
 
 **Note**: The original list is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
 #### Parameters
 - `_L`: list to iterate over
 - `_size`: window size, must be at least 1
 - `_f`: function to call with the window
 
-#### Author
-[@SuperFola](https://github.com/SuperFola)
 
 #### Example
 {{< highlight_arkscript >}}
