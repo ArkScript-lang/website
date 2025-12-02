@@ -3,8 +3,8 @@ title: "Range"
 slug: "range"
 description: ""
 summary: ""
-date: 2025-12-01T15:11:30+02:00
-lastmod: 2025-12-01T15:11:30+02:00
+date: 2025-12-02T17:44:19+02:00
+lastmod: 2025-12-02T17:44:19+02:00
 draft: false
 weight: 410
 toc: true
@@ -78,7 +78,7 @@ Create a list based on a range and a filter function
 {{< highlight_arkscript >}}
 (import std.Math)
 (let obj (range:range 1 10))
-(print (range:filter obj math:even))  # [2 4 6 8]
+(print (range:filter obj math:even?))  # [2 4 6 8]
 {{< /highlight_arkscript >}}
 
 ## map

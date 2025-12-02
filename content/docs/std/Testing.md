@@ -3,8 +3,8 @@ title: "Testing"
 slug: "testing"
 description: ""
 summary: ""
-date: 2025-12-01T15:11:30+02:00
-lastmod: 2025-12-01T15:11:30+02:00
+date: 2025-12-02T17:44:19+02:00
+lastmod: 2025-12-02T17:44:19+02:00
 draft: false
 weight: 410
 toc: true
@@ -61,12 +61,12 @@ Given a value or function call returning a boolean, generate a test case
 ## test:eq
 
 ---
-`(macro test:eq (_expected _expr ..._desc) (...))`
+`(macro test:eq (_expr _expected ..._desc) (...))`
 Compare two values that should be equal and generate a test case
 
 #### Parameters
-- `_expected`: expected value
 - `_expr`: computed value to test
+- `_expected`: expected value
 - `_desc`: an optional description (string) for the test
 
 #### Author
@@ -82,12 +82,12 @@ Compare two values that should be equal and generate a test case
 ## test:neq
 
 ---
-`(macro test:neq (_unexpected _value ..._desc) (...))`
+`(macro test:neq (_value _unexpected ..._desc) (...))`
 Compare two values that should **not** be equal and generate a test case
 
 #### Parameters
-- `_unexpected`: the value we don't want
 - `_value`: tested value
+- `_unexpected`: the value we don't want
 - `_desc`: an optional description (string) for the test
 
 #### Author

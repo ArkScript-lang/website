@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2025-12-01T15:11:30+02:00
-lastmod: 2025-12-01T15:11:30+02:00
+date: 2025-12-02T17:44:19+02:00
+lastmod: 2025-12-02T17:44:19+02:00
 draft: false
 weight: 410
 toc: true
@@ -241,6 +241,40 @@ Modify a given string and return a new one
 (string:setAt "hello" 1 "a")  # "hallo"
 {{< /highlight_arkscript >}}
 
+## contains?
+
+---
+`(let contains? (fun (_str _word) (...)))`
+Check if a string contains a word
+
+#### Parameters
+- `_str`: String where the lookup occurs
+- `_word`: Word to look up for
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+
+## containsAnyOf?
+
+---
+`(let containsAnyOf? (fun (_str _set_of_words) (...)))`
+Check if a string contains a word for a set of words
+
+#### Parameters
+- `_str`: String where the lookup occurs
+- `_set_of_words`: Words to look for
+
+#### Author
+[@SuperFola](https://github.com/SuperFola)
+
+#### Example
+{{< highlight_arkscript >}}
+(let words ["hello" "world"])
+(print (containsAnyOf "Hello, world! I like almonds" words))  # true
+(print (containsAnyOf "Hello, world!" string:punctuation))  # true
+{{< /highlight_arkscript >}}
+
 ## emptyOrWhitespace?
 
 ---
@@ -390,7 +424,7 @@ Split a string in multiple substrings in a list, given a separator
 #### Example
 {{< highlight_arkscript >}}
 (let message "hello world, I like boats")
-(let splitted (string:split message " "))
+(let as-list (string:split message " "))
 {{< /highlight_arkscript >}}
 
 ## replace

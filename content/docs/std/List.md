@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2025-12-01T15:11:30+02:00
-lastmod: 2025-12-01T15:11:30+02:00
+date: 2025-12-02T17:44:19+02:00
+lastmod: 2025-12-02T17:44:19+02:00
 draft: false
 weight: 410
 toc: true
@@ -320,7 +320,7 @@ Keep elements in a given list if they follow a predicate
 #### Example
 {{< highlight_arkscript >}}
 (import std.Math)
-(print (list:filter [1 2 3 4 5 6 7 8 9] math:even))  # [2 4 6 8]
+(print (list:filter [1 2 3 4 5 6 7 8 9] math:even?))  # [2 4 6 8]
 {{< /highlight_arkscript >}}
 
 ## map

@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2025-12-01T15:11:30+02:00
-lastmod: 2025-12-01T15:11:30+02:00
+date: 2025-12-02T17:44:19+02:00
+lastmod: 2025-12-02T17:44:19+02:00
 draft: false
 weight: 410
 toc: true
@@ -402,11 +402,38 @@ Return the absolute value of a number
 [@rstefanic](https://github.com/rstefanic)
 
 
+## even?
+
+---
+`(let even? (fun (_n) (...)))`
+Return true if the number is even, false otherwise
+
+#### Parameter
+- `_n`: the number
+
+#### Author
+[@rstefanic](https://github.com/rstefanic)
+
+
 ## even
 
 ---
-`(let even (fun (_n) (...)))`
+`(let even <value>)`
 Return true if the number is even, false otherwise
+
+**Note**: **Deprecated, use `even?`**
+#### Parameter
+- `_n`: the number
+
+#### Author
+[@rstefanic](https://github.com/rstefanic)
+
+
+## odd?
+
+---
+`(let odd? (fun (_n) (...)))`
+Return true if the number is odd, false otherwise
 
 #### Parameter
 - `_n`: the number
@@ -418,9 +445,10 @@ Return true if the number is even, false otherwise
 ## odd
 
 ---
-`(let odd (fun (_n) (...)))`
+`(let odd <value>)`
 Return true if the number is odd, false otherwise
 
+**Note**: **Deprecated, use `odd?`**
 #### Parameter
 - `_n`: the number
 
