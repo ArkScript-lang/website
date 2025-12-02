@@ -40,6 +40,8 @@ Example:
 (console:color "red")
 {{< /highlight_arkscript >}}
 
+**Boolean test**: if a function only returns a boolean, it should be suffixed with `?`. Eg `even?` instead of `isEven`, `even`, `maybeEven`, `checkIfEven`.
+
 **Mutation**: if a function does explicit mutation of a state (eg in a closure) instead of returning a new value and being pure, it should be suffixed with `!`, eg `append!` for in place mutations on lists.
 
 ### Modules (C++)
