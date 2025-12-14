@@ -138,6 +138,8 @@ The **IR Compiler** takes optimized blocks of IR, with the symbol and value tabl
 Given an input node, we generate the corresponding JSON structure:
 
 - Symbol: `{"type": "Symbol", "name": "..."}`
+- MutArg: `{"type": "MutArg", "name": "..."}`, used *only in functions' arguments' blocks*
+- RefArg: `{"type": "RefArg", "name": "..."}`, used *only in functions' arguments' blocks*
 - Spread: `{"type": "Spread", "name": "..."}`
 - Capture: `{"type": "Capture", "name": "..."}`
 - Field: `{"type": "Field", "children": [{"type": "Symbol", "name": "..."}, ...]}`

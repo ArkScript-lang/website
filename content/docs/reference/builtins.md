@@ -52,5 +52,6 @@ We currently have a few categories for our builtins:
 3. Add it to the builtins list in `src/arkreactor/Builtins/Builtins.cpp`, as follows: `{ "builtin__<name>", Value(category::functionName) }`
 4. The implementation will have to be done in `src/arkreactor/Builtins/{category}.cpp`
 5. Add a proxy inside `lib/std/{category}.ark` as `(let <name> (fun (args...) (builtin__<name> args...)))`
-5. Don't forget to document the new function **in the standard library**, using [ArkDoc](/docs/reference/arkdoc)
+    - **Warning**: You **cannot** use *argument attributes* for those proxy functions!
+6. Don't forget to document the new function **in the standard library**, using [ArkDoc](/docs/reference/arkdoc)
 

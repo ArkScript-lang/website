@@ -182,6 +182,51 @@ The value returned by a function is the last evaluated value in the body, if non
 (print (foo 12 14))  # 26
 {{< /highlight_arkscript >}}
 
+It is important to note that functions' arguments can not be mutated using `(set name val)`, they are immutable by default. However, this can be changed for specific arguments using *arguments attributes*.
+
+### Arguments attributes
+
+Arguments can bear attributes, like `mut` to allow modifying the copy passed to a function inside it:
+
+{{< highlight_arkscript >}}
+(let foo (fun (lst a) {
+  (set a (math:min a (len lst)))  # forbidden, `a` is not mutable
+  # ...
+  nil }))
+
+(let bar (fun (lst (mut a)) {
+  (set a (math:min a (len lst)))  # `a` is mutable, this is ok!
+  # ...
+  nil }))
+
+(let val 6)
+(bar [1 2 3] val)
+# val is still 6
+{{< /highlight_arkscript >}}
+
+We can also mark arguments as `ref` to avoid copying variables when calling a function (values are not affected). `ref` arguments are still read-only. This is meant as an optimization when working on big chunks of data.
+
+{{< highlight_arkscript >}}
+(let forEach (fun (lst) {
+  (mut i 0)
+  (while (< i (len lst)) {
+    (print (@ lst i))
+    (set i (+ 1 i)) }) }))
+
+(let forEachRef (fun ((ref lst)) {
+  (mut i 0)
+  (while (< i (len lst)) {
+    (print (@ lst i))
+    (set i (+ 1 i)) }) }))
+
+(let data [1 2 3])
+(forEach data)  # data is copied and passed to the function
+(forEachRef data)  # a read-only reference to data is passed
+(forEachRef [4 5 6])  # this is also valid
+{{< /highlight_arkscript >}}
+
+### Builtins
+
 Also, we have a set of builtins functions in the language, available without importing anything ; for example `print` or `input`, which we used before.
 
 ## Closures
