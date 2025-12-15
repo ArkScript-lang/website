@@ -97,7 +97,7 @@ jobs:
       - name: Commit
         uses: github-actions-x/commit@v2.9
         with:
-          github-token: ${{ secrets.CI_GITHUB_TOKEN }}
+          github-token: ${{ secrets.WEBSITE_PUSH_COMMIT_GITHUB_TOKEN }}
           push-branch: 'master'
           commit-message: 'chore: update stdlib documentation'
           force-add: 'true'
