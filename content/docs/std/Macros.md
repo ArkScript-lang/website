@@ -3,8 +3,8 @@ title: "Macros"
 slug: "macros"
 description: ""
 summary: ""
-date: 2025-12-02T17:55:42+02:00
-lastmod: 2025-12-02T17:55:42+02:00
+date: 2025-12-15T16:54:21+02:00
+lastmod: 2025-12-15T16:54:21+02:00
 draft: false
 weight: 410
 toc: true
@@ -128,6 +128,30 @@ Iterate until the condition is truthy
 (until (= 10 (len data))
   (append! data (+ 1 (@ data -1))))
 (print data)  # [0 1 2 3 4 5 6 7 8 9]
+{{< /highlight_arkscript >}}
+
+## unpackPair
+
+---
+`(macro unpackPair (pair outx outy) (...))`
+Unpack a pair of two elements into two new variables
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `pair`: list of two elements to unpack
+- `outx`: name of the variable which will hold the first element
+- `outy`: name of the variable which will hold the second element
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [[1 2] [2 3] [5 8]])
+(list:forEach data
+  (fun (pair) {
+    (unpackPair pair x y)
+    (print (+ x y)) }))
 {{< /highlight_arkscript >}}
 
 

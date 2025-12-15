@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2025-12-02T17:55:42+02:00
-lastmod: 2025-12-02T17:55:42+02:00
+date: 2025-12-15T16:54:21+02:00
+lastmod: 2025-12-15T16:54:21+02:00
 draft: false
 weight: 410
 toc: true
@@ -87,8 +87,9 @@ Checks if the dictionary has a given key
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
-#### Parameter
+#### Parameters
 - `_D`: dictionary
+- `_key`: key to check for its presence in the dict
 
 
 #### Example
@@ -192,6 +193,7 @@ Deletes an entry from a dictionary, given a key
 `(let keys (fun (_D) (...)))`
 Returns a list of the keys of a dictionary
 
+**Note**: Keys are returned in the order they were added, unless a removal occurred
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 

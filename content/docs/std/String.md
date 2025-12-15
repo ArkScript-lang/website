@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2025-12-02T17:55:42+02:00
-lastmod: 2025-12-02T17:55:42+02:00
+date: 2025-12-15T16:54:21+02:00
+lastmod: 2025-12-15T16:54:21+02:00
 draft: false
 weight: 410
 toc: true
@@ -439,7 +439,7 @@ Get a slice of a given string, from a given index with a given length
 `(let split (fun (_string _separator) (...)))`
 Split a string in multiple substrings in a list, given a separator
 
-**Note**: Returns a list of strings. Example :
+**Note**: Returns a list of strings
 
 **Author**: [@Natendrtfm](https://github.com/Natendrtfm)
 

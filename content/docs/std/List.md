@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2025-12-02T17:55:42+02:00
-lastmod: 2025-12-02T17:55:42+02:00
+date: 2025-12-15T16:54:21+02:00
+lastmod: 2025-12-15T16:54:21+02:00
 draft: false
 weight: 410
 toc: true
@@ -53,6 +53,27 @@ Search an element in a List
 {{< highlight_arkscript >}}
 (list:find [1 2 3] 1)  # 0
 (list:find [1 2 3] 0)  # -1
+{{< /highlight_arkscript >}}
+
+## contains?
+
+---
+`(let contains? (fun (_L _x) (...)))`
+Search if an element is in a List
+
+**Note**: The original list is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `list`: the List to search in
+- `value`: the element to search
+
+
+#### Example
+{{< highlight_arkscript >}}
+(list:contains? [1 2 3] 1)  # true
+(list:contains? [1 2 3] 0)  # false
 {{< /highlight_arkscript >}}
 
 ## slice
@@ -154,19 +175,30 @@ Modify a given list and return a new one
 (list:setAt [1 2 3] 0 5)  # [5 2 3]
 {{< /highlight_arkscript >}}
 
+## stopIteration
+
+---
+`(let stopIteration <value>)`
+Value to return from functions passed to forEach, enumerate, window... to stop iteration early
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+
+
 ## forEach
 
 ---
-`(let forEach (fun (_L _func) (...)))`
+`(let forEach (fun ((ref _L) _func) (...)))`
 Iterate over a given list and run a given function on every element.
 
-**Note**: The original list is not modified.
+**Note**: The original list is not modified. Returns true if it returns early, false otherwise
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameters
 - `_L`: the list to iterate over
-- `_func`: the function to call on each element
+- `_func`: the function to call on each element. It can return list:stopIteration to stop iteration early
 
 
 #### Example
@@ -179,16 +211,16 @@ Iterate over a given list and run a given function on every element.
 ## enumerate
 
 ---
-`(let enumerate (fun (_L _func) (...)))`
+`(let enumerate (fun ((ref _L) _func) (...)))`
 Iterate over a given list and run a given function on every element, passing its index as well.
 
-**Note**: The original list is not modified.
+**Note**: The original list is not modified. Returns true if it returns early, false otherwise
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameters
 - `_L`: the list to iterate over
-- `_func`: a binary function to call on each element with (index, element)
+- `_func`: a binary function to call on each element with (index, element). It can return list:stopIteration to stop iteration early
 
 
 #### Example
@@ -201,7 +233,7 @@ Iterate over a given list and run a given function on every element, passing its
 ## product
 
 ---
-`(let product (fun (_L) (...)))`
+`(let product (fun ((ref _L)) (...)))`
 Iterate over a given list and multiply all the elements with the others.
 
 **Note**: The original list is not modified.
@@ -221,7 +253,7 @@ Iterate over a given list and multiply all the elements with the others.
 ## sum
 
 ---
-`(let sum (fun (_L) (...)))`
+`(let sum (fun ((ref _L)) (...)))`
 Iterate over a given list and sum all the elements.
 
 **Note**: The original list is not modified.
@@ -241,7 +273,7 @@ Iterate over a given list and sum all the elements.
 ## min
 
 ---
-`(let min (fun (_L) (...)))`
+`(let min (fun ((ref _L)) (...)))`
 Find the minimum in a list of numbers
 
 **Note**: The original list is not modified.
@@ -260,7 +292,7 @@ Find the minimum in a list of numbers
 ## max
 
 ---
-`(let max (fun (_L) (...)))`
+`(let max (fun ((ref _L)) (...)))`
 Find the maximum in a list of numbers
 
 **Note**: The original list is not modified.
@@ -276,10 +308,29 @@ Find the maximum in a list of numbers
 (let value (list:max [0 1 2 3 5 8]))  # 8
 {{< /highlight_arkscript >}}
 
+## median
+
+---
+`(let median (fun ((ref _L)) (...)))`
+Find the median in a list of numbers
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_L`: list of numbers
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let value (list:median [0 1 2 3 5 8]))  # 2.5
+{{< /highlight_arkscript >}}
+
 ## drop
 
 ---
-`(let drop (fun (_L _n) (...)))`
+`(let drop (fun ((ref _L) _n) (...)))`
 Drop the first n elements of a list
 
 **Note**: The original list is not modified.
@@ -300,7 +351,7 @@ Drop the first n elements of a list
 ## dropWhile
 
 ---
-`(let dropWhile (fun (_L _f) (...)))`
+`(let dropWhile (fun ((ref _L) _f) (...)))`
 Drop the first elements of a list, while they match a given predicate
 
 **Note**: The original list is not modified.
@@ -321,7 +372,7 @@ Drop the first elements of a list, while they match a given predicate
 ## filter
 
 ---
-`(let filter (fun (_L _f) (...)))`
+`(let filter (fun ((ref _L) _f) (...)))`
 Keep elements in a given list if they follow a predicate
 
 **Note**: The original list is not modified.
@@ -339,10 +390,32 @@ Keep elements in a given list if they follow a predicate
 (print (list:filter [1 2 3 4 5 6 7 8 9] math:even?))  # [2 4 6 8]
 {{< /highlight_arkscript >}}
 
+## sortByKey
+
+---
+`(let sortByKey (fun ((ref _L) _key) (...)))`
+Sort elements in a list using a function to compute the key
+
+**Note**: Use the quicksort algorithm, the original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: list to sort
+- `_key`: function called on each element of the list, returning a unique key to use for sorting
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let ranges [[3 5] [10 14] [16 20] [12 18]])
+(let sorted (sortByKey ranges (fun (e) (head e))))
+(print sorted)  # [[3 5] [10 14] [12 18] [16 20]]
+{{< /highlight_arkscript >}}
+
 ## map
 
 ---
-`(let map (fun (_L _f) (...)))`
+`(let map (fun ((ref _L) _f) (...)))`
 Apply a given function to each element of a list
 
 **Note**: The original list is not modified.
@@ -362,7 +435,7 @@ Apply a given function to each element of a list
 ## reduce
 
 ---
-`(let reduce (fun (_L _f) (...)))`
+`(let reduce (fun ((ref _L) _f) (...)))`
 Apply a function to the elements of a list to reduce it
 
 **Note**: The original list is not modified.
@@ -383,7 +456,7 @@ Apply a function to the elements of a list to reduce it
 ## flatten
 
 ---
-`(let flatten (fun (_L) (...)))`
+`(let flatten (fun ((ref _L)) (...)))`
 Flatten a list
 
 **Note**: The original list is not modified.
@@ -403,7 +476,7 @@ Flatten a list
 ## flatMap
 
 ---
-`(let flatMap (fun (_L _f) (...)))`
+`(let flatMap (fun ((ref _L) _f) (...)))`
 Apply a given function to each element of a list and then flatten it
 
 **Note**: The original list is not modified.
@@ -424,7 +497,7 @@ Apply a given function to each element of a list and then flatten it
 ## take
 
 ---
-`(let take (fun (_L _n) (...)))`
+`(let take (fun ((ref _L) (mut _n)) (...)))`
 Take the first n elements of
 
 **Note**: The original list is not modified.
@@ -444,7 +517,7 @@ Take the first n elements of
 ## takeWhile
 
 ---
-`(let takeWhile (fun (_L _f) (...)))`
+`(let takeWhile (fun ((ref _L) _f) (...)))`
 Take the first n elements of a list, given a predicate
 
 **Note**: The original list is not modified.
@@ -464,7 +537,7 @@ Take the first n elements of a list, given a predicate
 ## partition
 
 ---
-`(let partition (fun (_L _f) (...)))`
+`(let partition (fun ((ref _L) _f) (...)))`
 Partition a list in two, given a predicate
 
 **Note**: The original list is not modified.
@@ -485,7 +558,7 @@ Partition a list in two, given a predicate
 ## unzip
 
 ---
-`(let unzip (fun (_L) (...)))`
+`(let unzip (fun ((ref _L)) (...)))`
 Unzip a list of [[a b] [c d]...] into [[a c ...] [b d ...]]
 
 **Note**: The original list is not modified.
@@ -505,7 +578,7 @@ Unzip a list of [[a b] [c d]...] into [[a c ...] [b d ...]]
 ## zip
 
 ---
-`(let zip (fun (_a _b) (...)))`
+`(let zip (fun ((ref _a) (ref _b)) (...)))`
 Zip two lists into one: [1 2 3 4] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [4 8]]
 
 **Note**: The original lists are not modified.
@@ -527,7 +600,7 @@ Zip two lists into one: [1 2 3 4] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [4 
 ## zipWithIndex
 
 ---
-`(let zipWithIndex (fun (_L) (...)))`
+`(let zipWithIndex (fun ((ref _L)) (...)))`
 Zip a list elements with their index. [5 6 7 8] will give [[0 5] [1 6] [2 7] [3 8]]
 
 **Note**: The original list is not modified.
@@ -547,7 +620,7 @@ Zip a list elements with their index. [5 6 7 8] will give [[0 5] [1 6] [2 7] [3 
 ## foldLeft
 
 ---
-`(let foldLeft (fun (_L _init _f) (...)))`
+`(let foldLeft (fun ((ref _L) _init _f) (...)))`
 Fold a given list, starting from the left side
 
 **Note**: The original list is not modified.
@@ -569,7 +642,7 @@ Fold a given list, starting from the left side
 ## forAll
 
 ---
-`(let forAll (fun (_L _f) (...)))`
+`(let forAll (fun ((ref _L) _f) (...)))`
 Check if a condition is verified for all elements of a list
 
 
@@ -590,7 +663,7 @@ Check if a condition is verified for all elements of a list
 ## any
 
 ---
-`(let any (fun (_L _f) (...)))`
+`(let any (fun ((ref _L) _f) (...)))`
 Check if a condition if verified for one or more elements of a list
 
 
@@ -611,7 +684,7 @@ Check if a condition if verified for one or more elements of a list
 ## none
 
 ---
-`(let none (fun (_L _f) (...)))`
+`(let none (fun ((ref _L) _f) (...)))`
 Check if a condition can't be verified for any element of a list
 
 
@@ -633,7 +706,7 @@ Check if a condition can't be verified for any element of a list
 ## countIf
 
 ---
-`(let countIf (fun (_L _f) (...)))`
+`(let countIf (fun ((ref _L) _f) (...)))`
 Count the number of elements in a list that match a condition
 
 
@@ -694,7 +767,7 @@ Generate a sequence of numbers
 ## chunkBy
 
 ---
-`(let chunkBy (fun (_L _length) (...)))`
+`(let chunkBy (fun ((ref _L) _length) (...)))`
 Chunk a list in sub-lists of size n
 
 
@@ -714,7 +787,7 @@ Chunk a list in sub-lists of size n
 ## insert
 
 ---
-`(let insert (fun (_L _index _value) (...)))`
+`(let insert (fun ((ref _L) _index (mut _value)) (...)))`
 Insert an element (or expand a list) at a given position inside a list
 
 **Note**: The original list is not modified
@@ -740,17 +813,17 @@ Insert an element (or expand a list) at a given position inside a list
 ## window
 
 ---
-`(let window (fun (_L _size _f) (...)))`
+`(let window (fun ((ref _L) _size _f) (...)))`
 Create a sliding window of a given size on a list
 
-**Note**: The original list is not modified
+**Note**: The original list is not modified. Returns true if it returns early, false otherwise
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameters
 - `_L`: list to iterate over
 - `_size`: window size, must be at least 1
-- `_f`: function to call with the window
+- `_f`: function to call with the window. It can return list:stopIteration to stop iteration early
 
 
 #### Example
@@ -760,6 +833,46 @@ Create a sliding window of a given size on a list
 # [1 2 3]
 # [2 3 4]
 # [3 4 5]
+{{< /highlight_arkscript >}}
+
+## transpose
+
+---
+`(let transpose (fun (_L) (...)))`
+Transpose a list of lists or list of strings
+
+**Note**: The original list is not modified. Each element should have the same length
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_L`: list of lists/strings to transpose
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [[1 2 3] [4 5 6] [7 8 9])
+(print (list:transpose data))  # [[1 4 7] [2 5 8] [3 6 9]]
+{{< /highlight_arkscript >}}
+
+## unique
+
+---
+`(let unique (fun ((ref _L)) (...)))`
+Get the unique values in a given list
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_L`: list to extract unique values from
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [1 1 2 3 4 3 4 5])
+(print (list:unique data))  # [1 2 3 4 5]
 {{< /highlight_arkscript >}}
 
 

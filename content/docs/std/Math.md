@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2025-12-02T17:55:42+02:00
-lastmod: 2025-12-02T17:55:42+02:00
+date: 2025-12-15T16:54:21+02:00
+lastmod: 2025-12-15T16:54:21+02:00
 draft: false
 weight: 410
 toc: true
@@ -544,6 +544,17 @@ Decrement a given number by 1
 
 
 
+## negate
+
+---
+`(let negate (fun (_x) (...)))`
+Multiply a number by -1, turning positive numbers negative and negative numbers positive
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+
+
 ## pow
 
 ---
@@ -892,6 +903,29 @@ Compute the dot product of two vectors
 #### Example
 {{< highlight_arkscript >}}
 (print (math:dotProduct [1 2 3] [4 5 6]))  # 32
+{{< /highlight_arkscript >}}
+
+## improvementRatioPercentage
+
+---
+`(let improvementRatioPercentage (fun (_a _b) (...)))`
+Compute a percentage of how much b is better than a
+
+**Note**: Returns a positive number when _a is bigger than _b, negative otherwise
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_a`: the base
+- `_b`: new measure to compare
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let base 55)  # something takes 55ms to run
+(let new 43)  # now it takes 43ms
+(print (math:improvementRatioPercentage base new))  # 27.9069767442
+# 'base' is 27%~ slower than 'new'
 {{< /highlight_arkscript >}}
 
 
