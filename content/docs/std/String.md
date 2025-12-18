@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2025-12-15T18:03:28+02:00
-lastmod: 2025-12-15T18:03:28+02:00
+date: 2025-12-18T07:15:32+02:00
+lastmod: 2025-12-18T07:15:32+02:00
 draft: false
 weight: 410
 toc: true
@@ -570,6 +570,124 @@ Strip the margin of a multiline string
        |abc
        |def")
 (string:stripMargin s)
+{{< /highlight_arkscript >}}
+
+## startsWith?
+
+---
+`(let startsWith? (fun (_str _prefix) (...)))`
+Check if a string starts with a given prefix
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_str`: string
+- `_prefix`: prefix to look for
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:startsWith? "Hello, world" "Hell"))  # true
+(print (string:startsWith? "Hello, world" ", world"))  # false
+{{< /highlight_arkscript >}}
+
+## endsWith?
+
+---
+`(let endsWith? (fun (_str _suffix) (...)))`
+Check if a string ends with a given suffix
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_str`: string
+- `_suffix`: suffix to look for
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:endsWith? "Hello, world" "ld"))  # true
+(print (string:endsWith? "Hello, world" "worl"))  # false
+{{< /highlight_arkscript >}}
+
+## zfill
+
+---
+`(let zfill (fun (_str _n) (...)))`
+Return a string filled with '0' digits to make a string of length _n
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_str`: string to left fill
+- `_n`: width of the final string
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:zfill "42" 4))  # 0042
+{{< /highlight_arkscript >}}
+
+## center
+
+---
+`(let center (fun (_str _len) (...)))`
+Return a centered string of length _len, using spaces as fill chars
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_str`: string to center
+- `_len`: width of the final string
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:center "ArkScript" 15))  # "   ArkScript   "
+{{< /highlight_arkscript >}}
+
+## removePrefix
+
+---
+`(let removePrefix (fun (_str _prefix) (...)))`
+If a string starts with a given prefix, remove it
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_str`: string
+- `_prefix`: prefix to remove
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:removePrefix "TestCase" "Test"))  # Case
+(print (string:removePrefix "BaseTestCase" "Test"))  # BaseTestCase
+{{< /highlight_arkscript >}}
+
+## removeSuffix
+
+---
+`(let removeSuffix (fun (_str _suffix) (...)))`
+If a string ends with a given suffix, remove it
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_str`: string
+- `_suffix`: suffix to remove
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:removeSuffix "TestCase" "Case"))  # Test
+(print (string:removeSuffix "BaseTestCase" "Test"))  # BaseTestCase
 {{< /highlight_arkscript >}}
 
 

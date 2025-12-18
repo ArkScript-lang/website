@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2025-12-15T18:03:28+02:00
-lastmod: 2025-12-15T18:03:28+02:00
+date: 2025-12-18T07:15:32+02:00
+lastmod: 2025-12-18T07:15:32+02:00
 draft: false
 weight: 410
 toc: true
@@ -595,6 +595,29 @@ Zip two lists into one: [1 2 3 4] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [4 
 (let a [1 2 3 4])
 (let b [5 6 7 8])
 (print (list:zip a b))  # [[1 5] [2 6] [3 7] [4 8]]
+{{< /highlight_arkscript >}}
+
+## zipLongest
+
+---
+`(let zipLongest (fun ((ref _a) (ref _b) _filler) (...)))`
+Zip two lists into one, using a filler is one list is shorter: [1 2 3] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [0 8]]
+
+**Note**: The original lists are not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_a`: the first list to work on
+- `_b`: the second list to work on
+- `_filler`: value to use if there is not enough items in one of the lists
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let a [1 2 3])
+(let b [5 6 7 8])
+(print (list:zipLongest a b 0))  # [[1 5] [2 6] [3 7] [0 8]]
 {{< /highlight_arkscript >}}
 
 ## zipWithIndex

@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2025-12-15T18:03:28+02:00
-lastmod: 2025-12-15T18:03:28+02:00
+date: 2025-12-18T07:15:32+02:00
+lastmod: 2025-12-18T07:15:32+02:00
 draft: false
 weight: 410
 toc: true
@@ -691,7 +691,7 @@ Returns the logarithm base 10 of a number
 
 ---
 `(let floordiv (fun (a b) (...)))`
-Returns the quotient of the euclidian division of a and b
+Returns the quotient of the euclidean division of a and b
 
 
 **Author**: [@fabien-zoccola](https://github.com/fabien-zoccola)
@@ -926,6 +926,204 @@ Compute a percentage of how much b is better than a
 (let new 43)  # now it takes 43ms
 (print (math:improvementRatioPercentage base new))  # 27.9069767442
 # 'base' is 27%~ slower than 'new'
+{{< /highlight_arkscript >}}
+
+## copySign
+
+---
+`(let copySign (fun (_x) (...)))`
+Copy the sign of a given number
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_x`: number
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (math:copySign 5))  # 1
+(print (math:copySign -3))  # -1
+{{< /highlight_arkscript >}}
+
+## radians
+
+---
+`(let radians (fun (_degrees) (...)))`
+Convert an angle in degrees to radians
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_degrees`: angle in degrees
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (math:radians 90))   # pi/2
+{{< /highlight_arkscript >}}
+
+## degrees
+
+---
+`(let degrees (fun (_radians) (...)))`
+Convert an angle in radians to degrees
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_radians`: angle in radians
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (math:radians (/ math:pi 2)))   # 90
+{{< /highlight_arkscript >}}
+
+## integer?
+
+---
+`(let integer? (fun (_x) (...)))`
+Check if a given number is an integer
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_x`: number
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (math:integer 1))   # true
+(print (math:integer 1.000001))   # false
+{{< /highlight_arkscript >}}
+
+## factorial
+
+---
+`(let factorial (fun ((mut _n)) (...)))`
+Compute the factorial of a number
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_n`: integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (math:factorial 5))   # 120
+{{< /highlight_arkscript >}}
+
+## binomialCoeff
+
+---
+`(let binomialCoeff (fun (_n _k) (...)))`
+Compute the binomial coefficient (n k)
+
+**Note**: Evaluates to n! / (k! * (n - k)!) when k <= n and evaluates to zero when k > n.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_n`: total number of items
+- `_k`: number of items that will be picked
+
+
+
+## permutations
+
+---
+`(let permutations (fun (_n _k) (...)))`
+Compute the number of ways to choose k items from n items without repetition and with order
+
+**Note**: Evaluates to n! / (n - k)! when k <= n and evaluates to zero when k > n.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_n`: total number of items
+- `_k`: number of items to pick
+
+
+
+## close?
+
+---
+`(let close? (fun (_n _target) (...)))`
+Compare two real numbers and return true if the first one is near the second one (1e-7 precision)
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_n`: first number
+- `_target`: target number
+
+
+
+## euclideanDistance
+
+---
+`(let euclideanDistance (fun (_a _b) (...)))`
+Compute the euclidean distance between two vectors of the same size
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_a`: first vector, eg [1 4]
+- `_b`: second vector, eg [5 8]
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let v1 [1 2 3])
+(let v2 [7 9 8])
+(print (math:euclideanDistance v1 v2))  # 10.488088481701517
+{{< /highlight_arkscript >}}
+
+## gcd
+
+---
+`(let gcd (fun (_a _b) (...)))`
+Compute the greatest common divisor of two numbers
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_a`: number
+- `_b`: number
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (math:gcd 48 18))  # 6
+{{< /highlight_arkscript >}}
+
+## lcm
+
+---
+`(let lcm (fun (_a _b) (...)))`
+Compute the least common multiplier of two numbers
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_a`: number
+- `_b`: number
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (math:lcm 4 6))  # 12
 {{< /highlight_arkscript >}}
 
 
