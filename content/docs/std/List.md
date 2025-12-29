@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2025-12-18T07:15:32+02:00
-lastmod: 2025-12-18T07:15:32+02:00
+date: 2025-12-29T16:53:24+02:00
+lastmod: 2025-12-29T16:53:24+02:00
 draft: false
 weight: 410
 toc: true
@@ -120,7 +120,7 @@ Sort a List and return a new one
 ## fill
 
 ---
-`(let fill (fun (_val _count) (...)))`
+`(let fill (fun (_count _val) (...)))`
 Generate a List of n copies of an element
 
 
@@ -327,48 +327,6 @@ Find the median in a list of numbers
 (let value (list:median [0 1 2 3 5 8]))  # 2.5
 {{< /highlight_arkscript >}}
 
-## drop
-
----
-`(let drop (fun ((ref _L) _n) (...)))`
-Drop the first n elements of a list
-
-**Note**: The original list is not modified.
-
-**Authors**: [@rstefanic](https://github.com/rstefanic), [@SuperFola](https://github.com/SuperFola)
-
-#### Parameters
-- `_L`: the list to work on
-- `_n`: the number of elements to drop
-
-
-#### Example
-{{< highlight_arkscript >}}
-(let cool-stuff [1 2 3 4 5 6 7 8 9])
-(print (list:drop cool-stuff 4))  # [5 6 7 8 9]
-{{< /highlight_arkscript >}}
-
-## dropWhile
-
----
-`(let dropWhile (fun ((ref _L) _f) (...)))`
-Drop the first elements of a list, while they match a given predicate
-
-**Note**: The original list is not modified.
-
-**Author**: [@SuperFola](https://github.com/SuperFola)
-
-#### Parameters
-- `_L`: the list to work on
-- `_f`: the predicate
-
-
-#### Example
-{{< highlight_arkscript >}}
-(let cool-stuff [1 2 3 4 5 6 7 8 9])
-(print (list:dropWhile cool-stuff (fun (a) (< a 4))))  # [4 5 6 7 8 9]
-{{< /highlight_arkscript >}}
-
 ## filter
 
 ---
@@ -430,6 +388,28 @@ Apply a given function to each element of a list
 #### Example
 {{< highlight_arkscript >}}
 (print (list:map [1 2 3 4 5 6 7 8 9] (fun (e) (* e e))))  # [1 4 9 25 36 49 64 81]
+{{< /highlight_arkscript >}}
+
+## foldLeft
+
+---
+`(let foldLeft (fun ((ref _L) _init _f) (...)))`
+Fold a given list, starting from the left side
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the list to work on
+- `_init`: an init value
+- `_f`: a function to apply to the list
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let a [1 2 3 4])
+(print (list:foldLeft a 0 (fun (a b) (+ a b))))  # 10
 {{< /highlight_arkscript >}}
 
 ## reduce
@@ -532,6 +512,48 @@ Take the first n elements of a list, given a predicate
 #### Example
 {{< highlight_arkscript >}}
 (print (list:takeWhile [1 2 3 4 5 6 7 8 9 10] (fun (a) (< a 4))))  # [1 2 3]
+{{< /highlight_arkscript >}}
+
+## drop
+
+---
+`(let drop (fun ((ref _L) _n) (...)))`
+Drop the first n elements of a list
+
+**Note**: The original list is not modified.
+
+**Authors**: [@rstefanic](https://github.com/rstefanic), [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the list to work on
+- `_n`: the number of elements to drop
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let cool-stuff [1 2 3 4 5 6 7 8 9])
+(print (list:drop cool-stuff 4))  # [5 6 7 8 9]
+{{< /highlight_arkscript >}}
+
+## dropWhile
+
+---
+`(let dropWhile (fun ((ref _L) _f) (...)))`
+Drop the first elements of a list, while they match a given predicate
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the list to work on
+- `_f`: the predicate
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let cool-stuff [1 2 3 4 5 6 7 8 9])
+(print (list:dropWhile cool-stuff (fun (a) (< a 4))))  # [4 5 6 7 8 9]
 {{< /highlight_arkscript >}}
 
 ## partition
@@ -638,28 +660,6 @@ Zip a list elements with their index. [5 6 7 8] will give [[0 5] [1 6] [2 7] [3 
 {{< highlight_arkscript >}}
 (let a [5 6 7 8])
 (print (list:zipWithIndex a))  # [[0 5] [1 6] [2 7] [3 8]]
-{{< /highlight_arkscript >}}
-
-## foldLeft
-
----
-`(let foldLeft (fun ((ref _L) _init _f) (...)))`
-Fold a given list, starting from the left side
-
-**Note**: The original list is not modified.
-
-**Author**: [@SuperFola](https://github.com/SuperFola)
-
-#### Parameters
-- `_L`: the list to work on
-- `_init`: an init value
-- `_f`: a function to apply to the list
-
-
-#### Example
-{{< highlight_arkscript >}}
-(let a [1 2 3 4])
-(print (list:foldLeft a 0 (fun (a b) (+ a b))))  # 10
 {{< /highlight_arkscript >}}
 
 ## forAll
@@ -896,6 +896,82 @@ Get the unique values in a given list
 {{< highlight_arkscript >}}
 (let data [1 1 2 3 4 3 4 5])
 (print (list:unique data))  # [1 2 3 4 5]
+{{< /highlight_arkscript >}}
+
+## select
+
+---
+`(let select (fun ((ref _L) (ref _indices)) (...)))`
+Create a new list from a list of values and indices to get from the first list
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: list to get values from
+- `_indices`: list of indices of values in _L
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [1 1 2 3 4 3 4 5])
+(print (list:select data [0 0 0]))  # [1 1 1]
+(print (list:select data [0 2 3 4]))  # [1 2 3 4]
+{{< /highlight_arkscript >}}
+
+## permutations
+
+---
+`(let permutations (fun ((ref _L) _r _f) (...)))`
+Compute permutations of length _r from a given list
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: list to get values from
+- `_r`: number of elements per permutation
+- `_f`: function to call on each permutation. It can return list:stopIteration to stop iteration early
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [0 1 2 3])
+(list:permutations data 3 (fun (perm) (print perm)))
+# [0 1 2]
+# [0 1 3]
+# [0 2 3]
+# [1 2 3]
+{{< /highlight_arkscript >}}
+
+## permutations_with_replacement
+
+---
+`(let permutations_with_replacement (fun ((ref _L) _r _f) (...)))`
+Compute permutations of length _r from a given list, allowing individual elements to be repeated more than once
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: list to get values from
+- `_r`: number of elements per permutation
+- `_f`: function to call on each permutation. It can return list:stopIteration to stop iteration early
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [0 1 2])
+(list:permutations_with_replacement data 2 (fun (perm) (print perm)))
+# [0 0]
+# [0 1]
+# [0 2]
+# [1 1]
+# [1 2]
+# [2 2]
 {{< /highlight_arkscript >}}
 
 
