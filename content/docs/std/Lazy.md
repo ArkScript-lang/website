@@ -3,8 +3,8 @@ title: "Lazy"
 slug: "lazy"
 description: ""
 summary: ""
-date: 2025-12-29T16:53:24+02:00
-lastmod: 2025-12-29T16:53:24+02:00
+date: 2025-12-29T17:11:30+02:00
+lastmod: 2025-12-29T17:11:30+02:00
 draft: false
 weight: 410
 toc: true

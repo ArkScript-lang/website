@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2025-12-29T16:53:24+02:00
-lastmod: 2025-12-29T16:53:24+02:00
+date: 2025-12-29T17:11:30+02:00
+lastmod: 2025-12-29T17:11:30+02:00
 draft: false
 weight: 410
 toc: true
@@ -564,7 +564,7 @@ Partition a list in two, given a predicate
 
 **Note**: The original list is not modified.
 
-**Author**: [@rakista112](https://github.com/rakista112)
+**Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameters
 - `_L`: the list to work on
@@ -623,7 +623,7 @@ Zip two lists into one: [1 2 3 4] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [4 
 
 ---
 `(let zipLongest (fun ((ref _a) (ref _b) _filler) (...)))`
-Zip two lists into one, using a filler is one list is shorter: [1 2 3] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [0 8]]
+Zip two lists into one, using a filler if one list is shorter: [1 2 3] and [5 6 7 8] will return [[1 5] [2 6] [3 7] [0 8]]
 
 **Note**: The original lists are not modified.
 
@@ -946,10 +946,10 @@ Compute permutations of length _r from a given list
 # [1 2 3]
 {{< /highlight_arkscript >}}
 
-## permutations_with_replacement
+## permutationsWithReplacement
 
 ---
-`(let permutations_with_replacement (fun ((ref _L) _r _f) (...)))`
+`(let permutationsWithReplacement (fun ((ref _L) _r _f) (...)))`
 Compute permutations of length _r from a given list, allowing individual elements to be repeated more than once
 
 **Note**: The original list is not modified.
@@ -965,7 +965,7 @@ Compute permutations of length _r from a given list, allowing individual element
 #### Example
 {{< highlight_arkscript >}}
 (let data [0 1 2])
-(list:permutations_with_replacement data 2 (fun (perm) (print perm)))
+(list:permutationsWithReplacement data 2 (fun (perm) (print perm)))
 # [0 0]
 # [0 1]
 # [0 2]
