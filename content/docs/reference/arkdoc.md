@@ -26,6 +26,9 @@ ArkDoc is a documentation generator for ArkScript, based on comments.
 # @param _L the list to iterate over
 # @param _func the function to call on each element
 # @details The original list is left unmodified.
+# @deprecated This function is deprecated because I felt like it
+# @changed 1.0.0 `forEach` is now a function instead of a macro
+# @changed 2.0.0 `forEach` does not modify the list
 # =begin
 # (import std.List)
 # (let collection [1 2 5 12])
