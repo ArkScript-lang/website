@@ -2,6 +2,7 @@
 title: "ArkScript"
 description: ""
 lead: "A small, lisp-inspired, functional scripting language"
+summary: "A small, lisp-inspired, functional scripting language\n\n[Learning ArkScript](/docs/tutorials/language/) – [Source code](https://github.com/ArkScript-lang/Ark)"
 date: 2023-09-07T16:33:54+02:00
 lastmod: 2023-09-07T16:33:54+02:00
 draft: false

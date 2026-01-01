@@ -15,12 +15,14 @@
             <a href="{{ .Permalink }}" target="_top">{{ .Title }}</a>
         </p>
         <div class="hugo-embed-excerpt">
-            {{ .Summary }}...
+            {{ .Summary }}
         </div>
         <div class="hugo-embed-footer">
             <div class="hugo-embed-site-title">
                 <a href="{{ .Site.BaseURL }}" target="_top">
-                    <img src="/images/oembed-icon.png" width="32" height="32" alt="{{ .Site.Title }}" class="hugo-embed-site-icon"/>
+                    {{ with resources.Get "favicon.png" }}
+                        <img src="{{ .RelPermalink }}" id="homepage-logo" alt="ArkScript logo" width="32" height="32" class="hugo-embed-site-icon" />
+                    {{ end }}
                     <span>{{ .Site.Title }}</span>
                 </a>
             </div>
