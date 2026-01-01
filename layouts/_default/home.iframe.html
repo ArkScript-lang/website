@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+    <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+    <base target="_top" />
+    <style>
+        {{ partial "oembed.css" . | safeCSS }}
+    </style>
+    <meta name="robots" content="noindex, follow"/>
+    <link rel="canonical" href="{{ .Permalink }}" />
+</head>
+<body class="hugo hugo-embed-responsive">
+    <div class="hugo-embed">
+        <p class="hugo-embed-heading">
+            <a href="{{ .Permalink }}" target="_top">{{ .Title }}</a>
+        </p>
+        <div class="hugo-embed-excerpt">
+            A small, lisp-inspired, functional scripting language
+        </div>
+        <div class="hugo-embed-footer">
+            <div class="hugo-embed-site-title">
+                <a href="{{ .Site.BaseURL }}" target="_top">
+                    {{ with resources.Get "images/Ark-slim-logo.png" }}
+                        <img src="{{ .RelPermalink }}" id="homepage-logo" alt="ArkScript logo" width="32" height="32" alt="{{ .Site.Title }}" class="hugo-embed-site-icon" />
+                        <span>{{ .Site.Title }}</span>
+                    {{ end }}
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

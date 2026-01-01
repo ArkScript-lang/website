@@ -4,8 +4,13 @@
   "provider_url": "{{ .Site.BaseURL }}",
   "type": "rich",
   "title": "{{ .Title }} | {{ .Site.Title }}",
+  "type": "rich",
+  "width": 600,
+  "height": 338,
+  "thumbnail_url": "{{ .Site.BaseURL }}/cover.png",
+  "thumbnail_width": 600,
+  "thumbnail_height": 338,
   "url": "{{ .Permalink }}",
-  "author_name": "{{ if .Params.author }}{{ .Params.author }}{{ else }}Anonymous{{ end }}",
   "html": "<iframe src=\"{{ .Permalink }}iframe.html\" width=\"600\" height=\"200\" title=\"{{ .Title }}\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" class=\"hugo-embedded-content\"></iframe>"
 }
 
