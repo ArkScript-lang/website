@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2026-01-01T00:55:59+02:00
-lastmod: 2026-01-01T00:55:59+02:00
+date: 2026-01-01T17:04:20+02:00
+lastmod: 2026-01-01T17:04:20+02:00
 draft: false
 weight: 410
 toc: true
@@ -448,7 +448,8 @@ Return true if the number is even, false otherwise
 `(let even <value>)`
 Return true if the number is even, false otherwise
 
-**Note**: **Deprecated, use `even?`**
+**Deprecated**: Use `math:even?`
+
 
 **Author**: [@rstefanic](https://github.com/rstefanic)
 
@@ -477,7 +478,8 @@ Return true if the number is odd, false otherwise
 `(let odd <value>)`
 Return true if the number is odd, false otherwise
 
-**Note**: **Deprecated, use `odd?`**
+**Deprecated**: Use `math:odd?`
+
 
 **Author**: [@rstefanic](https://github.com/rstefanic)
 
@@ -552,6 +554,9 @@ Multiply a number by -1, turning positive numbers negative and negative numbers 
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_x`: number
 
 
 

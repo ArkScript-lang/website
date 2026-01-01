@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2026-01-01T00:55:59+02:00
-lastmod: 2026-01-01T00:55:59+02:00
+date: 2026-01-01T17:04:20+02:00
+lastmod: 2026-01-01T17:04:20+02:00
 draft: false
 weight: 410
 toc: true
@@ -105,7 +105,8 @@ Checks if the dictionary has a given key
 `(let contains <value>)`
 Checks if the dictionary has a given key
 
-**Note**: **Deprecated, use `contains?`**
+**Deprecated**: Use `dict:contains?`
+
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
