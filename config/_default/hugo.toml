@@ -23,23 +23,33 @@ copyRight = "Copyright (c) Lex Plt"
   enable = true
 
 [outputs]
-  home = ["HTML", "RSS", "searchIndex"]
+  home = ["HTML", "RSS", "searchIndex", "iframe", "oembed"]
+  page = ["HTML", "iframe", "oembed"]
   section = ["HTML", "RSS", "SITEMAP"]
 
-[outputFormats.searchIndex]
-  mediaType = "application/json"
-  baseName = "search-index"
-  isPlainText = true
-  notAlternative = true
-
-# Add output format for section sitemap.xml
-[outputFormats.SITEMAP]
-  mediaType = "application/xml"
-  baseName = "sitemap"
-  isHTML = false
-  isPlainText = true
-  noUgly = true
-  rel  = "sitemap"
+[outputFormats]
+  [outputFormats.iframe]
+    name = "iframe"
+    baseName = "iframe"
+    mediaType = "text/html"
+    isHTML = true
+  [outputFormats.oembed]
+    name = "oembed"
+    baseName = "oembed"
+    mediaType = "application/json"
+    isPlainText = true
+  [outputFormats.searchIndex]
+    mediaType = "application/json"
+    baseName = "search-index"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.SITEMAP]
+    mediaType = "application/xml"
+    baseName = "sitemap"
+    isHTML = false
+    isPlainText = true
+    noUgly = true
+    rel  = "sitemap"
 
 [sitemap]
   changefreq = "monthly"

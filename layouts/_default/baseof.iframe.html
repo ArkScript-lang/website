@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+    <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+    <base target="_top" />
+    <style>
+        {{ partial "oembed.css" . | safeCSS }}
+    </style>
+    <meta name="robots" content="noindex, follow"/>
+    <link rel="canonical" href="{{ .Permalink }}" />
+</head>
+<body class="hugo hugo-embed-responsive">
+    <div class="hugo-embed">
+        <p class="hugo-embed-heading">
+            <a href="{{ .Permalink }}" target="_top">{{ .Title }}</a>
+        </p>
+        <div class="hugo-embed-excerpt">
+            {{ .Summary }}...
+        </div>
+        <div class="hugo-embed-footer">
+            <div class="hugo-embed-site-title">
+                <a href="{{ .Site.BaseURL }}" target="_top">
+                    <img src="/images/oembed-icon.png" width="32" height="32" alt="{{ .Site.Title }}" class="hugo-embed-site-icon"/>
+                    <span>{{ .Site.Title }}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,1 +1,5 @@
 <!-- Custom head -->
+{{ if .OutputFormats.Get "OEMBED" }}
+<link href="{{ with .OutputFormats.Get "OEMBED" }}{{ .Permalink }}{{ end }}" rel="alternate" type="application/json+oembed" title="{{ .Title }}" />
+{{ end }}
+
