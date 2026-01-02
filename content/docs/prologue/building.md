@@ -23,9 +23,9 @@ You can choose to build the project from source (which requires some knowledge l
 
 *This step is optional*
 
-You can create an environment variable named `ARKSCRIPT_PATH`, with the path to the installation directory of ArkScript, so that the standard library can be located without using `--lib <path>`.
-
+1. You can create an environment variable `ARKSCRIPT_PATH`, with the path to the installation directory of ArkScript, so that the standard library can be located without using `--lib <path>`.  
 The environment variable should direct to a folder with the folder `lib/` inside. Multiple path can be provided if your installation separates the modules and the standard library, by separating the different paths with a single `;`.
+2. You can create an environment variable `ARKSCRIPT_REPL_STARTUP`, with the path to a single `.ark` file that will be loaded each time you use the REPL. Useful to preload your favorite libraries!
 
 ## Installing from a release
 
