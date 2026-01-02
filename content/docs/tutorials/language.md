@@ -333,7 +333,7 @@ Here we'll explain the non-obvious ones:
 - `[1] -> 1`,
 - `[1 2 3] -> 1`.
 
-**`(empty? a-list)`** returns true if the list (or string) is empty, false otherwise.
+**`(empty? a-list)`** returns true if the list (or string) is empty (or the value is `nil`), false otherwise.
 
 **`(nil? a-list)`** will always return false as a list isn't nil (which is the void value, returned by `head`).
 
