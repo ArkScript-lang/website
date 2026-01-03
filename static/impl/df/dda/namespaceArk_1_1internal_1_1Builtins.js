@@ -4,6 +4,9 @@ var namespaceArk_1_1internal_1_1Builtins =
       [ "ARK_BUILTIN", "de/d5a/namespaceArk_1_1internal_1_1Builtins_1_1Async.html#a50173131089f1b1f0f69c19b707d37a7", null ],
       [ "ARK_BUILTIN", "de/d5a/namespaceArk_1_1internal_1_1Builtins_1_1Async.html#acbd1e5e5b94f689fbfd746d840fbfb82", null ]
     ] ],
+    [ "Bytecode", "d9/ddf/namespaceArk_1_1internal_1_1Builtins_1_1Bytecode.html", [
+      [ "ARK_BUILTIN", "d9/ddf/namespaceArk_1_1internal_1_1Builtins_1_1Bytecode.html#aba9f61ca26b73c54ee049a59d5eb74ad", null ]
+    ] ],
     [ "Dict", "d7/dff/namespaceArk_1_1internal_1_1Builtins_1_1Dict.html", [
       [ "ARK_BUILTIN", "d7/dff/namespaceArk_1_1internal_1_1Builtins_1_1Dict.html#a343b357f75aa4ca71cd88ba90568b75b", null ],
       [ "ARK_BUILTIN", "d7/dff/namespaceArk_1_1internal_1_1Builtins_1_1Dict.html#afdf3f7667425f155a55ae7aa0e855ca4", null ],
@@ -23,6 +26,7 @@ var namespaceArk_1_1internal_1_1Builtins =
       [ "ARK_BUILTIN", "dc/d9d/namespaceArk_1_1internal_1_1Builtins_1_1IO.html#ac1776e8501afbaef1bc25e6136e02157", null ],
       [ "ARK_BUILTIN", "dc/d9d/namespaceArk_1_1internal_1_1Builtins_1_1IO.html#a5f803969b4f73453424247e03c736796", null ],
       [ "ARK_BUILTIN", "dc/d9d/namespaceArk_1_1internal_1_1Builtins_1_1IO.html#ab0c6cb546c5c0fbec01958ee133aed50", null ],
+      [ "ARK_BUILTIN", "dc/d9d/namespaceArk_1_1internal_1_1Builtins_1_1IO.html#a9c2dc6ff31c46147e3b4e677b96d5dc1", null ],
       [ "ARK_BUILTIN", "dc/d9d/namespaceArk_1_1internal_1_1Builtins_1_1IO.html#adf7b42f49f66ae51956e92f2a277ef60", null ],
       [ "ARK_BUILTIN", "dc/d9d/namespaceArk_1_1internal_1_1Builtins_1_1IO.html#a32bed035c5af569df08e0de0b14b2b67", null ]
     ] ],

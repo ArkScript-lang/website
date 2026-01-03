@@ -26,8 +26,10 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/VM/VM.hpp"
   Node8 -> Node10 [id="edge10_Node000008_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node10 [id="Node000010",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkscript\l/main.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d46/arkscript_2main_8cpp.html",tooltip=" "];
   Node1 -> Node11 [id="edge11_Node000001_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node11 [id="Node000011",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Future.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dc9/Future_8cpp.html",tooltip=" "];
-  Node1 -> Node7 [id="edge12_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node1 -> Node12 [id="edge13_Node000001_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node12 [id="Node000012",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Value/Closure.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/db2/Closure_8cpp.html",tooltip=" "];
+  Node11 [id="Node000011",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/TypeChecker.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/d9a/TypeChecker_8cpp.html",tooltip=" "];
+  Node1 -> Node12 [id="edge12_Node000001_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Future.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dc9/Future_8cpp.html",tooltip=" "];
+  Node1 -> Node7 [id="edge13_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node13 [id="edge14_Node000001_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Value/Closure.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/db2/Closure_8cpp.html",tooltip=" "];
 }

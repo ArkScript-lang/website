@@ -115,6 +115,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ad118d1d8638f4aef70005ff1e6dff1" id="r_a5ad118d1d8638f4aef70005ff1e6dff1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ad118d1d8638f4aef70005ff1e6dff1">isTargetLine</a> () const</td></tr>
 <tr class="memdesc:a5ad118d1d8638f4aef70005ff1e6dff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if we printed the target line.  <br /></td></tr>
 <tr class="separator:a5ad118d1d8638f4aef70005ff1e6dff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6461571ced513b47d3621980cd50fe3" id="r_ae6461571ced513b47d3621980cd50fe3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6461571ced513b47d3621980cd50fe3">isNextLineTheFirstLineOfTarget</a> () const</td></tr>
+<tr class="separator:ae6461571ced513b47d3621980cd50fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5042396278b265d875e31d5809fa0264" id="r_a5042396278b265d875e31d5809fa0264"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5042396278b265d875e31d5809fa0264">isLastLineOfTarget</a> () const</td></tr>
+<tr class="separator:a5042396278b265d875e31d5809fa0264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc28eb3a6f05103f0a6f640da11b5eae" id="r_adc28eb3a6f05103f0a6f640da11b5eae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc28eb3a6f05103f0a6f640da11b5eae">hasContent</a> () const</td></tr>
 <tr class="memdesc:adc28eb3a6f05103f0a6f640da11b5eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there are lines to print.  <br /></td></tr>
 <tr class="separator:adc28eb3a6f05103f0a6f640da11b5eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,7 +196,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html">PrettyPrinting.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00027">ARK_NO_NAME_FILE</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00138">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00136">m_source</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00137">m_window</a>, <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00047">Ark::Utils::readFile()</a>, <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00031">Ark::Utils::splitString()</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00033">Ark::Diagnostics::Window::start</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00028">ARK_NO_NAME_FILE</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00142">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00140">m_source</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00141">m_window</a>, <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00047">Ark::Utils::readFile()</a>, <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00031">Ark::Utils::splitString()</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00033">Ark::Diagnostics::Window::start</a>.</p>
 
 </div>
 </div>
@@ -220,11 +224,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00176">176</a> of file <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html">PrettyPrinting.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00187">187</a> of file <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html">PrettyPrinting.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00036">Ark::Diagnostics::Window::end</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00137">m_window</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00033">Ark::Diagnostics::Window::start</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00036">Ark::Diagnostics::Window::end</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00141">m_window</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00033">Ark::Diagnostics::Window::start</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00043">Ark::Diagnostics::makeContext()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>.</p>
 
 </div>
 </div>
@@ -251,9 +255,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00122">122</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00126">126</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00043">Ark::Diagnostics::makeContext()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>.</p>
 
 </div>
 </div>
@@ -280,9 +284,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00127">127</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00131">131</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00043">Ark::Diagnostics::makeContext()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>.</p>
 
 </div>
 </div>
@@ -311,9 +315,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html">PrettyPrinting.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00138">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00137">m_window</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00039">Ark::Diagnostics::Window::resume_at</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00038">Ark::Diagnostics::Window::skip_start_at</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00033">Ark::Diagnostics::Window::start</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00142">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00141">m_window</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00039">Ark::Diagnostics::Window::resume_at</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00038">Ark::Diagnostics::Window::skip_start_at</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00033">Ark::Diagnostics::Window::start</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00043">Ark::Diagnostics::makeContext()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>.</p>
 
 </div>
 </div>
@@ -345,11 +349,73 @@ Private Attributes</h2></td></tr>
 <dd>
 false when there is nothing more to print </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00182">182</a> of file <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html">PrettyPrinting.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00036">Ark::Diagnostics::Window::end</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00142">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00140">m_source</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00141">m_window</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00034">Ark::Diagnostics::Window::target</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>, and <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00135">printLine()</a>.</p>
+
+</div>
+</div>
+<a id="a5042396278b265d875e31d5809fa0264" name="a5042396278b265d875e31d5809fa0264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5042396278b265d875e31d5809fa0264">&#9670;&#160;</a></span>isLastLineOfTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ark::Diagnostics::Printer::isLastLineOfTarget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00176">176</a> of file <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html">PrettyPrinting.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00142">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00141">m_window</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00034">Ark::Diagnostics::Window::target</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00035">Ark::Diagnostics::Window::target_end</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>.</p>
+
+</div>
+</div>
+<a id="ae6461571ced513b47d3621980cd50fe3" name="ae6461571ced513b47d3621980cd50fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6461571ced513b47d3621980cd50fe3">&#9670;&#160;</a></span>isNextLineTheFirstLineOfTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ark::Diagnostics::Printer::isNextLineTheFirstLineOfTarget </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p class="definition">Definition at line <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00171">171</a> of file <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html">PrettyPrinting.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00036">Ark::Diagnostics::Window::end</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00138">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00136">m_source</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00137">m_window</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00034">Ark::Diagnostics::Window::target</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00142">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00141">m_window</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00034">Ark::Diagnostics::Window::target</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00043">Ark::Diagnostics::makeContext()</a>, and <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00135">printLine()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>.</p>
 
 </div>
 </div>
@@ -383,9 +449,9 @@ false otherwise </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00166">166</a> of file <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html">PrettyPrinting.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00138">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00137">m_window</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00034">Ark::Diagnostics::Window::target</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00035">Ark::Diagnostics::Window::target_end</a>.</p>
+<p class="reference">References <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00142">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00141">m_window</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00034">Ark::Diagnostics::Window::target</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00035">Ark::Diagnostics::Window::target_end</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00043">Ark::Diagnostics::makeContext()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>.</p>
 
 </div>
 </div>
@@ -414,9 +480,9 @@ false otherwise </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html">PrettyPrinting.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00020">Ark::Diagnostics::colorizeLine()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00171">hasContent()</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00052">Ark::Diagnostics::Window::hasSkip()</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00139">m_color_ctx</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00138">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00135">m_should_colorize</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00136">m_source</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00137">m_window</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00039">Ark::Diagnostics::Window::resume_at</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00038">Ark::Diagnostics::Window::skip_start_at</a>.</p>
+<p class="reference">References <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00020">Ark::Diagnostics::colorizeLine()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00182">hasContent()</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00052">Ark::Diagnostics::Window::hasSkip()</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00143">m_color_ctx</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00142">m_current_line</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00139">m_should_colorize</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00140">m_source</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00141">m_window</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00039">Ark::Diagnostics::Window::resume_at</a>, and <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00038">Ark::Diagnostics::Window::skip_start_at</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00043">Ark::Diagnostics::makeContext()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>.</p>
 
 </div>
 </div>
@@ -459,7 +525,7 @@ false otherwise </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html">PrettyPrinting.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00023">Ark::internal::FilePos::column</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00052">Ark::Utils::ltrim()</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00136">m_source</a>, and <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00067">Ark::Utils::rtrim()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00023">Ark::internal::FilePos::column</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00052">Ark::Utils::ltrim()</a>, <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00140">m_source</a>, and <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00067">Ark::Utils::rtrim()</a>.</p>
 
 </div>
 </div>
@@ -486,7 +552,7 @@ false otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00116">116</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00120">120</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
 
 </div>
 </div>
@@ -511,9 +577,9 @@ false otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00132">132</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00136">136</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00025">Ark::Diagnostics::hintWithContext()</a>, and <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00043">Ark::Diagnostics::makeContext()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00025">Ark::Diagnostics::hintWithContext()</a>, and <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>.</p>
 
 </div>
 </div>
@@ -537,7 +603,7 @@ false otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00139">139</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00143">143</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00135">printLine()</a>.</p>
 
@@ -563,9 +629,9 @@ false otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00138">138</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00142">142</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00121">extendWindow()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00171">hasContent()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00166">isTargetLine()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00078">Printer()</a>, and <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00135">printLine()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00121">extendWindow()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00182">hasContent()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00176">isLastLineOfTarget()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00171">isNextLineTheFirstLineOfTarget()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00166">isTargetLine()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00078">Printer()</a>, and <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00135">printLine()</a>.</p>
 
 </div>
 </div>
@@ -589,7 +655,7 @@ false otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00135">135</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00139">139</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00135">printLine()</a>.</p>
 
@@ -615,9 +681,9 @@ false otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00136">136</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00140">140</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00171">hasContent()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00078">Printer()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00135">printLine()</a>, and <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00090">sliceCode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00182">hasContent()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00078">Printer()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00135">printLine()</a>, and <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00090">sliceCode()</a>.</p>
 
 </div>
 </div>
@@ -641,9 +707,9 @@ false otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00137">137</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html#l00141">141</a> of file <a class="el" href="../../de/d68/PrettyPrinting_8hpp_source.html">PrettyPrinting.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00176">coversLine()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00121">extendWindow()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00171">hasContent()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00166">isTargetLine()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00078">Printer()</a>, and <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00135">printLine()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00187">coversLine()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00121">extendWindow()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00182">hasContent()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00176">isLastLineOfTarget()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00171">isNextLineTheFirstLineOfTarget()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00166">isTargetLine()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00078">Printer()</a>, and <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00135">printLine()</a>.</p>
 
 </div>
 </div>
@@ -657,7 +723,7 @@ false otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../db/da6/namespaceArk_1_1Diagnostics.html">Diagnostics</a></li><li class="navelem"><a class="el" href="../../db/d41/classArk_1_1Diagnostics_1_1Printer.html">Printer</a></li>
-    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

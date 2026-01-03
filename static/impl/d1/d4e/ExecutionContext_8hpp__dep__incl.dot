@@ -30,10 +30,12 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/VM/ExecutionContext.hpp
   Node10 -> Node12 [id="edge12_Node000010_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node12 [id="Node000012",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkscript\l/main.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d46/arkscript_2main_8cpp.html",tooltip=" "];
   Node3 -> Node13 [id="edge13_Node000003_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node13 [id="Node000013",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Future.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dc9/Future_8cpp.html",tooltip=" "];
-  Node3 -> Node9 [id="edge14_Node000003_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 -> Node14 [id="edge15_Node000003_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node14 [id="Node000014",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Value/Closure.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/db2/Closure_8cpp.html",tooltip=" "];
-  Node2 -> Node13 [id="edge16_Node000002_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node1 -> Node3 [id="edge17_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/TypeChecker.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/d9a/TypeChecker_8cpp.html",tooltip=" "];
+  Node3 -> Node14 [id="edge14_Node000003_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Future.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dc9/Future_8cpp.html",tooltip=" "];
+  Node3 -> Node9 [id="edge15_Node000003_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node15 [id="edge16_Node000003_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Value/Closure.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/db2/Closure_8cpp.html",tooltip=" "];
+  Node2 -> Node14 [id="edge17_Node000002_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node3 [id="edge18_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

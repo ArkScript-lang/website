@@ -6,6 +6,8 @@ var classArk_1_1Diagnostics_1_1Printer =
     [ "currentLine", "db/d41/classArk_1_1Diagnostics_1_1Printer.html#a4eec54b15af689acfa88c7ce299a2c4d", null ],
     [ "extendWindow", "db/d41/classArk_1_1Diagnostics_1_1Printer.html#a49d4ab4b4733a2c24df6f700de11b17f", null ],
     [ "hasContent", "db/d41/classArk_1_1Diagnostics_1_1Printer.html#adc28eb3a6f05103f0a6f640da11b5eae", null ],
+    [ "isLastLineOfTarget", "db/d41/classArk_1_1Diagnostics_1_1Printer.html#a5042396278b265d875e31d5809fa0264", null ],
+    [ "isNextLineTheFirstLineOfTarget", "db/d41/classArk_1_1Diagnostics_1_1Printer.html#ae6461571ced513b47d3621980cd50fe3", null ],
     [ "isTargetLine", "db/d41/classArk_1_1Diagnostics_1_1Printer.html#a5ad118d1d8638f4aef70005ff1e6dff1", null ],
     [ "printLine", "db/d41/classArk_1_1Diagnostics_1_1Printer.html#afa926bd3bdfb2075246fdff4182c08ef", null ],
     [ "sliceCode", "db/d41/classArk_1_1Diagnostics_1_1Printer.html#a228db4003d7d849f393624161479074c", null ],

@@ -3,7 +3,9 @@ var namespaceArk =
     [ "Diagnostics", "db/da6/namespaceArk_1_1Diagnostics.html", "db/da6/namespaceArk_1_1Diagnostics" ],
     [ "helper", "da/da8/namespaceArk_1_1helper.html", [
       [ "at", "da/da8/namespaceArk_1_1helper.html#a815282cc5bf0d47595a07a1550ca36a8", null ],
+      [ "doMath", "da/da8/namespaceArk_1_1helper.html#a03ee6c644c603b8d1dc3107525a691a3", null ],
       [ "head", "da/da8/namespaceArk_1_1helper.html#a0cb620ec076a6c40140c7d1feee2cb35", null ],
+      [ "mathInstToStr", "da/da8/namespaceArk_1_1helper.html#aa9b167626e158586fae25abe3eb24521", null ],
       [ "tail", "da/da8/namespaceArk_1_1helper.html#af046954be636683c75d75735de8c39d2", null ]
     ] ],
     [ "internal", "dc/d0e/namespaceArk_1_1internal.html", "dc/d0e/namespaceArk_1_1internal" ],

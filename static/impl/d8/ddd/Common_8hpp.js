@@ -14,6 +14,8 @@ var Common_8hpp =
     ] ],
     [ "NodeType", "d8/ddd/Common_8hpp.html#a5300c6c0596db0a5a8f5b62d4d42ce4c", [
       [ "Symbol", "d8/ddd/Common_8hpp.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793", null ],
+      [ "MutArg", "d8/ddd/Common_8hpp.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca1fc7b59329445fc1318c97aff65940d7", null ],
+      [ "RefArg", "d8/ddd/Common_8hpp.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca6019425b961b0182c5b60ef04f2490de", null ],
       [ "Capture", "d8/ddd/Common_8hpp.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca44a50f07b4bdc57740901280f9eddaf5", null ],
       [ "Keyword", "d8/ddd/Common_8hpp.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca220f3d3750583b9db48568a0b5b9a5f1", null ],
       [ "String", "d8/ddd/Common_8hpp.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca27118326006d3829667a400ad23d5d98", null ],
@@ -35,7 +37,7 @@ var Common_8hpp =
     [ "listInstructions", "d8/ddd/Common_8hpp.html#a1bb898b4293824c8045031eb33682e09", null ],
     [ "macros", "d8/ddd/Common_8hpp.html#a64e92df774e5d9cc529b334c0b3ccad6", null ],
     [ "Magic", "d8/ddd/Common_8hpp.html#a7854a9cd618e02997b747ddd289ee9f9", null ],
-    [ "nodeTypes", "d8/ddd/Common_8hpp.html#a1a137bdfc549299532813ba2c74d6a46", null ],
+    [ "nodeTypes", "d8/ddd/Common_8hpp.html#ac5e3d8bccdab97783b9dda7b879c4fa5", null ],
     [ "operators", "d8/ddd/Common_8hpp.html#a51a24f918bfd893110de521e7856ecf3", null ],
     [ "Or", "d8/ddd/Common_8hpp.html#adc099a6d7e2ea25553535012c6fd235d", null ],
     [ "PopInPlace", "d8/ddd/Common_8hpp.html#a625a21cf63c0bd98ddbd9dc0f5cb41d3", null ],

@@ -9,7 +9,7 @@ var namespaceArk_1_1types =
     [ "TypeCheckingError", "dd/d29/classArk_1_1types_1_1TypeCheckingError.html", "dd/d29/classArk_1_1types_1_1TypeCheckingError" ],
     [ "Typedef", "d9/dbf/structArk_1_1types_1_1Typedef.html", "d9/dbf/structArk_1_1types_1_1Typedef" ],
     [ "check", "d4/d7c/namespaceArk_1_1types.html#a0a72142902488423fc6eef630744bc0a", null ],
-    [ "displayContract", "d4/d7c/namespaceArk_1_1types.html#af3dc938c0529f54447d0283d7ae6adc8", null ],
-    [ "generateError", "d4/d7c/namespaceArk_1_1types.html#abc5fa4dd0501c3731af218592f2b4f0b", null ],
+    [ "displayContract", "d4/d7c/namespaceArk_1_1types.html#aa35293cff775880a9dbe0840db4af516", null ],
+    [ "generateError", "d4/d7c/namespaceArk_1_1types.html#a6115961ac0efddf3fd9b677ae52a418c", null ],
     [ "typeListToString", "d4/d7c/namespaceArk_1_1types.html#ae87394280fabafcd08dfa85a444cacbe", null ]
 ];

@@ -59,11 +59,13 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/Instructions.h
   Node24 [id="Node000024",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkscript\l/REPL/Repl.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d46/Repl_8cpp.html",tooltip=" "];
   Node23 -> Node10 [id="edge29_Node000023_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node19 -> Node25 [id="edge30_Node000019_Node000025",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node25 [id="Node000025",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Future.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dc9/Future_8cpp.html",tooltip=" "];
-  Node19 -> Node22 [id="edge31_Node000019_Node000022",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node19 -> Node26 [id="edge32_Node000019_Node000026",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node26 [id="Node000026",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Value/Closure.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/db2/Closure_8cpp.html",tooltip=" "];
-  Node1 -> Node27 [id="edge33_Node000001_Node000027",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node27 [id="Node000027",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/BytecodeReader.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d36/BytecodeReader_8cpp.html",tooltip=" "];
-  Node1 -> Node22 [id="edge34_Node000001_Node000022",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node25 [id="Node000025",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/TypeChecker.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/d9a/TypeChecker_8cpp.html",tooltip=" "];
+  Node19 -> Node26 [id="edge31_Node000019_Node000026",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node26 [id="Node000026",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Future.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dc9/Future_8cpp.html",tooltip=" "];
+  Node19 -> Node22 [id="edge32_Node000019_Node000022",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node19 -> Node27 [id="edge33_Node000019_Node000027",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node27 [id="Node000027",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Value/Closure.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/db2/Closure_8cpp.html",tooltip=" "];
+  Node1 -> Node28 [id="edge34_Node000001_Node000028",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node28 [id="Node000028",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/BytecodeReader.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d36/BytecodeReader_8cpp.html",tooltip=" "];
+  Node1 -> Node22 [id="edge35_Node000001_Node000022",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

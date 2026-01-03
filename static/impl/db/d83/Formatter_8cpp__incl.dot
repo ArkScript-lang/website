@@ -150,4 +150,6 @@ digraph "/Users/fola/Documents/ArkScript/Ark/src/arkscript/Formatter.cpp"
   Node49 -> Node21 [id="edge94_Node000049_Node000021",color="steelblue1",style="solid",tooltip=" "];
   Node49 -> Node14 [id="edge95_Node000049_Node000014",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node29 [id="edge96_Node000001_Node000029",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node50 [id="edge97_Node000001_Node000050",color="steelblue1",style="solid",tooltip=" "];
+  Node50 [id="Node000050",label="Ark/Utils/Literals.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dee/Literals_8hpp.html",tooltip="User defined literals for Ark internals."];
 }

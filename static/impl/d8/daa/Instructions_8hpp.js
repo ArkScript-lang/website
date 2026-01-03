@@ -15,6 +15,7 @@ var Instructions_8hpp =
       [ "LOAD_CONST", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a37932d38ddaf88e6e1ec95c991d7b71e", null ],
       [ "POP_JUMP_IF_TRUE", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681aed44c268c1691e778abd7a0c79768324", null ],
       [ "STORE", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681ae5df672f286a80479e2e02f33efdfd9a", null ],
+      [ "STORE_REF", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a258a27a39d297810230036a3d2e528ed", null ],
       [ "SET_VAL", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a17aa100ced300378d81c25efadfd711e", null ],
       [ "POP_JUMP_IF_FALSE", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a110cb00f3e3c816e4343e23e42248162", null ],
       [ "JUMP", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681ab00ade023344f58b3b50407a99501530", null ],
@@ -117,6 +118,10 @@ var Instructions_8hpp =
       [ "APPEND_IN_PLACE_SYM_INDEX", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a1d4a055637abd0203e44aad4b9fd259c", null ],
       [ "STORE_LEN", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681af065496ee64d91a4ef8594703a7ede92", null ],
       [ "LT_LEN_SYM_JUMP_IF_FALSE", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a99774bd5b8d69557af5b248f9267cf4b", null ],
+      [ "MUL_BY", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681af9a1152cf1427382f359f22aab5378a3", null ],
+      [ "MUL_BY_INDEX", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a579c555794a2ea1f441bd19317cb6998", null ],
+      [ "MUL_SET_VAL", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a40c3cffb3119fff7abc92e162fc4b965", null ],
+      [ "FUSED_MATH", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a2a05d84b31e5b8056ad65dd5ed028eff", null ],
       [ "InstructionsCount", "d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681a0be56fe6a02043ce359f925d6bc0c47c", null ]
     ] ],
     [ "InstructionNames", "d8/daa/Instructions_8hpp.html#ae2b36c02ef42de38fed953a630988add", null ]

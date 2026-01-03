@@ -1,6 +1,6 @@
 var TypeChecker_8cpp =
 [
-    [ "displayContract", "d6/d9a/TypeChecker_8cpp.html#af3dc938c0529f54447d0283d7ae6adc8", null ],
-    [ "generateError", "d6/d9a/TypeChecker_8cpp.html#abc5fa4dd0501c3731af218592f2b4f0b", null ],
+    [ "displayContract", "d6/d9a/TypeChecker_8cpp.html#aa35293cff775880a9dbe0840db4af516", null ],
+    [ "generateError", "d6/d9a/TypeChecker_8cpp.html#a6115961ac0efddf3fd9b677ae52a418c", null ],
     [ "typeListToString", "d6/d9a/TypeChecker_8cpp.html#ae87394280fabafcd08dfa85a444cacbe", null ]
 ];

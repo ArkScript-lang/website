@@ -32,15 +32,17 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/VM/ScopeView.hpp"
   Node11 -> Node13 [id="edge13_Node000011_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node13 [id="Node000013",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkscript\l/main.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d46/arkscript_2main_8cpp.html",tooltip=" "];
   Node4 -> Node14 [id="edge14_Node000004_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node14 [id="Node000014",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Future.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dc9/Future_8cpp.html",tooltip=" "];
-  Node4 -> Node10 [id="edge15_Node000004_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 -> Node15 [id="edge16_Node000004_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node15 [id="Node000015",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Value/Closure.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/db2/Closure_8cpp.html",tooltip=" "];
-  Node3 -> Node14 [id="edge17_Node000003_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 -> Node4 [id="edge18_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node1 -> Node4 [id="edge19_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node1 -> Node16 [id="edge20_Node000001_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node16 [id="Node000016",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/ScopeView.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/ddb/ScopeView_8cpp.html",tooltip=" "];
+  Node14 [id="Node000014",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/TypeChecker.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/d9a/TypeChecker_8cpp.html",tooltip=" "];
+  Node4 -> Node15 [id="edge15_Node000004_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Future.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/dc9/Future_8cpp.html",tooltip=" "];
+  Node4 -> Node10 [id="edge16_Node000004_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 -> Node16 [id="edge17_Node000004_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Value/Closure.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/db2/Closure_8cpp.html",tooltip=" "];
+  Node3 -> Node15 [id="edge18_Node000003_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node4 [id="edge19_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node4 [id="edge20_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node17 [id="edge21_Node000001_Node000017",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node17 [id="Node000017",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Value/ClosureScope.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/d49/ClosureScope_8cpp.html",tooltip=" "];
+  Node17 [id="Node000017",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/ScopeView.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d9/ddb/ScopeView_8cpp.html",tooltip=" "];
+  Node1 -> Node18 [id="edge22_Node000001_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Value/ClosureScope.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/d49/ClosureScope_8cpp.html",tooltip=" "];
 }

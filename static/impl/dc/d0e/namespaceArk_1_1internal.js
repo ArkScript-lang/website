@@ -108,6 +108,7 @@ var namespaceArk_1_1internal =
       [ "LOAD_CONST", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a37932d38ddaf88e6e1ec95c991d7b71e", null ],
       [ "POP_JUMP_IF_TRUE", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681aed44c268c1691e778abd7a0c79768324", null ],
       [ "STORE", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681ae5df672f286a80479e2e02f33efdfd9a", null ],
+      [ "STORE_REF", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a258a27a39d297810230036a3d2e528ed", null ],
       [ "SET_VAL", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a17aa100ced300378d81c25efadfd711e", null ],
       [ "POP_JUMP_IF_FALSE", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a110cb00f3e3c816e4343e23e42248162", null ],
       [ "JUMP", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681ab00ade023344f58b3b50407a99501530", null ],
@@ -210,6 +211,10 @@ var namespaceArk_1_1internal =
       [ "APPEND_IN_PLACE_SYM_INDEX", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a1d4a055637abd0203e44aad4b9fd259c", null ],
       [ "STORE_LEN", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681af065496ee64d91a4ef8594703a7ede92", null ],
       [ "LT_LEN_SYM_JUMP_IF_FALSE", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a99774bd5b8d69557af5b248f9267cf4b", null ],
+      [ "MUL_BY", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681af9a1152cf1427382f359f22aab5378a3", null ],
+      [ "MUL_BY_INDEX", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a579c555794a2ea1f441bd19317cb6998", null ],
+      [ "MUL_SET_VAL", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a40c3cffb3119fff7abc92e162fc4b965", null ],
+      [ "FUSED_MATH", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a2a05d84b31e5b8056ad65dd5ed028eff", null ],
       [ "InstructionsCount", "dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a0be56fe6a02043ce359f925d6bc0c47c", null ]
     ] ],
     [ "Keyword", "dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1", [
@@ -225,6 +230,8 @@ var namespaceArk_1_1internal =
     ] ],
     [ "NodeType", "dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4c", [
       [ "Symbol", "dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793", null ],
+      [ "MutArg", "dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca1fc7b59329445fc1318c97aff65940d7", null ],
+      [ "RefArg", "dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca6019425b961b0182c5b60ef04f2490de", null ],
       [ "Capture", "dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca44a50f07b4bdc57740901280f9eddaf5", null ],
       [ "Keyword", "dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca220f3d3750583b9db48568a0b5b9a5f1", null ],
       [ "String", "dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca27118326006d3829667a400ad23d5d98", null ],
@@ -248,6 +255,8 @@ var namespaceArk_1_1internal =
     [ "countOpenEnclosures", "dc/d0e/namespaceArk_1_1internal.html#a6146cb020fc99ea827febe76168c020f", null ],
     [ "deserializeBE", "dc/d0e/namespaceArk_1_1internal.html#a71790ac27f415f5a7a917465fcb735bf", null ],
     [ "deserializeLE", "dc/d0e/namespaceArk_1_1internal.html#ac8e4d9cdc487b8bb49d2fbb967272751", null ],
+    [ "fuseMathOps2", "dc/d0e/namespaceArk_1_1internal.html#aaeb3d9fad6b2845c42c58826e7c35927", null ],
+    [ "fuseMathOps3", "dc/d0e/namespaceArk_1_1internal.html#a921ac216447cc5cd6c5ac60b43730453", null ],
     [ "getAllKeywords", "dc/d0e/namespaceArk_1_1internal.html#a436b1ac5607da1c3b39dbdaa92ab1293", null ],
     [ "getColorPerKeyword", "dc/d0e/namespaceArk_1_1internal.html#ab07ef04d2a2f1b71edb4a8f931725eb0", null ],
     [ "getFalseNode", "dc/d0e/namespaceArk_1_1internal.html#ae222ef6c9be7460c2bf1c64ac9dc97a1", null ],
@@ -285,5 +294,5 @@ var namespaceArk_1_1internal =
     [ "IsSpace", "dc/d0e/namespaceArk_1_1internal.html#aecb863cf131382c209737463d8dbb92f", null ],
     [ "IsSymbol", "dc/d0e/namespaceArk_1_1internal.html#ae6e9145a05adde607fa4fa3d370d31fd", null ],
     [ "keywords", "dc/d0e/namespaceArk_1_1internal.html#af04674c421b375325c6ef8261578b7b8", null ],
-    [ "nodeTypes", "dc/d0e/namespaceArk_1_1internal.html#a1a137bdfc549299532813ba2c74d6a46", null ]
+    [ "nodeTypes", "dc/d0e/namespaceArk_1_1internal.html#ac5e3d8bccdab97783b9dda7b879c4fa5", null ]
 ];

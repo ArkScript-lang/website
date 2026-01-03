@@ -19,6 +19,7 @@ var classFormatter =
     [ "isFuncCall", "d9/d43/classFormatter.html#a6e4fd4f023121d736c2aa2208364e208", null ],
     [ "isFuncDef", "d9/d43/classFormatter.html#a6e683affe900d3bed3c0f9ccbf9a7108", null ],
     [ "isListStartingWithKeyword", "d9/d43/classFormatter.html#af94006b056b59d256649787d2f5d8910", null ],
+    [ "isLongLine", "d9/d43/classFormatter.html#aed86920a831044c63ce874e157ebc916", null ],
     [ "lineOfLastNodeIn", "d9/d43/classFormatter.html#ae8381afeb6fa8eef18a75336623af342", null ],
     [ "output", "d9/d43/classFormatter.html#ace1f7a12494a6243cff21a6c8762a9d6", null ],
     [ "prefix", "d9/d43/classFormatter.html#a4b67aff64c164c0cc753ea7fcb4df36a", null ],

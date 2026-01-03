@@ -233,45 +233,48 @@ $(function(){initNavTree('d7/d48/arkscript_2REPL_2Utils_8cpp_source.html','../..
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                pos += codepointLength(prefix);</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; len; ++i)</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                    <a class="code hl_variable" href="../../dc/d0e/namespaceArk_1_1internal.html#a7d005551398e8bf19ed7f2d3d9a8ddbb">colors</a>.at(pos + i) = color;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                pos += len;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                str = match.suffix();</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            }</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        }</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    }</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    replxx::Replxx::hints_t <a class="code hl_function" href="../../dc/d0e/namespaceArk_1_1internal.html#ac4cd27cb30a3c52fde19e4b98ff80cfd">hookHint</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; words, <span class="keyword">const</span> std::string&amp; context, <span class="keywordtype">int</span>&amp; length, replxx::Replxx::Color&amp; color)</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    {</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        replxx::Replxx::hints_t hints;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="comment">// only show hint if prefix is at least &#39;n&#39; chars long</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="comment">// or if prefix begins with a specific character</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keyword">const</span> std::size_t utf8_context_len = contextLen(context);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="keyword">const</span> std::size_t prefix_len = context.size() - utf8_context_len;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        length = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(codepointLength(context.substr(prefix_len, utf8_context_len)));</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keyword">const</span> std::string prefix = context.substr(prefix_len);</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keywordflow">if</span> (prefix.size() &gt;= 2 || (!prefix.empty() &amp;&amp; prefix.at(0) == <span class="charliteral">&#39;.&#39;</span>))</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        {</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; e : words)</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            {</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                <span class="keywordflow">if</span> (e.compare(0, prefix.size(), prefix) == 0)</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    hints.emplace_back(e.c_str());</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            }</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        }</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="keywordflow">if</span> (hints.size() == 1)</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            color = replxx::Replxx::Color::GREEN;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                    <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../dc/d0e/namespaceArk_1_1internal.html#a7d005551398e8bf19ed7f2d3d9a8ddbb">colors</a>.at(pos + i) == replxx::Replxx::Color::DEFAULT)</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                        <a class="code hl_variable" href="../../dc/d0e/namespaceArk_1_1internal.html#a7d005551398e8bf19ed7f2d3d9a8ddbb">colors</a>.at(pos + i) = color;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                pos += len;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                str = match.suffix();</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    replxx::Replxx::hints_t <a class="code hl_function" href="../../dc/d0e/namespaceArk_1_1internal.html#ac4cd27cb30a3c52fde19e4b98ff80cfd">hookHint</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; words, <span class="keyword">const</span> std::string&amp; context, <span class="keywordtype">int</span>&amp; length, replxx::Replxx::Color&amp; color)</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        replxx::Replxx::hints_t hints;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <span class="comment">// only show hint if prefix is at least &#39;n&#39; chars long</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="comment">// or if prefix begins with a specific character</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="keyword">const</span> std::size_t utf8_context_len = contextLen(context);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keyword">const</span> std::size_t prefix_len = context.size() - utf8_context_len;</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        length = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(codepointLength(context.substr(prefix_len, utf8_context_len)));</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keyword">const</span> std::string prefix = context.substr(prefix_len);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">if</span> (prefix.size() &gt;= 2 || (!prefix.empty() &amp;&amp; prefix.at(0) == <span class="charliteral">&#39;.&#39;</span>))</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; e : words)</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            {</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                <span class="keywordflow">if</span> (e.compare(0, prefix.size(), prefix) == 0)</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                    hints.emplace_back(e.c_str());</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            }</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        }</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <span class="keywordflow">return</span> hints;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    }</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>}</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <span class="keywordflow">if</span> (hints.size() == 1)</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            color = replxx::Replxx::Color::GREEN;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordflow">return</span> hints;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
 <div class="ttc" id="aBuiltins_8hpp_html"><div class="ttname"><a href="../../da/d84/Builtins_8hpp.html">Builtins.hpp</a></div><div class="ttdoc">Host the declaration of all the ArkScript builtins.</div></div>
 <div class="ttc" id="aCLI_2REPL_2Utils_8hpp_html"><div class="ttname"><a href="../../df/d85/CLI_2REPL_2Utils_8hpp.html">Utils.hpp</a></div><div class="ttdoc">replxx utilities</div></div>
 <div class="ttc" id="aCommon_8hpp_html"><div class="ttname"><a href="../../d8/ddd/Common_8hpp.html">Common.hpp</a></div><div class="ttdoc">Common code for the compiler.</div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_1_1Builtins_html_ae99a104c484192543989515d4eda8a5a"><div class="ttname"><a href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#ae99a104c484192543989515d4eda8a5a">Ark::internal::Builtins::builtins</a></div><div class="ttdeci">ARK_API const std::vector&lt; std::pair&lt; std::string, Value &gt; &gt; builtins</div></div>
-<div class="ttc" id="anamespaceArk_1_1internal_1_1Language_html_a1bb898b4293824c8045031eb33682e09"><div class="ttname"><a href="../../de/d35/namespaceArk_1_1internal_1_1Language.html#a1bb898b4293824c8045031eb33682e09">Ark::internal::Language::listInstructions</a></div><div class="ttdeci">constexpr std::array&lt; std::string_view, 9 &gt; listInstructions</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddd/Common_8hpp_source.html#l00115">Common.hpp:115</a></div></div>
-<div class="ttc" id="anamespaceArk_1_1internal_1_1Language_html_a51a24f918bfd893110de521e7856ecf3"><div class="ttname"><a href="../../de/d35/namespaceArk_1_1internal_1_1Language.html#a51a24f918bfd893110de521e7856ecf3">Ark::internal::Language::operators</a></div><div class="ttdeci">constexpr std::array&lt; std::string_view, 24 &gt; operators</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddd/Common_8hpp_source.html#l00152">Common.hpp:152</a></div></div>
+<div class="ttc" id="anamespaceArk_1_1internal_1_1Language_html_a1bb898b4293824c8045031eb33682e09"><div class="ttname"><a href="../../de/d35/namespaceArk_1_1internal_1_1Language.html#a1bb898b4293824c8045031eb33682e09">Ark::internal::Language::listInstructions</a></div><div class="ttdeci">constexpr std::array&lt; std::string_view, 9 &gt; listInstructions</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddd/Common_8hpp_source.html#l00119">Common.hpp:119</a></div></div>
+<div class="ttc" id="anamespaceArk_1_1internal_1_1Language_html_a51a24f918bfd893110de521e7856ecf3"><div class="ttname"><a href="../../de/d35/namespaceArk_1_1internal_1_1Language.html#a51a24f918bfd893110de521e7856ecf3">Ark::internal::Language::operators</a></div><div class="ttdeci">constexpr std::array&lt; std::string_view, 24 &gt; operators</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddd/Common_8hpp_source.html#l00156">Common.hpp:156</a></div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00025">Builtins.hpp:26</a></div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html_a436b1ac5607da1c3b39dbdaa92ab1293"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html#a436b1ac5607da1c3b39dbdaa92ab1293">Ark::internal::getAllKeywords</a></div><div class="ttdeci">std::vector&lt; std::string &gt; getAllKeywords()</div><div class="ttdoc">Compute a list of all the language keywords and builtins.</div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html_a6146cb020fc99ea827febe76168c020f"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html#a6146cb020fc99ea827febe76168c020f">Ark::internal::countOpenEnclosures</a></div><div class="ttdeci">long countOpenEnclosures(const std::string &amp;line, char open, char close)</div><div class="ttdoc">Count the open enclosure and its counterpart: (), {}, [].</div></div>
@@ -281,14 +284,14 @@ $(function(){initNavTree('d7/d48/arkscript_2REPL_2Utils_8cpp_source.html','../..
 <div class="ttc" id="anamespaceArk_1_1internal_html_ab07ef04d2a2f1b71edb4a8f931725eb0"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html#ab07ef04d2a2f1b71edb4a8f931725eb0">Ark::internal::getColorPerKeyword</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, replxx::Replxx::Color &gt; &gt; getColorPerKeyword()</div><div class="ttdoc">Compute a list of pairs (word -&gt; color) to be used for coloration by the REPL.</div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html_ac4cd27cb30a3c52fde19e4b98ff80cfd"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html#ac4cd27cb30a3c52fde19e4b98ff80cfd">Ark::internal::hookHint</a></div><div class="ttdeci">replxx::Replxx::hints_t hookHint(const std::vector&lt; std::string &gt; &amp;words, const std::string &amp;context, int &amp;length, replxx::Replxx::Color &amp;color)</div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html_ad95f4c191466c48c5b0d8ef5b6c26a1b"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html#ad95f4c191466c48c5b0d8ef5b6c26a1b">Ark::internal::trimWhitespace</a></div><div class="ttdeci">void trimWhitespace(std::string &amp;line)</div><div class="ttdoc">Remove whitespaces at the start and end of a string.</div></div>
-<div class="ttc" id="anamespaceArk_1_1internal_html_af04674c421b375325c6ef8261578b7b8"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html#af04674c421b375325c6ef8261578b7b8">Ark::internal::keywords</a></div><div class="ttdeci">constexpr std::array&lt; std::string_view, 9 &gt; keywords</div><div class="ttdoc">List of available keywords in ArkScript.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddd/Common_8hpp_source.html#l00088">Common.hpp:88</a></div></div>
+<div class="ttc" id="anamespaceArk_1_1internal_html_af04674c421b375325c6ef8261578b7b8"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html#af04674c421b375325c6ef8261578b7b8">Ark::internal::keywords</a></div><div class="ttdeci">constexpr std::array&lt; std::string_view, 9 &gt; keywords</div><div class="ttdoc">List of available keywords in ArkScript.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddd/Common_8hpp_source.html#l00092">Common.hpp:92</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_2f97cbe3d7d7ee3d0a7f34ae796b7c3c.html">arkscript</a></li><li class="navelem"><a class="el" href="../../dir_b137344471615342cb36678e59bedd43.html">REPL</a></li><li class="navelem"><a class="el" href="../../d7/d48/arkscript_2REPL_2Utils_8cpp.html">Utils.cpp</a></li>
-    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

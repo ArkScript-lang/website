@@ -93,6 +93,10 @@ Functions</h2></td></tr>
 <tr class="separator:a0cb620ec076a6c40140c7d1feee2cb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a815282cc5bf0d47595a07a1550ca36a8" id="r_a815282cc5bf0d47595a07a1550ca36a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a815282cc5bf0d47595a07a1550ca36a8">at</a> (<a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;container, <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;index, <a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;vm)</td></tr>
 <tr class="separator:a815282cc5bf0d47595a07a1550ca36a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ee6c644c603b8d1dc3107525a691a3" id="r_a03ee6c644c603b8d1dc3107525a691a3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03ee6c644c603b8d1dc3107525a691a3">doMath</a> (double a, double b, const <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Instruction</a> op)</td></tr>
+<tr class="separator:a03ee6c644c603b8d1dc3107525a691a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b167626e158586fae25abe3eb24521" id="r_aa9b167626e158586fae25abe3eb24521"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9b167626e158586fae25abe3eb24521">mathInstToStr</a> (const <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Instruction</a> op)</td></tr>
+<tr class="separator:aa9b167626e158586fae25abe3eb24521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a815282cc5bf0d47595a07a1550ca36a8" name="a815282cc5bf0d47595a07a1550ca36a8"></a>
@@ -129,9 +133,49 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00073">73</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00169">Ark::Value::list()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6ab2ee912b91d69b435159c7c3f6df7f5f">Ark::Number</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00162">Ark::Value::number()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a27118326006d3829667a400ad23d5d98">Ark::String</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00164">Ark::Value::string()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00481">Ark::VM::throwVMError()</a>, <a class="el" href="../../d1/d74/Value_8cpp_source.html#l00077">Ark::Value::toString()</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00151">Ark::Value::valueType()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00169">Ark::Value::list()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6ab2ee912b91d69b435159c7c3f6df7f5f">Ark::Number</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00162">Ark::Value::number()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a27118326006d3829667a400ad23d5d98">Ark::String</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00164">Ark::Value::string()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00512">Ark::VM::throwVMError()</a>, <a class="el" href="../../d1/d74/Value_8cpp_source.html#l00077">Ark::Value::toString()</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00151">Ark::Value::valueType()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00524">Ark::VM::safeRun()</a>.</p>
+
+</div>
+</div>
+<a id="a03ee6c644c603b8d1dc3107525a691a3" name="a03ee6c644c603b8d1dc3107525a691a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ee6c644c603b8d1dc3107525a691a3">&#9670;&#160;</a></span>doMath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Ark::helper::doMath </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Instruction</a></td>          <td class="paramname"><span class="paramname"><em>op</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00173">Ark::internal::ADD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00182">Ark::internal::DIV</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00179">Ark::internal::MUL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00176">Ark::internal::SUB</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00512">Ark::VM::throwVMError()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00524">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -162,7 +206,38 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00168">Ark::Value::constList()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#a0541c7c43175f68aca89a4c3a61fca12">Ark::internal::Builtins::nil</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a27118326006d3829667a400ad23d5d98">Ark::String</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00164">Ark::Value::string()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00165">Ark::Value::stringRef()</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00151">Ark::Value::valueType()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00524">Ark::VM::safeRun()</a>.</p>
+
+</div>
+</div>
+<a id="aa9b167626e158586fae25abe3eb24521" name="aa9b167626e158586fae25abe3eb24521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b167626e158586fae25abe3eb24521">&#9670;&#160;</a></span>mathInstToStr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Ark::helper::mathInstToStr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Instruction</a></td>          <td class="paramname"><span class="paramname"><em>op</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00130">130</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00173">Ark::internal::ADD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00182">Ark::internal::DIV</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00179">Ark::internal::MUL</a>, and <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00176">Ark::internal::SUB</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00524">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -193,7 +268,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00168">Ark::Value::constList()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a27118326006d3829667a400ad23d5d98">Ark::String</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00164">Ark::Value::string()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00165">Ark::Value::stringRef()</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00151">Ark::Value::valueType()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00493">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00524">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -203,7 +278,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../da/da8/namespaceArk_1_1helper.html">helper</a></li>
-    <li class="footer">Generated on Sun Sep 28 2025 15:55:36 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

@@ -3,6 +3,7 @@ var classArk_1_1internal_1_1IR_1_1Entity =
     [ "Entity", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a70196776a50dab2f92196fd55524d3b4", null ],
     [ "Entity", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#ac8454c4467d5c30ca8bfadebb6336d19", null ],
     [ "Entity", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a0be0a7f5f9e9aed0a58867e9dada5505", null ],
+    [ "Entity", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#ae845e6472c07171fac64ee7c4ab9be6c", null ],
     [ "bytecode", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#ace0b191fef9654b51f90ee33315d3aca", null ],
     [ "filename", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#ad7c405cae3f00d025507a0917515ba88", null ],
     [ "Goto", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a2619759b4a7787a35c501d2800a08391", null ],
@@ -17,11 +18,13 @@ var classArk_1_1internal_1_1IR_1_1Entity =
     [ "secondaryArg", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a1a51a4f5160117e6b7db09a30d3283b8", null ],
     [ "setSourceLocation", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#ac145cb159160067183794e3eba3a8192", null ],
     [ "sourceLine", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a75936180d0d2cc71eabd7aea88ad9a18", null ],
+    [ "tertiaryArg", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a51d5d1a10d960051a66944149fd8c4e5", null ],
     [ "m_inst", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#ad3502d8f25f690b606108a5c918c473f", null ],
     [ "m_kind", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a1659702ec9fe252b986a5219450f4abb", null ],
     [ "m_label", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a528a7d59fee524de5cec4e73b93aa65f", null ],
     [ "m_primary_arg", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a33413f798c59de12800767e8917cc03a", null ],
     [ "m_secondary_arg", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a66e6b1350440559739759b8954888c44", null ],
     [ "m_source_file", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#afe2a8b58ff5518ff1fbb5146146bf1d3", null ],
-    [ "m_source_line", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#ab44099376d9005427dbdf2538c158460", null ]
+    [ "m_source_line", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#ab44099376d9005427dbdf2538c158460", null ],
+    [ "m_tertiary_arg", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a04b9d6e52cf3c4aac6a4abfd70f22806", null ]
 ];

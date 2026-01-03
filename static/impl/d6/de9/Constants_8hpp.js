@@ -1,5 +1,6 @@
 var Constants_8hpp =
 [
+    [ "ARK_BUILD_DATE", "d6/de9/Constants_8hpp.html#a4f751c8bc7a5cb0f8b5e0bfb8c0c5562", null ],
     [ "ARK_CACHE_DIRNAME", "d6/de9/Constants_8hpp.html#af90a944d153c7ebc6603779c1438c80f", null ],
     [ "ARK_COMPILER", "d6/de9/Constants_8hpp.html#a1117e7a814daf74a4935079b9b29ab84", null ],
     [ "ARK_NO_NAME_FILE", "d6/de9/Constants_8hpp.html#ae99a69d821bd74354272ee56fc43f796", null ],
