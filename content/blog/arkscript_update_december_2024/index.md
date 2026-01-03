@@ -3,7 +3,7 @@ title: 'ArkScript - December 2024 update'
 date: 2024-12-17T13:37:00+02:00
 categories: []
 tags: []
-contributors: ['Lex Plt']
+contributors: ['Lexy Plt']
 pinned: false
 homepage: false
 ---

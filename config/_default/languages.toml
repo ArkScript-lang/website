@@ -5,5 +5,5 @@
   [en.params]
     languageISO = "EN"
     languageTag = "en-US"
-    footer = 'Brought to you by <a class="text-muted" href="https://lexp.lt" target="_blank">Lex Plt</a>'
+    footer = 'Brought to you by <a class="text-muted" href="https://lexp.lt" target="_blank">Lexy Plt</a>'
 

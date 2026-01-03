@@ -3,7 +3,7 @@ title: 'Comparison with other Lisps'
 date: 2025-07-30T18:52:45+02:00
 categories: []
 tags: []
-contributors: ['Lex Plt']
+contributors: ['Lexy Plt']
 pinned: true
 homepage: false
 draft: false

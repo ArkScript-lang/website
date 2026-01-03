@@ -3,7 +3,7 @@ title: 'ArkScript - March 2021 update'
 date: 2021-03-21T23:22:45+02:00
 categories: []
 tags: []
-contributors: ['Lex Plt']
+contributors: ['Lexy Plt']
 pinned: false
 homepage: false
 ---

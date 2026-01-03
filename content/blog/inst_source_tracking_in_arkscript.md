@@ -3,7 +3,7 @@ title: 'Instruction source location tracking in ArkScript'
 date: 2025-04-24T20:11:45+02:00
 categories: []
 tags: []
-contributors: ['Lex Plt']
+contributors: ['Lexy Plt']
 pinned: false
 homepage: false
 ---

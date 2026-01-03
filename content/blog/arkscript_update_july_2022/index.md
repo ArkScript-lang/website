@@ -3,7 +3,7 @@ title: 'ArkScript - July 2022 update'
 date: 2022-07-11T23:21:45+02:00
 categories: []
 tags: []
-contributors: ['Lex Plt']
+contributors: ['Lexy Plt']
 pinned: false
 homepage: false
 ---

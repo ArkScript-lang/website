@@ -3,7 +3,7 @@ title: 'ArkScript - November 2022 update'
 date: 2022-11-21T22:17:45+02:00
 categories: []
 tags: []
-contributors: ['Lex Plt']
+contributors: ['Lexy Plt']
 pinned: false
 homepage: false
 ---

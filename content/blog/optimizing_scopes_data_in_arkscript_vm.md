@@ -3,7 +3,7 @@ title: 'Optimizing scopes data in ArkScript VM'
 date: 2025-03-15T12:38:47+02:00
 categories: []
 tags: []
-contributors: ['Lex Plt']
+contributors: ['Lexy Plt']
 pinned: false
 homepage: false
 ---

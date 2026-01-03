@@ -3,7 +3,7 @@ title: 'ArkScript - April 2025 update'
 date: 2025-05-04T19:19:00+02:00
 categories: []
 tags: []
-contributors: ['Lex Plt']
+contributors: ['Lexy Plt']
 pinned: false
 homepage: false
 ---

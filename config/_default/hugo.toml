@@ -17,7 +17,7 @@ defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]
 defaultContentLanguageInSubdir = false
 
-copyRight = "Copyright (c) Lex Plt"
+copyRight = "Copyright (c) Lexy Plt"
 
 [build.buildStats]
   enable = true

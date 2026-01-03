@@ -3,7 +3,7 @@ title: 'ArkScript - July 2020 update'
 date: 2020-07-11T12:23:45+02:00
 categories: []
 tags: []
-contributors: ['Lex Plt']
+contributors: ['Lexy Plt']
 pinned: false
 homepage: false
 ---
