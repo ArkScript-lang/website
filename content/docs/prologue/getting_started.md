@@ -68,9 +68,9 @@ You will want to learn the language first: [Learning ArkScript](/docs/tutorials/
 
 Then you can experiment with either:
 
-- [try the online playground](https://playground.arkscript-lang.dev), so that you don't have to install anything
+- [try the online playground](https://playground.arkscript-lang.dev), so that you don't have to install anything,
 - [use Docker](/docs/prologue/building#using-docker), to avoid clutering your computer with dependencies and compilers,
-- or [install it on your machine](/docs/prologue/building#installing-from-a-release) via one of our releases
+- or [install it on your machine](/docs/prologue/building#installing-from-a-release) via one of our releases. You can quickly try code using [the REPL](/docs/reference/repl)
 
 ## I want to contribute!
 
