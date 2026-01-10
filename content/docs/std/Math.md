@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2026-01-01T17:04:20+02:00
-lastmod: 2026-01-01T17:04:20+02:00
+date: 2026-01-10T16:50:25+02:00
+lastmod: 2026-01-10T16:50:25+02:00
 draft: false
 weight: 410
 toc: true
@@ -595,7 +595,7 @@ Get the square root of a number
 
 ---
 `(let fibo (fun (n) (...)))`
-Run the fibonacci function on a number
+Compute the nth fibonacci term
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
@@ -930,7 +930,7 @@ Compute a percentage of how much b is better than a
 (let base 55)  # something takes 55ms to run
 (let new 43)  # now it takes 43ms
 (print (math:improvementRatioPercentage base new))  # 27.9069767442
-# 'base' is 27%~ slower than 'new'
+# 'new' is 27%~ faster than 'base'
 {{< /highlight_arkscript >}}
 
 ## copySign

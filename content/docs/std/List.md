@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-01-01T17:04:20+02:00
-lastmod: 2026-01-01T17:04:20+02:00
+date: 2026-01-10T16:50:25+02:00
+lastmod: 2026-01-10T16:50:25+02:00
 draft: false
 weight: 410
 toc: true
@@ -864,7 +864,7 @@ Create a sliding window of a given size on a list
 `(let transpose (fun (_L) (...)))`
 Transpose a list of lists or list of strings
 
-**Note**: The original list is not modified. Each element should have the same length
+**Note**: The original list is not modified. Elements should have the same length
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
