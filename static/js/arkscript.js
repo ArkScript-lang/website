@@ -35,7 +35,7 @@ Rainbow.extend('arkscript', [
         matches: {
             1: 'keyword'
         },
-        pattern: /\(\s*(begin|if|\$if|fun|macro|set|while|let|mut|del|import)(?=[\]()\s#])/g
+        pattern: /\(\s*(begin|if|\$if|fun|macro|set|while|let|mut|del|import|breakpoint)(?=[\]()\s#])/g
     },
     {
         matches: {
