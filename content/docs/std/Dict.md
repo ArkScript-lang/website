@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2026-01-26T18:04:56+02:00
-lastmod: 2026-01-26T18:04:56+02:00
+date: 2026-01-29T16:56:59+02:00
+lastmod: 2026-01-29T16:56:59+02:00
 draft: false
 weight: 410
 toc: true
@@ -421,6 +421,27 @@ Update a dictionary with (key, value) pairs from a second dictionary
 (let new (dict "key" "new value" 5 12))
 (dict:update! data new)
 (print data)  # {key: new value, hello: world, 5: 12}
+{{< /highlight_arkscript >}}
+
+## asJson
+
+---
+`(let asJson (fun (_D) (...)))`
+Convert a given dictionary to its JSON representation
+
+**Note**: The original dictionary is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_D`: dictionary to convert to JSON
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data (dict "key" "value" "hello" nil "a" [1 true]))
+(let new (dict "key" "new value" 5 12))
+(print (dict:asJson data new)) # {"key": "value", "hello": null, "a": [1, true]}
 {{< /highlight_arkscript >}}
 
 
