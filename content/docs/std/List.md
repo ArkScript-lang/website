@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-02-01T01:09:07+02:00
-lastmod: 2026-02-01T01:09:07+02:00
+date: 2026-02-04T19:06:43+02:00
+lastmod: 2026-02-04T19:06:43+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,134 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+## len
+
+---
+`(len a)`
+Return the length of a list
+
+
+
+#### Parameter
+- `a`: list
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (len []))  # 0
+(print (len (list))  # 0
+(print (len [1 2 3]))  # 3
+{{< /highlight_arkscript >}}
+
+## empty?
+
+---
+`(empty? a)`
+Check if a list is empty
+
+**Note**: `nil` is also considered empty, as it is the void value that can be returned by `head`
+
+
+#### Parameter
+- `a`: list
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (empty? []))  # true
+(print (empty? (list))  # true
+(print (empty? nil))  # true
+(print (empty? [1 2 3]))  # false
+{{< /highlight_arkscript >}}
+
+## head
+
+---
+`(head a)`
+Return the first element of a list, or nil if empty
+
+
+
+#### Parameter
+- `a`: list
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (head []))  # nil
+(print (head (list))  # nil
+(print (head [1]))  # 1
+(print (head [1 2 3]))  # 1
+{{< /highlight_arkscript >}}
+
+## tail
+
+---
+`(tail a)`
+Return the tail of a list, or empty list if it has one or less element
+
+
+
+#### Parameter
+- `a`: list
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (tail []))  # []
+(print (tail (list))  # []
+(print (tail [1]))  # []
+(print (tail [1 2 3]))  # [2 3]
+{{< /highlight_arkscript >}}
+
+## @
+
+---
+`(@ lst i)`
+Get an element in a list
+
+**Note**: Raise an error if the index is out of range
+
+
+#### Parameters
+- `lst`: list
+- `i`: index (can be negative to start from the end)
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (@ [1 2 3] 0))  # 1
+(print (@ [1 2 3] 1))  # 2
+(print (@ [1 2 3] 2))  # 3
+(print (@ [1 2 3] -1))  # 3
+(print (@ [1 2 3] -2))  # 2
+{{< /highlight_arkscript >}}
+
+## @@
+
+---
+`(@@ lst y x)`
+Get an element in a list of lists, or list of strings
+
+**Note**: Raise an error if an index is out of range
+
+
+#### Parameters
+- `lst`: list of collections (lists or strings, can be mixed)
+- `y`: index (can be negative to start from the end)
+- `x`: index (can be negative to start from the end)
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (@@ [[1 2 3] [4 5 6] [7 8 9]] 0 1))  # 2
+(print (@@ [[1 2 3] [4 5 6] "ghi"] -1 1))  # h
+(print (@@ [[1 2 3] [4 5 6] [7 8 9]] 0 -1))  # 3
+(print (@@ ["abc" "def" "ghi"] 0 1))  # b
+(print (@@ ["abc" "def" "ghi"] -1 1))  # h
+(print (@@ ["abc" "def" "ghi"] 0 -1))  # c
+{{< /highlight_arkscript >}}
 
 ## reverse
 

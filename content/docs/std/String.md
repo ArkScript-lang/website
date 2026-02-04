@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-02-01T01:09:07+02:00
-lastmod: 2026-02-01T01:09:07+02:00
+date: 2026-02-04T19:06:43+02:00
+lastmod: 2026-02-04T19:06:43+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,142 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+## +
+
+---
+`(+ a b...)`
+Add two or more strings together
+
+
+
+#### Parameters
+- `a`: string
+- `b...`: more strings
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (+ "a" "b"))  # ab
+(print (+ "Hello" ", " "World" "!"))  # Hello, World!
+{{< /highlight_arkscript >}}
+
+## len
+
+---
+`(len a)`
+Return the length of a string (in bytes)
+
+
+
+#### Parameter
+- `a`: string
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (len "abc"))  # 3
+(print (len "🏳️‍⚧️"))  # 16
+{{< /highlight_arkscript >}}
+
+## empty?
+
+---
+`(empty? a)`
+Check if a string is empty
+
+
+
+#### Parameter
+- `a`: string
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (empty? "abc"))  # false
+(print (empty? ""))  # true
+{{< /highlight_arkscript >}}
+
+## head
+
+---
+`(head a)`
+Return the first character of a string, or emtpy string if empty
+
+
+
+#### Parameter
+- `a`: string
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (head "abc"))  # a
+(print (head ""))  # ""
+{{< /highlight_arkscript >}}
+
+## tail
+
+---
+`(tail a)`
+Return the tail of a string, or emtpy string if it has one or less character
+
+
+
+#### Parameter
+- `a`: string
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (tail "abc"))  # bc
+(print (tail "a"))  # ""
+(print (tail ""))  # ""
+{{< /highlight_arkscript >}}
+
+## toNumber
+
+---
+`(toNumber a)`
+Convert a string to a number
+
+**Note**: Return nil if the conversion failed
+
+
+#### Parameter
+- `a`: string
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (toNumber "abc"))  # nil
+(print (toNumber "1"))  # 1
+(print (toNumber "1e3"))  # 1000
+(print (toNumber "3.14159"))  # 3.14159
+{{< /highlight_arkscript >}}
+
+## @
+
+---
+`(@ str i)`
+Get a character in a string
+
+**Note**: Raise an error if the index is out of range
+
+
+#### Parameters
+- `str`: string
+- `i`: index (can be negative to start from the end)
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (@ "abc" 0))  # "a"
+(print (@ "abc" 1))  # "b"
+(print (@ "abc" 2))  # "c"
+(print (@ "abc" -1))  # "c"
+(print (@ "abc" -2))  # "b"
+{{< /highlight_arkscript >}}
 
 ## format
 

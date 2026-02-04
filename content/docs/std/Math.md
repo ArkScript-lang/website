@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2026-02-01T01:09:07+02:00
-lastmod: 2026-02-01T01:09:07+02:00
+date: 2026-02-04T19:06:43+02:00
+lastmod: 2026-02-04T19:06:43+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,103 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+## +
+
+---
+`(+ a b...)`
+Add two or more numbers together
+
+
+
+#### Parameters
+- `a`: number
+- `b...`: more numbers
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (+ 1 2.5))  # 3.5
+(print (+ 5 -7.6 12))  # 9.4
+{{< /highlight_arkscript >}}
+
+## -
+
+---
+`(- a b...)`
+Subtract two or more numbers together
+
+
+
+#### Parameters
+- `a`: first number to subtract other numbers to
+- `b...`: more numbers
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (- 1 2.5))  # -1.5
+(print (- 5 11 1))  # -7
+{{< /highlight_arkscript >}}
+
+## *
+
+---
+`(* a b...)`
+Multiply two or more numbers together
+
+
+
+#### Parameters
+- `a`: number
+- `b...`: more numbers
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (* 2 2.5))  # 5
+(print (* 5 4 3))  # 60
+{{< /highlight_arkscript >}}
+
+## /
+
+---
+`(/ a b...)`
+Divide two or more numbers together
+
+**Note**: The result is always a floating point number. For an integer division, see **math:floordiv**
+
+
+#### Parameters
+- `a`: first number to divide by other numbers
+- `b...`: more numbers
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (/ 10 3))  # 3.33333...
+(print (/ 99 5 4))  # (99 / 5) / 4 = 4.95
+{{< /highlight_arkscript >}}
+
+## mod
+
+---
+`(mod a b)`
+Compute the modulus of two numbers
+
+**Note**: The result is always a floating point number
+
+
+#### Parameters
+- `a`: number
+- `b`: number
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (mod 10 3))  # 1
+(print (mod 12.9 4))  # 0.9000000000000004
+{{< /highlight_arkscript >}}
 
 ## random
 

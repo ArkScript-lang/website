@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2026-02-01T01:09:07+02:00
-lastmod: 2026-02-01T01:09:07+02:00
+date: 2026-02-04T19:06:43+02:00
+lastmod: 2026-02-04T19:06:43+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,42 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+## empty?
+
+---
+`(empty? a)`
+Check if a dict is empty
+
+
+
+#### Parameter
+- `a`: dict
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (empty? (dict "a" 2)))  # false
+(print (empty? (dict)))  # true
+{{< /highlight_arkscript >}}
+
+## len
+
+---
+`(len a)`
+Return the length of a dictionary
+
+
+
+#### Parameter
+- `a`: dict
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (len (dict))  # 0
+(print (len (dict "a" 1 "b" 2 "c" 3)))  # 3
+{{< /highlight_arkscript >}}
 
 ## dict
 
