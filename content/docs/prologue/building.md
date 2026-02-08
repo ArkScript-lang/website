@@ -24,7 +24,7 @@ You can choose to build the project from source (which requires some knowledge l
 *This step is optional*
 
 1. You can create an environment variable `ARKSCRIPT_PATH`, with the path to the installation directory of ArkScript, so that the standard library can be located without using `--lib <path>`.  
-The environment variable should direct to a folder with the folder `lib/` inside. Multiple path can be provided if your installation separates the modules and the standard library, by separating the different paths with a single `;`.
+The environment variable should direct to a folder with the folder `std/` inside. Multiple path can be provided if your installation separates the modules and the standard library, by separating the different paths with a single `;`.
 2. You can create an environment variable `ARKSCRIPT_REPL_STARTUP`, with the path to a single `.ark` file that will be loaded each time you use the REPL. Useful to preload your favorite libraries!
 
 ## Installing from a release
@@ -112,8 +112,11 @@ Commands:
 ```shell
 cmake . -Bbuild -DARK_BUILD_EXE=On
 cmake --build build --config Release
+
 # needs administrator rights to install under /usr/bin
 sudo cmake --install build --config Release
+# OR install under a custom directory (it must exists, cmake won't create it)
+cmake --install build --config Release --prefix /opt/ArkScript
 ```
 
 ### Building on MacOS
@@ -122,7 +125,15 @@ Requirements:
 - clang 16+
 - cmake >= 3.15
 
-On MacOS versions prior to 10.15, `libc++` lacks `filesystem` in the standard library.
+```shell
+cmake . -Bbuild -DARK_BUILD_EXE=On -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang
+cmake --build build --config Release
+cmake --install build --config Release  # might need administrator rights
+```
+
+---
+
+On MacOS versions **prior to 10.15**, `libc++` lacks `filesystem` in the standard library.
 
 You will need to:
 - Install a newer compiler using [Homebrew](https://docs.brew.sh/): `brew install gcc && brew link gcc`
@@ -131,9 +142,9 @@ You will need to:
 Commands:
 
 ```shell
-~/ark$ cmake . -Bbuild -DARK_BUILD_EXE=On -DCMAKE_CXX_COMPILER=/usr/local/bin/g++-14
-~/ark$ cmake --build build --config Release
-~/ark$ cmake --install build --config Release  # might need administrator rights
+cmake . -Bbuild -DARK_BUILD_EXE=On -DCMAKE_CXX_COMPILER=/usr/local/bin/g++-14
+cmake --build build --config Release
+cmake --install build --config Release  # might need administrator rights
 ```
 
 ### Building for the web using emscripten
@@ -165,7 +176,9 @@ cmake --build build_emscripten -j 8
 
 ### Running the tests
 
-To check that everything works, it is important to run the tests for the projects, and we have a multitude of them:
+To check that everything works, it is important to run the tests for the project. They can be compiled using `-DARK_TESTS`, building a `unittests` executable.
+
+The kind of tests we have:
 - `tests/benchmarks`: benchmarks for the parser and VM with a few scripts to help identifying regressions
 - `tests/fuzzing`: a collection of scripts (in `tests/fuzzing/docker/`) and ArkScript source files under the different `corpus` / `corpus-cmin` / `corpus-cmin-tmin` directories (only the `corpus` directory is managed by us, the two others are generated automatically through scripts and AFL++). Fuzzers can be run automatically using the `start-afl-docker.sh` script, that starts a docker image, compile ArkScript and run the fuzzers inside tmux sessions. An `output/` folder is created at the root of the project with the fuzzers output
 - `tests/repl`: a short test for the REPL to ensure it still autocompletes correctly

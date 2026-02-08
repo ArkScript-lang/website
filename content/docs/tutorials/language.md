@@ -19,6 +19,13 @@ aliases:
 
 {{< highlight_scripts >}}
 
+## Running code
+
+Create a `file.ark` on your disk, and from a terminal, run `arkscript file.ark`.  
+This will create a cache folder `__arkscript__/` with the compiled bytecode inside, that the VM will then run.
+
+*Alternatively*, you can head to the [playground](https://playground.arkscript-lang.dev) to run your code online.
+
 ## The basics
 
 In ArkScript, there are two main rules:

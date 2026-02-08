@@ -73,7 +73,7 @@ int main()
 
     // Run an ArkScript function from C++ code and retrieve the result:
     auto value = vm.call("foo", 5, 6.0);
-    std::cout << value << "\n";  // prints 13
+    std::cout << value.toString(vm) << "\n";  // prints 13
 
     // If you just want to run a precompiled bytecode file:
     {
@@ -100,7 +100,7 @@ Ark::Value my_function(std::vector<Ark::Value>& args, Ark::VM* vm)
         throw std::runtime_error("my_function needs 4 arguments!");
 
     if (!types::check(args, Ark::ValueType::Number, Ark::ValueType::Number, Ark::ValueType::Number, Ark::ValueType::Number))
-        Ark::types::generateError(
+        throw Ark::types::TypeCheckingError(
             "my_function",
             { { Ark::types::Contract { {
                 Ark::types::Typedef("a", ValueType::Number),
@@ -137,10 +137,10 @@ int main()
     vm.run();
 
     auto bar = vm["bar"];
-    std::cout << bar << "\n";
+    std::cout << bar.toString(vm) << "\n";
 
     auto egg = vm["egg"];
-    std::cout << egg << "\n";
+    std::cout << egg.toString(vm) << "\n";
 
     return 0;
 }
@@ -205,7 +205,7 @@ int main()
         return Ark::Nil;
     });
 
-    state.doString("(begin (let a (getBreakfast)) (print a) (useBreakfast a))");
+    state.doString("(let a (getBreakfast)) (print a) (useBreakfast a)");
     Ark::VM vm(&state);
     vm.run();
 

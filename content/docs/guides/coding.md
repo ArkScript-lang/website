@@ -158,7 +158,7 @@ for (std::size_t i = 0, end = container.size(); i < end; i++)
 ```cpp
 /**
  * @file Lexer.hpp
- * @author Lex Plateau (lexplt.dev@gmail.com)
+ * @author Lexy Plateau (lexplt.dev@gmail.com)
  * @brief Tokenize ArkScript code
  * @date 2020-10-27
  *
@@ -176,7 +176,7 @@ Snippet to recapitulate guidelines for headers:
 ```cpp
 /**
  * @file Lexer.hpp
- * @author Lex Plateau (lexplt.dev@gmail.com)
+ * @author Lexy Plateau (lexplt.dev@gmail.com)
  * @brief Tokenize ArkScript code
  * @date 2020-10-27
  *
