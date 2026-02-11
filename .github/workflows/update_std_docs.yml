@@ -79,7 +79,11 @@ jobs:
           # run arkdoc
           cd arkdoc
           export ARKDOC_LOGLEVEL=DEBUG
-          python -m arkdoc $ark_version ../ark-latest/src/arkreactor/Builtins/ ../std-latest/ --markdown out || exit 1
+          python -m arkdoc $ark_version              \
+              ../ark-latest/docs/arkdoc/             \
+              ../ark-latest/src/arkreactor/Builtins/ \
+              ../std-latest/                         \
+              --markdown out || exit 1
           cd ..
 
           cp arkdoc/out/$ark_version/* ./content/docs/std/
