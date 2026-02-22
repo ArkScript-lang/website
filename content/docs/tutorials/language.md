@@ -318,62 +318,13 @@ Closures can also be compared, the same way you would want to compare structs in
 ## VM builtins
 
 Some primitives are directly implemented in the VM, and are often referred to as *operators*. Those are the following:
-- Arithmetic operators: `+`, `-`, `*`, `/`, `mod`
-- Comparison operators: `=`, `!=`, `<`, `<=`, `>`, `>=`
-- Condition operators: `and`, `or`, `not`
-- List operators: `len`, `empty?`, `tail`, `head`, `nil?`, `@`, `@@`, `append`, `append!`, `concat`, `concat!`, `pop`, `pop!`, `@=`, `@@=`
-- Conversion operators: `toNumber`, `toString`
-- Test operator: `assert`
-- Type operators: `type`, `hasField`
-
-Here we'll explain the non-obvious ones:
-
-### List operators
-
-**`(tail a-list)`** will return the last elements of a list as a new list:
-- `[] -> []`,
-- `[1] -> []`,
-- `[1 2 3] -> [2 3]`.
-
-**`(head a-list)`** will return the first element of a list, or `nil` if the list is empty:
-- `[] -> nil`,
-- `[1] -> 1`,
-- `[1 2 3] -> 1`.
-
-**`(empty? a-list)`** returns true if the list (or string) is empty (or the value is `nil`), false otherwise.
-
-**`(nil? a-list)`** will always return false as a list isn't nil (which is the void value, returned by `head`).
-
-**`(@ a-list index)`** gets the element at `index` inside the list. Negative indices are supported, with `-1` being the last element.
-
-**`(@@ a-2d-list i j)`** is equivalent to `a-2d-list[i][j]` in Python: it gets the element at position `j` in the sublist `(@ a-2d-list i)`. It's a shortcut for `(@ (@ a-2d-list i) j)`.
-
-**`(append a-list 5)`** returns a new list with 5 added at the end,  
-**`(append! a-list 5)`** will add 5 in-place to a-list, without returning a new list.
-
-**`(concat a-list [5 6])`** returns a new list with 5 and 6 added at the end,  
-**`(concat! a-list [5 6])`** will add 5 and 6 in-place to a-list, without returning a new list.
-
-**`(pop a-list index)`** returns a new list without the element at `index` (supports negative indices, -1 being the end),  
-**`(pop! a-list index)`** will remove the element at `index` in-place, without returning a new list.
-
-**`(@= a-list index value)`** updates `a-list` in-place by replacing the element at `index` by `value` (supports negative indices, -1 being the end).
-
-Akin to `@=`, `@@=` can update lists in-place, but this version works on 2D list (list of lists, or list of strings). Eg **`(@@= a-2d-list i j value)`** will replace the element at `a-2d-list[i][j]` by `value`. If the sublist is a string, `value` needs to be a single char, eg `(@@= a-list-of-strings i j "b")`.
-
----
-
-### Test operator
-
-**`(assert condition message)`** will interrupt the execution if `condition` is false, and display the given message.
-
----
-
-### Type operators
-
-**`(type value)`** returns the type of the given value (or variable) as a string: `"List"`, `"Number"`, `"String"`, `"Function"`, `"CProc"`, `"Closure"`, `"UserType"`, `"Nil"`, `"Bool"`, `"Undefined"`.
-
-**`(hasField closure "a")`** returns true if the given closure has a field named `a`, false otherwise.
+- Arithmetic operators: `+`, `-`, `*`, `/`, `mod`, see [std.Math]({{< ref "/docs/std/Math.md" >}})
+- Comparison operators: `=`, `!=`, `<`, `<=`, `>`, `>=`, see [std.Builtins]({{< ref "/docs/std/Builtins.md" >}})
+- Condition operators: `and`, `or`, `not`, see [std.Builtins]({{< ref "/docs/std/Builtins.md" >}})
+- List operators: `len`, `empty?`, `tail`, `head`, `nil?`, `@`, `@@`, `append`, `append!`, `concat`, `concat!`, `pop`, `pop!`, `@=`, `@@=`, see [std.List]({{< ref "/docs/std/List.md" >}}) and [std.String]({{< ref "/docs/std/String.md" >}})
+- Conversion operators: `toNumber`, `toString`, see [std.Builtins]({{< ref "/docs/std/Builtins.md" >}})
+- Test operator: `assert`, see [std.Builtins]({{< ref "/docs/std/Builtins.md" >}})
+- Type operators: `type`, `hasField`, see [std.Builtins]({{< ref "/docs/std/Builtins.md" >}})
 
 ## Importing code
 
