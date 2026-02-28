@@ -3,8 +3,8 @@ title: "Macros"
 slug: "macros"
 description: ""
 summary: ""
-date: 2026-02-10T17:29:49+02:00
-lastmod: 2026-02-10T17:29:49+02:00
+date: 2026-02-28T12:09:01+02:00
+lastmod: 2026-02-28T12:09:01+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,194 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+## $undef
+
+---
+`($undef name)`
+Delete a given macro in the nearest scope
+
+
+
+#### Parameter
+- `name`: macro name
+
+
+#### Example
+{{< highlight_arkscript >}}
+(macro a 5)
+($undef a)
+(print a)  # will fail, as 'a' doesn't exist anymore
+{{< /highlight_arkscript >}}
+
+## $argcount
+
+---
+`($argcount node)`
+Retrieve at compile time the number of arguments taken by a given function.
+
+**Note**: The function must have been defined before using `$argcount`, or must be an anonymous function: `($argcount (fun (a b c) ()))`, `($argcount my-function)`.
+
+
+#### Parameter
+- `node`: 
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let foo (fun (a b) (+ a b)))
+(print ($argcount foo))  # 2
+{{< /highlight_arkscript >}}
+
+## $symcat
+
+---
+`($symcat symbol args...)`
+Create a new symbol by concatenating a symbol with numbers, strings and/or other symbols
+
+
+
+#### Parameters
+- `symbol`: 
+- `args...`: numbers, strings or symbols
+
+
+#### Example
+{{< highlight_arkscript >}}
+(macro foo () (let ($symcat a 5) 6))
+(foo)
+(print a5)
+{{< /highlight_arkscript >}}
+
+## $repr
+
+---
+`($repr node)`
+Return the AST representation of a given node, as a string.
+
+**Note**: Indentation, newlines and comments are not preserved.
+
+
+#### Parameter
+- `node`: 
+
+
+#### Example
+{{< highlight_arkscript >}}
+($repr foobar)  # will return "foobar"
+($repr (fun () (+ 1 2 3)))  # will return "(fun () (+ 1 2 3))"
+{{< /highlight_arkscript >}}
+
+## $as-is
+
+---
+`($as-is node)`
+Use a given node as it is, without evaluating it any further in the macro context. Useful to stop the evaluation of arguments passed to a function macro.
+
+
+
+#### Parameter
+- `node`: 
+
+
+
+## $type
+
+---
+`($type node)`
+Return the type of a given node, as a string.
+
+
+
+#### Parameter
+- `node`: 
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print ($type foobar))  # Symbol
+(print ($type (fun () (+ 1 2 3))))  # List
+{{< /highlight_arkscript >}}
+
+## $empty?
+
+---
+`($empty? node)`
+Check if a node is empty. An empty list, `[]` or `(list)`, is considered empty.
+
+
+
+#### Parameter
+- `node`: 
+
+
+#### Example
+{{< highlight_arkscript >}}
+(macro not_empty_node () ($empty? (fun () ())))
+(print (not_empty_node))  # false
+{{< /highlight_arkscript >}}
+
+## $head
+
+---
+`($head node)`
+Return the head node in a list of nodes. The head of a `[1 2 3]` / `(list 1 2 3)` disregards the `list` and returns 1.
+
+
+
+#### Parameter
+- `node`: 
+
+
+#### Example
+{{< highlight_arkscript >}}
+(macro h (...args) ($head args))
+(print (h))  # nil
+(print (h 1))  # 1
+(print (h 1 2))  # 1
+{{< /highlight_arkscript >}}
+
+## $tail
+
+---
+`($tail node)`
+Return the tails nodes in a list of nodes, as a `(list ...)`
+
+
+
+#### Parameter
+- `node`: 
+
+
+#### Example
+{{< highlight_arkscript >}}
+(macro g (...args) ($tail args))
+(print (g))  # []
+(print (g 1))  # []
+(print (g 1 2))  # [2]
+(print (g 1 2 3))  # [2 3]
+{{< /highlight_arkscript >}}
+
+## $at
+
+---
+`($at node index)`
+Return the node at a given index in a list of nodes
+
+
+
+#### Parameters
+- `node`: 
+- `index`: must be a number
+
+
+#### Example
+{{< highlight_arkscript >}}
+(macro one (...args) ($at args 1))
+(print (one 1 2))  # 2
+(print (one 1 3 4))  # 3
+(print (one 1 5 6 7 8))  # 5
+{{< /highlight_arkscript >}}
 
 ## ->
 

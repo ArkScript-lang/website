@@ -3,8 +3,8 @@ title: "Builtins"
 slug: "builtins"
 description: ""
 summary: ""
-date: 2026-02-10T17:29:49+02:00
-lastmod: 2026-02-10T17:29:49+02:00
+date: 2026-02-28T12:09:01+02:00
+lastmod: 2026-02-28T12:09:01+02:00
 draft: false
 weight: 410
 toc: true
@@ -65,6 +65,25 @@ Get the type of a given value as a string
 (print (type nil))  # "Nil"
 (print (type true))  # "Bool"
 (print (type false))  # "Bool"
+{{< /highlight_arkscript >}}
+
+## assert
+
+---
+`(assert cond message)`
+Interrupt the execution if a given condition is false
+
+
+
+#### Parameters
+- `cond`: condition
+- `message`: string to display
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let a 5)
+(assert (>= a 4) "'a' must be at least 4")
 {{< /highlight_arkscript >}}
 
 ## nil?

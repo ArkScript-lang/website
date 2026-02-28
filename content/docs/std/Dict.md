@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2026-02-10T17:29:49+02:00
-lastmod: 2026-02-10T17:29:49+02:00
+date: 2026-02-28T12:09:01+02:00
+lastmod: 2026-02-28T12:09:01+02:00
 draft: false
 weight: 410
 toc: true
@@ -249,6 +249,8 @@ Returns a list of the keys of a dictionary
 ---
 `(let size (fun (_D) (...)))`
 Computes the number of (key, value) pairs in a given dictionary
+
+**Deprecated**: Use the builtin `len` instead
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)

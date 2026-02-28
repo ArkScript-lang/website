@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-02-10T17:29:49+02:00
-lastmod: 2026-02-10T17:29:49+02:00
+date: 2026-02-28T12:09:01+02:00
+lastmod: 2026-02-28T12:09:01+02:00
 draft: false
 weight: 410
 toc: true
@@ -553,7 +553,7 @@ Repeat a string
 `(let slice (fun (_string _startingIndex _length) (...)))`
 Get a slice of a given string, from a given index with a given length
 
-**Note**: The original string is left unmodified. Example:
+**Note**: The original string is left unmodified.
 
 **Author**: [@Natendrtfm](https://github.com/Natendrtfm)
 
@@ -824,6 +824,28 @@ If a string ends with a given suffix, remove it
 {{< highlight_arkscript >}}
 (print (string:removeSuffix "TestCase" "Case"))  # Test
 (print (string:removeSuffix "BaseTestCase" "Test"))  # BaseTestCase
+{{< /highlight_arkscript >}}
+
+## levenshteinDistance
+
+---
+`(let levenshteinDistance (fun (_str1 _str2) (...)))`
+Compute the levenshtein distance between two strings
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_str1`: string
+- `_str2`: string
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:levenshteinDistance "arkscript" "arkscript"))  # 0
+(print (string:levenshteinDistance "arkscript" "Orkscript"))  # 1
+(print (string:levenshteinDistance "arkscript" "0rCscript"))  # 2
+(print (string:levenshteinDistance "arkscript" "OrC"))  # 8
 {{< /highlight_arkscript >}}
 
 

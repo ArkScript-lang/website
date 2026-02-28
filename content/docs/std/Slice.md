@@ -1,6 +1,6 @@
 ---
-title: "Switch"
-slug: "switch"
+title: "Slice"
+slug: "slice"
 description: ""
 summary: ""
 date: 2026-02-28T12:09:01+02:00
@@ -15,31 +15,26 @@ seo:
   noindex: false # false (default) or true
 ---
 
-## switch
+## slice
 
 ---
-`(macro switch (value case then ...cases) (...))`
-Takes a value to match against a list of (possible value, code to run)...
+`Builtin (slice container start end step)`
+Slice a list or string given a start, an end, and an optional step size
 
-**Note**: Once the value is matched, it stops and doesn't try any other values.
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameters
-- `value`: value to match
-- `case`: first case
-- `then`: value when first case matches
-- `...cases`: more (case, then)
+- `container`: list or string
+- `start`: number, included
+- `end`: number, excluded
+- `step`: number, default 1
 
 
 #### Example
 {{< highlight_arkscript >}}
-(switch 4
-    1 (print "hello")
-    2 (print "bye")
-    12 (print "jackpot")
-    (+ 1 4) (print "computation")
-    _ (print "default"))
+(let d (dict "key" "value" 5 12))
+(print d)  # {key: value, 5: 12}
 {{< /highlight_arkscript >}}
 
 

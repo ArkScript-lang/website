@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-02-10T17:29:49+02:00
-lastmod: 2026-02-10T17:29:49+02:00
+date: 2026-02-28T12:09:01+02:00
+lastmod: 2026-02-28T12:09:01+02:00
 draft: false
 weight: 410
 toc: true
@@ -53,6 +53,134 @@ Check if a list is empty
 (print (empty? (list))  # true
 (print (empty? nil))  # true
 (print (empty? [1 2 3]))  # false
+{{< /highlight_arkscript >}}
+
+## append
+
+---
+`(append lst element)`
+Add an element to a list, returning a new list
+
+
+
+#### Parameters
+- `lst`: a list
+- `element`: 
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (append [] 1))  # [1]
+(print (append [1 2] [3]))  # [1 2 [3]]
+{{< /highlight_arkscript >}}
+
+## append!
+
+---
+`(append! lst element)`
+Add an element to a list, modifying it in place. It doesn't return anything
+
+
+
+#### Parameters
+- `lst`: a list. Must be mutable
+- `element`: 
+
+
+#### Example
+{{< highlight_arkscript >}}
+(mut lst [1 2])
+(append! lst 1)
+(print lst) # [1 2 1]
+(append! lst [3])
+(print lst) # [1 2 1 [3]]
+{{< /highlight_arkscript >}}
+
+## concat
+
+---
+`(concat lhs rhs)`
+Concatenate two lists, returning a new list
+
+
+
+#### Parameters
+- `lhs`: a list
+- `rhs`: a second list
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (append [] 1))  # [1]
+(print (append [1 2] [3]))  # [1 2 [3]]
+{{< /highlight_arkscript >}}
+
+## concat!
+
+---
+`(concat! lst more)`
+Concatenate two lists in place, modifying the first one it in place. It doesn't return anything
+
+
+
+#### Parameters
+- `lst`: a list. Must be mutable
+- `more`: another list
+
+
+#### Example
+{{< highlight_arkscript >}}
+(mut lst [1 2])
+(concat! lst [1])
+(print lst) # [1 2 1]
+(concat! lst [3])
+(print lst) # [1 2 1 3]
+{{< /highlight_arkscript >}}
+
+## pop
+
+---
+`(pop lst index)`
+Return a new list without the element at index
+
+**Note**: Supports negative indices, -1 being the end.
+
+
+#### Parameters
+- `lst`: a list
+- `index`: number
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (pop [1] 0))  # []
+(print (pop [1 2 3] -2))  # [1 3]
+(print (pop [1 2 3] 2))  # [1 2]
+{{< /highlight_arkscript >}}
+
+## pop!
+
+---
+`(pop! lst index)`
+Remove an element from a list in place, given its index. It doesn't return anything
+
+**Note**: Supports negative indices, -1 being the end.
+
+
+#### Parameters
+- `lst`: a list. Must be mutable
+- `index`: number
+
+
+#### Example
+{{< highlight_arkscript >}}
+(mut lst [1 2 3 4 5])
+(pop! lst 0)
+(print lst)  # [2 3 4 5]
+(pop! lst -2)
+(print lst)  # [2 3 5]
+(pop! lst 2)
+(print lst)  # [2 3]
 {{< /highlight_arkscript >}}
 
 ## head
@@ -269,6 +397,8 @@ Generate a List of n copies of an element
 ---
 `(let size (fun (_L) (...)))`
 Function to call the `len` operator on a list
+
+**Deprecated**: Use the builtin `len` instead
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
