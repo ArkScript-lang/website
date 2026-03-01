@@ -3,8 +3,8 @@ title: "Slice"
 slug: "slice"
 description: ""
 summary: ""
-date: 2026-02-28T12:09:01+02:00
-lastmod: 2026-02-28T12:09:01+02:00
+date: 2026-03-01T01:08:19+02:00
+lastmod: 2026-03-01T01:08:19+02:00
 draft: false
 weight: 410
 toc: true

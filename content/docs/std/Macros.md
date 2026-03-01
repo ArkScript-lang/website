@@ -3,8 +3,8 @@ title: "Macros"
 slug: "macros"
 description: ""
 summary: ""
-date: 2026-02-28T12:09:01+02:00
-lastmod: 2026-02-28T12:09:01+02:00
+date: 2026-03-01T01:08:19+02:00
+lastmod: 2026-03-01T01:08:19+02:00
 draft: false
 weight: 410
 toc: true
@@ -44,7 +44,7 @@ Retrieve at compile time the number of arguments taken by a given function.
 
 
 #### Parameter
-- `node`: 
+- `node`: node
 
 
 #### Example
@@ -62,7 +62,7 @@ Create a new symbol by concatenating a symbol with numbers, strings and/or other
 
 
 #### Parameters
-- `symbol`: 
+- `symbol`: symbol
 - `args...`: numbers, strings or symbols
 
 
@@ -83,7 +83,7 @@ Return the AST representation of a given node, as a string.
 
 
 #### Parameter
-- `node`: 
+- `node`: node
 
 
 #### Example
@@ -101,7 +101,7 @@ Use a given node as it is, without evaluating it any further in the macro contex
 
 
 #### Parameter
-- `node`: 
+- `node`: node
 
 
 
@@ -114,7 +114,7 @@ Return the type of a given node, as a string.
 
 
 #### Parameter
-- `node`: 
+- `node`: node
 
 
 #### Example
@@ -132,7 +132,7 @@ Check if a node is empty. An empty list, `[]` or `(list)`, is considered empty.
 
 
 #### Parameter
-- `node`: 
+- `node`: node
 
 
 #### Example
@@ -150,7 +150,7 @@ Return the head node in a list of nodes. The head of a `[1 2 3]` / `(list 1 2 3)
 
 
 #### Parameter
-- `node`: 
+- `node`: node
 
 
 #### Example
@@ -170,7 +170,7 @@ Return the tails nodes in a list of nodes, as a `(list ...)`
 
 
 #### Parameter
-- `node`: 
+- `node`: node
 
 
 #### Example
@@ -191,7 +191,7 @@ Return the node at a given index in a list of nodes
 
 
 #### Parameters
-- `node`: 
+- `node`: node
 - `index`: must be a number
 
 
