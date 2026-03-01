@@ -24,6 +24,8 @@ ArkScript has a debugger built into its VM, that usually do not trigger, unless 
 - `help`: prints the available commands
 - `c` or `continue`: resume execution
 - `q` or `quit`: quit the debugger and stop the script execution
+- `locals <n>`: display the last `n` locals in the current scope (default: 5)
+- `stack <n>`: display the last `n` values on the stack (default: 5)
 
 ## Using the debugger on error
 
