@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-03-01T01:08:19+02:00
-lastmod: 2026-03-01T01:08:19+02:00
+date: 2026-03-02T17:31:20+02:00
+lastmod: 2026-03-02T17:31:20+02:00
 draft: false
 weight: 410
 toc: true
@@ -154,23 +154,13 @@ Get a character in a string
 ## format
 
 ---
-`Builtin (format format values)`
+`Builtin (format )`
 Format a String given replacements
 
-**Note**: https://fmt.dev/12.0/syntax/
+**Note**: See [fmt.dev](https://fmt.dev/12.0/syntax/) for syntax.
 
 
-#### Parameters
-- `format`: the String to format
-- `values`: as any argument as you need, of any valid ArkScript type
 
-
-#### Example
-{{< highlight_arkscript >}}
-(format "Hello {}, my name is {}" "world" "ArkScript")
-# Hello world, my name is ArkScript
-
-{{< /highlight_arkscript >}}
 
 ## asciiLetters
 
