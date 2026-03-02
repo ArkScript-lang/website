@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-03-02T17:31:20+02:00
-lastmod: 2026-03-02T17:31:20+02:00
+date: 2026-03-02T17:35:42+02:00
+lastmod: 2026-03-02T17:35:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -861,7 +861,8 @@ Unzip a list of [[a b] [c d]...] into [[a c ...] [b d ...]]
 `(let zip (fun ((ref _a) (ref _b)) (...)))`
 Zip two lists into one: [1 2 3 4] and [5 6 7 8] will give [[1 5] [2 6] [3 7] [4 8]]
 
-**Note**: The original lists are not modified.
+**Note**: Lists must have the same size. Otherwise, only the first (min (len _a) (len _b)) elements will be used.
+The original lists are not modified.
 
 **Author**: [@Unactived](https://github.com/Unactived)
 

@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-03-02T17:31:20+02:00
-lastmod: 2026-03-02T17:31:20+02:00
+date: 2026-03-02T17:35:42+02:00
+lastmod: 2026-03-02T17:35:42+02:00
 draft: false
 weight: 410
 toc: true
@@ -154,13 +154,36 @@ Get a character in a string
 ## format
 
 ---
-`Builtin (format )`
+`Builtin (format format values)`
 Format a String given replacements
 
 **Note**: See [fmt.dev](https://fmt.dev/12.0/syntax/) for syntax.
+In the case of lists, we have custom specifiers:
+- `n` removes surrounding brackets, uses ' ' as a separator
+- `?s` debug format. The list is formatted as an escaped string
+- `s` string format. The list is formatted as a string
+- `c` changes the separator to ', '
+- `l` changes the separator to '\n'
+
+`n` can be combined with either `c` and `l` (which are mutually exclusive): `nc`, `nl`.
+
+The underlying formatter is the one of strings, so you can write `::<10` to align all elements left in a 10 char wide block each.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `format`: the String to format
+- `values`: as any argument as you need, of any valid ArkScript type
 
 
+#### Example
+{{< highlight_arkscript >}}
+(format "Hello {}, my name is {}" "world" "ArkScript")
+# Hello world, my name is ArkScript
 
+(format "Test {} with {{}}" "1")
+# Test 1 with {}
+{{< /highlight_arkscript >}}
 
 ## asciiLetters
 

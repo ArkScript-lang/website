@@ -3,8 +3,8 @@ title: "Exceptions"
 slug: "exceptions"
 description: ""
 summary: ""
-date: 2026-03-02T17:31:20+02:00
-lastmod: 2026-03-02T17:31:20+02:00
+date: 2026-03-02T17:35:42+02:00
+lastmod: 2026-03-02T17:35:42+02:00
 draft: false
 weight: 410
 toc: true
