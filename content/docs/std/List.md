@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-03-02T17:35:42+02:00
-lastmod: 2026-03-02T17:35:42+02:00
+date: 2026-03-13T11:17:09+02:00
+lastmod: 2026-03-13T11:17:09+02:00
 draft: false
 weight: 410
 toc: true
@@ -78,7 +78,7 @@ Add an element to a list, returning a new list
 
 ---
 `(append! lst element)`
-Add an element to a list, modifying it in place. It doesn't return anything
+Add an element to a list, modifying it in place. Return the modified list
 
 
 
@@ -119,7 +119,7 @@ Concatenate two lists, returning a new list
 
 ---
 `(concat! lst more)`
-Concatenate two lists in place, modifying the first one it in place. It doesn't return anything
+Concatenate two lists in place, modifying the first one it in place. Return the modified list
 
 
 
@@ -162,7 +162,7 @@ Return a new list without the element at index
 
 ---
 `(pop! lst index)`
-Remove an element from a list in place, given its index. It doesn't return anything
+Remove an element from a list in place, given its index. Return the removed element
 
 **Note**: Supports negative indices, -1 being the end.
 
@@ -269,6 +269,36 @@ Get an element in a list of lists, or list of strings
 (print (@@ ["abc" "def" "ghi"] 0 1))  # b
 (print (@@ ["abc" "def" "ghi"] -1 1))  # h
 (print (@@ ["abc" "def" "ghi"] 0 -1))  # c
+{{< /highlight_arkscript >}}
+
+## @=
+
+---
+`(@= lst index x)`
+Set an element in a list, in place
+
+**Note**: Return the newly added element
+
+
+#### Parameters
+- `lst`: list
+- `index`: number (can be negative to start from the end)
+- `x`: value
+
+
+#### Example
+{{< highlight_arkscript >}}
+(mut lst [1 2 3 4 5])
+(print (@= lst 0 "x"))  # "x"
+(print lst)  # ["x" 2 3 4 5]
+(print (@= lst 1 "y"))  # "y"
+(print lst)  # ["x" "y" 3 4 5]
+(print (@= lst 2 "z"))  # "z"
+(print lst)  # ["x" "y" "z" 4 5]
+(@= lst -1 "f")
+(print lst)  # ["x" "y" "z" 4 "f"]
+(@= lst -2 "g")
+(print lst)  # ["x" "y" "z" "g" "f"]
 {{< /highlight_arkscript >}}
 
 ## reverse
@@ -447,7 +477,7 @@ Value to return from functions passed to forEach, enumerate, window... to stop i
 ## forEach
 
 ---
-`(let forEach (fun ((ref _L) _func) (...)))`
+`(let forEach (fun ((ref _data) _func) (...)))`
 Iterate over a given list and run a given function on every element.
 
 **Note**: The original list is not modified. Returns true if it returns early, false otherwise
@@ -455,7 +485,7 @@ Iterate over a given list and run a given function on every element.
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameters
-- `_L`: the list to iterate over
+- `_data`: the list to iterate over
 - `_func`: the function to call on each element. It can return list:stopIteration to stop iteration early
 
 
@@ -1046,6 +1076,27 @@ Generate a sequence of numbers
 (print (list:iota 0 10))  # [0 1 2 3 4 5 6 7 8 9]
 {{< /highlight_arkscript >}}
 
+## range
+
+---
+`(let range (fun (_start _end _step) (...)))`
+Generate a sequence of numbers
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_start`: initial value of the sequence
+- `_end`: end value (not included)
+- `_step`: step to go from one number to the next (0 is not allowed and will generate an error)
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (list:range 1 5 1))  # [1 2 3 4]
+(print (list:range 10 5 -2))  # [10 8 6]
+{{< /highlight_arkscript >}}
+
 ## chunkBy
 
 ---
@@ -1179,11 +1230,39 @@ Create a new list from a list of values and indices to get from the first list
 (print (list:select data [0 2 3 4]))  # [1 2 3 4]
 {{< /highlight_arkscript >}}
 
+## combinations
+
+---
+`(let combinations (fun ((ref _L) _r _f) (...)))`
+Compute permutations of length _r from a given list
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: list to get values from
+- `_r`: number of elements per permutation
+- `_f`: function to call on each permutation. It can return list:stopIteration to stop iteration early
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [0 1 2 3])
+(list:combinations data 3 (fun (perm) (print perm)))
+# [0 1 2]
+# [0 1 3]
+# [0 2 3]
+# [1 2 3]
+{{< /highlight_arkscript >}}
+
 ## permutations
 
 ---
-`(let permutations (fun ((ref _L) _r _f) (...)))`
+`(let permutations <value>)`
 Compute permutations of length _r from a given list
+
+**Deprecated**: Use list:combinations. Will be removed in ArkScript 4.5.0
 
 **Note**: The original list is not modified.
 
@@ -1205,11 +1284,41 @@ Compute permutations of length _r from a given list
 # [1 2 3]
 {{< /highlight_arkscript >}}
 
+## combinationsWithReplacement
+
+---
+`(let combinationsWithReplacement (fun ((ref _L) _r _f) (...)))`
+Compute permutations of length _r from a given list, allowing individual elements to be repeated more than once
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: list to get values from
+- `_r`: number of elements per permutation
+- `_f`: function to call on each permutation. It can return list:stopIteration to stop iteration early
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [0 1 2])
+(list:combinationsWithReplacement data 2 (fun (perm) (print perm)))
+# [0 0]
+# [0 1]
+# [0 2]
+# [1 1]
+# [1 2]
+# [2 2]
+{{< /highlight_arkscript >}}
+
 ## permutationsWithReplacement
 
 ---
-`(let permutationsWithReplacement (fun ((ref _L) _r _f) (...)))`
+`(let permutationsWithReplacement <value>)`
 Compute permutations of length _r from a given list, allowing individual elements to be repeated more than once
+
+**Deprecated**: Use list:combinationsWithReplacement. Will be removed in ArkScript 4.5.0
 
 **Note**: The original list is not modified.
 

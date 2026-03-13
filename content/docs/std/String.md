@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-03-02T17:35:42+02:00
-lastmod: 2026-03-02T17:35:42+02:00
+date: 2026-03-13T11:17:09+02:00
+lastmod: 2026-03-13T11:17:09+02:00
 draft: false
 weight: 410
 toc: true
@@ -149,6 +149,36 @@ Get a character in a string
 (print (@ "abc" 2))  # "c"
 (print (@ "abc" -1))  # "c"
 (print (@ "abc" -2))  # "b"
+{{< /highlight_arkscript >}}
+
+## @=
+
+---
+`(@= str index char)`
+Set a character in a string, in place
+
+**Note**: Return the newly added character
+
+
+#### Parameters
+- `str`: string
+- `index`: number (can be negative to start from the end)
+- `char`: character
+
+
+#### Example
+{{< highlight_arkscript >}}
+(mut str "abcde")
+(print (@= str 0 "x"))  # "x"
+(print str)  # "xbcde"
+(print (@= str 1 "y"))  # "y"
+(print str)  # "xycde"
+(print (@= str 2 "z"))  # "z"
+(print str)  # "xyzde"
+(@= str -1 "f")
+(print str)  # "xyzdf"
+(@= str -2 "g")
+(print str)  # "xyzgf"
 {{< /highlight_arkscript >}}
 
 ## format
