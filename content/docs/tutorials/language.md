@@ -54,6 +54,8 @@ The following three keywords are important when talking about variables:
 (mut b [12 42 64])  # mutable variable
 (mut b "hello")  # no problem, the operation is allowed
 (set b "ArkScript is cool!")  # no problem, operation is allowed on mutables
+
+(let d (set b 13))  # b is 13 and d is 13 too
 {{< /highlight_arkscript >}}
 
 ## Comments
