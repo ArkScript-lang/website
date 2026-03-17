@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-03-13T11:17:09+02:00
-lastmod: 2026-03-13T11:17:09+02:00
+date: 2026-03-17T21:16:22+02:00
+lastmod: 2026-03-17T21:16:22+02:00
 draft: false
 weight: 410
 toc: true
@@ -299,6 +299,35 @@ Set an element in a list, in place
 (print lst)  # ["x" "y" "z" 4 "f"]
 (@= lst -2 "g")
 (print lst)  # ["x" "y" "z" "g" "f"]
+{{< /highlight_arkscript >}}
+
+## @@=
+
+---
+`(@@= lst y x value)`
+Set an element in a list of lists or list of strings, in place
+
+**Note**: Return the newly added element
+
+
+#### Parameters
+- `lst`: list
+- `y`: index (can be negative to start from the end)
+- `x`: index (can be negative to start from the end)
+- `value`: anything (for list of lists) or string (for list of strings)
+
+
+#### Example
+{{< highlight_arkscript >}}
+(mut lst [[1 2 3] [4 5 6] [7 8 9]])
+(print (@@= lst 0 1 "x"))  # x
+(print (@@= lst -1 1 "y"))  # y
+(print (@@= lst 0 -1 "z"))  # z
+(mut lst2 ["abc" "def" "ghi"])
+(print (@@= lst2 0 1 "0"))  # 0
+(print (@@= lst2 -1 1 "1"))  # 1
+(print (@@= lst2 0 -1 "2"))  # 2
+(print lst2)  # [a02 def g1i]
 {{< /highlight_arkscript >}}
 
 ## reverse

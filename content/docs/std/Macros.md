@@ -3,8 +3,8 @@ title: "Macros"
 slug: "macros"
 description: ""
 summary: ""
-date: 2026-03-13T11:17:09+02:00
-lastmod: 2026-03-13T11:17:09+02:00
+date: 2026-03-17T21:16:22+02:00
+lastmod: 2026-03-17T21:16:22+02:00
 draft: false
 weight: 410
 toc: true
@@ -340,6 +340,50 @@ Unpack a pair of two elements into two new variables
   (fun (pair) {
     (unpackPair pair x y)
     (print (+ x y)) }))
+{{< /highlight_arkscript >}}
+
+## ++
+
+---
+`(macro ++ <value>)`
+Increment a variable, by generating a `set`
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `value`: symbol to increment
+
+
+#### Example
+{{< highlight_arkscript >}}
+(mut n 0)
+(++ n)
+(print n)  # 1
+(++ n)
+(print n)  # 2
+{{< /highlight_arkscript >}}
+
+## --
+
+---
+`(macro -- <value>)`
+Decrement a variable, by generating a `set`
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `value`: symbol to decrement
+
+
+#### Example
+{{< highlight_arkscript >}}
+(mut n 0)
+(-- n)
+(print n)  # -1
+(-- n)
+(print n)  # -2
 {{< /highlight_arkscript >}}
 
 
