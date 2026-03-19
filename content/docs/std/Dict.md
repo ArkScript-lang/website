@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2026-03-19T05:59:58+02:00
-lastmod: 2026-03-19T05:59:58+02:00
+date: 2026-03-19T06:20:11+02:00
+lastmod: 2026-03-19T06:20:11+02:00
 draft: false
 weight: 410
 toc: true
