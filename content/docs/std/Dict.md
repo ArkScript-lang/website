@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2026-03-17T21:16:22+02:00
-lastmod: 2026-03-17T21:16:22+02:00
+date: 2026-03-19T05:59:58+02:00
+lastmod: 2026-03-19T05:59:58+02:00
 draft: false
 weight: 410
 toc: true
@@ -135,28 +135,6 @@ Checks if the dictionary has a given key
 (print (dict:contains? data "test"))  # false
 {{< /highlight_arkscript >}}
 
-## contains
-
----
-`(let contains <value>)`
-Checks if the dictionary has a given key
-
-**Deprecated**: Use `dict:contains?`
-
-
-**Author**: [@SuperFola](https://github.com/SuperFola)
-
-#### Parameter
-- `_D`: dictionary
-
-
-#### Example
-{{< highlight_arkscript >}}
-(let data (dict "key" "value"))
-(print (dict:contains data "key"))  # true
-(print (dict:contains data "test"))  # false
-{{< /highlight_arkscript >}}
-
 ## getOrElse
 
 ---
@@ -242,27 +220,6 @@ Returns a list of the keys of a dictionary
 {{< highlight_arkscript >}}
 (let data (dict "key" "value" 5 12))
 (print (dict:keys data))  # [key, 5]
-{{< /highlight_arkscript >}}
-
-## size
-
----
-`(let size (fun (_D) (...)))`
-Computes the number of (key, value) pairs in a given dictionary
-
-**Deprecated**: Use the builtin `len` instead
-
-
-**Author**: [@SuperFola](https://github.com/SuperFola)
-
-#### Parameter
-- `_D`: dictionary
-
-
-#### Example
-{{< highlight_arkscript >}}
-(let data (dict "key" "value"))
-(print (dict:size data))  # 1
 {{< /highlight_arkscript >}}
 
 ## values

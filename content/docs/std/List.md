@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-03-17T21:16:22+02:00
-lastmod: 2026-03-17T21:16:22+02:00
+date: 2026-03-19T05:59:58+02:00
+lastmod: 2026-03-19T05:59:58+02:00
 draft: false
 weight: 410
 toc: true
@@ -449,26 +449,6 @@ Generate a List of n copies of an element
 #### Example
 {{< highlight_arkscript >}}
 (list:fill 4 nil)  # [nil nil nil nil]
-{{< /highlight_arkscript >}}
-
-## size
-
----
-`(let size (fun (_L) (...)))`
-Function to call the `len` operator on a list
-
-**Deprecated**: Use the builtin `len` instead
-
-
-**Author**: [@SuperFola](https://github.com/SuperFola)
-
-#### Parameter
-- `_L`: list to get the size of
-
-
-#### Example
-{{< highlight_arkscript >}}
-(print (list:size [1 2 3 4]))  # 4
 {{< /highlight_arkscript >}}
 
 ## setAt

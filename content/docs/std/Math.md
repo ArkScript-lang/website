@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2026-03-17T21:16:22+02:00
-lastmod: 2026-03-17T21:16:22+02:00
+date: 2026-03-19T05:59:58+02:00
+lastmod: 2026-03-19T05:59:58+02:00
 draft: false
 weight: 410
 toc: true
@@ -539,43 +539,11 @@ Return true if the number is even, false otherwise
 
 
 
-## even
-
----
-`(let even <value>)`
-Return true if the number is even, false otherwise
-
-**Deprecated**: Use `math:even?`
-
-
-**Author**: [@rstefanic](https://github.com/rstefanic)
-
-#### Parameter
-- `_n`: the number
-
-
-
 ## odd?
 
 ---
 `(let odd? (fun (_n) (...)))`
 Return true if the number is odd, false otherwise
-
-
-**Author**: [@rstefanic](https://github.com/rstefanic)
-
-#### Parameter
-- `_n`: the number
-
-
-
-## odd
-
----
-`(let odd <value>)`
-Return true if the number is odd, false otherwise
-
-**Deprecated**: Use `math:odd?`
 
 
 **Author**: [@rstefanic](https://github.com/rstefanic)
