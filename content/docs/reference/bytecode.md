@@ -104,18 +104,17 @@ The locals are backed by a `std::array<ScopeView::pair_t, ScopeStackSize>`, and 
 
 ## Function calling convention
 
-If we want to call a function `foo`, eg by writing `(foo 1 2 3)`, the arguments will be pushed in reverse order on the stack, because functions load their arguments in the order they are defined.
+If we want to call a function `foo`, eg by writing `(foo 1 2 3)`, the function will be evaluated and pushed first, then the arguments will be pushed in the order they appear on the stack, because functions load their arguments in the reverse order they are defined.
 
-In the expression `(foo 1 2 3)`, we would first push 3, then 2, and finally 1. In the end, our stack looks like this:
+In the expression `(foo 1 2 3)`, we would first push foo, then 1, then 2, and finally 3. In the end, our stack looks like this:
 
 ```
-1   <-- Top of the stack
+3   <-- Top of the stack
 2
-3
+1
+foo
 ... <-- Bottom of the stack
 ```
-
-Hence, we can retrieve the arguments in the correct order. However, this has the effect of inverting the order of evaluation of the arguments, if we pass expressions to our function: `(foo (+ 1 2) (* 3 4) (- 5 6))`, the expression `(+ 1 2)` will be evaluated **last**, while `(- 5 6)` will be evaluated **first**.
 
 ## Instructions
 
@@ -144,23 +143,23 @@ Hence, we can retrieve the arguments in the correct order. However, this has the
 | `DEL` (0x13) | symbol id | Remove a variable/constant named following the given symbol id (cf symbols table) |
 | `MAKE_CLOSURE` (0x14) | constant id | Push a Closure with the page address pointed by the constant, along with the saved scope created by CAPTURE instruction(s) |
 | `GET_FIELD` (0x15) | symbol id | Read the field named following the given symbol id (cf symbols table) of a `Closure` stored in TS. Pop TS and push the value of field read on the stack |
-| `PLUGIN` (0x16) | constant id | Load a plugin dynamically, plugin name is stored as a string in the constants table |
-| `LIST` (0x17) | number of elements | Create a list from the N elements pushed on the stack. Follows the function calling convention |
-| `APPEND` (0x18) | number of elements | Append N elements to a list (TS). Elements are stored in TS(1)..TS(N). Follows the function calling convention |
-| `CONCAT` (0x19) | number of elements | Concatenate N lists to a list (TS). Lists to concat to TS are stored in TS(1)..TS(N). Follows the function calling convention |
-| `APPEND_IN_PLACE` (0x1a) | number of elements | Append N elements to a reference to a list (TS), the list is being mutated in-place, no new object created. Elements are stored in TS(1)..TS(N). Follows the function calling convention |
-| `CONCAT_IN_PLACE` (0x1b) | number of elements | Concatenate N lists to a reference to a list (TS), the list is being mutated in-place, no new object created. Lists to concat to TS are stored in TS(1)..TS(N). Follows the function calling convention |
-| `POP_LIST` (0x1c) |  | Remove an element from a list (TS), given an index (TS1). Push a new list without the removed element to the stack |
-| `POP_LIST_IN_PLACE` (0x1d) |  | Remove an element from a reference to a list (TS), given an index (TS1). The list is mutated in-place, no new object created |
-| `SET_AT_INDEX` (0x1e) |  | Modify a reference to a list or string (TS) by replacing the element at TS1 (must be a number) by the value in TS2. The object is mutated in-place, no new object created |
-| `SET_AT_2_INDEX` (0x1f) |  | Modify a reference to a list (TS) by replacing TS[TS2][TS1] by the value in TS3. TS[TS2] can be a string (if it is, TS3 must be a string). The object is mutated in-place, no new object created |
-| `POP` (0x20) |  | Remove the top of the stack |
-| `SHORTCIRCUIT_AND` (0x21) |  | Pop the top of the stack, if it's false, jump to an address |
-| `SHORTCIRCUIT_OR` (0x22) |  | Pop the top of the stack, if it's true, jump to an address |
-| `CREATE_SCOPE` (0x23) |  | Create a new local scope |
-| `RESET_SCOPE_JUMP` (0x24) |  | Reset the current scope so that it is empty, and jump to a given location |
-| `POP_SCOPE` (0x25) |  | Destroy the last local scope |
-| `GET_CURRENT_PAGE_ADDR` (0x26) | symbol id (function name) | Push the current page address as a value on the stack |
+| `GET_FIELD_AS_CLOSURE` (0x16) | symbol id | Read the field named following the given symbol id (cf symbols table) of a `Closure` stored in TS. Pop TS and push the value of field read on the stack, wrapping it in its closure environment |
+| `PLUGIN` (0x17) | constant id | Load a plugin dynamically, plugin name is stored as a string in the constants table |
+| `LIST` (0x18) | number of elements | Create a list from the N elements pushed on the stack. Follows the function calling convention |
+| `APPEND` (0x19) | number of elements | Append N elements to a list (TS). Elements are stored in TS(1)..TS(N). Follows the function calling convention |
+| `CONCAT` (0x1a) | number of elements | Concatenate N lists to a list (TS). Lists to concat to TS are stored in TS(1)..TS(N). Follows the function calling convention |
+| `APPEND_IN_PLACE` (0x1b) | number of elements | Append N elements to a reference to a list (TS), the list is being mutated in-place, no new object created. Elements are stored in TS(1)..TS(N). Follows the function calling convention |
+| `CONCAT_IN_PLACE` (0x1c) | number of elements | Concatenate N lists to a reference to a list (TS), the list is being mutated in-place, no new object created. Lists to concat to TS are stored in TS(1)..TS(N). Follows the function calling convention |
+| `POP_LIST` (0x1d) |  | Remove an element from a list (TS), given an index (TS1). Push a new list without the removed element to the stack |
+| `POP_LIST_IN_PLACE` (0x1e) |  | Remove an element from a reference to a list (TS), given an index (TS1). The list is mutated in-place, no new object created |
+| `SET_AT_INDEX` (0x1f) |  | Modify a reference to a list or string (TS) by replacing the element at TS1 (must be a number) by the value in TS2. The object is mutated in-place, no new object created |
+| `SET_AT_2_INDEX` (0x20) |  | Modify a reference to a list (TS) by replacing TS[TS2][TS1] by the value in TS3. TS[TS2] can be a string (if it is, TS3 must be a string). The object is mutated in-place, no new object created |
+| `POP` (0x21) |  | Remove the top of the stack |
+| `SHORTCIRCUIT_AND` (0x22) |  | Pop the top of the stack, if it's false, jump to an address |
+| `SHORTCIRCUIT_OR` (0x23) |  | Pop the top of the stack, if it's true, jump to an address |
+| `CREATE_SCOPE` (0x24) |  | Create a new local scope |
+| `RESET_SCOPE_JUMP` (0x25) |  | Reset the current scope so that it is empty, and jump to a given location |
+| `POP_SCOPE` (0x26) |  | Destroy the last local scope |
 | `APPLY` (0x27) |  | Pop a List from the stack and a function, and call the function with the given list as arguments |
 | `BREAKPOINT` (0x28) |  | Pop the top of the stack, if it's true, trigger the debugger |
 | `ADD` (0x29) |  | Push `TS1 + TS` |
@@ -221,20 +220,21 @@ Hence, we can retrieve the arguments in the correct order. However, this has the
 | `NEQ_CONST_JUMP_IF_TRUE` (0x60) | constant id, absolute address to jump to | Compare `TS != constant`, if the comparison succeeds, jump to the given address. Otherwise, does nothing |
 | `NEQ_SYM_JUMP_IF_FALSE` (0x61) | symbol id, absolute address to jump to | Compare `TS != symbol`, if the comparison fails, jump to the given address. Otherwise, does nothing |
 | `CALL_SYMBOL` (0x62) | symbol id, argument count | Call a symbol by its id in `primary`, with `secondary` arguments |
-| `CALL_CURRENT_PAGE` (0x63) | symbol id (function name), argument count | Call the current page with `secondary` arguments |
-| `GET_FIELD_FROM_SYMBOL` (0x64) | symbol id, field id in symbols table | Push the field of a given symbol (which has to be a closure) on the stack |
-| `GET_FIELD_FROM_SYMBOL_INDEX` (0x65) | symbol index, field id in symbols table | Push the field of a given symbol (which has to be a closure) on the stack |
-| `AT_SYM_SYM` (0x66) | symbol id, symbol id2 | Push symbol[symbol2] |
-| `AT_SYM_INDEX_SYM_INDEX` (0x67) | symbol index, symbol index2 | Push symbol[symbol2] |
-| `AT_SYM_INDEX_CONST` (0x68) | symbol index, constant id | Push symbol[constant] |
-| `CHECK_TYPE_OF` (0x69) | symbol id, constant id | Check that the type of symbol is the given constant, push true if so, false otherwise |
-| `CHECK_TYPE_OF_BY_INDEX` (0x6a) | symbol index, constant id | Check that the type of symbol is the given constant, push true if so, false otherwise |
-| `APPEND_IN_PLACE_SYM` (0x6b) | symbol id, number of elements | Append N elements to a reference to a list (symbol id), the list is being mutated in-place, no new object created. Elements are stored in TS(1)..TS(N). Follows the function calling convention |
-| `APPEND_IN_PLACE_SYM_INDEX` (0x6c) | symbol index, number of elements | Append N elements to a reference to a list (symbol index), the list is being mutated in-place, no new object created. Elements are stored in TS(1)..TS(N). Follows the function calling convention |
-| `STORE_LEN` (0x6d) | symbol index, symbol id | Compute the length of the list or string at symbol index, and store it in a variable (symbol id) |
-| `LT_LEN_SYM_JUMP_IF_FALSE` (0x6e) | symbol id, absolute address to jump to | Compute the length of a symbol (list or string), and pop TS to compare it, then jump if false |
-| `MUL_BY` (0x6f) | symbol id, offset number | Multiply the symbol by (offset symbol - 2048), then push it to the stack |
-| `MUL_BY_INDEX` (0x70) | symbol index, offset number | Multiply the symbol by (offset symbol - 2048), then push it to the stack |
-| `MUL_SET_VAL` (0x71) | symbol id, offset number | Multiply the symbol by (offset symbol - 2048), then store the result using the given symbol id |
-| `FUSED_MATH` (0x72) | op1, op2, op3 | Pop 3 or 4 values from the stack, and apply the ops sequentially (only ADD, SUB, MUL, and DIV are supported). Push the result to the stack. Only op3 may be NOP. |
+| `CALL_SYMBOL_BY_INDEX` (0x63) | symbol index, argument count | Call a symbol by its index in the locals in `primary`, with `secondary` arguments |
+| `CALL_CURRENT_PAGE` (0x64) | symbol id (function name), argument count | Call the current page with `secondary` arguments |
+| `GET_FIELD_FROM_SYMBOL` (0x65) | symbol id, field id in symbols table | Push the field of a given symbol (which has to be a closure) on the stack |
+| `GET_FIELD_FROM_SYMBOL_INDEX` (0x66) | symbol index, field id in symbols table | Push the field of a given symbol (which has to be a closure) on the stack |
+| `AT_SYM_SYM` (0x67) | symbol id, symbol id2 | Push symbol[symbol2] |
+| `AT_SYM_INDEX_SYM_INDEX` (0x68) | symbol index, symbol index2 | Push symbol[symbol2] |
+| `AT_SYM_INDEX_CONST` (0x69) | symbol index, constant id | Push symbol[constant] |
+| `CHECK_TYPE_OF` (0x6a) | symbol id, constant id | Check that the type of symbol is the given constant, push true if so, false otherwise |
+| `CHECK_TYPE_OF_BY_INDEX` (0x6b) | symbol index, constant id | Check that the type of symbol is the given constant, push true if so, false otherwise |
+| `APPEND_IN_PLACE_SYM` (0x6c) | symbol id, number of elements | Append N elements to a reference to a list (symbol id), the list is being mutated in-place, no new object created. Elements are stored in TS(1)..TS(N). Follows the function calling convention |
+| `APPEND_IN_PLACE_SYM_INDEX` (0x6d) | symbol index, number of elements | Append N elements to a reference to a list (symbol index), the list is being mutated in-place, no new object created. Elements are stored in TS(1)..TS(N). Follows the function calling convention |
+| `STORE_LEN` (0x6e) | symbol index, symbol id | Compute the length of the list or string at symbol index, and store it in a variable (symbol id) |
+| `LT_LEN_SYM_JUMP_IF_FALSE` (0x6f) | symbol id, absolute address to jump to | Compute the length of a symbol (list or string), and pop TS to compare it, then jump if false |
+| `MUL_BY` (0x70) | symbol id, offset number | Multiply the symbol by (offset symbol - 2048), then push it to the stack |
+| `MUL_BY_INDEX` (0x71) | symbol index, offset number | Multiply the symbol by (offset symbol - 2048), then push it to the stack |
+| `MUL_SET_VAL` (0x72) | symbol id, offset number | Multiply the symbol by (offset symbol - 2048), then store the result using the given symbol id |
+| `FUSED_MATH` (0x73) | op1, op2, op3 | Pop 3 or 4 values from the stack, and apply the ops sequentially (only ADD, SUB, MUL, and DIV are supported). Push the result to the stack. Only op3 may be NOP. |
 
