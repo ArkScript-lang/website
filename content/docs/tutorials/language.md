@@ -58,6 +58,20 @@ The following three keywords are important when talking about variables:
 (let d (set b 13))  # b is 13 and d is 13 too
 {{< /highlight_arkscript >}}
 
+**Important**: `let`, `mut` and `set` can be used as *expressions*, and return their value. It will always return a copy of the value, while just using the variable name pushes an internal reference. You should never have to worry about dealing with a reference or a copy, as this is made transparent by the language. However, you can observe this behaviour when running the following code:
+
+{{< highlight_arkscript >}}
+(print (mut n 1) (+ 0 n) n (set n 2))
+# 1 1 2 2
+{{< /highlight_arkscript >}}
+
+1. This writes `1` because `mut` returned that value by copy,
+2. Then `1` again as it is the result of the computation `(+ 0 n)`, evaluated immediately,
+3. Then `2` (instead of `1`), since `n` is a reference (to a value equal to `1` for now),
+4. Then `2` as `set` modified `n` and pushed its value.
+
+Since `set` modified `n` in **4**, when we finally call `print`, the reference pushed in **3** is now a `2`.
+
 ## Comments
 
 As you have seen in the example above, we can write code that won't be executed, using `# text`. This is a comment, only for the developer, and will be totally ignored when compiling and executing.
