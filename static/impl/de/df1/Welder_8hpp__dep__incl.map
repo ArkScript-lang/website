@@ -1,13 +1,15 @@
 <map id="/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/Welder.hpp" name="/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/Welder.hpp">
-<area shape="rect" id="Node000001" title="In charge of welding everything needed to compile code." alt="" coords="556,5,725,61"/>
+<area shape="rect" id="Node000001" title="In charge of welding everything needed to compile code." alt="" coords="654,5,824,61"/>
 <area shape="rect" id="Node000002" href="$d3/d7e/Ark_8hpp.html" title="Includes the needed files to start using ArkScript." alt="" coords="257,109,413,165"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="545,69,414,112,413,107,544,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="640,62,414,118,413,113,639,57"/>
 <area shape="rect" id="Node000005" href="$dc/dfd/JsonCompiler_8hpp.html" title=" " alt="" coords="465,109,621,165"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="606,74,571,110,567,107,602,71"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="674,71,597,111,594,106,672,66"/>
 <area shape="rect" id="Node000008" href="$d3/df1/Welder_8cpp.html" title=" " alt="" coords="645,109,833,165"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="679,70,714,106,711,110,675,74"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="742,77,742,108,736,108,736,77"/>
 <area shape="rect" id="Node000009" href="$d0/da0/State_8cpp.html" title=" " alt="" coords="857,109,1045,165"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="739,64,868,106,867,111,737,69"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="811,66,895,106,893,111,808,70"/>
+<area shape="rect" id="Node000010" href="$db/d7b/Debugger_8cpp.html" title=" " alt="" coords="1069,109,1257,165"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="840,55,1057,106,1069,109,1068,115,1056,112,838,60"/>
 <area shape="rect" id="Node000003" href="$d1/d95/arkemscripten_2main_8cpp.html" title=" " alt="" coords="5,213,217,268"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="262,174,172,214,170,210,260,169"/>
 <area shape="rect" id="Node000004" href="$dc/d32/Ark_8cpp.html" title=" " alt="" coords="241,213,429,268"/>

@@ -31,6 +31,7 @@ var classFormatter =
     [ "warnIfCommentsWereRemoved", "d9/d43/classFormatter.html#ae722f662cf5a04df8696928d3c7a60d6", null ],
     [ "m_dry_run", "d9/d43/classFormatter.html#a62c7a819b8a96ac6663f245f3cf48156", null ],
     [ "m_filename", "d9/d43/classFormatter.html#adde3885c3c26f054a0039360e0c19a3d", null ],
+    [ "m_logger", "d9/d43/classFormatter.html#a0aef8f8fdb51c90d93e36bb1e675b3e0", null ],
     [ "m_output", "d9/d43/classFormatter.html#ac635c5e08f2d9fa6a711b32687a4d926", null ],
     [ "m_parser", "d9/d43/classFormatter.html#a710f4582c5aed1fb3d345213351f9510", null ],
     [ "m_updated", "d9/d43/classFormatter.html#a79ba1b10f9b2ac56a88e63add5e6c3a2", null ]

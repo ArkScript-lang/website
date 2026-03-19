@@ -111,8 +111,55 @@ Functions</h2></td></tr>
 <tr class="memitem:a8f9326e745dc008df3527a447eeb0788" id="r_a8f9326e745dc008df3527a447eeb0788"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d44/Module_8hpp.html#ac62a8551c675391a8cf01d112e42d755">ARK_API</a> std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f9326e745dc008df3527a447eeb0788">levenshteinDistance</a> (const std::string &amp;str1, const std::string &amp;str2)</td></tr>
 <tr class="memdesc:a8f9326e745dc008df3527a447eeb0788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the Levenshtein distance between two strings.  <br /></td></tr>
 <tr class="separator:a8f9326e745dc008df3527a447eeb0788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5230fc00b9401f81f8e4689f81c2d678" id="r_a5230fc00b9401f81f8e4689f81c2d678"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d44/Module_8hpp.html#ac62a8551c675391a8cf01d112e42d755">ARK_API</a> long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5230fc00b9401f81f8e4689f81c2d678">countOpenEnclosures</a> (const std::string &amp;line, char open, char close)</td></tr>
+<tr class="memdesc:a5230fc00b9401f81f8e4689f81c2d678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the open enclosure and its counterpart: (), {}, [].  <br /></td></tr>
+<tr class="separator:a5230fc00b9401f81f8e4689f81c2d678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6eafcf44e2ce3e5961cac0fda2535e" id="r_a8a6eafcf44e2ce3e5961cac0fda2535e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d44/Module_8hpp.html#ac62a8551c675391a8cf01d112e42d755">ARK_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a6eafcf44e2ce3e5961cac0fda2535e">trimWhitespace</a> (std::string &amp;line)</td></tr>
+<tr class="memdesc:a8a6eafcf44e2ce3e5961cac0fda2535e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove whitespaces at the start and end of a string.  <br /></td></tr>
+<tr class="separator:a8a6eafcf44e2ce3e5961cac0fda2535e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5230fc00b9401f81f8e4689f81c2d678" name="a5230fc00b9401f81f8e4689f81c2d678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5230fc00b9401f81f8e4689f81c2d678">&#9670;&#160;</a></span>countOpenEnclosures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long Ark::Utils::countOpenEnclosures </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>line</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>open</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>close</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the open enclosure and its counterpart: (), {}, []. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>data to operate on </td></tr>
+    <tr><td class="paramname">open</td><td>the open char: (, { or [ </td></tr>
+    <tr><td class="paramname">close</td><td>the closing char: ), } or ] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>positive if there are more open enclosures than closed. 0 when both are equal, negative otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html#l00035">35</a> of file <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html">Utils.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00220">Ark::Repl::getCodeBlock()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">Ark::internal::Debugger::prompt()</a>.</p>
+
+</div>
+</div>
 <a id="a1e2624f09a9e767e1792b69b879aa73f" name="a1e2624f09a9e767e1792b69b879aa73f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e2624f09a9e767e1792b69b879aa73f">&#9670;&#160;</a></span>fileExists()</h2>
 
@@ -149,7 +196,7 @@ false on failure </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00028">28</a> of file <a class="el" href="../../d4/dc0/Files_8hpp_source.html">Files.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02304">Ark::VM::backtrace()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00082">Ark::State::doFile()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00032">Ark::State::feed()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00285">Ark::VM::loadPlugin()</a>, and <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00121">Ark::Repl::registerBuiltins()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02310">Ark::VM::backtrace()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00088">Ark::State::doFile()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00033">Ark::State::feed()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00163">Ark::VM::loadPlugin()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00122">Ark::Repl::registerBuiltins()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00131">Ark::internal::Debugger::showContext()</a>.</p>
 
 </div>
 </div>
@@ -194,7 +241,7 @@ false on failure </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00085">85</a> of file <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html">Utils.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00826">Ark::internal::Parser::number()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00524">Ark::VM::safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00827">Ark::internal::Parser::number()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">Ark::VM::safeRun()</a>.</p>
 
 </div>
 </div>
@@ -227,9 +274,9 @@ false on failure </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::size_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html#l00005">5</a> of file <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html">Utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html">Utils.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00372">Ark::internal::NameResolutionPass::offerSuggestion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00373">Ark::internal::NameResolutionPass::offerSuggestion()</a>.</p>
 
 </div>
 </div>
@@ -267,7 +314,7 @@ false on failure </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00052">52</a> of file <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html">Utils.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00090">Ark::Diagnostics::Printer::sliceCode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00091">Ark::Diagnostics::Printer::sliceCode()</a>.</p>
 
 </div>
 </div>
@@ -305,7 +352,7 @@ false on failure </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00047">47</a> of file <a class="el" href="../../d4/dc0/Files_8hpp_source.html">Files.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00036">Ark::Welder::computeASTFromFile()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00139">Ark::internal::ImportSolver::parseImport()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00078">Ark::Diagnostics::Printer::Printer()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00121">Ark::Repl::registerBuiltins()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00028">Ark::Repl::run()</a>, and <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00025">Formatter::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00038">Ark::Welder::computeASTFromFile()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00139">Ark::internal::ImportSolver::parseImport()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00078">Ark::Diagnostics::Printer::Printer()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00122">Ark::Repl::registerBuiltins()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00029">Ark::Repl::run()</a>, and <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00024">Formatter::run()</a>.</p>
 
 </div>
 </div>
@@ -343,7 +390,7 @@ false on failure </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00062">62</a> of file <a class="el" href="../../d4/dc0/Files_8hpp_source.html">Files.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00082">Ark::State::doFile()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00032">Ark::State::feed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da0/State_8cpp_source.html#l00088">Ark::State::doFile()</a>, and <a class="el" href="../../d0/da0/State_8cpp_source.html#l00033">Ark::State::feed()</a>.</p>
 
 </div>
 </div>
@@ -381,7 +428,7 @@ false on failure </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html">Utils.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00090">Ark::Diagnostics::Printer::sliceCode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00091">Ark::Diagnostics::Printer::sliceCode()</a>.</p>
 
 </div>
 </div>
@@ -424,7 +471,36 @@ false on failure </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00031">31</a> of file <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html">Utils.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00194">Ark::Diagnostics::helper()</a>, <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00139">Formatter::isLongLine()</a>, <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00298">Ark::internal::NameResolutionPass::mayBeFromPlugin()</a>, and <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00078">Ark::Diagnostics::Printer::Printer()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00194">Ark::Diagnostics::helper()</a>, <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00137">Formatter::isLongLine()</a>, <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00299">Ark::internal::NameResolutionPass::mayBeFromPlugin()</a>, <a class="el" href="../../db/dd8/PrettyPrinting_8cpp_source.html#l00078">Ark::Diagnostics::Printer::Printer()</a>, and <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00087">Ark::internal::Optimizer::pruneUnusedGlobalVariables()</a>.</p>
+
+</div>
+</div>
+<a id="a8a6eafcf44e2ce3e5961cac0fda2535e" name="a8a6eafcf44e2ce3e5961cac0fda2535e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6eafcf44e2ce3e5961cac0fda2535e">&#9670;&#160;</a></span>trimWhitespace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::Utils::trimWhitespace </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>line</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove whitespaces at the start and end of a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>string modified in place </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html#l00040">40</a> of file <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html">Utils.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00213">Ark::internal::Debugger::getCommandArg()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00157">Ark::Repl::getLine()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">Ark::internal::Debugger::prompt()</a>, and <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00087">Ark::internal::Optimizer::pruneUnusedGlobalVariables()</a>.</p>
 
 </div>
 </div>
@@ -434,7 +510,7 @@ false on failure </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../df/d16/namespaceArk_1_1Utils.html">Utils</a></li>
-    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Thu Mar 19 2026 06:48:17 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

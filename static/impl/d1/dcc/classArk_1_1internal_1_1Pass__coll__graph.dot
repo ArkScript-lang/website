@@ -28,4 +28,12 @@ digraph "Ark::internal::Pass"
   Node10 -> Node9 [id="edge11_Node000009_Node000010",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< std::string \>",fontcolor="grey" ];
   Node10 [id="Node000010",label="std::vector\< T \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
   Node8 -> Node10 [id="edge12_Node000010_Node000008",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" elements",fontcolor="grey" ];
+  Node11 -> Node2 [id="edge13_Node000002_Node000011",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_stream",fontcolor="grey" ];
+  Node11 [id="Node000011",label="std::ostream",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node12 -> Node11 [id="edge14_Node000011_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="std::basic_ostream\l\< Char \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node12 [id="edge15_Node000012_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="std::basic_ios\< Char \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node14 -> Node13 [id="edge16_Node000013_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="std::ios_base",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
 }

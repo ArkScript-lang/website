@@ -35,7 +35,7 @@ digraph "/Users/fola/Documents/ArkScript/Ark/src/arkreactor/Compiler/BytecodeRea
   Node11 -> Node13 [id="edge16_Node000011_Node000013",color="steelblue1",style="solid",tooltip=" "];
   Node13 [id="Node000013",label="cstddef",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node2 -> Node14 [id="edge17_Node000002_Node000014",color="steelblue1",style="solid",tooltip=" "];
-  Node14 [id="Node000014",label="Ark/VM/Value.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dfd/Value_8hpp.html",tooltip="Default value type handled by the virtual machine."];
+  Node14 [id="Node000014",label="Ark/VM/Value/Value.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dfd/Value_8hpp.html",tooltip="Default value type handled by the virtual machine."];
   Node14 -> Node3 [id="edge18_Node000014_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node14 -> Node15 [id="edge19_Node000014_Node000015",color="steelblue1",style="solid",tooltip=" "];
   Node15 [id="Node000015",label="variant",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];

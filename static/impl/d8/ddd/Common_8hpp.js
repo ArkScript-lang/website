@@ -29,6 +29,7 @@ var Common_8hpp =
     ] ],
     [ "And", "d8/ddd/Common_8hpp.html#ac2099221eb58924b2d0beaf69c6b3b0c", null ],
     [ "AppendInPlace", "d8/ddd/Common_8hpp.html#a261f7519f76556d78c0cfd7d68a5f15d", null ],
+    [ "Apply", "d8/ddd/Common_8hpp.html#a4298a0e79493a8ef70016f5ddff3f45c", null ],
     [ "Argcount", "d8/ddd/Common_8hpp.html#a47632dc40a1524d59c1c93523fe99ca1", null ],
     [ "AsIs", "d8/ddd/Common_8hpp.html#a2ad3cb6b00a01357091d19021f326edb", null ],
     [ "ConcatInPlace", "d8/ddd/Common_8hpp.html#a53541dc64aaadfdf194a564ef444012b", null ],

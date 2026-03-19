@@ -103,19 +103,33 @@ $(function(){initNavTree('d9/d93/ValTableElem_8cpp_source.html','../../'); initR
 </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#a28b59ea440799cc10fdff6107808a468">   19</a></span>    <a class="code hl_function" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#ae604d675a43ff784eab84c0a3c239a39">ValTableElem::ValTableElem</a>(std::size_t page) noexcept :</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        value(page),</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        type(<a class="code hl_enumvalue" href="../../dc/d0e/namespaceArk_1_1internal.html#ab6df8fad6f59b570c0818eff53db655fa6666eaba81f13e74d10ac1a9c9d6d7b1">ValTableElemType::PageAddr</a>)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#a3b1ddefc8345af74ab0001c0aaaf5104">   19</a></span>    <a class="code hl_function" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#ae604d675a43ff784eab84c0a3c239a39">ValTableElem::ValTableElem</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> n) noexcept :</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        value(n),</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        type(<a class="code hl_enumvalue" href="../../dc/d0e/namespaceArk_1_1internal.html#ab6df8fad6f59b570c0818eff53db655fab2ee912b91d69b435159c7c3f6df7f5f">ValTableElemType::Number</a>)</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {}</div>
 </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#a373c42b689bf0ff8f336b41a6ba598a2">   24</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#a373c42b689bf0ff8f336b41a6ba598a2">ValTableElem::operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html">ValTableElem</a>&amp; A) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">return</span> A.value == value &amp;&amp; A.type == type;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#a0062c80404816343a55ac186f9f20dd1">   24</a></span>    <a class="code hl_function" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#ae604d675a43ff784eab84c0a3c239a39">ValTableElem::ValTableElem</a>(<span class="keyword">const</span> std::string&amp; str) noexcept :</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        value(str),</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        type(<a class="code hl_enumvalue" href="../../dc/d0e/namespaceArk_1_1internal.html#ab6df8fad6f59b570c0818eff53db655fa27118326006d3829667a400ad23d5d98">ValTableElemType::String</a>)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {}</div>
 </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#a28b59ea440799cc10fdff6107808a468">   29</a></span>    <a class="code hl_function" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#ae604d675a43ff784eab84c0a3c239a39">ValTableElem::ValTableElem</a>(std::size_t page) noexcept :</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        value(page),</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        type(<a class="code hl_enumvalue" href="../../dc/d0e/namespaceArk_1_1internal.html#ab6df8fad6f59b570c0818eff53db655fa6666eaba81f13e74d10ac1a9c9d6d7b1">ValTableElemType::PageAddr</a>)</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {}</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#a373c42b689bf0ff8f336b41a6ba598a2">   34</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#a373c42b689bf0ff8f336b41a6ba598a2">ValTableElem::operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html">ValTableElem</a>&amp; A) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">return</span> A.value == value &amp;&amp; A.type == type;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
 <div class="ttc" id="aValTableElem_8hpp_html"><div class="ttname"><a href="../../dd/de7/ValTableElem_8hpp.html">ValTableElem.hpp</a></div><div class="ttdoc">The basic value type handled by the compiler.</div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1Node_html"><div class="ttname"><a href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Ark::internal::Node</a></div><div class="ttdoc">A node of an Abstract Syntax Tree for ArkScript.</div><div class="ttdef"><b>Definition</b> <a href="../../d7/dc6/Node_8hpp_source.html#l00031">Node.hpp:32</a></div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00025">Builtins.hpp:26</a></div></div>
@@ -125,7 +139,7 @@ $(function(){initNavTree('d9/d93/ValTableElem_8cpp_source.html','../../'); initR
 <div class="ttc" id="anamespaceArk_1_1internal_html_ab6df8fad6f59b570c0818eff53db655fa6666eaba81f13e74d10ac1a9c9d6d7b1"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html#ab6df8fad6f59b570c0818eff53db655fa6666eaba81f13e74d10ac1a9c9d6d7b1">Ark::internal::ValTableElemType::PageAddr</a></div><div class="ttdeci">@ PageAddr</div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html_ab6df8fad6f59b570c0818eff53db655fab2ee912b91d69b435159c7c3f6df7f5f"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html#ab6df8fad6f59b570c0818eff53db655fab2ee912b91d69b435159c7c3f6df7f5f">Ark::internal::ValTableElemType::Number</a></div><div class="ttdeci">@ Number</div></div>
 <div class="ttc" id="astructArk_1_1internal_1_1ValTableElem_html"><div class="ttname"><a href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html">Ark::internal::ValTableElem</a></div><div class="ttdoc">A Compiler Value class helper to handle multiple types.</div><div class="ttdef"><b>Definition</b> <a href="../../dd/de7/ValTableElem_8hpp_source.html#l00036">ValTableElem.hpp:37</a></div></div>
-<div class="ttc" id="astructArk_1_1internal_1_1ValTableElem_html_a373c42b689bf0ff8f336b41a6ba598a2"><div class="ttname"><a href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#a373c42b689bf0ff8f336b41a6ba598a2">Ark::internal::ValTableElem::operator==</a></div><div class="ttdeci">bool operator==(const ValTableElem &amp;A) const noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00024">ValTableElem.cpp:24</a></div></div>
+<div class="ttc" id="astructArk_1_1internal_1_1ValTableElem_html_a373c42b689bf0ff8f336b41a6ba598a2"><div class="ttname"><a href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#a373c42b689bf0ff8f336b41a6ba598a2">Ark::internal::ValTableElem::operator==</a></div><div class="ttdeci">bool operator==(const ValTableElem &amp;A) const noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00034">ValTableElem.cpp:34</a></div></div>
 <div class="ttc" id="astructArk_1_1internal_1_1ValTableElem_html_ae604d675a43ff784eab84c0a3c239a39"><div class="ttname"><a href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html#ae604d675a43ff784eab84c0a3c239a39">Ark::internal::ValTableElem::ValTableElem</a></div><div class="ttdeci">ValTableElem(const Node &amp;node) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00005">ValTableElem.cpp:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -133,7 +147,7 @@ $(function(){initNavTree('d9/d93/ValTableElem_8cpp_source.html','../../'); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e0d450b481c7e7e5abacff9799e54b3d.html">arkreactor</a></li><li class="navelem"><a class="el" href="../../dir_548d85becfdd8b4d1d64f6a452aea6ab.html">Compiler</a></li><li class="navelem"><a class="el" href="../../d9/d93/ValTableElem_8cpp.html">ValTableElem.cpp</a></li>
-    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

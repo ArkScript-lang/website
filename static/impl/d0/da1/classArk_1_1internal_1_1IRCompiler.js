@@ -13,6 +13,5 @@ var classArk_1_1internal_1_1IRCompiler =
     [ "pushWord", "d0/da1/classArk_1_1internal_1_1IRCompiler.html#a7b2981580a1ccc15b1a13c128af3373e", null ],
     [ "m_bytecode", "d0/da1/classArk_1_1internal_1_1IRCompiler.html#a79f08b96258f3fb1c7d784dffe0054c9", null ],
     [ "m_filenames", "d0/da1/classArk_1_1internal_1_1IRCompiler.html#a7068519346759a013025eda00225f013", null ],
-    [ "m_ir", "d0/da1/classArk_1_1internal_1_1IRCompiler.html#aa6aaf9dfa70ae49a2ea5619e8f112ee4", null ],
-    [ "m_logger", "d0/da1/classArk_1_1internal_1_1IRCompiler.html#af21980d47cbd965d190dd938264387c6", null ]
+    [ "m_ir", "d0/da1/classArk_1_1internal_1_1IRCompiler.html#aa6aaf9dfa70ae49a2ea5619e8f112ee4", null ]
 ];

@@ -25,7 +25,7 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/VM/ExecutionContext.hpp
   Node6 -> Node10 [id="edge9_Node000006_Node000010",color="steelblue1",style="solid",tooltip=" "];
   Node10 [id="Node000010",label="cstddef",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node1 -> Node11 [id="edge10_Node000001_Node000011",color="steelblue1",style="solid",tooltip=" "];
-  Node11 [id="Node000011",label="Ark/VM/Value.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dfd/Value_8hpp.html",tooltip="Default value type handled by the virtual machine."];
+  Node11 [id="Node000011",label="Ark/VM/Value/Value.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dfd/Value_8hpp.html",tooltip="Default value type handled by the virtual machine."];
   Node11 -> Node12 [id="edge11_Node000011_Node000012",color="steelblue1",style="solid",tooltip=" "];
   Node12 [id="Node000012",label="vector",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node11 -> Node13 [id="edge12_Node000011_Node000013",color="steelblue1",style="solid",tooltip=" "];
@@ -57,7 +57,7 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/VM/ExecutionContext.hpp
   Node21 -> Node12 [id="edge29_Node000021_Node000012",color="steelblue1",style="solid",tooltip=" "];
   Node11 -> Node17 [id="edge30_Node000011_Node000017",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node22 [id="edge31_Node000001_Node000022",color="steelblue1",style="solid",tooltip=" "];
-  Node22 [id="Node000022",label="Ark/VM/ScopeView.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d45/ScopeView_8hpp.html",tooltip=" "];
+  Node22 [id="Node000022",label="Ark/VM/ScopeView.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d45/ScopeView_8hpp.html",tooltip="The virtual machine scope system."];
   Node22 -> Node2 [id="edge32_Node000022_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node22 -> Node9 [id="edge33_Node000022_Node000009",color="steelblue1",style="solid",tooltip=" "];
   Node22 -> Node17 [id="edge34_Node000022_Node000017",color="steelblue1",style="solid",tooltip=" "];

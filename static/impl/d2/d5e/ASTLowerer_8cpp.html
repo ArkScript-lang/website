@@ -80,16 +80,17 @@ $(function(){initNavTree('d2/d5e/ASTLowerer_8cpp.html','../../'); initResizable(
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">ASTLowerer.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">Ark/Compiler/Lowerer/ASTLowerer.hpp</a>&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;ranges&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;fmt/core.h&gt;</code><br />
-<code>#include &lt;fmt/color.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d2/de9/Exceptions_8hpp_source.html">Ark/Error/Exceptions.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/dfe/Diagnostics_8hpp_source.html">Ark/Error/Diagnostics.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/dee/Literals_8hpp_source.html">Ark/Utils/Literals.hpp</a>&gt;</code><br />
@@ -108,6 +109,19 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a8e32685a01342ab0c2024b4c33e84b6e" id="r_a8e32685a01342ab0c2024b4c33e84b6e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a8e32685a01342ab0c2024b4c33e84b6e">Ark::internal::CallType</a> { <br />
+&#160;&#160;<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a8e32685a01342ab0c2024b4c33e84b6ead35b51b639528d580362ca7042de6a0e">Ark::internal::Classic</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a8e32685a01342ab0c2024b4c33e84b6ea7a4eb32cb8365f831b19e922ad60e8cb">Ark::internal::SelfNotRecursive</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a8e32685a01342ab0c2024b4c33e84b6ea02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a8e32685a01342ab0c2024b4c33e84b6ea5dd68a0ed1ed1a8150f0e944ba56c389">Ark::internal::SymbolByIndex</a>
+, <br />
+&#160;&#160;<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a8e32685a01342ab0c2024b4c33e84b6eadefccbed9421a1e9180a9b1fc35dacdb">Ark::internal::Builtin</a>
+<br />
+ }</td></tr>
+<tr class="separator:a8e32685a01342ab0c2024b4c33e84b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -115,7 +129,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e0d450b481c7e7e5abacff9799e54b3d.html">arkreactor</a></li><li class="navelem"><a class="el" href="../../dir_548d85becfdd8b4d1d64f6a452aea6ab.html">Compiler</a></li><li class="navelem"><a class="el" href="../../dir_ebd905692543c47940af1875878fb6a1.html">Lowerer</a></li><li class="navelem"><a class="el" href="../../d2/d5e/ASTLowerer_8cpp.html">ASTLowerer.cpp</a></li>
-    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

@@ -84,11 +84,11 @@ $(function(){initNavTree('d1/d84/BytecodeReader_8hpp_source.html','../../'); ini
 <div class="contents">
 <a href="../../d1/d84/BytecodeReader_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file BytecodeReader.hpp</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author Lex Plateau (lexplt.dev@gmail.com)</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author Lexy Plateau (lexplt.dev@gmail.com)</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @brief A bytecode disassembler for ArkScript</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @date 2020-10-27</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @copyright Copyright (c) 2020-2025</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @copyright Copyright (c) 2020-2026</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
@@ -102,7 +102,7 @@ $(function(){initNavTree('d1/d84/BytecodeReader_8hpp_source.html','../../'); ini
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="../../d5/d40/Platform_8hpp.html">Ark/Utils/Platform.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="../../d8/ddd/Common_8hpp.html">Ark/Compiler/Common.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="../../de/dfd/Value_8hpp.html">Ark/VM/Value.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="../../de/dfd/Value_8hpp.html">Ark/VM/Value/Value.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="../../d5/d3a/InstLoc_8hpp.html">Ark/Compiler/IntermediateRepresentation/InstLoc.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d9/de4/namespaceArk.html">Ark</a></div>
@@ -306,7 +306,7 @@ $(function(){initNavTree('d1/d84/BytecodeReader_8hpp_source.html','../../'); ini
 <div class="ttc" id="aclassArk_1_1BytecodeReader_html"><div class="ttname"><a href="../../d8/d08/classArk_1_1BytecodeReader.html">Ark::BytecodeReader</a></div><div class="ttdoc">This class is just a helper to.</div><div class="ttdef"><b>Definition</b> <a href="#l00085">BytecodeReader.hpp:86</a></div></div>
 <div class="ttc" id="aclassArk_1_1BytecodeReader_html_aa435a2b60ec4b61ca400603a1f0f1f7d"><div class="ttname"><a href="../../d8/d08/classArk_1_1BytecodeReader.html#aa435a2b60ec4b61ca400603a1f0f1f7d">Ark::BytecodeReader::BytecodeReader</a></div><div class="ttdeci">BytecodeReader()=default</div><div class="ttdoc">Construct a new Bytecode Reader object.</div></div>
 <div class="ttc" id="aclassArk_1_1BytecodeReader_html_adf3ea083851deb83caa8e3eddfba95fd"><div class="ttname"><a href="../../d8/d08/classArk_1_1BytecodeReader.html#adf3ea083851deb83caa8e3eddfba95fd">Ark::BytecodeReader::m_bytecode</a></div><div class="ttdeci">bytecode_t m_bytecode</div><div class="ttdef"><b>Definition</b> <a href="#l00188">BytecodeReader.hpp:188</a></div></div>
-<div class="ttc" id="aclassArk_1_1State_html"><div class="ttname"><a href="../../d1/d37/classArk_1_1State.html">Ark::State</a></div><div class="ttdoc">Ark state to handle the dirty job of loading and compiling ArkScript code.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/db5/State_8hpp_source.html#l00032">State.hpp:33</a></div></div>
+<div class="ttc" id="aclassArk_1_1State_html"><div class="ttname"><a href="../../d1/d37/classArk_1_1State.html">Ark::State</a></div><div class="ttdoc">Ark state to handle the dirty job of loading and compiling ArkScript code.</div><div class="ttdef"><b>Definition</b> <a href="../../d0/db5/State_8hpp_source.html#l00037">State.hpp:38</a></div></div>
 <div class="ttc" id="anamespaceArk_html"><div class="ttname"><a href="../../d9/de4/namespaceArk.html">Ark</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00018">Builtins.hpp:19</a></div></div>
 <div class="ttc" id="anamespaceArk_html_abc8e737d05c4d6d46b653459516be329"><div class="ttname"><a href="../../d9/de4/namespaceArk.html#abc8e737d05c4d6d46b653459516be329">Ark::bytecode_t</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; bytecode_t</div><div class="ttdef"><b>Definition</b> <a href="../../d8/ddd/Common_8hpp_source.html#l00022">Common.hpp:22</a></div></div>
 <div class="ttc" id="anamespaceArk_html_afa776c29439b830386e8220ccab402f4"><div class="ttname"><a href="../../d9/de4/namespaceArk.html#afa776c29439b830386e8220ccab402f4">Ark::BytecodeSegment</a></div><div class="ttdeci">BytecodeSegment</div><div class="ttdef"><b>Definition</b> <a href="#l00028">BytecodeReader.hpp:29</a></div></div>
@@ -345,7 +345,7 @@ $(function(){initNavTree('d1/d84/BytecodeReader_8hpp_source.html','../../'); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_a8b6c64285bf9ac60f50770eb2fc48b5.html">Ark</a></li><li class="navelem"><a class="el" href="../../dir_e4f19535f57335fb80a0267cec25bf70.html">Compiler</a></li><li class="navelem"><a class="el" href="../../d1/d84/BytecodeReader_8hpp.html">BytecodeReader.hpp</a></li>
-    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

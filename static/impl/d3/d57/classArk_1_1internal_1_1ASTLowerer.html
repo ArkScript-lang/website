@@ -82,6 +82,7 @@ $(function(){initNavTree('d3/d57/classArk_1_1internal_1_1ASTLowerer.html','../..
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -94,6 +95,11 @@ $(function(){initNavTree('d3/d57/classArk_1_1internal_1_1ASTLowerer.html','../..
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Ark::internal::ASTLowerer:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d29/classArk_1_1internal_1_1ASTLowerer__inherit__graph.svg" width="183" height="111"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Ark::internal::ASTLowerer:</div>
 <div class="dyncontent">
@@ -110,6 +116,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8df095b9f80b8a9e74b0a97d03e23cb9" id="r_a8df095b9f80b8a9e74b0a97d03e23cb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8df095b9f80b8a9e74b0a97d03e23cb9">ASTLowerer</a> (unsigned debug)</td></tr>
 <tr class="memdesc:a8df095b9f80b8a9e74b0a97d03e23cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../d3/d57/classArk_1_1internal_1_1ASTLowerer.html" title="The ArkScript AST to IR compiler.">ASTLowerer</a> object.  <br /></td></tr>
 <tr class="separator:a8df095b9f80b8a9e74b0a97d03e23cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff065266f4196c169ba76b8d602071e" id="r_aeff065266f4196c169ba76b8d602071e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeff065266f4196c169ba76b8d602071e">addToTables</a> (const std::vector&lt; std::string &gt; &amp;<a class="el" href="#aece6ae46ed762287691133106184d0ab">symbols</a>, const std::vector&lt; <a class="el" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html">ValTableElem</a> &gt; &amp;constants)</td></tr>
+<tr class="memdesc:aeff065266f4196c169ba76b8d602071e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-fill tables (used by the debugger)  <br /></td></tr>
+<tr class="separator:aeff065266f4196c169ba76b8d602071e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6071b16662ed3a7261d8065aaa745df4" id="r_a6071b16662ed3a7261d8065aaa745df4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6071b16662ed3a7261d8065aaa745df4">offsetPagesBy</a> (std::size_t offset)</td></tr>
+<tr class="memdesc:a6071b16662ed3a7261d8065aaa745df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start bytecode pages at a given offset (by default, 0)  <br /></td></tr>
+<tr class="separator:a6071b16662ed3a7261d8065aaa745df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a606cc11124833103d6a1dbee71d858d6" id="r_a606cc11124833103d6a1dbee71d858d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a606cc11124833103d6a1dbee71d858d6">process</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;ast)</td></tr>
 <tr class="memdesc:a606cc11124833103d6a1dbee71d858d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the compilation.  <br /></td></tr>
 <tr class="separator:a606cc11124833103d6a1dbee71d858d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,25 +134,53 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a562626373177282bf4335ab2e1e40ad7" id="r_a562626373177282bf4335ab2e1e40ad7"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html">ValTableElem</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a562626373177282bf4335ab2e1e40ad7">values</a> () const noexcept</td></tr>
 <tr class="memdesc:a562626373177282bf4335ab2e1e40ad7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the value table pre-computed.  <br /></td></tr>
 <tr class="separator:a562626373177282bf4335ab2e1e40ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classArk_1_1internal_1_1Pass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classArk_1_1internal_1_1Pass')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../da/d7b/classArk_1_1internal_1_1Pass.html">Ark::internal::Pass</a></td></tr>
+<tr class="memitem:aaf554f793bb547b4ac4e9105287b9bdb inherit pub_methods_classArk_1_1internal_1_1Pass" id="r_aaf554f793bb547b4ac4e9105287b9bdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7b/classArk_1_1internal_1_1Pass.html#aaf554f793bb547b4ac4e9105287b9bdb">Pass</a> (std::string name, unsigned debug_level)</td></tr>
+<tr class="memdesc:aaf554f793bb547b4ac4e9105287b9bdb inherit pub_methods_classArk_1_1internal_1_1Pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../da/d7b/classArk_1_1internal_1_1Pass.html" title="An interface to describe compiler passes.">Pass</a> object.  <br /></td></tr>
+<tr class="separator:aaf554f793bb547b4ac4e9105287b9bdb inherit pub_methods_classArk_1_1internal_1_1Pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02cd4bfd43ae8816608b6f969b80d8e inherit pub_methods_classArk_1_1internal_1_1Pass" id="r_ad02cd4bfd43ae8816608b6f969b80d8e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7b/classArk_1_1internal_1_1Pass.html#ad02cd4bfd43ae8816608b6f969b80d8e">~Pass</a> ()=default</td></tr>
+<tr class="separator:ad02cd4bfd43ae8816608b6f969b80d8e inherit pub_methods_classArk_1_1internal_1_1Pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7a463c17cb480a74fdee453e887314 inherit pub_methods_classArk_1_1internal_1_1Pass" id="r_abd7a463c17cb480a74fdee453e887314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7b/classArk_1_1internal_1_1Pass.html#abd7a463c17cb480a74fdee453e887314">configureLogger</a> (std::ostream &amp;os)</td></tr>
+<tr class="memdesc:abd7a463c17cb480a74fdee453e887314 inherit pub_methods_classArk_1_1internal_1_1Pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom output stream for the logger.  <br /></td></tr>
+<tr class="separator:abd7a463c17cb480a74fdee453e887314 inherit pub_methods_classArk_1_1internal_1_1Pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a942ed580af88f8ffb3835992f4c63bb1" id="r_a942ed580af88f8ffb3835992f4c63bb1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1">ErrorKind</a> { <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a51fe8952335d69f8d1964b704940498c">InvalidNodeMacro</a>
+, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a63c80b411387c3a4d14c0cb8c570c5ce">InvalidNodeNoReturnValue</a>
+, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1ad75cacc714c3b499e2d8b8ca365befb0">InvalidNodeInOperatorNoReturnValue</a>
+, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a33aa4313dd908549cdfc89eeeb6dab50">InvalidNodeInTailCallNoReturnValue</a>
+ }</td></tr>
+<tr class="separator:a942ed580af88f8ffb3835992f4c63bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a52936b6c3f3d2031778e080b7c8773a6" id="r_a52936b6c3f3d2031778e080b7c8773a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52936b6c3f3d2031778e080b7c8773a6">createNewCodePage</a> (const bool temp=false) noexcept</td></tr>
+<tr class="separator:a52936b6c3f3d2031778e080b7c8773a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb15fb65e449cad851a6e4c5fb279498" id="r_aeb15fb65e449cad851a6e4c5fb279498"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d02/namespaceArk_1_1internal_1_1IR.html#a8eb76fcb4f2f3d8d86f7bbabd233e6f2">IR::Block</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb15fb65e449cad851a6e4c5fb279498">page</a> (const <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> page) noexcept</td></tr>
 <tr class="memdesc:aeb15fb65e449cad851a6e4c5fb279498"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper functions to get a temp or finalized code page  <br /></td></tr>
 <tr class="separator:aeb15fb65e449cad851a6e4c5fb279498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe2105f8040cfd26755235f12a5228c" id="r_acfe2105f8040cfd26755235f12a5228c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfe2105f8040cfd26755235f12a5228c">isFunctionCallingItself</a> (const std::string &amp;name) noexcept</td></tr>
+<tr class="memdesc:acfe2105f8040cfd26755235f12a5228c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if we are in a recursive self call.  <br /></td></tr>
+<tr class="separator:acfe2105f8040cfd26755235f12a5228c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf2866c223b29f98a8cc65df797baecb" id="r_acf2866c223b29f98a8cc65df797baecb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf2866c223b29f98a8cc65df797baecb">warning</a> (const std::string &amp;message, const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;node)</td></tr>
+<tr class="memdesc:acf2866c223b29f98a8cc65df797baecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a warning message.  <br /></td></tr>
+<tr class="separator:acf2866c223b29f98a8cc65df797baecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad81ee775137313b0c4fa88045eadd47" id="r_aad81ee775137313b0c4fa88045eadd47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad81ee775137313b0c4fa88045eadd47">compileExpression</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p, bool is_result_unused, bool is_terminal)</td></tr>
 <tr class="memdesc:aad81ee775137313b0c4fa88045eadd47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile an expression (a node) recursively.  <br /></td></tr>
 <tr class="separator:aad81ee775137313b0c4fa88045eadd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd863a55fb019d12b87322f5b1c3b0d0" id="r_abd863a55fb019d12b87322f5b1c3b0d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd863a55fb019d12b87322f5b1c3b0d0">compileSymbol</a> (const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p, bool is_result_unused)</td></tr>
-<tr class="separator:abd863a55fb019d12b87322f5b1c3b0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85a87c083ff51a0408939cfcffcfca6" id="r_ac85a87c083ff51a0408939cfcffcfca6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac85a87c083ff51a0408939cfcffcfca6">compileSymbol</a> (const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p, bool is_result_unused, bool can_use_ref)</td></tr>
+<tr class="separator:ac85a87c083ff51a0408939cfcffcfca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a441eaa6619a2b459d57df7ea98fe4b10" id="r_a441eaa6619a2b459d57df7ea98fe4b10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a441eaa6619a2b459d57df7ea98fe4b10">compileListInstruction</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p, bool is_result_unused)</td></tr>
 <tr class="separator:a441eaa6619a2b459d57df7ea98fe4b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ead4a5e9f4d1e4890200a137d89c8ac" id="r_a9ead4a5e9f4d1e4890200a137d89c8ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ead4a5e9f4d1e4890200a137d89c8ac">compileApplyInstruction</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p, bool is_result_unused)</td></tr>
+<tr class="separator:a9ead4a5e9f4d1e4890200a137d89c8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5658050dd71f9665c10ffdf5903fe1e1" id="r_a5658050dd71f9665c10ffdf5903fe1e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5658050dd71f9665c10ffdf5903fe1e1">compileIf</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p, bool is_result_unused, bool is_terminal)</td></tr>
 <tr class="separator:a5658050dd71f9665c10ffdf5903fe1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad04dcba6a8bcd81fc490037760416a5f" id="r_ad04dcba6a8bcd81fc490037760416a5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad04dcba6a8bcd81fc490037760416a5f">compileFunction</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p, bool is_result_unused)</td></tr>
 <tr class="separator:ad04dcba6a8bcd81fc490037760416a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5214ca82a586df4719cc755573c6d0a3" id="r_a5214ca82a586df4719cc755573c6d0a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5214ca82a586df4719cc755573c6d0a3">compileLetMutSet</a> (<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1">Keyword</a> n, <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p)</td></tr>
-<tr class="separator:a5214ca82a586df4719cc755573c6d0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cdb0a93d11709a72100a987ba63d531" id="r_a7cdb0a93d11709a72100a987ba63d531"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cdb0a93d11709a72100a987ba63d531">compileLetMutSet</a> (<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1">Keyword</a> n, <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p, bool is_result_unused)</td></tr>
+<tr class="separator:a7cdb0a93d11709a72100a987ba63d531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99996ec480795ef4aecd6dad9bcbe76a" id="r_a99996ec480795ef4aecd6dad9bcbe76a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99996ec480795ef4aecd6dad9bcbe76a">compileWhile</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p)</td></tr>
 <tr class="separator:a99996ec480795ef4aecd6dad9bcbe76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad756e459fb63628dd0ca3ed38d21857c" id="r_ad756e459fb63628dd0ca3ed38d21857c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad756e459fb63628dd0ca3ed38d21857c">compilePluginImport</a> (const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p)</td></tr>
@@ -149,6 +189,12 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a1d2a57bd52aa02b35dafdbaeac0f5100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52585434c3a7616cad4c803ff489c09f" id="r_a52585434c3a7616cad4c803ff489c09f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52585434c3a7616cad4c803ff489c09f">handleCalls</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p, bool is_result_unused, bool is_terminal)</td></tr>
 <tr class="separator:a52585434c3a7616cad4c803ff489c09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea5fbd8ad0d879d669a75cb4591c624c" id="r_aea5fbd8ad0d879d669a75cb4591c624c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea5fbd8ad0d879d669a75cb4591c624c">handleShortcircuit</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p)</td></tr>
+<tr class="separator:aea5fbd8ad0d879d669a75cb4591c624c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f4953ecf1207c8f1eb8b2fe7b1ffe4" id="r_a99f4953ecf1207c8f1eb8b2fe7b1ffe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99f4953ecf1207c8f1eb8b2fe7b1ffe4">handleOperator</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Instruction</a> op)</td></tr>
+<tr class="separator:a99f4953ecf1207c8f1eb8b2fe7b1ffe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eac26f51a77cef7b36e004218511fad" id="r_a1eac26f51a77cef7b36e004218511fad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1eac26f51a77cef7b36e004218511fad">handleFunctionCall</a> (<a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;x, <a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> p, bool is_terminal)</td></tr>
+<tr class="separator:a1eac26f51a77cef7b36e004218511fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fcbcb98cbcef3229a322f1e2dad706f" id="r_a1fcbcb98cbcef3229a322f1e2dad706f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fcbcb98cbcef3229a322f1e2dad706f">addSymbol</a> (const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;sym)</td></tr>
 <tr class="memdesc:a1fcbcb98cbcef3229a322f1e2dad706f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a given node in the symbol table.  <br /></td></tr>
 <tr class="separator:a1fcbcb98cbcef3229a322f1e2dad706f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +216,8 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a2dbffe2363ea831fc9903729da221a80" id="r_a2dbffe2363ea831fc9903729da221a80"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Instruction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dbffe2363ea831fc9903729da221a80">getListInstruction</a> (const std::string &amp;name) noexcept</td></tr>
 <tr class="memdesc:a2dbffe2363ea831fc9903729da221a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checking if a symbol is a list instruction.  <br /></td></tr>
 <tr class="separator:a2dbffe2363ea831fc9903729da221a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a140f235b962ab5d25565dd74276fad" id="r_a6a140f235b962ab5d25565dd74276fad"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a140f235b962ab5d25565dd74276fad">isBreakpoint</a> (const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:a6a140f235b962ab5d25565dd74276fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47bea7e8d813e1f246ae368abcc0f8fd" id="r_a47bea7e8d813e1f246ae368abcc0f8fd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47bea7e8d813e1f246ae368abcc0f8fd">nodeProducesOutput</a> (const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;node)</td></tr>
 <tr class="separator:a47bea7e8d813e1f246ae368abcc0f8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77e269dc6578bd75c6d0983036e7b97b" id="r_a77e269dc6578bd75c6d0983036e7b97b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77e269dc6578bd75c6d0983036e7b97b">isUnaryInst</a> (<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Instruction</a> inst) noexcept</td></tr>
@@ -178,12 +226,15 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:aabb6bc2cb5bae94947d684b5a4b64925" id="r_aabb6bc2cb5bae94947d684b5a4b64925"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabb6bc2cb5bae94947d684b5a4b64925">isTernaryInst</a> (<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Instruction</a> inst) noexcept</td></tr>
 <tr class="memdesc:aabb6bc2cb5bae94947d684b5a4b64925"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a given instruction is ternary (takes three arguments)  <br /></td></tr>
 <tr class="separator:aabb6bc2cb5bae94947d684b5a4b64925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf2866c223b29f98a8cc65df797baecb" id="r_acf2866c223b29f98a8cc65df797baecb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf2866c223b29f98a8cc65df797baecb">warning</a> (const std::string &amp;message, const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;node)</td></tr>
-<tr class="memdesc:acf2866c223b29f98a8cc65df797baecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a warning message.  <br /></td></tr>
-<tr class="separator:acf2866c223b29f98a8cc65df797baecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f84e858b598f61c0bd34e4163cbe74f" id="r_a4f84e858b598f61c0bd34e4163cbe74f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f84e858b598f61c0bd34e4163cbe74f">isRepeatableOperation</a> (<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Instruction</a> inst) noexcept</td></tr>
+<tr class="memdesc:a4f84e858b598f61c0bd34e4163cbe74f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if an operator can be repeated.  <br /></td></tr>
+<tr class="separator:a4f84e858b598f61c0bd34e4163cbe74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa7ffd69dfbe35997973847d74c3da36" id="r_aaa7ffd69dfbe35997973847d74c3da36"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa7ffd69dfbe35997973847d74c3da36">buildAndThrowError</a> (const std::string &amp;message, const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;node)</td></tr>
 <tr class="memdesc:aaa7ffd69dfbe35997973847d74c3da36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throw a nice error message.  <br /></td></tr>
 <tr class="separator:aaa7ffd69dfbe35997973847d74c3da36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a910cc008b41a3c30387c494e3a1ff79d" id="r_a910cc008b41a3c30387c494e3a1ff79d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a910cc008b41a3c30387c494e3a1ff79d">makeError</a> (<a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1">ErrorKind</a> kind, const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;node, const std::string &amp;additional_ctx)</td></tr>
+<tr class="memdesc:a910cc008b41a3c30387c494e3a1ff79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throw a nice error message, using a message builder.  <br /></td></tr>
+<tr class="separator:a910cc008b41a3c30387c494e3a1ff79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -193,6 +244,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aa2f504080f553f7f291aad5fda482f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f0aaafd7007440d3d3448016ce64d94" id="r_a2f0aaafd7007440d3d3448016ce64d94"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html">ValTableElem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f0aaafd7007440d3d3448016ce64d94">m_values</a></td></tr>
 <tr class="separator:a2f0aaafd7007440d3d3448016ce64d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada23655a6971034c9aa1137ae224af86" id="r_ada23655a6971034c9aa1137ae224af86"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada23655a6971034c9aa1137ae224af86">m_start_page_at_offset</a> = 0</td></tr>
+<tr class="memdesc:ada23655a6971034c9aa1137ae224af86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to offset the page numbers when compiling code in the debugger.  <br /></td></tr>
+<tr class="separator:ada23655a6971034c9aa1137ae224af86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a879635255e5c42262be1515694af8b5e" id="r_a879635255e5c42262be1515694af8b5e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dc/d02/namespaceArk_1_1internal_1_1IR.html#a8eb76fcb4f2f3d8d86f7bbabd233e6f2">IR::Block</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a879635255e5c42262be1515694af8b5e">m_code_pages</a></td></tr>
 <tr class="separator:a879635255e5c42262be1515694af8b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49916621e58a78515e1f92b034c58afe" id="r_a49916621e58a78515e1f92b034c58afe"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../dc/d02/namespaceArk_1_1internal_1_1IR.html#a8eb76fcb4f2f3d8d86f7bbabd233e6f2">IR::Block</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49916621e58a78515e1f92b034c58afe">m_temp_pages</a></td></tr>
@@ -203,14 +257,49 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ab6f889bd8aab62988fb478f84bd66467" id="r_ab6f889bd8aab62988fb478f84bd66467"><td class="memItemLeft" align="right" valign="top">std::stack&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6f889bd8aab62988fb478f84bd66467">m_opened_vars</a></td></tr>
 <tr class="memdesc:ab6f889bd8aab62988fb478f84bd66467"><td class="mdescLeft">&#160;</td><td class="mdescRight">stack of vars we are currently declaring  <br /></td></tr>
 <tr class="separator:ab6f889bd8aab62988fb478f84bd66467"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ea4d9cdf69522788aada295fde05106" id="r_a6ea4d9cdf69522788aada295fde05106"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d2f/classArk_1_1internal_1_1Logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ea4d9cdf69522788aada295fde05106">m_logger</a></td></tr>
-<tr class="separator:a6ea4d9cdf69522788aada295fde05106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classArk_1_1internal_1_1Pass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classArk_1_1internal_1_1Pass')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../da/d7b/classArk_1_1internal_1_1Pass.html">Ark::internal::Pass</a></td></tr>
+<tr class="memitem:a4fa015dcb8cd0d8df78de8ff7ea09789 inherit pro_attribs_classArk_1_1internal_1_1Pass" id="r_a4fa015dcb8cd0d8df78de8ff7ea09789"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d2f/classArk_1_1internal_1_1Logger.html">Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7b/classArk_1_1internal_1_1Pass.html#a4fa015dcb8cd0d8df78de8ff7ea09789">m_logger</a></td></tr>
+<tr class="separator:a4fa015dcb8cd0d8df78de8ff7ea09789 inherit pro_attribs_classArk_1_1internal_1_1Pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The ArkScript AST to <a class="el" href="../../dc/d02/namespaceArk_1_1internal_1_1IR.html">IR</a> compiler. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00037">37</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00041">41</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a942ed580af88f8ffb3835992f4c63bb1" name="a942ed580af88f8ffb3835992f4c63bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a942ed580af88f8ffb3835992f4c63bb1">&#9670;&#160;</a></span>ErrorKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1">Ark::internal::ASTLowerer::ErrorKind</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a942ed580af88f8ffb3835992f4c63bb1a51fe8952335d69f8d1964b704940498c" name="a942ed580af88f8ffb3835992f4c63bb1a51fe8952335d69f8d1964b704940498c"></a>InvalidNodeMacro&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a942ed580af88f8ffb3835992f4c63bb1a63c80b411387c3a4d14c0cb8c570c5ce" name="a942ed580af88f8ffb3835992f4c63bb1a63c80b411387c3a4d14c0cb8c570c5ce"></a>InvalidNodeNoReturnValue&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a942ed580af88f8ffb3835992f4c63bb1ad75cacc714c3b499e2d8b8ca365befb0" name="a942ed580af88f8ffb3835992f4c63bb1ad75cacc714c3b499e2d8b8ca365befb0"></a>InvalidNodeInOperatorNoReturnValue&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a942ed580af88f8ffb3835992f4c63bb1a33aa4313dd908549cdfc89eeeb6dab50" name="a942ed580af88f8ffb3835992f4c63bb1a33aa4313dd908549cdfc89eeeb6dab50"></a>InvalidNodeInTailCallNoReturnValue&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00112">112</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8df095b9f80b8a9e74b0a97d03e23cb9" name="a8df095b9f80b8a9e74b0a97d03e23cb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8df095b9f80b8a9e74b0a97d03e23cb9">&#9670;&#160;</a></span>ASTLowerer()</h2>
 
@@ -242,7 +331,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00018">18</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
 </div>
 </div>
@@ -280,11 +369,47 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint16_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00745">745</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00938">938</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00085">m_symbols</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00071">Ark::MaxValue16Bits</a>, and <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00038">Ark::internal::Node::string()</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00104">m_symbols</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00073">Ark::MaxValue16Bits</a>, and <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00038">Ark::internal::Node::string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00370">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00451">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00243">compileSymbol()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00572">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00316">compileSymbol()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>.</p>
+
+</div>
+</div>
+<a id="aeff065266f4196c169ba76b8d602071e" name="aeff065266f4196c169ba76b8d602071e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeff065266f4196c169ba76b8d602071e">&#9670;&#160;</a></span>addToTables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::ASTLowerer::addToTables </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>symbols</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d8/dc4/structArk_1_1internal_1_1ValTableElem.html">ValTableElem</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>constants</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre-fill tables (used by the debugger) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">symbols</td><td></td></tr>
+    <tr><td class="paramname">constants</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00104">m_symbols</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00105">m_values</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00061">symbols()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00093">Ark::Welder::generateBytecodeUsingTables()</a>.</p>
 
 </div>
 </div>
@@ -321,11 +446,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint16_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00761">761</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00954">954</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00086">m_values</a>, and <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00071">Ark::MaxValue16Bits</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00105">m_values</a>, and <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00073">Ark::MaxValue16Bits</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00370">compileFunction()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00522">compilePluginImport()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">compileFunction()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00645">compilePluginImport()</a>.</p>
 
 </div>
 </div>
@@ -367,9 +492,9 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::size_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00777">777</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00970">970</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00086">m_values</a>, and <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00071">Ark::MaxValue16Bits</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00105">m_values</a>, and <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00073">Ark::MaxValue16Bits</a>.</p>
 
 </div>
 </div>
@@ -409,11 +534,51 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">133</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">181</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, and <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00745">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00761">addValue()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00777">addValue()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00370">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00331">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00451">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00270">compileListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00243">compileSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00489">compileWhile()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00541">pushFunctionCallArguments()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00938">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00954">addValue()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00970">addValue()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00427">compileApplyInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00453">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00572">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00348">compileListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00316">compileSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00759">handleOperator()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00716">handleShortcircuit()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00186">makeError()</a>.</p>
+
+</div>
+</div>
+<a id="a9ead4a5e9f4d1e4890200a137d89c8ac" name="a9ead4a5e9f4d1e4890200a137d89c8ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ead4a5e9f4d1e4890200a137d89c8ac">&#9670;&#160;</a></span>compileApplyInstruction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::ASTLowerer::compileApplyInstruction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_result_unused</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00427">427</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00178">Ark::internal::APPLY</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00038">Ark::internal::IR::Entity::Goto()</a>, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a63c80b411387c3a4d14c0cb8c570c5ce">InvalidNodeNoReturnValue</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00030">Ark::internal::IR::Entity::Label()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00109">m_current_label</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00186">makeError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00105">nodeProducesOutput()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00160">Ark::internal::POP</a>, and <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00086">Ark::internal::PUSH_RETURN_ADDRESS</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>.</p>
 
 </div>
 </div>
@@ -465,11 +630,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">210</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00745">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00761">addValue()</a>, <a class="el" href="../../da/d33/Namespace_8hpp_source.html#l00018">Ark::internal::Namespace::ast</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a1a06729125544cab7cee73195fc044f0">Ark::internal::Begin</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00098">Ark::internal::BUILTIN</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00370">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00331">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00451">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00270">compileListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00522">compilePluginImport()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00243">compileSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00489">compileWhile()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00058">Ark::internal::Node::constArkNamespace()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00102">Ark::internal::DEL</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a5526d60feb55086fbd12dd96b071a093">Ark::internal::Del</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca6f16a5f8ff5d75ab84c018adacdfcbb7">Ark::internal::Field</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a46d6d315bea88efbf048125d2ec444b4">Ark::internal::Fun</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00110">Ark::internal::GET_FIELD</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00059">getBuiltin()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00070">getListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a786887572f6ef1c20f2d8177cb2f1639">Ark::internal::If</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a72d6d7a1885885bb55a565fd1070581a">Ark::internal::Import</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca220f3d3750583b9db48568a0b5b9a5f1">Ark::internal::Keyword</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1acae6404c4aecf46684930fe2a86676a6">Ark::internal::Let</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00049">Ark::internal::LOAD_CONST</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1aebb87a770abac0e394d963d20ed574b7">Ark::internal::Mut</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4cab3ba0fe968ce39dcfc6fe8cc0f1b02da">Ark::internal::Namespace</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00078">Ark::internal::Node::nodeType()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4cab2ee912b91d69b435159c7c3f6df7f5f">Ark::internal::Number</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00100">page()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a5d5b78699e57104f2fa03bbdf7b9197b">Ark::internal::Set</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca27118326006d3829667a400ad23d5d98">Ark::internal::String</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00164">Ark::Value::string()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>, <a class="el" href="../../d7/dc6/Node_8hpp_source.html#l00264">Ark::internal::typeToString()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca92e592d90b9548016776a6fb68dccded">Ark::internal::Unused</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a3cddbb8f43a4e074e2c2ce3e8622f43e">Ark::internal::While</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00938">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00954">addValue()</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00137">Ark::internal::Language::Apply</a>, <a class="el" href="../../da/d33/Namespace_8hpp_source.html#l00018">Ark::internal::Namespace::ast</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a1a06729125544cab7cee73195fc044f0">Ark::internal::Begin</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00105">Ark::internal::BUILTIN</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00427">compileApplyInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00453">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00572">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00348">compileListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00645">compilePluginImport()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00316">compileSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00612">compileWhile()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00058">Ark::internal::Node::constArkNamespace()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00109">Ark::internal::DEL</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a5526d60feb55086fbd12dd96b071a093">Ark::internal::Del</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca6f16a5f8ff5d75ab84c018adacdfcbb7">Ark::internal::Field</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a46d6d315bea88efbf048125d2ec444b4">Ark::internal::Fun</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00117">Ark::internal::GET_FIELD</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00079">getBuiltin()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00090">getListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00683">handleCalls()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a786887572f6ef1c20f2d8177cb2f1639">Ark::internal::If</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a72d6d7a1885885bb55a565fd1070581a">Ark::internal::Import</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca220f3d3750583b9db48568a0b5b9a5f1">Ark::internal::Keyword</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1acae6404c4aecf46684930fe2a86676a6">Ark::internal::Let</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00053">Ark::internal::LOAD_CONST</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1aebb87a770abac0e394d963d20ed574b7">Ark::internal::Mut</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4cab3ba0fe968ce39dcfc6fe8cc0f1b02da">Ark::internal::Namespace</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00078">Ark::internal::Node::nodeType()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4cab2ee912b91d69b435159c7c3f6df7f5f">Ark::internal::Number</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a5d5b78699e57104f2fa03bbdf7b9197b">Ark::internal::Set</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca27118326006d3829667a400ad23d5d98">Ark::internal::String</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00166">Ark::Value::string()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>, <a class="el" href="../../d7/dc6/Node_8hpp_source.html#l00264">Ark::internal::typeToString()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca92e592d90b9548016776a6fb68dccded">Ark::internal::Unused</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a3cddbb8f43a4e074e2c2ce3e8622f43e">Ark::internal::While</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00370">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00331">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00451">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00270">compileListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00489">compileWhile()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00022">process()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00541">pushFunctionCallArguments()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00427">compileApplyInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00453">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00572">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00348">compileListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00612">compileWhile()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00759">handleOperator()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00716">handleShortcircuit()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00042">process()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00664">pushFunctionCallArguments()</a>.</p>
 
 </div>
 </div>
@@ -505,11 +670,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00370">370</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">492</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00013">Ark::internal::LocalsLocator::addLocal()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00745">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00761">addValue()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00090">Ark::internal::CAPTURE</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca44a50f07b4bdc57740901280f9eddaf5">Ark::internal::Capture</a>, <a class="el" href="../../de/d21/classArk_1_1internal_1_1LocalsLocator.html#a09e07d6cec44634f9cdc0636dd846132aaf4bb376939e77df0e7c2332b837a866">Ark::internal::LocalsLocator::Closure</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00034">Ark::internal::LocalsLocator::createScope()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00041">Ark::internal::LocalsLocator::deleteScope()</a>, <a class="el" href="../../de/d21/classArk_1_1internal_1_1LocalsLocator.html#a09e07d6cec44634f9cdc0636dd846132a86408593c34af77fdd90df932f8b5261">Ark::internal::LocalsLocator::Function</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00154">Ark::internal::Node::isAnonymousFunction()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00049">Ark::internal::LOAD_CONST</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00087">m_code_pages</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00082">m_locals_locator</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00090">m_opened_vars</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00106">Ark::internal::MAKE_CLOSURE</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca1fc7b59329445fc1318c97aff65940d7">Ark::internal::MutArg</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00100">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00149">Ark::internal::POP</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca6019425b961b0182c5b60ef04f2490de">Ark::internal::RefArg</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00094">Ark::internal::RENAME_NEXT_CAPTURE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00076">Ark::internal::RET</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00057">Ark::internal::STORE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00061">Ark::internal::STORE_REF</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>, <a class="el" href="../../d7/dc6/Node_8hpp_source.html#l00264">Ark::internal::typeToString()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00128">warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00013">Ark::internal::LocalsLocator::addLocal()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00938">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00954">addValue()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00097">Ark::internal::CAPTURE</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca44a50f07b4bdc57740901280f9eddaf5">Ark::internal::Capture</a>, <a class="el" href="../../de/d21/classArk_1_1internal_1_1LocalsLocator.html#a09e07d6cec44634f9cdc0636dd846132aaf4bb376939e77df0e7c2332b837a866">Ark::internal::LocalsLocator::Closure</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00120">createNewCodePage()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00034">Ark::internal::LocalsLocator::createScope()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00041">Ark::internal::LocalsLocator::deleteScope()</a>, <a class="el" href="../../de/d21/classArk_1_1internal_1_1LocalsLocator.html#a09e07d6cec44634f9cdc0636dd846132a86408593c34af77fdd90df932f8b5261">Ark::internal::LocalsLocator::Function</a>, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a51fe8952335d69f8d1964b704940498c">InvalidNodeMacro</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00154">Ark::internal::Node::isAnonymousFunction()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00053">Ark::internal::LOAD_CONST</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00101">m_locals_locator</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00110">m_opened_vars</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00113">Ark::internal::MAKE_CLOSURE</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00186">makeError()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca1fc7b59329445fc1318c97aff65940d7">Ark::internal::MutArg</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00160">Ark::internal::POP</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca6019425b961b0182c5b60ef04f2490de">Ark::internal::RefArg</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00101">Ark::internal::RENAME_NEXT_CAPTURE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00080">Ark::internal::RET</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00061">Ark::internal::STORE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00065">Ark::internal::STORE_REF</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>, <a class="el" href="../../d7/dc6/Node_8hpp_source.html#l00264">Ark::internal::typeToString()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00176">warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>.</p>
 
 </div>
 </div>
@@ -550,16 +715,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00331">331</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00453">453</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00051">Ark::internal::LocalsLocator::dropVarsForBranch()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00033">Ark::internal::IR::Entity::Goto()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00052">Ark::internal::IR::Entity::GotoIf()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00025">Ark::internal::IR::Entity::Label()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00089">m_current_label</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00082">m_locals_locator</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00100">page()</a>, and <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00046">Ark::internal::LocalsLocator::saveScopeLengthForBranch()</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00051">Ark::internal::LocalsLocator::dropVarsForBranch()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00038">Ark::internal::IR::Entity::Goto()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00057">Ark::internal::IR::Entity::GotoIf()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00030">Ark::internal::IR::Entity::Label()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00109">m_current_label</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00101">m_locals_locator</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, and <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00046">Ark::internal::LocalsLocator::saveScopeLengthForBranch()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>.</p>
 
 </div>
 </div>
-<a id="a5214ca82a586df4719cc755573c6d0a3" name="a5214ca82a586df4719cc755573c6d0a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5214ca82a586df4719cc755573c6d0a3">&#9670;&#160;</a></span>compileLetMutSet()</h2>
+<a id="a7cdb0a93d11709a72100a987ba63d531" name="a7cdb0a93d11709a72100a987ba63d531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cdb0a93d11709a72100a987ba63d531">&#9670;&#160;</a></span>compileLetMutSet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -580,7 +745,12 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_result_unused</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -590,11 +760,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00451">451</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00572">572</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00013">Ark::internal::LocalsLocator::addLocal()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00745">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1acae6404c4aecf46684930fe2a86676a6">Ark::internal::Let</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00082">m_locals_locator</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00090">m_opened_vars</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1aebb87a770abac0e394d963d20ed574b7">Ark::internal::Mut</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00100">page()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00065">Ark::internal::SET_VAL</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00057">Ark::internal::STORE</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>, and <a class="el" href="../../d7/dc6/Node_8hpp_source.html#l00264">Ark::internal::typeToString()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00013">Ark::internal::LocalsLocator::addLocal()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00938">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a51fe8952335d69f8d1964b704940498c">InvalidNodeMacro</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1acae6404c4aecf46684930fe2a86676a6">Ark::internal::Let</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00049">Ark::internal::LOAD_SYMBOL</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00101">m_locals_locator</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00110">m_opened_vars</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00186">makeError()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1aebb87a770abac0e394d963d20ed574b7">Ark::internal::Mut</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00069">Ark::internal::SET_VAL</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00061">Ark::internal::STORE</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>, and <a class="el" href="../../d7/dc6/Node_8hpp_source.html#l00264">Ark::internal::typeToString()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>.</p>
 
 </div>
 </div>
@@ -630,11 +800,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00270">270</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00348">348</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00122">Ark::internal::APPEND</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00130">Ark::internal::APPEND_IN_PLACE</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00126">Ark::internal::CONCAT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00134">Ark::internal::CONCAT_IN_PLACE</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00070">getListInstruction()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00118">Ark::internal::LIST</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00071">Ark::MaxValue16Bits</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00078">nodeProducesOutput()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00100">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00149">Ark::internal::POP</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00137">Ark::internal::POP_LIST</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00140">Ark::internal::POP_LIST_IN_PLACE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00146">Ark::internal::SET_AT_2_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00143">Ark::internal::SET_AT_INDEX</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00128">warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00133">Ark::internal::APPEND</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00141">Ark::internal::APPEND_IN_PLACE</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00137">Ark::internal::CONCAT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00145">Ark::internal::CONCAT_IN_PLACE</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00090">getListInstruction()</a>, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a63c80b411387c3a4d14c0cb8c570c5ce">InvalidNodeNoReturnValue</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00129">Ark::internal::LIST</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00186">makeError()</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00073">Ark::MaxValue16Bits</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00105">nodeProducesOutput()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00160">Ark::internal::POP</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00148">Ark::internal::POP_LIST</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00151">Ark::internal::POP_LIST_IN_PLACE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00157">Ark::internal::SET_AT_2_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00154">Ark::internal::SET_AT_INDEX</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00166">Ark::Value::string()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00176">warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>.</p>
 
 </div>
 </div>
@@ -665,16 +835,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00522">522</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00645">645</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00761">addValue()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00100">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00114">Ark::internal::PLUGIN</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca27118326006d3829667a400ad23d5d98">Ark::internal::String</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00954">addValue()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00125">Ark::internal::PLUGIN</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca27118326006d3829667a400ad23d5d98">Ark::internal::String</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>.</p>
 
 </div>
 </div>
-<a id="abd863a55fb019d12b87322f5b1c3b0d0" name="abd863a55fb019d12b87322f5b1c3b0d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd863a55fb019d12b87322f5b1c3b0d0">&#9670;&#160;</a></span>compileSymbol()</h2>
+<a id="ac85a87c083ff51a0408939cfcffcfca6" name="ac85a87c083ff51a0408939cfcffcfca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac85a87c083ff51a0408939cfcffcfca6">&#9670;&#160;</a></span>compileSymbol()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -695,7 +865,12 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_result_unused</em></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_result_unused</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>can_use_ref</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -705,11 +880,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00243">243</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00316">316</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00745">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00098">Ark::internal::BUILTIN</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00059">getBuiltin()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00051">getOperator()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00041">Ark::internal::LOAD_SYMBOL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00045">Ark::internal::LOAD_SYMBOL_BY_INDEX</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00020">Ark::internal::LocalsLocator::lookupLastScopeByName()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00082">m_locals_locator</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00100">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00149">Ark::internal::POP</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00038">Ark::internal::Node::string()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00128">warning()</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00938">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00105">Ark::internal::BUILTIN</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00079">getBuiltin()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00071">getOperator()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00041">Ark::internal::LOAD_FAST</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00045">Ark::internal::LOAD_FAST_BY_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00049">Ark::internal::LOAD_SYMBOL</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00020">Ark::internal::LocalsLocator::lookupLastScopeByName()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00101">m_locals_locator</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00160">Ark::internal::POP</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00038">Ark::internal::Node::string()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00176">warning()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00664">pushFunctionCallArguments()</a>.</p>
 
 </div>
 </div>
@@ -740,11 +915,40 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00489">489</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00612">612</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00158">Ark::internal::CREATE_SCOPE</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00034">Ark::internal::LocalsLocator::createScope()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00041">Ark::internal::LocalsLocator::deleteScope()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00033">Ark::internal::IR::Entity::Goto()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00052">Ark::internal::IR::Entity::GotoIf()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00025">Ark::internal::IR::Entity::Label()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00089">m_current_label</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00082">m_locals_locator</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00100">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00164">Ark::internal::POP_SCOPE</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00161">Ark::internal::RESET_SCOPE_JUMP</a>, and <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00169">Ark::internal::CREATE_SCOPE</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00034">Ark::internal::LocalsLocator::createScope()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00041">Ark::internal::LocalsLocator::deleteScope()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00038">Ark::internal::IR::Entity::Goto()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00057">Ark::internal::IR::Entity::GotoIf()</a>, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a51fe8952335d69f8d1964b704940498c">InvalidNodeMacro</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00030">Ark::internal::IR::Entity::Label()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00109">m_current_label</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00101">m_locals_locator</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00186">makeError()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00175">Ark::internal::POP_SCOPE</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00172">Ark::internal::RESET_SCOPE_JUMP</a>, and <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>.</p>
+
+</div>
+</div>
+<a id="a52936b6c3f3d2031778e080b7c8773a6" name="a52936b6c3f3d2031778e080b7c8773a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52936b6c3f3d2031778e080b7c8773a6">&#9670;&#160;</a></span>createNewCodePage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a> Ark::internal::ASTLowerer::createNewCodePage </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>temp</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00120">120</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00042">process()</a>.</p>
 
 </div>
 </div>
@@ -780,11 +984,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::optional&lt;uint16_t&gt; builtin number </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#ae99a104c484192543989515d4eda8a5a">Ark::internal::Builtins::builtins</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00243">compileSymbol()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00316">compileSymbol()</a>.</p>
 
 </div>
 </div>
@@ -820,11 +1024,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::optional&lt;Instruction&gt; list instruction </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00090">90</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00118">Ark::internal::LIST</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00119">Ark::internal::Language::listInstructions</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00129">Ark::internal::LIST</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00119">Ark::internal::Language::listInstructions</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00270">compileListInstruction()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00348">compileListInstruction()</a>.</p>
 
 </div>
 </div>
@@ -860,11 +1064,11 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::optional&lt;Instruction&gt; operator instruction </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00071">71</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00170">Ark::internal::FIRST_OPERATOR</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00156">Ark::internal::Language::operators</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00180">Ark::internal::FIRST_OPERATOR</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00158">Ark::internal::Language::operators</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00243">compileSymbol()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00316">compileSymbol()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00683">handleCalls()</a>.</p>
 
 </div>
 </div>
@@ -905,11 +1109,126 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">568</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00683">683</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00173">Ark::internal::ADD</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00745">addSymbol()</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00134">Ark::internal::Language::And</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00218">Ark::internal::ASSERT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00230">Ark::internal::AT_AT</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00086">Ark::internal::CALL</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca44a50f07b4bdc57740901280f9eddaf5">Ark::internal::Capture</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00182">Ark::internal::DIV</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00170">Ark::internal::FIRST_OPERATOR</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00168">Ark::internal::GET_CURRENT_PAGE_ADDR</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00051">getOperator()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00033">Ark::internal::IR::Entity::Goto()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00116">isTernaryInst()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00096">isUnaryInst()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00073">Ark::internal::JUMP</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00025">Ark::internal::IR::Entity::Label()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00089">m_current_label</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00090">m_opened_vars</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00088">m_temp_pages</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00233">Ark::internal::MOD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00179">Ark::internal::MUL</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00078">nodeProducesOutput()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00078">Ark::internal::Node::nodeType()</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00156">Ark::internal::Language::operators</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00135">Ark::internal::Language::Or</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00100">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00149">Ark::internal::POP</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00082">Ark::internal::PUSH_RETURN_ADDRESS</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00541">pushFunctionCallArguments()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00179">Ark::internal::Node::repr()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00152">Ark::internal::SHORTCIRCUIT_AND</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00155">Ark::internal::SHORTCIRCUIT_OR</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00038">Ark::internal::Node::string()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00176">Ark::internal::SUB</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00134">Ark::internal::Language::And</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00183">Ark::internal::BREAKPOINT</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00071">getOperator()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00759">handleOperator()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00716">handleShortcircuit()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00078">Ark::internal::Node::nodeType()</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00135">Ark::internal::Language::Or</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00160">Ark::internal::POP</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00038">Ark::internal::Node::string()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>.</p>
+
+</div>
+</div>
+<a id="a1eac26f51a77cef7b36e004218511fad" name="a1eac26f51a77cef7b36e004218511fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eac26f51a77cef7b36e004218511fad">&#9670;&#160;</a></span>handleFunctionCall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ark::internal::ASTLowerer::handleFunctionCall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>is_terminal</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">813</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00938">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00105">Ark::internal::BUILTIN</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a8e32685a01342ab0c2024b4c33e84b6eadefccbed9421a1e9180a9b1fc35dacdb">Ark::internal::Builtin</a>, <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#ae99a104c484192543989515d4eda8a5a">Ark::internal::Builtins::builtins</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00090">Ark::internal::CALL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00344">Ark::internal::CALL_BUILTIN</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00400">Ark::internal::CALL_CURRENT_PAGE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00392">Ark::internal::CALL_SYMBOL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00396">Ark::internal::CALL_SYMBOL_BY_INDEX</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca44a50f07b4bdc57740901280f9eddaf5">Ark::internal::Capture</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a8e32685a01342ab0c2024b4c33e84b6ead35b51b639528d580362ca7042de6a0e">Ark::internal::Classic</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00120">createNewCodePage()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00117">Ark::internal::GET_FIELD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00121">Ark::internal::GET_FIELD_AS_CLOSURE</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00038">Ark::internal::IR::Entity::Goto()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00098">isBreakpoint()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00151">isFunctionCallingItself()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00030">Ark::internal::IR::Entity::Label()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00041">Ark::internal::LOAD_FAST</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00045">Ark::internal::LOAD_FAST_BY_INDEX</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00109">m_current_label</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00108">m_temp_pages</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00105">nodeProducesOutput()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00078">Ark::internal::Node::nodeType()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00086">Ark::internal::PUSH_RETURN_ADDRESS</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00664">pushFunctionCallArguments()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00179">Ark::internal::Node::repr()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a8e32685a01342ab0c2024b4c33e84b6ea7a4eb32cb8365f831b19e922ad60e8cb">Ark::internal::SelfNotRecursive</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00038">Ark::internal::Node::string()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a8e32685a01342ab0c2024b4c33e84b6ea5dd68a0ed1ed1a8150f0e944ba56c389">Ark::internal::SymbolByIndex</a>, and <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00093">Ark::internal::TAIL_CALL_SELF</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00683">handleCalls()</a>.</p>
+
+</div>
+</div>
+<a id="a99f4953ecf1207c8f1eb8b2fe7b1ffe4" name="a99f4953ecf1207c8f1eb8b2fe7b1ffe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99f4953ecf1207c8f1eb8b2fe7b1ffe4">&#9670;&#160;</a></span>handleOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::ASTLowerer::handleOperator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Instruction</a></td>          <td class="paramname"><span class="paramname"><em>op</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00759">759</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00164">Ark::internal::Node::filename()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00180">Ark::internal::FIRST_OPERATOR</a>, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1ad75cacc714c3b499e2d8b8ca365befb0">InvalidNodeInOperatorNoReturnValue</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00098">isBreakpoint()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00161">isRepeatableOperation()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00149">isTernaryInst()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00129">isUnaryInst()</a>, <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00022">Ark::internal::FilePos::line</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00186">makeError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00105">nodeProducesOutput()</a>, <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00158">Ark::internal::Language::operators</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00159">Ark::internal::Node::position()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00179">Ark::internal::Node::repr()</a>, and <a class="el" href="../../dc/d58/Position_8hpp_source.html#l00036">Ark::internal::FileSpan::start</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00683">handleCalls()</a>.</p>
+
+</div>
+</div>
+<a id="aea5fbd8ad0d879d669a75cb4591c624c" name="aea5fbd8ad0d879d669a75cb4591c624c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea5fbd8ad0d879d669a75cb4591c624c">&#9670;&#160;</a></span>handleShortcircuit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::ASTLowerer::handleShortcircuit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dc1/structArk_1_1internal_1_1ASTLowerer_1_1Page.html">Page</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00716">716</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00134">Ark::internal::Language::And</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00038">Ark::internal::IR::Entity::Goto()</a>, <a class="el" href="../../df/de9/Entity_8cpp_source.html#l00030">Ark::internal::IR::Entity::Label()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00109">m_current_label</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00105">nodeProducesOutput()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">page()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00163">Ark::internal::SHORTCIRCUIT_AND</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00166">Ark::internal::SHORTCIRCUIT_OR</a>, and <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00038">Ark::internal::Node::string()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00683">handleCalls()</a>.</p>
 
 </div>
 </div>
@@ -939,11 +1258,129 @@ Private Attributes</h2></td></tr>
 <p>Return the <a class="el" href="../../dc/d02/namespaceArk_1_1internal_1_1IR.html">IR</a> blocks (one per scope) </p>
 <dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;Block&gt;&amp; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00087">m_code_pages</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00107">m_code_pages</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00051">Ark::Welder::generateBytecode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00062">Ark::Welder::generateBytecode()</a>.</p>
+
+</div>
+</div>
+<a id="a6a140f235b962ab5d25565dd74276fad" name="a6a140f235b962ab5d25565dd74276fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a140f235b962ab5d25565dd74276fad">&#9670;&#160;</a></span>isBreakpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ark::internal::ASTLowerer::isBreakpoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks if a node is a list and is a call to 'breakpoint' </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>node to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the node is a 'breakpoint' call: (breakpoint &lt;cond&gt;) </dd>
+<dd>
+false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00098">98</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00078">Ark::internal::Node::nodeType()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00759">handleOperator()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00664">pushFunctionCallArguments()</a>.</p>
+
+</div>
+</div>
+<a id="acfe2105f8040cfd26755235f12a5228c" name="acfe2105f8040cfd26755235f12a5228c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe2105f8040cfd26755235f12a5228c">&#9670;&#160;</a></span>isFunctionCallingItself()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ark::internal::ASTLowerer::isFunctionCallingItself </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if we are in a recursive self call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>symbol name being compiled </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the name passed is the name of the last function we entered </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00151">151</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>.</p>
+
+</div>
+</div>
+<a id="a4f84e858b598f61c0bd34e4163cbe74f" name="a4f84e858b598f61c0bd34e4163cbe74f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f84e858b598f61c0bd34e4163cbe74f">&#9670;&#160;</a></span>isRepeatableOperation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ark::internal::ASTLowerer::isRepeatableOperation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Instruction</a></td>          <td class="paramname"><span class="paramname"><em>inst</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if an operator can be repeated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inst</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true the instruction can be repeated, eg (+ 1 2 3) compiles to (+ (+ 1 2) 3), false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00161">161</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00186">Ark::internal::ADD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00195">Ark::internal::DIV</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00192">Ark::internal::MUL</a>, and <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00189">Ark::internal::SUB</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00759">handleOperator()</a>.</p>
 
 </div>
 </div>
@@ -977,15 +1414,13 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true the instruction is ternary </dd>
-<dd>
-false </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true the instruction is ternary, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00116">116</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00149">149</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00230">Ark::internal::AT_AT</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00240">Ark::internal::AT_AT</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00759">handleOperator()</a>.</p>
 
 </div>
 </div>
@@ -1019,15 +1454,63 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true the instruction is unary </dd>
-<dd>
-false </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true the instruction is unary, false otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00096">96</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00129">129</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00206">Ark::internal::EMPTY</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00212">Ark::internal::HEAD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00215">Ark::internal::ISNIL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00203">Ark::internal::LEN</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00242">Ark::internal::NOT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00209">Ark::internal::TAIL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00221">Ark::internal::TO_NUM</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00224">Ark::internal::TO_STR</a>, and <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00236">Ark::internal::TYPE</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00225">Ark::internal::HEAD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00219">Ark::internal::IS_EMPTY</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00228">Ark::internal::IS_NIL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00216">Ark::internal::LEN</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00252">Ark::internal::NOT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00222">Ark::internal::TAIL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00231">Ark::internal::TO_NUM</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00234">Ark::internal::TO_STR</a>, and <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00246">Ark::internal::TYPE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00759">handleOperator()</a>.</p>
+
+</div>
+</div>
+<a id="a910cc008b41a3c30387c494e3a1ff79d" name="a910cc008b41a3c30387c494e3a1ff79d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a910cc008b41a3c30387c494e3a1ff79d">&#9670;&#160;</a></span>makeError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::ASTLowerer::makeError </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1">ErrorKind</a></td>          <td class="paramname"><span class="paramname"><em>kind</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../dc/d9e/classArk_1_1internal_1_1Node.html">Node</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>node</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>additional_ctx</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Throw a nice error message, using a message builder. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kind</td><td>error kind </td></tr>
+    <tr><td class="paramname">node</td><td>erroneous node </td></tr>
+    <tr><td class="paramname">additional_ctx</td><td>optional context for the error, e.g. the macro name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00186">186</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00181">buildAndThrowError()</a>, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1ad75cacc714c3b499e2d8b8ca365befb0">InvalidNodeInOperatorNoReturnValue</a>, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a33aa4313dd908549cdfc89eeeb6dab50">InvalidNodeInTailCallNoReturnValue</a>, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a51fe8952335d69f8d1964b704940498c">InvalidNodeMacro</a>, and <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a63c80b411387c3a4d14c0cb8c570c5ce">InvalidNodeNoReturnValue</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00427">compileApplyInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00572">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00348">compileListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00612">compileWhile()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00759">handleOperator()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00664">pushFunctionCallArguments()</a>.</p>
 
 </div>
 </div>
@@ -1063,11 +1546,42 @@ false </dd></dl>
 <dd>
 false otherwise (let, mut, set, while, import, del) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00078">78</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00105">105</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a1a06729125544cab7cee73195fc044f0">Ark::internal::Begin</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a46d6d315bea88efbf048125d2ec444b4">Ark::internal::Fun</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a786887572f6ef1c20f2d8177cb2f1639">Ark::internal::If</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca220f3d3750583b9db48568a0b5b9a5f1">Ark::internal::Keyword</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00078">nodeProducesOutput()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00078">Ark::internal::Node::nodeType()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>, and <a class="el" href="../../d8/ddd/Common_8hpp_source.html#l00112">Ark::internal::Language::UpdateRef</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a1a06729125544cab7cee73195fc044f0">Ark::internal::Begin</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a46d6d315bea88efbf048125d2ec444b4">Ark::internal::Fun</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a786887572f6ef1c20f2d8177cb2f1639">Ark::internal::If</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca220f3d3750583b9db48568a0b5b9a5f1">Ark::internal::Keyword</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1acae6404c4aecf46684930fe2a86676a6">Ark::internal::Let</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca4ee29ca12c7d126654bd0e5275de6135">Ark::internal::List</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1aebb87a770abac0e394d963d20ed574b7">Ark::internal::Mut</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00105">nodeProducesOutput()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00078">Ark::internal::Node::nodeType()</a>, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a9a844cdbff6d30f493cb3044c72128f1a5d5b78699e57104f2fa03bbdf7b9197b">Ark::internal::Set</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00270">compileListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00078">nodeProducesOutput()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00541">pushFunctionCallArguments()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00427">compileApplyInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00348">compileListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00759">handleOperator()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00716">handleShortcircuit()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00105">nodeProducesOutput()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00664">pushFunctionCallArguments()</a>.</p>
+
+</div>
+</div>
+<a id="a6071b16662ed3a7261d8065aaa745df4" name="a6071b16662ed3a7261d8065aaa745df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6071b16662ed3a7261d8065aaa745df4">&#9670;&#160;</a></span>offsetPagesBy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::ASTLowerer::offsetPagesBy </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>offset</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start bytecode pages at a given offset (by default, 0) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00037">37</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00106">m_start_page_at_offset</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00093">Ark::Welder::generateBytecodeUsingTables()</a>.</p>
 
 </div>
 </div>
@@ -1103,9 +1617,9 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::vector&lt;IR::Block&gt;&amp; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00100">100</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00138">138</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00370">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00331">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00451">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00270">compileListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00522">compilePluginImport()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00243">compileSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00489">compileWhile()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00427">compileApplyInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00453">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00572">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00348">compileListInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00645">compilePluginImport()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00316">compileSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00612">compileWhile()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00683">handleCalls()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00759">handleOperator()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00716">handleShortcircuit()</a>.</p>
 
 </div>
 </div>
@@ -1132,11 +1646,11 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00022">22</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00087">m_code_pages</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00092">m_logger</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00096">Ark::internal::Logger::traceEnd()</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00090">Ark::internal::Logger::traceStart()</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00120">createNewCodePage()</a>, <a class="el" href="../../df/d5f/Pass_8hpp_source.html#l00044">Ark::internal::Pass::m_logger</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00115">Ark::internal::Logger::traceEnd()</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00109">Ark::internal::Logger::traceStart()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00051">Ark::Welder::generateBytecode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00062">Ark::Welder::generateBytecode()</a>.</p>
 
 </div>
 </div>
@@ -1172,11 +1686,11 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00541">541</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00664">664</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00133">buildAndThrowError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00138">compileExpression()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00078">nodeProducesOutput()</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00210">compileExpression()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00316">compileSymbol()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00073">Ark::internal::Node::constList()</a>, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a33aa4313dd908549cdfc89eeeb6dab50">InvalidNodeInTailCallNoReturnValue</a>, <a class="el" href="#a942ed580af88f8ffb3835992f4c63bb1a63c80b411387c3a4d14c0cb8c570c5ce">InvalidNodeNoReturnValue</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00098">isBreakpoint()</a>, <a class="el" href="../../dc/d73/Node_8cpp_source.html#l00068">Ark::internal::Node::list()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00186">makeError()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00105">nodeProducesOutput()</a>, and <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#a5300c6c0596db0a5a8f5b62d4d42ce4ca02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>.</p>
 
 </div>
 </div>
@@ -1206,11 +1720,11 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 <p>Return the symbol table pre-computed. </p>
 <dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;std::string&gt;&amp; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00085">m_symbols</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00104">m_symbols</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00051">Ark::Welder::generateBytecode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00031">addToTables()</a>, and <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00062">Ark::Welder::generateBytecode()</a>.</p>
 
 </div>
 </div>
@@ -1240,11 +1754,11 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 <p>Return the value table pre-computed. </p>
 <dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;ValTableElem&gt;&amp; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00086">m_values</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00105">m_values</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00051">Ark::Welder::generateBytecode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00062">Ark::Welder::generateBytecode()</a>.</p>
 
 </div>
 </div>
@@ -1270,7 +1784,7 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1284,11 +1798,11 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00128">128</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00176">176</a> of file <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html">ASTLowerer.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00211">Ark::Diagnostics::makeContextWithNode()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00157">Ark::internal::Logger::colorize()</a>, <a class="el" href="../../df/d5f/Pass_8hpp_source.html#l00044">Ark::internal::Pass::m_logger</a>, <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00213">Ark::Diagnostics::makeContextWithNode()</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00080">Ark::internal::Logger::warn()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00370">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00270">compileListInstruction()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00243">compileSymbol()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00348">compileListInstruction()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00316">compileSymbol()</a>.</p>
 
 </div>
 </div>
@@ -1313,9 +1827,9 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00087">87</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00370">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00036">intermediateRepresentation()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00022">process()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00056">intermediateRepresentation()</a>.</p>
 
 </div>
 </div>
@@ -1339,9 +1853,9 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00089">89</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00331">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00489">compileWhile()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00427">compileApplyInstruction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00453">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00612">compileWhile()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00716">handleShortcircuit()</a>.</p>
 
 </div>
 </div>
@@ -1365,35 +1879,9 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00082">82</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00101">101</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00370">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00331">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00451">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00243">compileSymbol()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00489">compileWhile()</a>.</p>
-
-</div>
-</div>
-<a id="a6ea4d9cdf69522788aada295fde05106" name="a6ea4d9cdf69522788aada295fde05106"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ea4d9cdf69522788aada295fde05106">&#9670;&#160;</a></span>m_logger</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d6/d2f/classArk_1_1internal_1_1Logger.html">Logger</a> Ark::internal::ASTLowerer::m_logger</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00092">92</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00022">process()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00453">compileIf()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00572">compileLetMutSet()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00316">compileSymbol()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00612">compileWhile()</a>.</p>
 
 </div>
 </div>
@@ -1419,9 +1907,37 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 
 <p>stack of vars we are currently declaring </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00090">90</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00110">110</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00370">compileFunction()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00451">compileLetMutSet()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">compileFunction()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00572">compileLetMutSet()</a>.</p>
+
+</div>
+</div>
+<a id="ada23655a6971034c9aa1137ae224af86" name="ada23655a6971034c9aa1137ae224af86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada23655a6971034c9aa1137ae224af86">&#9670;&#160;</a></span>m_start_page_at_offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t Ark::internal::ASTLowerer::m_start_page_at_offset = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used to offset the page numbers when compiling code in the debugger. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00106">106</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00037">offsetPagesBy()</a>.</p>
 
 </div>
 </div>
@@ -1445,9 +1961,9 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00085">85</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00104">104</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00745">addSymbol()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00041">symbols()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00938">addSymbol()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00031">addToTables()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00061">symbols()</a>.</p>
 
 </div>
 </div>
@@ -1473,9 +1989,9 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 
 <p>we need temporary code pages for some compilations passes </p>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00088">88</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00568">handleCalls()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00813">handleFunctionCall()</a>.</p>
 
 </div>
 </div>
@@ -1499,9 +2015,9 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00086">86</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html#l00105">105</a> of file <a class="el" href="../../db/d08/ASTLowerer_8hpp_source.html">ASTLowerer.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00761">addValue()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00777">addValue()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00046">values()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00031">addToTables()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00954">addValue()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00970">addValue()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00066">values()</a>.</p>
 
 </div>
 </div>
@@ -1515,7 +2031,7 @@ false otherwise (let, mut, set, while, import, del) </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="../../d3/d57/classArk_1_1internal_1_1ASTLowerer.html">ASTLowerer</a></li>
-    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

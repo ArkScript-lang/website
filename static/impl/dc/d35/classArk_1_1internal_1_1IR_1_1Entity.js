@@ -15,6 +15,7 @@ var classArk_1_1internal_1_1IR_1_1Entity =
     [ "Label", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a328f2f29ffaa50c42a807e37573f5b4f", null ],
     [ "label", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a3e6c67293617306d8d1dd18426cf4b63", null ],
     [ "primaryArg", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#abcec152ef1318a886503a7acf47c94da", null ],
+    [ "replaceInstruction", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#adfd0db8c1f9dd58d4c51c303460b129c", null ],
     [ "secondaryArg", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a1a51a4f5160117e6b7db09a30d3283b8", null ],
     [ "setSourceLocation", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#ac145cb159160067183794e3eba3a8192", null ],
     [ "sourceLine", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html#a75936180d0d2cc71eabd7aea88ad9a18", null ],

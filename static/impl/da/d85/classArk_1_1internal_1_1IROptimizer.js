@@ -16,7 +16,6 @@ var classArk_1_1internal_1_1IROptimizer =
     [ "replaceWithRules", "da/d85/classArk_1_1internal_1_1IROptimizer.html#a10a062c1ed71f6a3a0cdfd836b5aeaa2", null ],
     [ "smallerNumberAsArg", "da/d85/classArk_1_1internal_1_1IROptimizer.html#ac9dead85835662f82ea6ce4ba559edb4", null ],
     [ "m_ir", "da/d85/classArk_1_1internal_1_1IROptimizer.html#a24aef61bcd2af837667a5e690dd19bc1", null ],
-    [ "m_logger", "da/d85/classArk_1_1internal_1_1IROptimizer.html#a2c66a7e6a6f582cf8ef14a4228a561f4", null ],
     [ "m_ruleset", "da/d85/classArk_1_1internal_1_1IROptimizer.html#a961efd72013a3bc3c47fed469533211a", null ],
     [ "m_symbols", "da/d85/classArk_1_1internal_1_1IROptimizer.html#aaf86db80f5460438280a35f78b119762", null ],
     [ "m_values", "da/d85/classArk_1_1internal_1_1IROptimizer.html#a034f383ca0e957e0babe08203f7ebdb3", null ]

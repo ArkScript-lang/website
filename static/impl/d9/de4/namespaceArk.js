@@ -3,6 +3,7 @@ var namespaceArk =
     [ "Diagnostics", "db/da6/namespaceArk_1_1Diagnostics.html", "db/da6/namespaceArk_1_1Diagnostics" ],
     [ "helper", "da/da8/namespaceArk_1_1helper.html", [
       [ "at", "da/da8/namespaceArk_1_1helper.html#a815282cc5bf0d47595a07a1550ca36a8", null ],
+      [ "atAt", "da/da8/namespaceArk_1_1helper.html#ad7e633742bf85788a0e64fa9c0b0d8dc", null ],
       [ "doMath", "da/da8/namespaceArk_1_1helper.html#a03ee6c644c603b8d1dc3107525a691a3", null ],
       [ "head", "da/da8/namespaceArk_1_1helper.html#a0cb620ec076a6c40140c7d1feee2cb35", null ],
       [ "mathInstToStr", "da/da8/namespaceArk_1_1helper.html#aa9b167626e158586fae25abe3eb24521", null ],
@@ -16,6 +17,7 @@ var namespaceArk =
     ] ],
     [ "types", "d4/d7c/namespaceArk_1_1types.html", "d4/d7c/namespaceArk_1_1types" ],
     [ "Utils", "df/d16/namespaceArk_1_1Utils.html", [
+      [ "countOpenEnclosures", "df/d16/namespaceArk_1_1Utils.html#a5230fc00b9401f81f8e4689f81c2d678", null ],
       [ "fileExists", "df/d16/namespaceArk_1_1Utils.html#a1e2624f09a9e767e1792b69b879aa73f", null ],
       [ "isDouble", "df/d16/namespaceArk_1_1Utils.html#afeaaabff8a0661920f770e2bab8a7eda", null ],
       [ "levenshteinDistance", "df/d16/namespaceArk_1_1Utils.html#a8f9326e745dc008df3527a447eeb0788", null ],
@@ -23,7 +25,8 @@ var namespaceArk =
       [ "readFile", "df/d16/namespaceArk_1_1Utils.html#a08fab59297a574abc8a37a6d46eebacb", null ],
       [ "readFileAsBytes", "df/d16/namespaceArk_1_1Utils.html#a9f569f15da3036cc8f5ec6d1708a4887", null ],
       [ "rtrim", "df/d16/namespaceArk_1_1Utils.html#aa2c46df34daa3bd35b880625ed34c90c", null ],
-      [ "splitString", "df/d16/namespaceArk_1_1Utils.html#a5b6a05559c04cd6f5f5615de28315565", null ]
+      [ "splitString", "df/d16/namespaceArk_1_1Utils.html#a5b6a05559c04cd6f5f5615de28315565", null ],
+      [ "trimWhitespace", "df/d16/namespaceArk_1_1Utils.html#a8a6eafcf44e2ce3e5961cac0fda2535e", null ]
     ] ],
     [ "AssertionFailed", "d3/df9/classArk_1_1AssertionFailed.html", "d3/df9/classArk_1_1AssertionFailed" ],
     [ "BytecodeReader", "d8/d08/classArk_1_1BytecodeReader.html", "d8/d08/classArk_1_1BytecodeReader" ],
@@ -70,6 +73,7 @@ var namespaceArk =
       [ "Undefined", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aec0fc0100c4fc1ce4eea230c3dc10360", null ],
       [ "Reference", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a63d5049791d9d79d86e9a108b0a999ca", null ],
       [ "InstPtr", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6adf754f9ba8524ed3333ec938d0636862", null ],
+      [ "Garbage", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a8c97626c3bda0721059f5eddbd2d255d", null ],
       [ "Any", "d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aed36a1ef76a59ee3f15180e0441188ad", null ]
     ] ],
     [ "operator!", "d9/de4/namespaceArk.html#a4a7668d3d9013495706afa18f5ad125d", null ],
@@ -80,6 +84,7 @@ var namespaceArk =
     [ "operator==", "d9/de4/namespaceArk.html#a751a3ae071809b017a29e9c309fcee23", null ],
     [ "operator==", "d9/de4/namespaceArk.html#a48544420591ea31c9f434605ed98eee9", null ],
     [ "DefaultFeatures", "d9/de4/namespaceArk.html#a01bf99e888f59670c0508d83cc23ffd4", null ],
+    [ "DisableCache", "d9/de4/namespaceArk.html#a52ab68d95fd5de773ee18c88f8347388", null ],
     [ "False", "d9/de4/namespaceArk.html#a3918bd702bb8bb7f3cfb7a994050bf16", null ],
     [ "FeatureASTOptimizer", "d9/de4/namespaceArk.html#ac3db2ac8dce7f6dc63d01048eaaea2cc", null ],
     [ "FeatureDumpIR", "d9/de4/namespaceArk.html#aca8e167cdb15794066ffc3254580fa5a", null ],
@@ -88,6 +93,7 @@ var namespaceArk =
     [ "FeatureMacroProcessor", "d9/de4/namespaceArk.html#a5aa16adc97211d2f076390efbc996f63", null ],
     [ "FeatureNameResolver", "d9/de4/namespaceArk.html#afeb889bdcb25a5cd5baa7f8316fccb49", null ],
     [ "FeatureTestFailOnException", "d9/de4/namespaceArk.html#a69c882fe0668cb21166e4616104c0480", null ],
+    [ "FeatureVMDebugger", "d9/de4/namespaceArk.html#adbca54411dbcfb99cadfd503bb47e1de", null ],
     [ "MaxMacroProcessingDepth", "d9/de4/namespaceArk.html#a601127fdf466d46ddcc7d061bd4f7a34", null ],
     [ "MaxMacroUnificationDepth", "d9/de4/namespaceArk.html#a9bfec7edeabdb42ddee1327daa3ee186", null ],
     [ "MaxNestedNodes", "d9/de4/namespaceArk.html#a47ecd80bc50fcb29add2f0692a97b28b", null ],

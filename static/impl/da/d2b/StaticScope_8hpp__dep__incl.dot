@@ -27,12 +27,14 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/NameResolution
   Node4 -> Node11 [id="edge10_Node000004_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node11 [id="Node000011",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/Welder.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/df1/Welder_8cpp.html",tooltip=" "];
   Node4 -> Node12 [id="edge11_Node000004_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node12 [id="Node000012",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/State.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/da0/State_8cpp.html",tooltip=" "];
-  Node3 -> Node13 [id="edge12_Node000003_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node13 [id="Node000013",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/NameResolution/NameResolution\lPass.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dd7/NameResolutionPass_8cpp.html",tooltip=" "];
-  Node3 -> Node11 [id="edge13_Node000003_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 -> Node14 [id="edge14_Node000002_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node14 [id="Node000014",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/NameResolution/ScopeResolver.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/d79/ScopeResolver_8cpp.html",tooltip=" "];
-  Node1 -> Node15 [id="edge15_Node000001_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node15 [id="Node000015",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/NameResolution/StaticScope.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d11/StaticScope_8cpp.html",tooltip=" "];
+  Node12 [id="Node000012",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/State.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/da0/State_8cpp.html",tooltip=" "];
+  Node4 -> Node13 [id="edge12_Node000004_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Debugger.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d7b/Debugger_8cpp.html",tooltip=" "];
+  Node3 -> Node14 [id="edge13_Node000003_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/NameResolution/NameResolution\lPass.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dd7/NameResolutionPass_8cpp.html",tooltip=" "];
+  Node3 -> Node11 [id="edge14_Node000003_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node15 [id="edge15_Node000002_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/NameResolution/ScopeResolver.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/d79/ScopeResolver_8cpp.html",tooltip=" "];
+  Node1 -> Node16 [id="edge16_Node000001_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/NameResolution/StaticScope.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d11/StaticScope_8cpp.html",tooltip=" "];
 }

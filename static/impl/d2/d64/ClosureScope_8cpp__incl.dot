@@ -17,7 +17,7 @@ digraph "/Users/fola/Documents/ArkScript/Ark/src/arkreactor/VM/Value/ClosureScop
   Node2 -> Node6 [id="edge5_Node000002_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="Ark/Utils/Platform.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d40/Platform_8hpp.html",tooltip="ArkScript configuration macros."];
   Node2 -> Node7 [id="edge6_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="Ark/VM/Value.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dfd/Value_8hpp.html",tooltip="Default value type handled by the virtual machine."];
+  Node7 [id="Node000007",label="Ark/VM/Value/Value.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dfd/Value_8hpp.html",tooltip="Default value type handled by the virtual machine."];
   Node7 -> Node3 [id="edge7_Node000007_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node7 -> Node8 [id="edge8_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
   Node8 [id="Node000008",label="variant",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
@@ -49,7 +49,7 @@ digraph "/Users/fola/Documents/ArkScript/Ark/src/arkreactor/VM/Value/ClosureScop
   Node17 -> Node3 [id="edge25_Node000017_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node7 -> Node6 [id="edge26_Node000007_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node18 [id="edge27_Node000001_Node000018",color="steelblue1",style="solid",tooltip=" "];
-  Node18 [id="Node000018",label="Ark/VM/ScopeView.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d45/ScopeView_8hpp.html",tooltip=" "];
+  Node18 [id="Node000018",label="Ark/VM/ScopeView.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d45/ScopeView_8hpp.html",tooltip="The virtual machine scope system."];
   Node18 -> Node10 [id="edge28_Node000018_Node000010",color="steelblue1",style="solid",tooltip=" "];
   Node18 -> Node5 [id="edge29_Node000018_Node000005",color="steelblue1",style="solid",tooltip=" "];
   Node18 -> Node6 [id="edge30_Node000018_Node000006",color="steelblue1",style="solid",tooltip=" "];

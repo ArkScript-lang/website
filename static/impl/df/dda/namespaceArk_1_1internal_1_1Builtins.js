@@ -65,6 +65,30 @@ var namespaceArk_1_1internal_1_1Builtins =
       [ "pi_", "d0/d04/namespaceArk_1_1internal_1_1Builtins_1_1Mathematics.html#aa80ff6fe9f7412c94798c61688caf6a2", null ],
       [ "tau_", "d0/d04/namespaceArk_1_1internal_1_1Builtins_1_1Mathematics.html#a8ce8e0ebded8592d52db484cdff7a0f9", null ]
     ] ],
+    [ "Operators", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html", [
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a3a454fac90a0b3b5a16a4b430104faae", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a3b9d0bcf2fca6af2c4b3c2fd228d8b9b", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a6993e5bf283c429d0274d2e3cd67cbe4", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#accae3656708f55ced79bbeeadb8c4a6e", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#affcac360e31f5174e1bf56de5e5470eb", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a4e87971eeaeb9f177e7ddb981da6e535", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a3c2c21a31ed6475c1bb90de03b37deed", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a38e999fd5235485055ebe9b95c772f24", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#acdca852ac0849f1e6832d364ca5a03fe", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a09afccd64f96fb4909f66ffaf5845853", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#aae54650fb98475ace35e7c3e8f62f8cd", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a61e9c05b526f57166d535f97ff103ae6", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#aed31d11b9eaeed6faaf1854c49a9e194", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#ae93a6fbe9b9604509971ed7dabc72a3d", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a435eec440ff4dae757f2f8f3b935f70a", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#ae5ac257195f5911cfddbf6002d319af1", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#ab1e36a563f7b90f7fa6b5dc202efaf54", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a4d04c75ea6e572cc32baeaa634584e68", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#adab74d52f4cc55505b46831815d68940", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a78780be16f8ac7c7524046b53aa46d97", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#ab16b845670c6b0fe363fdec7ea11ce8d", null ],
+      [ "ARK_BUILTIN", "d0/d89/namespaceArk_1_1internal_1_1Builtins_1_1Operators.html#a8045a144002e9e9691757dde12b1655b", null ]
+    ] ],
     [ "String", "d9/ddd/namespaceArk_1_1internal_1_1Builtins_1_1String.html", [
       [ "ARK_BUILTIN", "d9/ddd/namespaceArk_1_1internal_1_1Builtins_1_1String.html#a4a31ceec2f73a58b731f8427b3b8f24b", null ],
       [ "ARK_BUILTIN", "d9/ddd/namespaceArk_1_1internal_1_1Builtins_1_1String.html#ad1ccd3c24fe3063614dd25b4e9a4f46c", null ],
@@ -74,6 +98,7 @@ var namespaceArk_1_1internal_1_1Builtins =
       [ "ARK_BUILTIN", "d9/ddd/namespaceArk_1_1internal_1_1Builtins_1_1String.html#a34e054292a64db9c3f2ed8ce7e030bf0", null ]
     ] ],
     [ "System", "dc/dcb/namespaceArk_1_1internal_1_1Builtins_1_1System.html", [
+      [ "ARK_BUILTIN", "dc/dcb/namespaceArk_1_1internal_1_1Builtins_1_1System.html#af1c6b40d4548576832c46fa99d02c9a3", null ],
       [ "ARK_BUILTIN", "dc/dcb/namespaceArk_1_1internal_1_1Builtins_1_1System.html#ab83857eb9be0f9e68e6c55548d4a92a5", null ],
       [ "ARK_BUILTIN", "dc/dcb/namespaceArk_1_1internal_1_1Builtins_1_1System.html#a13a11b93228a98b8b8c99fce70563957", null ],
       [ "ARK_BUILTIN", "dc/dcb/namespaceArk_1_1internal_1_1Builtins_1_1System.html#a2cdf9c0c6f4254dd2051986a60740918", null ]
@@ -81,6 +106,7 @@ var namespaceArk_1_1internal_1_1Builtins =
     [ "Time", "d5/d17/namespaceArk_1_1internal_1_1Builtins_1_1Time.html", [
       [ "ARK_BUILTIN", "d5/d17/namespaceArk_1_1internal_1_1Builtins_1_1Time.html#aa3bf0314781f42c99da47c4a8a5cf3ca", null ]
     ] ],
+    [ "ARK_BUILTIN", "df/dda/namespaceArk_1_1internal_1_1Builtins.html#a551191ad4a2fa819851f2c3874ef18ba", null ],
     [ "builtins", "df/dda/namespaceArk_1_1internal_1_1Builtins.html#ae99a104c484192543989515d4eda8a5a", null ],
     [ "falseSym", "df/dda/namespaceArk_1_1internal_1_1Builtins.html#a50c50c475a29822fe85e5c16b91c9015", null ],
     [ "nil", "df/dda/namespaceArk_1_1internal_1_1Builtins.html#a0541c7c43175f68aca89a4c3a61fca12", null ],

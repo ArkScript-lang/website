@@ -73,19 +73,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "@ref bitwise_module",
-"d1/d53/structArk_1_1internal_1_1Logger_1_1MessageAndLocation.html#a19d9835ad250e0a084b7f82b4689fedf",
-"d2/d93/classArk_1_1VM.html#ac2fa2359a394c44cf286034c67aaec78",
-"d3/d90/classArk_1_1Value.html#a488bcbb7323f4b0f17bc5a6bad27eaac",
-"d5/d8f/classArk_1_1internal_1_1MacroExecutor.html#a52cdc7bf4d5089a68cbccb2310f0a159",
-"d7/da8/classArk_1_1Welder.html#a0765d08d17311dea14a50d31767ff9ed",
-"d8/d08/classArk_1_1BytecodeReader.html#afa24b92283b27f5e67e32ee80669027a",
-"d9/d0c/classArk_1_1internal_1_1Parser.html#a1413b3e5977b7e5957c3594ef7da6f3a",
-"d9/ddd/namespaceArk_1_1internal_1_1Builtins_1_1String.html#ad1ccd3c24fe3063614dd25b4e9a4f46c",
-"da/da8/namespaceArk_1_1helper.html#a815282cc5bf0d47595a07a1550ca36a8",
-"dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681a579c555794a2ea1f441bd19317cb6998",
-"dc/d9e/classArk_1_1internal_1_1Node.html#a5d462c278146bcef4b58ea3263daefe1",
-"de/d60/classArk_1_1Repl.html#a3935228db92f188a4fcc8c1ded2912f5",
-"functions_l.html"
+"d1/d37/classArk_1_1State.html#a9a6c2364d22064a623671986d290a9cc",
+"d2/d93/classArk_1_1VM.html#a5f161e13b7eb10ec2952680bbef3fa41",
+"d3/d57/classArk_1_1internal_1_1ASTLowerer.html#aeb15fb65e449cad851a6e4c5fb279498",
+"d4/dc0/Files_8hpp_source.html",
+"d6/d42/classArk_1_1internal_1_1MacroScope.html#a450556e6fd4129d90f3780031d78f3e6",
+"d7/dfb/MacroScope_8hpp_source.html",
+"d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681aa2d82ff6f76f2e85de6173283129cebd",
+"d9/d4a/classArk_1_1internal_1_1NamespaceScope.html#a475f5a6023bd04bd1e7ead731c72bd79",
+"da/d33/Namespace_8hpp.html#a480d948db96bb221440921e404bc86d5",
+"db/da6/namespaceArk_1_1Diagnostics.html#a081ebf7404388182bae64e69b8f8d40b",
+"dc/d0e/namespaceArk_1_1internal.html#aecb863cf131382c209737463d8dbb92f",
+"dc/dfd/JsonCompiler_8hpp_source.html",
+"de/d60/classArk_1_1Repl.html#aca88cc4828ac7e4470959d695e0b12af",
+"functions_vars.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

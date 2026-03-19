@@ -20,9 +20,9 @@ var Value_8hpp =
       [ "Undefined", "de/dfd/Value_8hpp.html#adace4b064735f70467c2efef4cd175d6aec0fc0100c4fc1ce4eea230c3dc10360", null ],
       [ "Reference", "de/dfd/Value_8hpp.html#adace4b064735f70467c2efef4cd175d6a63d5049791d9d79d86e9a108b0a999ca", null ],
       [ "InstPtr", "de/dfd/Value_8hpp.html#adace4b064735f70467c2efef4cd175d6adf754f9ba8524ed3333ec938d0636862", null ],
+      [ "Garbage", "de/dfd/Value_8hpp.html#adace4b064735f70467c2efef4cd175d6a8c97626c3bda0721059f5eddbd2d255d", null ],
       [ "Any", "de/dfd/Value_8hpp.html#adace4b064735f70467c2efef4cd175d6aed36a1ef76a59ee3f15180e0441188ad", null ]
     ] ],
-    [ "operator!", "de/dfd/Value_8hpp.html#a4a7668d3d9013495706afa18f5ad125d", null ],
     [ "operator!=", "de/dfd/Value_8hpp.html#a8f977ce5d85bcc69d175df4180a18e77", null ],
     [ "operator<", "de/dfd/Value_8hpp.html#ae9ee6fdb9ae643287209d6e511e5a736", null ],
     [ "to_string", "de/dfd/Value_8hpp.html#a123c02c388be9c36966995546699d8cb", null ],

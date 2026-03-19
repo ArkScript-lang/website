@@ -1,10 +1,10 @@
 <map id="/Users/fola/Documents/ArkScript/Ark/src/arkreactor/Compiler" name="/Users/fola/Documents/ArkScript/Ark/src/arkreactor/Compiler">
 <area shape="rect" id="node8" href="dir_d44c64559bbebec7f509842c48db8b23.html" title="include" alt="" coords="414,137,476,162"/>
 <area shape="poly" id="edge1" href="dir_000009_000014.html" alt="" coords="89,86,124,108,176,120,251,130,399,143,398,148,250,135,175,125,122,112,86,91"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000009_000014.html" title="65" alt="" coords="389,129,403,144"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000009_000014.html" title="67" alt="" coords="389,129,403,144"/>
 <area shape="rect" id="node2" href="dir_60d9a1ba7355fd01e18353677e9347b6.html" title="AST" alt="" coords="135,63,182,89"/>
 <area shape="poly" id="edge2" href="dir_000005_000014.html" alt="" coords="170,87,196,108,248,127,302,138,354,144,399,146,398,152,354,150,301,144,246,132,193,112,166,91"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000005_000014.html" title="7" alt="" coords="392,133,399,148"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000005_000014.html" title="8" alt="" coords="392,133,399,148"/>
 <area shape="rect" id="node3" href="dir_b956417a1547c988f68dbc0fc6407c8c.html" title="IntermediateRepresentation" alt="" coords="207,63,388,89"/>
 <area shape="poly" id="edge3" href="dir_000016_000014.html" alt="" coords="324,87,407,127,405,132,321,92"/>
 <area shape="rect" id="edge3-headlabel" href="dir_000016_000014.html" title="10" alt="" coords="400,113,414,128"/>

@@ -84,48 +84,71 @@ $(function(){initNavTree('d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html','../
 <div class="contents">
 <a href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;<a class="code" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp.html">Ark/Utils/Utils.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../df/d16/namespaceArk_1_1Utils.html">Ark::Utils</a></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="}">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="../../df/d16/namespaceArk_1_1Utils.html#a8f9326e745dc008df3527a447eeb0788">    5</a></span>    std::size_t <a class="code hl_function" href="../../df/d16/namespaceArk_1_1Utils.html#a8f9326e745dc008df3527a447eeb0788">levenshteinDistance</a>(<span class="keyword">const</span> std::string&amp; str1, <span class="keyword">const</span> std::string&amp; str2)</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        <span class="keyword">const</span> std::size_t str1_len = str1.size();</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keyword">const</span> std::size_t str2_len = str2.size();</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        std::vector edit_distances(str1_len + 1, std::vector&lt;std::size_t&gt;(str2_len + 1, 0));</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; str1_len + 1; i++)</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            edit_distances[i][0] = i;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordflow">for</span> (std::size_t j = 0; j &lt; str2_len + 1; j++)</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            edit_distances[0][j] = j;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordflow">for</span> (std::size_t i = 1; i &lt; str1_len + 1; i++)</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordflow">for</span> (std::size_t j = 1; j &lt; str2_len + 1; j++)</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                <span class="keyword">const</span> std::size_t indicator = str1[i - 1] == str2[j - 1] ? 0 : 1;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                edit_distances[i][j] = std::min({</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                    edit_distances[i - 1][j] + 1,             <span class="comment">// deletion</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                    edit_distances[i][j - 1] + 1,             <span class="comment">// insertion</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    edit_distances[i - 1][j - 1] + indicator  <span class="comment">// substitution</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                });</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            }</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        }</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">return</span> edit_distances[str1_len][str2_len];</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;ranges&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../df/d16/namespaceArk_1_1Utils.html">Ark::Utils</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="../../df/d16/namespaceArk_1_1Utils.html#a8f9326e745dc008df3527a447eeb0788">    7</a></span>    std::size_t <a class="code hl_function" href="../../df/d16/namespaceArk_1_1Utils.html#a8f9326e745dc008df3527a447eeb0788">levenshteinDistance</a>(<span class="keyword">const</span> std::string&amp; str1, <span class="keyword">const</span> std::string&amp; str2)</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keyword">const</span> std::size_t str1_len = str1.size();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">const</span> std::size_t str2_len = str2.size();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        std::vector edit_distances(str1_len + 1, std::vector&lt;std::size_t&gt;(str2_len + 1, 0));</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; str1_len + 1; i++)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            edit_distances[i][0] = i;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">for</span> (std::size_t j = 0; j &lt; str2_len + 1; j++)</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            edit_distances[0][j] = j;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">for</span> (std::size_t i = 1; i &lt; str1_len + 1; i++)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">for</span> (std::size_t j = 1; j &lt; str2_len + 1; j++)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                <span class="keyword">const</span> std::size_t indicator = str1[i - 1] == str2[j - 1] ? 0 : 1;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                edit_distances[i][j] = std::min({</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                    edit_distances[i - 1][j] + 1,             <span class="comment">// deletion</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                    edit_distances[i][j - 1] + 1,             <span class="comment">// insertion</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                    edit_distances[i - 1][j - 1] + indicator  <span class="comment">// substitution</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                });</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">return</span> edit_distances[str1_len][str2_len];</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../df/d16/namespaceArk_1_1Utils.html#a5230fc00b9401f81f8e4689f81c2d678">   35</a></span>    <span class="keywordtype">long</span> <a class="code hl_function" href="../../df/d16/namespaceArk_1_1Utils.html#a5230fc00b9401f81f8e4689f81c2d678">countOpenEnclosures</a>(<span class="keyword">const</span> std::string&amp; line, <span class="keyword">const</span> <span class="keywordtype">char</span> open, <span class="keyword">const</span> <span class="keywordtype">char</span> close)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> std::ranges::count(line, open) - std::ranges::count(line, close);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../df/d16/namespaceArk_1_1Utils.html#a8a6eafcf44e2ce3e5961cac0fda2535e">   40</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../df/d16/namespaceArk_1_1Utils.html#a8a6eafcf44e2ce3e5961cac0fda2535e">trimWhitespace</a>(std::string&amp; line)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">const</span> std::size_t string_begin = line.find_first_not_of(<span class="stringliteral">&quot; \t&quot;</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">if</span> (std::string::npos != string_begin)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">const</span> std::size_t string_end = line.find_last_not_of(<span class="stringliteral">&quot; \t&quot;</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            line = line.substr(string_begin, string_end - string_begin + 1);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 <div class="ttc" id="aArk_2Utils_2Utils_8hpp_html"><div class="ttname"><a href="../../d3/d7a/Ark_2Utils_2Utils_8hpp.html">Utils.hpp</a></div><div class="ttdoc">Lots of utilities about string, filesystem and more.</div></div>
 <div class="ttc" id="anamespaceArk_1_1Utils_html"><div class="ttname"><a href="../../df/d16/namespaceArk_1_1Utils.html">Ark::Utils</a></div><div class="ttdef"><b>Definition</b> <a href="../../d4/dc0/Files_8hpp_source.html#l00019">Files.hpp:20</a></div></div>
-<div class="ttc" id="anamespaceArk_1_1Utils_html_a8f9326e745dc008df3527a447eeb0788"><div class="ttname"><a href="../../df/d16/namespaceArk_1_1Utils.html#a8f9326e745dc008df3527a447eeb0788">Ark::Utils::levenshteinDistance</a></div><div class="ttdeci">ARK_API std::size_t levenshteinDistance(const std::string &amp;str1, const std::string &amp;str2)</div><div class="ttdoc">Calculate the Levenshtein distance between two strings.</div><div class="ttdef"><b>Definition</b> <a href="#l00005">Utils.cpp:5</a></div></div>
+<div class="ttc" id="anamespaceArk_1_1Utils_html_a5230fc00b9401f81f8e4689f81c2d678"><div class="ttname"><a href="../../df/d16/namespaceArk_1_1Utils.html#a5230fc00b9401f81f8e4689f81c2d678">Ark::Utils::countOpenEnclosures</a></div><div class="ttdeci">ARK_API long countOpenEnclosures(const std::string &amp;line, char open, char close)</div><div class="ttdoc">Count the open enclosure and its counterpart: (), {}, [].</div><div class="ttdef"><b>Definition</b> <a href="#l00035">Utils.cpp:35</a></div></div>
+<div class="ttc" id="anamespaceArk_1_1Utils_html_a8a6eafcf44e2ce3e5961cac0fda2535e"><div class="ttname"><a href="../../df/d16/namespaceArk_1_1Utils.html#a8a6eafcf44e2ce3e5961cac0fda2535e">Ark::Utils::trimWhitespace</a></div><div class="ttdeci">ARK_API void trimWhitespace(std::string &amp;line)</div><div class="ttdoc">Remove whitespaces at the start and end of a string.</div><div class="ttdef"><b>Definition</b> <a href="#l00040">Utils.cpp:40</a></div></div>
+<div class="ttc" id="anamespaceArk_1_1Utils_html_a8f9326e745dc008df3527a447eeb0788"><div class="ttname"><a href="../../df/d16/namespaceArk_1_1Utils.html#a8f9326e745dc008df3527a447eeb0788">Ark::Utils::levenshteinDistance</a></div><div class="ttdeci">ARK_API std::size_t levenshteinDistance(const std::string &amp;str1, const std::string &amp;str2)</div><div class="ttdoc">Calculate the Levenshtein distance between two strings.</div><div class="ttdef"><b>Definition</b> <a href="#l00007">Utils.cpp:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e0d450b481c7e7e5abacff9799e54b3d.html">arkreactor</a></li><li class="navelem"><a class="el" href="../../dir_213f95c67163bc2ccb8cf9c04894ce88.html">Utils</a></li><li class="navelem"><a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp.html">Utils.cpp</a></li>
-    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

@@ -1,11 +1,17 @@
 <map id="Ark::internal::Pass" name="Ark::internal::Pass">
-<area shape="rect" id="Node000001" title="An interface to describe compiler passes." alt="" coords="5,80,135,106"/>
-<area shape="rect" id="Node000002" href="$d2/d90/classArk_1_1internal_1_1ImportSolver.html" title=" " alt="" coords="209,5,382,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,70,182,40,220,29,222,34,184,45,111,75"/>
-<area shape="rect" id="Node000003" href="$d5/db5/classArk_1_1internal_1_1MacroProcessor.html" title="The class handling the macros definitions and calls, given an AST." alt="" coords="199,55,393,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,81,198,76,198,81,151,87"/>
-<area shape="rect" id="Node000004" href="$d7/db8/classArk_1_1internal_1_1NameResolutionPass.html" title=" " alt="" coords="183,104,409,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="151,99,182,102,182,107,150,104"/>
-<area shape="rect" id="Node000005" href="$d7/da8/classArk_1_1internal_1_1Optimizer.html" title="The ArkScript AST optimizer." alt="" coords="218,153,374,179"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="112,110,184,140,222,150,220,155,182,145,110,115"/>
+<area shape="rect" id="Node000001" title="An interface to describe compiler passes." alt="" coords="5,153,135,179"/>
+<area shape="rect" id="Node000002" href="$d3/d57/classArk_1_1internal_1_1ASTLowerer.html" title="The ArkScript AST to IR compiler." alt="" coords="210,5,382,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,139,124,88,151,62,181,40,209,28,211,33,184,44,155,66,128,91,89,142"/>
+<area shape="rect" id="Node000003" href="$d0/da1/classArk_1_1internal_1_1IRCompiler.html" title=" " alt="" coords="213,55,378,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,141,136,114,182,89,213,78,215,83,184,94,139,118,100,146"/>
+<area shape="rect" id="Node000004" href="$da/d85/classArk_1_1internal_1_1IROptimizer.html" title=" " alt="" coords="211,104,380,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="144,147,182,138,231,128,232,133,183,143,145,152"/>
+<area shape="rect" id="Node000005" href="$d2/d90/classArk_1_1internal_1_1ImportSolver.html" title=" " alt="" coords="209,153,382,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="150,164,209,164,209,169,150,169"/>
+<area shape="rect" id="Node000006" href="$d5/db5/classArk_1_1internal_1_1MacroProcessor.html" title="The class handling the macros definitions and calls, given an AST." alt="" coords="199,203,393,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="145,180,183,189,232,199,231,205,182,194,144,186"/>
+<area shape="rect" id="Node000007" href="$d7/db8/classArk_1_1internal_1_1NameResolutionPass.html" title=" " alt="" coords="183,252,409,278"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="100,187,139,214,184,238,215,249,213,254,182,243,136,218,97,191"/>
+<area shape="rect" id="Node000008" href="$d7/da8/classArk_1_1internal_1_1Optimizer.html" title="The ArkScript AST optimizer." alt="" coords="218,301,374,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="89,190,128,241,155,267,184,288,219,302,217,307,181,292,151,271,124,245,85,194"/>
 </map>

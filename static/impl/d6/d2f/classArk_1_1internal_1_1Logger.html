@@ -92,7 +92,7 @@ $(function(){initNavTree('d6/d2f/classArk_1_1internal_1_1Logger.html','../../');
 <div class="dynheader">
 Collaboration diagram for Ark::internal::Logger:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d7d/classArk_1_1internal_1_1Logger__coll__graph.svg" width="100%" height="481"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d2/d7d/classArk_1_1internal_1_1Logger__coll__graph.svg" width="100%" height="529"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -117,6 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7bf27754b61f116e83a307e344ba84cb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7bf27754b61f116e83a307e344ba84cb">info</a> (const char *fmt, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a7bf27754b61f116e83a307e344ba84cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an info level log using fmtlib.  <br /></td></tr>
 <tr class="separator:a7bf27754b61f116e83a307e344ba84cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b734f72748b92eb873728313e99cdb" id="r_ad0b734f72748b92eb873728313e99cdb"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ad0b734f72748b92eb873728313e99cdb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad0b734f72748b92eb873728313e99cdb">warn</a> (const char *fmt, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ad0b734f72748b92eb873728313e99cdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a warn level log using fmtlib.  <br /></td></tr>
+<tr class="separator:ad0b734f72748b92eb873728313e99cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01ca405f29976c33a5dc3ad2044ee13b" id="r_a01ca405f29976c33a5dc3ad2044ee13b"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a01ca405f29976c33a5dc3ad2044ee13b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a01ca405f29976c33a5dc3ad2044ee13b">debug</a> (const <a class="el" href="../../d1/d53/structArk_1_1internal_1_1Logger_1_1MessageAndLocation.html">Logger::MessageAndLocation</a> &amp;data, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a01ca405f29976c33a5dc3ad2044ee13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a debug level log using fmtlib.  <br /></td></tr>
@@ -129,6 +133,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a890acb9b36f8f8842388db7a5eb8c860"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a890acb9b36f8f8842388db7a5eb8c860">trace</a> (const char *fmt, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a890acb9b36f8f8842388db7a5eb8c860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a trace level log using fmtlib.  <br /></td></tr>
 <tr class="separator:a890acb9b36f8f8842388db7a5eb8c860"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac78e140d3a086a130394fc2ff5e1a25b" id="r_ac78e140d3a086a130394fc2ff5e1a25b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac78e140d3a086a130394fc2ff5e1a25b">configureOutputStream</a> (std::ostream *os)</td></tr>
+<tr class="memdesc:ac78e140d3a086a130394fc2ff5e1a25b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom output stream to use for warnings. This will disable colors.  <br /></td></tr>
+<tr class="separator:ac78e140d3a086a130394fc2ff5e1a25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1de79153371540f844681d47b7d38c" id="r_a6e1de79153371540f844681d47b7d38c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e1de79153371540f844681d47b7d38c">colorize</a> () const noexcept</td></tr>
+<tr class="memdesc:a6e1de79153371540f844681d47b7d38c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if logs can be colorized.  <br /></td></tr>
+<tr class="separator:a6e1de79153371540f844681d47b7d38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -142,10 +152,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7ab042e1dc2cceb199de65cf746ce9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc1164ac0710fd8b28f1c897bbf6d40c" id="r_adc1164ac0710fd8b28f1c897bbf6d40c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc1164ac0710fd8b28f1c897bbf6d40c">m_active_traces</a></td></tr>
 <tr class="separator:adc1164ac0710fd8b28f1c897bbf6d40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca91b7e16fdb526bb933b721209dc53e" id="r_aca91b7e16fdb526bb933b721209dc53e"><td class="memItemLeft" align="right" valign="top">std::ostream *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca91b7e16fdb526bb933b721209dc53e">m_stream</a></td></tr>
+<tr class="separator:aca91b7e16fdb526bb933b721209dc53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00024">24</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00027">27</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9e6f5c2335c829b7abdd2b39caf0a695" name="a9e6f5c2335c829b7abdd2b39caf0a695"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e6f5c2335c829b7abdd2b39caf0a695">&#9670;&#160;</a></span>Logger()</h2>
@@ -177,11 +189,80 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/df5/Logger_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../d9/df5/Logger_8cpp_source.html">Logger.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/df5/Logger_8cpp_source.html#l00008">Ark::internal::colors</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00125">m_name</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00126">m_pass_color</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/df5/Logger_8cpp_source.html#l00008">Ark::internal::colors</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00164">m_name</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00165">m_pass_color</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6e1de79153371540f844681d47b7d38c" name="a6e1de79153371540f844681d47b7d38c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1de79153371540f844681d47b7d38c">&#9670;&#160;</a></span>colorize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ark::internal::Logger::colorize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if logs can be colorized. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if logs can be colorized </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00157">157</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00176">Ark::internal::ASTLowerer::warning()</a>.</p>
+
+</div>
+</div>
+<a id="ac78e140d3a086a130394fc2ff5e1a25b" name="ac78e140d3a086a130394fc2ff5e1a25b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac78e140d3a086a130394fc2ff5e1a25b">&#9670;&#160;</a></span>configureOutputStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::Logger::configureOutputStream </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream *</td>          <td class="paramname"><span class="paramname"><em>os</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a custom output stream to use for warnings. This will disable colors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>output stream </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00147">147</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d54/Pass_8cpp_source.html#l00010">Ark::internal::Pass::configureLogger()</a>, and <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00138">Ark::Welder::redirectLogsTo()</a>.</p>
+
+</div>
+</div>
 <a id="a01ca405f29976c33a5dc3ad2044ee13b" name="a01ca405f29976c33a5dc3ad2044ee13b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01ca405f29976c33a5dc3ad2044ee13b">&#9670;&#160;</a></span>debug()</h2>
 
@@ -226,11 +307,11 @@ template&lt;typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00096">96</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00030">Ark::internal::Logger::MessageAndLocation::location</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00125">m_name</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00126">m_pass_color</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00029">Ark::internal::Logger::MessageAndLocation::message</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00050">shouldDebug()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00033">Ark::internal::Logger::MessageAndLocation::location</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00032">Ark::internal::Logger::MessageAndLocation::message</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d0/da9/IROptimizer_8cpp_source.html#l00022">Ark::internal::IROptimizer::IROptimizer()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00028">Ark::internal::ImportSolver::process()</a>, <a class="el" href="../../d6/d69/Processor_8cpp_source.html#l00030">Ark::internal::MacroProcessor::process()</a>, and <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00085">Ark::internal::Optimizer::pruneUnusedGlobalVariables()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d0/da9/IROptimizer_8cpp_source.html#l00022">Ark::internal::IROptimizer::IROptimizer()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00028">Ark::internal::ImportSolver::process()</a>, <a class="el" href="../../d6/d69/Processor_8cpp_source.html#l00030">Ark::internal::MacroProcessor::process()</a>, and <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00087">Ark::internal::Optimizer::pruneUnusedGlobalVariables()</a>.</p>
 
 </div>
 </div>
@@ -257,9 +338,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00047">47</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00124">m_debug</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00050">50</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -307,11 +386,9 @@ template&lt;typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00063">63</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00125">m_name</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00126">m_pass_color</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00049">shouldInfo()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00082">Ark::Welder::saveBytecodeToFile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00123">Ark::Welder::saveBytecodeToFile()</a>.</p>
 
 </div>
 </div>
@@ -338,11 +415,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00050">50</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00124">m_debug</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00077">debug()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00053">53</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -369,11 +442,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00049">49</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00124">m_debug</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00060">info()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00052">52</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -400,11 +469,9 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00051">51</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00054">54</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00124">m_debug</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d6/d69/Processor_8cpp_source.html#l00030">Ark::internal::MacroProcessor::process()</a>, <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00025">Ark::internal::NameResolutionPass::process()</a>, <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00009">Ark::internal::Optimizer::process()</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00113">trace()</a>, and <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00309">Ark::internal::NameResolutionPass::updateSymbolWithFullyQualifiedName()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d69/Processor_8cpp_source.html#l00030">Ark::internal::MacroProcessor::process()</a>, <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00026">Ark::internal::NameResolutionPass::process()</a>, <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00011">Ark::internal::Optimizer::process()</a>, and <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00310">Ark::internal::NameResolutionPass::updateSymbolWithFullyQualifiedName()</a>.</p>
 
 </div>
 </div>
@@ -452,11 +519,9 @@ template&lt;typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00113">113</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00132">132</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00125">m_name</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00126">m_pass_color</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00051">shouldTrace()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d6/d69/Processor_8cpp_source.html#l00030">Ark::internal::MacroProcessor::process()</a>, <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00025">Ark::internal::NameResolutionPass::process()</a>, <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00009">Ark::internal::Optimizer::process()</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00096">traceEnd()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d69/Processor_8cpp_source.html#l00030">Ark::internal::MacroProcessor::process()</a>, <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00026">Ark::internal::NameResolutionPass::process()</a>, and <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00011">Ark::internal::Optimizer::process()</a>.</p>
 
 </div>
 </div>
@@ -483,11 +548,9 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00096">96</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00128">m_active_traces</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00127">m_trace_starts</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00113">trace()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00139">Ark::internal::ImportSolver::parseImport()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00022">Ark::internal::ASTLowerer::process()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00028">Ark::internal::ImportSolver::process()</a>, <a class="el" href="../../d1/dfa/IRCompiler_8cpp_source.html#l00024">Ark::internal::IRCompiler::process()</a>, <a class="el" href="../../d0/da9/IROptimizer_8cpp_source.html#l00267">Ark::internal::IROptimizer::process()</a>, <a class="el" href="../../d6/d69/Processor_8cpp_source.html#l00030">Ark::internal::MacroProcessor::process()</a>, <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00025">Ark::internal::NameResolutionPass::process()</a>, <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00009">Ark::internal::Optimizer::process()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00051">Ark::internal::Parser::process()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00139">Ark::internal::ImportSolver::parseImport()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00042">Ark::internal::ASTLowerer::process()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00028">Ark::internal::ImportSolver::process()</a>, <a class="el" href="../../d1/dfa/IRCompiler_8cpp_source.html#l00024">Ark::internal::IRCompiler::process()</a>, <a class="el" href="../../d0/da9/IROptimizer_8cpp_source.html#l00262">Ark::internal::IROptimizer::process()</a>, <a class="el" href="../../d6/d69/Processor_8cpp_source.html#l00030">Ark::internal::MacroProcessor::process()</a>, <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00026">Ark::internal::NameResolutionPass::process()</a>, <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00011">Ark::internal::Optimizer::process()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00051">Ark::internal::Parser::process()</a>.</p>
 
 </div>
 </div>
@@ -514,11 +577,59 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00090">90</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00128">m_active_traces</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00127">m_trace_starts</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00139">Ark::internal::ImportSolver::parseImport()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00042">Ark::internal::ASTLowerer::process()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00028">Ark::internal::ImportSolver::process()</a>, <a class="el" href="../../d1/dfa/IRCompiler_8cpp_source.html#l00024">Ark::internal::IRCompiler::process()</a>, <a class="el" href="../../d0/da9/IROptimizer_8cpp_source.html#l00262">Ark::internal::IROptimizer::process()</a>, <a class="el" href="../../d6/d69/Processor_8cpp_source.html#l00030">Ark::internal::MacroProcessor::process()</a>, <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00026">Ark::internal::NameResolutionPass::process()</a>, <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00011">Ark::internal::Optimizer::process()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00051">Ark::internal::Parser::process()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00139">Ark::internal::ImportSolver::parseImport()</a>, <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00022">Ark::internal::ASTLowerer::process()</a>, <a class="el" href="../../d6/d41/ImportSolver_8cpp_source.html#l00028">Ark::internal::ImportSolver::process()</a>, <a class="el" href="../../d1/dfa/IRCompiler_8cpp_source.html#l00024">Ark::internal::IRCompiler::process()</a>, <a class="el" href="../../d0/da9/IROptimizer_8cpp_source.html#l00267">Ark::internal::IROptimizer::process()</a>, <a class="el" href="../../d6/d69/Processor_8cpp_source.html#l00030">Ark::internal::MacroProcessor::process()</a>, <a class="el" href="../../de/dd7/NameResolutionPass_8cpp_source.html#l00025">Ark::internal::NameResolutionPass::process()</a>, <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00009">Ark::internal::Optimizer::process()</a>, and <a class="el" href="../../dc/df5/Parser_8cpp_source.html#l00051">Ark::internal::Parser::process()</a>.</p>
+</div>
+</div>
+<a id="ad0b734f72748b92eb873728313e99cdb" name="ad0b734f72748b92eb873728313e99cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b734f72748b92eb873728313e99cdb">&#9670;&#160;</a></span>warn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::Logger::warn </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>fmt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write a warn level log using fmtlib. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Args</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fmt</td><td>format string </td></tr>
+    <tr><td class="paramname">args</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00080">80</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/dc5/Optimizer_8cpp_source.html#l00087">Ark::internal::Optimizer::pruneUnusedGlobalVariables()</a>, <a class="el" href="../../d2/d56/Formatter_8cpp_source.html#l00090">Formatter::warnIfCommentsWereRemoved()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00176">Ark::internal::ASTLowerer::warning()</a>.</p>
 
 </div>
 </div>
@@ -543,9 +654,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00128">128</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00096">traceEnd()</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00090">traceStart()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00167">167</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -569,9 +678,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00124">124</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00047">debugLevel()</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00050">shouldDebug()</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00049">shouldInfo()</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00051">shouldTrace()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00163">163</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -595,9 +702,9 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00125">125</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00164">164</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00077">debug()</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00060">info()</a>, <a class="el" href="../../d9/df5/Logger_8cpp_source.html#l00029">Logger()</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00113">trace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/df5/Logger_8cpp_source.html#l00029">Logger()</a>.</p>
 
 </div>
 </div>
@@ -621,9 +728,33 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00126">126</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00165">165</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00077">debug()</a>, <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00060">info()</a>, <a class="el" href="../../d9/df5/Logger_8cpp_source.html#l00029">Logger()</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00113">trace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/df5/Logger_8cpp_source.html#l00029">Logger()</a>.</p>
+
+</div>
+</div>
+<a id="aca91b7e16fdb526bb933b721209dc53e" name="aca91b7e16fdb526bb933b721209dc53e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca91b7e16fdb526bb933b721209dc53e">&#9670;&#160;</a></span>m_stream</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream* Ark::internal::Logger::m_stream</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00168">168</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -647,9 +778,7 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00127">127</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00096">traceEnd()</a>, and <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00090">traceStart()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d9/d11/Logger_8hpp_source.html#l00166">166</a> of file <a class="el" href="../../d9/d11/Logger_8hpp_source.html">Logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -663,7 +792,7 @@ template&lt;typename... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="../../d6/d2f/classArk_1_1internal_1_1Logger.html">Logger</a></li>
-    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Thu Mar 19 2026 06:48:17 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

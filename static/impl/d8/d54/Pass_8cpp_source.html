@@ -93,9 +93,18 @@ $(function(){initNavTree('d8/d54/Pass_8cpp_source.html','../../'); initResizable
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {}</div>
 </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
-<div class="ttc" id="aPass_8hpp_html"><div class="ttname"><a href="../../df/d5f/Pass_8hpp.html">Pass.hpp</a></div><div class="ttdoc">Interface for a compiler pass (take in an AST, output an AST)</div></div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../da/d7b/classArk_1_1internal_1_1Pass.html#abd7a463c17cb480a74fdee453e887314">   10</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../da/d7b/classArk_1_1internal_1_1Pass.html#abd7a463c17cb480a74fdee453e887314">Pass::configureLogger</a>(std::ostream&amp; os)</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <a class="code hl_variable" href="../../da/d7b/classArk_1_1internal_1_1Pass.html#a4fa015dcb8cd0d8df78de8ff7ea09789">m_logger</a>.<a class="code hl_function" href="../../d6/d2f/classArk_1_1internal_1_1Logger.html#ac78e140d3a086a130394fc2ff5e1a25b">configureOutputStream</a>(&amp;os);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
+</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+<div class="ttc" id="aPass_8hpp_html"><div class="ttname"><a href="../../df/d5f/Pass_8hpp.html">Pass.hpp</a></div><div class="ttdoc">Interface for a compiler pass.</div></div>
+<div class="ttc" id="aclassArk_1_1internal_1_1Logger_html_ac78e140d3a086a130394fc2ff5e1a25b"><div class="ttname"><a href="../../d6/d2f/classArk_1_1internal_1_1Logger.html#ac78e140d3a086a130394fc2ff5e1a25b">Ark::internal::Logger::configureOutputStream</a></div><div class="ttdeci">void configureOutputStream(std::ostream *os)</div><div class="ttdoc">Set a custom output stream to use for warnings. This will disable colors.</div><div class="ttdef"><b>Definition</b> <a href="../../d9/d11/Logger_8hpp_source.html#l00147">Logger.hpp:147</a></div></div>
+<div class="ttc" id="aclassArk_1_1internal_1_1Pass_html_a4fa015dcb8cd0d8df78de8ff7ea09789"><div class="ttname"><a href="../../da/d7b/classArk_1_1internal_1_1Pass.html#a4fa015dcb8cd0d8df78de8ff7ea09789">Ark::internal::Pass::m_logger</a></div><div class="ttdeci">Logger m_logger</div><div class="ttdef"><b>Definition</b> <a href="../../df/d5f/Pass_8hpp_source.html#l00044">Pass.hpp:44</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1Pass_html_aaf554f793bb547b4ac4e9105287b9bdb"><div class="ttname"><a href="../../da/d7b/classArk_1_1internal_1_1Pass.html#aaf554f793bb547b4ac4e9105287b9bdb">Ark::internal::Pass::Pass</a></div><div class="ttdeci">Pass(std::string name, unsigned debug_level)</div><div class="ttdoc">Construct a new Pass object.</div><div class="ttdef"><b>Definition</b> <a href="#l00006">Pass.cpp:6</a></div></div>
+<div class="ttc" id="aclassArk_1_1internal_1_1Pass_html_abd7a463c17cb480a74fdee453e887314"><div class="ttname"><a href="../../da/d7b/classArk_1_1internal_1_1Pass.html#abd7a463c17cb480a74fdee453e887314">Ark::internal::Pass::configureLogger</a></div><div class="ttdeci">void configureLogger(std::ostream &amp;os)</div><div class="ttdoc">Set a custom output stream for the logger.</div><div class="ttdef"><b>Definition</b> <a href="#l00010">Pass.cpp:10</a></div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00025">Builtins.hpp:26</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="../../d8/dcc/namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -104,7 +113,7 @@ $(function(){initNavTree('d8/d54/Pass_8cpp_source.html','../../'); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_e0d450b481c7e7e5abacff9799e54b3d.html">arkreactor</a></li><li class="navelem"><a class="el" href="../../dir_548d85becfdd8b4d1d64f6a452aea6ab.html">Compiler</a></li><li class="navelem"><a class="el" href="../../d8/d54/Pass_8cpp.html">Pass.cpp</a></li>
-    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

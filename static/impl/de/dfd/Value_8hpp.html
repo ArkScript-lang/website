@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ArkScript: /Users/fola/Documents/ArkScript/Ark/include/Ark/VM/Value.hpp File Reference</title>
+<title>ArkScript: /Users/fola/Documents/ArkScript/Ark/include/Ark/VM/Value/Value.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -158,7 +158,8 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a63d5049791d9d79d86e9a108b0a999ca">Ark::Reference</a> = 12
 , <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6adf754f9ba8524ed3333ec938d0636862">Ark::InstPtr</a> = 13
-, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aed36a1ef76a59ee3f15180e0441188ad">Ark::Any</a> = 14
+, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a8c97626c3bda0721059f5eddbd2d255d">Ark::Garbage</a> = 14
+, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aed36a1ef76a59ee3f15180e0441188ad">Ark::Any</a> = 15
 <br />
  }</td></tr>
 <tr class="separator:adace4b064735f70467c2efef4cd175d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,8 +170,6 @@ Functions</h2></td></tr>
 <tr class="separator:ae9ee6fdb9ae643287209d6e511e5a736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f977ce5d85bcc69d175df4180a18e77" id="r_a8f977ce5d85bcc69d175df4180a18e77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de4/namespaceArk.html#a8f977ce5d85bcc69d175df4180a18e77">Ark::operator!=</a> (const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;A, const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;B) noexcept</td></tr>
 <tr class="separator:a8f977ce5d85bcc69d175df4180a18e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7668d3d9013495706afa18f5ad125d" id="r_a4a7668d3d9013495706afa18f5ad125d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de4/namespaceArk.html#a4a7668d3d9013495706afa18f5ad125d">Ark::operator!</a> (const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;A)</td></tr>
-<tr class="separator:a4a7668d3d9013495706afa18f5ad125d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a123c02c388be9c36966995546699d8cb" id="r_a123c02c388be9c36966995546699d8cb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dcc/namespacestd.html#a123c02c388be9c36966995546699d8cb">std::to_string</a> (const <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6">Ark::ValueType</a> type) noexcept</td></tr>
 <tr class="separator:a123c02c388be9c36966995546699d8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -181,9 +180,9 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default value type handled by the virtual machine. </p>
-<dl class="section author"><dt>Author</dt><dd>Lex Plateau (<a href="#" onclick="location.href='mai'+'lto:'+'lex'+'pl'+'t.d'+'ev'+'@gm'+'ai'+'l.c'+'om'; return false;">lexpl<span class="obfuscator">.nosp@m.</span>t.de<span class="obfuscator">.nosp@m.</span>v@gma<span class="obfuscator">.nosp@m.</span>il.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Lexy Plateau (<a href="#" onclick="location.href='mai'+'lto:'+'lex'+'pl'+'t.d'+'ev'+'@gm'+'ai'+'l.c'+'om'; return false;">lexpl<span class="obfuscator">.nosp@m.</span>t.de<span class="obfuscator">.nosp@m.</span>v@gma<span class="obfuscator">.nosp@m.</span>il.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2024-04-20</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2020-2025 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2020-2026 </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="../../de/dfd/Value_8hpp_source.html">Value.hpp</a>.</p>
 </div></div><!-- contents -->
@@ -191,8 +190,8 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_a8b6c64285bf9ac60f50770eb2fc48b5.html">Ark</a></li><li class="navelem"><a class="el" href="../../dir_222307dbf92126e8e24c7a501f533901.html">VM</a></li><li class="navelem"><a class="el" href="../../de/dfd/Value_8hpp.html">Value.hpp</a></li>
-    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_a8b6c64285bf9ac60f50770eb2fc48b5.html">Ark</a></li><li class="navelem"><a class="el" href="../../dir_222307dbf92126e8e24c7a501f533901.html">VM</a></li><li class="navelem"><a class="el" href="../../dir_8b24a7a1990a673376c80714d0238024.html">Value</a></li><li class="navelem"><a class="el" href="../../de/dfd/Value_8hpp.html">Value.hpp</a></li>
+    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

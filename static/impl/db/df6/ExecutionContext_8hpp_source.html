@@ -84,11 +84,11 @@ $(function(){initNavTree('db/df6/ExecutionContext_8hpp_source.html','../../'); i
 <div class="contents">
 <a href="../../db/df6/ExecutionContext_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file ExecutionContext.hpp</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author Lex Plateau (lexplt.dev@gmail.com)</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @author Lexy Plateau (lexplt.dev@gmail.com)</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @brief Keeping track of the internal data needed by the VM</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @date 2021-11-15</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @copyright Copyright (c) 2021-2025</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @copyright Copyright (c) 2021-2026</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
@@ -101,7 +101,7 @@ $(function(){initNavTree('db/df6/ExecutionContext_8hpp_source.html','../../'); i
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;atomic&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="../../d6/de9/Constants_8hpp.html">Ark/Constants.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="../../de/dfd/Value_8hpp.html">Ark/VM/Value.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="../../de/dfd/Value_8hpp.html">Ark/VM/Value/Value.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="../../d8/d45/ScopeView_8hpp.html">Ark/VM/ScopeView.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="../../d1/d71/ClosureScope_8hpp.html">Ark/VM/Value/ClosureScope.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -160,10 +160,10 @@ $(function(){initNavTree('db/df6/ExecutionContext_8hpp_source.html','../../'); i
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aClosureScope_8hpp_html"><div class="ttname"><a href="../../d1/d71/ClosureScope_8hpp.html">ClosureScope.hpp</a></div><div class="ttdoc">Subtype of the value type, handling closures.</div></div>
 <div class="ttc" id="aConstants_8hpp_html"><div class="ttname"><a href="../../d6/de9/Constants_8hpp.html">Constants.hpp</a></div><div class="ttdoc">Constants used by ArkScript.</div></div>
-<div class="ttc" id="aScopeView_8hpp_html"><div class="ttname"><a href="../../d8/d45/ScopeView_8hpp.html">ScopeView.hpp</a></div></div>
+<div class="ttc" id="aScopeView_8hpp_html"><div class="ttname"><a href="../../d8/d45/ScopeView_8hpp.html">ScopeView.hpp</a></div><div class="ttdoc">The virtual machine scope system.</div></div>
 <div class="ttc" id="aValue_8hpp_html"><div class="ttname"><a href="../../de/dfd/Value_8hpp.html">Value.hpp</a></div><div class="ttdoc">Default value type handled by the virtual machine.</div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00025">Builtins.hpp:26</a></div></div>
-<div class="ttc" id="anamespaceArk_html_a24c69eba4ec3db3f693a853d0fddc77e"><div class="ttname"><a href="../../d9/de4/namespaceArk.html#a24c69eba4ec3db3f693a853d0fddc77e">Ark::MaxValue16Bits</a></div><div class="ttdeci">constexpr uint16_t MaxValue16Bits</div><div class="ttdef"><b>Definition</b> <a href="../../d6/de9/Constants_8hpp_source.html#l00071">Constants.hpp:71</a></div></div>
+<div class="ttc" id="anamespaceArk_html_a24c69eba4ec3db3f693a853d0fddc77e"><div class="ttname"><a href="../../d9/de4/namespaceArk.html#a24c69eba4ec3db3f693a853d0fddc77e">Ark::MaxValue16Bits</a></div><div class="ttdeci">constexpr uint16_t MaxValue16Bits</div><div class="ttdef"><b>Definition</b> <a href="../../d6/de9/Constants_8hpp_source.html#l00073">Constants.hpp:73</a></div></div>
 <div class="ttc" id="astructArk_1_1internal_1_1ExecutionContext_html"><div class="ttname"><a href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">Ark::internal::ExecutionContext</a></div><div class="ttdef"><b>Definition</b> <a href="#l00026">ExecutionContext.hpp:27</a></div></div>
 <div class="ttc" id="astructArk_1_1internal_1_1ExecutionContext_html_a0e7816001dd818210d5fab6fbb13c0ed"><div class="ttname"><a href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html#a0e7816001dd818210d5fab6fbb13c0ed">Ark::internal::ExecutionContext::scopes_storage</a></div><div class="ttdeci">std::array&lt; ScopeView::pair_t, ScopeStackSize &gt; scopes_storage</div><div class="ttdoc">All the ScopeView use this array to store id-&gt;value.</div><div class="ttdef"><b>Definition</b> <a href="#l00044">ExecutionContext.hpp:44</a></div></div>
 <div class="ttc" id="astructArk_1_1internal_1_1ExecutionContext_html_a14d20343cb45fd8173c8a00def30f962"><div class="ttname"><a href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html#a14d20343cb45fd8173c8a00def30f962">Ark::internal::ExecutionContext::last_symbol</a></div><div class="ttdeci">uint16_t last_symbol</div><div class="ttdef"><b>Definition</b> <a href="#l00034">ExecutionContext.hpp:34</a></div></div>
@@ -189,7 +189,7 @@ $(function(){initNavTree('db/df6/ExecutionContext_8hpp_source.html','../../'); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_a8b6c64285bf9ac60f50770eb2fc48b5.html">Ark</a></li><li class="navelem"><a class="el" href="../../dir_222307dbf92126e8e24c7a501f533901.html">VM</a></li><li class="navelem"><a class="el" href="../../db/df6/ExecutionContext_8hpp.html">ExecutionContext.hpp</a></li>
-    <li class="footer">Generated on Sat Jan 3 2026 17:22:02 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

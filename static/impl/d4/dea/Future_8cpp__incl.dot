@@ -1,19 +1,19 @@
-digraph "/Users/fola/Documents/ArkScript/Ark/src/arkreactor/VM/Future.cpp"
+digraph "/Users/fola/Documents/ArkScript/Ark/src/arkreactor/VM/Value/Future.cpp"
 {
  // INTERACTIVE_SVG=YES
  // LATEX_PDF_SIZE
   bgcolor="transparent";
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
-  Node1 [id="Node000001",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Future.cpp",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 [id="Node000001",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/VM/Value/Future.cpp",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="Ark/VM/Future.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dda/Future_8hpp.html",tooltip="Internal object to resolve asynchronously a function call in ArkScript."];
+  Node2 [id="Node000002",label="Ark/VM/Value/Future.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dda/Future_8hpp.html",tooltip="Internal object to resolve asynchronously a function call in ArkScript."];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="future",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="vector",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="Ark/VM/Value.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dfd/Value_8hpp.html",tooltip="Default value type handled by the virtual machine."];
+  Node5 [id="Node000005",label="Ark/VM/Value/Value.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dfd/Value_8hpp.html",tooltip="Default value type handled by the virtual machine."];
   Node5 -> Node4 [id="edge5_Node000005_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node5 -> Node6 [id="edge6_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="variant",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
@@ -65,7 +65,7 @@ digraph "/Users/fola/Documents/ArkScript/Ark/src/arkreactor/VM/Future.cpp"
   Node24 [id="Node000024",label="cstddef",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node18 -> Node5 [id="edge35_Node000018_Node000005",color="steelblue1",style="solid",tooltip=" "];
   Node18 -> Node25 [id="edge36_Node000018_Node000025",color="steelblue1",style="solid",tooltip=" "];
-  Node25 [id="Node000025",label="Ark/VM/ScopeView.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d45/ScopeView_8hpp.html",tooltip=" "];
+  Node25 [id="Node000025",label="Ark/VM/ScopeView.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/d45/ScopeView_8hpp.html",tooltip="The virtual machine scope system."];
   Node25 -> Node9 [id="edge37_Node000025_Node000009",color="steelblue1",style="solid",tooltip=" "];
   Node25 -> Node8 [id="edge38_Node000025_Node000008",color="steelblue1",style="solid",tooltip=" "];
   Node25 -> Node13 [id="edge39_Node000025_Node000013",color="steelblue1",style="solid",tooltip=" "];
@@ -102,7 +102,7 @@ digraph "/Users/fola/Documents/ArkScript/Ark/src/arkreactor/VM/Future.cpp"
   Node35 -> Node9 [id="edge60_Node000035_Node000009",color="steelblue1",style="solid",tooltip=" "];
   Node28 -> Node5 [id="edge61_Node000028_Node000005",color="steelblue1",style="solid",tooltip=" "];
   Node28 -> Node36 [id="edge62_Node000028_Node000036",color="steelblue1",style="solid",tooltip=" "];
-  Node36 [id="Node000036",label="Ark/VM/State.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/db5/State_8hpp.html",tooltip="State used by the virtual machine: it loads the bytecode, can compile it if needed,..."];
+  Node36 [id="Node000036",label="Ark/State.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/db5/State_8hpp.html",tooltip="State used by the virtual machine: it loads the bytecode, can compile it if needed,..."];
   Node36 -> Node7 [id="edge63_Node000036_Node000007",color="steelblue1",style="solid",tooltip=" "];
   Node36 -> Node4 [id="edge64_Node000036_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node36 -> Node31 [id="edge65_Node000036_Node000031",color="steelblue1",style="solid",tooltip=" "];
@@ -165,8 +165,18 @@ digraph "/Users/fola/Documents/ArkScript/Ark/src/arkreactor/VM/Future.cpp"
   Node49 -> Node33 [id="edge108_Node000049_Node000033",color="steelblue1",style="solid",tooltip=" "];
   Node28 -> Node2 [id="edge109_Node000028_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node28 -> Node51 [id="edge110_Node000028_Node000051",color="steelblue1",style="solid",tooltip=" "];
-  Node51 [id="Node000051",label="VM.inl",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
-  Node1 -> Node52 [id="edge111_Node000001_Node000052",color="steelblue1",style="solid",tooltip=" "];
-  Node52 [id="Node000052",label="Ark/VM/DefaultValues.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d3e/DefaultValues_8hpp.html",tooltip=" "];
-  Node52 -> Node5 [id="edge112_Node000052_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node51 [id="Node000051",label="Ark/VM/Debugger.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/d58/Debugger_8hpp.html",tooltip="Debugger used by the VM when an error or a breakpoint is reached."];
+  Node51 -> Node4 [id="edge111_Node000051_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node51 -> Node10 [id="edge112_Node000051_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node51 -> Node7 [id="edge113_Node000051_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node51 -> Node19 [id="edge114_Node000051_Node000019",color="steelblue1",style="solid",tooltip=" "];
+  Node51 -> Node37 [id="edge115_Node000051_Node000037",color="steelblue1",style="solid",tooltip=" "];
+  Node51 -> Node38 [id="edge116_Node000051_Node000038",color="steelblue1",style="solid",tooltip=" "];
+  Node51 -> Node5 [id="edge117_Node000051_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node51 -> Node18 [id="edge118_Node000051_Node000018",color="steelblue1",style="solid",tooltip=" "];
+  Node28 -> Node52 [id="edge119_Node000028_Node000052",color="steelblue1",style="solid",tooltip=" "];
+  Node52 [id="Node000052",label="VM.inl",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
+  Node1 -> Node53 [id="edge120_Node000001_Node000053",color="steelblue1",style="solid",tooltip=" "];
+  Node53 [id="Node000053",label="Ark/VM/DefaultValues.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d4/d3e/DefaultValues_8hpp.html",tooltip=" "];
+  Node53 -> Node5 [id="edge121_Node000053_Node000005",color="steelblue1",style="solid",tooltip=" "];
 }

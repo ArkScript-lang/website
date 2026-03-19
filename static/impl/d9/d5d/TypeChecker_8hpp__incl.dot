@@ -41,7 +41,7 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/TypeChecker.hpp"
   Node15 -> Node9 [id="edge19_Node000015_Node000009",color="steelblue1",style="solid",tooltip=" "];
   Node15 -> Node13 [id="edge20_Node000015_Node000013",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node16 [id="edge21_Node000001_Node000016",color="steelblue1",style="solid",tooltip=" "];
-  Node16 [id="Node000016",label="Ark/VM/Value.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dfd/Value_8hpp.html",tooltip="Default value type handled by the virtual machine."];
+  Node16 [id="Node000016",label="Ark/VM/Value/Value.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$de/dfd/Value_8hpp.html",tooltip="Default value type handled by the virtual machine."];
   Node16 -> Node3 [id="edge22_Node000016_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node16 -> Node17 [id="edge23_Node000016_Node000017",color="steelblue1",style="solid",tooltip=" "];
   Node17 [id="Node000017",label="variant",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
