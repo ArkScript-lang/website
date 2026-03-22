@@ -3,8 +3,8 @@ title: "Random"
 slug: "random"
 description: ""
 summary: ""
-date: 2026-03-19T06:21:27+02:00
-lastmod: 2026-03-19T06:21:27+02:00
+date: 2026-03-22T11:46:51+02:00
+lastmod: 2026-03-22T11:46:51+02:00
 draft: false
 weight: 410
 toc: true
