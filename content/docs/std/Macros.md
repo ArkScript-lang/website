@@ -3,8 +3,8 @@ title: "Macros"
 slug: "macros"
 description: ""
 summary: ""
-date: 2026-03-22T11:46:51+02:00
-lastmod: 2026-03-22T11:46:51+02:00
+date: 2026-03-22T13:08:00+02:00
+lastmod: 2026-03-22T13:08:00+02:00
 draft: false
 weight: 410
 toc: true
@@ -201,6 +201,23 @@ Return the node at a given index in a list of nodes
 (print (one 1 2))  # 2
 (print (one 1 3 4))  # 3
 (print (one 1 5 6 7 8))  # 5
+{{< /highlight_arkscript >}}
+
+## $gensym
+
+---
+`($gensym )`
+Return a new unique symbol identifier to use in macros
+
+
+
+
+#### Example
+{{< highlight_arkscript >}}
+(macro switch (value case then ...cases) {
+  (macro var ($gensym))
+  (let var value)
+  (_switch_impl var case then ...cases) })
 {{< /highlight_arkscript >}}
 
 ## ->

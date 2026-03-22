@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-03-22T11:46:51+02:00
-lastmod: 2026-03-22T11:46:51+02:00
+date: 2026-03-22T13:08:00+02:00
+lastmod: 2026-03-22T13:08:00+02:00
 draft: false
 weight: 410
 toc: true
@@ -894,6 +894,26 @@ Unzip a list of [[a b] [c d]...] into [[a c ...] [b d ...]]
 (print (list:unzip zipped))  # [[1 2 3 4] [5 6 7 8]]
 {{< /highlight_arkscript >}}
 
+## transpose
+
+---
+`(let transpose (fun (_L) (...)))`
+Transpose a list of lists or list of strings
+
+**Note**: The original list is not modified. The smallest element size is used as the limit for selecting values
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_L`: list of lists/strings to transpose
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [[1 2 3] [4 5 6] [7 8 9])
+(print (list:transpose data))  # [[1 4 7] [2 5 8] [3 6 9]]
+{{< /highlight_arkscript >}}
+
 ## zip
 
 ---
@@ -1175,26 +1195,6 @@ Create a sliding window of a given size on a list
 # [1 2 3]
 # [2 3 4]
 # [3 4 5]
-{{< /highlight_arkscript >}}
-
-## transpose
-
----
-`(let transpose (fun (_L) (...)))`
-Transpose a list of lists or list of strings
-
-**Note**: The original list is not modified. Elements should have the same length
-
-**Author**: [@SuperFola](https://github.com/SuperFola)
-
-#### Parameter
-- `_L`: list of lists/strings to transpose
-
-
-#### Example
-{{< highlight_arkscript >}}
-(let data [[1 2 3] [4 5 6] [7 8 9])
-(print (list:transpose data))  # [[1 4 7] [2 5 8] [3 6 9]]
 {{< /highlight_arkscript >}}
 
 ## unique

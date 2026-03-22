@@ -3,8 +3,8 @@ title: "Builtins"
 slug: "builtins"
 description: ""
 summary: ""
-date: 2026-03-22T11:46:51+02:00
-lastmod: 2026-03-22T11:46:51+02:00
+date: 2026-03-22T13:08:00+02:00
+lastmod: 2026-03-22T13:08:00+02:00
 draft: false
 weight: 410
 toc: true
@@ -187,6 +187,26 @@ Check if a closure has a given field
 (print (hasField closure "x"))  # true
 (print (hasField closure "b"))  # true
 (print (hasField closure "B"))  # false, field names are case-sensitive
+{{< /highlight_arkscript >}}
+
+## apply
+
+---
+`(apply f args)`
+Call a function with a list of arguments
+
+
+
+#### Parameters
+- `f`: function
+- `args`: list, can be empty if the function takes no argument
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (apply + [1 2]))  # 3
+(let foo (fun (a b c) (+ a b c)))
+(print (apply foo [1 2 3]))  # 6
 {{< /highlight_arkscript >}}
 
 
