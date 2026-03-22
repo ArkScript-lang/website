@@ -3,8 +3,8 @@ title: "Async"
 slug: "async"
 description: ""
 summary: ""
-date: 2026-03-22T15:24:14+02:00
-lastmod: 2026-03-22T15:24:14+02:00
+date: 2026-03-22T15:25:11+02:00
+lastmod: 2026-03-22T15:25:11+02:00
 draft: false
 weight: 410
 toc: true

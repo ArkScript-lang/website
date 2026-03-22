@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-03-22T15:24:14+02:00
-lastmod: 2026-03-22T15:24:14+02:00
+date: 2026-03-22T15:25:11+02:00
+lastmod: 2026-03-22T15:25:11+02:00
 draft: false
 weight: 410
 toc: true
@@ -1243,7 +1243,7 @@ Create a new list from a list of values and indices to get from the first list
 
 ---
 `(let combinations (fun ((ref _L) _r _f) (...)))`
-Compute permutations of length _r from a given list
+Compute combinations of length _r from a given list
 
 **Note**: The original list is not modified.
 
@@ -1265,39 +1265,11 @@ Compute permutations of length _r from a given list
 # [1 2 3]
 {{< /highlight_arkscript >}}
 
-## permutations
-
----
-`(let permutations <value>)`
-Compute permutations of length _r from a given list
-
-**Deprecated**: Use list:combinations. Will be removed in ArkScript 4.5.0
-
-**Note**: The original list is not modified.
-
-**Author**: [@SuperFola](https://github.com/SuperFola)
-
-#### Parameters
-- `_L`: list to get values from
-- `_r`: number of elements per permutation
-- `_f`: function to call on each permutation. It can return list:stopIteration to stop iteration early
-
-
-#### Example
-{{< highlight_arkscript >}}
-(let data [0 1 2 3])
-(list:permutations data 3 (fun (perm) (print perm)))
-# [0 1 2]
-# [0 1 3]
-# [0 2 3]
-# [1 2 3]
-{{< /highlight_arkscript >}}
-
 ## combinationsWithReplacement
 
 ---
 `(let combinationsWithReplacement (fun ((ref _L) _r _f) (...)))`
-Compute permutations of length _r from a given list, allowing individual elements to be repeated more than once
+Compute combinations of length _r from a given list, allowing individual elements to be repeated more than once
 
 **Note**: The original list is not modified.
 
@@ -1321,13 +1293,11 @@ Compute permutations of length _r from a given list, allowing individual element
 # [2 2]
 {{< /highlight_arkscript >}}
 
-## permutationsWithReplacement
+## permutations
 
 ---
-`(let permutationsWithReplacement <value>)`
-Compute permutations of length _r from a given list, allowing individual elements to be repeated more than once
-
-**Deprecated**: Use list:combinationsWithReplacement. Will be removed in ArkScript 4.5.0
+`(let permutations (fun ((ref _L) _r _f) (...)))`
+Compute permutations of length _r from a given list
 
 **Note**: The original list is not modified.
 
@@ -1341,14 +1311,12 @@ Compute permutations of length _r from a given list, allowing individual element
 
 #### Example
 {{< highlight_arkscript >}}
-(let data [0 1 2])
-(list:permutationsWithReplacement data 2 (fun (perm) (print perm)))
-# [0 0]
-# [0 1]
-# [0 2]
-# [1 1]
-# [1 2]
-# [2 2]
+(let data [0 1 2 3])
+(mut out [])
+(list:permutations data 3 (fun (perm) (append! out perm)))
+(print out)  # length: 24
+# [[0 1 2] [0 1 3] [0 2 1] [0 2 3] [0 3 1] [0 3 2] [1 0 2] [1 0 3] [1 2 0] [1 2 3] [1 3 0] [1 3 2]
+#  [2 0 1] [2 0 3] [2 1 0] [2 1 3] [2 3 0] [2 3 1] [3 0 1] [3 0 2] [3 1 0] [3 1 2] [3 2 0] [3 2 1]]
 {{< /highlight_arkscript >}}
 
 
