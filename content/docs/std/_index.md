@@ -2,8 +2,8 @@
 title: "Standard library"
 description: ""
 summary: ""
-date: 2026-03-22T15:26:10+02:00
-lastmod: 2026-03-22T15:26:10+02:00
+date: 2026-03-31T16:49:25+02:00
+lastmod: 2026-03-31T16:49:25+02:00
 draft: false
 weight: 400
 toc: true

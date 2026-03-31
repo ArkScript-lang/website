@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-03-22T15:26:10+02:00
-lastmod: 2026-03-22T15:26:10+02:00
+date: 2026-03-31T16:49:25+02:00
+lastmod: 2026-03-31T16:49:25+02:00
 draft: false
 weight: 410
 toc: true
@@ -376,6 +376,25 @@ Remove a character from a String given an index
 {{< highlight_arkscript >}}
 (string:removeAt "hello world" 0)  # "ello world"
 (string:removeAt "hello world" -1)  # "hello worl"
+{{< /highlight_arkscript >}}
+
+## utf8len
+
+---
+`(let utf8len (fun (_str) (...)))`
+Compute the length of an UTF8 string by counting the number of codepoints
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `char`: a String
+
+
+#### Example
+{{< highlight_arkscript >}}
+(string:utf8len "h")  # 1
+(string:utf8len "🏳️‍⚧️")  # 5
 {{< /highlight_arkscript >}}
 
 ## ord
