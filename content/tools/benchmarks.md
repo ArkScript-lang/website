@@ -23,13 +23,17 @@ Values are computing the `mean` of multiple runs: `ArkScript.mean / Other.mean`.
 
 In a perfect world, the graphs should always go down, or at least not up. An upward trend can mean that a performance regression was introduced.
 
-<label for="data-quantity">Data quantity</label>&nbsp;
 <!-- Update the default value passed to showGraph() in /static/js/graph-benchmarks.js when the selected option changes -->
+<label for="data-quantity">Data quantity</label>&nbsp;
 <select name="data-quantity" id="data-quantity">
     <option value="all"> All</option>
     <option value="100elem"> Last 100 results</option>
     <option value="30elem" selected> Last 30 results</option>
     <option value="10elem"> Last 10 results</option>
+</select>
+
+<label for="benchmark-name">Benchmark</label>&nbsp;
+<select name="benchmark-name" id="benchmark-name">
 </select>
 <div>
     <canvas id="linechart" />

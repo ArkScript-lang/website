@@ -17,7 +17,7 @@ function getQuantity(arr, quantity) {
     return quantity !== null ? arr.slice(-quantity) : arr
 }
 
-function computeRelativeDatasets(quantity) {
+function computeRelativeDatasets(quantity, benchmark) {
     let competing = Object.keys(languages)
     competing.splice(competing.indexOf("arkscript"), 1)
 
@@ -32,9 +32,9 @@ function computeRelativeDatasets(quantity) {
                 ([k, v], _) => {
                     let prefix = k.split("-")[0]
                     // TODO: this might be a problem if we have multiple tests starting with the same name
-                    // and we can't accurately pick the right one here
+                    //       and we can't accurately pick the right one here
                     // NOTE: hashes of tests depends on the source file, so the test name is different between
-                    // arkscript and other languages, hence the weird hack here
+                    //       arkscript and other languages, hence the weird hack here
                     let test_name = Object.keys(competing_dataset).filter(k => k.includes(prefix))[0]
 
                     return [
@@ -52,13 +52,15 @@ function computeRelativeDatasets(quantity) {
 
         for (let test in dataset) {
             let data = getQuantity(dataset[test], quantity)
-            let test_name = test.split("-")[0]
-            output_datasets.push({
-                label: `ArkScript / ${lang} - ${test_name}`,
-                data: data,
-                showLine: true,
-                order: Object.keys(dataset).indexOf(test) * Object.keys(dataset).length + competing.indexOf(lang)
-            })
+            let test_name = test.split('-')[0];
+            if (test_name === benchmark || benchmark === null) {
+                output_datasets.push({
+                    label: `ArkScript / ${lang} - ${test_name}`,
+                    data: data,
+                    showLine: true,
+                    order: Object.keys(dataset).indexOf(test) * Object.keys(dataset).length + competing.indexOf(lang)
+                });
+            }
         }
     }
 
@@ -121,14 +123,14 @@ function computeDatasetsWithMostRecent() {
     return output
 }
 
-async function showGraph(quantity = null) {
+async function showGraph(quantity = null, benchmark = null) {
     if (lineChart !== null)
         lineChart.destroy()
 
     lineChart = new Chart("linechart", {
         type: "line",
         data: {
-            datasets: computeRelativeDatasets(quantity),
+            datasets: computeRelativeDatasets(quantity, benchmark),
         },
         options: {
             responsive: true,
@@ -199,17 +201,49 @@ window.onload = async () => {
 
     // Update the selected default option in /content/tools/benchmark
     showBarGraph()
-    showGraph(30)
+    let quantity = 30
+    let benchmark = null
+    showGraph(quantity, benchmark)
+
+    let option = document.createElement('option');
+    option.value = 'all';
+    option.textContent = ' All';
+    document.getElementById('benchmark-name').appendChild(option);
+
+    Object.keys(languages['arkscript']).map((value) => {
+        let prefix = value.split('-')[0];
+        let option = document.createElement('option');
+        option.value = prefix;
+        option.textContent = ` ${prefix}`;
+        document.getElementById('benchmark-name').appendChild(option);
+
+        console.log(prefix)
+    });
+
+    document.getElementById('benchmark-name').addEventListener('change', function () {
+        console.log(quantity, benchmark)
+        if (this.value === 'all') {
+            benchmark = null
+        } else {
+            benchmark = this.value
+        }
+
+        showGraph(quantity, benchmark);
+    });
 
     document.getElementById("data-quantity").addEventListener('change', function () {
+        console.log(quantity, benchmark)
+
         if (this.value === 'all') {
-            showGraph()
+            quantity = null
         } else if (this.value === '100elem') {
-            showGraph(100)
+            quantity = 100
         } else if (this.value === '30elem') {
-            showGraph(30)
+            quantity = 30
         } else if (this.value === '10elem') {
-            showGraph(10)
+            quantity = 10
         }
+
+        showGraph(quantity, benchmark)
     })
 }

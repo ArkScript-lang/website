@@ -9,3 +9,5 @@ resources/
 # MacOS config files
 .DS_Store
 
+# IDE
+.idea
