@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-04-01T01:17:42+02:00
-lastmod: 2026-04-01T01:17:42+02:00
+date: 2026-04-10T16:59:40+02:00
+lastmod: 2026-04-10T16:59:40+02:00
 draft: false
 weight: 410
 toc: true
@@ -643,6 +643,32 @@ Keep elements in a given list if they follow a predicate
 {{< highlight_arkscript >}}
 (import std.Math)
 (print (list:filter [1 2 3 4 5 6 7 8 9] math:even?))  # [2 4 6 8]
+{{< /highlight_arkscript >}}
+
+## collect
+
+---
+`(let collect (fun ((ref _L) _f) (...)))`
+Apply a given function to each element of a list. If nil is returned, the element is discarded
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the list to work on
+- `_f`: the function to apply to each element
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let nums [1 2 3 4 5 6 7 8 9])
+(print
+  (list:collect
+    nums
+    (fun (e)
+      (if (= 0 (mod e 2)) (* 10 e)))))
+# [20 40 60 80]
 {{< /highlight_arkscript >}}
 
 ## sortByKey
