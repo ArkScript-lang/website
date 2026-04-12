@@ -8,11 +8,11 @@ draft: false
 weight: 503
 ---
 
-This page guides you through enabling and running ArkScript test suites, which is important when developping features for the language, to ensure it still works as intended.
+This page guides you through enabling and running ArkScript test suites, which is important when developing features for the language, to ensure it still works as intended.
 
 ## Running the test suites
 
-When builing ArkScript, you can build the tests using the CMake configuration flag `-DARK_TESTS=On`. It will generate an additional target `unittests`.
+When building ArkScript, you can build the tests using the CMake configuration flag `-DARK_TESTS=On`. It will generate an additional target `unittests`.
 
 Run the `unittests` target to:
 - run various C++ unit tests,

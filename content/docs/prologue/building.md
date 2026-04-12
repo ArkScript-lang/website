@@ -82,6 +82,7 @@ Different CMake switches are available to customize the build:
 - `-DARK_NO_STDLIB` to avoid the installation of the ArkScript standard library
 - `-DARK_SANITIZERS` to enable ASAN and UBSAN
 - `-DARK_UNITY_BUILD` to enable unity building (generally faster as it merges source files together), defaults to Off
+- `-DARK_STATIC` to build arkscript statically, defaults to Off
 - `-DARK_TESTS` to build the unit tests (separate target named `unittests`)
     - `-DARK_COVERAGE` to enable coverage analysis ; only works in conjunction with `-DARK_TESTS`, enables the `coverage` target: `cmake --build build --target coverage`
 

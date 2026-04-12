@@ -26,6 +26,8 @@ ArkScript has a debugger built into its VM, that usually do not trigger, unless 
 - `q` or `quit`: quit the debugger and stop the script execution
 - `locals <n>`: display the last `n` locals in the current scope (default: 5)
 - `stack <n>`: display the last `n` values on the stack (default: 5)
+- `ptr`: show the values of the VM pointers
+- `trace <n>`: show the last n executed instructions (default: 10)
 
 ## Using the debugger on error
 
