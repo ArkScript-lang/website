@@ -15,9 +15,9 @@ You will find a collections of useful resources to get started, whatever you wou
 
 Don't know what to work on? No worries, we have a [list of things to do](https://github.com/ArkScript-lang/Ark/issues)!
 
-## The project organisation
+## The project organization
 
-The project is organised in multiple repositories for us to be able to work on a project (eg the standard library) and update it multiple times without having to roll X different updates for the main repository, the language itself.
+The project is organized in multiple repositories for us to be able to work on a project (eg the standard library) and update it multiple times without having to roll X different updates for the main repository, the language itself.
 
 - [ArkScript](https://github.com/ArkScript-lang/Ark), the language
     - [The standard library](https://github.com/ArkScript-lang/std)
@@ -25,7 +25,7 @@ The project is organised in multiple repositories for us to be able to work on a
 - [This website](https://github.com/ArkScript-lang/website)
 - [The online playground](https://github.com/ArkScript-lang/playground)
 - [The benchmarks](https://github.com/ArkScript-lang/benchmarks)
-- [The syntaxic coloration plugins](https://github.com/ArkScript-lang/syntax-highlighting)
+- [The syntax coloration plugins](https://github.com/ArkScript-lang/syntax-highlighting)
 - [A documentation tool](https://github.com/ArkScript-lang/ArkDoc) for ArkScript code
 
 ## Getting started
@@ -33,6 +33,16 @@ The project is organised in multiple repositories for us to be able to work on a
 ### The architecture of the project
 
 For an in-depth explanation: [Understanding the project architecture](/docs/reference/architecture/project).
+
+### Strict No LLM / No AI Policy
+
+No LLMs for issues.
+
+No LLMs for patches / pull requests.
+
+No LLMs for comments on the bug tracker, including translation.
+
+English is encouraged, but not required. You are welcome to post in your native language and rely on others to have their own translation tools of choice to interpret your words.
 
 ### Contributing to the language, ArkScript
 
