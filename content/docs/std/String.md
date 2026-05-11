@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-05-01T01:47:45+02:00
-lastmod: 2026-05-01T01:47:45+02:00
+date: 2026-05-11T12:47:55+02:00
+lastmod: 2026-05-11T12:47:55+02:00
 draft: false
 weight: 410
 toc: true
@@ -808,6 +808,46 @@ Check if a string ends with a given suffix
 {{< highlight_arkscript >}}
 (print (string:endsWith? "Hello, world" "ld"))  # true
 (print (string:endsWith? "Hello, world" "worl"))  # false
+{{< /highlight_arkscript >}}
+
+## lpad
+
+---
+`(let lpad (fun (_str _n _c) (...)))`
+Return a string left padded by a given character _c to make a string of length _n
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_str`: string to left pad
+- `_n`: width of the final string
+- `_c`: char to use for padding
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:lpad "42" 4 "a"))  # aa42
+{{< /highlight_arkscript >}}
+
+## rpad
+
+---
+`(let rpad (fun (_str _n _c) (...)))`
+Return a string right padded by a given character _c to make a string of length _n
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_str`: string to left pad
+- `_n`: width of the final string
+- `_c`: char to use for padding
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:rpad "42" 4 "a"))  # 42aa
 {{< /highlight_arkscript >}}
 
 ## zfill
