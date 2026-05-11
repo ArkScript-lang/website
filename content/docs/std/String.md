@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-05-11T12:47:55+02:00
-lastmod: 2026-05-11T12:47:55+02:00
+date: 2026-05-11T13:46:39+02:00
+lastmod: 2026-05-11T13:46:39+02:00
 draft: false
 weight: 410
 toc: true
@@ -456,6 +456,20 @@ Modify a given string and return a new one
 (string:setAt "hello" 1 "a")  # "hallo"
 {{< /highlight_arkscript >}}
 
+## ascii?
+
+---
+`(let ascii? (fun (_str) (...)))`
+Check if a string is only ASCII
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_str`: String where the lookup occurs
+
+
+
 ## contains?
 
 ---
@@ -768,6 +782,44 @@ Strip the margin of a multiline string
        |abc
        |def")
 (string:stripMargin s)
+{{< /highlight_arkscript >}}
+
+## first
+
+---
+`(let first (fun ((ref _L) _n) (...)))`
+Get the first n chars of a string
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the string to work on
+- `_n`: the number of char to take
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:first "hello world" 4))  # "hell"
+{{< /highlight_arkscript >}}
+
+## last
+
+---
+`(let last (fun ((ref _L) _n) (...)))`
+Get the last n chars of a string
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the string to work on
+- `_n`: the number of chars to take
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:last "hello world" 4))  # "orld"
 {{< /highlight_arkscript >}}
 
 ## startsWith?

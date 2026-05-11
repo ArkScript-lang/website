@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-05-11T12:47:55+02:00
-lastmod: 2026-05-11T12:47:55+02:00
+date: 2026-05-11T13:46:39+02:00
+lastmod: 2026-05-11T13:46:39+02:00
 draft: false
 weight: 410
 toc: true
@@ -402,7 +402,7 @@ Get a slice from a List
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameters
-- `list`: the list to reverse
+- `list`: the list to slice
 - `start`: included, must be positive
 - `end`: not included, must be positive and smaller than the list
 - `step`: must be greater than 0
@@ -411,6 +411,27 @@ Get a slice from a List
 #### Example
 {{< highlight_arkscript >}}
 (list:slice [1 2 3 4 5] 1 4 2)  # [2 4]
+{{< /highlight_arkscript >}}
+
+## slice1
+
+---
+`(let slice1 (fun (_L _start _end) (...)))`
+Get a slice from a List with a step of 1
+
+**Note**: The original list is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `list`: the list to slice
+- `start`: included, must be positive
+- `end`: not included, must be positive and smaller than the list
+
+
+#### Example
+{{< highlight_arkscript >}}
+(list:slice1 [1 2 3 4 5] 1 3)  # [2 3 4]
 {{< /highlight_arkscript >}}
 
 ## sort
@@ -449,6 +470,42 @@ Generate a List of n copies of an element
 #### Example
 {{< highlight_arkscript >}}
 (list:fill 4 nil)  # [nil nil nil nil]
+{{< /highlight_arkscript >}}
+
+## zeros
+
+---
+`(let zeros (fun (_count) (...)))`
+Generate a List of n zeros
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `count`: the number of zeros
+
+
+#### Example
+{{< highlight_arkscript >}}
+(list:zeros 4)  # [0 0 0 0]
+{{< /highlight_arkscript >}}
+
+## ones
+
+---
+`(let ones (fun (_count) (...)))`
+Generate a List of n ones
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `count`: the number of ones
+
+
+#### Example
+{{< highlight_arkscript >}}
+(list:ones 4)  # [1 1 1 1]
 {{< /highlight_arkscript >}}
 
 ## setAt
@@ -547,6 +604,26 @@ Iterate over a given list and multiply all the elements with the others.
 (let p (list:product collection))  # => 120
 {{< /highlight_arkscript >}}
 
+## cumulativeProduct
+
+---
+`(let cumulativeProduct (fun ((ref _L)) (...)))`
+Cumulative product of a list
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_L`: the list to iterate over
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let collection [1 2 3 4])
+(let p (list:cumulativeProduct collection))  # => [1 2 6 24]
+{{< /highlight_arkscript >}}
+
 ## sum
 
 ---
@@ -565,6 +642,26 @@ Iterate over a given list and sum all the elements.
 {{< highlight_arkscript >}}
 (let collection [1 2 5 12])
 (let p (list:sum collection))  # => 20
+{{< /highlight_arkscript >}}
+
+## cumulativeSum
+
+---
+`(let cumulativeSum (fun ((ref _L)) (...)))`
+Cumulative sum of a list
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_L`: the list to iterate over
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let collection [1 2 5 12])
+(let p (list:cumulativeSum collection))  # => [1 3 8 20]
 {{< /highlight_arkscript >}}
 
 ## min
@@ -795,6 +892,47 @@ Apply a given function to each element of a list and then flatten it
 {{< highlight_arkscript >}}
 (let cool [1 2 3 4])
 (print (list:flatMap cool (fun (a) [a a])))  # [1 1 2 2 3 3 4 4]
+{{< /highlight_arkscript >}}
+
+## first
+
+---
+`(let first (fun ((ref _L) _n) (...)))`
+Get the first n elements of a list
+
+**Note**: This is equivalent to `list:take`
+The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the list to work on
+- `_n`: the number of elements to take
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (list:first [1 2 3 4 5 6 7 8 9] 4))  # [1 2 3 4]
+{{< /highlight_arkscript >}}
+
+## last
+
+---
+`(let last (fun ((ref _L) _n) (...)))`
+Get the last n elements of a list
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the list to work on
+- `_n`: the number of elements to take
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (list:last [1 2 3 4 5 6 7 8 9] 4))  # [6 7 8 9]
 {{< /highlight_arkscript >}}
 
 ## take

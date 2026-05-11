@@ -3,8 +3,8 @@ title: "Range"
 slug: "range"
 description: ""
 summary: ""
-date: 2026-05-11T12:47:55+02:00
-lastmod: 2026-05-11T12:47:55+02:00
+date: 2026-05-11T13:46:39+02:00
+lastmod: 2026-05-11T13:46:39+02:00
 draft: false
 weight: 410
 toc: true
@@ -20,6 +20,8 @@ seo:
 ---
 `(let range (fun ((mut i) _b) (...)))`
 Create a ranged closure in interval [a, b[
+
+**Deprecated**: Use list:iota, list:range
 
 **Note**: Has a field `asList` to compute a list from the current state of the range, and another one `reset`.
 
@@ -47,6 +49,8 @@ Create a ranged closure in interval [a, b[
 `(let forEach (fun (_r _f) (...)))`
 Run a function on each element of the range
 
+**Deprecated**: Use list:forEach
+
 **Note**: The range is unmodified.
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
@@ -67,6 +71,8 @@ Run a function on each element of the range
 ---
 `(let filter (fun (_range _fun) (...)))`
 Create a list based on a range and a filter function
+
+**Deprecated**: Use list:filter
 
 **Note**: The range is unmodified.
 
@@ -90,6 +96,8 @@ Create a list based on a range and a filter function
 `(let map (fun (_range _fun) (...)))`
 Create a list based on a range and a function to apply to each elements
 
+**Deprecated**: Use list:map
+
 **Note**: The range is unmodified.
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
@@ -110,6 +118,8 @@ Create a list based on a range and a function to apply to each elements
 ---
 `(let reduce (fun (_range _fun) (...)))`
 Create a reduced list based on a range and a reduction function
+
+**Deprecated**: Use list:reduce, list:foldLeft
 
 **Note**: The range is unmodified.
 
