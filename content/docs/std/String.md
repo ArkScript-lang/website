@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-05-11T14:34:04+02:00
-lastmod: 2026-05-11T14:34:04+02:00
+date: 2026-05-11T14:45:54+02:00
+lastmod: 2026-05-11T14:45:54+02:00
 draft: false
 weight: 410
 toc: true
@@ -401,7 +401,7 @@ Compute the length of an UTF8 string by counting the number of codepoints
 
 ---
 `(let codepoints (fun (_str) (...)))`
-Compute the UTF8 codepoints that makes a string, and return them as a List
+Compute the UTF8 codepoints that makes a string, and return them as a List of numbers
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
@@ -412,7 +412,9 @@ Compute the UTF8 codepoints that makes a string, and return them as a List
 
 #### Example
 {{< highlight_arkscript >}}
-(print (string:codepoints "abc"))  # ["a" "b" "c"]
+(print (string:codepoints "abc"))  # [97 98 99]
+# strings can be reassembled from their codepoints:
+(print (string:join (list:map (string:codepoints "🏳️‍⚧️") string:chr) ""))  # 🏳️‍⚧️
 {{< /highlight_arkscript >}}
 
 ## ord
