@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-05-11T14:45:54+02:00
-lastmod: 2026-05-11T14:45:54+02:00
+date: 2026-05-12T09:15:08+02:00
+lastmod: 2026-05-12T09:15:08+02:00
 draft: false
 weight: 410
 toc: true
@@ -403,6 +403,9 @@ Compute the length of an UTF8 string by counting the number of codepoints
 `(let codepoints (fun (_str) (...)))`
 Compute the UTF8 codepoints that makes a string, and return them as a List of numbers
 
+{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
@@ -481,6 +484,9 @@ Modify a given string and return a new one
 ---
 `(let ascii? (fun (_str) (...)))`
 Check if a string is only ASCII
+
+{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< /callout >}}
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
@@ -810,6 +816,9 @@ Strip the margin of a multiline string
 `(let first (fun ((ref _L) _n) (...)))`
 Get the first n chars of a string
 
+{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
@@ -828,6 +837,9 @@ Get the first n chars of a string
 ---
 `(let last (fun ((ref _L) _n) (...)))`
 Get the last n chars of a string
+
+{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< /callout >}}
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
@@ -888,6 +900,9 @@ Check if a string ends with a given suffix
 `(let lpad (fun (_str _n _c) (...)))`
 Return a string left padded by a given character _c to make a string of length _n
 
+{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
@@ -907,6 +922,9 @@ Return a string left padded by a given character _c to make a string of length _
 ---
 `(let rpad (fun (_str _n _c) (...)))`
 Return a string right padded by a given character _c to make a string of length _n
+
+{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< /callout >}}
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
