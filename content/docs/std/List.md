@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-05-12T09:15:08+02:00
-lastmod: 2026-05-12T09:15:08+02:00
+date: 2026-05-12T09:19:26+02:00
+lastmod: 2026-05-12T09:19:26+02:00
 draft: false
 weight: 410
 toc: true
@@ -419,7 +419,7 @@ Get a slice from a List
 `(let slice1 (fun (_L _start _end) (...)))`
 Get a slice from a List with a step of 1
 
-{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
 {{< /callout >}}
 
 **Note**: The original list is not modified
@@ -481,7 +481,7 @@ Generate a List of n copies of an element
 `(let zeros (fun (_count) (...)))`
 Generate a List of n zeros
 
-{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
 {{< /callout >}}
 
 
@@ -502,7 +502,7 @@ Generate a List of n zeros
 `(let ones (fun (_count) (...)))`
 Generate a List of n ones
 
-{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
 {{< /callout >}}
 
 
@@ -619,7 +619,7 @@ Iterate over a given list and multiply all the elements with the others.
 `(let cumulativeProduct (fun ((ref _L)) (...)))`
 Cumulative product of a list
 
-{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
 {{< /callout >}}
 
 **Note**: The original list is not modified.
@@ -662,7 +662,7 @@ Iterate over a given list and sum all the elements.
 `(let cumulativeSum (fun ((ref _L)) (...)))`
 Cumulative sum of a list
 
-{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
 {{< /callout >}}
 
 **Note**: The original list is not modified.
@@ -915,7 +915,7 @@ Apply a given function to each element of a list and then flatten it
 `(let first (fun ((ref _L) _n) (...)))`
 Get the first n elements of a list
 
-{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
 {{< /callout >}}
 
 **Note**: This is equivalent to `list:take`
@@ -939,7 +939,7 @@ The original list is not modified.
 `(let last (fun ((ref _L) _n) (...)))`
 Get the last n elements of a list
 
-{{< callout context="note" title="Note" icon="outline/info-circle" >}}ArkScript 4.6.0Requires ArkScript 4.6.0 or later
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
 {{< /callout >}}
 
 **Note**: The original list is not modified.
