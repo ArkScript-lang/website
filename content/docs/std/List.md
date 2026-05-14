@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-05-12T09:19:26+02:00
-lastmod: 2026-05-12T09:19:26+02:00
+date: 2026-05-14T17:08:40+02:00
+lastmod: 2026-05-14T17:08:40+02:00
 draft: false
 weight: 410
 toc: true

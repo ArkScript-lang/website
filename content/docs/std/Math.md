@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2026-05-12T09:19:26+02:00
-lastmod: 2026-05-12T09:19:26+02:00
+date: 2026-05-14T17:08:40+02:00
+lastmod: 2026-05-14T17:08:40+02:00
 draft: false
 weight: 410
 toc: true
@@ -511,6 +511,438 @@ Float not-a-number value
 
 
 
+## countOnes
+
+---
+`(let countOnes (fun (_x) (...)))`
+Count the number of '1' bits in the given value
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `value`: the Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:countOnes 5)  # 2
+{{< /highlight_arkscript >}}
+
+## countZeros
+
+---
+`(let countZeros (fun (_x) (...)))`
+Count the number of '0' bits in the given value
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `value`: the Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:countZeros 5)  # 1
+{{< /highlight_arkscript >}}
+
+## bitNot
+
+---
+`(let bitNot (fun (_x) (...)))`
+Invert a number on 64 bits
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `value`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:bitNot 5)  # -6
+{{< /highlight_arkscript >}}
+
+## bitAnd
+
+---
+`(let bitAnd (fun (_a _b) (...)))`
+Bitwise and
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `lhs`: Number, must be an integer
+- `rhs`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:bitAnd 4 12)  # 4
+(math:bitAnd 4 10)  # 0
+{{< /highlight_arkscript >}}
+
+## bitOr
+
+---
+`(let bitOr (fun (_a _b) (...)))`
+Bitwise or
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `lhs`: Number, must be an integer
+- `rhs`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:bitOr 4 10)  # 14
+(math:bitOr 4 1)  # 5
+{{< /highlight_arkscript >}}
+
+## bitXor
+
+---
+`(let bitXor (fun (_a _b) (...)))`
+Bitwise exclusive or of lhs and rhs
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `lhs`: Number, must be an integer
+- `rhs`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:bitXor 4 12)  # 8
+(math:bitXor 4 10)  # 14
+{{< /highlight_arkscript >}}
+
+## lshift
+
+---
+`(let lshift (fun (_a _b) (...)))`
+Left bit shift
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `lhs`: Number, must be an integer
+- `rhs`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:lshift 3 2)  # 12
+{{< /highlight_arkscript >}}
+
+## rshift
+
+---
+`(let rshift (fun (_a _b) (...)))`
+Right bit shift
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `lhs`: Number, must be an integer
+- `rhs`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:rshift 13 2)  # 3
+(math:rshift -14 2)  # -4
+{{< /highlight_arkscript >}}
+
+## bitCeil
+
+---
+`(let bitCeil (fun (_x) (...)))`
+Finds the smallest integral power of 2 not less than the given value
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `value`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:bitCeil 4)  # 4
+(math:bitCeil 7)  # 8
+(math:bitCeil 8)  # 8
+{{< /highlight_arkscript >}}
+
+## bitFloor
+
+---
+`(let bitFloor (fun (_x) (...)))`
+Finds the largest integral power of 2 not greater than the given value
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `value`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:bitFloor 4)  # 4
+(math:bitFloor 7)  # 4
+(math:bitFloor 8)  # 8
+{{< /highlight_arkscript >}}
+
+## bitWidth
+
+---
+`(let bitWidth (fun (_x) (...)))`
+Finds the smallest number of bits needed to represent the given value
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `value`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:bitWidth 2)  # 2
+(math:bitWidth 7)  # 3
+(math:bitWidth 8)  # 4
+{{< /highlight_arkscript >}}
+
+## countLeftZeros
+
+---
+`(let countLeftZeros (fun (_n _bits) (...)))`
+Counts the number of consecutive 0 bits, starting from the most significant bit
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `n`: Number, must be an integer
+- `bits`: Number of bits to represent n in, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:countLeftZeros 30 8)  # 3
+(math:countLeftZeros 227 8)  # 0
+{{< /highlight_arkscript >}}
+
+## countLeftOnes
+
+---
+`(let countLeftOnes (fun (_n _bits) (...)))`
+Counts the number of consecutive 1 bits, starting from the most significant bit
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `n`: Number, must be an integer
+- `bits`: Number of bits to represent n in, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:countLeftOnes 30 8)  # 4
+(math:countLeftOnes 227 8)  # 3
+{{< /highlight_arkscript >}}
+
+## countRightZeros
+
+---
+`(let countRightZeros (fun (_n _bits) (...)))`
+Counts the number of consecutive 0 bits, starting from the least significant bit
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `n`: Number, must be an integer
+- `bits`: Number of bits to represent n in, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:countRightZeros 30 8)  # 1
+(math:countRightZeros 227 8)  # 0
+{{< /highlight_arkscript >}}
+
+## countRightOnes
+
+---
+`(let countRightOnes (fun (_n _bits) (...)))`
+Counts the number of consecutive 1 bits, starting from the least significant bit
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `n`: Number, must be an integer
+- `bits`: Number of bits to represent n in, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:countRightOnes 30 8)  # 0
+(math:countRightOnes 227 8)  # 2
+{{< /highlight_arkscript >}}
+
+## circularLeftShift
+
+---
+`(let circularLeftShift (fun (_x (mut _count) _bytecount) (...)))`
+Computes the result of bitwise left-rotation of _x by _count
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_x`: Number, must be an integer
+- `_count`: Number, must be an integer
+- `_bytecount`: Number of bytes to shift on, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:circularLeftShift 29 4 1)  # 209
+(math:circularLeftShift 29 9 1)  # 58
+{{< /highlight_arkscript >}}
+
+## circularRightShift
+
+---
+`(let circularRightShift (fun (_x (mut _count) _bytecount) (...)))`
+Computes the result of bitwise left-rotation of _x by _count
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_x`: Number, must be an integer
+- `_count`: Number, must be an integer
+- `_bytecount`: Number of bytes to shift on, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:circularRightShift 29 9 1)  # 142
+(math:circularRightShift 29 2 1)  # 71
+{{< /highlight_arkscript >}}
+
+## toBase
+
+---
+`(let toBase (fun ((mut _x) _base) (...)))`
+Convert a number in a another base (in [2, 36[)
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_x`: Number, must be an integer
+- `_base`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:toBase 10 2)  # "1010"
+(math:toBase 165 16)  # "a5"
+{{< /highlight_arkscript >}}
+
+## countDigits
+
+---
+`(let countDigits (fun ((mut _x) _base) (...)))`
+Count the digits of a number in a given base (in [2, 36[)
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_x`: Number, must be an integer
+- `_base`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:countDigits 10 2)  # 4
+(math:countDigits 165 16)  # 2
+{{< /highlight_arkscript >}}
+
 ## abs
 
 ---
@@ -628,7 +1060,7 @@ Multiply a number by -1, turning positive numbers negative and negative numbers 
 ## pow
 
 ---
-`(let pow (fun (_x _a) (...)))`
+`(let pow (fun ((mut _x) (mut _a)) (...)))`
 Get a number to a given power
 
 **Note**: Note that it's defined as exp(a * ln(x)), thus won't work for negative numbers
