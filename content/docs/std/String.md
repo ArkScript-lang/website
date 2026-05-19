@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-05-14T17:11:24+02:00
-lastmod: 2026-05-14T17:11:24+02:00
+date: 2026-05-19T20:54:59+02:00
+lastmod: 2026-05-19T20:54:59+02:00
 draft: false
 weight: 410
 toc: true
@@ -420,6 +420,28 @@ Compute the UTF8 codepoints that makes a string, and return them as a List of nu
 (print (string:join (list:map (string:codepoints "🏳️‍⚧️") string:chr) ""))  # 🏳️‍⚧️
 {{< /highlight_arkscript >}}
 
+## bytes
+
+---
+`(let bytes (fun (_str) (...)))`
+Returns the bytes of a string
+
+{{< callout context="note" title="ArkScript 4.6.1" icon="outline/info-circle" >}}Requires ArkScript 4.6.1 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_str`: String
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:bytes "abc"))  # [97 98 99]
+(print (string:bytes "񐓧"))  # [241 144 147 167]
+{{< /highlight_arkscript >}}
+
 ## ord
 
 ---
@@ -493,6 +515,40 @@ Check if a string is only ASCII
 
 #### Parameter
 - `_str`: String where the lookup occurs
+
+
+
+## surrogate?
+
+---
+`(let surrogate? (fun (_str) (...)))`
+Check if a Unicode character is a surrogate, in the [D800, DFFF] range
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_str`: Unicode character
+
+
+
+## privateUse?
+
+---
+`(let privateUse? (fun (_str) (...)))`
+Check if a Unicode character is in a private use area (PUA)
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_str`: Unicode character
 
 
 

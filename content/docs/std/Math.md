@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2026-05-14T17:11:24+02:00
-lastmod: 2026-05-14T17:11:24+02:00
+date: 2026-05-19T20:54:59+02:00
+lastmod: 2026-05-19T20:54:59+02:00
 draft: false
 weight: 410
 toc: true
@@ -918,6 +918,29 @@ Convert a number in a another base (in [2, 36[)
 {{< highlight_arkscript >}}
 (math:toBase 10 2)  # "1010"
 (math:toBase 165 16)  # "a5"
+{{< /highlight_arkscript >}}
+
+## fromBase
+
+---
+`(let fromBase (fun ((mut _x) _base) (...)))`
+Convert a number from a base to base 10
+
+{{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
+{{< /callout >}}
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_x`: number in the given base represented as a String
+- `_base`: Number, must be an integer
+
+
+#### Example
+{{< highlight_arkscript >}}
+(math:fromBase "1010" 2)  # 10
+(math:fromBase "1z" 36)  # 165
 {{< /highlight_arkscript >}}
 
 ## countDigits

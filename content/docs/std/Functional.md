@@ -3,8 +3,8 @@ title: "Functional"
 slug: "functional"
 description: ""
 summary: ""
-date: 2026-05-14T17:11:24+02:00
-lastmod: 2026-05-14T17:11:24+02:00
+date: 2026-05-19T20:54:59+02:00
+lastmod: 2026-05-19T20:54:59+02:00
 draft: false
 weight: 410
 toc: true
