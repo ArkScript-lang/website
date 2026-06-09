@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2026-06-09T14:41:40+02:00
-lastmod: 2026-06-09T14:41:40+02:00
+date: 2026-06-09T15:49:28+02:00
+lastmod: 2026-06-09T15:49:28+02:00
 draft: false
 weight: 410
 toc: true
@@ -419,6 +419,29 @@ Copy a dictionary
 
 ---
 `(let update! (fun (_D _D2) (...)))`
+Update a dictionary with (key, value) pairs from a second dictionary
+
+**Note**: The original dictionary is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_D`: dictionary to update
+- `_D2`: second dictionary
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data (dict "key" "value" "hello" "world"))
+(let new (dict "key" "new value" 5 12))
+(print (dict:update data new))  # {key: new value, hello: world, 5: 12}
+(print data)  # {key: value, hello: world}
+{{< /highlight_arkscript >}}
+
+## update
+
+---
+`(let update (fun (_D _D2) (...)))`
 Update a dictionary with (key, value) pairs from a second dictionary
 
 **Note**: The original dictionary is updated in place

@@ -1,6 +1,6 @@
 ---
-title: "Time"
-slug: "time"
+title: "Colours"
+slug: "colours"
 description: ""
 summary: ""
 date: 2026-06-09T15:49:28+02:00
@@ -15,20 +15,19 @@ seo:
   noindex: false # false (default) or true
 ---
 
-## time
+## parse
 
 ---
-`Builtin (time )`
-Return the time of the computer since epoch, in seconds, with at least milliseconds precision
+`(let parse (fun (_name) (...)))`
+Parse a CSS colour. Can convert a name to a colour code, a 3 digits code to a 6 digits one (eg `#abc` to `#aabbcc`)
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
+#### Parameter
+- `_name`: String, colour name or colour code
 
-#### Example
-{{< highlight_arkscript >}}
-(time)  # 1627134107.837558031082153
-{{< /highlight_arkscript >}}
+
 
 
 

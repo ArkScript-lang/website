@@ -3,8 +3,8 @@ title: "Cli"
 slug: "cli"
 description: ""
 summary: ""
-date: 2026-06-09T14:41:40+02:00
-lastmod: 2026-06-09T14:41:40+02:00
+date: 2026-06-09T15:49:28+02:00
+lastmod: 2026-06-09T15:49:28+02:00
 draft: false
 weight: 410
 toc: true
