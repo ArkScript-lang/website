@@ -3,8 +3,8 @@ title: "Macros"
 slug: "macros"
 description: ""
 summary: ""
-date: 2026-06-01T02:12:42+02:00
-lastmod: 2026-06-01T02:12:42+02:00
+date: 2026-06-09T14:41:40+02:00
+lastmod: 2026-06-09T14:41:40+02:00
 draft: false
 weight: 410
 toc: true
@@ -357,6 +357,28 @@ Unpack a pair of two elements into two new variables
   (fun (pair) {
     (unpackPair pair x y)
     (print (+ x y)) }))
+{{< /highlight_arkscript >}}
+
+## unpack
+
+---
+`(macro unpack (data ...names) (...))`
+Unpack a list into multiple variables
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `data`: list of elements to unpack
+- `...names`: variable names to use
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [6 22 19 25 5 2026 2])
+(unpack data second minute hour day month year timezone)
+(print (format "date: {:02}:{:02}:{:02} {}/{:02}/{} {:+03}:00" hour minute second day month year timezone))
+# date: 19:22:06 25/05/2026 +02:00
 {{< /highlight_arkscript >}}
 
 ## ++

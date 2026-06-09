@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2026-06-01T02:12:42+02:00
-lastmod: 2026-06-01T02:12:42+02:00
+date: 2026-06-09T14:41:40+02:00
+lastmod: 2026-06-09T14:41:40+02:00
 draft: false
 weight: 410
 toc: true
@@ -258,6 +258,26 @@ Returns a list of the entries of a dictionary
 {{< highlight_arkscript >}}
 (let data (dict "key" "value" 5 12))
 (print (dict:entries data))  # [[key, value], [5, 12]]
+{{< /highlight_arkscript >}}
+
+## fromList
+
+---
+`(let fromList (fun ((ref _L)) (...)))`
+Create a list from a list of pairs (lists of 2 elements, key and value)
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_L`: list
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [["a" 1] ["b" 2] ["c" 3]])
+(let new (dict:fromList data))
+(print new)  # {a: 1, b:2, c:3}
 {{< /highlight_arkscript >}}
 
 ## map

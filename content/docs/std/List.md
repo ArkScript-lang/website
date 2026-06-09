@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-06-01T02:12:42+02:00
-lastmod: 2026-06-01T02:12:42+02:00
+date: 2026-06-09T14:41:40+02:00
+lastmod: 2026-06-09T14:41:40+02:00
 draft: false
 weight: 410
 toc: true
@@ -355,7 +355,7 @@ Reverse a given list and return a new one
 `(let find (fun (_L _x) (...)))`
 Search an element in a List
 
-**Note**: The original list is not modified
+**Note**: The original list is not modified. Return -1 when not found
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
@@ -368,6 +368,136 @@ Search an element in a List
 {{< highlight_arkscript >}}
 (list:find [1 2 3] 1)  # 0
 (list:find [1 2 3] 0)  # -1
+{{< /highlight_arkscript >}}
+
+## findAfter
+
+---
+`(let findAfter (fun (_L _x _idx) (...)))`
+Search an element in a List
+
+**Note**: The original List is not modified. Return -1 when not found
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `list`: the List to search in
+- `x`: the element to search for
+- `startIndex`: index to start searching from
+
+
+#### Example
+{{< highlight_arkscript >}}
+(list:findAfter [1 2 3] 1 0)  # 0
+(list:findAfter [1 2 3] 1 1)  # -1
+{{< /highlight_arkscript >}}
+
+## findIf
+
+---
+`(let findIf (fun (_L _f) (...)))`
+Search an element in a List with a predicate
+
+**Note**: The original List is not modified. Return nil when not found
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `list`: the List to search in
+- `pred`: unary Function returning a boolean
+
+
+#### Example
+{{< highlight_arkscript >}}
+(list:findIf [1 2 3] math:even?)  # 1
+(list:findIf [1 3 5] math:even?)  # nil
+{{< /highlight_arkscript >}}
+
+## search
+
+---
+`(let search (fun ((ref _L) (ref _s)) (...)))`
+Search for a set of contiguous elements inside a list
+
+**Note**: The original List is not modified. Return nil when not found
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `list`: the List to search in
+- `sub`: the elements to search for
+
+
+#### Example
+{{< highlight_arkscript >}}
+(list:search [1 2 3 4 5 6] [2 3 4])  # 1
+(list:search [1 2 3 4 5 6] [2 4])  # nil
+{{< /highlight_arkscript >}}
+
+## lowerBound
+
+---
+`(let lowerBound (fun ((ref _L) _x) (...)))`
+Search for the first element in the list which is not ordered before value and return its index
+
+**Note**: The original List is not modified. Expect the List to be sorted. Return nil when not found
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `list`: the List to search in
+- `x`: element to search for
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let prices [100.0 101.5 102.5 102.5 107.3])
+(list:lowerBound prices 102.5)  # 2
+(list:lowerBound prices 110)  # nil
+{{< /highlight_arkscript >}}
+
+## upperBound
+
+---
+`(let upperBound (fun ((ref _L) _x) (...)))`
+Search for the first element in the list which is ordered after value and return its index
+
+**Note**: The original List is not modified. Expect the List to be sorted. Return nil when not found
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `list`: the List to search in
+- `x`: element to search for
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let prices [100.0 101.5 102.5 102.5 107.3])
+(list:upperBound prices 102.5)  # 4
+(list:upperBound prices 110)  # nil
+{{< /highlight_arkscript >}}
+
+## binarySearch
+
+---
+`(let binarySearch (fun ((ref _L) _x) (...)))`
+Check if an element is in a sorted List
+
+**Note**: The original List is not modified. Expect the List to be sorted
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `list`: the List to search in
+- `x`: element to search for
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let prices [1 3 5 9])
+(list:binarySearch prices 1)  # true
+(list:binarySearch prices 2)  # false
 {{< /highlight_arkscript >}}
 
 ## contains?
@@ -454,6 +584,28 @@ Sort a List and return a new one
 #### Example
 {{< highlight_arkscript >}}
 (list:sort [4 2 3])  # [1 2 4]
+{{< /highlight_arkscript >}}
+
+## sorted?
+
+---
+`(let sorted? (fun ((ref _L)) (...)))`
+Check if a List is sorted
+
+**Note**: The original list is not modified
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `list`: List to check
+
+
+#### Example
+{{< highlight_arkscript >}}
+(list:sorted? [4 2 3])  # false
+(list:sorted? [])  # true
+(list:sorted? [1])  # true
+(list:sorted? [1 2 5])  # true
 {{< /highlight_arkscript >}}
 
 ## fill
@@ -715,6 +867,25 @@ Find the maximum in a list of numbers
 #### Example
 {{< highlight_arkscript >}}
 (let value (list:max [0 1 2 3 5 8]))  # 8
+{{< /highlight_arkscript >}}
+
+## minMax
+
+---
+`(let minMax (fun ((ref _L)) (...)))`
+Find the minimum and the maximum in a list of numbers
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_L`: list of numbers
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let value (list:minMax [0 1 2 3 5 8]))  # [0 8]
 {{< /highlight_arkscript >}}
 
 ## median
@@ -1036,6 +1207,46 @@ Drop the first elements of a list, while they match a given predicate
 {{< highlight_arkscript >}}
 (let cool-stuff [1 2 3 4 5 6 7 8 9])
 (print (list:dropWhile cool-stuff (fun (a) (< a 4))))  # [4 5 6 7 8 9]
+{{< /highlight_arkscript >}}
+
+## shiftLeft
+
+---
+`(let shiftLeft (fun ((ref _L) (mut _c)) (...)))`
+Shift the elements of a List to the left, putting the overflow at the end
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the list to work on
+- `_c`: Number of elements to move (must be positive)
+
+
+#### Example
+{{< highlight_arkscript >}}
+(list:shiftLeft [1 2 3 4 5] 2)  # [3 4 5 1 2]
+{{< /highlight_arkscript >}}
+
+## shiftRight
+
+---
+`(let shiftRight (fun ((ref _L) (mut _c)) (...)))`
+Shift the elements of a List to the right, putting the overflow at the beginning
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the list to work on
+- `_c`: Number of elements to move (must be positive)
+
+
+#### Example
+{{< highlight_arkscript >}}
+(list:shiftRight [1 2 3 4 5] 2)  # [4 5 1 2 3]
 {{< /highlight_arkscript >}}
 
 ## partition

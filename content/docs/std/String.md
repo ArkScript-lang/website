@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-06-01T02:12:42+02:00
-lastmod: 2026-06-01T02:12:42+02:00
+date: 2026-06-09T14:41:40+02:00
+lastmod: 2026-06-09T14:41:40+02:00
 draft: false
 weight: 410
 toc: true
@@ -544,6 +544,10 @@ Check if a Unicode character is in a private use area (PUA)
 {{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
 {{< /callout >}}
 
+**Note**: The ranges that are checked are:
+- 0xE000 to 0xF8FF
+- 0xF0000 to 0xFFFFD
+- 0x100000 to 0x10FFFD
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
