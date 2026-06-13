@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2026-06-11T10:10:49+02:00
-lastmod: 2026-06-11T10:10:49+02:00
+date: 2026-06-13T16:32:02+02:00
+lastmod: 2026-06-13T16:32:02+02:00
 draft: false
 weight: 410
 toc: true
@@ -1553,7 +1553,7 @@ Compute the binomial coefficient (n k)
 
 **Note**: Evaluates to n! / (k! * (n - k)!) when k <= n and evaluates to zero when k > n.
 
-**Author**: [@SuperFola](https://github.com/SuperFola)
+**Authors**: [@SuperFola](https://github.com/SuperFola), [@kg583](https://github.com/kg583)
 
 #### Parameters
 - `_n`: total number of items
@@ -1564,12 +1564,12 @@ Compute the binomial coefficient (n k)
 ## permutations
 
 ---
-`(let permutations (fun (_n _k) (...)))`
+`(let permutations (fun ((mut _n) _k) (...)))`
 Compute the number of ways to choose k items from n items without repetition and with order
 
 **Note**: Evaluates to n! / (n - k)! when k <= n and evaluates to zero when k > n.
 
-**Author**: [@SuperFola](https://github.com/SuperFola)
+**Authors**: [@SuperFola](https://github.com/SuperFola), [@kg583](https://github.com/kg583)
 
 #### Parameters
 - `_n`: total number of items
