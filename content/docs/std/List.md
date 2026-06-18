@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-06-13T16:32:02+02:00
-lastmod: 2026-06-13T16:32:02+02:00
+date: 2026-06-18T16:35:27+02:00
+lastmod: 2026-06-18T16:35:27+02:00
 draft: false
 weight: 410
 toc: true
@@ -1611,6 +1611,26 @@ Get the unique values in a given list
 {{< highlight_arkscript >}}
 (let data [1 1 2 3 4 3 4 5])
 (print (list:unique data))  # [1 2 3 4 5]
+{{< /highlight_arkscript >}}
+
+## countOccurrences
+
+---
+`(let countOccurrences (fun ((ref _L)) (...)))`
+Count the occurrences of the elements of a List, and return them a Dict (elem -> count)
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_L`: List
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data [1 1 2 3 4 3 4 5])
+(print (list:countOccurrences data))  # {1: 2, 2: 1, 3: 2, 4: 2, 5: 1}
 {{< /highlight_arkscript >}}
 
 ## select
