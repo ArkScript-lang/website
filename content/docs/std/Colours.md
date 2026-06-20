@@ -3,8 +3,8 @@ title: "Colours"
 slug: "colours"
 description: ""
 summary: ""
-date: 2026-06-18T16:35:27+02:00
-lastmod: 2026-06-18T16:35:27+02:00
+date: 2026-06-20T15:37:24+02:00
+lastmod: 2026-06-20T15:37:24+02:00
 draft: false
 weight: 410
 toc: true
