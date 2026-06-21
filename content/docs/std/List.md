@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-06-20T15:39:42+02:00
-lastmod: 2026-06-20T15:39:42+02:00
+date: 2026-06-21T14:42:34+02:00
+lastmod: 2026-06-21T14:42:34+02:00
 draft: false
 weight: 410
 toc: true
@@ -1611,6 +1611,55 @@ Get the unique values in a given list
 {{< highlight_arkscript >}}
 (let data [1 1 2 3 4 3 4 5])
 (print (list:unique data))  # [1 2 3 4 5]
+{{< /highlight_arkscript >}}
+
+## intersection
+
+---
+`(let intersection (fun ((ref _L1) (ref _L2)) (...)))`
+Compute the intersection of two lists
+
+**Note**: - The original lists are not modified.
+- The elements appear in the same order they are in _L1.
+- Duplicates are kept: if one list has two `1`, and the other has three, two `1` will be in the output.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L1`: List
+- `_L2`: List
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (list:intersection [1] [2]))  # []
+(print (list:intersection [3 2 1] [1 2 3]))  # [3 2 1]
+(print (list:intersection [1 2 2 1] [2 2]))  # [2 2]
+{{< /highlight_arkscript >}}
+
+## difference
+
+---
+`(let difference (fun ((ref _L1) (ref _L2)) (...)))`
+Compute the difference of two lists
+
+**Note**: - The original lists are not modified.
+- Elements that are only in one of the two lists are kept.
+- Elements from the longest list are picked first:
+`(print (list:difference [1 2 3] [4 5 6 7]))  # => [4 5 6 7 1 2 3]`
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L1`: List
+- `_L2`: List
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (list:difference [1 2 3] [3 2 1]))  # []
+(print (list:difference [1 2 3 4 5] [1 2 3 4 4]))  # [5 4]
+(print (list:difference [1 2] ["a" "b"]))  # [1 2 "a" "b"]
 {{< /highlight_arkscript >}}
 
 ## countOccurrences
