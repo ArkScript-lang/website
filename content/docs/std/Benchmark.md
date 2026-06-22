@@ -3,8 +3,8 @@ title: "Benchmark"
 slug: "benchmark"
 description: ""
 summary: ""
-date: 2026-06-22T10:53:09+02:00
-lastmod: 2026-06-22T10:53:09+02:00
+date: 2026-06-22T18:18:19+02:00
+lastmod: 2026-06-22T18:18:19+02:00
 draft: false
 weight: 410
 toc: true
@@ -18,14 +18,13 @@ seo:
 ## measureOnce
 
 ---
-`(macro measureOnce (tag code) (...))`
-Measure the time it takes to run some given code, in milliseconds
+`(macro measureOnce <value>)`
+Measure the time it takes to run some given code, in milliseconds, and print the result
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
-#### Parameters
-- `tag`: Identifier for the code block (string)
+#### Parameter
 - `code`: Node of code to run
 
 
@@ -34,7 +33,7 @@ Measure the time it takes to run some given code, in milliseconds
 
 ---
 `(macro bench (code times) (...))`
-Benchmark some given code by running it a given number of times
+Benchmark some given code by running it a given number of times, and print a report
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)

@@ -3,8 +3,8 @@ title: "Sys"
 slug: "sys"
 description: ""
 summary: ""
-date: 2026-06-22T10:53:09+02:00
-lastmod: 2026-06-22T10:53:09+02:00
+date: 2026-06-22T18:18:19+02:00
+lastmod: 2026-06-22T18:18:19+02:00
 draft: false
 weight: 410
 toc: true
@@ -99,6 +99,17 @@ Arguments given to the program when running it from the command line
 ---
 `(let programName <value>)`
 Name of the running program (file only, not the fullpath)
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+
+
+## version
+
+---
+`(let version <value>)`
+Version of the ArkScript VM
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
