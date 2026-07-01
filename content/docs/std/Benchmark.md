@@ -3,8 +3,8 @@ title: "Benchmark"
 slug: "benchmark"
 description: ""
 summary: ""
-date: 2026-06-22T18:18:19+02:00
-lastmod: 2026-06-22T18:18:19+02:00
+date: 2026-07-01T02:06:31+02:00
+lastmod: 2026-07-01T02:06:31+02:00
 draft: false
 weight: 410
 toc: true
