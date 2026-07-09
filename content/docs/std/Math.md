@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2026-07-06T14:54:22+02:00
-lastmod: 2026-07-06T14:54:22+02:00
+date: 2026-07-09T11:08:49+02:00
+lastmod: 2026-07-09T11:08:49+02:00
 draft: false
 weight: 410
 toc: true
@@ -246,7 +246,7 @@ Check if a Number is NaN
 
 ---
 `(let Inf? (fun (_x) (...)))`
-Check if a Number if Inf
+Check if a Number is Inf
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
@@ -1216,7 +1216,7 @@ Returns the logarithm base 10 of a number
 
 ---
 `(let floordiv (fun (a b) (...)))`
-Returns the quotient of the euclidean division of a and b
+Returns the quotient of the Euclidean division of a and b
 
 
 **Author**: [@fabien-zoccola](https://github.com/fabien-zoccola)
@@ -1596,7 +1596,7 @@ Compare two real numbers and return true if the first one is near the second one
 
 ---
 `(let euclideanDistance (fun (_a _b) (...)))`
-Compute the euclidean distance between two vectors of the same size
+Compute the Euclidean distance between two vectors of the same size
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)

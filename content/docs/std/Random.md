@@ -3,8 +3,8 @@ title: "Random"
 slug: "random"
 description: ""
 summary: ""
-date: 2026-07-06T14:54:22+02:00
-lastmod: 2026-07-06T14:54:22+02:00
+date: 2026-07-09T11:08:49+02:00
+lastmod: 2026-07-09T11:08:49+02:00
 draft: false
 weight: 410
 toc: true
@@ -52,7 +52,7 @@ Shuffle a given list
 #### Example
 {{< highlight_arkscript >}}
 (let data [1 2 3 4 5])
-(let randomized (random:shuffle data))
+(let randomised (random:shuffle data))
 {{< /highlight_arkscript >}}
 
 

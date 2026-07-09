@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-07-06T14:54:22+02:00
-lastmod: 2026-07-06T14:54:22+02:00
+date: 2026-07-09T11:08:49+02:00
+lastmod: 2026-07-09T11:08:49+02:00
 draft: false
 weight: 410
 toc: true
@@ -1401,7 +1401,7 @@ Check if a condition is verified for all elements of a list
 
 ---
 `(let any (fun ((ref _L) _f) (...)))`
-Check if a condition if verified for one or more elements of a list
+Check if a condition is verified for one or more elements of a list
 
 
 **Author**: [@Gryfenfer97](https://github.com/Gryfenfer97)

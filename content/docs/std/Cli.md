@@ -3,8 +3,8 @@ title: "Cli"
 slug: "cli"
 description: ""
 summary: ""
-date: 2026-07-06T14:54:22+02:00
-lastmod: 2026-07-06T14:54:22+02:00
+date: 2026-07-09T11:08:49+02:00
+lastmod: 2026-07-09T11:08:49+02:00
 draft: false
 weight: 410
 toc: true
@@ -92,7 +92,7 @@ Parse a list of arguments given a CLI definition
 (import std.Cli)
 (let command_line
   (cli:oneOf [
-    (cli:flag "--help" "Display an help message")
+    (cli:flag "--help" "Display a help message")
     (cli:flag "--repl" "Start the REPL")
     (cli:group [
       (cli:flag "-c" "Compile a given file")

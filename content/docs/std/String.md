@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-07-06T14:54:22+02:00
-lastmod: 2026-07-06T14:54:22+02:00
+date: 2026-07-09T11:08:49+02:00
+lastmod: 2026-07-09T11:08:49+02:00
 draft: false
 weight: 410
 toc: true
@@ -804,7 +804,7 @@ Removes whitespaces from the left side of a string
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameter
-- `_str`: string to sanitize
+- `_str`: string to sanitise
 
 
 #### Example
@@ -823,7 +823,7 @@ Removes whitespaces from the right side of a string
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameter
-- `_str`: string to sanitize
+- `_str`: string to sanitise
 
 
 #### Example
@@ -842,7 +842,7 @@ Removes whitespaces from both sides of a string
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameter
-- `_str`: string to sanitize
+- `_str`: string to sanitise
 
 
 #### Example
@@ -1019,17 +1019,38 @@ Return a string filled with '0' digits to make a string of length _n
 (print (string:zfill "42" 4))  # 0042
 {{< /highlight_arkscript >}}
 
-## center
+## centre
 
 ---
-`(let center (fun (_str _len) (...)))`
+`(let centre (fun (_str _len) (...)))`
 Return a centered string of length _len, using spaces as fill chars
 
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameters
-- `_str`: string to center
+- `_str`: string to centre
+- `_len`: width of the final string
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (string:centre "ArkScript" 15))  # "   ArkScript   "
+{{< /highlight_arkscript >}}
+
+## center
+
+---
+`(let center <value>)`
+Return a centered string of length _len, using spaces as fill chars
+
+**Deprecated**: Use string:centre instead
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_str`: string to centre
 - `_len`: width of the final string
 
 
