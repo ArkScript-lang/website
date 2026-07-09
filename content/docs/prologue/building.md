@@ -76,7 +76,7 @@ git checkout tags/<tag>
 
 Different CMake switches are available to customise the build:
 
-- `-DCMAKE_BUILD_TYPE` is required to specify the build type (`Debug`, `Release`, `RelWithDebInfo`) to toggle LTO
+- `-DCMAKE_BUILD_TYPE` is **required** to specify the build type (`Debug`, `Release`, `RelWithDebInfo`) to toggle LTO
 - `-DARK_BUILD_EXE` to generate an executable, defaults to Off, building a shared library
 - `-DARK_ENABLE_SYSTEM` to enable `sys:exec` (execute shell commands without restrictions), defaults to On
 - `-DARK_BUILD_MODULES` to build the modules, defaults to Off
@@ -86,6 +86,13 @@ Different CMake switches are available to customise the build:
 - `-DARK_STATIC` to build arkscript statically, defaults to Off
 - `-DARK_TESTS` to build the unit tests (separate target named `unittests`)
     - `-DARK_COVERAGE` to enable coverage analysis ; only works in conjunction with `-DARK_TESTS`, enables the `coverage` target: `cmake --build build --target coverage`
+
+If you're building the language to use (and not embedding it in a project), the most important switches you'll want are:
+```
+-DCMAKE_BUILD_TYPE=Release
+-DARK_BUILD_EXE=On
+-DARK_UNITY_BUILD=On
+```
 
 ### Building on Windows
 
