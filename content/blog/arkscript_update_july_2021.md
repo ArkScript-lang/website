@@ -10,7 +10,7 @@ homepage: false
 
 Hello, it's been a while, and I'm back with some good news!
 
-We're still hard at work on the language, with UTF8 on the agenda (for strings and maybe identifiers), macros with variadic argument management coming soon, various optimizations, and we're in the process of expanding the standard lib and modules.
+We're still hard at work on the language, with UTF8 on the agenda (for strings and maybe identifiers), macros with variadic argument management coming soon, various optimisations, and we're in the process of expanding the standard lib and modules.
 
 To test all this, I've created a mini blockchain in the language: [https://github.com/ArkScript-lang/Ark/blob/dev/examples/blockchain.ark](https://github.com/ArkScript-lang/Ark/blob/dev/examples/blockchain.ark).
 
@@ -26,7 +26,7 @@ The project's two-year anniversary is at the end of April, by which time I hope 
 
 With the option of calling one macro from another for a little extra spice.
 
-One of the finest optimizations is a switch (internally) to a single linear stack rather than a stack of stacks, which took us from 90ms to 55ms on Ackermann Péter (3, 6), an extremely greedy recursion test. We're still a long way from Python, but the aim isn't to catch up with it or surpass it, simply to be fast enough to be used properly.
+One of the finest optimisations is a switch (internally) to a single linear stack rather than a stack of stacks, which took us from 90ms to 55ms on Ackermann Péter (3, 6), an extremely greedy recursion test. We're still a long way from Python, but the aim isn't to catch up with it or surpass it, simply to be fast enough to be used properly.
 
 The full changelog is [here](https://github.com/ArkScript-lang/Ark/blob/dev/examples/blockchain.ark) for you curious people.
 

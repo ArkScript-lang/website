@@ -27,7 +27,7 @@ To give some figures:
 - RAM usage was capped at 64MB per instance
 - an average of 500 crashes per instance
 - an average of 1000 hangs per instance (it's good at generating `(while true ())` and the like)
-- the CPU temperature climbed from 45° to 80°, and that of my apartment by +2° (who needs heating?)
+- the CPU temperature climbed from 45° to 80°, and that of my flat by +2° (who needs heating?)
 
 I must have fixed a dozen or so bugs thanks to this, which is tedious but very interesting. Based on the reported crashes, I started a collection of “code that crashes but needs to be detected”.
 

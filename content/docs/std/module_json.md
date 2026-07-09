@@ -23,7 +23,7 @@ Open a file and read its content as JSON, then return it.
 **Parameters**
 - `filename`: path to JSON file
 
-**Return value** `UserType`: json value
+**Return value** `UserType`: JSON value
 
 **Author**
 - [@Gryfenfer97](https://github.com/Gryfenfer97)
@@ -40,7 +40,7 @@ Takes a String as an argument, representing a JSON object, and return it parsed 
 **Parameters**
 - `jsonObject`: JSON stored in a string
 
-**Return value** `UserType`: json value
+**Return value** `UserType`: JSON value
 
 **Author**
 - [@Gryfenfer97](https://github.com/Gryfenfer97)
@@ -56,7 +56,7 @@ Retrieve a value from a jsonObject by its key.
 
 **Parameters**
 - `jsonObject`: JSON object
-- `key`: a string if the object is a dictionnary, a number if it's an array
+- `key`: a string if the object is a dictionary, a number if it's an array
 
 **Return value** the stored value
 
@@ -115,7 +115,7 @@ Take a list of an even number of values, the even ones are the keys (String) and
 **Parameters**
 - `jsonAsList`: JSON stored in an ArkScript list
 
-**Return value** `UserType`: json value
+**Return value** `UserType`: JSON value
 
 **Author**
 - [@Gryfenfer97](https://github.com/Gryfenfer97)
@@ -134,7 +134,7 @@ Take a list of an even number of values, the even ones are the keys (String) and
 
 ## json:write
 
-Take a jsonObject and a filename (String), and write the jsonObject to the file. The file will be created if it doesn't exist, otherwise all the previous content will be wiped before writting to it.
+Take a jsonObject and a filename (String), and write the jsonObject to the file. The file will be created if it doesn't exist, otherwise all the previous content will be wiped before writing to it.
 
 **Parameters**
 - `jsonObject`: JSON object

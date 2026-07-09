@@ -37,10 +37,10 @@ Clear the terminal on Windows and Posix.
 
 ## console:color
 
-This function changes the color of the text written to the terminal.
+This function changes the colour of the text written to the terminal.
 
 **Parameter**
-- `color`: a string representing the wanted color.
+- `color`: a string representing the wanted colour.
 
 **Return value** `nil`
 
@@ -78,11 +78,11 @@ on_white
 **Example**
 {{< highlight_arkscript >}}
 (import console)
-(print "hello world")  # this is using the default color of the terminal
+(print "hello world")  # this is using the default colour of the terminal
 (console:color "red")
 (print "this is in red")
 (print "this line is still red")
-(console:color "reset")    # now the colors are back to normal
+(console:color "reset")    # now the colours are back to normal
 (print "I am normal")
 (console:color "on_cyan")
 (print "I am a text on cyan background")

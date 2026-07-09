@@ -48,7 +48,7 @@ page_0
 
 ## More optimizations!
 
-One optimization I wanted to work on, as said earlier, was to implement *super instructions*, basically merge two or more instructions together. As of today, those are:
+One optimisation I wanted to work on, as said earlier, was to implement *super instructions*, basically merge two or more instructions together. As of today, those are:
 
 - load multiple values at once on the stack
 - load a value and store it in a variable
@@ -74,11 +74,11 @@ In this benchmarks report, we compare with: a baseline, then computed gotos, the
                           | cpu_time  | 0.0160867ms  | -0.000 (-0.3972%)   | -0.000 (-2.7551%)
 ```
 
-Overall a pretty decent set of performance improvements! For now, I'll stop working on such huge refactors and optimizations, and focus on new builtins, enhancing the standard library, the documentation, the tests coverage...
+Overall a pretty decent set of performance improvements! For now, I'll stop working on such huge refactors and optimisations, and focus on new builtins, enhancing the standard library, the documentation, the tests coverage...
 
 ## Coverage report
 
-Which makes a nice segway for this section! I've worked on new functionalities, more optimizations, but that didn't stop me from adding five new test suites and about 90 more tests!
+Which makes a nice segway for this section! I've worked on new functionalities, more optimisations, but that didn't stop me from adding five new test suites and about 90 more tests!
 
 ![./unittests](tests_reports.png)
 
@@ -86,9 +86,9 @@ The new test suites:
 
 - **Optimizer** tests the AST optimizer, and dead code elimination
 - **Utf8** tests the utf8 library (decoding / encoding utf8 codepoints)
-- **Tools** tests the C++ helpers (eg our implementation of Leveinshtein distance)
-- **Compiler** tests the IR optimizer by dumping IR and checking that super instructions have been used
-- **NameResolution** tests the namespaces resolution, hidding variable, prefixing them...
+- **Tools** tests the C++ helpers (e.g. our implementation of Levenshtein distance)
+- **Compiler** tests the IR optimiser by dumping IR and checking that super instructions have been used
+- **NameResolution** tests the namespaces resolution, hiding variable, prefixing them...
 
 The biggest test suite to have been upgrade is the **Diagnostics** one, with more 70 new tests, testing even more error messages to ensure we still detect them in the future. I also finally fixed the line reporter of the parser, and tokens are *finally* underlined correctly:
 
@@ -135,18 +135,18 @@ We can finally import symbols from files (also called "packages" now), import fi
 
 For now, files are imported "à la Python", you specify a package that's resolved from your current directory. Eg, `(import foo.bar.egg)` would search for `$CWD/foo/bar/egg.ark`, with `$CWD` being the current working directory of the script. The standard library gets a special treatment, you can write `std.List`, `std.Math`... from anywhere and import anything from the standard library.
 
-All the work was done in the name resolution pass, that's now done right after processing macros, so that all names are computed (some variable names can be created by macros). If you want to learn more about the inner workings of this monstruosity, [I wrote an article about it!](https://lexp.lt/posts/designing_a_better_import/)
+All the work was done in the name resolution pass, that's now done right after processing macros, so that all names are computed (some variable names can be created by macros). If you want to learn more about the inner workings of this monstrosity, [I wrote an article about it!](https://lexp.lt/posts/designing_a_better_import/)
 
 **TL;DR**: Once files are parsed, and the **Import Solver** has had a go at resolving `imports` and merging them, we are left with a single big AST, with `Namespace` nodes (multiple imports of a single file are merged together). Then, a new compiler pass, the **Name Resolution**, can register all symbols along with their prefix (if in a namespace), and replace them in another AST visit with their fully qualified name (this way, we avoid name conflicts).
 
 > [!NOTE]
-> Package prefixes are computed from the package string tail in lowercase ; eg for `(import std.List)`, the prefix will be `list:`.
+> Package prefixes are computed from the package string tail in lowercase ; e.g. for `(import std.List)`, the prefix will be `list:`.
 
 ## The AST optimization is back
 
 The AST optimizer was disabled before (or during, I can't recall at this point) the compiler rewrite done in September~ 2024, because I needed a rewrite, and was sometimes working, sometime not, for unknown reasons (the algorithm that marked and removed unused code was just bad).
 
-It's now counting all symbols uses, so that when we visit the top declarations (as well as any namespace nodes, resulting in the inclusion of a file), we can delete them if we know they are mentionned only once (only the declaration uses the symbol).
+It's now counting all symbols uses, so that when we visit the top declarations (as well as any namespace nodes, resulting in the inclusion of a file), we can delete them if we know they are mentioned only once (only the declaration uses the symbol).
 
 I've also added basic dead code elimination, so that we can:
 
@@ -155,7 +155,7 @@ I've also added basic dead code elimination, so that we can:
 - replace `(if false then else)`  by `else`
 - delete `(while false body)`
 
-It's just a base for now, in the future I would like to be able to reduce expressions so that we can remove more dead code at compile time, eg `(if (= 0 1) then)` can't be eliminated by the **Optimizer** yet.
+It's just a base for now, in the future I would like to be able to reduce expressions so that we can remove more dead code at compile time, e.g. `(if (= 0 1) then)` can't be eliminated by the **Optimizer** yet.
 
 ## Advent of code!
 
@@ -170,10 +170,10 @@ Things improved:
 - `string:find` now takes a third optional argument, `startIndex`
 - `string:setAt` is a new builtin to modify a string at a given position and replace a character, which returns a copy of the original string, like `list:setAt`
 - `@=` and `@@=` are operators modifying strings and lists in place!
-    - `@=` is working on one dimension indexables like strings and list: `(@= lst 1 5)` would replace the element at position 1 by `5`
-    - `@@=` works on two dimension indexables like list of lists or list of strings: `(@@= lst 1 2 false)` would replace element on line 1, column 2 by `false`
+    - `@=` is working on one dimension indexable like strings and list: `(@= lst 1 5)` would replace the element at position 1 by `5`
+    - `@@=` works on two dimension indexable like list of lists or list of strings: `(@@= lst 1 2 false)` would replace element on line 1, column 2 by `false`
 - dedicated scope around loops, so that we can create variables inside the loop body without having them leaking after the loop
-- `@@`, which I'm still working as of right now, to get an element inside a two dimension indexables (list of lists or list of strings)
+- `@@`, which I'm still working as of right now, to get an element inside a two dimension indexable (list of lists or list of strings)
 
 ### List improvements
 
@@ -254,7 +254,7 @@ I've also gone around the standard library to use in-place list modifications in
 
 ### While loops
 
-The following code used to complain that we were redefining a constant (`foo`) using `let`, but not anymore.
+The following code used to complain that we were redefining a constant (`foo`) using `let`, but not any more.
 
 ```lisp
 (let foo 5)

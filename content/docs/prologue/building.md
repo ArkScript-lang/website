@@ -65,7 +65,7 @@ cd Ark
 git submodule update --init --recursive
 ```
 
-If you need a specific revision or tag, you can do this right before initializing and updating the git submodules:
+If you need a specific revision or tag, you can do this right before initialising and updating the git submodules:
 
 ```shell
 # for a specific revision
@@ -74,8 +74,9 @@ git checkout <commit>
 git checkout tags/<tag>
 ```
 
-Different CMake switches are available to customize the build:
+Different CMake switches are available to customise the build:
 
+- `-DCMAKE_BUILD_TYPE` is required to specify the build type (`Debug`, `Release`, `RelWithDebInfo`) to toggle LTO
 - `-DARK_BUILD_EXE` to generate an executable, defaults to Off, building a shared library
 - `-DARK_ENABLE_SYSTEM` to enable `sys:exec` (execute shell commands without restrictions), defaults to On
 - `-DARK_BUILD_MODULES` to build the modules, defaults to Off
@@ -96,12 +97,12 @@ Requirements:
 Commands:
 
 ```shell
-cmake . -Bbuild -DARK_BUILD_EXE=On -G "Visual Studio 17 Win64"
+cmake . -Bbuild -DARK_BUILD_EXE=On -G "Visual Studio 17 Win64" -DCMAKE_BUILD_TYPE=Release
 cmake --build build --config Release
 cmake --install build --config Release  # might need administrator rights
 ```
 
-### Building on Linux and derivates
+### Building on Linux and derivatives
 
 Requirements:
 - 64 bits OS
@@ -111,7 +112,7 @@ Requirements:
 Commands:
 
 ```shell
-cmake . -Bbuild -DARK_BUILD_EXE=On
+cmake . -Bbuild -DARK_BUILD_EXE=On -DCMAKE_BUILD_TYPE=Release
 cmake --build build --config Release
 
 # needs administrator rights to install under /usr/bin
@@ -127,14 +128,14 @@ Requirements:
 - cmake >= 3.15
 
 ```shell
-cmake . -Bbuild -DARK_BUILD_EXE=On -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang
+cmake . -Bbuild -DARK_BUILD_EXE=On -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang -DCMAKE_BUILD_TYPE=Release
 cmake --build build --config Release
 cmake --install build --config Release  # might need administrator rights
 ```
 
 ---
 
-On MacOS versions **prior to 10.15**, `libc++` lacks `filesystem` in the standard library.
+On macOS versions **prior to 10.15**, `libc++` lacks `filesystem` in the standard library.
 
 You will need to:
 - Install a newer compiler using [Homebrew](https://docs.brew.sh/): `brew install gcc && brew link gcc`
@@ -143,7 +144,7 @@ You will need to:
 Commands:
 
 ```shell
-cmake . -Bbuild -DARK_BUILD_EXE=On -DCMAKE_CXX_COMPILER=/usr/local/bin/g++-14
+cmake . -Bbuild -DARK_BUILD_EXE=On -DCMAKE_CXX_COMPILER=/usr/local/bin/g++-14 -DCMAKE_BUILD_TYPE=Release
 cmake --build build --config Release
 cmake --install build --config Release  # might need administrator rights
 ```
@@ -187,7 +188,7 @@ The kind of tests we have:
     - the utilities in C++ used in the project,
     - the parser, for bad and correct inputs,
     - the code formatter,
-    - the compiler, IR optimizer and IR compiler,
+    - the compiler, IR optimiser and IR compiler,
     - the language itself via tests written in ArkScript,
     - the error messages generated at compile-time and run-time.
 

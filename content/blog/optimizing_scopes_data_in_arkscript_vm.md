@@ -30,14 +30,14 @@ Recently, I added more benchmarks to the language, and I was quite astonished to
   (set i (+ i 1)) })
 ```
 
-It is also *17 times slower* than Python on the binary tree benchmark. I expected it to be a bit slower, but not by that much! When digging in profiler traces, it appears that we loose about *35% of execution time looking for variables*. This is what inspired me to write this article, how locals are stored in the virtual machine, and what kind of optimizations were applied.
+It is also *17 times slower* than Python on the binary tree benchmark. I expected it to be a bit slower, but not by that much! When digging in profiler traces, it appears that we loose about *35% of execution time looking for variables*. This is what inspired me to write this article, how locals are stored in the virtual machine, and what kind of optimisations were applied.
 
 > [!NOTE]
 > You can see the benchmarks results on this page: [arkscript-lang.dev/benchmarks.html](https://arkscript-lang.dev/benchmarks.html). They are generated from [github.com/ArkScript-lang/benchmarks](https://github.com/ArkScript-lang/benchmarks).
 
 ## Some definitions
 
-> \[A **stack based VM**, such as ArkScript\], is a processor in which the primary interaction is moving short-lived temporary values to and from a push down stack.
+> \[A **stack based VM**, such as ArkScript\], is a processor in which the primary interaction is moving short-lived temporary values to and from a push-down stack.
 {cite="https://en.m.wikipedia.org/wiki/Stack_machine" caption="Wikipedia — Stack machine"}
 
 ArkScript does not use any kind of registers, all computations are done using a stack, so `(1 + 2) * 3` is:
@@ -54,9 +54,9 @@ Variables are stored in a **scope**, and a stack of **scopes** defines the envir
 
 ## Evolution between versions
 
-For the following sections, I inspected the code of each version to see how locals and scopes were handled. Some versions do not change that much and instead have optimizations elsewhere, which I didn't bother checking/measuring since it isn't the main focus of the article.
+For the following sections, I inspected the code of each version to see how locals and scopes were handled. Some versions do not change that much and instead have optimisations elsewhere, which I didn't bother checking/measuring since it isn't the main focus of the article.
 
-Benchmarks are run on the Ackermann-Péter function using [google/benchmark](https://github.com/google/benchmark), because it's a recursive function but not a [primitive recursive function](https://en.wikipedia.org/wiki/Primitive_recursive_function), meaning compilers can't easily optimize it. It grows quickly, creates a lot of scopes and destroys them a lot too, which is perfect for our use case.
+Benchmarks are run on the Ackermann-Péter function using [google/benchmark](https://github.com/google/benchmark), because it's a recursive function but not a [primitive recursive function](https://en.wikipedia.org/wiki/Primitive_recursive_function), meaning compilers can't easily optimise it. It grows quickly, creates a lot of scopes and destroys them a lot too, which is perfect for our use case.
 
 They are run on a M1 MacBook Pro with 10 cores and 32GB of RAM:
 ```
@@ -101,13 +101,13 @@ $ git worktree list
 ~/ArkScript/ark-v4005  6a4c6449 (detached HEAD)
 ```
 
-### Instanciating a bunch of stacks and big empty vectors
+### Instantiating a bunch of stacks and big empty vectors
 
 From version [3.0.1](https://github.com/ArkScript-lang/Ark/tree/v3.0.1) to [3.0.12](https://github.com/ArkScript-lang/Ark/tree/v3.0.12).
 
-The very first version of the VM is using a `Frame` object, instanciated for each scope. I think I stole this idea from Java, though my implementation is subpar and I probably didn't understand everything at the time. Each `Frame` instanciated a new stack for itself, implemented as a `std::vector`, which mean that pushing to it would make grow and copy all of its elements, which is highly inefficient.
+The very first version of the VM is using a `Frame` object, instantiated for each scope. I think I stole this idea from Java, though my implementation is subpar and I probably didn't understand everything at the time. Each `Frame` instantiated a new stack for itself, implemented as a `std::vector`, which mean that pushing to it would make grow and copy all of its elements, which is highly inefficient.
 
-Locals were stored as a `std::shared_ptr<std::vector<Value>>` (`Scope_t`). You read that right, no id. You accessed a specific variable using `locals[variable_id]`. The shared pointer is there because locals could be added by closures, that have to retain their environment, which can be mutated. The stack of scopes was materialized as `std::vector<Scope_t>`.
+Locals were stored as a `std::shared_ptr<std::vector<Value>>` (`Scope_t`). You read that right, no id. You accessed a specific variable using `locals[variable_id]`. The shared pointer is there because locals could be added by closures, that have to retain their environment, which can be mutated. The stack of scopes was materialised as `std::vector<Scope_t>`.
 
 ```cpp
 class Frame
@@ -158,7 +158,7 @@ ackermann                       197 ms          197 ms            4
 
 From version [3.0.13](https://github.com/ArkScript-lang/Ark/tree/v3.0.13) to [3.0.15](https://github.com/ArkScript-lang/Ark/tree/v3.0.15).
 
-The next iteration of locals management introduced the first version of the `Scope`, that we're still using today! They are still instanciated inside shared pointers, but they are way smaller as we do not access a variable through `operator[]`, but iterate through the pairs of `id -> value` instead.
+The next iteration of locals management introduced the first version of the `Scope`, that we're still using today! They are still instantiated inside shared pointers, but they are way smaller as we do not access a variable through `operator[]`, but iterate through the pairs of `id -> value` instead.
 
 ```cpp
 class Scope
@@ -234,7 +234,7 @@ ackermann_push_back             192 ms          192 ms            4
 
 From version [3.1.0](https://github.com/ArkScript-lang/Ark/tree/v3.1.0) to [4.0.0-10](https://github.com/ArkScript-lang/Ark/tree/v4.0.0-10).
 
-In v3.1.0, the `Scope` removed the sorted insert to push everything at the end of its `std::vector<std::pair<id, Value>>`. Also, the horrendous `std::vector<Frame>` was replaced by a `std::unique_ptr<std::array<Value, 8192>>`, which yielded a much needed performance improvement. Instead of having a separate data structure to save the caller page pointer and instruction pointer, we now push those on the stack too (meaning we have a recursion depth of 4096 for non-primary recursive functions, that can't be optimized to loops).
+In v3.1.0, the `Scope` removed the sorted insert to push everything at the end of its `std::vector<std::pair<id, Value>>`. Also, the horrendous `std::vector<Frame>` was replaced by a `std::unique_ptr<std::array<Value, 8192>>`, which yielded a much-needed performance improvement. Instead of having a separate data structure to save the caller page pointer and instruction pointer, we now push those on the stack too (meaning we have a recursion depth of 4096 for non-primary recursive functions, that can't be optimised to loops).
 
 Results:
 ```
@@ -244,7 +244,7 @@ ackermann                       146 ms          146 ms            5
 
 Then, in v3.1.3 the `ExecutionContext` appeared: it's a struct with everything the VM needs to run code (instruction, page and stack pointer, stack, `std::vector<Scope>` for locals...). This has been added to help with adding parallelism to the language, it did not downgrade performances (nor did it improve them).
 
-In later versions, more AST and new IR optimizations were implemented, which helped divide the run time of our benchmark by ~2.4:
+In later versions, more AST and new IR optimisations were implemented, which helped divide the run time of our benchmark by ~2.4:
 
 ```
 Benchmark                         Time             CPU   Iterations
@@ -368,7 +368,7 @@ context.locals.emplace_back(
 );
 ```
 
-As for closures, I had to create a dedicated `ClosureScope`, that was basically the old `Scope`, since the closure needs to have ownership of a scope and now we use views. Merging a `ClosureScope` inside a `Scope` is still doable (so that we can create a scope of references to the closure's fields):
+As for closures, I had to create a dedicated `ClosureScope`, that was basically the old `Scope`, since the closure needs to have ownership of a scope, and now we use views. Merging a `ClosureScope` inside a `Scope` is still doable (so that we can create a scope of references to the closure's fields):
 
 ```cpp
 void ClosureScope::mergeRefInto(ScopeView& other)

@@ -21,9 +21,9 @@ This is done by calling the constructor of the VM, with a reference to an `Ark::
 
 ## Running the VM (and running ArkScript bytecode)
 
-### Initializing the VM
+### Initialising the VM
 
-The first step before running is to initialize the virtual machine state, this is done each time you call `VM::run` to reset its state (stack pointer, stack frame count, shared libs, locals, scopes) and reload the bound functions.
+The first step before running is to initialise the virtual machine state, this is done each time you call `VM::run` to reset its state (stack pointer, stack frame count, shared libs, locals, scopes) and reload the bound functions.
 
 ---
 
@@ -31,7 +31,7 @@ The first step before running is to initialize the virtual machine state, this i
 
 This is the next function called by `VM::run`: `VM::safeRun`. As its name suggests, it runs bytecode in a safe manner, taking care of the potential exceptions. This is by far the longest method (1454 lines at the time writing). It will go through every instruction, running them sequentially, and if an exception is thrown, it will be caught, the exit code of the VM will be set to 1, and a backtrace will be displayed.
 
-Additionally, computed gotos are used here as an optimization, on compilers that support it (Clang and GCC). On other compilers, a normal loop with a switch case is used.
+Additionally, computed gotos are used here as an optimisation, on compilers that support it (Clang and GCC). On other compilers, a normal loop with a switch case is used.
 
 ---
 

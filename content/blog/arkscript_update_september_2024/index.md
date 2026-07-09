@@ -10,7 +10,7 @@ homepage: false
 
 Hello, General Kenobii!
 
-In the last 90 days, 795 files have been modified, for 3105 insertions and 9135 deletions (dataset cleanup for fuzzers), in just 97 commits (I'm reworking the very last one, more on that soon).
+In the last 90 days, 795 files have been modified, for 3105 insertions and 9135 deletions (dataset clean-up for fuzzers), in just 97 commits (I'm reworking the very last one, more on that soon).
 
 ## Did someone say... macros?
 
@@ -57,7 +57,7 @@ The more attentive will have noticed two things: “name and scope resolver” a
 
 I've recently broken down the compiler into a series of passes, each of which takes an AST and outputs an AST (except for the parser, which takes a file and outputs an AST, and the compiler, which takes an AST and outputs bytecode), and a new one has appeared, taken out of the compiler: a name and scope resolver.
 
-It checks that you're only using *declared* and *valid* variables (you can't name a variable “print” or any other builtin), and suggests alternatives in error messages if necessary (eg fog -> foo?) based on existing variables and a Leveinshtein distance. Scope resolution can detect *unbound* variables, which exist later and are referenced before they are used.
+It checks that you're only using *declared* and *valid* variables (you can't name a variable “print” or any other builtin), and suggests alternatives in error messages if necessary (e.g. `fog -> foo?`) based on existing variables and a Levenshtein distance. Scope resolution can detect *unbound* variables, which exist later and are referenced before they are used.
 
 ### More tooling
 
@@ -71,7 +71,7 @@ Current coverage is [73%](https://coveralls.io/github/ArkScript-lang/Ark). Not b
 
 ### Formatting code
 
-As the ArkScript code formatter has become more stable, we now have a [github action](https://github.com/ArkScript-lang/action-format) to check that code is formatted correctly in the CI.
+As the ArkScript code formatter has become more stable, we now have a [GitHub action](https://github.com/ArkScript-lang/action-format) to check that code is formatted correctly in the CI.
 
 ## Still fewer bugs?
 
@@ -84,7 +84,7 @@ The good news is that, thanks to fuzzing, I've been able to fix a whole host of 
 
 ## Final words
 
-I'm currently working on a small optimization (guided by numerous benchmarks and much skepticism), **computed goto** in the virtual machine. At the moment, I'm seeing a 10% performance gain on the most demanding tests, still on the same machine (MacBook Pro M1, 8 cores).
+I'm currently working on a small optimisation (guided by numerous benchmarks and much scepticism), **computed goto** in the virtual machine. At the moment, I'm seeing a 10% performance gain on the most demanding tests, still on the same machine (MacBook Pro M1, 8 cores).
 
 ![Registered tasks](notion-tasks.png)
 

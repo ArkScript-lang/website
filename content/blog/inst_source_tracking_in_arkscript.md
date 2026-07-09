@@ -8,17 +8,17 @@ pinned: false
 homepage: false
 ---
 
-Good error reporting is crucial in programming languages. Doing it at compile time was easy in ArkScript as we have all the context we need at hand, but since we compile code down to bytecode, which is then run by the virtual machine, we loose a lot of context: the source files, their path, their content, we don't have that anymore! Our runtime errors could only show the VM internal state. This article is about how it all changed.
+Good error reporting is crucial in programming languages. Doing it at compile time was easy in ArkScript as we have all the context we need at hand, but since we compile code down to bytecode, which is then run by the virtual machine, we loose a lot of context: the source files, their path, their content, we don't have that any more! Our runtime errors could only show the VM internal state. This article is about how it all changed.
 
 ## Multiple solutions
 
-I went to the drawing board, and three solutions presented themselve to me:
+I went to the drawing board, and three solutions presented themselves to me:
 
 1. create a source location table in the bytecode, mapping an instruction to a file and line ;
 2. emit special instructions that would be skipped by the VM, and used only when the VM crashed, backtracking to find the nearest `SOURCE` instruction ;
 3. extend the size of instructions to 8 bytes and use the 4 new bytes to track the source file (eg 2 bytes for an identifier) and line (2 bytes for the line seemed enough to track 64k+ lines files) ;
 
-The second one was off the table pretty quickly, because I had a hunch it would hinder performances too much to my liking. It would also disrupt the IR optimizer, and I would have had to detect more instruction patterns as `SOURCE` instructions could be interleaved with optimizable instructions.
+The second one was off the table pretty quickly, because I had a hunch it would hinder performances too much to my liking. It would also disrupt the IR optimiser, and I would have had to detect more instruction patterns as `SOURCE` instructions could be interleaved with optimisable instructions.
 
 The third solution felt like a lot of work for a small gain, as it would be used only when handling errors. It would also double the size of the bytecode files, and lock the future evolutions of the VM as I wouldn't be able to use those additional 4 bytes for anything else.
 
@@ -31,7 +31,7 @@ As you might have guessed, I went with the first solution.
 
 The source location data is added to each AST node by the parser, and the last compiler pass that can access the AST is the AST lowerer, whose job is to generate the IR, hence it felt logical to add two fields, `source_file` and `source_line` to the `IR::Entity` structure.
 
-Bonus point: using this source tracking solution, there are (*nearly*) 0 modifications on the IR Optimizer! *Nearly 0*, because I had to add source location to each optimized IR entity from the compacted IR entities.
+Bonus point: using this source tracking solution, there are (*nearly*) 0 modifications on the IR Optimizer! *Nearly 0*, because I had to add source location to each optimised IR entity from the compacted IR entities.
 
 ### Which instruction should we track?
 

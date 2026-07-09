@@ -33,11 +33,11 @@ You will need to install [Hugo](https://gohugo.io), version 0.145.0, to be able 
 npm run dev  # launches a server at http://localhost:1313
 ```
 
-## Coloring ArkScript code
+## Colouring ArkScript code
 
-We can not use the \`\`\` syntax, as [Hugo](https://gohugo.io/) relies on [Chroma](https://github.com/alecthomas/chroma), and we would have to patch Chroma, then wait for Hugo to pickup the update.
+We can not use the \`\`\` syntax, as [Hugo](https://gohugo.io/) relies on [Chroma](https://github.com/alecthomas/chroma), and we would have to patch Chroma, then wait for Hugo to pick up the update.
 
-An homemade shortcode can instead be used, nearly in the same way:
+A homemade shortcode can instead be used, nearly in the same way:
 
 ```markdown
 {{</* highlight_arkscript */>}}

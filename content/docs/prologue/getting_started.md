@@ -19,7 +19,7 @@ aliases:
 - Portable, compile once and run your bytecode anywhere,
 - Homoiconic via its macro processor,
 
-{{< details "Can use `async` on any function (no more [colored function](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/))" >}}
+{{< details "Can use `async` on any function (no more [coloured function](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/))" >}}
 
 {{< highlight_arkscript >}}
 (import std.List)
@@ -43,8 +43,8 @@ aliases:
 
 {{< /details >}}
 
-{{< details "Has tail call optimization" >}}
-So that recursive functions calls are optimized as best as possible, to help enforce a functional style.
+{{< details "Has tail call optimisation" >}}
+So that recursive functions calls are optimised as best as possible, to help enforce a functional style.
 {{< /details >}}
 
 {{< details "Designed to help you code better and find your errors quickly" >}}
@@ -69,7 +69,7 @@ You will want to learn the language first: [Learning ArkScript](/docs/tutorials/
 Then you can experiment with either:
 
 - [try the online playground](https://playground.arkscript-lang.dev), so that you don't have to install anything,
-- [use Docker](/docs/prologue/building#using-docker), to avoid clutering your computer with dependencies and compilers,
+- [use Docker](/docs/prologue/building#using-docker), to avoid cluttering your computer with dependencies and compilers,
 - or [install it on your machine](/docs/prologue/building#installing-from-a-release) via one of our releases. You can quickly try code using [the REPL](/docs/reference/repl)
 
 ## I want to contribute!
@@ -80,4 +80,4 @@ Everyone is welcome to contribute to the project, as long as you are respectful 
 
 I (Lexy Plateau) am working pretty much alone on this project, and I try to do my best to leave it as bug free and as performant as possible. However, this is a side project for which I'm currently **not paid** to work on, thus I can't fix every bug or address every feature request in a timely manner.
 
-Please reach out either by email (lexplt.dev@gmail.com) or via a [discussion](https://github.com/orgs/ArkScript-lang/discussions) before using the language in a company project, so that we can set up a support contract. If you don't want to set up a contract, your issues and support requests won't be prioritized (and possibly left unanswered).
+Please reach out either by email (lexplt.dev@gmail.com) or via a [discussion](https://github.com/orgs/ArkScript-lang/discussions) before using the language in a company project, so that we can set up a support contract. If you don't want to set up a contract, your issues and support requests won't be prioritised (and possibly left unanswered).

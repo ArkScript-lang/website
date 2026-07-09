@@ -53,7 +53,7 @@ target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
 
 ## Using ArkScript
 
-An example is often worth a thousands words:
+An example is often worth a thousand words:
 ```cpp
 #include <Ark/Ark.hpp>
 

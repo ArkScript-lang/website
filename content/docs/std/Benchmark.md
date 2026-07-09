@@ -39,7 +39,7 @@ Benchmark some given code by running it a given number of times, and print a rep
 **Author**: [@SuperFola](https://github.com/SuperFola)
 
 #### Parameters
-- `code`: code to run, eg. a function call
+- `code`: code to run, e.g. a function call
 - `times`: number of times to run the code
 
 

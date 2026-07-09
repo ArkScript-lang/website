@@ -23,12 +23,12 @@ The compiler is divided in multiple passes, which are executed one after another
 - the import solver, calling the parser as many times as needed to get all the files AST's and piecing them together
 - the macro processor, applying macros in the AST
 - the name resolver, resolving packages
-- the optimizer, removing unused symbols from the AST
+- the optimiser, removing unused symbols from the AST
 - the AST lowerer, generating IR from the AST
-- the IR optimizer, enhancing the IR by replacing common IR entities groups with super instructions where possible
+- the IR optimiser, enhancing the IR by replacing common IR entities groups with super instructions where possible
 - the IR compiler, generating bytecode from IR
 
-There exists another compiler, the json compiler, converting a given code to JSON by iterating through the AST. It follows the same process as the compiler to generate the AST.
+There exists another compiler, the JSON compiler, converting a given code to JSON by iterating through the AST. It follows the same process as the compiler to generate the AST.
 
 ## Parser
 
@@ -73,19 +73,19 @@ Once it is done running, every macro definition and macro usage in the AST has b
 
 Once macros have been processed, the name resolver visits the AST and updates each symbol, to fully qualify it.
 
-Fully qualifying a symbol means finding the nearest namespace in which a symbol is declared ; in our input AST we have `(let foo 5)`, in the final AST we will have `(let package:foo 5)` or even `(let package:foo#hidden 5)` in the case of symbols that should be available but masked as they weren't explicitly imported (eg. `(import foo :bar)`, all symbols from the package `foo` are imported and suffixed with `#hidden`, and `bar` is imported as-is).
+Fully qualifying a symbol means finding the nearest namespace in which a symbol is declared ; in our input AST we have `(let foo 5)`, in the final AST we will have `(let package:foo 5)` or even `(let package:foo#hidden 5)` in the case of symbols that should be available but masked as they weren't explicitly imported (e.g. `(import foo :bar)`, all symbols from the package `foo` are imported and suffixed with `#hidden`, and `bar` is imported as-is).
 
 ## AST Optimizer
 
-Before we can compile the AST to IR and then bytecode, we can optimize it a bit, by removing unused variable definitions.
+Before we can compile the AST to IR and then bytecode, we can optimise it a bit, by removing unused variable definitions.
 
-For simple variables, like `(let a 12)`, this isn't really a problem if we leave them, but for functions it would create separate pages of bytecode for them, and the resulting bytecode would be a lot longer than just a variable declaration and assignment. Having a long bytecode isn't a problem in term of computing power, as we are only computing what we are asked to, but we are limited to 65'535 functions as our code segment indexes are on 2 bytes (and page 0 is for the global scope), and we are limited to 65'536 different symbols (and values). Those symbols and values could be used only in those functions we want to delete, and use substantial space in the symbols and values table.
+For simple variables, like `(let a 12)`, this isn't really a problem if we leave them, but for functions it would create separate pages of bytecode for them, and the resulting bytecode would be a lot longer than just a variable declaration and assignment. Having a long bytecode isn't a problem in terms of computing power, as we are only computing what we are asked to, but we are limited to 65'535 functions as our code segment indexes are on 2 bytes (and page 0 is for the global scope), and we are limited to 65'536 different symbols (and values). Those symbols and values could be used only in those functions we want to delete, and use substantial space in the symbols and values table.
 
 So here comes the **AST optimizer**, reading only the first level of the AST, searching for variables and functions definition. Then, it visits the whole AST, counting how many times each gathered symbol has been used. In the end, if a symbol has been used only once (it correspond to its definition/declaration), then it gets removed from the AST.
 
 ## AST Lowerer
 
-The AST Lowerer's role is to take a tree-like structure, the AST, and flatten it, lowering it to IR that will be linear and closely ressemble the final bytecode. We need this intermediate step of generating IR so that we can optimize the generated instructions while keeping the most information possible, to correctly apply our optimizations.
+The AST Lowerer's role is to take a tree-like structure, the AST, and flatten it, lowering it to IR that will be linear and closely resemble the final bytecode. We need this intermediate step of generating IR so that we can optimise the generated instructions while keeping the most information possible, to correctly apply our optimisations.
 
 First step is to run through the AST, running each node in the `ASTLowerer::compileExpression` recursive method, in charge of generating the IR.
 
@@ -96,13 +96,13 @@ Given an input node, we make a decision based on its type (`ASTLowerer::compileE
 - if it's a symbol we will compile it to a `LOAD_SYMBOL <symbol>` (or `LOAD_SYMBOL_BY_INDEX <index>` if the symbol is in the current scope and can be accessed by its index in the scope stack)
 - "get field operation", `GET_FIELD <symbol>`
 - String, Number or nil, we push the value on the stack with `LOAD_CONST <const>`
-    - an additional step is done here to avoid pushing the value on the stack **if** the value isn't being used (eg in a function call, variable assignment)
+    - an additional step is done here to avoid pushing the value on the stack **if** the value isn't being used (e.g. in a function call, variable assignment)
 - Keywords:
-    - If: first we compile the condition, then add a jump if true to go to the `ifTrue` branch. We compile the `ifFalse` branch, add a jump to the end of the if, and finally we compile the `ifTrue` branch.
+    - If: first we compile the condition, then add a jump if true to go to the `ifTrue` branch. We compile the `ifFalse` branch, add a jump to the end of the `if`, and finally we compile the `ifTrue` branch.
     - Let, Mut, Set: we register the symbol, compile the value, add the corresponding instruction after it: `LET`, `MUT`, `STORE`
     - Fun: we start by checking if the function is a closure (has any Capture nodes) and emplace `CAPTURE` instructions in the callee page. Then we create a new page, dedicated to the function. If it's a closure, we'll add a `MAKE_CLOSURE` instruction instead of a `LOAD_CONST` to the callee page. Arguments are loaded by the function with series of `STORE` instructions, in the order the arguments appear. Then we compile the body of the function, marking it as used and terminal.
-    - Begin: we take each node and compile them. An additional step is done here, to remove any unused value, except for the last node whose fate is decided by the caller (so that we don't always drop the last node in a begin, which may be the return value of a function).
-    - While: much like the if, we compile the condition, add a jump to the end of the while if the condition is false, compile the body and add a jump to the beginning (right before the condition).
+    - Begin: we take each node and compile them. An additional step is done here, to remove any unused value, except for the last node whose fate is decided by the caller (so that we don't always drop the last node in a `begin`, which may be the return value of a function).
+    - While: much like the `if`, we compile the condition, add a jump to the end of the while if the condition is false, compile the body and add a jump to the beginning (right before the condition).
     - Import: this is used only to import modules at runtime, we put the module name (a string) on the stack and then the `IMPORT` instruction. The VM will do what's needed for us.
     - Del: this adds `DEL <symbol>` to the bytecode, to tell the virtual machine to remove `<symbol>` from memory.
 - if none the previous cases matched, then we most likely have a function call (`ASTLowerer::handleCalls`)
@@ -126,7 +126,7 @@ If no rules matched, no instructions were merged. Otherwise, the group of instru
 
 ## IR Compiler
 
-The **IR Compiler** takes optimized blocks of IR, with the symbol and value tables, and transform it into bytecode for the **virtual machine**. Its role is also to compute the jumps' positions from the labels in the IR blocks.
+The **IR Compiler** takes optimised blocks of IR, with the symbol and value tables, and transform it into bytecode for the **virtual machine**. Its role is also to compute the jumps' positions from the labels in the IR blocks.
 
 - The first step is to generate the file header: the string `ark\0`, followed by the version of the compiler (each number on two bytes), and then the timestamp (`IRCompiler::pushFileHeader`).
 - We can continue to build our bytecode file header, with the symbol and the value tables, respectively for a list of identifiers used throughout the program, and for all the values used (a tag-value system is used here so that the VM knows what type the value is) (`IRCompiler::pushSymAndValTables`).

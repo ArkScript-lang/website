@@ -41,7 +41,7 @@ All the compiler passes are located under `include/Ark/Compiler/`.
 - the Welder calls the Name Resolver on the Macro Processor final's AST, to resolve names, prefixes and packages. It also checks for undefined symbols, constness violations and constant redefinitions
 - the Welder calls the AST optimizer on the Name Resolver's AST to remove dead code
 - the Compiler generates IR for the IR Optimizer from the modified AST
-- the IR Optimizer replaces some groups of 2 or more instructions with super instructions (one instruction doing specialized work)
+- the IR Optimizer replaces some groups of 2 or more instructions with super instructions (one instruction doing specialised work)
 - the IR Compiler compiles the modified IR to bytecode, which can be used as is by the virtual machine, or be saved to a file
 
 For more details on how it works, see [the implementation details](/docs/reference/architecture/compiler).
@@ -56,7 +56,7 @@ It lies under `include/Ark/VM/` and all the folders under it.
 
 - it handles the Closures which capture whole Scopes through `shared_ptr`. Closures are functions with a saved scope, so they can retain information over multiple calls
 - the Plugin loader is a generic DLL / SO / DYNLIB loader, used by the virtual machine to load ArkScript modules (`.arkm` files)
-- the Scope is how we store our mapping `variable id => value`, heavily optimized for our needs. It is backed by a single `std::array<Value, ScopeStackSize>`, so that all scopes are contiguous in memory
+- the Scope is how we store our mapping `variable id => value`, heavily optimised for our needs. It is backed by a single `std::array<Value, ScopeStackSize>`, so that all scopes are contiguous in memory
 - the State is:
    - reading bytecode
    - decoding it (via the BytecodeReader)

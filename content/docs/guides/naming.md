@@ -42,7 +42,7 @@ Example:
 
 **Boolean test**: if a function only returns a boolean, it should be suffixed with `?`. Eg `even?` instead of `isEven`, `even`, `maybeEven`, `checkIfEven`.
 
-**Mutation**: if a function does explicit mutation of a state (eg in a closure) instead of returning a new value and being pure, it should be suffixed with `!`, eg `append!` for in place mutations on lists.
+**Mutation**: if a function does explicit mutation of a state (e.g. in a closure) instead of returning a new value and being pure, it should be suffixed with `!`, e.g. `append!` for in place mutations on lists.
 
 ### Modules (C++)
 

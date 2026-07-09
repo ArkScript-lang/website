@@ -137,7 +137,7 @@ for (auto value : container)
 for (const auto& value : container)
 for (auto&& value : container)
 ```
-* For-loops should be optimized whenever possible, as follows:
+* For-loops should be optimised whenever possible, as follows:
 ```cpp
 // AVOID THIS
 for (std::size_t i = 0; i < container.size(); ++i)

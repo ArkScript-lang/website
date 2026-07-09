@@ -75,7 +75,7 @@ Then, run `cmake . -Bbuild`, and build your module with `cmake --build build`. I
 
 ### Storing values in a C++ module
 
-Lets say you are making a module to handle a window (to draw on it). You will open it with the API for your system, for example the WinAPI, and get an handle to it. Now you want to be able to modify this window in ArkScript, the solution is simple: creating an UserType holding your handle, and then getting this user type back in your functions and playing with the handle.
+Let's say you are making a module to handle a window (to draw on it). You will open it with the API for your system, for example the WinAPI, and get a handle to it. Now you want to be able to modify this window in ArkScript, the solution is simple: creating an UserType holding your handle, and then getting this user type back in your functions and playing with the handle.
 
 If you try this as is, it won't work. Or at least, it won't work for more than a function call, because the UserType doesn't become the *owner of the handle*, it only holds a view (observer pointer) to your resource. That means your resource must continue to live on its own in your module. Because it's a dynamic library, making a global and storing your handle in it will be complicated and in a lot of cases it won't work at all.
 
@@ -114,7 +114,7 @@ Ark::Value create_window_handle([[maybe_unused]] std::vector<Ark::Value>& args, 
 
 There is a lot of things to unpack here.
 
-First, we have a function returning a reference to a static object, which will get initialized only once, even if we call the function a thousand times. Great, we solved the lifetime problem!
+First, we have a function returning a reference to a static object, which will get initialised only once, even if we call the function a thousand times. Great, we solved the lifetime problem!
 
 Then, we have a `get_cfs_window` functions. *cfs* is the abbreviation for *control functions* in ArkScript, they are designed as a shared block of function pointers to handle an object in ArkScript (how to display it on the screen, how to delete it once the memory needs to be fred...)
 

@@ -25,10 +25,10 @@ I specifically said the `dev` branch, because a little new one has appeared, aim
 - conversion of closures into strings with their fields,
 - addition of async/await as builtins,
 - management of unused expressions that polluted the stack (which I mentioned in the previous post, available in 3.2.0),
-- tail call optimization (3.2.0) when a function calls itself (will be generalized in 4.0),
+- tail call optimisation (3.2.0) when a function calls itself (will be generalised in 4.0),
 - lots of fixes for annoying little bugs.
 
-The work done since last year can be seen as clean-up and a bit of house keeping, as the vacations have arrived for part of the team, development is slowing down a little. However, we're planning some brilliant improvements for the rest of the year, including the generation of an AST in JSON form (useful for making an LSP, writing tests for the lexer/parser/optimizer/macro processor, for having a new backend that transpiles into WASM or other...), fuzzing to detect as many errors as possible in the language's implementation.
+The work done since last year can be seen as clean-up and a bit of housekeeping, as the holidays have arrived for part of the team, development is slowing down a little. However, we're planning some brilliant improvements for the rest of the year, including the generation of an AST in JSON form (useful for making an LSP, writing tests for the lexer/parser/optimiser/macro processor, for having a new backend that transpiles into WASM or other...), fuzzing to detect as many errors as possible in the language's implementation.
 
 ```lisp
 (let size 1000)

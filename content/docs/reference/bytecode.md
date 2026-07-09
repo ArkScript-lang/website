@@ -98,13 +98,13 @@ The other builtins are listed in [src/arkreactor/Builtins/Builtins.cpp](https://
 The stack is used for passing temporary values around, for example the arguments of a function. On the other end the locals are there to store long term values, the variables.
 They are stored in a LIFO stack and should be referenced by their identifier (index in the symbols table, also used by instructions like `LOAD_SYMBOL`).
 
-The locals are backed by a `std::array<ScopeView::pair_t, ScopeStackSize>`, and accessed through `ScopeView`, which allows locals to be contiguous, (instead of having a `std::vector<std::vector<pair_t>>`). This allows us to have a specialized instruction `LOAD_SYMBOL_BY_INDEX` to load a local by its distance to the top of the locals stack (0 means the last local, 1 means the previous one, 2 the penultimate...).
+The locals are backed by a `std::array<ScopeView::pair_t, ScopeStackSize>`, and accessed through `ScopeView`, which allows locals to be contiguous, (instead of having a `std::vector<std::vector<pair_t>>`). This allows us to have a specialised instruction `LOAD_SYMBOL_BY_INDEX` to load a local by its distance to the top of the locals stack (0 means the last local, 1 means the previous one, 2 the penultimate...).
 
 ![Scopes](/images/scopes.png)
 
 ## Function calling convention
 
-If we want to call a function `foo`, eg by writing `(foo 1 2 3)`, the function will be evaluated and pushed first, then the arguments will be pushed in the order they appear on the stack, because functions load their arguments in the reverse order they are defined.
+If we want to call a function `foo`, e.g. by writing `(foo 1 2 3)`, the function will be evaluated and pushed first, then the arguments will be pushed in the order they appear on the stack, because functions load their arguments in the reverse order they are defined.
 
 In the expression `(foo 1 2 3)`, we would first push foo, then 1, then 2, and finally 3. In the end, our stack looks like this:
 

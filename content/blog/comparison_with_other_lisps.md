@@ -21,7 +21,7 @@ Let's see how ArkScript differs from other Lisp.
 
 ## Paradigms supported
 
-ArkScript tries to be functional, by providing all the tools needed to the user to be used as a functional language. However it still supports imperative programming, and its standard library makes heavy use of it, where it can improve performances.
+ArkScript tries to be functional, by providing all the tools needed to the user to be used as a functional language. However, it still supports imperative programming, and its standard library makes heavy use of it, where it can improve performances.
 
 Common Lisp supports functional programming, while also allowing mutable state and imperative programming like ArkScript, while Clojure strongly encourages (sometimes insists) that you program in a functional way.
 
@@ -69,7 +69,7 @@ In ArkScript, we use the keyword `fun` and [ArkDoc](/docs/reference/arkdoc) to d
   (* x x)))
 {{< /highlight_arkscript >}}
 
-ArkScript has tail call optimizations but no first-class continuation support, Clojure has no TCO (due to compiling for the JVM) and no first-class continuation support either.
+ArkScript has tail call optimisations but no first-class continuation support, Clojure has no TCO (due to compiling for the JVM) and no first-class continuation support either.
 
 However, both languages support continuation-passing-style since they both support anonymous functions.
 
@@ -175,7 +175,7 @@ Creating a closure in ArkScript is as easy as creating a function and explicitly
 
 (print bob)  # (.name=Bob .code=14)
 (if (= 14 bob.code)
-  (print "ok"))
+  (print "OK"))
 {{< /highlight_arkscript >}}
 
 One can create a semblance of object system using closures, [but closures are a poor man's object](https://wiki.c2.com/?ClosuresAndObjectsAreEquivalent=).

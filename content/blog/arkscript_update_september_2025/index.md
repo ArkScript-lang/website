@@ -10,7 +10,7 @@ homepage: false
 
 {{< highlight_scripts >}}
 
-Since my [last update post]({{< ref "/blog/arkscript_update_june_2025/index.md" >}}), there was a total of 127 new commits, 402 files changed, 4782 insertions, and 2798 deletions. There was a lot of refactoring to make the project cleaner, a new `Dict` datatype, a ton of new tests that helped fix bugs, better position tracking for nodes in the parser, and a few more super instructions for optimization purposes!
+Since my [last update post]({{< ref "/blog/arkscript_update_june_2025/index.md" >}}), there was a total of 127 new commits, 402 files changed, 4782 insertions, and 2798 deletions. There was a lot of refactoring to make the project cleaner, a new `Dict` datatype, a ton of new tests that helped fix bugs, better position tracking for nodes in the parser, and a few more super instructions for optimisation purposes!
 
 ## Dictionaries
 
@@ -38,13 +38,13 @@ There are a lot more way to play with dictionaries, check them out [in the docum
 
 Nowadays, pretty much all new instructions are added for performance reasons, and the new ones are no exception.
 
-Recursive non-tail calls used to refer themselve by name, performing a variable lookup (which was already optimized by adding the variable and its value in the scope of the function). This has been optimized further with an instruction that retrieves the page address of the current page (`GET_CURRENT_PAGE_ADDRESS`), and a super instruction (`CALL_CURRENT_PAGE`) that get the current page and calls it in a single go:
+Recursive non-tail calls used to refer themselves by name, performing a variable lookup (which was already optimised by adding the variable and its value in the scope of the function). This has been optimised further with an instruction that retrieves the page address of the current page (`GET_CURRENT_PAGE_ADDRESS`), and a super instruction (`CALL_CURRENT_PAGE`) that get the current page and calls it in a single go:
 
 ![An 11% performance improvement on codpseed.io](perf_current_page_addr.png)
 
 Some new list related super-instructions:
 
-- `STORE_LEN`, to optimize a `(let var (len container))` down to a single instruction
+- `STORE_LEN`, to optimise a `(let var (len container))` down to a single instruction
 - `LT_LEN_SYM_JUMP_IF_FALSE` to optimize `(while (< i (len container)) {...})`
 
 ![A 4.02% performance improvement](perf_lt_len_sym_jump.png)
@@ -83,7 +83,7 @@ Resolving an unprefixed name could use a prefixed import resolution even though 
 (forEach "hello world" (fun (e) (print e)))
 {{< /highlight_arkscript >}}
 
-But invert the import order and it worked:
+But invert the import order, and it worked:
 {{< highlight_arkscript >}}
 (import std.List :forEach)
 (import std.Dict)
@@ -91,13 +91,13 @@ But invert the import order and it worked:
 (forEach "hello world" (fun (e) (print e)))
 {{< /highlight_arkscript >}}
 
-This was a bug in the name resolution, allowing non-qualified names outside a package to be fully qualified using the package prefix if the name existed inside said package.
+This was a bug in the name resolution, allowing nonqualified names outside a package to be fully qualified using the package prefix if the name existed inside said package.
 
 ## More bugs fixed
 
 - the backtrace generation could be stuck in infinite loops ;
 - loading a module was breaking symbol indices used by `LOAD_SYMBOL_BY_INDEX`, and always putting the module's symbols in the global scope (thus potentially erasing the next scope(s)'s variables!) ;
-- `DECREMENT_STORE` super instruction couldn't be emitted (and thus `(set i (- i 1))` couldn't be optimized) due to a bad check on the symbol id ;
+- `DECREMENT_STORE` super instruction couldn't be emitted (and thus `(set i (- i 1))` couldn't be optimised) due to a bad check on the symbol id ;
 
 ## Misc
 

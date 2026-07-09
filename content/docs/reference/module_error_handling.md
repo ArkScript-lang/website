@@ -30,7 +30,7 @@ We should use `n.size()` (n the vector of arguments passed to the module's funct
 
 The message needs to be as follows: `function name need <argument count>, <description of each of the argument>`.
 
-Example for the function `(console:color "red")`, taking a string to change the color of the text in the terminal:
+Example for the function `(console:color "red")`, taking a string to change the colour of the text in the terminal:
 
 ```cpp
 if (n.size() != 1)

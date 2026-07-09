@@ -25,7 +25,7 @@ seo:
 3. Update the `CHANGELOG.md` to name the current version and add the date of the day: `## [X.Y.Z] - YYYY-MM-DD`
 4. Create a tag on the CLI: `git tag vX.Y.Z && git push --tags`
 5. This will trigger the `release.yml` workflow on **ArkScript-lang/Ark**, which will:
-    - create binaries for Linux, MacOS, and Windows
+    - create binaries for Linux, macOS, and Windows
     - create an InnoSetup installer for Windows
     - create a draft release with the release notes from the changelog
 6. Publish the release as **latest** and create a discussion for it in **Show and tell**

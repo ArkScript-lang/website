@@ -15,9 +15,9 @@ You will find a collections of useful resources to get started, whatever you wou
 
 Don't know what to work on? No worries, we have a [list of things to do](https://github.com/ArkScript-lang/Ark/issues)!
 
-## The project organization
+## The project organisation
 
-The project is organized in multiple repositories for us to be able to work on a project (eg the standard library) and update it multiple times without having to roll X different updates for the main repository, the language itself.
+The project is organised in multiple repositories for us to be able to work on a project (e.g. the standard library) and update it multiple times without having to roll X different updates for the main repository, the language itself.
 
 - [ArkScript](https://github.com/ArkScript-lang/Ark), the language
     - [The standard library](https://github.com/ArkScript-lang/std)

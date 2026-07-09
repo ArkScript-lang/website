@@ -53,7 +53,7 @@ The following three keywords are important when talking about variables:
 
 (mut b [12 42 64])  # mutable variable
 (mut b "hello")  # no problem, the operation is allowed
-(set b "ArkScript is cool!")  # no problem, operation is allowed on mutables
+(set b "ArkScript is cool!")  # no problem, operation is allowed on mutable variables
 
 (let d (set b 13))  # b is 13 and d is 13 too
 {{< /highlight_arkscript >}}
@@ -108,7 +108,7 @@ Multiple blocks can be put into one by using the **begin construction**:
 
 ## Basic Input/Output
 
-User interactions are a must have in a programming language. To achieve such interaction in a shell (the big black windows where our code is running), we have what we call *IO* or *input/output*, through `print` and `input`. One can write text to the shell, the other can prompt the user and retrieve what they wrote after pressing `Enter`.
+User interactions are a must-have in a programming language. To achieve such interaction in a shell (the big black windows where our code is running), we have what we call *IO* or *input/output*, through `print` and `input`. One can write text to the shell, the other can prompt the user and retrieve what they wrote after pressing `Enter`.
 
 **Example:** `(print "hello" " world")`, will print `hello world`.
 
@@ -151,7 +151,7 @@ The `else` block is optional.
   (print "a is < 12 AND b is > 14"))
 {{< /highlight_arkscript >}}
 
-The then and the else parts can be composed of multiple functions by using the begin construction.
+The then and the else parts can be composed of multiple functions by using the `begin` construction.
 
 ## Loops
 
@@ -180,9 +180,9 @@ Loops in ArkScript are created by using the keyword `while`, they create their o
 
 ## Functions
 
-Functions are a tool to factorize code, to follow the DRY (don't repeat yourself) principle. Who would want to write 10 times the same 100 lines when they can use a function and call it 10 times inside a loop?
+Functions are a tool to factorise code, to follow the DRY (don't repeat yourself) principle. Who would want to write 10 times the same 100 lines when they can use a function and call it 10 times inside a loop?
 
-**Note:** ArkScript was particularly optimized to deal with function using few arguments (between 0 and 3, included), thus encouraging code reuse and code split into functions.
+**Note:** ArkScript was particularly optimised to deal with function using few arguments (between 0 and 3, included), thus encouraging code reuse and code split into functions.
 
 A function is composed of 2 parts: the argument list and the body:
 
@@ -218,7 +218,7 @@ Arguments can bear attributes, like `mut` to allow modifying the copy passed to 
   nil }))
 
 (let bar (fun (lst (mut a)) {
-  (set a (math:min a (len lst)))  # `a` is mutable, this is ok!
+  (set a (math:min a (len lst)))  # `a` is mutable, this is OK!
   # ...
   nil }))
 
@@ -227,7 +227,7 @@ Arguments can bear attributes, like `mut` to allow modifying the copy passed to 
 # val is still 6
 {{< /highlight_arkscript >}}
 
-We can also mark arguments as `ref` to avoid copying variables when calling a function (values are not affected). `ref` arguments are still read-only. This is meant as an optimization when working on big chunks of data.
+We can also mark arguments as `ref` to avoid copying variables when calling a function (values are not affected). `ref` arguments are still read-only. This is meant as an optimisation when working on big chunks of data.
 
 {{< highlight_arkscript >}}
 (let forEach (fun (lst) {
@@ -373,7 +373,7 @@ You can also import a selection of variables and functions by their name:
 
 ### Modules resolution
 
-When importing a `.arkm` module, you need to keep in mind that those are looked up **at runtime**, not compile time. Thus, their path must not change between compilation and execution (eg if you ship your project to a friend, you will need to ship the modules too). It's easier to have them in the the standard library, to import them with `(import std.my-module)`, or along your main script (in the same folder).
+When importing a `.arkm` module, you need to keep in mind that those are looked up **at runtime**, not compile time. Thus, their path must not change between compilation and execution (e.g. if you ship your project to a friend, you will need to ship the modules too). It's easier to have them in the standard library, to import them with `(import std.my-module)`, or along your main script (in the same folder).
 
 ### Standard library resolution
 
@@ -444,7 +444,7 @@ They can be undefined by using `($undef name)`.
   (print a)    # 1
 
   ($undef a)
-  (print a) }  # 12, because we undefined the nearest version of a
+  (print a) }  # 12, because we removed the definition the nearest version of a
 
 (print a)  # a is still 12 here
 {{< /highlight_arkscript >}}
