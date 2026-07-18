@@ -3,8 +3,8 @@ title: "Datetime"
 slug: "datetime"
 description: ""
 summary: ""
-date: 2026-07-09T11:08:49+02:00
-lastmod: 2026-07-09T11:08:49+02:00
+date: 2026-07-18T13:54:54+02:00
+lastmod: 2026-07-18T13:54:54+02:00
 draft: false
 weight: 410
 toc: true
@@ -403,6 +403,52 @@ Put a given timestamp at the start of the day, at 00H 00M 00.000s
 `(let atEndOfDay (fun (_time) (...)))`
 Put a given timestamp at the end of the day, at 23H 59M 59.999s
 
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_time`: Number, timestamp
+
+
+
+## atDay
+
+---
+`(let atDay (fun (_time _day) (...)))`
+Put a given timestamp at a specific day in a month
+
+**Note**: Hours, minutes, seconds and milliseconds are untouched
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_time`: Number, timestamp
+- `_day`: Number, day number (between 1 and the last day of the given month (could be 28, 29, 30 or 31))
+
+
+
+## atFirstDayOfMonth
+
+---
+`(let atFirstDayOfMonth (fun (_time) (...)))`
+Put a given timestamp at the first day of the month
+
+**Note**: Hours, minutes, seconds and milliseconds are untouched
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `_time`: Number, timestamp
+
+
+
+## atLastDayOfMonth
+
+---
+`(let atLastDayOfMonth (fun (_time) (...)))`
+Put a given timestamp at the last day of the month
+
+**Note**: Hours, minutes, seconds and milliseconds are untouched
 
 **Author**: [@SuperFola](https://github.com/SuperFola)
 

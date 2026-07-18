@@ -3,8 +3,8 @@ title: "Macros"
 slug: "macros"
 description: ""
 summary: ""
-date: 2026-07-09T11:08:49+02:00
-lastmod: 2026-07-09T11:08:49+02:00
+date: 2026-07-18T13:54:54+02:00
+lastmod: 2026-07-18T13:54:54+02:00
 draft: false
 weight: 410
 toc: true
@@ -31,7 +31,7 @@ Delete a given macro in the nearest scope
 {{< highlight_arkscript >}}
 (macro a 5)
 ($undef a)
-(print a)  # will fail, as 'a' doesn't exist anymore
+(print a)  # will fail, as 'a' doesn't exist any more
 {{< /highlight_arkscript >}}
 
 ## $argcount
