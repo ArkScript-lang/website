@@ -3,8 +3,8 @@ title: "Macros"
 slug: "macros"
 description: ""
 summary: ""
-date: 2026-08-01T01:26:58+02:00
-lastmod: 2026-08-01T01:26:58+02:00
+date: 2026-08-04T16:16:19+02:00
+lastmod: 2026-08-04T16:16:19+02:00
 draft: false
 weight: 410
 toc: true
@@ -423,6 +423,67 @@ Decrement a variable, by generating a `set`
 (print n)  # -1
 (-- n)
 (print n)  # -2
+{{< /highlight_arkscript >}}
+
+## let*
+
+---
+`(macro let* (first ...pairs) (...))`
+Declare multiple constants in a single statement
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `pairs`: pairs of `(var-name value)`, where `value` can depend on the previous declarations
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let* (a 1) (b (+ a 2)) (c (+ a b)))
+(print (format "a={}, b={}, c={}" a b c))
+# a=1, b=3, c=4
+{{< /highlight_arkscript >}}
+
+## mut*
+
+---
+`(macro mut* (first ...pairs) (...))`
+Declare multiple variables in a single statement
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `pairs`: pairs of `(var-name value)`, where `value` can depend on the previous declarations
+
+
+#### Example
+{{< highlight_arkscript >}}
+(mut* (a 1) (b (+ a 2)) (c (+ a b)))
+(print (format "a={}, b={}, c={}" a b c))
+# a=1, b=3, c=4
+{{< /highlight_arkscript >}}
+
+## set*
+
+---
+`(macro set* (first ...pairs) (...))`
+Set multiple variables in a single statement
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `pairs`: pairs of `(var-name value)`, where `value` can depend on the previous declarations
+
+
+#### Example
+{{< highlight_arkscript >}}
+(mut* (a 1) (b (+ a 2)) (c (+ a b)))
+(set* (a 2) (b 3) (c 4))
+(print (format "a={}, b={}, c={}" a b c))
+# a=2, b=3, c=4
 {{< /highlight_arkscript >}}
 
 
