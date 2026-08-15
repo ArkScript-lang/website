@@ -29,6 +29,17 @@ The environment variable should direct to a folder with the folder `std/` inside
 
 ## Installing from a release
 
+Checksum files are supplied for each release artefact. It is a good practice to check that your download matches the supplied checksum.
+
+To do that, download both the version you want and the corresponding checksum, then run:
+
+```shell
+sha256sum -c <download>
+
+# or if sha256sum is not available
+shasum -a 256 -c <download>
+```
+
 ### Windows
 
 Download the `windows-msvc-{version}.zip` from the [releases](https://github.com/ArkScript-lang/Ark/releases/latest), and unpack it wherever you want, as long as you remember where (or add the location to an environment variable as specified in the setup section, to avoid using `--lib <path>`). To use the command `arkscript` from everywhere, you will need to [add it to your PATH](https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)) environment variable.
@@ -37,9 +48,25 @@ An alternative is to download `windows-installer.exe`, an InnoSetup installer fo
 
 ### Linux and derivatives
 
+You can either download build artefacts that you can store anywhere, or use the provided packages (`.deb` and `.rpm`).
+
+#### Using build artefacts
+
 Download the `linux-{compiler}.zip` from the [releases](https://github.com/ArkScript-lang/Ark/releases/latest). You can put the binaries and the lib anywhere you want, as long as you add it to your path to execute ArkScript without using the absolute path (in your `.bashrc` for example).
 
-You got it.
+#### Packages
+
+For `.deb`:
+
+```shell
+sudo dpkg --install arkscript-<version>-Linux.deb
+```
+
+For `.rpm`:
+
+```shell
+rpm -ivh arkscript-<version>-Linux.rpm
+```
 
 ### Using Docker
 
