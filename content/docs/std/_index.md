@@ -2,8 +2,8 @@
 title: "Standard library"
 description: ""
 summary: ""
-date: 2026-08-04T16:16:19+02:00
-lastmod: 2026-08-04T16:16:19+02:00
+date: 2026-08-15T15:52:35+02:00
+lastmod: 2026-08-15T15:52:35+02:00
 draft: false
 weight: 400
 toc: true
@@ -16,7 +16,7 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
-## ArkScript v4.7.1 documentation
+## ArkScript v4.7.2 documentation
 
 
 

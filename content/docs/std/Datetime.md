@@ -3,8 +3,8 @@ title: "Datetime"
 slug: "datetime"
 description: ""
 summary: ""
-date: 2026-08-04T16:16:19+02:00
-lastmod: 2026-08-04T16:16:19+02:00
+date: 2026-08-15T15:52:35+02:00
+lastmod: 2026-08-15T15:52:35+02:00
 draft: false
 weight: 410
 toc: true
