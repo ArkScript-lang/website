@@ -40,11 +40,21 @@ sha256sum -c <download>
 shasum -a 256 -c <download>
 ```
 
-### Windows
+### MacOS
 
-Download the `windows-msvc-{version}.zip` from the [releases](https://github.com/ArkScript-lang/Ark/releases/latest), and unpack it wherever you want, as long as you remember where (or add the location to an environment variable as specified in the setup section, to avoid using `--lib <path>`). To use the command `arkscript` from everywhere, you will need to [add it to your PATH](https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)) environment variable.
+You can either download build artefacts that you can store anywhere, or use the homebrew formula.
 
-An alternative is to download `windows-installer.exe`, an InnoSetup installer for ArkScript. It will install it as well as the standard library (modules included) in your `C:/Program Files` folder, and create the appropriate `ARKSCRIPT_PATH` environment variable.
+Via a build artefact:
+- download `macos-clang-16.zip` from the [releases](https://github.com/ArkScript-lang/Ark/releases/latest). You can put the binaries and the lib anywhere you want, as long as you add it to your path to execute ArkScript without using the absolute path (in your `.zshrc` for example).
+- create the environment variable `ARKSCRIPT_PATH` pointing to the folder containing ArkScript's stdlib `std/`.
+
+Via homebrew:
+```shell
+brew install arkscript-lang/tap/arkscript
+# or
+brew tap arkscript-lang/tap
+brew install arkscript
+```
 
 ### Linux and derivatives
 
@@ -67,6 +77,12 @@ For `.rpm`:
 ```shell
 rpm -ivh arkscript-<version>-Linux.rpm
 ```
+
+### Windows
+
+Download the `windows-msvc-{version}.zip` from the [releases](https://github.com/ArkScript-lang/Ark/releases/latest), and unpack it wherever you want, as long as you remember where (or add the location to an environment variable as specified in the setup section, to avoid using `--lib <path>`). To use the command `arkscript` from everywhere, you will need to [add it to your PATH](https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)) environment variable.
+
+An alternative is to download `windows-installer.exe`, an InnoSetup installer for ArkScript. It will install it as well as the standard library (modules included) in your `C:/Program Files` folder, and create the appropriate `ARKSCRIPT_PATH` environment variable.
 
 ### Using Docker
 

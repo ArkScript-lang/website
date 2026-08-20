@@ -27,9 +27,8 @@ seo:
 5. This will trigger the `release.yml` workflow on **ArkScript-lang/Ark**, which will:
     - create binaries for Linux, macOS, and Windows
     - create an InnoSetup installer for Windows
+    - create `.deb` and `.rpm` packages for Linux
     - create a draft release with the release notes from the changelog
+    - update ArkScript packages on the AUR (both the source and binary ones)
+    - update ArkScript homebrew tap
 6. Publish the release as **latest** and create a discussion for it in **Show and tell**
-7. Go to `ArkScript-lang/homebrew-arkscript`:
-    - create a new formula with the Python script: `python3 create_formula.py v[X.Y.Z]`
-    - push the changes
-
