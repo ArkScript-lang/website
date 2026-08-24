@@ -59,17 +59,19 @@ Let's walk through this line by line:
 - `static Ark::mapping map[] = {...};` creates a mapping of elements to hold the name -> function pointer association, defining the module
 - closing braces are stacked together, and never preceded by a newline
     - note that the given name is `"test:foo"`: this is a convention in ArkScript, every module's function must be prefixed by the module name
-- `{ nullptr, nullptr }`: a sentinel so that the virtual machine where the end of mapping is
+- `{ nullptr, nullptr }`: a sentinel so that the virtual machine knows where the end of mapping is
 
 ## Building your module
 
-Clone ArkScript wherever you like. Then, you will need to update your CMakeLists.txt to add the following code:
+Clone [ArkScript](https://github.com/ArkScript-lang/Ark) wherever you like, and replace `lib/modules` by your fork (delete the current `modules/` folder and move/copy the folder of your fork there).
+
+Then, you will need to update `lib/modules/src/CMakeLists.txt` to add the following code:
 
 ```cmake
-add_subdirectory(path/to/arkscript/ Ark)
+add_subdirectory(module_name)
 ```
 
-Then, run `cmake . -Bbuild`, and build your module with `cmake --build build`. It should output a `.arkm` file in the current working directory.
+Then, run `cmake . -Bbuild` in ArkScript's folder, and build your module with `cmake --build build`. It should output a `.arkm` file in `lib/`.
 
 ## Troubleshooting
 
