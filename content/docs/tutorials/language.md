@@ -84,8 +84,10 @@ There are two ways of writing a string in ArkScript:
 (let b r"hello")
 {{< /highlight_arkscript >}}
 
-In the first one, without the `r` prefix, escape codes like `\n` and `\u1234` are interpreted. In the second one, all `\` (backslashes) are automatically escaped, and escape codes are not interpreted. This helps keep regular expressions sane.
-Without it, every backslash ('\') in a regular expression would have to be prefixed with another one to escape it. For example, the two following lines of code are functionally identical:
+In the first one, without the `r` prefix, escape codes like `\n` and `\u1234` are interpreted.
+
+In the second one, all `\` (backslashes) are automatically escaped, and escape codes are not interpreted. This helps keep regular expressions sane.
+Without it, every backslash (`\`) in a regular expression would have to be prefixed with another one to escape it. For example, the two following lines of code are functionally identical:
 
 {{< highlight_arkscript >}}
 (import re)
