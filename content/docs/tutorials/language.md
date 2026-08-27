@@ -72,6 +72,29 @@ The following three keywords are important when talking about variables:
 
 Since `set` modified `n` in **4**, when we finally call `print`, the reference pushed in **3** is now a `2`.
 
+### Raw string literals
+
+{{< callout context="note" title="ArkScript 4.8.0" icon="outline/info-circle" >}}Requires ArkScript 4.8.0 or later
+{{< /callout >}}
+
+There are two ways of writing a string in ArkScript:
+
+{{< highlight_arkscript >}}
+(let a "hello")
+(let b r"hello")
+{{< /highlight_arkscript >}}
+
+In the first one, without the `r` prefix, escape codes like `\n` and `\u1234` are interpreted. In the second one, all `\` (backslashes) are automatically escaped, and escape codes are not interpreted. This helps keep regular expressions sane.
+Without it, every backslash ('\') in a regular expression would have to be prefixed with another one to escape it. For example, the two following lines of code are functionally identical:
+
+{{< highlight_arkscript >}}
+(import re)
+(print (re:match r"\W(.){2}\W" " ff "))
+# {match:  ff , start: 0, end: 4, groups: ["f"]}
+(print (re:match "\\W(.){2}\\W" " ff "))
+# {match:  ff , start: 0, end: 4, groups: ["f"]}
+{{< /highlight_arkscript >}}
+
 ## Comments
 
 As you have seen in the example above, we can write code that won't be executed, using `# text`. This is a comment, only for the developer, and will be totally ignored when compiling and executing.
@@ -381,7 +404,8 @@ When importing files from the standard library, you don't need to write the path
 
 For example: `(import std.String)` will import `$ARKSCRIPT_PATH/lib/std/String`:
 - if the environment variable `ARKSCRIPT_PATH` exists and resolves to an existing folder,
-- otherwise it will try to find a `std` folder in the current working directory.
+- or if there is a `std` folder in the current working directory, get it from there,
+- or look in the default installation directory (`/usr/local/lib/Ark` or `/usr/lib/Ark`)
 
 ## Running functions asynchronously
 
@@ -550,7 +574,7 @@ Here is the list of the available compile time functions, to work with macros (i
 
 - Comparison operators: `=`, `!=`, `<`, `<=`, `>`, `>=`
 - Chaining conditions / inverting them: `not`, `and`, `or`
-- Working on lists: `len`, `@`, `head`, `tail`, `empty?`
+- Working on lists: `$len`, `$at`, `$head`, `$tail`, `$empty?`
 - Arithmetic: `+`, `-`, `*`, `/`
 
 We also have a few predefined macros to work on ArkScript code and ease code generation. For example, one can generate a new symbol using `($symcat symbol value-or-expression)`, or count the number of arguments of a function with `($argcount function-name)`.
