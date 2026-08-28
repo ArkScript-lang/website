@@ -934,6 +934,7 @@
       "radians",
       "random",
       "range",
+      "raw-string-literals",
       "readfile",
       "readlinesfile",
       "recombine",
