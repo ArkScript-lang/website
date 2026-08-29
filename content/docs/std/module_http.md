@@ -16,7 +16,7 @@ seo:
 
 {{< highlight_scripts >}}
 
-A module to play with HTTP requests, using [cpp-httplib](https://github.com/yhirose/cpp-httplib) (MIT Licence).
+A module to play with HTTP requests, using [cpp-httplib](https://github.com/yhirose/cpp-httplib) (MIT License).
 
 Disclaimer: this module does not handle
 * multipart/form-data POST requests
@@ -50,13 +50,13 @@ They work as pairs with:
 
 ## http:client
 
-Create an http client to query a server.
+Create a http client to query a server.
 
 **Parameters**
-- `host`: string, you must not put the protocol `http://` nor `https://`
-- `port`: number
+- `host`: string
+- `port`: number (optional if the protocol is in the host (`http://` or `https://`))
 
-**Return value** `List` if the request succeeded: `[status, body]`, otherwise `nil`
+**Return value** `httpClient`
 
 **Author**
 - [@SuperFola](https://github.com/SuperFola)
