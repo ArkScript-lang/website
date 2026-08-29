@@ -26,7 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="../../ArkTransparent-small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../logo-2026-rectangle-256x85.png"/></td>
   <td id="projectalign">
    <div id="projectname">ArkScript
    </div>
@@ -83,6 +83,7 @@ $(function(){initNavTree('d2/d93/classArk_1_1VM.html','../../'); initResizable(t
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="../../d4/d49/classArk_1_1VM-members.html">List of all members</a>  </div>
@@ -121,9 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af7ab87072e0dca859367534ad92edf1d" id="r_af7ab87072e0dca859367534ad92edf1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7ab87072e0dca859367534ad92edf1d">exit</a> (int code) noexcept</td></tr>
 <tr class="memdesc:af7ab87072e0dca859367534ad92edf1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask the <a class="el" href="../../d2/d93/classArk_1_1VM.html" title="The ArkScript virtual machine, executing ArkScript bytecode.">VM</a> to exit with a given exit code.  <br /></td></tr>
 <tr class="separator:af7ab87072e0dca859367534ad92edf1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08255f22a9e1edfeff228cc0e98c58c7" id="r_a08255f22a9e1edfeff228cc0e98c58c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08255f22a9e1edfeff228cc0e98c58c7">getDefaultContext</a> ()</td></tr>
-<tr class="memdesc:a08255f22a9e1edfeff228cc0e98c58c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the first execution context, for the main thread of the app.  <br /></td></tr>
-<tr class="separator:a08255f22a9e1edfeff228cc0e98c58c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76fda3231771d0c59722e918dce12c3" id="r_af76fda3231771d0c59722e918dce12c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af76fda3231771d0c59722e918dce12c3">getDefaultContext</a> () const</td></tr>
+<tr class="memdesc:af76fda3231771d0c59722e918dce12c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the first execution context, for the main thread of the app.  <br /></td></tr>
+<tr class="separator:af76fda3231771d0c59722e918dce12c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d551a823c5aaf8ddab9b8771901815b" id="r_a6d551a823c5aaf8ddab9b8771901815b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d551a823c5aaf8ddab9b8771901815b">createAndGetContext</a> ()</td></tr>
 <tr class="memdesc:a6d551a823c5aaf8ddab9b8771901815b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an execution context and returns it.  <br /></td></tr>
 <tr class="separator:a6d551a823c5aaf8ddab9b8771901815b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,58 +157,68 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a72ff37996ab8e31a28c3e8ed099fd881" id="r_a72ff37996ab8e31a28c3e8ed099fd881"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72ff37996ab8e31a28c3e8ed099fd881">safeRun</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, std::size_t untilFrameCount=0, bool fail_with_exception=false)</td></tr>
 <tr class="memdesc:a72ff37996ab8e31a28c3e8ed099fd881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run ArkScript bytecode inside a try catch to retrieve all the exceptions and display a stack trace if needed.  <br /></td></tr>
 <tr class="separator:a72ff37996ab8e31a28c3e8ed099fd881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543856556da19f00bacf89fbbdc2f27b" id="r_a543856556da19f00bacf89fbbdc2f27b"><td class="memTemplParams" colspan="2">template&lt;bool WithDebugger&gt; </td></tr>
+<tr class="memitem:a543856556da19f00bacf89fbbdc2f27b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a543856556da19f00bacf89fbbdc2f27b">unsafeRun</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, std::size_t untilFrameCount=0)</td></tr>
+<tr class="separator:a543856556da19f00bacf89fbbdc2f27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0749e81e975e0d1a92c2d89995e50f0" id="r_ae0749e81e975e0d1a92c2d89995e50f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0749e81e975e0d1a92c2d89995e50f0">init</a> () noexcept</td></tr>
 <tr class="memdesc:ae0749e81e975e0d1a92c2d89995e50f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="../../d2/d93/classArk_1_1VM.html" title="The ArkScript virtual machine, executing ArkScript bytecode.">VM</a> according to the parameters.  <br /></td></tr>
 <tr class="separator:ae0749e81e975e0d1a92c2d89995e50f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31f789e666761527e0efb0d7d9629680" id="r_a31f789e666761527e0efb0d7d9629680"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31f789e666761527e0efb0d7d9629680">loadSymbol</a> (uint16_t id, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a31f789e666761527e0efb0d7d9629680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a symbol by its id in the current context. Performs a lookup in the scope stack, in reverse order.  <br /></td></tr>
-<tr class="separator:a31f789e666761527e0efb0d7d9629680"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f161e13b7eb10ec2952680bbef3fa41" id="r_a5f161e13b7eb10ec2952680bbef3fa41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f161e13b7eb10ec2952680bbef3fa41">loadSymbolFromIndex</a> (uint16_t index, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a5f161e13b7eb10ec2952680bbef3fa41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a symbol by its (reversed) index in the current scope.  <br /></td></tr>
-<tr class="separator:a5f161e13b7eb10ec2952680bbef3fa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad137937f3ac6fb9ff1f2a41ca2331641" id="r_ad137937f3ac6fb9ff1f2a41ca2331641"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad137937f3ac6fb9ff1f2a41ca2331641">loadConstAsPtr</a> (uint16_t id) const</td></tr>
-<tr class="memdesc:ad137937f3ac6fb9ff1f2a41ca2331641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a constant from the constant table by its id.  <br /></td></tr>
-<tr class="separator:ad137937f3ac6fb9ff1f2a41ca2331641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abefab392a0a09d82f505c79e2898e8c4" id="r_abefab392a0a09d82f505c79e2898e8c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abefab392a0a09d82f505c79e2898e8c4">store</a> (uint16_t id, const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *val, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
-<tr class="memdesc:abefab392a0a09d82f505c79e2898e8c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new symbol with an associated value in the current scope.  <br /></td></tr>
-<tr class="separator:abefab392a0a09d82f505c79e2898e8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2fa2359a394c44cf286034c67aaec78" id="r_ac2fa2359a394c44cf286034c67aaec78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2fa2359a394c44cf286034c67aaec78">setVal</a> (uint16_t id, const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *val, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
-<tr class="memdesc:ac2fa2359a394c44cf286034c67aaec78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the value of a symbol given its identifier.  <br /></td></tr>
-<tr class="separator:ac2fa2359a394c44cf286034c67aaec78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a142f841e72386c3eb8058d07084a5f47" id="r_a142f841e72386c3eb8058d07084a5f47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a142f841e72386c3eb8058d07084a5f47">jump</a> (uint16_t address, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
-<tr class="separator:a142f841e72386c3eb8058d07084a5f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fdc3349d1a181c818072c533bd79465" id="r_a4fdc3349d1a181c818072c533bd79465"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fdc3349d1a181c818072c533bd79465">loadSymbol</a> (uint16_t id, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a4fdc3349d1a181c818072c533bd79465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a symbol by its id in the current context. Performs a lookup in the scope stack, in reverse order.  <br /></td></tr>
+<tr class="separator:a4fdc3349d1a181c818072c533bd79465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab08c60b1d67447526f883ab09a4d46a3" id="r_ab08c60b1d67447526f883ab09a4d46a3"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab08c60b1d67447526f883ab09a4d46a3">loadSymbolFromIndex</a> (uint16_t index, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
+<tr class="memdesc:ab08c60b1d67447526f883ab09a4d46a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a symbol by its (reversed) index in the current scope.  <br /></td></tr>
+<tr class="separator:ab08c60b1d67447526f883ab09a4d46a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d6b5ff1ea585a5192e2c95570b6ebe" id="r_af7d6b5ff1ea585a5192e2c95570b6ebe"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7d6b5ff1ea585a5192e2c95570b6ebe">loadConstAsPtr</a> (uint16_t id) const</td></tr>
+<tr class="memdesc:af7d6b5ff1ea585a5192e2c95570b6ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a constant from the constant table by its id.  <br /></td></tr>
+<tr class="separator:af7d6b5ff1ea585a5192e2c95570b6ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900af15fcc776d274016ed6553e1a045" id="r_a900af15fcc776d274016ed6553e1a045"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a900af15fcc776d274016ed6553e1a045">findNearestVariable</a> (uint16_t id, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context) noexcept</td></tr>
+<tr class="memdesc:a900af15fcc776d274016ed6553e1a045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the nearest variable of a given id.  <br /></td></tr>
+<tr class="separator:a900af15fcc776d274016ed6553e1a045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8331c66a87d41e6e76a60beebb30b7c" id="r_af8331c66a87d41e6e76a60beebb30b7c"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8331c66a87d41e6e76a60beebb30b7c">store</a> (uint16_t id, const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *val, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
+<tr class="memdesc:af8331c66a87d41e6e76a60beebb30b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new symbol with an associated value in the current scope.  <br /></td></tr>
+<tr class="separator:af8331c66a87d41e6e76a60beebb30b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc54a200a93cb54b86c6092012a39fa" id="r_a5dc54a200a93cb54b86c6092012a39fa"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dc54a200a93cb54b86c6092012a39fa">setVal</a> (uint16_t id, const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *val, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a5dc54a200a93cb54b86c6092012a39fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the value of a symbol given its identifier.  <br /></td></tr>
+<tr class="separator:a5dc54a200a93cb54b86c6092012a39fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486a353a5f58d901e459a709f915e034" id="r_a486a353a5f58d901e459a709f915e034"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a486a353a5f58d901e459a709f915e034">jump</a> (uint16_t address, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
+<tr class="separator:a486a353a5f58d901e459a709f915e034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65b082ebbcae5f6dae92fdfa3f973baf" id="r_a65b082ebbcae5f6dae92fdfa3f973baf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65b082ebbcae5f6dae92fdfa3f973baf">getField</a> (<a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *closure, uint16_t id, const <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, bool push_with_env=false)</td></tr>
 <tr class="separator:a65b082ebbcae5f6dae92fdfa3f973baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6a6dd9561db39a7080a4233d6f28299" id="r_ad6a6dd9561db39a7080a4233d6f28299"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6a6dd9561db39a7080a4233d6f28299">createList</a> (std::size_t count, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
 <tr class="separator:ad6a6dd9561db39a7080a4233d6f28299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a6c8df9dc77aa0a2f84d1052b69b0f8" id="r_a3a6c8df9dc77aa0a2f84d1052b69b0f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a6c8df9dc77aa0a2f84d1052b69b0f8">listAppendInPlace</a> (<a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *list, std::size_t count, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
 <tr class="separator:a3a6c8df9dc77aa0a2f84d1052b69b0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9793d82e9100c6badd8fa9aa8d8bbbcb" id="r_a9793d82e9100c6badd8fa9aa8d8bbbcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9793d82e9100c6badd8fa9aa8d8bbbcb">pop</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a9793d82e9100c6badd8fa9aa8d8bbbcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop a value from the stack.  <br /></td></tr>
-<tr class="separator:a9793d82e9100c6badd8fa9aa8d8bbbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a738498d297ebf6ce7fd7890df68d790c" id="r_a738498d297ebf6ce7fd7890df68d790c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a738498d297ebf6ce7fd7890df68d790c">peek</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, std::size_t offset=0)</td></tr>
-<tr class="separator:a738498d297ebf6ce7fd7890df68d790c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acec013723ac6dc0f765d8dfc8a1163f3" id="r_acec013723ac6dc0f765d8dfc8a1163f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acec013723ac6dc0f765d8dfc8a1163f3">peekAndResolveAsPtr</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, std::size_t offset=0)</td></tr>
-<tr class="memdesc:acec013723ac6dc0f765d8dfc8a1163f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the top of the stack without consuming it, and resolve it if possible.  <br /></td></tr>
-<tr class="separator:acec013723ac6dc0f765d8dfc8a1163f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7c346842c65edacb9d1c6af5f3c305" id="r_ace7c346842c65edacb9d1c6af5f3c305"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace7c346842c65edacb9d1c6af5f3c305">push</a> (const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;value, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context) noexcept</td></tr>
-<tr class="memdesc:ace7c346842c65edacb9d1c6af5f3c305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a value on the stack.  <br /></td></tr>
-<tr class="separator:ace7c346842c65edacb9d1c6af5f3c305"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa27323ffde032ee9ccd5a6777d15a5d9" id="r_aa27323ffde032ee9ccd5a6777d15a5d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa27323ffde032ee9ccd5a6777d15a5d9">push</a> (<a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;&amp;value, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context) noexcept</td></tr>
-<tr class="memdesc:aa27323ffde032ee9ccd5a6777d15a5d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a value on the stack.  <br /></td></tr>
-<tr class="separator:aa27323ffde032ee9ccd5a6777d15a5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c7ff162f6fb97054c1bdb2bda0b8dc" id="r_a11c7ff162f6fb97054c1bdb2bda0b8dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11c7ff162f6fb97054c1bdb2bda0b8dc">push</a> (<a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *valptr, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context) noexcept</td></tr>
-<tr class="memdesc:a11c7ff162f6fb97054c1bdb2bda0b8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a value on the stack as a reference.  <br /></td></tr>
-<tr class="separator:a11c7ff162f6fb97054c1bdb2bda0b8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f457f61486e2084b3e3538436852ead" id="r_a1f457f61486e2084b3e3538436852ead"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f457f61486e2084b3e3538436852ead">popAndResolveAsPtr</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a1f457f61486e2084b3e3538436852ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop a value from the stack and resolve it if possible, then return it.  <br /></td></tr>
-<tr class="separator:a1f457f61486e2084b3e3538436852ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae08335c04b7993b243c0a19ced6f35d1" id="r_ae08335c04b7993b243c0a19ced6f35d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae08335c04b7993b243c0a19ced6f35d1">findNearestVariable</a> (uint16_t id, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context) noexcept</td></tr>
-<tr class="memdesc:ae08335c04b7993b243c0a19ced6f35d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the nearest variable of a given id.  <br /></td></tr>
-<tr class="separator:ae08335c04b7993b243c0a19ced6f35d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a834f79b1ed4b9e98c6f4d742b73e40" id="r_a9a834f79b1ed4b9e98c6f4d742b73e40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a834f79b1ed4b9e98c6f4d742b73e40">returnFromFuncCall</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
-<tr class="memdesc:a9a834f79b1ed4b9e98c6f4d742b73e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the current frame and get back to the previous one, resuming execution.  <br /></td></tr>
-<tr class="separator:a9a834f79b1ed4b9e98c6f4d742b73e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9f93a878f64d360ba273698ef0bba1" id="r_adf9f93a878f64d360ba273698ef0bba1"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf9f93a878f64d360ba273698ef0bba1">pop</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
+<tr class="memdesc:adf9f93a878f64d360ba273698ef0bba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop a value from the stack.  <br /></td></tr>
+<tr class="separator:adf9f93a878f64d360ba273698ef0bba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e721a7ff122b42cb5d6bbda2ed28fe9" id="r_a7e721a7ff122b42cb5d6bbda2ed28fe9"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e721a7ff122b42cb5d6bbda2ed28fe9">peek</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, std::size_t offset=0)</td></tr>
+<tr class="memdesc:a7e721a7ff122b42cb5d6bbda2ed28fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the top of the stack without consuming it.  <br /></td></tr>
+<tr class="separator:a7e721a7ff122b42cb5d6bbda2ed28fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a266d008609c4fd8b5cb53674922e2aef" id="r_a266d008609c4fd8b5cb53674922e2aef"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a266d008609c4fd8b5cb53674922e2aef">peekAndResolveAsPtr</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, std::size_t offset=0)</td></tr>
+<tr class="memdesc:a266d008609c4fd8b5cb53674922e2aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the top of the stack without consuming it, and resolve it if possible.  <br /></td></tr>
+<tr class="separator:a266d008609c4fd8b5cb53674922e2aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf17ed5f589349ff00e77753c77d9a8" id="r_a7bf17ed5f589349ff00e77753c77d9a8"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bf17ed5f589349ff00e77753c77d9a8">push</a> (const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;value, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context) noexcept</td></tr>
+<tr class="memdesc:a7bf17ed5f589349ff00e77753c77d9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a value on the stack.  <br /></td></tr>
+<tr class="separator:a7bf17ed5f589349ff00e77753c77d9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1dcb8409be0fc4dfa4602256db83b7" id="r_a9c1dcb8409be0fc4dfa4602256db83b7"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c1dcb8409be0fc4dfa4602256db83b7">push</a> (<a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;&amp;value, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context) noexcept</td></tr>
+<tr class="memdesc:a9c1dcb8409be0fc4dfa4602256db83b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a value on the stack.  <br /></td></tr>
+<tr class="separator:a9c1dcb8409be0fc4dfa4602256db83b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e78f62b3cf0efefc332960e35e690a" id="r_a65e78f62b3cf0efefc332960e35e690a"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65e78f62b3cf0efefc332960e35e690a">push</a> (<a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *valptr, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context) noexcept</td></tr>
+<tr class="memdesc:a65e78f62b3cf0efefc332960e35e690a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push a value on the stack as a reference.  <br /></td></tr>
+<tr class="separator:a65e78f62b3cf0efefc332960e35e690a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b3e6a611ca0642ca674a50a2c3e79a" id="r_a83b3e6a611ca0642ca674a50a2c3e79a"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83b3e6a611ca0642ca674a50a2c3e79a">popAndResolveAsPtr</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a83b3e6a611ca0642ca674a50a2c3e79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pop a value from the stack and resolve it if possible, then return it.  <br /></td></tr>
+<tr class="separator:a83b3e6a611ca0642ca674a50a2c3e79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0add5e959d4f305039c5f8a8c5ec8842" id="r_a0add5e959d4f305039c5f8a8c5ec8842"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0add5e959d4f305039c5f8a8c5ec8842">returnFromFuncCall</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
+<tr class="memdesc:a0add5e959d4f305039c5f8a8c5ec8842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the current frame and get back to the previous one, resuming execution.  <br /></td></tr>
+<tr class="separator:a0add5e959d4f305039c5f8a8c5ec8842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fae8005fe139a78448c16dd3cc2f7c5" id="r_a4fae8005fe139a78448c16dd3cc2f7c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fae8005fe139a78448c16dd3cc2f7c5">call</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, uint16_t argc, <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *function_ptr=nullptr, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abc37a6b5c643ace728c504d90b41a053">internal::PageAddr_t</a> or_address=0)</td></tr>
+<tr class="memdesc:a4fae8005fe139a78448c16dd3cc2f7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called when the CALL instruction is met in the bytecode.  <br /></td></tr>
+<tr class="separator:a4fae8005fe139a78448c16dd3cc2f7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713f6b060cf149d9f06c17e921c67ac9" id="r_a713f6b060cf149d9f06c17e921c67ac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a713f6b060cf149d9f06c17e921c67ac9">callBuiltin</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;builtin, uint16_t argc, bool remove_return_address=true, bool remove_builtin=true)</td></tr>
+<tr class="memdesc:a713f6b060cf149d9f06c17e921c67ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builtin called when the CALL_BUILTIN instruction is met in the bytecode.  <br /></td></tr>
+<tr class="separator:a713f6b060cf149d9f06c17e921c67ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712a44477e64cc5aaf5f21c86fc2bd8b" id="r_a712a44477e64cc5aaf5f21c86fc2bd8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a712a44477e64cc5aaf5f21c86fc2bd8b">loadPlugin</a> (uint16_t id, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
 <tr class="memdesc:a712a44477e64cc5aaf5f21c86fc2bd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a plugin from a constant id.  <br /></td></tr>
 <tr class="separator:a712a44477e64cc5aaf5f21c86fc2bd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,12 +239,11 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aa6fe2919f6f5d51427f65636b0a36cba" id="r_aa6fe2919f6f5d51427f65636b0a36cba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6fe2919f6f5d51427f65636b0a36cba">backtrace</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, std::ostream &amp;os=std::cerr, bool colorize=true)</td></tr>
 <tr class="memdesc:aa6fe2919f6f5d51427f65636b0a36cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a backtrace when the <a class="el" href="../../d2/d93/classArk_1_1VM.html" title="The ArkScript virtual machine, executing ArkScript bytecode.">VM</a> encounter an exception.  <br /></td></tr>
 <tr class="separator:aa6fe2919f6f5d51427f65636b0a36cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fae8005fe139a78448c16dd3cc2f7c5" id="r_a4fae8005fe139a78448c16dd3cc2f7c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fae8005fe139a78448c16dd3cc2f7c5">call</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, uint16_t argc, <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *function_ptr=nullptr, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#abc37a6b5c643ace728c504d90b41a053">internal::PageAddr_t</a> or_address=0)</td></tr>
-<tr class="memdesc:a4fae8005fe139a78448c16dd3cc2f7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called when the CALL instruction is met in the bytecode.  <br /></td></tr>
-<tr class="separator:a4fae8005fe139a78448c16dd3cc2f7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a713f6b060cf149d9f06c17e921c67ac9" id="r_a713f6b060cf149d9f06c17e921c67ac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a713f6b060cf149d9f06c17e921c67ac9">callBuiltin</a> (<a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context, const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;builtin, uint16_t argc, bool remove_return_address=true, bool remove_builtin=true)</td></tr>
-<tr class="memdesc:a713f6b060cf149d9f06c17e921c67ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builtin called when the CALL_BUILTIN instruction is met in the bytecode.  <br /></td></tr>
-<tr class="separator:a713f6b060cf149d9f06c17e921c67ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a3b9883113b66f6b7fcaefbd3a490998e" id="r_a3b9883113b66f6b7fcaefbd3a490998e"><td class="memItemLeft" align="right" valign="top">static ARK_ALWAYS_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b9883113b66f6b7fcaefbd3a490998e">stackOverflowError</a> (const <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;context)</td></tr>
+<tr class="separator:a3b9883113b66f6b7fcaefbd3a490998e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -276,7 +286,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The ArkScript virtual machine, executing ArkScript bytecode. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00047">47</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00039">39</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aed140907b66e25ea28372350c3587c1a" name="aed140907b66e25ea28372350c3587c1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed140907b66e25ea28372350c3587c1a">&#9670;&#160;</a></span>VM()</h2>
@@ -356,11 +366,11 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02310">2310</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02225">2225</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00106">Ark::internal::ScopeView::atPos()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00028">Ark::Utils::fileExists()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02158">findNearestVariableIdWithValue()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02275">findSourceLocation()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6adf754f9ba8524ed3333ec938d0636862">Ark::InstPtr</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00172">Ark::State::m_filenames</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00181">Ark::Value::pageAddr()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00168">pop()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00219">popAndResolveAsPtr()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00239">returnFromFuncCall()</a>, <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00131">Ark::internal::ScopeView::size()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00175">Value</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00153">Ark::Value::valueType()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00153">Ark::internal::ScopeView::atPos()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00028">Ark::Utils::fileExists()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02073">findNearestVariableIdWithValue()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02190">findSourceLocation()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6adf754f9ba8524ed3333ec938d0636862">Ark::InstPtr</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00172">Ark::State::m_filenames</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00182">Ark::Value::pageAddr()</a>, <a class="el" href="#adf9f93a878f64d360ba273698ef0bba1">pop()</a>, <a class="el" href="#a83b3e6a611ca0642ca674a50a2c3e79a">popAndResolveAsPtr()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="#a0add5e959d4f305039c5f8a8c5ec8842">returnFromFuncCall()</a>, <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00183">Ark::internal::ScopeView::size()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00167">Value</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00154">Ark::Value::valueType()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02235">showBacktraceWithException()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00401">safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02150">showBacktraceWithException()</a>.</p>
 
 </div>
 </div>
@@ -387,7 +397,9 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00170">170</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00162">162</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00414">Ark::internal::Debugger::showPreviousInstructions()</a>.</p>
 
 </div>
 </div>
@@ -428,9 +440,7 @@ template&lt;typename... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00006">6</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -481,8 +491,6 @@ template&lt;typename... Args&gt; </div>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00246">246</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
 </div>
 </div>
@@ -540,9 +548,7 @@ template&lt;typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00362">362</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -567,9 +573,9 @@ template&lt;typename... Args&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00249">249</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00182">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00185">m_mutex</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00035">Ark::internal::ExecutionContext::primary</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00039">Ark::internal::ExecutionContext::saved_scope</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00044">Ark::internal::ExecutionContext::scopes_storage</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00061">Ark::internal::ExecutionContext::setActive()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00041">Ark::internal::ExecutionContext::stacked_closure_scopes</a>.</p>
+<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00174">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00177">m_mutex</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00035">Ark::internal::ExecutionContext::primary</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00039">Ark::internal::ExecutionContext::saved_scope</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00044">Ark::internal::ExecutionContext::scopes_storage</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00061">Ark::internal::ExecutionContext::setActive()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00041">Ark::internal::ExecutionContext::stacked_closure_scopes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00335">createFuture()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00329">createFuture()</a>.</p>
 
 </div>
 </div>
@@ -598,9 +604,9 @@ template&lt;typename... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d4/d6d/classArk_1_1internal_1_1Future.html">internal::Future</a>* </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00335">335</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00329">329</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00249">createAndGetContext()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00034">Ark::internal::ExecutionContext::last_symbol</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00182">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00187">m_futures</a>, and <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00185">m_mutex_futures</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00249">createAndGetContext()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00034">Ark::internal::ExecutionContext::last_symbol</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00174">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00179">m_futures</a>, and <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00177">m_mutex_futures</a>.</p>
 
 </div>
 </div>
@@ -626,16 +632,16 @@ template&lt;typename... Args&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00171">Ark::Value::list()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00219">popAndResolveAsPtr()</a>, and <a class="el" href="../../d1/d74/Value_8cpp_source.html#l00067">Ark::Value::push_back()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00172">Ark::Value::list()</a>, <a class="el" href="#a83b3e6a611ca0642ca674a50a2c3e79a">popAndResolveAsPtr()</a>, and <a class="el" href="../../d1/d74/Value_8cpp_source.html#l00071">Ark::Value::push_back()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -662,9 +668,9 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02298">2298</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02213">2213</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02275">findSourceLocation()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00182">m_execution_contexts</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00172">Ark::State::m_filenames</a>, and <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02190">findSourceLocation()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00174">m_execution_contexts</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00172">Ark::State::m_filenames</a>, and <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>.</p>
 
 </div>
 </div>
@@ -692,9 +698,9 @@ template&lt;typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00305">305</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00306">306</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00182">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00185">m_mutex</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00061">Ark::internal::ExecutionContext::setActive()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00174">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00177">m_mutex</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00061">Ark::internal::ExecutionContext::setActive()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/dc9/Future_8cpp_source.html#l00020">Ark::internal::Future::Future()</a>.</p>
 
@@ -724,9 +730,9 @@ template&lt;typename... Args&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00348">348</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00342">342</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00187">m_futures</a>, and <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00185">m_mutex_futures</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00179">m_futures</a>, and <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00177">m_mutex_futures</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d4/dc9/Future_8cpp_source.html#l00047">Ark::internal::Future::deleteSelfViaVM()</a>.</p>
 
@@ -767,8 +773,8 @@ template&lt;typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="ae08335c04b7993b243c0a19ced6f35d1" name="ae08335c04b7993b243c0a19ced6f35d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae08335c04b7993b243c0a19ced6f35d1">&#9670;&#160;</a></span>findNearestVariable()</h2>
+<a id="a900af15fcc776d274016ed6553e1a045" name="a900af15fcc776d274016ed6553e1a045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900af15fcc776d274016ed6553e1a045">&#9670;&#160;</a></span>findNearestVariable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -777,7 +783,7 @@ template&lt;typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::findNearestVariable </td>
+          <td class="memname">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::findNearestVariable </td>
           <td>(</td>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
@@ -804,9 +810,7 @@ template&lt;typename... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value* </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00229">229</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -848,11 +852,11 @@ template&lt;typename... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>uint16_t </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02158">2158</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02073">2073</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00073">Ark::MaxValue16Bits</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00081">Ark::MaxValue16Bits</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02310">backtrace()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02225">backtrace()</a>.</p>
 
 </div>
 </div>
@@ -893,11 +897,11 @@ template&lt;typename... Args&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::optional&lt;InstLoc&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02275">2275</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02190">2190</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/db5/State_8hpp_source.html#l00173">Ark::State::m_inst_locations</a>, and <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/db5/State_8hpp_source.html#l00173">Ark::State::m_inst_locations</a>, and <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02310">backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02298">debugShowSource()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00131">Ark::internal::Debugger::showContext()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02225">backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02213">debugShowSource()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00294">Ark::internal::Debugger::showContext()</a>.</p>
 
 </div>
 </div>
@@ -929,16 +933,16 @@ template&lt;typename... Args&gt; </div>
 <dd>
 false if one or more plugins couldn't be reloaded </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00359">359</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00353">353</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00182">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00186">m_shared_lib_objects</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, and <a class="el" href="../../d2/d33/ModuleMapping_8hpp_source.html#l00010">Ark::mapping::name</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00174">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00178">m_shared_lib_objects</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, and <a class="el" href="../../d2/d33/ModuleMapping_8hpp_source.html#l00010">Ark::mapping::name</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00029">Ark::Repl::run()</a>.</p>
 
 </div>
 </div>
-<a id="a08255f22a9e1edfeff228cc0e98c58c7" name="a08255f22a9e1edfeff228cc0e98c58c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08255f22a9e1edfeff228cc0e98c58c7">&#9670;&#160;</a></span>getDefaultContext()</h2>
+<a id="af76fda3231771d0c59722e918dce12c3" name="af76fda3231771d0c59722e918dce12c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af76fda3231771d0c59722e918dce12c3">&#9670;&#160;</a></span>getDefaultContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -950,12 +954,12 @@ false if one or more plugins couldn't be reloaded </dd></dl>
           <td class="memname"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> * Ark::VM::getDefaultContext </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -963,7 +967,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 <p>Return a pointer to the first execution context, for the main thread of the app. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a>* </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00100">100</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00029">Ark::Repl::run()</a>.</p>
 
@@ -1001,16 +1005,16 @@ false if one or more plugins couldn't be reloaded </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aaf4bb376939e77df0e7c2332b837a866">Ark::Closure</a>, <a class="el" href="../../d1/db2/Closure_8cpp_source.html#l00020">Ark::internal::Closure::hasFieldEndingWith()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00177">internal::Closure</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00034">Ark::internal::ExecutionContext::last_symbol</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00215">Ark::Value::refClosure()</a>, <a class="el" href="../../dc/dd5/Closure_8hpp_source.html#l00053">Ark::internal::Closure::refScope()</a>, <a class="el" href="../../dc/dd5/Closure_8hpp_source.html#l00054">Ark::internal::Closure::scopePtr()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00395">throwVMError()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00233">std::to_string()</a>, <a class="el" href="../../d1/db2/Closure_8cpp_source.html#l00027">Ark::internal::Closure::toString()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00175">Value</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00153">Ark::Value::valueType()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aaf4bb376939e77df0e7c2332b837a866">Ark::Closure</a>, <a class="el" href="../../d1/db2/Closure_8cpp_source.html#l00037">Ark::internal::Closure::hasFieldEndingWith()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00169">internal::Closure</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00034">Ark::internal::ExecutionContext::last_symbol</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00217">Ark::Value::refClosure()</a>, <a class="el" href="../../dc/dd5/Closure_8hpp_source.html#l00054">Ark::internal::Closure::refScope()</a>, <a class="el" href="../../dc/dd5/Closure_8hpp_source.html#l00055">Ark::internal::Closure::scopePtr()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00389">throwVMError()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00235">std::to_string()</a>, <a class="el" href="../../d1/db2/Closure_8cpp_source.html#l00044">Ark::internal::Closure::toString()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00167">Value</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00154">Ark::Value::valueType()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -1041,9 +1045,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00179">Ark::State::m_bound</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00182">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00183">m_exit_code</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00186">m_shared_lib_objects</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00039">Ark::internal::ExecutionContext::saved_scope</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00044">Ark::internal::ExecutionContext::scopes_storage</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00041">Ark::internal::ExecutionContext::stacked_closure_scopes</a>.</p>
+<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00179">Ark::State::m_bound</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00174">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00175">m_exit_code</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00178">m_shared_lib_objects</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00039">Ark::internal::ExecutionContext::saved_scope</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00044">Ark::internal::ExecutionContext::scopes_storage</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00041">Ark::internal::ExecutionContext::stacked_closure_scopes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00029">Ark::Repl::run()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00400">run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00029">Ark::Repl::run()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00394">run()</a>.</p>
 
 </div>
 </div>
@@ -1070,16 +1074,16 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02227">2227</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02142">2142</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/db5/State_8hpp_source.html#l00171">Ark::State::m_constants</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00188">m_debugger</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00166">Ark::State::m_libenv</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>, and <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/db5/State_8hpp_source.html#l00171">Ark::State::m_constants</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00180">m_debugger</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00166">Ark::State::m_libenv</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>, and <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02235">showBacktraceWithException()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02150">showBacktraceWithException()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
-<a id="a142f841e72386c3eb8058d07084a5f47" name="a142f841e72386c3eb8058d07084a5f47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a142f841e72386c3eb8058d07084a5f47">&#9670;&#160;</a></span>jump()</h2>
+<a id="a486a353a5f58d901e459a709f915e034" name="a486a353a5f58d901e459a709f915e034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486a353a5f58d901e459a709f915e034">&#9670;&#160;</a></span>jump()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1088,7 +1092,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ark::VM::jump </td>
+          <td class="memname">ARK_ALWAYS_INLINE void Ark::VM::jump </td>
           <td>(</td>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>address</em></span>, </td>
         </tr>
@@ -1105,9 +1109,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00158">158</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -1145,14 +1147,14 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00121">121</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aed36a1ef76a59ee3f15180e0441188ad">Ark::Any</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00219">popAndResolveAsPtr()</a>, <a class="el" href="../../d1/d74/Value_8cpp_source.html#l00067">Ark::Value::push_back()</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00153">Ark::Value::valueType()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aed36a1ef76a59ee3f15180e0441188ad">Ark::Any</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="#a83b3e6a611ca0642ca674a50a2c3e79a">popAndResolveAsPtr()</a>, <a class="el" href="../../d1/d74/Value_8cpp_source.html#l00071">Ark::Value::push_back()</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00154">Ark::Value::valueType()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
-<a id="ad137937f3ac6fb9ff1f2a41ca2331641" name="ad137937f3ac6fb9ff1f2a41ca2331641"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad137937f3ac6fb9ff1f2a41ca2331641">&#9670;&#160;</a></span>loadConstAsPtr()</h2>
+<a id="af7d6b5ff1ea585a5192e2c95570b6ebe" name="af7d6b5ff1ea585a5192e2c95570b6ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d6b5ff1ea585a5192e2c95570b6ebe">&#9670;&#160;</a></span>loadConstAsPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1161,7 +1163,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::loadConstAsPtr </td>
+          <td class="memname">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::loadConstAsPtr </td>
           <td>(</td>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
           <td> const</td>
@@ -1183,9 +1185,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value* </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00125">125</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -1227,14 +1227,14 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00163">163</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00028">ARK_NO_NAME_FILE</a>, <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00028">Ark::Utils::fileExists()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00171">Ark::State::m_constants</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00167">Ark::State::m_filename</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00166">Ark::State::m_libenv</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00186">m_shared_lib_objects</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../d2/d33/ModuleMapping_8hpp_source.html#l00010">Ark::mapping::name</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00395">throwVMError()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00034">ARK_NO_NAME_FILE</a>, <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00028">Ark::Utils::fileExists()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00171">Ark::State::m_constants</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00167">Ark::State::m_filename</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00166">Ark::State::m_libenv</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00178">m_shared_lib_objects</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../d2/d33/ModuleMapping_8hpp_source.html#l00010">Ark::mapping::name</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00389">throwVMError()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
-<a id="a31f789e666761527e0efb0d7d9629680" name="a31f789e666761527e0efb0d7d9629680"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31f789e666761527e0efb0d7d9629680">&#9670;&#160;</a></span>loadSymbol()</h2>
+<a id="a4fdc3349d1a181c818072c533bd79465" name="a4fdc3349d1a181c818072c533bd79465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fdc3349d1a181c818072c533bd79465">&#9670;&#160;</a></span>loadSymbol()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1243,7 +1243,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::loadSymbol </td>
+          <td class="memname">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::loadSymbol </td>
           <td>(</td>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
@@ -1270,14 +1270,12 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value* nullptr if the symbol could not be loaded </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00098">98</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
-<a id="a5f161e13b7eb10ec2952680bbef3fa41" name="a5f161e13b7eb10ec2952680bbef3fa41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f161e13b7eb10ec2952680bbef3fa41">&#9670;&#160;</a></span>loadSymbolFromIndex()</h2>
+<a id="ab08c60b1d67447526f883ab09a4d46a3" name="ab08c60b1d67447526f883ab09a4d46a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab08c60b1d67447526f883ab09a4d46a3">&#9670;&#160;</a></span>loadSymbolFromIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1286,7 +1284,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::loadSymbolFromIndex </td>
+          <td class="memname">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::loadSymbolFromIndex </td>
           <td>(</td>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
         </tr>
@@ -1313,9 +1311,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value* </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00113">113</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -1353,12 +1349,12 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00138">138</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00073">Ark::MaxValue16Bits</a>, and <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#a0541c7c43175f68aca89a4c3a61fca12">Ark::internal::Builtins::nil</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00081">Ark::MaxValue16Bits</a>, and <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#a0541c7c43175f68aca89a4c3a61fca12">Ark::internal::Builtins::nil</a>.</p>
 
 </div>
 </div>
-<a id="a738498d297ebf6ce7fd7890df68d790c" name="a738498d297ebf6ce7fd7890df68d790c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a738498d297ebf6ce7fd7890df68d790c">&#9670;&#160;</a></span>peek()</h2>
+<a id="a7e721a7ff122b42cb5d6bbda2ed28fe9" name="a7e721a7ff122b42cb5d6bbda2ed28fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e721a7ff122b42cb5d6bbda2ed28fe9">&#9670;&#160;</a></span>peek()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1367,7 +1363,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::peek </td>
+          <td class="memname">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::peek </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
         </tr>
@@ -1384,12 +1380,22 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00178">178</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p>Return a pointer to the top of the stack without consuming it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td></td></tr>
+    <tr><td class="paramname">offset</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value* </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
-<a id="acec013723ac6dc0f765d8dfc8a1163f3" name="acec013723ac6dc0f765d8dfc8a1163f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acec013723ac6dc0f765d8dfc8a1163f3">&#9670;&#160;</a></span>peekAndResolveAsPtr()</h2>
+<a id="a266d008609c4fd8b5cb53674922e2aef" name="a266d008609c4fd8b5cb53674922e2aef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a266d008609c4fd8b5cb53674922e2aef">&#9670;&#160;</a></span>peekAndResolveAsPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1398,7 +1404,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::peekAndResolveAsPtr </td>
+          <td class="memname">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::peekAndResolveAsPtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
         </tr>
@@ -1425,14 +1431,12 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value* </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00188">188</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">Ark::internal::Debugger::run()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00029">Ark::Repl::run()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">Ark::internal::Debugger::run()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00029">Ark::Repl::run()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
-<a id="a9793d82e9100c6badd8fa9aa8d8bbbcb" name="a9793d82e9100c6badd8fa9aa8d8bbbcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9793d82e9100c6badd8fa9aa8d8bbbcb">&#9670;&#160;</a></span>pop()</h2>
+<a id="adf9f93a878f64d360ba273698ef0bba1" name="adf9f93a878f64d360ba273698ef0bba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf9f93a878f64d360ba273698ef0bba1">&#9670;&#160;</a></span>pop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1441,7 +1445,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::pop </td>
+          <td class="memname">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::pop </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
           <td></td>
@@ -1463,14 +1467,12 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value* </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00168">168</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02310">backtrace()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02225">backtrace()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
-<a id="a1f457f61486e2084b3e3538436852ead" name="a1f457f61486e2084b3e3538436852ead"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f457f61486e2084b3e3538436852ead">&#9670;&#160;</a></span>popAndResolveAsPtr()</h2>
+<a id="a83b3e6a611ca0642ca674a50a2c3e79a" name="a83b3e6a611ca0642ca674a50a2c3e79a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b3e6a611ca0642ca674a50a2c3e79a">&#9670;&#160;</a></span>popAndResolveAsPtr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1479,7 +1481,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::popAndResolveAsPtr </td>
+          <td class="memname">ARK_ALWAYS_INLINE <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> * Ark::VM::popAndResolveAsPtr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
           <td></td>
@@ -1501,14 +1503,12 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value* </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00219">219</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02310">backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00109">createList()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00121">listAppendInPlace()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02225">backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00109">createList()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00121">listAppendInPlace()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
-<a id="ace7c346842c65edacb9d1c6af5f3c305" name="ace7c346842c65edacb9d1c6af5f3c305"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace7c346842c65edacb9d1c6af5f3c305">&#9670;&#160;</a></span>push() <span class="overload">[1/3]</span></h2>
+<a id="a7bf17ed5f589349ff00e77753c77d9a8" name="a7bf17ed5f589349ff00e77753c77d9a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf17ed5f589349ff00e77753c77d9a8">&#9670;&#160;</a></span>push() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1517,7 +1517,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ark::VM::push </td>
+          <td class="memname">ARK_ALWAYS_INLINE void Ark::VM::push </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
         </tr>
@@ -1543,14 +1543,12 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00200">200</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
-<a id="aa27323ffde032ee9ccd5a6777d15a5d9" name="aa27323ffde032ee9ccd5a6777d15a5d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa27323ffde032ee9ccd5a6777d15a5d9">&#9670;&#160;</a></span>push() <span class="overload">[2/3]</span></h2>
+<a id="a9c1dcb8409be0fc4dfa4602256db83b7" name="a9c1dcb8409be0fc4dfa4602256db83b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c1dcb8409be0fc4dfa4602256db83b7">&#9670;&#160;</a></span>push() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1559,7 +1557,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ark::VM::push </td>
+          <td class="memname">ARK_ALWAYS_INLINE void Ark::VM::push </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
         </tr>
@@ -1585,12 +1583,10 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00206">206</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
 </div>
 </div>
-<a id="a11c7ff162f6fb97054c1bdb2bda0b8dc" name="a11c7ff162f6fb97054c1bdb2bda0b8dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11c7ff162f6fb97054c1bdb2bda0b8dc">&#9670;&#160;</a></span>push() <span class="overload">[3/3]</span></h2>
+<a id="a65e78f62b3cf0efefc332960e35e690a" name="a65e78f62b3cf0efefc332960e35e690a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e78f62b3cf0efefc332960e35e690a">&#9670;&#160;</a></span>push() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1599,7 +1595,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ark::VM::push </td>
+          <td class="memname">ARK_ALWAYS_INLINE void Ark::VM::push </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> *</td>          <td class="paramname"><span class="paramname"><em>valptr</em></span>, </td>
         </tr>
@@ -1624,8 +1620,6 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   </table>
   </dd>
 </dl>
-
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00212">212</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
 </div>
 </div>
@@ -1666,14 +1660,12 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
 <p class="reference">Referenced by <a class="el" href="../../d4/dc9/Future_8cpp_source.html#l00020">Ark::internal::Future::Future()</a>.</p>
 
 </div>
 </div>
-<a id="a9a834f79b1ed4b9e98c6f4d742b73e40" name="a9a834f79b1ed4b9e98c6f4d742b73e40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a834f79b1ed4b9e98c6f4d742b73e40">&#9670;&#160;</a></span>returnFromFuncCall()</h2>
+<a id="a0add5e959d4f305039c5f8a8c5ec8842" name="a0add5e959d4f305039c5f8a8c5ec8842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0add5e959d4f305039c5f8a8c5ec8842">&#9670;&#160;</a></span>returnFromFuncCall()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1682,7 +1674,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ark::VM::returnFromFuncCall </td>
+          <td class="memname">ARK_ALWAYS_INLINE void Ark::VM::returnFromFuncCall </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
           <td></td>
@@ -1704,9 +1696,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00239">239</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02310">backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02168">throwArityError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02225">backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02083">throwArityError()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -1734,9 +1724,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int the exit code (default to 0 if no error) </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00400">400</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00394">394</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00028">init()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00182">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00183">m_exit_code</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00028">init()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00174">m_execution_contexts</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00175">m_exit_code</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00401">safeRun()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/d95/arkemscripten_2main_8cpp_source.html#l00008">__attribute__()</a>, and <a class="el" href="../../d0/d46/arkscript_2main_8cpp_source.html#l00024">main()</a>.</p>
 
@@ -1785,16 +1775,16 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int the exit code </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">407</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00401">401</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00186">Ark::internal::ADD</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aed36a1ef76a59ee3f15180e0441188ad">Ark::Any</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00133">Ark::internal::APPEND</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00141">Ark::internal::APPEND_IN_PLACE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00432">Ark::internal::APPEND_IN_PLACE_SYM</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00436">Ark::internal::APPEND_IN_PLACE_SYM_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00178">Ark::internal::APPLY</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00237">Ark::internal::AT</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00074">Ark::helper::at()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00240">Ark::internal::AT_AT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00420">Ark::internal::AT_SYM_INDEX_CONST</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00416">Ark::internal::AT_SYM_INDEX_SYM_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00412">Ark::internal::AT_SYM_SYM</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00113">Ark::helper::atAt()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02310">backtrace()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00183">Ark::internal::BREAKPOINT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00105">Ark::internal::BUILTIN</a>, <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#ae99a104c484192543989515d4eda8a5a">Ark::internal::Builtins::builtins</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00090">Ark::internal::CALL</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00006">call()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00344">Ark::internal::CALL_BUILTIN</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00348">Ark::internal::CALL_BUILTIN_WITHOUT_RETURN_ADDRESS</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00400">Ark::internal::CALL_CURRENT_PAGE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00392">Ark::internal::CALL_SYMBOL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00396">Ark::internal::CALL_SYMBOL_BY_INDEX</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00362">callBuiltin()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00097">Ark::internal::CAPTURE</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00040">Ark::internal::ExecutionContext::capture_rename_id</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00424">Ark::internal::CHECK_TYPE_OF</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00428">Ark::internal::CHECK_TYPE_OF_BY_INDEX</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aaf4bb376939e77df0e7c2332b837a866">Ark::Closure</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00137">Ark::internal::CONCAT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00145">Ark::internal::CONCAT_IN_PLACE</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00170">Ark::Value::constList()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a78c1e09380f2f8ea572cd59c5cd4bc92">Ark::CProc</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00169">Ark::internal::CREATE_SCOPE</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00109">createList()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00296">Ark::internal::DECREMENT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00300">Ark::internal::DECREMENT_BY_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00304">Ark::internal::DECREMENT_STORE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00109">Ark::internal::DEL</a>, <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html#l00039">Ark::Error::details()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a91516e7a50ce0a67a8eb1f9229c293d1">Ark::Dict</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00176">Ark::Value::dict()</a>, <a class="el" href="../../d2/d27/VM_8cpp.html#a8297cddbebf50a1736914db65c5724ae">DISPATCH</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00195">Ark::internal::DIV</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00151">Ark::helper::doMath()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00213">Ark::internal::EQ</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00376">Ark::internal::EQ_CONST_JUMP_IF_TRUE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00380">Ark::internal::EQ_SYM_INDEX_JUMP_IF_TRUE</a>, <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#a50c50c475a29822fe85e5c16b91c9015">Ark::internal::Builtins::falseSym</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00059">Ark::FeatureVMDebugger</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00229">findNearestVariable()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00460">Ark::internal::FUSED_MATH</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a8c97626c3bda0721059f5eddbd2d255d">Ark::Garbage</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00207">Ark::internal::GE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00117">Ark::internal::GET_FIELD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00121">Ark::internal::GET_FIELD_AS_CLOSURE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00404">Ark::internal::GET_FIELD_FROM_SYMBOL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00408">Ark::internal::GET_FIELD_FROM_SYMBOL_INDEX</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00062">getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp.html#a0cce6126f28e64a6f17e96243846e2f1">GOTO_HALT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00198">Ark::internal::GT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00368">Ark::internal::GT_CONST_JUMP_IF_FALSE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00364">Ark::internal::GT_CONST_JUMP_IF_TRUE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00372">Ark::internal::GT_SYM_JUMP_IF_FALSE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00083">Ark::internal::HALT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00249">Ark::internal::HAS_FIELD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00225">Ark::internal::HEAD</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00052">Ark::helper::head()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00284">Ark::internal::INCREMENT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00288">Ark::internal::INCREMENT_BY_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00292">Ark::internal::INCREMENT_STORE</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02227">initDebugger()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00036">Ark::internal::ExecutionContext::inst_exec_counter</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6adf754f9ba8524ed3333ec938d0636862">Ark::InstPtr</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00177">internal::Closure</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00219">Ark::internal::IS_EMPTY</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00228">Ark::internal::IS_NIL</a>, <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00085">Ark::Utils::isDouble()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00159">Ark::Value::isIndexable()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00077">Ark::internal::JUMP</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00158">jump()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00034">Ark::internal::ExecutionContext::last_symbol</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00204">Ark::internal::LE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00216">Ark::internal::LEN</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00129">Ark::internal::LIST</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00171">Ark::Value::list()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00121">listAppendInPlace()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00053">Ark::internal::LOAD_CONST</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00256">Ark::internal::LOAD_CONST_LOAD_CONST</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00264">Ark::internal::LOAD_CONST_SET_VAL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00260">Ark::internal::LOAD_CONST_STORE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00041">Ark::internal::LOAD_FAST</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00045">Ark::internal::LOAD_FAST_BY_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00049">Ark::internal::LOAD_SYMBOL</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00125">loadConstAsPtr()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00163">loadPlugin()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00098">loadSymbol()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00113">loadSymbolFromIndex()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00201">Ark::internal::LT</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00352">Ark::internal::LT_CONST_JUMP_IF_FALSE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00356">Ark::internal::LT_CONST_JUMP_IF_TRUE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00444">Ark::internal::LT_LEN_SYM_JUMP_IF_FALSE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00360">Ark::internal::LT_SYM_JUMP_IF_FALSE</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00171">Ark::State::m_constants</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00188">m_debugger</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00183">m_exit_code</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00163">Ark::State::m_features</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00184">m_running</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00113">Ark::internal::MAKE_CLOSURE</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00169">Ark::helper::mathInstToStr()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00243">Ark::internal::MOD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00192">Ark::internal::MUL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00448">Ark::internal::MUL_BY</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00452">Ark::internal::MUL_BY_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00456">Ark::internal::MUL_SET_VAL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00210">Ark::internal::NEQ</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00384">Ark::internal::NEQ_CONST_JUMP_IF_TRUE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00388">Ark::internal::NEQ_SYM_JUMP_IF_FALSE</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4da8b7eb2c3f2007cf8238334401ef51">Ark::Nil</a>, <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#a0541c7c43175f68aca89a4c3a61fca12">Ark::internal::Builtins::nil</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00029">Ark::internal::NOP</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00252">Ark::internal::NOT</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6ab2ee912b91d69b435159c7c3f6df7f5f">Ark::Number</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00164">Ark::Value::number()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a6666eaba81f13e74d10ac1a9c9d6d7b1">Ark::PageAddr</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00181">Ark::Value::pageAddr()</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00188">peekAndResolveAsPtr()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00125">Ark::internal::PLUGIN</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00160">Ark::internal::POP</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00168">pop()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00073">Ark::internal::POP_JUMP_IF_FALSE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00057">Ark::internal::POP_JUMP_IF_TRUE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00148">Ark::internal::POP_LIST</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00151">Ark::internal::POP_LIST_IN_PLACE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00175">Ark::internal::POP_SCOPE</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00219">popAndResolveAsPtr()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00200">push()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00086">Ark::internal::PUSH_RETURN_ADDRESS</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00215">Ark::Value::refClosure()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a63d5049791d9d79d86e9a108b0a999ca">Ark::Reference</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00179">Ark::Value::reference()</a>, <a class="el" href="../../dc/dd5/Closure_8hpp_source.html#l00053">Ark::internal::Closure::refScope()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00101">Ark::internal::RENAME_NEXT_CAPTURE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00172">Ark::internal::RESET_SCOPE_JUMP</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00080">Ark::internal::RET</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00239">returnFromFuncCall()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00039">Ark::internal::ExecutionContext::saved_scope</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00044">Ark::internal::ExecutionContext::scopes_storage</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00157">Ark::internal::SET_AT_2_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00154">Ark::internal::SET_AT_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00069">Ark::internal::SET_VAL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00276">Ark::internal::SET_VAL_FROM</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00280">Ark::internal::SET_VAL_FROM_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00336">Ark::internal::SET_VAL_HEAD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00340">Ark::internal::SET_VAL_HEAD_BY_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00328">Ark::internal::SET_VAL_TAIL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00332">Ark::internal::SET_VAL_TAIL_BY_INDEX</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00140">setVal()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00163">Ark::internal::SHORTCIRCUIT_AND</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00166">Ark::internal::SHORTCIRCUIT_OR</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02235">showBacktraceWithException()</a>, <a class="el" href="../../d1/d8f/Dict_8cpp_source.html#l00040">Ark::internal::Dict::size()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00061">Ark::internal::STORE</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00130">store()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00268">Ark::internal::STORE_FROM</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00272">Ark::internal::STORE_FROM_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00316">Ark::internal::STORE_HEAD</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00320">Ark::internal::STORE_HEAD_BY_INDEX</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00440">Ark::internal::STORE_LEN</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00324">Ark::internal::STORE_LIST</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00065">Ark::internal::STORE_REF</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00308">Ark::internal::STORE_TAIL</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00312">Ark::internal::STORE_TAIL_BY_INDEX</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a27118326006d3829667a400ad23d5d98">Ark::String</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00166">Ark::Value::string()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00167">Ark::Value::stringRef()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00189">Ark::internal::SUB</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00222">Ark::internal::TAIL</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00023">Ark::helper::tail()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00093">Ark::internal::TAIL_CALL_SELF</a>, <a class="el" href="../../d2/d27/VM_8cpp.html#a31b4772efb44c9484e36032b3b891a3f">TARGET</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00395">throwVMError()</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00231">Ark::internal::TO_NUM</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00234">Ark::internal::TO_STR</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00233">std::to_string()</a>, <a class="el" href="../../d1/d74/Value_8cpp_source.html#l00077">Ark::Value::toString()</a>, <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#ac42d5de362d48803ef2a49f7f1e21e98">Ark::internal::Builtins::trueSym</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00246">Ark::internal::TYPE</a>, <a class="el" href="../../d2/d27/VM_8cpp.html#a7800a46aae80ab24192c8bf71136b7a2">UNPACK_ARGS</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a8f9bfe9d1345237cb3b2b205864da075">Ark::User</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00175">Value</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00153">Ark::Value::valueType()</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02225">backtrace()</a>, <a class="el" href="../../d2/de9/Exceptions_8hpp_source.html#l00039">Ark::Error::details()</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00066">Ark::FeatureVMDebugger</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00175">m_exit_code</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00163">Ark::State::m_features</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00176">m_running</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02150">showBacktraceWithException()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">Ark::internal::Debugger::run()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00029">Ark::Repl::run()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00400">run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">Ark::internal::Debugger::run()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00029">Ark::Repl::run()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00394">run()</a>.</p>
 
 </div>
 </div>
-<a id="ac2fa2359a394c44cf286034c67aaec78" name="ac2fa2359a394c44cf286034c67aaec78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2fa2359a394c44cf286034c67aaec78">&#9670;&#160;</a></span>setVal()</h2>
+<a id="a5dc54a200a93cb54b86c6092012a39fa" name="a5dc54a200a93cb54b86c6092012a39fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc54a200a93cb54b86c6092012a39fa">&#9670;&#160;</a></span>setVal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1803,7 +1793,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ark::VM::setVal </td>
+          <td class="memname">ARK_ALWAYS_INLINE void Ark::VM::setVal </td>
           <td>(</td>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
@@ -1835,9 +1825,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00140">140</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -1868,16 +1856,16 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02235">2235</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02150">2150</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02310">backtrace()</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00059">Ark::FeatureVMDebugger</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02227">initDebugger()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00188">m_debugger</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00183">m_exit_code</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00163">Ark::State::m_features</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>.</p>
+<p class="reference">References <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02225">backtrace()</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00066">Ark::FeatureVMDebugger</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02142">initDebugger()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00180">m_debugger</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00175">m_exit_code</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00163">Ark::State::m_features</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00401">safeRun()</a>.</p>
 
 </div>
 </div>
-<a id="abefab392a0a09d82f505c79e2898e8c4" name="abefab392a0a09d82f505c79e2898e8c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abefab392a0a09d82f505c79e2898e8c4">&#9670;&#160;</a></span>store()</h2>
+<a id="a3b9883113b66f6b7fcaefbd3a490998e" name="a3b9883113b66f6b7fcaefbd3a490998e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b9883113b66f6b7fcaefbd3a490998e">&#9670;&#160;</a></span>stackOverflowError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1886,7 +1874,36 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ark::VM::store </td>
+          <td class="memname">static ARK_ALWAYS_INLINE void Ark::VM::stackOverflowError </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00199">199</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>.</p>
+
+</div>
+</div>
+<a id="af8331c66a87d41e6e76a60beebb30b7c" name="af8331c66a87d41e6e76a60beebb30b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8331c66a87d41e6e76a60beebb30b7c">&#9670;&#160;</a></span>store()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ARK_ALWAYS_INLINE void Ark::VM::store </td>
           <td>(</td>
           <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
         </tr>
@@ -1918,9 +1935,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00130">130</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -1961,9 +1976,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02168">2168</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02083">2083</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/db5/State_8hpp_source.html#l00198">Ark::State::inst()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00034">Ark::internal::ExecutionContext::last_symbol</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00239">returnFromFuncCall()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00046">Ark::internal::ExecutionContext::stack</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00061">Ark::internal::STORE</a>, <a class="el" href="../../d8/daa/Instructions_8hpp_source.html#l00065">Ark::internal::STORE_REF</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00395">throwVMError()</a>, and <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00175">Value</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/db5/State_8hpp_source.html#l00198">Ark::State::inst()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00034">Ark::internal::ExecutionContext::last_symbol</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="#a0add5e959d4f305039c5f8a8c5ec8842">returnFromFuncCall()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00046">Ark::internal::ExecutionContext::stack</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00389">throwVMError()</a>, and <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00167">Value</a>.</p>
 
 </div>
 </div>
@@ -2003,11 +2018,48 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00395">395</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00389">389</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
 <p class="reference">References <a class="el" href="../../de/df9/ErrorKind_8hpp_source.html#l00020">Ark::internal::errorKinds</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00074">Ark::helper::at()</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00113">Ark::helper::atAt()</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00151">Ark::helper::doMath()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00062">getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00163">loadPlugin()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02168">throwArityError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00074">Ark::helper::at()</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00120">Ark::helper::atAt()</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00158">Ark::helper::doMath()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00062">getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00163">loadPlugin()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02083">throwArityError()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
+
+</div>
+</div>
+<a id="a543856556da19f00bacf89fbbdc2f27b" name="a543856556da19f00bacf89fbbdc2f27b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a543856556da19f00bacf89fbbdc2f27b">&#9670;&#160;</a></span>unsafeRun()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool WithDebugger&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::VM::unsafeRun </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">internal::ExecutionContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>untilFrameCount</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">458</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aed36a1ef76a59ee3f15180e0441188ad">Ark::Any</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00074">Ark::helper::at()</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00120">Ark::helper::atAt()</a>, <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#ae99a104c484192543989515d4eda8a5a">Ark::internal::Builtins::builtins</a>, <a class="el" href="#a8ff9788c87903a066e1851fdb23470b0">call()</a>, <a class="el" href="#a713f6b060cf149d9f06c17e921c67ac9">callBuiltin()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00040">Ark::internal::ExecutionContext::capture_rename_id</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aaf4bb376939e77df0e7c2332b837a866">Ark::Closure</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00171">Ark::Value::constList()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a78c1e09380f2f8ea572cd59c5cd4bc92">Ark::CProc</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00109">createList()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a91516e7a50ce0a67a8eb1f9229c293d1">Ark::Dict</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00177">Ark::Value::dict()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00178">Ark::Value::dictRef()</a>, <a class="el" href="../../d2/d27/VM_8cpp.html#a8297cddbebf50a1736914db65c5724ae">DISPATCH</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00158">Ark::helper::doMath()</a>, <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#a50c50c475a29822fe85e5c16b91c9015">Ark::internal::Builtins::falseSym</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00066">Ark::FeatureVMDebugger</a>, <a class="el" href="#a900af15fcc776d274016ed6553e1a045">findNearestVariable()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a8c97626c3bda0721059f5eddbd2d255d">Ark::Garbage</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00062">getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp.html#a0cce6126f28e64a6f17e96243846e2f1">GOTO_HALT</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00052">Ark::helper::head()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02142">initDebugger()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00036">Ark::internal::ExecutionContext::inst_exec_counter</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6adf754f9ba8524ed3333ec938d0636862">Ark::InstPtr</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00169">internal::Closure</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../d3/d7a/Ark_2Utils_2Utils_8hpp_source.html#l00085">Ark::Utils::isDouble()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00160">Ark::Value::isIndexable()</a>, <a class="el" href="#a486a353a5f58d901e459a709f915e034">jump()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00034">Ark::internal::ExecutionContext::last_symbol</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4ee29ca12c7d126654bd0e5275de6135">Ark::List</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00172">Ark::Value::list()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00121">listAppendInPlace()</a>, <a class="el" href="#af7d6b5ff1ea585a5192e2c95570b6ebe">loadConstAsPtr()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00163">loadPlugin()</a>, <a class="el" href="#a4fdc3349d1a181c818072c533bd79465">loadSymbol()</a>, <a class="el" href="#ab08c60b1d67447526f883ab09a4d46a3">loadSymbolFromIndex()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00171">Ark::State::m_constants</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00180">m_debugger</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00163">Ark::State::m_features</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00176">m_running</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00176">Ark::helper::mathInstToStr()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a4da8b7eb2c3f2007cf8238334401ef51">Ark::Nil</a>, <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#a0541c7c43175f68aca89a4c3a61fca12">Ark::internal::Builtins::nil</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6ab2ee912b91d69b435159c7c3f6df7f5f">Ark::Number</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00165">Ark::Value::number()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a6666eaba81f13e74d10ac1a9c9d6d7b1">Ark::PageAddr</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00182">Ark::Value::pageAddr()</a>, <a class="el" href="#a7e721a7ff122b42cb5d6bbda2ed28fe9">peek()</a>, <a class="el" href="#a266d008609c4fd8b5cb53674922e2aef">peekAndResolveAsPtr()</a>, <a class="el" href="#adf9f93a878f64d360ba273698ef0bba1">pop()</a>, <a class="el" href="#a83b3e6a611ca0642ca674a50a2c3e79a">popAndResolveAsPtr()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="#a7bf17ed5f589349ff00e77753c77d9a8">push()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00217">Ark::Value::refClosure()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a63d5049791d9d79d86e9a108b0a999ca">Ark::Reference</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00180">Ark::Value::reference()</a>, <a class="el" href="../../dc/dd5/Closure_8hpp_source.html#l00054">Ark::internal::Closure::refScope()</a>, <a class="el" href="#a0add5e959d4f305039c5f8a8c5ec8842">returnFromFuncCall()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00039">Ark::internal::ExecutionContext::saved_scope</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00044">Ark::internal::ExecutionContext::scopes_storage</a>, <a class="el" href="../../d1/d8f/Dict_8cpp_source.html#l00009">Ark::internal::Dict::set()</a>, <a class="el" href="#a5dc54a200a93cb54b86c6092012a39fa">setVal()</a>, <a class="el" href="../../d1/d8f/Dict_8cpp_source.html#l00040">Ark::internal::Dict::size()</a>, <a class="el" href="#af8331c66a87d41e6e76a60beebb30b7c">store()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a27118326006d3829667a400ad23d5d98">Ark::String</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00167">Ark::Value::string()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00168">Ark::Value::stringRef()</a>, <a class="el" href="../../d7/dd7/Helpers_8hpp_source.html#l00023">Ark::helper::tail()</a>, <a class="el" href="../../d2/d27/VM_8cpp.html#a31b4772efb44c9484e36032b3b891a3f">TARGET</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00389">throwVMError()</a>, <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00235">std::to_string()</a>, <a class="el" href="../../d1/d74/Value_8cpp_source.html#l00081">Ark::Value::toString()</a>, <a class="el" href="../../df/dda/namespaceArk_1_1internal_1_1Builtins.html#ac42d5de362d48803ef2a49f7f1e21e98">Ark::internal::Builtins::trueSym</a>, <a class="el" href="../../d2/d27/VM_8cpp.html#a7800a46aae80ab24192c8bf71136b7a2">UNPACK_ARGS</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a8f9bfe9d1345237cb3b2b205864da075">Ark::User</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00167">Value</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00154">Ark::Value::valueType()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00401">safeRun()</a>.</p>
 
 </div>
 </div>
@@ -2039,9 +2091,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00390">390</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00384">384</a> of file <a class="el" href="../../d2/d27/VM_8cpp_source.html">VM.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d0/db5/State_8hpp_source.html#l00171">Ark::State::m_constants</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00188">m_debugger</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00166">Ark::State::m_libenv</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">m_state</a>, and <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/db5/State_8hpp_source.html#l00171">Ark::State::m_constants</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00180">m_debugger</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00166">Ark::State::m_libenv</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">m_state</a>, and <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>.</p>
 
 </div>
 </div>
@@ -2066,9 +2118,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00177">177</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00169">169</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00062">getField()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00062">getField()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -2092,7 +2144,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00178">178</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00170">170</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
 </div>
 </div>
@@ -2116,7 +2168,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00176">176</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00168">168</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
 </div>
 </div>
@@ -2140,9 +2192,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00175">175</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00167">167</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02310">backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00062">getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02168">throwArityError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02225">backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00062">getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02083">throwArityError()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -2167,9 +2219,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00188">188</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00180">180</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02227">initDebugger()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02235">showBacktraceWithException()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00390">usePromptFileForDebugger()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02142">initDebugger()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02150">showBacktraceWithException()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00384">usePromptFileForDebugger()</a>.</p>
 
 </div>
 </div>
@@ -2193,9 +2245,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00182">182</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00174">174</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00249">createAndGetContext()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00335">createFuture()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02298">debugShowSource()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00305">deleteContext()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00359">forceReloadPlugins()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00028">init()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00029">Ark::Repl::run()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00400">run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00249">createAndGetContext()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00329">createFuture()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02213">debugShowSource()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00306">deleteContext()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00353">forceReloadPlugins()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00028">init()</a>, <a class="el" href="../../d7/d46/Repl_8cpp_source.html#l00029">Ark::Repl::run()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00394">run()</a>.</p>
 
 </div>
 </div>
@@ -2221,9 +2273,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 
 <p><a class="el" href="../../d2/d93/classArk_1_1VM.html" title="The ArkScript virtual machine, executing ArkScript bytecode.">VM</a> exit code, defaults to 0. Can be changed through <code>sys:exit</code> </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00183">183</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00175">175</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00028">init()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00400">run()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02235">showBacktraceWithException()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00028">init()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00394">run()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00401">safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02150">showBacktraceWithException()</a>.</p>
 
 </div>
 </div>
@@ -2249,9 +2301,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 
 <p>Storing the promises while we are resolving them. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00187">187</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00179">179</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00335">createFuture()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00348">deleteFuture()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00329">createFuture()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00342">deleteFuture()</a>.</p>
 
 </div>
 </div>
@@ -2275,9 +2327,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00185">185</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00177">177</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00249">createAndGetContext()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00305">deleteContext()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00249">createAndGetContext()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00306">deleteContext()</a>.</p>
 
 </div>
 </div>
@@ -2301,9 +2353,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00185">185</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00177">177</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00335">createFuture()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00348">deleteFuture()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00329">createFuture()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00342">deleteFuture()</a>.</p>
 
 </div>
 </div>
@@ -2327,7 +2379,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00191">191</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00183">183</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
 </div>
 </div>
@@ -2351,9 +2403,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00184">184</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00176">176</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">Ark::internal::Debugger::run()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">Ark::internal::Debugger::run()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00401">safeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>.</p>
 
 </div>
 </div>
@@ -2377,9 +2429,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00186">186</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00178">178</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00359">forceReloadPlugins()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00028">init()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00163">loadPlugin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00353">forceReloadPlugins()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00028">init()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00163">loadPlugin()</a>.</p>
 
 </div>
 </div>
@@ -2403,9 +2455,9 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">181</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">173</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02310">backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02298">debugShowSource()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02275">findSourceLocation()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00359">forceReloadPlugins()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00062">getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00028">init()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02227">initDebugger()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00163">loadPlugin()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">Ark::internal::Debugger::run()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">safeRun()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02235">showBacktraceWithException()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00131">Ark::internal::Debugger::showContext()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00179">Ark::internal::Debugger::showLocals()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02168">throwArityError()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00390">usePromptFileForDebugger()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02225">backtrace()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02213">debugShowSource()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02190">findSourceLocation()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00353">forceReloadPlugins()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00062">getField()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00028">init()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02142">initDebugger()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00163">loadPlugin()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">Ark::internal::Debugger::run()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00401">safeRun()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02150">showBacktraceWithException()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00294">Ark::internal::Debugger::showContext()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00389">Ark::internal::Debugger::showLocals()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02083">throwArityError()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00458">unsafeRun()</a>, and <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00384">usePromptFileForDebugger()</a>.</p>
 
 </div>
 </div>
@@ -2429,7 +2481,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00192">192</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00184">184</a> of file <a class="el" href="../../d1/d91/VM_8hpp_source.html">VM.hpp</a>.</p>
 
 </div>
 </div>
@@ -2443,7 +2495,7 @@ false if one or more plugins couldn't be reloaded </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a></li>
-    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Aug 29 2026 18:10:55 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

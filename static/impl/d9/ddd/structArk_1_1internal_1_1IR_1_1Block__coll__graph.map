@@ -1,0 +1,17 @@
+<map id="Ark::internal::IR::Block" name="Ark::internal::IR::Block">
+<area shape="rect" id="Node000001" title="Block of IR entities, with attached metadata." alt="" coords="49,391,171,432"/>
+<area shape="rect" id="Node000002" href="$de/da7/structArk_1_1internal_1_1IR_1_1Block_1_1Metadata.html" title=" " alt="" coords="5,288,127,328"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,341,104,390,99,392,78,344"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="151,295,293,321"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,333,134,393,130,389,196,329"/>
+<area shape="rect" id="Node000004" href="$dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html" title=" " alt="" coords="84,184,205,225"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="171,235,191,262,215,293,211,296,187,265,166,239"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="105,95,184,121"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="147,136,147,183,142,183,142,136"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="82,5,207,46"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="147,61,147,95,142,95,142,61"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="230,192,345,217"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="274,232,232,296,228,293,269,229"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="268,95,307,121"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="290,137,290,191,285,191,285,137"/>
+</map>

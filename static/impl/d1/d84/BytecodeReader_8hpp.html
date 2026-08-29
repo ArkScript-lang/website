@@ -26,7 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="../../ArkTransparent-small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../logo-2026-rectangle-256x85.png"/></td>
   <td id="projectalign">
    <div id="projectname">ArkScript
    </div>
@@ -95,6 +95,7 @@ $(function(){initNavTree('d1/d84/BytecodeReader_8hpp.html','../../'); initResiza
 <code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d5/d40/Platform_8hpp_source.html">Ark/Utils/Platform.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d8/ddd/Common_8hpp_source.html">Ark/Compiler/Common.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d8/daa/Instructions_8hpp_source.html">Ark/Compiler/Instructions.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/dfd/Value_8hpp_source.html">Ark/VM/Value/Value.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d5/d3a/InstLoc_8hpp_source.html">Ark/Compiler/IntermediateRepresentation/InstLoc.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -124,6 +125,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd5/structArk_1_1Code.html">Ark::Code</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d98/structArk_1_1internal_1_1Arg.html">Ark::internal::Arg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d08/classArk_1_1BytecodeReader.html">Ark::BytecodeReader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is just a helper to.  <a href="../../d8/d08/classArk_1_1BytecodeReader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +134,8 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -146,6 +151,29 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:afa776c29439b830386e8220ccab402f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5db036cb8813741e30a781bccb4a7b6" id="r_ae5db036cb8813741e30a781bccb4a7b6"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6">Ark::internal::ArgKind</a> { <br />
+&#160;&#160;<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a02c86eb2792f3262c21d030a87e19793">Ark::internal::Symbol</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6acb17869fe51048b5a5c4c6106551a255">Ark::internal::Constant</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6adefccbed9421a1e9180a9b1fc35dacdb">Ark::internal::Builtin</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a65e65c8ab0d8609ce12fc68a03cb8e00">Ark::internal::Raw</a>
+, <br />
+&#160;&#160;<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a8efc87bf002bc9880acf6487c5c61039">Ark::internal::RawHex</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a96dbe3fdaf54a5653f1986d2fe2cb3dc">Ark::internal::ConstConst</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a8287328822074d46d6b282d0abf1e4f5">Ark::internal::ConstSym</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6aed01e6d247b1abe1cfd414b6a1dd0569">Ark::internal::SymConst</a>
+, <br />
+&#160;&#160;<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a2ccc045cdcddf5a42b47277bdc74dc8e">Ark::internal::SymSym</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a3cb3637b2d5a3a3ebca81b12e4d4d7c8">Ark::internal::BuiltinRaw</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6ada75b4d72efc9d68c019df91519ac7d7">Ark::internal::ConstRaw</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a4245984549aa289fa4e05d678a51e85c">Ark::internal::SymRaw</a>
+, <br />
+&#160;&#160;<a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a15ad02e60e3d14af2182ff0ae2416aac">Ark::internal::RawSym</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a6738e0c241ec9341bc372c5afd4e03aa">Ark::internal::RawConst</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a312b6d00607c9834f49af183390514df">Ark::internal::RawRaw</a>
+, <a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html#ae5db036cb8813741e30a781bccb4a7b6a3ef42325c47ba218d9be6d9f10ecd47d">Ark::internal::RawRawRaw</a>
+<br />
+ }</td></tr>
+<tr class="separator:ae5db036cb8813741e30a781bccb4a7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A bytecode disassembler for ArkScript. </p>
@@ -160,7 +188,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_a8b6c64285bf9ac60f50770eb2fc48b5.html">Ark</a></li><li class="navelem"><a class="el" href="../../dir_e4f19535f57335fb80a0267cec25bf70.html">Compiler</a></li><li class="navelem"><a class="el" href="../../d1/d84/BytecodeReader_8hpp.html">BytecodeReader.hpp</a></li>
-    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Aug 29 2026 18:10:55 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

@@ -12,13 +12,15 @@ digraph "Ark::internal::Pass"
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="Ark::internal::IRCompiler",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d0/da1/classArk_1_1internal_1_1IRCompiler.html",tooltip=" "];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="Ark::internal::IROptimizer",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$da/d85/classArk_1_1internal_1_1IROptimizer.html",tooltip=" "];
+  Node4 [id="Node000004",label="Ark::internal::IRInliner",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$dd/d70/classArk_1_1internal_1_1IRInliner.html",tooltip=" "];
   Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="Ark::internal::ImportSolver",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d2/d90/classArk_1_1internal_1_1ImportSolver.html",tooltip=" "];
+  Node5 [id="Node000005",label="Ark::internal::IROptimizer",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$da/d85/classArk_1_1internal_1_1IROptimizer.html",tooltip=" "];
   Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="Ark::internal::MacroProcessor",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d5/db5/classArk_1_1internal_1_1MacroProcessor.html",tooltip="The class handling the macros definitions and calls, given an AST."];
+  Node6 [id="Node000006",label="Ark::internal::ImportSolver",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d2/d90/classArk_1_1internal_1_1ImportSolver.html",tooltip=" "];
   Node1 -> Node7 [id="edge6_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="Ark::internal::NameResolutionPass",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d7/db8/classArk_1_1internal_1_1NameResolutionPass.html",tooltip=" "];
+  Node7 [id="Node000007",label="Ark::internal::MacroProcessor",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d5/db5/classArk_1_1internal_1_1MacroProcessor.html",tooltip="The class handling the macros definitions and calls, given an AST."];
   Node1 -> Node8 [id="edge7_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node8 [id="Node000008",label="Ark::internal::Optimizer",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d7/da8/classArk_1_1internal_1_1Optimizer.html",tooltip="The ArkScript AST optimizer."];
+  Node8 [id="Node000008",label="Ark::internal::NameResolutionPass",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d7/db8/classArk_1_1internal_1_1NameResolutionPass.html",tooltip=" "];
+  Node1 -> Node9 [id="edge8_Node000001_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="Ark::internal::Optimizer",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$d7/da8/classArk_1_1internal_1_1Optimizer.html",tooltip="The ArkScript AST optimizer."];
 }

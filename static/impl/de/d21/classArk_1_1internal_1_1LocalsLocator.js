@@ -10,8 +10,9 @@ var classArk_1_1internal_1_1LocalsLocator =
     [ "addLocal", "de/d21/classArk_1_1internal_1_1LocalsLocator.html#a9578149cd7146fb05429ff3145a61a8e", null ],
     [ "createScope", "de/d21/classArk_1_1internal_1_1LocalsLocator.html#aa9c13b014ffd6ae82f31acb8cc0f22d3", null ],
     [ "deleteScope", "de/d21/classArk_1_1internal_1_1LocalsLocator.html#a934818867e055e6402e62ec457734b70", null ],
-    [ "dropVarsForBranch", "de/d21/classArk_1_1internal_1_1LocalsLocator.html#a6f417e628fa9b71b81d3657df80ae5a8", null ],
+    [ "dropVarsForBranch", "de/d21/classArk_1_1internal_1_1LocalsLocator.html#a7e618436ce4b17f74b9daa36a9ee518e", null ],
     [ "lookupLastScopeByName", "de/d21/classArk_1_1internal_1_1LocalsLocator.html#a2704868d9c4e0616e2313c54b6b06e88", null ],
+    [ "markLastLocalAsUnreachable", "de/d21/classArk_1_1internal_1_1LocalsLocator.html#af8fe15631061606f907137df233ce9ec", null ],
     [ "saveScopeLengthForBranch", "de/d21/classArk_1_1internal_1_1LocalsLocator.html#a05718e7e414ba12108c86056d9d9f224", null ],
     [ "m_drop_for_conds", "de/d21/classArk_1_1internal_1_1LocalsLocator.html#a1b924f9216ddea9fc3b6e6258a58895d", null ],
     [ "m_scopes", "de/d21/classArk_1_1internal_1_1LocalsLocator.html#a05c1a379f961368b6f6cd2c7b54605df", null ]

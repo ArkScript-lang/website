@@ -26,7 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="../../ArkTransparent-small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../logo-2026-rectangle-256x85.png"/></td>
   <td id="projectalign">
    <div id="projectname">ArkScript
    </div>
@@ -190,8 +190,8 @@ $(function(){initNavTree('d0/de2/IROptimizer_8hpp_source.html','../../'); initRe
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="../../da/d85/classArk_1_1internal_1_1IROptimizer.html#a034f383ca0e957e0babe08203f7ebdb3">   93</a></span>        std::vector&lt;ValTableElem&gt; <a class="code hl_variable" href="../../da/d85/classArk_1_1internal_1_1IROptimizer.html#a034f383ca0e957e0babe08203f7ebdb3">m_values</a>;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        [[nodiscard]] <span class="keywordtype">bool</span> match(<span class="keyword">const</span> std::vector&lt;Instruction&gt;&amp; expected_insts, std::span&lt;const IR::Entity&gt; entities) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        [[nodiscard]] <span class="keywordtype">bool</span> canBeOptimizedSafely(std::span&lt;const IR::Entity&gt; entities, std::size_t window_size) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        std::optional&lt;EntityWithOffset&gt; replaceWithRules(std::span&lt;const IR::Entity&gt; entities, <span class="keyword">const</span> std::size_t position_in_block);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        [[nodiscard]] <span class="keyword">static</span> <span class="keywordtype">bool</span> canBeOptimisedSafely(std::span&lt;const IR::Entity&gt; entities, std::size_t window_size, std::size_t position_in_block);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        std::optional&lt;EntityWithOffset&gt; replaceWithRules(std::span&lt;const IR::Entity&gt; entities, std::size_t position_in_block);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        [[nodiscard]] <span class="keywordtype">bool</span> isPositiveNumberInlinable(uint16_t <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        [[nodiscard]] <span class="keywordtype">bool</span> isSmallerNumberInlinable(uint16_t <span class="keywordtype">id</span>) <span class="keyword">const</span>;</div>
@@ -217,7 +217,7 @@ $(function(){initNavTree('d0/de2/IROptimizer_8hpp_source.html','../../'); initRe
 <div class="ttc" id="aclassArk_1_1internal_1_1IROptimizer_html_a99f1876c73a7163e7496db80cf0103d2"><div class="ttname"><a href="../../da/d85/classArk_1_1internal_1_1IROptimizer.html#a99f1876c73a7163e7496db80cf0103d2">Ark::internal::IROptimizer::Replacement_t</a></div><div class="ttdeci">std::function&lt; IR::Entity(const Entities)&gt; Replacement_t</div><div class="ttdef"><b>Definition</b> <a href="#l00060">IROptimizer.hpp:60</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1IROptimizer_html_aaf86db80f5460438280a35f78b119762"><div class="ttname"><a href="../../da/d85/classArk_1_1internal_1_1IROptimizer.html#aaf86db80f5460438280a35f78b119762">Ark::internal::IROptimizer::m_symbols</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_symbols</div><div class="ttdef"><b>Definition</b> <a href="#l00092">IROptimizer.hpp:92</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1IROptimizer_html_afdd4232b9221cce92a1335324e99b4ed"><div class="ttname"><a href="../../da/d85/classArk_1_1internal_1_1IROptimizer.html#afdd4232b9221cce92a1335324e99b4ed">Ark::internal::IROptimizer::Condition_t</a></div><div class="ttdeci">std::function&lt; bool(const Entities, const std::size_t)&gt; Condition_t</div><div class="ttdef"><b>Definition</b> <a href="#l00059">IROptimizer.hpp:59</a></div></div>
-<div class="ttc" id="aclassArk_1_1internal_1_1IR_1_1Entity_html"><div class="ttname"><a href="../../dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html">Ark::internal::IR::Entity</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/da6/Entity_8hpp_source.html#l00040">Entity.hpp:41</a></div></div>
+<div class="ttc" id="aclassArk_1_1internal_1_1IR_1_1Entity_html"><div class="ttname"><a href="../../dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html">Ark::internal::IR::Entity</a></div><div class="ttdef"><b>Definition</b> <a href="../../de/da6/Entity_8hpp_source.html#l00044">Entity.hpp:45</a></div></div>
 <div class="ttc" id="aclassArk_1_1internal_1_1Pass_html"><div class="ttname"><a href="../../da/d7b/classArk_1_1internal_1_1Pass.html">Ark::internal::Pass</a></div><div class="ttdoc">An interface to describe compiler passes.</div><div class="ttdef"><b>Definition</b> <a href="../../df/d5f/Pass_8hpp_source.html#l00023">Pass.hpp:24</a></div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html">Ark::internal</a></div><div class="ttdef"><b>Definition</b> <a href="../../da/d84/Builtins_8hpp_source.html#l00025">Builtins.hpp:26</a></div></div>
 <div class="ttc" id="anamespaceArk_1_1internal_html_abcd166377fbe7dcd77e47ef80cee8681"><div class="ttname"><a href="../../dc/d0e/namespaceArk_1_1internal.html#abcd166377fbe7dcd77e47ef80cee8681">Ark::internal::Instruction</a></div><div class="ttdeci">Instruction</div><div class="ttdoc">The different bytecodes are stored here.</div><div class="ttdef"><b>Definition</b> <a href="../../d8/daa/Instructions_8hpp_source.html#l00026">Instructions.hpp:27</a></div></div>
@@ -238,7 +238,7 @@ $(function(){initNavTree('d0/de2/IROptimizer_8hpp_source.html','../../'); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_a8b6c64285bf9ac60f50770eb2fc48b5.html">Ark</a></li><li class="navelem"><a class="el" href="../../dir_e4f19535f57335fb80a0267cec25bf70.html">Compiler</a></li><li class="navelem"><a class="el" href="../../dir_ad45c69e33d564afb397466bf2d991f2.html">IntermediateRepresentation</a></li><li class="navelem"><a class="el" href="../../d0/de2/IROptimizer_8hpp.html">IROptimizer.hpp</a></li>
-    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Aug 29 2026 18:10:55 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,7 @@
 var namespaceArk_1_1internal_1_1IR =
 [
+    [ "Block", "dc/d26/structArk_1_1internal_1_1IR_1_1Block.html", "dc/d26/structArk_1_1internal_1_1IR_1_1Block" ],
     [ "Entity", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity" ],
-    [ "Block", "dc/d02/namespaceArk_1_1internal_1_1IR.html#a8eb76fcb4f2f3d8d86f7bbabd233e6f2", null ],
     [ "label_t", "dc/d02/namespaceArk_1_1internal_1_1IR.html#aa4b6737e9a7b690f90e82d801801f509", null ],
     [ "Kind", "dc/d02/namespaceArk_1_1internal_1_1IR.html#a3ff6aca07d6f0bf01495d0325ceb428d", [
       [ "Label", "dc/d02/namespaceArk_1_1internal_1_1IR.html#a3ff6aca07d6f0bf01495d0325ceb428dab021df6aac4654c454f46c77646e745f", null ],
@@ -11,6 +11,7 @@ var namespaceArk_1_1internal_1_1IR =
       [ "Opcode2Args", "dc/d02/namespaceArk_1_1internal_1_1IR.html#a3ff6aca07d6f0bf01495d0325ceb428dae41e6561ce156ae3f69d536110106750", null ],
       [ "Opcode3Args", "dc/d02/namespaceArk_1_1internal_1_1IR.html#a3ff6aca07d6f0bf01495d0325ceb428dac374bc227b2229a3d9379a8c9f824eaa", null ]
     ] ],
+    [ "AnonymousBlockName", "dc/d02/namespaceArk_1_1internal_1_1IR.html#af79c6e38ec7927d59afbb1e6bf6bb5fe", null ],
     [ "MaxValueForDualArg", "dc/d02/namespaceArk_1_1internal_1_1IR.html#a9a2ed84ef6832b5642b934f61195dbed", null ],
     [ "MaxValueForSmallNumber", "dc/d02/namespaceArk_1_1internal_1_1IR.html#a8b84acaf490e4c814652064648f01ab8", null ]
 ];

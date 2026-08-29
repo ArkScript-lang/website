@@ -84,10 +84,15 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/IntermediateRe
   Node29 -> Node16 [id="edge48_Node000029_Node000016",color="steelblue1",style="solid",tooltip=" "];
   Node29 -> Node2 [id="edge49_Node000029_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node29 -> Node3 [id="edge50_Node000029_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node29 -> Node30 [id="edge51_Node000029_Node000030",color="steelblue1",style="solid",tooltip=" "];
-  Node30 [id="Node000030",label="Ark/Compiler/Intermediate\lRepresentation/Word.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d53/Word_8hpp.html",tooltip="Describe an instruction and its immediate argument."];
-  Node30 -> Node16 [id="edge52_Node000030_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node29 -> Node25 [id="edge51_Node000029_Node000025",color="steelblue1",style="solid",tooltip=" "];
+  Node29 -> Node30 [id="edge52_Node000029_Node000030",color="steelblue1",style="solid",tooltip=" "];
+  Node30 [id="Node000030",label="algorithm",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
   Node29 -> Node31 [id="edge53_Node000029_Node000031",color="steelblue1",style="solid",tooltip=" "];
-  Node31 [id="Node000031",label="Ark/Compiler/Instructions.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/daa/Instructions_8hpp.html",tooltip="The different instructions used by the compiler and virtual machine."];
-  Node31 -> Node14 [id="edge54_Node000031_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node31 [id="Node000031",label="Ark/Compiler/Intermediate\lRepresentation/Word.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d53/Word_8hpp.html",tooltip="Describe an instruction and its immediate argument."];
+  Node31 -> Node16 [id="edge54_Node000031_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node29 -> Node32 [id="edge55_Node000029_Node000032",color="steelblue1",style="solid",tooltip=" "];
+  Node32 [id="Node000032",label="Ark/Compiler/Instructions.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d8/daa/Instructions_8hpp.html",tooltip="The different instructions used by the compiler and virtual machine."];
+  Node32 -> Node14 [id="edge56_Node000032_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node32 -> Node33 [id="edge57_Node000032_Node000033",color="steelblue1",style="solid",tooltip=" "];
+  Node33 [id="Node000033",label="Instructions.x",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
 }

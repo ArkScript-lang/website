@@ -42,8 +42,17 @@ digraph "Ark::internal::IRCompiler"
   Node16 [id="Node000016",label="std::vector\< uint8_t \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
   Node11 -> Node16 [id="edge19_Node000016_Node000011",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< uint8_t \>",fontcolor="grey" ];
   Node17 -> Node1 [id="edge20_Node000001_Node000017",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_ir",fontcolor="grey" ];
-  Node17 [id="Node000017",label="std::vector\< IR::Block \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
-  Node11 -> Node17 [id="edge21_Node000017_Node000011",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" elements",fontcolor="grey" ];
-  Node11 -> Node17 [id="edge22_Node000017_Node000011",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< IR::Block \>",fontcolor="grey" ];
-  Node10 -> Node1 [id="edge23_Node000001_Node000010",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_filenames",fontcolor="grey" ];
+  Node17 [id="Node000017",label="std::vector\< Ark::internal\l::IR::Block \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node18 -> Node17 [id="edge21_Node000017_Node000018",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" elements",fontcolor="grey" ];
+  Node18 [id="Node000018",label="Ark::internal::IR::\lBlock",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$dc/d26/structArk_1_1internal_1_1IR_1_1Block.html",tooltip="Block of IR entities, with attached metadata."];
+  Node19 -> Node18 [id="edge22_Node000018_Node000019",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" metadata",fontcolor="grey" ];
+  Node19 [id="Node000019",label="Ark::internal::IR::\lBlock::Metadata",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$de/da7/structArk_1_1internal_1_1IR_1_1Block_1_1Metadata.html",tooltip=" "];
+  Node20 -> Node18 [id="edge23_Node000018_Node000020",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" data",fontcolor="grey" ];
+  Node20 [id="Node000020",label="std::vector\< Entity \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",tooltip=" "];
+  Node21 -> Node20 [id="edge24_Node000020_Node000021",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" elements",fontcolor="grey" ];
+  Node21 [id="Node000021",label="Ark::internal::IR::\lEntity",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html",tooltip=" "];
+  Node4 -> Node21 [id="edge25_Node000021_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" source_file",fontcolor="grey" ];
+  Node11 -> Node20 [id="edge26_Node000020_Node000011",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< Entity \>",fontcolor="grey" ];
+  Node11 -> Node17 [id="edge27_Node000017_Node000011",dir="back",color="orange",style="dashed",tooltip=" ",label=" \< Ark::internal::IR\l::Block \>",fontcolor="grey" ];
+  Node10 -> Node1 [id="edge28_Node000001_Node000010",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_filenames",fontcolor="grey" ];
 }

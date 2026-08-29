@@ -1,3 +1,25 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$d7/d25/structArk_1_1internal_1_1CompiledPrompt.html" title=" " alt="" coords="5,5,202,31"/>
+<area shape="rect" id="Node000000" href="$d0/d86/structArk_1_1internal_1_1CharPred.html" title=" " alt="" coords="5,252,160,278"/>
+<area shape="rect" id="Node000001" href="$d6/dd4/structArk_1_1internal_1_1IsAlnum.html" title=" " alt="" coords="223,5,370,31"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="89,236,104,193,128,140,162,86,183,61,206,40,224,29,227,34,209,44,186,65,166,89,133,142,109,195,94,238"/>
+<area shape="rect" id="Node000002" href="$d1/d0f/structArk_1_1internal_1_1IsAlpha.html" title=" " alt="" coords="225,55,368,80"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="93,237,111,203,136,163,168,123,206,89,226,79,229,83,209,94,172,127,140,166,116,206,98,239"/>
+<area shape="rect" id="Node000003" href="$d1/daf/structArk_1_1internal_1_1IsChar.html" title=" " alt="" coords="228,104,366,130"/>
+<area shape="poly" id="edge4_Node000000_Node000003" title=" " alt="" coords="101,238,145,187,174,161,206,139,230,128,232,133,209,143,178,165,149,191,105,241"/>
+<area shape="rect" id="Node000004" href="$da/d0d/structArk_1_1internal_1_1IsDigit.html" title=" " alt="" coords="228,153,366,179"/>
+<area shape="poly" id="edge5_Node000000_Node000004" title=" " alt="" coords="113,241,157,213,207,188,237,177,238,182,209,193,159,218,116,245"/>
+<area shape="rect" id="Node000005" href="$da/d07/structArk_1_1internal_1_1IsEither.html" title=" " alt="" coords="225,203,369,228"/>
+<area shape="poly" id="edge6_Node000000_Node000005" title=" " alt="" coords="156,245,237,226,238,232,157,251"/>
+<area shape="rect" id="Node000006" href="$da/dbf/structArk_1_1internal_1_1IsHex.html" title=" " alt="" coords="230,252,364,278"/>
+<area shape="poly" id="edge7_Node000000_Node000006" title=" " alt="" coords="175,262,229,262,229,268,175,268"/>
+<area shape="rect" id="Node000007" href="$d7/dc3/structArk_1_1internal_1_1IsInlineSpace.html" title=" " alt="" coords="208,301,386,327"/>
+<area shape="poly" id="edge8_Node000000_Node000007" title=" " alt="" coords="157,279,238,298,237,303,156,284"/>
+<area shape="rect" id="Node000008" href="$dd/d27/structArk_1_1internal_1_1IsNot.html" title=" " alt="" coords="231,351,362,376"/>
+<area shape="poly" id="edge9_Node000000_Node000008" title=" " alt="" coords="116,285,159,312,209,337,238,348,237,353,207,342,157,316,113,289"/>
+<area shape="rect" id="Node000009" href="$dd/d96/structArk_1_1internal_1_1IsOct.html" title=" " alt="" coords="231,400,362,426"/>
+<area shape="poly" id="edge10_Node000000_Node000009" title=" " alt="" coords="105,289,149,339,178,365,209,387,232,397,230,402,206,391,174,369,145,342,101,292"/>
+<area shape="rect" id="Node000010" href="$dc/df7/structArk_1_1internal_1_1IsSpace.html" title=" " alt="" coords="223,449,370,475"/>
+<area shape="poly" id="edge11_Node000000_Node000010" title=" " alt="" coords="98,290,116,324,140,363,172,403,209,436,229,446,226,451,206,440,168,406,136,366,111,327,93,293"/>
+<area shape="rect" id="Node000011" href="$de/d0c/structArk_1_1internal_1_1IsSymbol.html" title=" " alt="" coords="220,499,374,524"/>
+<area shape="poly" id="edge12_Node000000_Node000011" title=" " alt="" coords="94,292,109,335,133,387,166,441,186,465,209,485,227,496,224,500,206,490,183,468,162,444,128,390,104,337,89,294"/>
 </map>

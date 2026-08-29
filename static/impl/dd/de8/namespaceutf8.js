@@ -15,5 +15,6 @@ var namespaceutf8 =
     [ "codepointToUtf8", "dd/de8/namespaceutf8.html#a9705775230569b3cdc89315747c2868c", null ],
     [ "decode", "dd/de8/namespaceutf8.html#ae7c37039b1bf8a9c744ee701a83eae83", null ],
     [ "isValid", "dd/de8/namespaceutf8.html#aa16ef5ad4e5c7d825aac60379f7f6400", null ],
+    [ "length", "dd/de8/namespaceutf8.html#a76f092ca302b9e0068c0f9d08d0fcd4f", null ],
     [ "utf8type", "dd/de8/namespaceutf8.html#a5ae86af09e8ae7dd21156b86d78ac5af", null ]
 ];

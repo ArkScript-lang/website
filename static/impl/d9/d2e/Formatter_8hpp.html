@@ -26,7 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="../../ArkTransparent-small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../logo-2026-rectangle-256x85.png"/></td>
   <td id="projectalign">
    <div id="projectname">ArkScript
    </div>
@@ -81,11 +81,13 @@ $(function(){initNavTree('d9/d2e/Formatter_8hpp.html','../../'); initResizable(t
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Formatter.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;ranges&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/ddd/Parser_8hpp_source.html">Ark/Compiler/AST/Parser.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Formatter.hpp:</div>
@@ -107,11 +109,51 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/classFormatter.html">Formatter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a7c0c094a0f8f18d0aeb72d9a0cbe7d47" id="r_a7c0c094a0f8f18d0aeb72d9a0cbe7d47"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c0c094a0f8f18d0aeb72d9a0cbe7d47">CallKind</a> { <a class="el" href="#a7c0c094a0f8f18d0aeb72d9a0cbe7d47a4ee29ca12c7d126654bd0e5275de6135">List</a>
+, <a class="el" href="#a7c0c094a0f8f18d0aeb72d9a0cbe7d47a91516e7a50ce0a67a8eb1f9229c293d1">Dict</a>
+, <a class="el" href="#a7c0c094a0f8f18d0aeb72d9a0cbe7d47abbc155fb2b111bf61c4f5ff892915e6b">Switch</a>
+, <a class="el" href="#a7c0c094a0f8f18d0aeb72d9a0cbe7d47af80a4ad87fee7c9fdc19b7769495fdb5">Nothing</a>
+ }</td></tr>
+<tr class="separator:a7c0c094a0f8f18d0aeb72d9a0cbe7d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a4092a520aa90e663ee0bdae73288d601" id="r_a4092a520aa90e663ee0bdae73288d601"><td class="memItemLeft" align="right" valign="top">constexpr struct FormatterConfig&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4092a520aa90e663ee0bdae73288d601">FormatterConfig</a></td></tr>
 <tr class="separator:a4092a520aa90e663ee0bdae73288d601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a7c0c094a0f8f18d0aeb72d9a0cbe7d47" name="a7c0c094a0f8f18d0aeb72d9a0cbe7d47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c0c094a0f8f18d0aeb72d9a0cbe7d47">&#9670;&#160;</a></span>CallKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a7c0c094a0f8f18d0aeb72d9a0cbe7d47">CallKind</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7c0c094a0f8f18d0aeb72d9a0cbe7d47a4ee29ca12c7d126654bd0e5275de6135" name="a7c0c094a0f8f18d0aeb72d9a0cbe7d47a4ee29ca12c7d126654bd0e5275de6135"></a>List&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c0c094a0f8f18d0aeb72d9a0cbe7d47a91516e7a50ce0a67a8eb1f9229c293d1" name="a7c0c094a0f8f18d0aeb72d9a0cbe7d47a91516e7a50ce0a67a8eb1f9229c293d1"></a>Dict&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c0c094a0f8f18d0aeb72d9a0cbe7d47abbc155fb2b111bf61c4f5ff892915e6b" name="a7c0c094a0f8f18d0aeb72d9a0cbe7d47abbc155fb2b111bf61c4f5ff892915e6b"></a>Switch&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7c0c094a0f8f18d0aeb72d9a0cbe7d47af80a4ad87fee7c9fdc19b7769495fdb5" name="a7c0c094a0f8f18d0aeb72d9a0cbe7d47af80a4ad87fee7c9fdc19b7769495fdb5"></a>Nothing&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="../../d9/d2e/Formatter_8hpp_source.html#l00015">15</a> of file <a class="el" href="../../d9/d2e/Formatter_8hpp_source.html">Formatter.hpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a4092a520aa90e663ee0bdae73288d601" name="a4092a520aa90e663ee0bdae73288d601"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4092a520aa90e663ee0bdae73288d601">&#9670;&#160;</a></span>FormatterConfig</h2>
@@ -133,7 +175,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="../../dir_fecb511e6ef370f316cfc3c5cc95d0a0.html">CLI</a></li><li class="navelem"><a class="el" href="../../d9/d2e/Formatter_8hpp.html">Formatter.hpp</a></li>
-    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Aug 29 2026 18:10:55 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

@@ -64,6 +64,7 @@ var NAVTREE =
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -73,20 +74,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "@ref bitwise_module",
-"d1/d37/classArk_1_1State.html#a9a6c2364d22064a623671986d290a9cc",
-"d2/d93/classArk_1_1VM.html#a5f161e13b7eb10ec2952680bbef3fa41",
-"d3/d57/classArk_1_1internal_1_1ASTLowerer.html#aeb15fb65e449cad851a6e4c5fb279498",
-"d4/dc0/Files_8hpp_source.html",
-"d6/d42/classArk_1_1internal_1_1MacroScope.html#a450556e6fd4129d90f3780031d78f3e6",
-"d7/dfb/MacroScope_8hpp_source.html",
-"d8/daa/Instructions_8hpp.html#abcd166377fbe7dcd77e47ef80cee8681aa2d82ff6f76f2e85de6173283129cebd",
-"d9/d4a/classArk_1_1internal_1_1NamespaceScope.html#a475f5a6023bd04bd1e7ead731c72bd79",
-"da/d33/Namespace_8hpp.html#a480d948db96bb221440921e404bc86d5",
-"db/da6/namespaceArk_1_1Diagnostics.html#a081ebf7404388182bae64e69b8f8d40b",
-"dc/d0e/namespaceArk_1_1internal.html#aecb863cf131382c209737463d8dbb92f",
-"dc/dfd/JsonCompiler_8hpp_source.html",
-"de/d60/classArk_1_1Repl.html#aca88cc4828ac7e4470959d695e0b12af",
-"functions_vars.html"
+"d1/d37/classArk_1_1State.html#a089414779937e7056ef29e94c914cde6",
+"d2/d90/classArk_1_1internal_1_1ImportSolver.html#a721da709e0c96fab29bafe28a2088f1a",
+"d3/d57/classArk_1_1internal_1_1ASTLowerer.html#a6071b16662ed3a7261d8065aaa745df4",
+"d3/df1/Welder_8cpp_source.html",
+"d5/db5/classArk_1_1internal_1_1MacroProcessor.html#a070d438071db132f38291c2f5689c084",
+"d7/da8/classArk_1_1Welder.html",
+"d8/d08/classArk_1_1BytecodeReader.html#a69ee1774c600b33e65c301fe3f1971fc",
+"d9/d2e/Formatter_8hpp.html#a7c0c094a0f8f18d0aeb72d9a0cbe7d47af80a4ad87fee7c9fdc19b7769495fdb5",
+"d9/df7/Dict_8hpp_source.html",
+"da/dc2/Conditional_8hpp.html",
+"dc/d0e/namespaceArk_1_1internal.html#af921a5e6b306137b62504cc5f3024f6f",
+"dc/dcb/namespaceArk_1_1internal_1_1Builtins_1_1System.html#ab83857eb9be0f9e68e6c55548d4a92a5",
+"de/d0c/structArk_1_1internal_1_1IsSymbol.html",
+"df/d85/CLI_2REPL_2Utils_8hpp.html#a7ce3ab98e01fe218abc001550a1c2feb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

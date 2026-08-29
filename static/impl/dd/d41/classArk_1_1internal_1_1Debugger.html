@@ -26,7 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="../../ArkTransparent-small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../logo-2026-rectangle-256x85.png"/></td>
   <td id="projectalign">
    <div id="projectname">ArkScript
    </div>
@@ -80,9 +80,9 @@ $(function(){initNavTree('dd/d41/classArk_1_1internal_1_1Debugger.html','../../'
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d2/dee/classArk_1_1internal_1_1Debugger-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Ark::internal::Debugger Class Reference</div></div>
@@ -96,6 +96,15 @@ Collaboration diagram for Ark::internal::Debugger:</div>
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../de/d22/classArk_1_1internal_1_1Debugger__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d72/structArk_1_1internal_1_1Debugger_1_1Command.html">Command</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/structArk_1_1internal_1_1Debugger_1_1CommandArgs.html">CommandArgs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd5/structArk_1_1internal_1_1Debugger_1_1StartsWith.html">StartsWith</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f903b2e09731995c41931d80ef583cd" id="r_a6f903b2e09731995c41931d80ef583cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f903b2e09731995c41931d80ef583cd">Debugger</a> (const <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">ExecutionContext</a> &amp;context, const std::vector&lt; std::filesystem::path &gt; &amp;libenv, const std::vector&lt; std::string &gt; &amp;symbols, const std::vector&lt; <a class="el" href="../../d3/d90/classArk_1_1Value.html">Value</a> &gt; &amp;constants)</td></tr>
@@ -113,36 +122,41 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a019a033e473db9e476750d44cde236e2" id="r_a019a033e473db9e476750d44cde236e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a019a033e473db9e476750d44cde236e2">run</a> (<a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;vm, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">ExecutionContext</a> &amp;context, bool from_breakpoint)</td></tr>
 <tr class="memdesc:a019a033e473db9e476750d44cde236e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the debugger shell.  <br /></td></tr>
 <tr class="separator:a019a033e473db9e476750d44cde236e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ea0cfe5706d07e0a9ac9178b8b4d5dc" id="r_a7ea0cfe5706d07e0a9ac9178b8b4d5dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ea0cfe5706d07e0a9ac9178b8b4d5dc">isRunning</a> () const noexcept</td></tr>
-<tr class="separator:a7ea0cfe5706d07e0a9ac9178b8b4d5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a446b82fcc5277fe11a1f8c352c5f3f14" id="r_a446b82fcc5277fe11a1f8c352c5f3f14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a446b82fcc5277fe11a1f8c352c5f3f14">shouldQuitVM</a> () const noexcept</td></tr>
-<tr class="separator:a446b82fcc5277fe11a1f8c352c5f3f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dae77eb071cc36a6a6d866934dcf987" id="r_a7dae77eb071cc36a6a6d866934dcf987"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dae77eb071cc36a6a6d866934dcf987">registerInstruction</a> (uint8_t inst, uint8_t padding, uint16_t arg, std::size_t ip, std::size_t pp) noexcept</td></tr>
+<tr class="separator:a7dae77eb071cc36a6a6d866934dcf987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3a78d05e65f603e1b272678b5eca31" id="r_aff3a78d05e65f603e1b272678b5eca31"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff3a78d05e65f603e1b272678b5eca31">isRunning</a> () const noexcept</td></tr>
+<tr class="separator:aff3a78d05e65f603e1b272678b5eca31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad126b039bc82200a1d0c9d0818a3b5e" id="r_aad126b039bc82200a1d0c9d0818a3b5e"><td class="memItemLeft" align="right" valign="top">ARK_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad126b039bc82200a1d0c9d0818a3b5e">shouldQuitVM</a> () const noexcept</td></tr>
+<tr class="separator:aad126b039bc82200a1d0c9d0818a3b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:aa020c0c0e8bf9ac5d1fabe6737b3581c" id="r_aa020c0c0e8bf9ac5d1fabe6737b3581c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa020c0c0e8bf9ac5d1fabe6737b3581c">initCommands</a> ()</td></tr>
+<tr class="separator:aa020c0c0e8bf9ac5d1fabe6737b3581c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293b10fd51002ddafabe9edf661deea1" id="r_a293b10fd51002ddafabe9edf661deea1"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d5/d72/structArk_1_1internal_1_1Debugger_1_1Command.html">Command</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a293b10fd51002ddafabe9edf661deea1">matchCommand</a> (const std::string &amp;line) const</td></tr>
+<tr class="separator:a293b10fd51002ddafabe9edf661deea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf0935e967a9622995280f058db05f1e" id="r_acf0935e967a9622995280f058db05f1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf0935e967a9622995280f058db05f1e">showContext</a> (const <a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;vm, const <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">ExecutionContext</a> &amp;context) const</td></tr>
 <tr class="separator:acf0935e967a9622995280f058db05f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa186d919d3a260ed1cf7d4ef657fa4" id="r_a1aa186d919d3a260ed1cf7d4ef657fa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1aa186d919d3a260ed1cf7d4ef657fa4">showStack</a> (<a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;vm, const <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">ExecutionContext</a> &amp;context, std::size_t count) const</td></tr>
 <tr class="separator:a1aa186d919d3a260ed1cf7d4ef657fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4110f3060cd6f342a78df978e5f7c509" id="r_a4110f3060cd6f342a78df978e5f7c509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4110f3060cd6f342a78df978e5f7c509">showLocals</a> (<a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;vm, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">ExecutionContext</a> &amp;context, std::size_t count) const</td></tr>
 <tr class="separator:a4110f3060cd6f342a78df978e5f7c509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e49516ea9b124aacdfa35aa7fce09dc" id="r_a7e49516ea9b124aacdfa35aa7fce09dc"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e49516ea9b124aacdfa35aa7fce09dc">getArgAndParseOrError</a> (const std::string &amp;command, const std::string &amp;line, std::size_t default_value) const</td></tr>
-<tr class="separator:a7e49516ea9b124aacdfa35aa7fce09dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b373dcecd563a05a2c05a77005aaf03" id="r_a9b373dcecd563a05a2c05a77005aaf03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b373dcecd563a05a2c05a77005aaf03">showScopes</a> (<a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;vm, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">ExecutionContext</a> &amp;context, std::size_t count) const</td></tr>
+<tr class="separator:a9b373dcecd563a05a2c05a77005aaf03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1716bea19a7253f619b7cb1eb863bf7" id="r_af1716bea19a7253f619b7cb1eb863bf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1716bea19a7253f619b7cb1eb863bf7">showPreviousInstructions</a> (const <a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;vm, std::size_t count) const</td></tr>
+<tr class="separator:af1716bea19a7253f619b7cb1eb863bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc7ce022cec7c0fca9fd646001b6b3d" id="r_a7dc7ce022cec7c0fca9fd646001b6b3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dc7ce022cec7c0fca9fd646001b6b3d">showLocals</a> (const <a class="el" href="../../d2/ddd/classArk_1_1internal_1_1ScopeView.html">ScopeView</a> &amp;scope, <a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;vm, std::optional&lt; std::size_t &gt; limit=std::nullopt) const</td></tr>
+<tr class="separator:a7dc7ce022cec7c0fca9fd646001b6b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65819f357ccb17ecea035ff42edbe6d5" id="r_a65819f357ccb17ecea035ff42edbe6d5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65819f357ccb17ecea035ff42edbe6d5">prompt</a> (std::size_t ip, std::size_t pp, <a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;vm, <a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">ExecutionContext</a> &amp;context)</td></tr>
 <tr class="separator:a65819f357ccb17ecea035ff42edbe6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af42303b0b710853a44a72b2bc614b628" id="r_af42303b0b710853a44a72b2bc614b628"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d7/d25/structArk_1_1internal_1_1CompiledPrompt.html">CompiledPrompt</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af42303b0b710853a44a72b2bc614b628">compile</a> (const std::string &amp;code, std::size_t start_page_at_offset) const</td></tr>
 <tr class="memdesc:af42303b0b710853a44a72b2bc614b628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take care of compiling new code using the existing data tables.  <br /></td></tr>
 <tr class="separator:af42303b0b710853a44a72b2bc614b628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:ab5f1a5a13f016d317cb2db0cd27c2f56" id="r_ab5f1a5a13f016d317cb2db0cd27c2f56"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5f1a5a13f016d317cb2db0cd27c2f56">getCommandArg</a> (const std::string &amp;command, const std::string &amp;line)</td></tr>
-<tr class="separator:ab5f1a5a13f016d317cb2db0cd27c2f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1998a361b54373cfb25678b2c47e4c2c" id="r_a1998a361b54373cfb25678b2c47e4c2c"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1998a361b54373cfb25678b2c47e4c2c">parseStringAsInt</a> (const std::string &amp;str)</td></tr>
-<tr class="separator:a1998a361b54373cfb25678b2c47e4c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:abc377fe601af2e920207209e6a5692e8" id="r_abc377fe601af2e920207209e6a5692e8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d72/structArk_1_1internal_1_1Debugger_1_1Command.html">Command</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc377fe601af2e920207209e6a5692e8">m_commands</a></td></tr>
+<tr class="separator:abc377fe601af2e920207209e6a5692e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1813bab48914c7305f705c163c208b45" id="r_a1813bab48914c7305f705c163c208b45"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="../../dd/d2a/structArk_1_1internal_1_1SavedState.html">SavedState</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1813bab48914c7305f705c163c208b45">m_states</a></td></tr>
 <tr class="separator:a1813bab48914c7305f705c163c208b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb9f1bd9fb110201279eb88ad6cbb5ef" id="r_adb9f1bd9fb110201279eb88ad6cbb5ef"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::filesystem::path &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb9f1bd9fb110201279eb88ad6cbb5ef">m_libenv</a></td></tr>
@@ -155,6 +169,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:adba01b232dc6ba8a27b254397e396851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e5cc35885986198715c98ca4c3e7c50" id="r_a7e5cc35885986198715c98ca4c3e7c50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e5cc35885986198715c98ca4c3e7c50">m_quit_vm</a> { false }</td></tr>
 <tr class="separator:a7e5cc35885986198715c98ca4c3e7c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428e672702f5d6002ceea60a5e5838d2" id="r_a428e672702f5d6002ceea60a5e5838d2"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="../../d4/d17/structArk_1_1internal_1_1TracedInstruction.html">TracedInstruction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a428e672702f5d6002ceea60a5e5838d2">m_previous_insts</a></td></tr>
+<tr class="separator:a428e672702f5d6002ceea60a5e5838d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88f1924cebcbea97c61224dab931d0ec" id="r_a88f1924cebcbea97c61224dab931d0ec"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88f1924cebcbea97c61224dab931d0ec">m_os</a></td></tr>
 <tr class="separator:a88f1924cebcbea97c61224dab931d0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae02ae561745be0cfa305094e08277be8" id="r_ae02ae561745be0cfa305094e08277be8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae02ae561745be0cfa305094e08277be8">m_colorize</a></td></tr>
@@ -169,7 +185,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6f903b2e09731995c41931d80ef583cd" name="a6f903b2e09731995c41931d80ef583cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f903b2e09731995c41931d80ef583cd">&#9670;&#160;</a></span>Debugger() <span class="overload">[1/2]</span></h2>
@@ -211,9 +227,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00038">saveState()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00185">initCommands()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00042">saveState()</a>.</p>
 
 </div>
 </div>
@@ -263,7 +279,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00185">initCommands()</a>.</p>
 
 </div>
 </div>
@@ -305,16 +323,16 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::optional&lt;CompiledPrompt&gt; optional set of bytecode pages, symbols and constants if compilation succeeded </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00329">329</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00492">492</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00162">Ark::Welder::bytecode()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00247">Ark::BytecodeReader::code()</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00053">Ark::Welder::computeASTFromStringWithKnownSymbols()</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00067">Ark::DefaultFeatures</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00022">Ark::BytecodeReader::feed()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00174">Ark::BytecodeReader::filenames()</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00093">Ark::Welder::generateBytecodeUsingTables()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00204">Ark::BytecodeReader::instLocations()</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00109">m_constants</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00107">m_libenv</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00108">m_symbols</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00090">Ark::BytecodeReader::symbols()</a>, and <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00118">Ark::BytecodeReader::values()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00170">Ark::Welder::bytecode()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00335">Ark::BytecodeReader::code()</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00054">Ark::Welder::computeASTFromStringWithKnownSymbols()</a>, <a class="el" href="../../d6/de9/Constants_8hpp_source.html#l00074">Ark::DefaultFeatures</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00110">Ark::BytecodeReader::feed()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00262">Ark::BytecodeReader::filenames()</a>, <a class="el" href="../../d3/df1/Welder_8cpp_source.html#l00100">Ark::Welder::generateBytecodeUsingTables()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00292">Ark::BytecodeReader::instLocations()</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00167">m_constants</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00165">m_libenv</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00166">m_symbols</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00178">Ark::BytecodeReader::symbols()</a>, and <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00206">Ark::BytecodeReader::values()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">run()</a>.</p>
 
 </div>
 </div>
-<a id="a7e49516ea9b124aacdfa35aa7fce09dc" name="a7e49516ea9b124aacdfa35aa7fce09dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e49516ea9b124aacdfa35aa7fce09dc">&#9670;&#160;</a></span>getArgAndParseOrError()</h2>
+<a id="aa020c0c0e8bf9ac5d1fabe6737b3581c" name="aa020c0c0e8bf9ac5d1fabe6737b3581c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa020c0c0e8bf9ac5d1fabe6737b3581c">&#9670;&#160;</a></span>initCommands()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,38 +341,29 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt; std::size_t &gt; Ark::internal::Debugger::getArgAndParseOrError </td>
+          <td class="memname">void Ark::internal::Debugger::initCommands </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>command</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>line</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>default_value</em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00233">233</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00185">185</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00213">getCommandArg()</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00113">m_os</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00223">parseStringAsInt()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00167">Ark::internal::Debugger::Command::argAsCount()</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00124">Ark::internal::Debugger::CommandArgs::ctx_ptr</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00125">Ark::internal::Debugger::CommandArgs::ip</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00174">m_colorize</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00162">m_commands</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00173">m_os</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00169">m_quit_vm</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00126">Ark::internal::Debugger::CommandArgs::me</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00125">Ark::internal::Debugger::CommandArgs::pp</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00342">showLocals()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00414">showPreviousInstructions()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00357">showScopes()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00319">showStack()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, and <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00123">Ark::internal::Debugger::CommandArgs::vm_ptr</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">prompt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00020">Debugger()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00031">Debugger()</a>.</p>
 
 </div>
 </div>
-<a id="ab5f1a5a13f016d317cb2db0cd27c2f56" name="ab5f1a5a13f016d317cb2db0cd27c2f56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5f1a5a13f016d317cb2db0cd27c2f56">&#9670;&#160;</a></span>getCommandArg()</h2>
+<a id="aff3a78d05e65f603e1b272678b5eca31" name="aff3a78d05e65f603e1b272678b5eca31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3a78d05e65f603e1b272678b5eca31">&#9670;&#160;</a></span>isRunning()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -363,42 +372,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt; std::string &gt; Ark::internal::Debugger::getCommandArg </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>command</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>line</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00213">213</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
-
-<p class="reference">References <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html#l00040">Ark::Utils::trimWhitespace()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00233">getArgAndParseOrError()</a>.</p>
-
-</div>
-</div>
-<a id="a7ea0cfe5706d07e0a9ac9178b8b4d5dc" name="a7ea0cfe5706d07e0a9ac9178b8b4d5dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ea0cfe5706d07e0a9ac9178b8b4d5dc">&#9670;&#160;</a></span>isRunning()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Ark::internal::Debugger::isRunning </td>
+          <td class="memname">ARK_ALWAYS_INLINE bool Ark::internal::Debugger::isRunning </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -411,14 +385,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00095">95</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00110">m_running</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00168">m_running</a>.</p>
 
 </div>
 </div>
-<a id="a1998a361b54373cfb25678b2c47e4c2c" name="a1998a361b54373cfb25678b2c47e4c2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1998a361b54373cfb25678b2c47e4c2c">&#9670;&#160;</a></span>parseStringAsInt()</h2>
+<a id="a293b10fd51002ddafabe9edf661deea1" name="a293b10fd51002ddafabe9edf661deea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293b10fd51002ddafabe9edf661deea1">&#9670;&#160;</a></span>matchCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -427,22 +401,24 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt; std::size_t &gt; Ark::internal::Debugger::parseStringAsInt </td>
+          <td class="memname">std::optional&lt; <a class="el" href="../../d5/d72/structArk_1_1internal_1_1Debugger_1_1Command.html">Debugger::Command</a> &gt; Ark::internal::Debugger::matchCommand </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>line</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00223">223</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00273">273</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00233">getArgAndParseOrError()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00162">m_commands</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00436">prompt()</a>.</p>
 
 </div>
 </div>
@@ -483,11 +459,57 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">251</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00436">436</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html#l00035">Ark::Utils::countOpenEnclosures()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00233">getArgAndParseOrError()</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00114">m_colorize</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00117">m_line_count</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00113">m_os</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00115">m_prompt_stream</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00111">m_quit_vm</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00179">showLocals()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00156">showStack()</a>, and <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html#l00040">Ark::Utils::trimWhitespace()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00143">Ark::internal::Debugger::Command::action</a>, <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html#l00035">Ark::Utils::countOpenEnclosures()</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00174">m_colorize</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00177">m_line_count</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00173">m_os</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00175">m_prompt_stream</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00273">matchCommand()</a>, and <a class="el" href="../../d1/dae/arkreactor_2Utils_2Utils_8cpp_source.html#l00040">Ark::Utils::trimWhitespace()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">run()</a>.</p>
+
+</div>
+</div>
+<a id="a7dae77eb071cc36a6a6d866934dcf987" name="a7dae77eb071cc36a6a6d866934dcf987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dae77eb071cc36a6a6d866934dcf987">&#9670;&#160;</a></span>registerInstruction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::Debugger::registerInstruction </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>inst</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>padding</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>ip</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>pp</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00135">135</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
 </div>
 </div>
@@ -514,9 +536,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00106">m_states</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00041">Ark::internal::ExecutionContext::stacked_closure_scopes</a>.</p>
+<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00164">m_states</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00041">Ark::internal::ExecutionContext::stacked_closure_scopes</a>.</p>
 
 </div>
 </div>
@@ -554,9 +576,9 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">63</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">67</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00329">compile()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00249">Ark::State::extendBytecode()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a8c97626c3bda0721059f5eddbd2d255d">Ark::Garbage</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6adf754f9ba8524ed3333ec938d0636862">Ark::InstPtr</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00116">m_code</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00114">m_colorize</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00117">m_line_count</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00113">m_os</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00174">Ark::State::m_pages</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00110">m_running</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00184">Ark::VM::m_running</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">Ark::VM::m_state</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00188">Ark::VM::peekAndResolveAsPtr()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">prompt()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00407">Ark::VM::safeRun()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00044">Ark::internal::ExecutionContext::scopes_storage</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00131">showContext()</a>, <a class="el" href="../../d1/d74/Value_8cpp_source.html#l00077">Ark::Value::toString()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aec0fc0100c4fc1ce4eea230c3dc10360">Ark::Undefined</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00153">Ark::Value::valueType()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00492">compile()</a>, <a class="el" href="../../d0/da0/State_8cpp_source.html#l00247">Ark::State::extendBytecode()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6a8c97626c3bda0721059f5eddbd2d255d">Ark::Garbage</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6adf754f9ba8524ed3333ec938d0636862">Ark::InstPtr</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00176">m_code</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00174">m_colorize</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00177">m_line_count</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00173">m_os</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00174">Ark::State::m_pages</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00168">m_running</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00176">Ark::VM::m_running</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">Ark::VM::m_state</a>, <a class="el" href="../../d2/d93/classArk_1_1VM.html#a266d008609c4fd8b5cb53674922e2aef">Ark::VM::peekAndResolveAsPtr()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00436">prompt()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l00401">Ark::VM::safeRun()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00044">Ark::internal::ExecutionContext::scopes_storage</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00294">showContext()</a>, <a class="el" href="../../d1/d74/Value_8cpp_source.html#l00081">Ark::Value::toString()</a>, <a class="el" href="../../d9/de4/namespaceArk.html#adace4b064735f70467c2efef4cd175d6aec0fc0100c4fc1ce4eea230c3dc10360">Ark::Undefined</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00154">Ark::Value::valueType()</a>.</p>
 
 </div>
 </div>
@@ -583,16 +605,16 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00038">38</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00042">42</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00106">m_states</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00041">Ark::internal::ExecutionContext::stacked_closure_scopes</a>.</p>
+<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00033">Ark::internal::ExecutionContext::fc</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00164">m_states</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00041">Ark::internal::ExecutionContext::stacked_closure_scopes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00019">Debugger()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00020">Debugger()</a>.</p>
 
 </div>
 </div>
-<a id="a446b82fcc5277fe11a1f8c352c5f3f14" name="a446b82fcc5277fe11a1f8c352c5f3f14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a446b82fcc5277fe11a1f8c352c5f3f14">&#9670;&#160;</a></span>shouldQuitVM()</h2>
+<a id="aad126b039bc82200a1d0c9d0818a3b5e" name="aad126b039bc82200a1d0c9d0818a3b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad126b039bc82200a1d0c9d0818a3b5e">&#9670;&#160;</a></span>shouldQuitVM()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -601,7 +623,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Ark::internal::Debugger::shouldQuitVM </td>
+          <td class="memname">ARK_ALWAYS_INLINE bool Ark::internal::Debugger::shouldQuitVM </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -614,9 +636,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00100">100</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00114">114</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00111">m_quit_vm</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00169">m_quit_vm</a>.</p>
 
 </div>
 </div>
@@ -647,16 +669,54 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00131">131</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00294">294</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00028">Ark::Utils::fileExists()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02275">Ark::VM::findSourceLocation()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00114">m_colorize</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00172">Ark::State::m_filenames</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00113">m_os</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">Ark::VM::m_state</a>, <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/dc0/Files_8hpp_source.html#l00028">Ark::Utils::fileExists()</a>, <a class="el" href="../../d2/d27/VM_8cpp_source.html#l02190">Ark::VM::findSourceLocation()</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00030">Ark::internal::ExecutionContext::ip</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00174">m_colorize</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00172">Ark::State::m_filenames</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00173">m_os</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">Ark::VM::m_state</a>, <a class="el" href="../../de/d66/Diagnostics_8cpp_source.html#l00045">Ark::Diagnostics::makeContext()</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00031">Ark::internal::ExecutionContext::pp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">run()</a>.</p>
+
+</div>
+</div>
+<a id="a7dc7ce022cec7c0fca9fd646001b6b3d" name="a7dc7ce022cec7c0fca9fd646001b6b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc7ce022cec7c0fca9fd646001b6b3d">&#9670;&#160;</a></span>showLocals() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::Debugger::showLocals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/ddd/classArk_1_1internal_1_1ScopeView.html">ScopeView</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>scope</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vm</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; std::size_t &gt;</td>          <td class="paramname"><span class="paramname"><em>limit</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::nullopt</span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00389">389</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00163">Ark::internal::ScopeView::atPosReverse()</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00174">m_colorize</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00173">m_os</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00173">Ark::VM::m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, <a class="el" href="../../d8/d45/ScopeView_8hpp_source.html#l00183">Ark::internal::ScopeView::size()</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00235">std::to_string()</a>.</p>
 
 </div>
 </div>
 <a id="a4110f3060cd6f342a78df978e5f7c509" name="a4110f3060cd6f342a78df978e5f7c509"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4110f3060cd6f342a78df978e5f7c509">&#9670;&#160;</a></span>showLocals()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4110f3060cd6f342a78df978e5f7c509">&#9670;&#160;</a></span>showLocals() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -687,11 +747,86 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00179">179</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00342">342</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00114">m_colorize</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00113">m_os</a>, <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00181">Ark::VM::m_state</a>, <a class="el" href="../../d0/db5/State_8hpp_source.html#l00170">Ark::State::m_symbols</a>, and <a class="el" href="../../de/dfd/Value_8hpp_source.html#l00233">std::to_string()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00173">m_os</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00342">showLocals()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">prompt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00185">initCommands()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00342">showLocals()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00357">showScopes()</a>.</p>
+
+</div>
+</div>
+<a id="af1716bea19a7253f619b7cb1eb863bf7" name="af1716bea19a7253f619b7cb1eb863bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1716bea19a7253f619b7cb1eb863bf7">&#9670;&#160;</a></span>showPreviousInstructions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::Debugger::showPreviousInstructions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vm</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00414">414</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d1/d91/VM_8hpp_source.html#l00162">Ark::VM::bytecode()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00110">Ark::BytecodeReader::feed()</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00174">m_colorize</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00173">m_os</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00171">m_previous_insts</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00612">Ark::BytecodeReader::printInstruction()</a>, <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00178">Ark::BytecodeReader::symbols()</a>, and <a class="el" href="../../d5/d36/BytecodeReader_8cpp_source.html#l00206">Ark::BytecodeReader::values()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00185">initCommands()</a>.</p>
+
+</div>
+</div>
+<a id="a9b373dcecd563a05a2c05a77005aaf03" name="a9b373dcecd563a05a2c05a77005aaf03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b373dcecd563a05a2c05a77005aaf03">&#9670;&#160;</a></span>showScopes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::Debugger::showScopes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d93/classArk_1_1VM.html">VM</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>vm</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/daf/structArk_1_1internal_1_1ExecutionContext.html">ExecutionContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00357">357</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00043">Ark::internal::ExecutionContext::locals</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00173">m_os</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00342">showLocals()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00185">initCommands()</a>.</p>
 
 </div>
 </div>
@@ -727,11 +862,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00156">156</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00319">319</a> of file <a class="el" href="../../db/d7b/Debugger_8cpp_source.html">Debugger.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00114">m_colorize</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00113">m_os</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00046">Ark::internal::ExecutionContext::stack</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00174">m_colorize</a>, <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00173">m_os</a>, <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00032">Ark::internal::ExecutionContext::sp</a>, and <a class="el" href="../../db/df6/ExecutionContext_8hpp_source.html#l00046">Ark::internal::ExecutionContext::stack</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">prompt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00185">initCommands()</a>.</p>
 
 </div>
 </div>
@@ -758,9 +893,9 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="../../d4/dd5/structArk_1_1Code.html">Code</a> added while inside the debugger. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00116">116</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00176">176</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">run()</a>.</p>
 
 </div>
 </div>
@@ -784,9 +919,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00114">114</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00174">174</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">prompt()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">run()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00131">showContext()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00179">showLocals()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00156">showStack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00185">initCommands()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00436">prompt()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">run()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00294">showContext()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00389">showLocals()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00414">showPreviousInstructions()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00319">showStack()</a>.</p>
+
+</div>
+</div>
+<a id="abc377fe601af2e920207209e6a5692e8" name="abc377fe601af2e920207209e6a5692e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc377fe601af2e920207209e6a5692e8">&#9670;&#160;</a></span>m_commands</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="../../d5/d72/structArk_1_1internal_1_1Debugger_1_1Command.html">Command</a>&gt; Ark::internal::Debugger::m_commands</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00162">162</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00185">initCommands()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00273">matchCommand()</a>.</p>
 
 </div>
 </div>
@@ -810,9 +971,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00109">109</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00167">167</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00329">compile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00492">compile()</a>.</p>
 
 </div>
 </div>
@@ -836,9 +997,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00165">165</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00329">compile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00492">compile()</a>.</p>
 
 </div>
 </div>
@@ -862,9 +1023,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00117">117</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00177">177</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">prompt()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00436">prompt()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">run()</a>.</p>
 
 </div>
 </div>
@@ -888,9 +1049,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00113">113</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00173">173</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00233">getArgAndParseOrError()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">prompt()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">run()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00131">showContext()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00179">showLocals()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00156">showStack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00185">initCommands()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00436">prompt()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">run()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00294">showContext()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00389">showLocals()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00342">showLocals()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00414">showPreviousInstructions()</a>, <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00357">showScopes()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00319">showStack()</a>.</p>
+
+</div>
+</div>
+<a id="a428e672702f5d6002ceea60a5e5838d2" name="a428e672702f5d6002ceea60a5e5838d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a428e672702f5d6002ceea60a5e5838d2">&#9670;&#160;</a></span>m_previous_insts</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::deque&lt;<a class="el" href="../../d4/d17/structArk_1_1internal_1_1TracedInstruction.html">TracedInstruction</a>&gt; Ark::internal::Debugger::m_previous_insts</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00171">171</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00414">showPreviousInstructions()</a>.</p>
 
 </div>
 </div>
@@ -914,9 +1101,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00175">175</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">prompt()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00436">prompt()</a>.</p>
 
 </div>
 </div>
@@ -940,9 +1127,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00111">111</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00169">169</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00251">prompt()</a>, and <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00100">shouldQuitVM()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00185">initCommands()</a>, and <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00114">shouldQuitVM()</a>.</p>
 
 </div>
 </div>
@@ -966,9 +1153,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00110">110</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00168">168</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00095">isRunning()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00063">run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00109">isRunning()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00067">run()</a>.</p>
 
 </div>
 </div>
@@ -992,9 +1179,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00106">106</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00164">164</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00050">resetContextToSavedState()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00038">saveState()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00054">resetContextToSavedState()</a>, and <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00042">saveState()</a>.</p>
 
 </div>
 </div>
@@ -1018,9 +1205,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00108">108</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d58/Debugger_8hpp_source.html#l00166">166</a> of file <a class="el" href="../../d6/d58/Debugger_8hpp_source.html">Debugger.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00329">compile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../db/d7b/Debugger_8cpp_source.html#l00492">compile()</a>.</p>
 
 </div>
 </div>
@@ -1034,7 +1221,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="../../dd/d41/classArk_1_1internal_1_1Debugger.html">Debugger</a></li>
-    <li class="footer">Generated on Thu Mar 19 2026 06:48:16 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Aug 29 2026 18:10:55 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

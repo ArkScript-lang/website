@@ -1,19 +1,21 @@
 <map id="/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/IntermediateRepresentation/Word.hpp" name="/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/IntermediateRepresentation/Word.hpp">
-<area shape="rect" id="Node000001" title="Describe an instruction and its immediate argument." alt="" coords="873,5,1138,76"/>
-<area shape="rect" id="Node000002" href="$de/da6/Entity_8hpp.html" title="An entity in the IR is a bundle of information." alt="" coords="873,124,1138,195"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1008,91,1008,124,1003,124,1003,91"/>
-<area shape="rect" id="Node000003" href="$df/d86/IRCompiler_8hpp.html" title="Compile the intermediate representation to bytecode." alt="" coords="1014,243,1280,313"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1061,203,1107,240,1103,244,1058,207"/>
-<area shape="rect" id="Node000015" href="$d0/de2/IROptimizer_8hpp.html" title="Optimize IR based on IR entity grouped by 2 (or more)" alt="" coords="449,243,714,313"/>
-<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="865,202,709,245,707,240,864,197"/>
-<area shape="rect" id="Node000017" href="$db/d08/ASTLowerer_8hpp.html" title=" " alt="" coords="739,250,990,306"/>
-<area shape="poly" id="edge17_Node000002_Node000017" title=" " alt="" coords="953,207,899,252,895,248,950,203"/>
-<area shape="rect" id="Node000019" href="$df/de9/Entity_8cpp.html" title=" " alt="" coords="1304,243,1545,313"/>
-<area shape="poly" id="edge20_Node000002_Node000019" title=" " alt="" coords="1146,197,1304,241,1302,246,1144,202"/>
+<area shape="rect" id="Node000001" title="Describe an instruction and its immediate argument." alt="" coords="744,5,1009,76"/>
+<area shape="rect" id="Node000002" href="$de/da6/Entity_8hpp.html" title="An entity in the IR is a bundle of information." alt="" coords="744,124,1009,195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="879,91,879,124,874,124,874,91"/>
+<area shape="rect" id="Node000003" href="$df/d86/IRCompiler_8hpp.html" title="Compile the intermediate representation to bytecode." alt="" coords="1026,243,1292,313"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="976,199,1076,240,1074,245,974,203"/>
+<area shape="rect" id="Node000015" href="$d0/d45/IRInliner_8hpp.html" title="Try to inline IR blocks." alt="" coords="172,243,437,313"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="729,190,450,245,438,248,437,243,449,240,728,185"/>
+<area shape="rect" id="Node000017" href="$d0/de2/IROptimizer_8hpp.html" title="Optimize IR based on IR entity grouped by 2 (or more)" alt="" coords="461,243,726,313"/>
+<area shape="poly" id="edge17_Node000002_Node000017" title=" " alt="" coords="779,203,679,245,677,240,777,199"/>
+<area shape="rect" id="Node000019" href="$db/d08/ASTLowerer_8hpp.html" title=" " alt="" coords="751,250,1002,306"/>
+<area shape="poly" id="edge20_Node000002_Node000019" title=" " alt="" coords="879,210,879,250,874,250,874,210"/>
+<area shape="rect" id="Node000021" href="$df/de9/Entity_8cpp.html" title=" " alt="" coords="1316,243,1557,313"/>
+<area shape="poly" id="edge23_Node000002_Node000021" title=" " alt="" coords="1024,184,1305,240,1316,243,1315,248,1304,245,1023,189"/>
 <area shape="rect" id="Node000004" href="$de/d8e/Welder_8hpp.html" title="In charge of welding everything needed to compile code." alt="" coords="654,369,824,424"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1000,318,837,364,816,371,814,366,836,359,999,313"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1012,317,837,364,815,371,813,366,836,359,1011,311"/>
 <area shape="rect" id="Node000014" href="$d1/dfa/IRCompiler_8cpp.html" title=" " alt="" coords="1100,361,1341,432"/>
-<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="1179,325,1201,360,1196,362,1174,328"/>
+<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="1187,326,1205,360,1200,362,1182,328"/>
 <area shape="rect" id="Node000005" href="$d3/d7e/Ark_8hpp.html" title="Includes the needed files to start using ArkScript." alt="" coords="257,480,413,536"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="651,432,644,435,414,491,413,486,642,429,650,427"/>
 <area shape="rect" id="Node000008" href="$dc/dfd/JsonCompiler_8hpp.html" title=" " alt="" coords="465,480,621,536"/>
@@ -32,10 +34,13 @@
 <area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="546,551,546,583,540,583,540,551"/>
 <area shape="rect" id="Node000010" href="$d0/d46/arkscript_2main_8cpp.html" title=" " alt="" coords="657,584,837,639"/>
 <area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="612,540,693,581,691,585,610,545"/>
-<area shape="poly" id="edge15_Node000015_Node000004" title=" " alt="" coords="642,321,704,366,701,371,639,325"/>
-<area shape="rect" id="Node000016" href="$d0/da9/IROptimizer_8cpp.html" title=" " alt="" coords="389,361,630,432"/>
-<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="555,328,533,362,529,360,550,325"/>
-<area shape="poly" id="edge18_Node000017_Node000004" title=" " alt="" coords="826,318,770,370,767,366,823,314"/>
-<area shape="rect" id="Node000018" href="$d2/d5e/ASTLowerer_8cpp.html" title=" " alt="" coords="848,369,1075,424"/>
-<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="899,316,941,366,937,370,895,319"/>
+<area shape="poly" id="edge15_Node000015_Node000004" title=" " alt="" coords="453,312,644,359,666,366,664,371,642,364,451,317"/>
+<area shape="rect" id="Node000016" href="$da/da2/IRInliner_8cpp.html" title=" " alt="" coords="124,361,365,432"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="282,328,264,362,260,360,277,326"/>
+<area shape="poly" id="edge18_Node000017_Node000004" title=" " alt="" coords="650,321,707,366,704,371,647,325"/>
+<area shape="rect" id="Node000018" href="$d0/da9/IROptimizer_8cpp.html" title=" " alt="" coords="389,361,630,432"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="562,327,537,363,532,359,558,324"/>
+<area shape="poly" id="edge21_Node000019_Node000004" title=" " alt="" coords="835,318,773,370,769,366,831,314"/>
+<area shape="rect" id="Node000020" href="$d2/d5e/ASTLowerer_8cpp.html" title=" " alt="" coords="848,369,1075,424"/>
+<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="907,317,944,367,940,370,903,320"/>
 </map>

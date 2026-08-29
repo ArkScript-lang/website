@@ -33,15 +33,20 @@ digraph "/Users/fola/Documents/ArkScript/Ark/include/Ark/Compiler/IntermediateRe
   Node3 -> Node14 [id="edge13_Node000003_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node14 [id="Node000014",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/IntermediateRepresentation\l/IRCompiler.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d1/dfa/IRCompiler_8cpp.html",tooltip=" "];
   Node2 -> Node15 [id="edge14_Node000002_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node15 [id="Node000015",label="/Users/fola/Documents\l/ArkScript/Ark/include\l/Ark/Compiler/IntermediateRepresentation\l/IROptimizer.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/de2/IROptimizer_8hpp.html",tooltip="Optimize IR based on IR entity grouped by 2 (or more)"];
+  Node15 [id="Node000015",label="/Users/fola/Documents\l/ArkScript/Ark/include\l/Ark/Compiler/IntermediateRepresentation\l/IRInliner.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/d45/IRInliner_8hpp.html",tooltip="Try to inline IR blocks."];
   Node15 -> Node4 [id="edge15_Node000015_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node15 -> Node16 [id="edge16_Node000015_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node16 [id="Node000016",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/IntermediateRepresentation\l/IROptimizer.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/da9/IROptimizer_8cpp.html",tooltip=" "];
+  Node16 [id="Node000016",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/IntermediateRepresentation\l/IRInliner.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$da/da2/IRInliner_8cpp.html",tooltip=" "];
   Node2 -> Node17 [id="edge17_Node000002_Node000017",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node17 [id="Node000017",label="/Users/fola/Documents\l/ArkScript/Ark/include\l/Ark/Compiler/Lowerer/ASTLowerer.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d08/ASTLowerer_8hpp.html",tooltip=" "];
+  Node17 [id="Node000017",label="/Users/fola/Documents\l/ArkScript/Ark/include\l/Ark/Compiler/IntermediateRepresentation\l/IROptimizer.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/de2/IROptimizer_8hpp.html",tooltip="Optimize IR based on IR entity grouped by 2 (or more)"];
   Node17 -> Node4 [id="edge18_Node000017_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node17 -> Node18 [id="edge19_Node000017_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node18 [id="Node000018",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/Lowerer/ASTLowerer.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d5e/ASTLowerer_8cpp.html",tooltip=" "];
+  Node18 [id="Node000018",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/IntermediateRepresentation\l/IROptimizer.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/da9/IROptimizer_8cpp.html",tooltip=" "];
   Node2 -> Node19 [id="edge20_Node000002_Node000019",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node19 [id="Node000019",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/IntermediateRepresentation\l/Entity.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/de9/Entity_8cpp.html",tooltip=" "];
+  Node19 [id="Node000019",label="/Users/fola/Documents\l/ArkScript/Ark/include\l/Ark/Compiler/Lowerer/ASTLowerer.hpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d08/ASTLowerer_8hpp.html",tooltip=" "];
+  Node19 -> Node4 [id="edge21_Node000019_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node19 -> Node20 [id="edge22_Node000019_Node000020",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node20 [id="Node000020",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/Lowerer/ASTLowerer.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d2/d5e/ASTLowerer_8cpp.html",tooltip=" "];
+  Node2 -> Node21 [id="edge23_Node000002_Node000021",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node21 [id="Node000021",label="/Users/fola/Documents\l/ArkScript/Ark/src/arkreactor\l/Compiler/IntermediateRepresentation\l/Entity.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/de9/Entity_8cpp.html",tooltip=" "];
 }

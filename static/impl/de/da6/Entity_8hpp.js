@@ -1,7 +1,8 @@
 var Entity_8hpp =
 [
     [ "Ark::internal::IR::Entity", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity.html", "dc/d35/classArk_1_1internal_1_1IR_1_1Entity" ],
-    [ "Block", "de/da6/Entity_8hpp.html#a8eb76fcb4f2f3d8d86f7bbabd233e6f2", null ],
+    [ "Ark::internal::IR::Block", "dc/d26/structArk_1_1internal_1_1IR_1_1Block.html", "dc/d26/structArk_1_1internal_1_1IR_1_1Block" ],
+    [ "Ark::internal::IR::Block::Metadata", "de/da7/structArk_1_1internal_1_1IR_1_1Block_1_1Metadata.html", "de/da7/structArk_1_1internal_1_1IR_1_1Block_1_1Metadata" ],
     [ "label_t", "de/da6/Entity_8hpp.html#aa4b6737e9a7b690f90e82d801801f509", null ],
     [ "Kind", "de/da6/Entity_8hpp.html#a3ff6aca07d6f0bf01495d0325ceb428d", [
       [ "Label", "de/da6/Entity_8hpp.html#a3ff6aca07d6f0bf01495d0325ceb428dab021df6aac4654c454f46c77646e745f", null ],
@@ -11,6 +12,7 @@ var Entity_8hpp =
       [ "Opcode2Args", "de/da6/Entity_8hpp.html#a3ff6aca07d6f0bf01495d0325ceb428dae41e6561ce156ae3f69d536110106750", null ],
       [ "Opcode3Args", "de/da6/Entity_8hpp.html#a3ff6aca07d6f0bf01495d0325ceb428dac374bc227b2229a3d9379a8c9f824eaa", null ]
     ] ],
+    [ "AnonymousBlockName", "de/da6/Entity_8hpp.html#af79c6e38ec7927d59afbb1e6bf6bb5fe", null ],
     [ "MaxValueForDualArg", "de/da6/Entity_8hpp.html#a9a2ed84ef6832b5642b934f61195dbed", null ],
     [ "MaxValueForSmallNumber", "de/da6/Entity_8hpp.html#a8b84acaf490e4c814652064648f01ab8", null ]
 ];

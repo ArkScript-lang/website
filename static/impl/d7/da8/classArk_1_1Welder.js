@@ -22,6 +22,7 @@ var classArk_1_1Welder =
     [ "m_imports", "d7/da8/classArk_1_1Welder.html#a46edcbd1e8aba565dc02bf9f519923bf", null ],
     [ "m_ir", "d7/da8/classArk_1_1Welder.html#a6a7a68140cb4c4ae7e1cbeb3aa4e9109", null ],
     [ "m_ir_compiler", "d7/da8/classArk_1_1Welder.html#aa90dd0a17b1ba9954c8c9e6016485c55", null ],
+    [ "m_ir_inliner", "d7/da8/classArk_1_1Welder.html#a8817cc45b8daa3582073f9a6d2d2bbc0", null ],
     [ "m_ir_optimizer", "d7/da8/classArk_1_1Welder.html#a2506e1607d58b46e6b7361bf1a168b15", null ],
     [ "m_lib_env", "d7/da8/classArk_1_1Welder.html#affcf8831abefd92e74a87efecdcd4f24", null ],
     [ "m_logger", "d7/da8/classArk_1_1Welder.html#a4965db81537922221a28200be079c832", null ],
@@ -29,5 +30,5 @@ var classArk_1_1Welder =
     [ "m_macro_processor", "d7/da8/classArk_1_1Welder.html#ab31ba4e65ad587a433554573e77f27f9", null ],
     [ "m_name_resolver", "d7/da8/classArk_1_1Welder.html#a735a690f5d155981fffbc71b557c25b0", null ],
     [ "m_parser", "d7/da8/classArk_1_1Welder.html#a9723197f86a0ff2434256d712422be99", null ],
-    [ "m_root_file", "d7/da8/classArk_1_1Welder.html#a88ecff1c54c21ccb67afcd350ad0ba25", null ]
+    [ "m_root_file", "d7/da8/classArk_1_1Welder.html#a8bb44d9095e10a0a3134937d03e39646", null ]
 ];

@@ -2,12 +2,12 @@ var namespaceArk =
 [
     [ "Diagnostics", "db/da6/namespaceArk_1_1Diagnostics.html", "db/da6/namespaceArk_1_1Diagnostics" ],
     [ "helper", "da/da8/namespaceArk_1_1helper.html", [
-      [ "at", "da/da8/namespaceArk_1_1helper.html#a815282cc5bf0d47595a07a1550ca36a8", null ],
-      [ "atAt", "da/da8/namespaceArk_1_1helper.html#ad7e633742bf85788a0e64fa9c0b0d8dc", null ],
-      [ "doMath", "da/da8/namespaceArk_1_1helper.html#a03ee6c644c603b8d1dc3107525a691a3", null ],
-      [ "head", "da/da8/namespaceArk_1_1helper.html#a0cb620ec076a6c40140c7d1feee2cb35", null ],
-      [ "mathInstToStr", "da/da8/namespaceArk_1_1helper.html#aa9b167626e158586fae25abe3eb24521", null ],
-      [ "tail", "da/da8/namespaceArk_1_1helper.html#af046954be636683c75d75735de8c39d2", null ]
+      [ "at", "da/da8/namespaceArk_1_1helper.html#a56c36c2fcdc5f96f69f49039217adb41", null ],
+      [ "atAt", "da/da8/namespaceArk_1_1helper.html#aabef7c33b9c9f8ba86a95fab971aa132", null ],
+      [ "doMath", "da/da8/namespaceArk_1_1helper.html#a928f699ef7e53416ef2d3432eb28c23f", null ],
+      [ "head", "da/da8/namespaceArk_1_1helper.html#a0a8acf26c089b06839d4b816699a32bc", null ],
+      [ "mathInstToStr", "da/da8/namespaceArk_1_1helper.html#ad7d91ffba207d78351c1e42ad88b7dbc", null ],
+      [ "tail", "da/da8/namespaceArk_1_1helper.html#ab7d114c268521426eb4cfe0fc3000b15", null ]
     ] ],
     [ "internal", "dc/d0e/namespaceArk_1_1internal.html", "dc/d0e/namespaceArk_1_1internal" ],
     [ "literals", "df/d62/namespaceArk_1_1literals.html", [
@@ -83,13 +83,16 @@ var namespaceArk =
     [ "operator<<", "d9/de4/namespaceArk.html#a7e01761d64ad740b1ae7ba4a27cfd5d8", null ],
     [ "operator==", "d9/de4/namespaceArk.html#a751a3ae071809b017a29e9c309fcee23", null ],
     [ "operator==", "d9/de4/namespaceArk.html#a48544420591ea31c9f434605ed98eee9", null ],
+    [ "withForeColor", "d9/de4/namespaceArk.html#a3e42c91f363fbc7315cba0d64c0c5d2d", null ],
     [ "DefaultFeatures", "d9/de4/namespaceArk.html#a01bf99e888f59670c0508d83cc23ffd4", null ],
+    [ "DefaultLibFolder", "d9/de4/namespaceArk.html#ad34318eeb79ce2094f9e25e07c67bcc8", null ],
     [ "DisableCache", "d9/de4/namespaceArk.html#a52ab68d95fd5de773ee18c88f8347388", null ],
     [ "False", "d9/de4/namespaceArk.html#a3918bd702bb8bb7f3cfb7a994050bf16", null ],
-    [ "FeatureASTOptimizer", "d9/de4/namespaceArk.html#ac3db2ac8dce7f6dc63d01048eaaea2cc", null ],
+    [ "FeatureASTOptimiser", "d9/de4/namespaceArk.html#a511712b27b98f6a5c328a20e0c4d848f", null ],
     [ "FeatureDumpIR", "d9/de4/namespaceArk.html#aca8e167cdb15794066ffc3254580fa5a", null ],
     [ "FeatureImportSolver", "d9/de4/namespaceArk.html#a0dd1d59c1673ce87c62416819b5604b4", null ],
-    [ "FeatureIROptimizer", "d9/de4/namespaceArk.html#a19addc1833d2f8b7f039660b23482d8e", null ],
+    [ "FeatureIRInliner", "d9/de4/namespaceArk.html#aa11e99a9dbcffe543d186d0b3ea01f8e", null ],
+    [ "FeatureIROptimiser", "d9/de4/namespaceArk.html#a56cf2469c2e98d771c81e1dcc177ec9b", null ],
     [ "FeatureMacroProcessor", "d9/de4/namespaceArk.html#a5aa16adc97211d2f076390efbc996f63", null ],
     [ "FeatureNameResolver", "d9/de4/namespaceArk.html#afeb889bdcb25a5cd5baa7f8316fccb49", null ],
     [ "FeatureTestFailOnException", "d9/de4/namespaceArk.html#a69c882fe0668cb21166e4616104c0480", null ],

@@ -26,7 +26,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="../../ArkTransparent-small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="../../logo-2026-rectangle-256x85.png"/></td>
   <td id="projectalign">
    <div id="projectname">ArkScript
    </div>
@@ -93,7 +93,7 @@ $(function(){initNavTree('de/d21/classArk_1_1internal_1_1LocalsLocator.html','..
 <div class="dynheader">
 Collaboration diagram for Ark::internal::LocalsLocator:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/dd0/classArk_1_1internal_1_1LocalsLocator__coll__graph.svg" width="618" height="540"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/dd0/classArk_1_1internal_1_1LocalsLocator__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -129,9 +129,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a05718e7e414ba12108c86056d9d9f224" id="r_a05718e7e414ba12108c86056d9d9f224"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05718e7e414ba12108c86056d9d9f224">saveScopeLengthForBranch</a> ()</td></tr>
 <tr class="memdesc:a05718e7e414ba12108c86056d9d9f224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the current scope length before entering a branch, so that we can ignore variable definitions inside the branch and generate valid indices.  <br /></td></tr>
 <tr class="separator:a05718e7e414ba12108c86056d9d9f224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f417e628fa9b71b81d3657df80ae5a8" id="r_a6f417e628fa9b71b81d3657df80ae5a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f417e628fa9b71b81d3657df80ae5a8">dropVarsForBranch</a> ()</td></tr>
-<tr class="memdesc:a6f417e628fa9b71b81d3657df80ae5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop potentially defined variables in the last saved branch.  <br /></td></tr>
-<tr class="separator:a6f417e628fa9b71b81d3657df80ae5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e618436ce4b17f74b9daa36a9ee518e" id="r_a7e618436ce4b17f74b9daa36a9ee518e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e618436ce4b17f74b9daa36a9ee518e">dropVarsForBranch</a> ()</td></tr>
+<tr class="memdesc:a7e618436ce4b17f74b9daa36a9ee518e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop potentially defined variables in the last saved branch.  <br /></td></tr>
+<tr class="separator:a7e618436ce4b17f74b9daa36a9ee518e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8fe15631061606f907137df233ce9ec" id="r_af8fe15631061606f907137df233ce9ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8fe15631061606f907137df233ce9ec">markLastLocalAsUnreachable</a> ()</td></tr>
+<tr class="memdesc:af8fe15631061606f907137df233ce9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the last variable of a scope as unreachable, blocking lookupLastScopeByName(..) from returning a value past that point.  <br /></td></tr>
+<tr class="separator:af8fe15631061606f907137df233ce9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -194,7 +197,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00007">7</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00079">m_scopes</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00093">m_scopes</a>.</p>
 
 </div>
 </div>
@@ -224,9 +227,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00079">m_scopes</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00093">m_scopes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">Ark::internal::ASTLowerer::compileFunction()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00572">Ark::internal::ASTLowerer::compileLetMutSet()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00520">Ark::internal::ASTLowerer::compileFunction()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00635">Ark::internal::ASTLowerer::compileLetMutSet()</a>.</p>
 
 </div>
 </div>
@@ -253,11 +256,11 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00044">44</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00079">m_scopes</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00093">m_scopes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">Ark::internal::ASTLowerer::compileFunction()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00612">Ark::internal::ASTLowerer::compileWhile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00520">Ark::internal::ASTLowerer::compileFunction()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00685">Ark::internal::ASTLowerer::compileWhile()</a>.</p>
 
 </div>
 </div>
@@ -278,36 +281,47 @@ Private Attributes</h2></td></tr>
 
 <p>Delete the last scope. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00079">m_scopes</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00093">m_scopes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00492">Ark::internal::ASTLowerer::compileFunction()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00612">Ark::internal::ASTLowerer::compileWhile()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00520">Ark::internal::ASTLowerer::compileFunction()</a>, and <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00685">Ark::internal::ASTLowerer::compileWhile()</a>.</p>
 
 </div>
 </div>
-<a id="a6f417e628fa9b71b81d3657df80ae5a8" name="a6f417e628fa9b71b81d3657df80ae5a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f417e628fa9b71b81d3657df80ae5a8">&#9670;&#160;</a></span>dropVarsForBranch()</h2>
+<a id="a7e618436ce4b17f74b9daa36a9ee518e" name="a7e618436ce4b17f74b9daa36a9ee518e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e618436ce4b17f74b9daa36a9ee518e">&#9670;&#160;</a></span>dropVarsForBranch()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Ark::internal::LocalsLocator::dropVarsForBranch </td>
+          <td class="memname">bool Ark::internal::LocalsLocator::dropVarsForBranch </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Drop potentially defined variables in the last saved branch. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if vars were dropped, meaning that we created at least one variable in a branch </dd>
+<dd>
+false if nothing was dropped </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00051">51</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00061">61</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00080">m_drop_for_conds</a>, and <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00079">m_scopes</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00094">m_drop_for_conds</a>, and <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00093">m_scopes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00453">Ark::internal::ASTLowerer::compileIf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00468">Ark::internal::ASTLowerer::compileIf()</a>.</p>
 
 </div>
 </div>
@@ -335,11 +349,36 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::optional&lt;std::size_t&gt; </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00020">20</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="#a09e07d6cec44634f9cdc0636dd846132aaf4bb376939e77df0e7c2332b837a866">Closure</a>, and <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00079">m_scopes</a>.</p>
+<p class="reference">References <a class="el" href="#a09e07d6cec44634f9cdc0636dd846132aaf4bb376939e77df0e7c2332b837a866">Closure</a>, and <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00093">m_scopes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00316">Ark::internal::ASTLowerer::compileSymbol()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00324">Ark::internal::ASTLowerer::compileSymbol()</a>.</p>
+
+</div>
+</div>
+<a id="af8fe15631061606f907137df233ce9ec" name="af8fe15631061606f907137df233ce9ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8fe15631061606f907137df233ce9ec">&#9670;&#160;</a></span>markLastLocalAsUnreachable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ark::internal::LocalsLocator::markLastLocalAsUnreachable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mark the last variable of a scope as unreachable, blocking lookupLastScopeByName(..) from returning a value past that point. </p>
+
+<p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00077">77</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00093">m_scopes</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00468">Ark::internal::ASTLowerer::compileIf()</a>.</p>
 
 </div>
 </div>
@@ -360,11 +399,11 @@ Private Attributes</h2></td></tr>
 
 <p>Save the current scope length before entering a branch, so that we can ignore variable definitions inside the branch and generate valid indices. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00046">46</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00056">56</a> of file <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html">LocalsLocator.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00080">m_drop_for_conds</a>, and <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00079">m_scopes</a>.</p>
+<p class="reference">References <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00094">m_drop_for_conds</a>, and <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00093">m_scopes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00453">Ark::internal::ASTLowerer::compileIf()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d5e/ASTLowerer_8cpp_source.html#l00468">Ark::internal::ASTLowerer::compileIf()</a>.</p>
 
 </div>
 </div>
@@ -391,9 +430,9 @@ Private Attributes</h2></td></tr>
 
 <p>Needed to drop variables inside if/else branches since they don't have their own scope. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00080">80</a> of file <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html">LocalsLocator.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00094">94</a> of file <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html">LocalsLocator.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00051">dropVarsForBranch()</a>, and <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00046">saveScopeLengthForBranch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00061">dropVarsForBranch()</a>, and <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00056">saveScopeLengthForBranch()</a>.</p>
 
 </div>
 </div>
@@ -417,9 +456,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00079">79</a> of file <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html">LocalsLocator.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html#l00093">93</a> of file <a class="el" href="../../df/dd6/LocalsLocator_8hpp_source.html">LocalsLocator.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00013">addLocal()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00034">createScope()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00041">deleteScope()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00051">dropVarsForBranch()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00007">LocalsLocator()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00020">lookupLastScopeByName()</a>, and <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00046">saveScopeLengthForBranch()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00013">addLocal()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00044">createScope()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00051">deleteScope()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00061">dropVarsForBranch()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00007">LocalsLocator()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00024">lookupLastScopeByName()</a>, <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00077">markLastLocalAsUnreachable()</a>, and <a class="el" href="../../d5/dc9/LocalsLocator_8cpp_source.html#l00056">saveScopeLengthForBranch()</a>.</p>
 
 </div>
 </div>
@@ -433,7 +472,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d9/de4/namespaceArk.html">Ark</a></li><li class="navelem"><a class="el" href="../../dc/d0e/namespaceArk_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="../../de/d21/classArk_1_1internal_1_1LocalsLocator.html">LocalsLocator</a></li>
-    <li class="footer">Generated on Thu Mar 19 2026 06:48:17 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Aug 29 2026 18:10:55 for ArkScript by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
