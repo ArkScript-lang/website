@@ -68,10 +68,12 @@ Clone [ArkScript](https://github.com/ArkScript-lang/Ark) wherever you like, and 
 Then, you will need to update `lib/modules/src/CMakeLists.txt` to add the following code:
 
 ```cmake
-add_subdirectory(module_name)
+if (${ARK_REQUESTED_MODULES} MATCHES "(^\\*$|module_name,)")
+  add_subdirectory(module_name)
+endif ()
 ```
 
-Then, run `cmake . -Bbuild` in ArkScript's folder, and build your module with `cmake --build build`. It should output a `.arkm` file in `lib/`.
+Then, run `cmake . -Bbuild -DARK_BUILD_MODULES=On -DARK_REQUESTED_MODULES='module_name,'` in ArkScript's folder, and build your module with `cmake --build build`. It should output a `.arkm` file in `lib/std/`.
 
 ## Troubleshooting
 

@@ -123,6 +123,7 @@ Different CMake switches are available to customise the build:
 - `-DARK_BUILD_EXE` to generate an executable, defaults to Off, building a shared library
 - `-DARK_ENABLE_SYSTEM` to enable `sys:exec` (execute shell commands without restrictions), defaults to On
 - `-DARK_BUILD_MODULES` to build the modules, defaults to Off
+  - `-DARK_REQUESTED_MODULES='module,...,module,'` to specify the list of modules to build. Use `'*'` to build them all. A comma must be present at the end of the list and between every module
 - `-DARK_NO_STDLIB` to avoid the installation of the ArkScript standard library
 - `-DARK_SANITIZERS` to enable ASAN and UBSAN
 - `-DARK_UNITY_BUILD` to enable unity building (generally faster as it merges source files together), defaults to Off
