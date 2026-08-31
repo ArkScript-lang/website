@@ -1,0 +1,14 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Canonical: https://arkscript-lang.dev/.well-known/security.txt
+Contact: mailto:contact@arkscript-lang.dev
+Encryption: https://arkscript-lang.dev/.well-known/pgp-key.txt
+Preferred-Languages: en, fr
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSsAS2Jj4ZeVLfJkymqNYieidWCkAUCapVKsQAKCRCqNYieidWC
+kGQaAP0UqjbteDs85Z3Rg9yuye/uJwX8v0lgBbIH2OX1GYdazAD/dEnWxphRoFKZ
+C1BZgbaBPPLsozIY62ArpD/U0lV4VwM=
+=nnEG
+-----END PGP SIGNATURE-----
