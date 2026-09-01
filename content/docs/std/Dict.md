@@ -3,8 +3,8 @@ title: "Dict"
 slug: "dict"
 description: ""
 summary: ""
-date: 2026-08-15T15:52:35+02:00
-lastmod: 2026-08-15T15:52:35+02:00
+date: 2026-09-01T02:16:32+02:00
+lastmod: 2026-09-01T02:16:32+02:00
 draft: false
 weight: 410
 toc: true
@@ -49,6 +49,48 @@ Return the length of a dictionary
 {{< highlight_arkscript >}}
 (print (len (dict))  # 0
 (print (len (dict "a" 1 "b" 2 "c" 3)))  # 3
+{{< /highlight_arkscript >}}
+
+## @
+
+---
+`(@ _D _key)`
+Get a value from a given dictionary using a key, or nil if it doesn't exist
+
+
+
+#### Parameters
+- `_D`: dictionary
+- `_key`: key to get
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data (dict "key" "value"))
+(print (@ data "key"))  # value
+{{< /highlight_arkscript >}}
+
+## @=
+
+---
+`(@= _D _key _value)`
+
+
+**Note**: The dictionary is modified in place
+
+
+#### Parameters
+- `_D`: dictionary
+- `_key`: key to add (or replace)
+- `_value`: value for the given key
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let data (dict "key" "value"))
+(@= data "hello" "world")
+(@= data "key" "hole")  # key:value will be replaced by key:hole
+(print data)  # {key: hole, hello: world}
 {{< /highlight_arkscript >}}
 
 ## dict
