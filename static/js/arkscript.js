@@ -13,7 +13,7 @@ Rainbow.extend('arkscript', [
         pattern: /true|false|nil/g
     },
     {
-        name: 'variable',
+        name: 'identifier',
         pattern: /[A-Za-z:&;!?@_\-+*\/|=<>%$][A-Za-z0-9:&;!?@_\-+*/|=<>%$]*/g
     },
     {
