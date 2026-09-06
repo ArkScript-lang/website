@@ -2,7 +2,7 @@ Rainbow.extend('arkscript', [
     {
         /* making peace with HTML */
         name: 'entity.function',
-        pattern: /&gt;|&lt;/g
+        pattern: /&gt;=?|&lt;=?/g
     },
     {
         name: 'comment',
@@ -13,8 +13,8 @@ Rainbow.extend('arkscript', [
         pattern: /true|false|nil/g
     },
     {
-        name: 'constant.symbol',
-        pattern: /'[^()\s#']+/g
+        name: 'variable',
+        pattern: /[A-Za-z:&;!?@_\-+*\/|=<>%$][A-Za-z0-9:&;!?@_\-+*/|=<>%$]*/g
     },
     {
         name: 'constant.number',
@@ -22,7 +22,11 @@ Rainbow.extend('arkscript', [
     },
     {
         name: 'string',
-        pattern: /"([^"\\]|\\(.|\n))*\"/g
+        pattern: /("[^"\\]*(?:\\.[^"\\]*)*")/g
+    },
+    {
+        name: 'string.regex',
+        pattern: /(r"[^"\\]*(?:\\.[^"\\]*)*")/g
     },
     {
         matches: {
@@ -41,7 +45,7 @@ Rainbow.extend('arkscript', [
         matches: {
             1: 'entity.function'
         },
-        pattern: /\(\s*(=|\<|\>|\<=|\>=|!=|@|@@|@=|@@=|\^|\+|\-|\*|\/|tail|head|nil\?|list|len|append|concat|print|puts|input|time|empty\?|assert|toNumber|toString|and|or|mod|type|hasField|not|async|await)(?=[\]()\s#])/g
+        pattern: /\(\s*(=|<=?|>=?|!=|@|@@|@=|@@=|\^|\+|-|\*|\/|tail|head|nil\?|list|len|append|concat|print|puts|format|input|time|empty\?|assert|toNumber|toString|and|or|mod|type|hasField|not|async|await)(?=[\]()\s#])/g
     }
 ]);
 
