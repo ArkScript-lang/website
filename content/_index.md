@@ -49,7 +49,7 @@ seo:
 {{< tab "Closures" >}}
 
 {{< highlight_arkscript >}}
-(let countdown-from (fun (x)
+(let countdown-from (fun ((mut x))
   # return a closure that captures "x"
   (fun (&x) {
     (set x (- x 1))

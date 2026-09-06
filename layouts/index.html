@@ -31,13 +31,18 @@
       <div class="row justify-content-center text-center">
 
         <div class="col-lg-5">
+          <h2 class="h4">📚 Easy to learn</h2>
+          <p>Small syntax, can be learned and put to use in a few hours, no matter your programming experience.</p>
+        </div>
+
+        <div class="col-lg-5">
           <h2 class="h4">🧰 Functional scripting language</h2>
-          <p>Every parameter is passed by value ; functions are first class citizens ; closures have explicit captures.</p>
+          <p>Every parameter is passed by value ; functions are first class citizens ; closures use explicit captures.</p>
         </div>
 
         <div class="col-lg-5">
           <h2 class="h4">⚗ Easy to embed in C++ apps</h2>
-          <p>Very easy to embed it in your projects. Creating bindings <a href="/docs/tutorials/embedding">is made easy</a>.</p>
+          <p>Very easy to embed it in your projects, to use as a scripting language. Creating bindings <a href="/docs/tutorials/embedding">is made easy</a>.</p>
         </div>
 
         <div class="col-lg-5">
@@ -45,7 +50,7 @@
           {{ $file := readFile "content/docs/std/_decl.txt" }}
           {{ $array := split $file "\n" }}
           {{ $count := len $array }}
-          <p><a href="/docs/std/">A collection of {{ math.Sub $count 1 }} algorithms</a> to help write scripts quickly.</p>
+          <p><a href="/docs/std/">A collection of {{ math.Sub $count 1 }} algorithms</a> to help you code, without having to install hundreds of dependencies.</p>
         </div>
 
         <div class="col-lg-5">
@@ -54,13 +59,8 @@
         </div>
 
         <div class="col-lg-5">
-          <h2 class="h4">🚀 Performances</h2>
-          <p><a href="/tools/benchmarks">Decent performances</a> for use in as many situations as possible.</p>
-        </div>
-
-        <div class="col-lg-5">
           <h2 class="h4">✨ Modern codebase</h2>
-          <p>Made with C++20 and heavily tested (even <a href="/docs/reference/testing_arkscript">error messages are tested</a>!)</p>
+          <p>Made with C++20, with best practices in mind, heavily tested (we even test <a href="/docs/reference/testing_arkscript">error messages</a>).</p>
         </div>
 
       </div>

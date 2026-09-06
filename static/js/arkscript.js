@@ -33,7 +33,7 @@ Rainbow.extend('arkscript', [
             1: 'storage.function',
             2: 'variable'
         },
-        pattern: /\(\s*(let|mut|set)\s+\(?(\S+)/g
+        pattern: /\(\s*(let|mut|set|ref)\s+\(?([A-Za-z:&;!?@_\-+*\/|=<>%$][A-Za-z0-9:&;!?@_\-+*/|=<>%$]*)/g
     },
     {
         matches: {
