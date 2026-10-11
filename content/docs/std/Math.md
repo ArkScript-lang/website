@@ -3,8 +3,8 @@ title: "Math"
 slug: "math"
 description: ""
 summary: ""
-date: 2026-10-11T12:19:06+02:00
-lastmod: 2026-10-11T12:19:06+02:00
+date: 2026-10-11T13:25:33+02:00
+lastmod: 2026-10-11T13:25:33+02:00
 draft: false
 weight: 410
 toc: true
@@ -901,7 +901,7 @@ Computes the result of bitwise left-rotation of _x by _count
 
 ---
 `(let toBase (fun ((mut _x) _base) (...)))`
-Convert a number in a another base (in [2, 36[)
+Convert a number in a another base (in [2, 36])
 
 {{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
 {{< /callout >}}
@@ -947,7 +947,7 @@ Convert a number from a base to base 10
 
 ---
 `(let countDigits (fun ((mut _x) _base) (...)))`
-Count the digits of a number in a given base (in [2, 36[)
+Count the digits of a number in a given base (in [2, inf[)
 
 {{< callout context="note" title="ArkScript 4.6.0" icon="outline/info-circle" >}}Requires ArkScript 4.6.0 or later
 {{< /callout >}}
