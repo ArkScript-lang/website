@@ -3,8 +3,8 @@ title: "Macros"
 slug: "macros"
 description: ""
 summary: ""
-date: 2026-10-01T02:43:24+02:00
-lastmod: 2026-10-01T02:43:24+02:00
+date: 2026-10-11T12:19:06+02:00
+lastmod: 2026-10-11T12:19:06+02:00
 draft: false
 weight: 410
 toc: true
@@ -240,6 +240,60 @@ Chain calls on a given value, for a nicer syntax
 (-> "f0" f1)  # equivalent to (f1 "f0")
 (-> "f0" f1 f2 f3) # equivalent to (f3 (f2 (f1 "f0")))
 (-> "f0" f1 (foo _ f2) (bar _ f3))  # equivalent to (bar (foo (f1 "f0") f2) f3)
+{{< /highlight_arkscript >}}
+
+## some->
+
+---
+`(macro some-> (arg fn1 ...fns) (...))`
+Threading with nil short-circuiting. If any step produces nil, the chain stops and returns the nil value.
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `arg`: value to transform
+- `...fns`: series of functions to apply one by one to `arg`
+
+
+#### Example
+{{< highlight_arkscript >}}
+(import std.Macros)
+(mut db (dict
+  "tables" (dict
+    "users" (dict
+      "lexy" "dev"))))
+(print (some-> db
+  (@ _ "tables")
+  (@ _ "users")
+  (@ _ "lexy")))
+# "dev"
+(print (some-> nil))  # nil
+(print (some-> (dict "tables" nil)))  # nil
+{{< /highlight_arkscript >}}
+
+## fun->
+
+---
+`(macro fun-> (fn1 ...fns) (...))`
+Represent a pipeline of calls as a function
+
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameter
+- `...fns`: series of functions to apply one by one to `arg`
+
+
+#### Example
+{{< highlight_arkscript >}}
+(import std.Macros)
+# equivalent to (f1 "f0")
+(let a (fun-> f1)) (a "f0")
+# equivalent to (f3 (f2 (f1 "f0")))
+(let b (fun-> f1 f2 f3)) (b "f0")
+# equivalent to (bar (foo (f1 "f0") f2) f3)
+(let c (fun-> f1 (foo _ f2) (bar _ f3))) (c "f0")
 {{< /highlight_arkscript >}}
 
 ## partial

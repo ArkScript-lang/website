@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-10-01T02:43:24+02:00
-lastmod: 2026-10-01T02:43:24+02:00
+date: 2026-10-11T12:19:06+02:00
+lastmod: 2026-10-11T12:19:06+02:00
 draft: false
 weight: 410
 toc: true
@@ -996,10 +996,32 @@ Apply a given function to each element of a list
 (print (list:map [1 2 3 4 5 6 7 8 9] (fun (e) (* e e))))  # [1 4 9 25 36 49 64 81]
 {{< /highlight_arkscript >}}
 
+## fold
+
+---
+`(let fold (fun ((ref _L) _init _f) (...)))`
+Fold a given list, starting from the left side
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the list to work on
+- `_init`: an init value
+- `_f`: a function to apply to the list
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let a [1 2 3 4])
+(print (list:fold a 0 (fun (a b) (+ a b))))  # 10
+{{< /highlight_arkscript >}}
+
 ## foldLeft
 
 ---
-`(let foldLeft (fun ((ref _L) _init _f) (...)))`
+`(let foldLeft <value>)`
 Fold a given list, starting from the left side
 
 **Note**: The original list is not modified.
@@ -1016,6 +1038,28 @@ Fold a given list, starting from the left side
 {{< highlight_arkscript >}}
 (let a [1 2 3 4])
 (print (list:foldLeft a 0 (fun (a b) (+ a b))))  # 10
+{{< /highlight_arkscript >}}
+
+## foldRight
+
+---
+`(let foldRight (fun ((ref _L) _init _f) (...)))`
+Fold a given list, starting from the right side
+
+**Note**: The original list is not modified.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: the list to work on
+- `_init`: an init value
+- `_f`: a function to apply to the list
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let a [1 2 3 4])
+(print (list:foldRight a 0 (fun (a b) (+ a b))))  # 10
 {{< /highlight_arkscript >}}
 
 ## reduce
