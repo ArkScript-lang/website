@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-10-21T10:46:11+02:00
-lastmod: 2026-10-21T10:46:11+02:00
+date: 2026-10-21T14:52:40+02:00
+lastmod: 2026-10-21T14:52:40+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,11 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+Lists in ArkScript are heterogeneous, mutable sequences.
+
+
+
 
 ## len
 

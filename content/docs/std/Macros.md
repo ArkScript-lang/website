@@ -3,8 +3,8 @@ title: "Macros"
 slug: "macros"
 description: ""
 summary: ""
-date: 2026-10-21T10:46:11+02:00
-lastmod: 2026-10-21T10:46:11+02:00
+date: 2026-10-21T14:52:40+02:00
+lastmod: 2026-10-21T14:52:40+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,14 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+Macros can generate code from code, creating new syntax to write code and solve problems. A collection of macros is provided in ArkScript to simplify some code.
+
+
+
+{{< callout context="note" title="ArkScript 4.0.0" icon="outline/info-circle" >}}This library can only be used with ArkScript 4.x.y, as the macro syntax changed.
+{{< /callout >}}
+
 
 ## $undef
 
