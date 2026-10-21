@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-10-11T13:25:33+02:00
-lastmod: 2026-10-11T13:25:33+02:00
+date: 2026-10-21T10:46:11+02:00
+lastmod: 2026-10-21T10:46:11+02:00
 draft: false
 weight: 410
 toc: true
@@ -1584,6 +1584,35 @@ Chunk a list in sub-lists of size n
 {{< highlight_arkscript >}}
 (let indices (list:iota 1 9))  # [1 2 3 4 5 6 7 8 9]
 (print (list:chunkBy indices 3))  # [[1 2 3] [4 5 6] [7 8 9]]
+{{< /highlight_arkscript >}}
+
+## groupBy
+
+---
+`(let groupBy (fun ((ref _L) _get_key_f _f) (...)))`
+Compute consecutive keys and groups from the given List. Similar to `uniq` filter on Unix.
+
+**Note**: It generates a new group every time the value of the key function changes,
+which is why it is usually necessary to have sorted data in input.
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `_L`: list to group
+- `_get_key_f`: key function, take one element and return the corresponding key
+- `_f`: function to run on each group
+
+
+#### Example
+{{< highlight_arkscript >}}
+(let key (fun (x) x))
+(list:groupBy "AAAABBBCCDAABBB" key (fun (key group) (print (format "{}->{}" key group))))
+# A->[A A A A]
+# B->[B B B]
+# C->[C C]
+# D->[D]
+# A->[A A]
+# B->[B B B]
 {{< /highlight_arkscript >}}
 
 ## insert
