@@ -51,14 +51,14 @@ seo:
 
 {{< highlight_arkscript >}}
 (let ackermann (fun (m n) {
-(if (> m 0)
-(if (= 0 n)
-(ackermann (- m 1) 1)
-(ackermann (- m 1) (ackermann m (- n 1))))
-(+ 1 n)) }))
+  (if (> m 0)
+    (if (= 0 n)
+      (ackermann (- m 1) 1)
+      (ackermann (- m 1) (ackermann m (- n 1))))
+    (+ 1 n)) }))
 (assert
-(= 509 (ackermann 3 6))
-"(ackermann 3 6) == 509")
+  (= 509 (ackermann 3 6))
+  "(ackermann 3 6) == 509")
 {{< /highlight_arkscript >}}
 
 {{< /tab >}}
