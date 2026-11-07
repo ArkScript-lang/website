@@ -3,8 +3,8 @@ title: "Random"
 slug: "random"
 description: ""
 summary: ""
-date: 2026-11-01T02:50:40+02:00
-lastmod: 2026-11-01T02:50:40+02:00
+date: 2026-11-07T18:35:09+02:00
+lastmod: 2026-11-07T18:35:09+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,11 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+The following functions require `std.Random` to be imported to be used.
+
+
+
 
 ## choice
 

@@ -3,8 +3,8 @@ title: "IO"
 slug: "io"
 description: ""
 summary: ""
-date: 2026-11-01T02:50:40+02:00
-lastmod: 2026-11-01T02:50:40+02:00
+date: 2026-11-07T18:35:09+02:00
+lastmod: 2026-11-07T18:35:09+02:00
 draft: false
 weight: 410
 toc: true

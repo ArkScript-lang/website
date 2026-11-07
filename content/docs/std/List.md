@@ -3,8 +3,8 @@ title: "List"
 slug: "list"
 description: ""
 summary: ""
-date: 2026-11-01T02:50:40+02:00
-lastmod: 2026-11-01T02:50:40+02:00
+date: 2026-11-07T18:35:09+02:00
+lastmod: 2026-11-07T18:35:09+02:00
 draft: false
 weight: 410
 toc: true
@@ -17,7 +17,7 @@ seo:
 
 Lists in ArkScript are heterogeneous, mutable sequences.
 
-
+The following functions are builtins, working on lists, available **without** any import.
 
 
 ## len
@@ -334,6 +334,48 @@ Set an element in a list of lists or list of strings, in place
 (print (@@= lst2 0 -1 "2"))  # 2
 (print lst2)  # [a02 def g1i]
 {{< /highlight_arkscript >}}
+
+## slice
+
+---
+`(slice container start end step)`
+Slice a list or string given a start, an end, and an optional step size
+
+**Note**: `slice` is **experimental** and is only available as `builtin__slice` currently.
+`list:slice` uses `builtin__slice` under the hood, but `string:slice` does not, and acts
+a bit differently regarding its `end` parameter (taking it as a size instead).
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `container`: list or string
+- `start`: number, included
+- `end`: number, excluded
+- `step`: number, default 1
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (slice [1 2 3] nil nil))  # [1 2 3]
+(print (slice [1 2 3] nil 1))  # [1]
+(print (slice [1 2 3] nil 2))  # [1 2]
+(print (slice [1 2 3] nil 3))  # [1 2 3]
+(print (slice [1 2 3] nil 30))  # [1 2 3]
+(print (slice [1 2 3 4 5 6] 1 -1))  # [2 3 4 5]
+(print (slice [1 2 3 4 5 6] 1 -1 30))  # [2]
+(print (slice [1 2 3 4 5 6] 1 -1 -1))  # [5 4 3 2]
+(print (slice [1 2 3 4 5 6] 1 -1 -30))  # [5]
+(print (slice [1 2 3 4 5 6] nil nil 2))  # [1 3 5]
+(print (slice [1 2 3 4 5 6] nil nil -2))  # [6 4 2]
+(print (slice [1 2 3 4 5 6] 1 nil 2))  # [2 4 6]
+(print (slice [1 2 3 4 5 6] 1 nil -2))  # [6 4 2]
+{{< /highlight_arkscript >}}
+
+---
+The following functions require `std.List` to be imported to be used.
+
+
+
 
 ## reverse
 

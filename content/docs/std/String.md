@@ -3,8 +3,8 @@ title: "String"
 slug: "string"
 description: ""
 summary: ""
-date: 2026-11-01T02:50:40+02:00
-lastmod: 2026-11-01T02:50:40+02:00
+date: 2026-11-07T18:35:09+02:00
+lastmod: 2026-11-07T18:35:09+02:00
 draft: false
 weight: 410
 toc: true
@@ -14,6 +14,11 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+Strings represent words, phrases, or just any text you need. They support UTF8 and are very cool.
+
+The following functions are builtins, working on strings, available **without** any import.
+
 
 ## +
 
@@ -74,7 +79,7 @@ Check if a string is empty
 
 ---
 `(head a)`
-Return the first character of a string, or emtpy string if empty
+Return the first character of a string, or empty string if empty
 
 
 
@@ -92,7 +97,7 @@ Return the first character of a string, or emtpy string if empty
 
 ---
 `(tail a)`
-Return the tail of a string, or emtpy string if it has one or less character
+Return the tail of a string, or empty string if it has one or less character
 
 
 
@@ -181,6 +186,42 @@ Set a character in a string, in place
 (print str)  # "xyzgf"
 {{< /highlight_arkscript >}}
 
+## slice
+
+---
+`(slice container start end step)`
+Slice a list or string given a start, an end, and an optional step size
+
+**Note**: `slice` is **experimental** and is only available as `builtin__slice` currently.
+`list:slice` uses `builtin__slice` under the hood, but `string:slice` does not, and acts
+a bit differently regarding its `end` parameter (taking it as a size instead).
+
+**Author**: [@SuperFola](https://github.com/SuperFola)
+
+#### Parameters
+- `container`: list or string
+- `start`: number, included
+- `end`: number, excluded
+- `step`: number, default 1
+
+
+#### Example
+{{< highlight_arkscript >}}
+(print (slice "abc" nil nil))  # "abc"
+(print (slice "abc" nil 1))  # "a"
+(print (slice "abc" nil 2))  # "ab"
+(print (slice "abc" nil 3))  # "abc"
+(print (slice "abc" nil 10))  # "abc"
+(print (slice "abcdef" 1 -1))  # "bcde"
+(print (slice "abcdef" 1 -1 30))  # "b"
+(print (slice "abcdef" 1 -1 -1))  # "edcb"
+(print (slice "abcdef" 1 -1 -30))  # "e"
+(print (slice "abcdef" nil nil 2))  # "ace"
+(print (slice "abcdef" nil nil -2))  # "fdb"
+(print (slice "abcdef" 1 nil 2))  # "bdf"
+(print (slice "abcdef" 1 nil -2))  # "fdb"
+{{< /highlight_arkscript >}}
+
 ## format
 
 ---
@@ -214,6 +255,12 @@ The underlying formatter is the one of strings, so you can write `::<10` to alig
 (format "Test {} with {{}}" "1")
 # Test 1 with {}
 {{< /highlight_arkscript >}}
+
+---
+The following functions require `std.String` to be imported to be used.
+
+
+
 
 ## asciiLetters
 
@@ -607,8 +654,8 @@ Check if a string is empty or only consists of whitespaces
 
 #### Example
 {{< highlight_arkscript >}}
-(print (string:emtpyOrWhitespace? "hello"))  # false
-(print (string:emtpyOrWhitespace? " \t"))  # true
+(print (string:emptyOrWhitespace? "hello"))  # false
+(print (string:emptyOrWhitespace? " \t"))  # true
 {{< /highlight_arkscript >}}
 
 ## count
