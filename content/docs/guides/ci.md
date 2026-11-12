@@ -17,7 +17,7 @@ seo:
 
 ## Formatting ArkScript code on CI
 
-GitHub action: https://github.com/ArkScript-lang/action-format
+GitHub action: [ArkScript-lang/action-format](https://github.com/ArkScript-lang/action-format)
 
 Inputs:
 - folder:
@@ -46,7 +46,7 @@ jobs:
 
 ## Running ArkScript code on CI
 
-GitHub action: https://github.com/ArkScript-lang/setup-arkscript
+GitHub action: [ArkScript-lang/setup-arkscript](https://github.com/ArkScript-lang/setup-arkscript)
 
 Inputs:
 - os: OS ArkScript will be running on: `linux` (or `ubuntu`), `windows`, or `macos`.
